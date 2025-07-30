@@ -4,7 +4,7 @@ import { fetchCharactersByIdsNative, getCharacterListApi } from '@/lib/api'
 import { useEffect } from 'react'
 import { toast } from 'react-toastify'
 import useAvatarStore from '@/stores/avatarStore'
-import { listCurrentLanguageApi } from '@/lib/constant'
+import { listCurrentLanguageApi } from '@/constant/constant'
 import useLocaleStore from '@/stores/localeStore'
 import useUserDataStore from '@/stores/userDataStore'
 import { converterToAvatarStore } from '@/helper'
@@ -12,7 +12,7 @@ import { CharacterDetail } from '@/types'
 
 export const useFetchAvatarData = () => {
     const { setAvatars, avatars } = useUserDataStore()
-    const { setListAvatar, setAllMapAvatarInfo, mapAvatarInfo, setAvatarSelected } = useAvatarStore()
+    const { setListAvatar, setAllMapAvatarInfo, mapAvatarInfo, setAvatarSelected, avatarSelected } = useAvatarStore()
     const { locale } = useLocaleStore()
     const { data: dataAvatar, error: errorAvatar } = useQuery({
         queryKey: ['avatarData'],
@@ -57,12 +57,15 @@ export const useFetchAvatarData = () => {
     useEffect(() => {
         if (dataAvatar && !errorAvatar) {
             setListAvatar(dataAvatar)
-            setAvatarSelected(dataAvatar[0])
+            if (!avatarSelected) {
+                setAvatarSelected(dataAvatar[0])
+            }
 
         } else if (errorAvatar) {
             toast.error("Failed to load avatar data")
         }
-    }, [dataAvatar, errorAvatar, setAvatarSelected, setAvatars, setListAvatar, avatars])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [dataAvatar, errorAvatar])
 
     useEffect(() => {
         if (dataAvatarInfo && !errorAvatarInfo) {
@@ -70,5 +73,6 @@ export const useFetchAvatarData = () => {
         } else if (errorAvatarInfo) {
             toast.error("Failed to load avatar info data")
         }
-    }, [dataAvatarInfo, errorAvatarInfo, setAllMapAvatarInfo, setAvatars])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [dataAvatarInfo, errorAvatarInfo])
 }

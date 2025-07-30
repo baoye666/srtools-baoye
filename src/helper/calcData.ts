@@ -1,4 +1,4 @@
-import { mapingStats } from "@/lib/constant"
+import { mappingStats } from "@/constant/constant"
 import { AffixDetail } from "@/types"
 
 export function calcPromotion(level: number) {
@@ -40,10 +40,10 @@ export function calcRarity(rarity: string) {
 export const calcAffixBonus = (affix: AffixDetail, stepCount: number, rollCount: number) => {
     const data = affix;
     if (!data) return 0;
-    if (mapingStats?.[data.property].unit === "%") {
+    if (mappingStats?.[data.property].unit === "%") {
         return ((data.base * rollCount + data.step * stepCount) * 100).toFixed(1);
     }
-    if (mapingStats?.[data.property].name === "SPD") {
+    if (mappingStats?.[data.property].name === "SPD") {
         return (data.base * rollCount + data.step * stepCount).toFixed(1);
     }
     return (data.base * rollCount + data.step * stepCount).toFixed(0);

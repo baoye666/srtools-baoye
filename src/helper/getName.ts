@@ -1,4 +1,4 @@
-import { listCurrentLanguage } from "@/lib/constant";
+import { listCurrentLanguage } from "@/constant/constant";
 import { CharacterBasic, EventBasic, LightConeBasic, MonsterBasic } from "@/types";
 
 

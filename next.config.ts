@@ -24,18 +24,15 @@ const nextConfig: NextConfig = {
             hostname: 'api.hakush.in',
             pathname: '**',
           },
+          {
+            protocol: 'https',
+            hostname: 'homdgcat.wiki',
+            pathname: '**',
+          },
       ],
   },
   eslint: {
       ignoreDuringBuilds: true,
-  },
-  async rewrites() {
-    return [
-      {
-        source: '/api/character/:id',
-        destination: 'https://api.hakush.in/hsr/data/en/character/:id.json',
-      },
-    ];
   },
 };
 

@@ -3,7 +3,7 @@ import { useQuery } from '@tanstack/react-query'
 import { fetchLightconesByIdsNative, getLightconeListApi } from '@/lib/api'
 import { useEffect } from 'react'
 import useLightconeStore from '@/stores/lightconeStore'
-import { listCurrentLanguageApi } from '@/lib/constant'
+import { listCurrentLanguageApi } from '@/constant/constant'
 import useLocaleStore from '@/stores/localeStore'
 import { toast } from 'react-toastify'
 

@@ -11,7 +11,7 @@ import { useFetchASData, useFetchAvatarData, useFetchConfigData, useFetchLightco
 export default function AvatarBar() {
     const [listElement, setListElement] = useState<Record<string, boolean>>({ "fire": false, "ice": false, "imaginary": false, "physical": false, "quantum": false, "thunder": false, "wind": false })
     const [listPath, setListPath] = useState<Record<string, boolean>>({ "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false })
-    const { listAvatar, setAvatarSelected, setFilter, filter } = useAvatarStore()
+    const { listAvatar, setAvatarSelected, setSkillSelected, setFilter, filter } = useAvatarStore()
     const transI18n = useTranslations("DataPage")
     const { locale } = useLocaleStore()
     
@@ -91,7 +91,7 @@ export default function AvatarBar() {
                         <div className="flex items-start h-full">
                             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 w-full h-[65vh] overflow-y-scroll overflow-x-hidden">
                                 {listAvatar.map((item, index) => (
-                                    <div key={index} onClick={() => setAvatarSelected(item)}>
+                                    <div key={index} onClick={() => {setAvatarSelected(item); setSkillSelected(null)}}>
                                         <CharacterCard data={item} />
                                     </div>
                                 ))}

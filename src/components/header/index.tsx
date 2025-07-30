@@ -2,7 +2,7 @@
 import { connectToPS, downloadJson, syncDataToPS } from "@/helper";
 import { converterToFreeSRJson } from "@/helper/converterToFreeSRJson";
 import { useChangeTheme } from "@/hooks/useChangeTheme";
-import { listCurrentLanguage } from "@/lib/constant";
+import { listCurrentLanguage } from "@/constant/constant";
 import useLocaleStore from "@/stores/localeStore";
 import useUserDataStore from "@/stores/userDataStore";
 import { motion } from "framer-motion";
@@ -264,7 +264,7 @@ export default function Header() {
                 {/* Logo */}
 
                 <a className="hidden sm:grid sm:grid-cols-1 items-start justify-items-center text-left gap-0 hover:scale-105 px-2">
-                    <div className="flex items-center justify-center">
+                    <div className="flex items-center justify-center gap-2">
                         <Image src="/ff-srtool.png" alt="Logo" width={50} height={50} />
                         <div className="flex flex-col justify-center items-start">
                             <h1 className="text-xl font-bold">

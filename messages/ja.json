@@ -212,6 +212,30 @@
 		"changeRelic": "遺物を変更",
 		"deleteRelic": "遺物を削除",
 		"deleteRelicConfirm": "スロットの遺物を削除してもよろしいですか？",
-		"setEffects": "効果を設定"
+		"setEffects": "効果を設定",
+		"details": "詳細",
+		"normal": "通常攻撃",
+		"bpskill": "スキル",
+		"maze": "技術",
+		"ultra": "アルティメット",
+		"servantskill": "メモスプライトスキル",
+		"severaltalent": "メモスプライトの才能",
+		"singleattack": "単体攻撃",
+		"enhance": "強化",
+		"summon": "召喚",
+		"blast": "爆発",
+		"restore": "回復",
+		"support": "支援",
+		"aoeattack": "範囲攻撃",
+		"mazeattack": "迷宮秘技",
+		"impair": "弱体化",
+		"bounce": "弾跳",
+		"active": "アクティブ",
+		"inactive": "非アクティブ",
+		"defence": "防御",
+		"maxAll": "すべて最大化",
+		"maxAllSuccess": "スキルレベルを最大に設定しました。",
+		"maxAllFailed": "スキルレベルの最大設定に失敗しました。"
+	  
 	}
 }

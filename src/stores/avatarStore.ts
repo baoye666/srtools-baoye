@@ -8,11 +8,13 @@ interface AvatarState {
     filter: FilterAvatarType;
     avatarSelected: CharacterBasic | null;
     mapAvatarInfo: Record<string, CharacterDetail>;
+    skillSelected: string | null;
     setListAvatar: (newListAvatar: CharacterBasic[]) => void;
     setAvatarSelected: (newAvatarSelected: CharacterBasic) => void;
     setFilter: (newFilter: FilterAvatarType) => void;
     setMapAvatarInfo: (avatarId: string, newCharacter: CharacterDetail) => void;
     setAllMapAvatarInfo: (newCharacter: Record<string, CharacterDetail>) => void;
+    setSkillSelected: (newSkillSelected: string | null) => void;
 }
 
 const useAvatarStore = create<AvatarState>((set, get) => ({
@@ -26,7 +28,9 @@ const useAvatarStore = create<AvatarState>((set, get) => ({
         locale: "",
     },
     avatarSelected: null,
+    skillSelected: null,
     mapAvatarInfo: {},
+    setSkillSelected: (newSkillSelected: string | null) => set({ skillSelected: newSkillSelected }),
     setListAvatar: (newListAvatar: CharacterBasic[]) => set({ listAvatar: newListAvatar, listRawAvatar: newListAvatar }),
     setAvatarSelected: (newAvatarSelected: CharacterBasic) => set({ avatarSelected: newAvatarSelected }),
     setFilter: (newFilter: FilterAvatarType) => {

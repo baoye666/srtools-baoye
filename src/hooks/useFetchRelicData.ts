@@ -3,7 +3,7 @@ import { useQuery } from '@tanstack/react-query'
 import { fetchRelicsByIdsNative, getRelicSetListApi } from '@/lib/api'
 import { useEffect } from 'react'
 import useRelicStore from '@/stores/relicStore'
-import { listCurrentLanguageApi } from '@/lib/constant'
+import { listCurrentLanguageApi } from '@/constant/constant'
 import useLocaleStore from '@/stores/localeStore'
 import { toast } from 'react-toastify'
 

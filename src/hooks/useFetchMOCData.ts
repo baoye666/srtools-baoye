@@ -2,7 +2,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { fetchMOCByIdsNative, getMOCEventListApi } from '@/lib/api'
 import { useEffect } from 'react'
-import { listCurrentLanguageApi } from '@/lib/constant'
+import { listCurrentLanguageApi } from '@/constant/constant'
 import useLocaleStore from '@/stores/localeStore'
 import { toast } from 'react-toastify'
 import useEventStore from '@/stores/eventStore'

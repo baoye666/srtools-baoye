@@ -1,4 +1,4 @@
-import useAvatarStore from "@/stores/avatarStore"
+import useAvatarStore from "@/stores/avatarStore";
 
 export function getSkillTree(enhanced: string) {
     const { avatarSelected, mapAvatarInfo } = useAvatarStore.getState()
@@ -20,3 +20,4 @@ export function getSkillTree(enhanced: string) {
         return acc;
     }, {} as Record<string, number>);
 }
+

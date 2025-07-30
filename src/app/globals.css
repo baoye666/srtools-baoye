@@ -7,6 +7,12 @@
     nocompatible: true;
 }
 
+:root {
+  --size-big: 4vw;
+  --size-medium: 3vw;
+  --size-small: 2vw;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;

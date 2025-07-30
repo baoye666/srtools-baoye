@@ -6,7 +6,7 @@ import React, { useEffect, useMemo } from 'react';
 import SelectCustomImage from '../select/customSelectImage';
 import { calcAffixBonus, randomPartition, randomStep, replaceByParam } from '@/helper';
 import useAffixStore from '@/stores/affixStore';
-import { mapingStats } from '@/lib/constant';
+import { mappingStats } from '@/constant/constant';
 import useAvatarStore from '@/stores/avatarStore';
 import useModelStore from '@/stores/modelStore';
 import useRelicMakerStore from '@/stores/relicMakerStore';
@@ -118,7 +118,7 @@ export default function RelicMaker() {
         const data = affixSet[selectedMainStat];
         if (!data) return 0;
 
-        const stat = mapingStats?.[data.property];
+        const stat = mappingStats?.[data.property];
         if (!stat) return 0;
 
         const value = data.base + data.step * selectedRelicLevel;
@@ -257,8 +257,8 @@ export default function RelicMaker() {
                                 <SelectCustomImage
                                     customSet={Object.entries(mapMainAffix["5" + selectedRelicSlot] || {}).map(([key, value]) => ({
                                         value: key,
-                                        label: mapingStats[value.property].name + " " + mapingStats[value.property].unit,
-                                        imageUrl: mapingStats[value.property].icon
+                                        label: mappingStats[value.property].name + " " + mappingStats[value.property].unit,
+                                        imageUrl: mappingStats[value.property].icon
                                     }))}
                                     excludeSet={[]}
                                     selectedCustomSet={selectedMainStat}
@@ -361,13 +361,13 @@ export default function RelicMaker() {
                                     <SelectCustomImage
                                         customSet={Object.entries(subAffixOptions).map(([key, value]) => ({
                                             value: key,
-                                            label: mapingStats[value.property].name + " " + mapingStats[value.property].unit,
-                                            imageUrl: mapingStats[value.property].icon
+                                            label: mappingStats[value.property].name + " " + mappingStats[value.property].unit,
+                                            imageUrl: mappingStats[value.property].icon
                                         }))}
                                         excludeSet={Object.entries(exSubAffixOptions).map(([key, value]) => ({
                                             value: key,
-                                            label: mapingStats[value.property].name + " " + mapingStats[value.property].unit,
-                                            imageUrl: mapingStats[value.property].icon
+                                            label: mappingStats[value.property].name + " " + mappingStats[value.property].unit,
+                                            imageUrl: mappingStats[value.property].icon
                                         }))}
                                         selectedCustomSet={v.affixId}
                                         placeholder={transI18n("selectASubStat")}
@@ -378,7 +378,7 @@ export default function RelicMaker() {
                                 {/* Current Value */}
                                 <div className="col-span-4 text-center flex items-center justify-center gap-2">
                                     <span className="text-2xl font-mono">+{ }</span>
-                                    <div className="text-xl font-bold text-info">{calcAffixBonus(subAffixOptions[v.affixId], v.stepCount, v.rollCount)}{mapingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}</div>
+                                    <div className="text-xl font-bold text-info">{calcAffixBonus(subAffixOptions[v.affixId], v.stepCount, v.rollCount)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}</div>
                                 </div>
 
                                 {/* Roll Values */}
@@ -387,19 +387,19 @@ export default function RelicMaker() {
                                     onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 0)}
                                         className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
                                     >
-                                        {calcAffixBonus(subAffixOptions[v.affixId], 0 , v.rollCount + 1)}{mapingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                                        {calcAffixBonus(subAffixOptions[v.affixId], 0 , v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
                                     </button>
                                     <button
                                     onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 1)}
                                         className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
                                     >
-                                        {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 1, v.rollCount + 1)}{mapingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                                        {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 1, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
                                     </button>
                                     <button
                                     onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 2)}
                                         className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
                                     >
-                                        {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 2, v.rollCount + 1)}{mapingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                                        {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 2, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
                                     </button>
                                 </div>
 

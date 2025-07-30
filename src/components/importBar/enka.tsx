@@ -120,7 +120,7 @@ export default function EnkaImport() {
                 }
                 const newProfile = converterOneEnkaDataToAvatarStore(character, newAvatar.profileList.length)
                 if (newProfile) {
-                    newAvatar.profileList.push()
+                    newAvatar.profileList.push(newProfile)
                     newAvatar.profileSelect = newAvatar.profileList.length - 1
                 }
                 setAvatar(newAvatar)

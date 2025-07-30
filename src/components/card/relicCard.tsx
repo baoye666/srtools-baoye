@@ -21,37 +21,73 @@ const getRarityName = (slot: string) => {
     switch (slot) {
         case '1': return (
             <div className="flex items-center gap-1">
-                <Image src="/relics/HEAD.png" alt="Head" width={20} height={20} />
+                <Image 
+                src="/relics/HEAD.png" 
+                alt="Head" 
+                width={20} 
+                height={20} 
+                className="bg-black/50 rounded-full"
+                />
                 <h2>Head</h2>
             </div>
         );
         case '2': return (
             <div className="flex items-center gap-1">
-                <Image src="/relics/HAND.png" alt="Hand" width={20} height={20} />
+                <Image 
+                src="/relics/HAND.png" 
+                alt="Hand" 
+                width={20} 
+                height={20} 
+                className="bg-black/50 rounded-full"
+                />
                 <h2>Hands</h2>
             </div>
         );
         case '3': return (
             <div className="flex items-center gap-1">
-                <Image src="/relics/BODY.png" alt="Body" width={20} height={20} />
+                <Image 
+                src="/relics/BODY.png" 
+                alt="Body" 
+                width={20} 
+                height={20} 
+                className="bg-black/50 rounded-full"
+                />
                 <h2>Body</h2>
             </div>
         );
         case '4': return (
             <div className="flex items-center gap-1">
-                <Image src="/relics/FOOT.png" alt="Foot" width={20} height={20} />
+                <Image 
+                src="/relics/FOOT.png" 
+                alt="Foot" 
+                width={20} 
+                height={20} 
+                className="bg-black/50 rounded-full"
+                />
                 <h2>Feet</h2>
             </div>
         );
         case '5': return (
             <div className="flex items-center gap-1">
-                <Image src="/relics/NECK.png" alt="Neck" width={20} height={20} />
+                <Image 
+                src="/relics/NECK.png" 
+                alt="Neck" 
+                width={20} 
+                height={20} 
+                className="bg-black/50 rounded-full"
+                />
                 <h2>Planar sphere</h2>
             </div>
         );
         case '6': return (
             <div className="flex items-center gap-1">
-                <Image src="/relics/OBJECT.png" alt="Object" width={20} height={20} />
+                <Image 
+                src="/relics/OBJECT.png" 
+                alt="Object" 
+                width={20} 
+                height={20} 
+                className="bg-black/50 rounded-full"
+                />
                 <h2>Link rope</h2>
             </div>
         );

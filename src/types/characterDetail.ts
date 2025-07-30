@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface CharacterDetail {
     Name: string;
     Desc: string;
@@ -50,7 +51,8 @@ export interface RankType {
 export interface SkillType {
     Id: number;
     Name: string;
-    Desc: string;
+    Desc: string | null;
+    SimpleDesc: string;
     Type: string;
     Tag: string;
     SPBase: number | null;
@@ -66,6 +68,13 @@ export interface LevelParams {
     ParamList: number[];
 }
 
+export type StatusAddType = {
+    $type: string;
+    PropertyType: string;
+    Value: number;
+    Name: string;
+};
+
 export interface SkillTreePoint {
     Anchor: string;
     AvatarPromotionLimit: number | null;
@@ -75,14 +84,14 @@ export interface SkillTreePoint {
     LevelUpSkillID: number[];
     MaterialList: ItemConfigRow[];
     MaxLevel: number;
-    ParamList: any[];
+    ParamList: number[];
     PointID: number;
     PointName: string | null;
     PointDesc: string | null;
     PointTriggerKey: number;
     PointType: number;
     PrePoint: string[];
-    StatusAddList: any[];
+    StatusAddList: StatusAddType[];
 }
 
 export interface ItemConfigRow {
@@ -109,6 +118,7 @@ export interface Memosprite {
 export interface SpriteSkill {
     Name: string;
     Desc: string | null;
+    SimpleDesc: string;
     Type: string | null;
     Tag: string;
     SPBase: number | null;
@@ -116,6 +126,7 @@ export interface SpriteSkill {
     BPAdd: number | null;
     ShowStanceList: number[];
     SkillComboValueDelta: number | null;
+    Extra: Record<string, Extra>;
     Level: Record<string, LevelParams>;
 }
 
@@ -124,6 +135,13 @@ export interface UniqueAbility {
     Name: string;
     Desc: string;
     Param: number[];
+    Extra: Record<string, Extra>;
+}
+
+export interface Extra {
+    name: string;
+    desc: string;
+    param: number[];
 }
 
 export interface Stat {

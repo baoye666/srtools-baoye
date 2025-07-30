@@ -1,10 +1,8 @@
-"use client"
-import Image from "next/image";
+"use client";
 
 import RelicsInfo from "@/components/relicsInfo";
-import { useRouter } from 'next/navigation'
+
 export default function RelicsInfoPage() {
-  const router = useRouter()
   return (
     <div className="w-full">
       <RelicsInfo></RelicsInfo>
