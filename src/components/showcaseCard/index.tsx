@@ -31,7 +31,7 @@ export default function ShowCaseInfo() {
   const { mapRelicInfo } = useRelicStore()
 
   const handleSaveImage = useCallback(() => {
-    if (cardRef.current === null) {
+    if (cardRef.current === null || !avatarSelected) {
       toast.error("Avatar showcase not found!");
       return;
     }
@@ -39,14 +39,14 @@ export default function ShowCaseInfo() {
     html2canvas(cardRef.current, {scale: 2, backgroundColor: '#000000'})
       .then(function (canvas: HTMLCanvasElement) {
         const link = document.createElement('a');
-        link.download = 'showcase.png';
+        link.download = `${getNameChar(locale, avatarSelected)}_showcase.png`;
         link.href = canvas.toDataURL('image/png');
         link.click();
       })
       .catch(() => {
         toast.error("Error generating showcase card!");
       });
-  }, [cardRef])
+  }, [cardRef, avatarSelected, locale])
 
   useEffect(() => {
     if (!avatarSelected?.id) return;
