@@ -220,13 +220,13 @@ export default function CeBar() {
 
 
                                                 <div className="flex justify-center">
-                                                    <Image
+                                                    {listMonster.find((monster2) => monster2.child.includes(member.monster_id))?.icon && <Image
                                                         src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster2) => monster2.child.includes(member.monster_id))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
                                                         alt="Enemy Icon"
                                                         width={376}
                                                         height={512}
                                                         className=" object-contain w-20 h-20 overflow-hidden"
-                                                    />
+                                                    />}
                                                 </div>
 
                                                 <div className="flex justify-center gap-1 mb-2">

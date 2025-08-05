@@ -14,117 +14,152 @@ export const listCurrentLanguageApi : Record<string, string> = {
     zh: "cn"
 };
 
-export const mappingStats = <Record<string, {name: string, icon: string, unit: string}> > {
+export const mappingStats = <Record<string, {name: string, icon: string, unit: string, baseStat: string}> > {
     "HPDelta": {
         name:"HP",
         icon:"/icon/hp.webp",
-        unit: ""
+        unit: "",
+        baseStat: "HP"
     },
     "AttackDelta": {
         name:"ATK",
         icon:"/icon/attack.webp",
-        unit: ""
+        unit: "",
+        baseStat: "ATK"
     },
     "HPAddedRatio": {
         name:"HP",
         icon:"/icon/hp.webp",
-        unit: "%"
+        unit: "%",
+        baseStat: "HP"
     },
     "AttackAddedRatio": {
         name:"ATK",
         icon:"/icon/attack.webp",
-        unit: "%"
+        unit: "%",
+        baseStat: "ATK"
     },
     "DefenceDelta": {
         name:"DEF",
         icon:"/icon/defence.webp",
-        unit: ""
+        unit: "",
+        baseStat: "DEF"
     },
     "DefenceAddedRatio": {
         name:"DEF",
         icon:"/icon/defence.webp",
-        unit: "%"
+        unit: "%",
+        baseStat: "DEF"
     },
-    "SPDDelta": {
+    "SpeedAddedRatio": {
         name:"SPD",
-        icon:"/icon/spd.webp",
-        unit: ""
+        icon:"/icon/speed.webp",
+        unit: "%",
+        baseStat: "SPD"
+    },
+    "BaseSpeed": {
+        name:"SPD",
+        icon:"/icon/speed.webp",
+        unit: "",
+        baseStat: "SPD"
     },
     "CriticalChanceBase": {
         name:"CRIT Rate",
         icon:"/icon/crit-rate.webp",
-        unit: "%"
+        unit: "%",
+        baseStat: "CRITRate"
     },
     "CriticalDamageBase": {
         name:"CRIT DMG",
         icon:"/icon/crit-damage.webp",
-        unit: "%"
+        unit: "%",
+        baseStat: "CRITDmg"
     },
     "HealRatioBase": {
         name:"Outgoing Healing Boost",
         icon:"/icon/healing-boost.webp",
-        unit: "%"
+        unit: "%",
+        baseStat: "HealBoost"
     },
     "StatusProbabilityBase": {
         name:"Effect Hit Rate",
         icon:"/icon/effect-hit-rate.webp",
-        unit: "%"
+        unit: "%",
+        baseStat: "EffectHitRate"
     },
     "StatusResistanceBase": {
         name:"Effect RES",
         icon:"/icon/effect-res.webp",
-        unit: "%"
+        unit: "%",
+        baseStat: "EffectRES"
     },
     "BreakDamageAddedRatioBase": {
         name:"Break Effect",
         icon:"/icon/break-effect.webp",
-        unit: "%"
+        unit: "%",
+        baseStat: "BreakEffect"
     },
     "SpeedDelta": {
         name:"SPD",
         icon:"/icon/speed.webp",
-        unit: ""
+        unit: "",
+        baseStat: "SPD"
     },
     "PhysicalAddedRatio": {
         name:"Physical DMG Boost",
-        icon:"/icon/physical.webp",
-        unit: "%"
+        icon:"/icon/physical-add.webp",
+        unit: "%",
+        baseStat: "PhysicalAdd"
     },
     "FireAddedRatio": {
         name:"Fire DMG Boost",
-        icon:"/icon/fire.webp",
-        unit: "%"
+        icon:"/icon/fire-add.webp",
+        unit: "%",
+        baseStat: "FireAdd"
     },
     "IceAddedRatio": {
         name:"Ice DMG Boost",
-        icon:"/icon/ice.webp",
-        unit: "%"
+        icon:"/icon/ice-add.webp",
+        unit: "%",
+        baseStat: "IceAdd"
     },
     "ThunderAddedRatio": {
         name:"Thunder DMG Boost",
-        icon:"/icon/thunder.webp",
-        unit: "%"
+        icon:"/icon/thunder-add.webp",
+        unit: "%",
+        baseStat: "ThunderAdd"
     },
     "WindAddedRatio": {
         name:"Wind DMG Boost",
-        icon:"/icon/wind.webp",
-        unit: "%"
+        icon:"/icon/wind-add.webp",
+        unit: "%",
+        baseStat: "WindAdd"
     },
     "QuantumAddedRatio": {
         name:"Quantum DMG Boost",
-        icon:"/icon/quantum.webp",
-        unit: "%"
+        icon:"/icon/quantum-add.webp",
+        unit: "%",
+        baseStat: "QuantumAdd"
     },
     "ImaginaryAddedRatio": {
         name:"Imaginary DMG Boost",
-        icon:"/icon/imaginary.webp",
-        unit: "%"
+        icon:"/icon/imaginary-add.webp",
+        unit: "%",
+        baseStat: "ImaginaryAdd"
     },
     "SPRatioBase": {
         name:"Energy Regeneration Rate",
         icon:"/icon/energy-rate.webp",
-        unit: "%"
+        unit: "%",
+        baseStat: "EnergyRate"
     }
 }
 
+
+export const ratioStats = [
+    "HPAddedRatio",
+    "AttackAddedRatio",
+    "DefenceAddedRatio",
+    "SpeedAddedRatio",
+]
 

@@ -13,15 +13,16 @@ import ParseText from '../parseText';
 import useLocaleStore from '@/stores/localeStore';
 import useModelStore from '@/stores/modelStore';
 import useMazeStore from '@/stores/mazeStore';
-
+import Image from 'next/image';
 export default function AvatarInfo() {
     const { avatarSelected, mapAvatarInfo } = useAvatarStore()
     const { Technique } = useMazeStore()
     const { avatars, setAvatars, setAvatar } = useUserDataStore()
     const { isOpenLightcone, setIsOpenLightcone } = useModelStore()
-    const { listLightcone, mapLightconeInfo } = useLightconeStore()
+    const { listLightcone, mapLightconeInfo, setDefaultFilter } = useLightconeStore()
     const transI18n = useTranslations("DataPage")
     const { locale } = useLocaleStore();
+
     const lightcone = useMemo(() => {
         if (!avatarSelected) return null;
         const avatar = avatars[avatarSelected.id];
@@ -68,7 +69,8 @@ export default function AvatarInfo() {
         window.addEventListener('keydown', handleEscKey);
 
         return () => window.removeEventListener('keydown', handleEscKey);
-    }, [isOpenLightcone]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [isOpenLightcone ]);
 
     return (
         <div className="bg-base-100 max-h-[77vh] min-h-[50vh] overflow-y-scroll overflow-x-hidden">
@@ -387,7 +389,13 @@ export default function AvatarInfo() {
                                                 {/* Action Buttons */}
                                                 <div className="flex flex-wrap gap-3 mt-2">
                                                     <button
-                                                        onClick={() => handleShow("action_detail_modal")}
+                                                        onClick={() => {
+                                                            if (avatarSelected) {
+                                                                const newDefaultFilter = { path: [avatarSelected.baseType.toLowerCase()], rarity: [] }
+                                                                setDefaultFilter(newDefaultFilter)
+                                                                handleShow("action_detail_modal")
+                                                            }
+                                                        }}
                                                         className="btn btn-primary btn-lg flex-1 min-w-fit"
                                                     >
                                                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -414,8 +422,9 @@ export default function AvatarInfo() {
                                             {/* Lightcone Image */}
                                             <div className="lg:col-span-1">
                                                 <div className="">
-                                                    <img
-                                                        loading="lazy"
+                                                    <Image
+                                                        width={904}
+                                                        height={1260}
                                                         src={`https://api.hakush.in/hsr/UI/lightconemaxfigures/${lightconeDetail.id}.webp`}
                                                         className="w-full h-full rounded-lg object-cover shadow-lg"
                                                         alt="Lightcone"
@@ -477,7 +486,13 @@ export default function AvatarInfo() {
                                             <h3 className="text-xl font-semibold mb-2">{transI18n("noLightconeEquipped")}</h3>
                                             <p className="text-base-content/60 mb-6">{transI18n("equipLightconeNote")}</p>
                                             <button
-                                                onClick={() => handleShow("action_detail_modal")}
+                                                onClick={() => {
+                                                    if (avatarSelected) {
+                                                        const newDefaultFilter = { path: [avatarSelected.baseType.toLowerCase()], rarity: [] }
+                                                        setDefaultFilter(newDefaultFilter)
+                                                        handleShow("action_detail_modal")
+                                                    }
+                                                }}
                                                 className="btn btn-success btn-lg"
                                             >
                                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

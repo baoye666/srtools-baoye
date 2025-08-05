@@ -235,6 +235,7 @@
 		"defence": "Phòng thủ",
 		"maxAll": "Tối đa tất cả",
 		"maxAllSuccess": "Đã thiết lập cấp độ kỹ năng tối đa thành công.",
-		"maxAllFailed": "Thiết lập cấp độ kỹ năng tối đa thất bại."
+		"maxAllFailed": "Thiết lập cấp độ kỹ năng tối đa thất bại.",
+		"noRelicEquipped": "Không có di vật"
 	}
 }

@@ -236,3 +236,778 @@ export const traceLink : Record<string, Record<string, string[]>> = {
         Point06: ["Point12", "Point13"],
     }
 }
+
+export const traceShowCaseMap : Record<string, Record<string, { id: string, size: string, isLink: boolean }[]>> = {
+    Knight: {
+        "1": [
+            {
+                id: "Point01",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point15",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point12",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point09",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "2": [
+            {
+                id: "Point02",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point06",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point10",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point11",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "3": [
+            {
+                id: "Point03",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point07",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point13",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point14",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "4": [
+            {
+                id: "Point04",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point08",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point16",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point18",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point17",
+                size: "small",
+                isLink: true
+            }
+        ]
+    },
+    Mage: {
+        "1": [
+            {
+                id: "Point01",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point09",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point18",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "2": [
+            {
+                id: "Point02",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point06",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point10",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point11",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point12",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "3": [
+            {
+                id: "Point03",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point07",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point13",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point14",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point15",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "4": [
+            {
+                id: "Point04",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point08",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point17",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point16",
+                size: "small",
+                isLink: true
+            }
+        ]
+    },
+    Priest: {
+        "1": [
+            {
+                id: "Point01",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point09",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point18",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "2": [
+            {
+                id: "Point02",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point06",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point10",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point11",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point12",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "3": [
+            {
+                id: "Point03",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point07",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point13",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point14",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point15",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "4": [
+            {
+                id: "Point04",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point08",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point17",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point16",
+                size: "small",
+                isLink: true
+            }
+        ]
+    },
+    Rogue: {
+        "1": [
+            {
+                id: "Point01",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point15",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point12",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point09",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "2": [
+            {
+                id: "Point02",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point06",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point10",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point11",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "3": [
+            {
+                id: "Point03",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point07",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point13",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point14",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "4": [
+            {
+                id: "Point04",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point08",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point16",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point18",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point17",
+                size: "small",
+                isLink: true
+            }
+        ]
+    },
+    Shaman: {
+        "1": [
+            {
+                id: "Point01",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point15",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point12",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point09",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "2": [
+            {
+                id: "Point02",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point06",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point10",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point11",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "3": [
+            {
+                id: "Point03",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point07",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point13",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point14",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "4": [
+            {
+                id: "Point04",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point08",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point16",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point18",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point17",
+                size: "small",
+                isLink: true
+            }
+        ]
+    },
+    Warlock: {
+        "1": [
+            {
+                id: "Point01",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point09",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point18",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "2": [
+            {
+                id: "Point02",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point06",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point10",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point11",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point12",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "3": [
+            {
+                id: "Point03",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point07",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point13",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point14",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point15",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "4": [
+            {
+                id: "Point04",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point08",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point17",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point16",
+                size: "small",
+                isLink: true
+            }
+        ]
+    },
+    Warrior: {
+        "1": [
+            {
+                id: "Point01",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point09",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "2": [
+            {
+                id: "Point02",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point06",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point10",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point11",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point12",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "3": [
+            {
+                id: "Point03",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point07",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point13",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point14",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point15",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "4": [
+            {
+                id: "Point04",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point08",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point16",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point18",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point17",
+                size: "small",
+                isLink: true
+            }
+        ]
+    },
+    Memory: {
+        "1": [
+            {
+                id: "Point01",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point09",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point10",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point11",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "2": [
+            {
+                id: "Point02",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point06",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point13",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point12",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "3": [
+            {
+                id: "Point03",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point07",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point14",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point15",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "4": [
+            {
+                id: "Point04",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point08",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point16",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point17",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point18",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "5": [
+            {
+                id: "Point19",
+                size: "big-memory",
+                isLink: false
+            },
+            {
+                id: "Point20",
+                size: "big-memory",
+                isLink: false
+            }
+        ]
+    }
+}

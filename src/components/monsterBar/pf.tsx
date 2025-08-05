@@ -241,13 +241,13 @@ export default function PfBar() {
                                     >
                                         <div className="flex items-center space-x-3">
                                             <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
-                                                <Image
+                                                {listMonster.find((monster) => monster.child.includes(monsterId))?.icon && <Image
                                                     src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(monsterId))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
                                                     alt="Enemy Icon"
                                                     width={376}
                                                     height={512}
                                                     className="w-full h-full object-cover"
-                                                />
+                                                />}
                                             </div>
 
                                             <div className="flex flex-col">
@@ -291,13 +291,13 @@ export default function PfBar() {
 
                                         <div className="flex items-center space-x-3">
                                             <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
-                                                <Image
+                                                {listMonster.find((monster) => monster.child.includes(monsterId))?.icon && <Image
                                                     src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(monsterId))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
                                                     alt="Enemy Icon"
                                                     width={376}
                                                     height={512}
                                                     className="w-full h-full object-cover"
-                                                />
+                                                />}
                                             </div>
 
                                             <div className="flex flex-col">

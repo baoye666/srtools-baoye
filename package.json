@@ -11,9 +11,11 @@
   "dependencies": {
     "@tanstack/react-query": "^5.83.0",
     "axios": "^1.10.0",
+    "fast-average-color": "^9.5.0",
     "framer-motion": "^12.12.1",
+    "html2canvas-pro": "^1.5.11",
     "lodash": "^4.17.21",
-    "lucide-react": "^0.525.0",
+    "lucide-react": "^0.536.0",
     "next": "15.3.2",
     "next-intl": "^4.1.0",
     "react": "^19.0.0",

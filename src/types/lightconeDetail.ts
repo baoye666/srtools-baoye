@@ -5,6 +5,7 @@ export interface LightConeDetail {
     BaseType: string;
     Refinements: RefinementDetail;
     Stats: StatEntryDetail[];
+    Bonus: Record<string, { type: string, value: number }[]>
 }
 
 interface RefinementDetail {

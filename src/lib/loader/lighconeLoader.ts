@@ -6,6 +6,7 @@ import { LightConeDetail } from '@/types';
 const DATA_DIR = path.join(process.cwd(), 'data');
 const lightconeFileCache: Record<string, Record<string, LightConeDetail>> = {};
 export let lightconeMap: Record<string, LightConeDetail> = {};
+export let lightconeBonusMap: Record<string, Record<string, { type: string, value: number }[]>> = {};
 
 function getJsonFilePath(locale: string): string {
   return path.join(DATA_DIR, `lightcones.${locale}.json`);
@@ -15,9 +16,18 @@ function loadLightconeFromFileIfExists(locale: string): Record<string, LightCone
   if (lightconeFileCache[locale]) return lightconeFileCache[locale];
 
   const filePath = getJsonFilePath(locale);
+  const fileBonusPath = path.join(DATA_DIR, `lightcone_bonus.json`);
+  if (fs.existsSync(fileBonusPath)) {
+    const data = JSON.parse(fs.readFileSync(fileBonusPath, 'utf-8')) as Record<string, Record<string, { type: string, value: number }[]>>;
+    lightconeBonusMap = data;
+  }
   if (fs.existsSync(filePath)) {
     const data = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as Record<string, LightConeDetail>;
+    Object.keys(data).forEach((key) => {
+      data[key].Bonus = lightconeBonusMap[key] || {};
+    });
     lightconeFileCache[locale] = data;
+
     return data;
   }
   return null;
@@ -37,7 +47,10 @@ export async function loadLightcones(charIds: string[], locale: string): Promise
   await Promise.all(
     charIds.map(async id => {
       const info = await getLightconeInfoApi(Number(id), locale);
-      if (info) result[id] = info;
+      if (info) {
+        info.Bonus = lightconeBonusMap[id] || {};
+        result[id] = info;
+      }
     })
   );
 

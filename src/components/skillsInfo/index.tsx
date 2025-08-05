@@ -29,8 +29,6 @@ export default function SkillsInfo() {
         return mapAvatarInfo[avatarSelected.id]
     }, [avatarSelected, mapAvatarInfo])
 
-
-
     const avatarData = useMemo(() => {
         if (!avatarSelected) return
         return avatars[avatarSelected.id]

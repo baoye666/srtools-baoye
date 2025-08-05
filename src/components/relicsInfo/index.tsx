@@ -117,7 +117,7 @@ export default function RelicsInfo() {
     handleShow("action_detail_modal")
   }
 
-  const getEffects = useMemo(() => {
+  const relicEffects = useMemo(() => {
     const avatar = avatars[avatarSelected?.id || ""];
     const relicCount: { [key: string]: number } = {};
     if (avatar) {
@@ -215,7 +215,7 @@ export default function RelicsInfo() {
               </h3>
 
               <div className="space-y-6">
-                {getEffects.map((setEffect, index) => {
+                {relicEffects.map((setEffect, index) => {
                   const relicInfo = mapRelicInfo[setEffect.key];
                   if (!relicInfo) return null;
                   return (

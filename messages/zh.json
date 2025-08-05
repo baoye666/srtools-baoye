@@ -235,6 +235,7 @@
 		"inactive": "不活跃",
 		"maxAll": "全部最大化",
 		"maxAllSuccess": "技能等级已成功设置为最大。",
-		"maxAllFailed": "设置技能等级为最大失败。"
+		"maxAllFailed": "设置技能等级为最大失败。",
+		"noRelicEquipped": "未装备圣遗物"
 	}
 }

@@ -6,7 +6,7 @@ import { getRelicInfoApi } from '../api';
 const DATA_DIR = path.join(process.cwd(), 'data');
 const relicFileCache: Record<string, Record<string, RelicDetail>> = {};
 export let relicMap: Record<string, RelicDetail> = {};
-
+export let relicBonusMap: Record<string, Record<string, { type: string, value: number }[]>> = {};
 function getJsonFilePath(locale: string): string {
   return path.join(DATA_DIR, `relics.${locale}.json`);
 }
@@ -15,8 +15,16 @@ function loadRelicFromFileIfExists(locale: string): Record<string, RelicDetail> 
   if (relicFileCache[locale]) return relicFileCache[locale];
 
   const filePath = getJsonFilePath(locale);
+  const fileBonusPath = path.join(DATA_DIR, `relic_bonus.json`);
+  if (fs.existsSync(fileBonusPath)) {
+    const data = JSON.parse(fs.readFileSync(fileBonusPath, 'utf-8')) as Record<string, Record<string, { type: string, value: number }[]>>;
+    relicBonusMap = data;
+  }
   if (fs.existsSync(filePath)) {
     const data = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as Record<string, RelicDetail>;
+    Object.keys(data).forEach((key) => {
+      data[key].Bonus = relicBonusMap[key] || {};
+    });
     relicFileCache[locale] = data;
     return data;
   }
@@ -37,7 +45,10 @@ export async function loadRelics(charIds: string[], locale: string): Promise<Rec
   await Promise.all(
     charIds.map(async id => {
       const info = await getRelicInfoApi(Number(id), locale);
-      if (info) result[id] = info;
+      if (info) {
+        info.Bonus = relicBonusMap[id] || {};
+        result[id] = info;
+      }
     })
   );
 

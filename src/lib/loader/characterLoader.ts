@@ -6,7 +6,7 @@ import { getCharacterInfoApi } from '../api';
 const DATA_DIR = path.join(process.cwd(), 'data');
 const characterFileCache: Record<string, Record<string, CharacterDetail>> = {};
 export let characterMap: Record<string, CharacterDetail> = {};
-
+export let rankIconMap: Record<string, string[]> = {};
 function getJsonFilePath(locale: string): string {
   return path.join(DATA_DIR, `characters.${locale}.json`);
 }
@@ -15,11 +15,20 @@ function loadFromFileIfExists(locale: string): Record<string, CharacterDetail> |
   if (characterFileCache[locale]) return characterFileCache[locale];
 
   const filePath = getJsonFilePath(locale);
+  const fileRankIconPath = path.join(DATA_DIR, `rank_icon.json`);
+  if (fs.existsSync(fileRankIconPath)) {
+    const data = JSON.parse(fs.readFileSync(fileRankIconPath, 'utf-8')) as Record<string, string[]>;
+    rankIconMap = data;
+  }
   if (fs.existsSync(filePath)) {
     const data = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as Record<string, CharacterDetail>;
+    Object.keys(data).forEach((key) => {
+      data[key].RankIcon = rankIconMap[key] || [];
+    });
     characterFileCache[locale] = data;
     return data;
   }
+
   return null;
 }
 
@@ -37,7 +46,10 @@ export async function loadCharacters(charIds: string[], locale: string): Promise
   await Promise.all(
     charIds.map(async id => {
       const info = await getCharacterInfoApi(Number(id), locale);
-      if (info) result[id] = info;
+      if (info){
+        info.RankIcon = rankIconMap[id] || [];
+        result[id] = info;
+      }
     })
   );
 

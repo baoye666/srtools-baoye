@@ -4,7 +4,7 @@ import useUserDataStore from '@/stores/userDataStore';
 import { AffixDetail, RelicDetail } from '@/types';
 import React, { useEffect, useMemo } from 'react';
 import SelectCustomImage from '../select/customSelectImage';
-import { calcAffixBonus, randomPartition, randomStep, replaceByParam } from '@/helper';
+import { calcAffixBonus, calcMainAffixBonus, randomPartition, randomStep, replaceByParam } from '@/helper';
 import useAffixStore from '@/stores/affixStore';
 import { mappingStats } from '@/constant/constant';
 import useAvatarStore from '@/stores/avatarStore';
@@ -118,16 +118,7 @@ export default function RelicMaker() {
         const data = affixSet[selectedMainStat];
         if (!data) return 0;
 
-        const stat = mappingStats?.[data.property];
-        if (!stat) return 0;
-
-        const value = data.base + data.step * selectedRelicLevel;
-
-        if (stat.unit === "%") {
-            return (value * 100).toFixed(1) + "%";
-        }
-
-        return value.toFixed(0) + stat.unit;
+       return calcMainAffixBonus(data, selectedRelicLevel);
     }, [mapMainAffix, selectedRelicSlot, selectedMainStat, selectedRelicLevel]);
     
     const handleSubStatChange = (key: string, index: number, rollCount: number, stepCount: number) => {

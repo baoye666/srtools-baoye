@@ -235,6 +235,7 @@
 		"inactive": "Inactive",
 		"maxAll": "Max All",
 		"maxAllSuccess": "Successfully set skill level to max.",
-		"maxAllFailed": "Failed to set skill level to max."
+		"maxAllFailed": "Failed to set skill level to max.",
+		"noRelicEquipped": "No relic equipped"
 	}
 }

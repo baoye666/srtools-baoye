@@ -235,7 +235,7 @@
 		"defence": "防御",
 		"maxAll": "すべて最大化",
 		"maxAllSuccess": "スキルレベルを最大に設定しました。",
-		"maxAllFailed": "スキルレベルの最大設定に失敗しました。"
-	  
+		"maxAllFailed": "スキルレベルの最大設定に失敗しました。",
+		"noRelicEquipped": "聖遺物が装備されていません"
 	}
 }

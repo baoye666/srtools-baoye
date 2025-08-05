@@ -16,6 +16,7 @@ export interface CharacterDetail {
     Stats: Record<string, Stat>;
     Relics: Relics;
     Enhanced: Record<string, EnhancedType>;
+    RankIcon: string[];
 }
 
 export interface EnhancedType {

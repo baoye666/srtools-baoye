@@ -14,11 +14,29 @@ export default function LightconeBar() {
     const [listPath, setListPath] = useState<Record<string, boolean>>({ "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false })
     const [listRank, setListRank] = useState<Record<string, boolean>>({ "3": false, "4": false, "5": false })
     const { locale } = useLocaleStore()
-    const { listLightcone, filter, setFilter } = useLightconeStore()
+    const { listLightcone, filter, setFilter, defaultFilter } = useLightconeStore()
     const { setAvatar, avatars } = useUserDataStore()
     const { avatarSelected } = useAvatarStore()
     const { setIsOpenLightcone } = useModelStore()
     const transI18n = useTranslations("DataPage")
+
+    useEffect(() => {
+        const newListPath: Record<string, boolean> = { "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false }
+        const newListRank: Record<string, boolean> = { "3": false, "4": false, "5": false }
+        for (const path of defaultFilter.path) {
+            if (path in newListPath) {
+                newListPath[path] = true
+            }
+        }
+        for (const rarity of defaultFilter.rarity) {
+            if (rarity in newListRank) {
+                newListRank[rarity] = true
+            }
+        }
+        setListPath(newListPath)
+        setListRank(newListRank)
+    }, [defaultFilter])
+
     useEffect(() => {
         setFilter({
             ...filter,

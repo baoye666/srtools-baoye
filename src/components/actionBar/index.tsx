@@ -294,7 +294,7 @@ export default function ActionBar() {
             <button className="btn btn-success btn-sm" onClick={() => actionMove('relics-info')}>{transI18n("relics")}</button>
             <button className="btn btn-success btn-sm" onClick={() => actionMove('eidolons-info')}>{transI18n("eidolons")}</button>
             <button className="btn btn-success btn-sm" onClick={() => actionMove('skills-info')}>{transI18n("skills")}</button>
-            <button disabled className="btn btn-success btn-sm cursor-not-allowed italic">{transI18n("showcaseCard")} {transI18n("comingSoon")}</button>
+            <button className="btn btn-success btn-sm" onClick={() => actionMove('showcase-card')}>{transI18n("showcaseCard")}</button>
             <button onClick={handleConnectOrSyncPS} className="btn btn-primary btn-sm"> {isConnectPS ? transI18n("sync") : transI18n("connectPs")}</button>
           </div>
         </div>

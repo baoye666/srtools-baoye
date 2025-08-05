@@ -5,7 +5,9 @@ interface LightconeState {
     listLightcone: LightConeBasic[];
     listRawLightcone: LightConeBasic[];
     filter: FilterLightconeType;
+    defaultFilter: { path: string[], rarity: string[] };
     mapLightconeInfo: Record<string, LightConeDetail>;
+    setDefaultFilter: (newDefaultFilter: { path: string[], rarity: string[] }) => void;
     setListLightcone: (newListLightcone: LightConeBasic[]) => void;
     setFilter: (newFilter: FilterLightconeType) => void;
     setMapLightconeInfo: (lightconeId: string, newLightcone: LightConeDetail) => void;
@@ -22,6 +24,8 @@ const useLightconeStore = create<LightconeState>((set, get) => ({
         locale: "",
         rarity: [],
     },
+    defaultFilter: { path: [], rarity: [] },
+    setDefaultFilter: (newDefaultFilter: { path: string[], rarity: string[] }) => set({ defaultFilter: newDefaultFilter }),
     setListLightcone: (newListLightcone: LightConeBasic[]) => set({ listLightcone: newListLightcone, listRawLightcone: newListLightcone }),
     setFilter: (newFilter: FilterLightconeType) => {
         set({ filter: newFilter })

@@ -235,6 +235,7 @@
 		"defence": "방어",
 		"maxAll": "모두 최대치",
 		"maxAllSuccess": "스킬 레벨이 최대치로 설정되었습니다.",
-		"maxAllFailed": "스킬 레벨을 최대치로 설정하지 못했습니다."
+		"maxAllFailed": "스킬 레벨을 최대치로 설정하지 못했습니다.",
+		"noRelicEquipped": "성유물이 장착되지 않음"
 	  }
 }

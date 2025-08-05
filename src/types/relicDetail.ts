@@ -14,5 +14,6 @@ export interface RelicDetail {
     Icon: string;
     Parts: Record<string, PartData>;
     RequireNum: Record<string, RequireBonus>;
+    Bonus: Record<string, { type: string, value: number }[]>
 }
   
