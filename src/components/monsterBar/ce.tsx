@@ -27,6 +27,13 @@ export default function CeBar() {
     const { ce_config, setCeConfig } = useUserDataStore()
     const { listMonster } = useMonsterStore()
     const { locale } = useLocaleStore()
+    const transI18n = useTranslations("DataPage")
+    const [showSearchStage, setShowSearchStage] = useState(false)
+    const [stageSearchTerm, setStageSearchTerm] = useState("")
+    const [stagePage, setStagePage] = useState(1)
+
+    const pageSize = 30
+
     const filteredMonsters = useMemo(() => {
         const newlistMonster = new Set<MonsterBasic>()
         for (const monster of listMonster) {
@@ -39,11 +46,6 @@ export default function CeBar() {
         }
         return Array.from(newlistMonster)
     }, [listMonster, locale, searchTerm]);
-    const transI18n = useTranslations("DataPage")
-    const [showSearchStage, setShowSearchStage] = useState(false)
-    const [stageSearchTerm, setStageSearchTerm] = useState("")
-    const [stagePage, setStagePage] = useState(1)
-    const pageSize = 30
 
     const stageList = useMemo(() => Object.values(Stage).map((stage) => ({
         id: stage.stage_id.toString(),

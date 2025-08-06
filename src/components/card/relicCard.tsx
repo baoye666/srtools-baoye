@@ -1,5 +1,6 @@
 "use client";
 
+import useRelicMakerStore from "@/stores/relicMakerStore";
 import useUserDataStore from "@/stores/userDataStore";
 import Image from "next/image";
 import { useMemo } from "react";
@@ -21,72 +22,72 @@ const getRarityName = (slot: string) => {
     switch (slot) {
         case '1': return (
             <div className="flex items-center gap-1">
-                <Image 
-                src="/relics/HEAD.png" 
-                alt="Head" 
-                width={20} 
-                height={20} 
-                className="bg-black/50 rounded-full"
+                <Image
+                    src="/relics/HEAD.png"
+                    alt="Head"
+                    width={20}
+                    height={20}
+                    className="bg-black/50 rounded-full"
                 />
                 <h2>Head</h2>
             </div>
         );
         case '2': return (
             <div className="flex items-center gap-1">
-                <Image 
-                src="/relics/HAND.png" 
-                alt="Hand" 
-                width={20} 
-                height={20} 
-                className="bg-black/50 rounded-full"
+                <Image
+                    src="/relics/HAND.png"
+                    alt="Hand"
+                    width={20}
+                    height={20}
+                    className="bg-black/50 rounded-full"
                 />
                 <h2>Hands</h2>
             </div>
         );
         case '3': return (
             <div className="flex items-center gap-1">
-                <Image 
-                src="/relics/BODY.png" 
-                alt="Body" 
-                width={20} 
-                height={20} 
-                className="bg-black/50 rounded-full"
+                <Image
+                    src="/relics/BODY.png"
+                    alt="Body"
+                    width={20}
+                    height={20}
+                    className="bg-black/50 rounded-full"
                 />
                 <h2>Body</h2>
             </div>
         );
         case '4': return (
             <div className="flex items-center gap-1">
-                <Image 
-                src="/relics/FOOT.png" 
-                alt="Foot" 
-                width={20} 
-                height={20} 
-                className="bg-black/50 rounded-full"
+                <Image
+                    src="/relics/FOOT.png"
+                    alt="Foot"
+                    width={20}
+                    height={20}
+                    className="bg-black/50 rounded-full"
                 />
                 <h2>Feet</h2>
             </div>
         );
         case '5': return (
             <div className="flex items-center gap-1">
-                <Image 
-                src="/relics/NECK.png" 
-                alt="Neck" 
-                width={20} 
-                height={20} 
-                className="bg-black/50 rounded-full"
+                <Image
+                    src="/relics/NECK.png"
+                    alt="Neck"
+                    width={20}
+                    height={20}
+                    className="bg-black/50 rounded-full"
                 />
                 <h2>Planar sphere</h2>
             </div>
         );
         case '6': return (
             <div className="flex items-center gap-1">
-                <Image 
-                src="/relics/OBJECT.png" 
-                alt="Object" 
-                width={20} 
-                height={20} 
-                className="bg-black/50 rounded-full"
+                <Image
+                    src="/relics/OBJECT.png"
+                    alt="Object"
+                    width={20}
+                    height={20}
+                    className="bg-black/50 rounded-full"
                 />
                 <h2>Link rope</h2>
             </div>
@@ -96,6 +97,7 @@ const getRarityName = (slot: string) => {
 };
 export default function RelicCard({ slot, avatarId }: RelicCardProps) {
     const { avatars } = useUserDataStore()
+    const { selectedRelicSlot } = useRelicMakerStore()
 
     const relicDetail = useMemo(() => {
         const avatar = avatars[avatarId];
@@ -112,15 +114,15 @@ export default function RelicCard({ slot, avatarId }: RelicCardProps) {
         <div>
             {relicDetail ? (
                 <div
-                    className="flex flex-col items-center cursor-pointer">
+                    className="flex flex-col items-center cursor-pointer ">
                     <div
                         className={`
-                              relative w-24 h-24 rounded-full border-4 
+                              relative w-24 h-24 rounded-full
                               ${getRarityColor(relicDetail.relic_id.toString()[0])}
                               shadow-xl
                               flex items-center justify-center
-                              cursor-pointer hover:scale-105 transition-transform
-                              ring-4 ring-primary
+                              cursor-pointer transition-transform
+                              ${selectedRelicSlot === slot ? 'ring-5 ring-success scale-105' : 'ring-3 ring-primary'}
                             `}
                     >
                         <span>

@@ -176,7 +176,6 @@ export default function AvatarInfo() {
                                                         onClick={() => {
                                                             const newSpValue = Math.ceil(avatars[avatarSelected?.id || ""]?.sp_max / 2);
                                                             const newAvatar = { ...avatars[avatarSelected?.id || ""], sp_value: newSpValue }
-                                                            console.log(newAvatar)
                                                             setAvatar(newAvatar)
                                                         }}
                                                     >

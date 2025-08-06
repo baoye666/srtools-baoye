@@ -17,6 +17,7 @@ export default function RelicsInfo() {
   const { avatarSelected } = useAvatarStore()
   const {
     setSelectedRelicSlot,
+    selectedRelicSlot,
     setSelectedMainStat,
     setSelectedRelicSet,
     setSelectedRelicLevel,
@@ -157,7 +158,11 @@ export default function RelicsInfo() {
                   <div key={index} className="relative group">
                     <div
                       onClick={() => {
-                        handlerChangeRelic(item)
+                        if (item === selectedRelicSlot) {
+                          setSelectedRelicSlot("")
+                        } else {
+                          setSelectedRelicSlot(item)
+                        }
                       }}
                       className="cursor-pointer"
                     >
@@ -200,6 +205,29 @@ export default function RelicsInfo() {
                     </div>
                   </div>
                 ))}
+              </div>
+              <div className="grid grid-cols-2 gap-2 mt-10">
+                <button
+                  disabled={!selectedRelicSlot}
+                  onClick={() => {
+                    handlerChangeRelic(selectedRelicSlot)
+                  }}
+                  className="btn btn-info"
+                >
+                    {transI18n("changeRelic")}
+                </button>
+                <button
+                  disabled={!selectedRelicSlot}
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    if (window.confirm(`${transI18n("deleteRelicConfirm")} ${selectedRelicSlot}?`)) {
+                      handlerDeleteRelic(selectedRelicSlot)
+                    }
+                  }}
+                  className="btn btn-error"
+                >
+                    {transI18n("deleteRelic")}
+                </button>
               </div>
             </div>
           </div>

@@ -130,7 +130,6 @@ export default function SkillsInfo() {
         if (!status && traceLink?.[avatarSelected?.baseType || ""]?.[skillSelected || ""]) {
             traceLink[avatarSelected?.baseType || ""][skillSelected || ""].forEach((pointId) => {
                 if (avatarSkillTree?.[pointId]?.["1"]) {
-                    console.log(avatarSkillTree?.[pointId]?.["1"].PointID)
                     newData.data.skills[avatarSkillTree?.[pointId]?.["1"].PointID] = 0
                 }
             })
