@@ -645,7 +645,7 @@ export default function ShowCaseInfo() {
                                       />
                                       {(isBig || isBigMemory) && (
                                         <span className="absolute bottom-0 left-0 text-[12px] text-white bg-black/70 px-1 rounded-sm">
-                                          {10}
+                                          {avatarData?.data?.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID] ? avatarData?.data?.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID] : 1}
                                         </span>
                                       )}
                                     </div>
