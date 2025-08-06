@@ -460,7 +460,14 @@ export default function ShowCaseInfo() {
     mapRelicInfo,
     avatarSkillTree
   ])
-
+  const applyBrightness = useCallback((hex: string, brightness: number): string => {
+    const r = Math.round(parseInt(hex.slice(1, 3), 16) * brightness);
+    const g = Math.round(parseInt(hex.slice(3, 5), 16) * brightness);
+    const b = Math.round(parseInt(hex.slice(5, 7), 16) * brightness);
+  
+    return `#${r.toString(16).padStart(2, "0")}${g.toString(16).padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
+  }, [])
+  
   const getImageSkill = useCallback((icon: string | undefined, status: StatusAddType | undefined) => {
     if (!icon) return
     if (icon.startsWith("SkillIcon")) {
@@ -484,17 +491,15 @@ export default function ShowCaseInfo() {
       </div>
 
       <div  className="overflow-auto">
-        <div ref={cardRef} className=" relative min-h-[650px] w-[1400px] rounded-3xl">
-
-          <div
-            className="absolute inset-0 rounded-3xl  w-full h-full transition-all duration-500 z-0"
-            style={{
-              backgroundColor: `${avgColor}60`,
-              backdropFilter: "blur(50px)",
-              WebkitBackdropFilter: "blur(50px)",
-              filter: "brightness(70%)",
-            }}
-          />
+        <div 
+        ref={cardRef} 
+        className=" relative min-h-[650px] w-[1400px] rounded-3xl transition-all duration-500"
+        style={{
+          backgroundColor: `${applyBrightness(avgColor, 0.3)}`,
+          backdropFilter: "blur(50px)",
+          WebkitBackdropFilter: "blur(50px)",
+        }}
+        >
           <div className="absolute bottom-2 left-4 z-10">
             <span className="shadow-black [text-shadow:1px_1px_2px_var(--tw-shadow-color)]"></span>
           </div>
@@ -523,42 +528,37 @@ export default function ShowCaseInfo() {
             </div>
 
             <div
-              className="relative flex min-h-[650px] w-[76%] flex-row items-center gap-3.5 rounded-3xl pl-10"
+              className="relative flex min-h-[650px] w-[76%] flex-row items-center gap-3.5 rounded-3xl pl-10 z-10 transition-all duration-500"
+              style={{
+                backgroundColor: `${applyBrightness(avgColor, 0.5)}`,
+                backdropFilter: "blur(50px)",
+                WebkitBackdropFilter: "blur(50px)",
+              }}
             >
-              <div
-                className="absolute inset-0 rounded-3xl transition-all duration-500 z-0"
-                style={{
-                  backgroundColor: `${avgColor}80`,
-                  backdropFilter: "blur(50px)",
-                  WebkitBackdropFilter: "blur(50px)",
-                  filter: "brightness(50%)",
-                }}
-              />
-              <div className="absolute top-4 left-4 z-10">
+
+              <div className="absolute top-4 left-4">
                 {avatarSelected && avatarInfo && avatarData?.data && typeof avatarData?.data?.rank === "number" && (
                   <div className="flex flex-col">
                     {avatarInfo?.RankIcon.map((src, index) => {
                       const isActive = avatarData?.data?.rank > index;
 
                       return (
-                        <div key={index} className="relative my-2 flex rounded-full">
-                          {isActive && (
-                            <div className="absolute inset-0">
-                              <div className="w-full h-full rounded-full shadow-lg shadow-yellow-400/50">
-
-                              </div>
-                            </div>
-                          )}
+                        <div key={index} className="relative my-1 flex rounded-full">
                           <NextImage
                             src={src}
                             alt="Rank Icon"
                             width={50}
                             height={50}
-                            className={`h-auto w-10 transition-all duration-300 ease-in-out
-                                ${isActive
-                                ? 'opacity-100 grayscale-0 brightness-110 drop-shadow-[0_0_8px_rgba(255,215,0,0.5)] scale-105'
-                                : 'opacity-50 grayscale brightness-75'
-                              }`}
+                            className="h-auto w-12 transition-all duration-300 ease-in-out p-[1px] rounded-full"
+                            style={{
+                              opacity: isActive ? 1 : 0.6,
+                              filter: isActive
+                                ? 'grayscale(0) drop-shadow(0 0 8px rgba(255,215,0,0.5))'
+                                : 'grayscale(1)',
+                              border: '2px solid',
+                              borderColor: isActive ? '#facc15' : '#ffffff', // tailwind yellow-400 = #facc15
+                              boxShadow: isActive ? '0 0 10px rgba(250,204,21,0.5)' : undefined, // mimic shadow-yellow-400/50
+                            }}
                           />
                         </div>
                       );
@@ -568,7 +568,7 @@ export default function ShowCaseInfo() {
 
               </div>
 
-              <div className="flex h-[650px] w-1/3 flex-col justify-between py-3 pl-8 z-10">
+              <div className="flex h-[650px] w-1/3 flex-col justify-between py-3 pl-8">
                 <div className="flex h-full flex-col justify-between">
                   <div>
                     <div className="flex flex-row items-center justify-between">
