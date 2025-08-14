@@ -79,16 +79,18 @@ export default function EnkaImport() {
                     avatar_id: character.avatarId,
                     rank: character.rank ?? 0,
                     level: character.level,
-                    lightcone: {
+                    lightcone: (character.equipment && character.equipment.tid) ? {
                         level: character.equipment?.level ?? 0,
                         rank: character.equipment?.rank ?? 0,
                         item_id: character.equipment?.tid ?? 0,
-                    },
-                    relics: character.relicList.map((relic) => ({
-                        level: relic.level,
-                        relic_id: relic.tid,
-                        relic_set_id: parseInt(relic.tid.toString().slice(1, -1), 10),
-                    })),
+                    } : null,
+                    relics: character.relicList.map((relic) => {
+                        return {
+                            level: relic.level,
+                            relic_id: relic.tid,
+                            relic_set_id: parseInt(relic.tid.toString().slice(1, -1), 10),
+                        }
+                    }),
                 } as CharacterInfoCardType
             }));
         }

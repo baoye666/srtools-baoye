@@ -45,12 +45,12 @@ export function converterOneEnkaDataToAvatarStore(data: AvatarEnkaDetail, count:
     if (!data.equipment && (!data.relicList || data.relicList.length === 0)) return null
     const profile: AvatarProfileStore = {
         profile_name: `Enka Profile ${count}`,
-        lightcone: {
+        lightcone:  (data.equipment && data.equipment.tid) ? {
             level: data.equipment?.level ?? 0,
             item_id: data.equipment?.tid ?? 0,
             rank: data.equipment?.rank ?? 0,
             promotion: data.equipment?.promotion ?? 0,
-        },
+        } : null,
         relics: Object.fromEntries(data.relicList.map((relic) => [relic.tid.toString()[relic.tid.toString().length - 1], {
             level: relic.level ?? 0,
             relic_id: relic.tid,
@@ -89,12 +89,12 @@ export function converterOneFreeSRDataToAvatarStore(data: FreeSRJson, count: num
 
     const profile: AvatarProfileStore = {
         profile_name: `FreeSR Profile ${count}`,
-        lightcone: {
+        lightcone: (lightcone && lightcone.item_id) ? {
             level: lightcone?.level ?? 0,
             item_id: lightcone?.item_id ?? 0,
             rank: lightcone?.rank ?? 0,
             promotion: lightcone?.promotion ?? 0,
-        },
+        } : null,
         relics: relicsMap
     }
     return profile
