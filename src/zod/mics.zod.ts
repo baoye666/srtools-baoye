@@ -34,7 +34,7 @@ export const avatarProfileStoreSchema = z.object({
 });
 
 export const avatarStoreSchema = z.object({
-  owner_uid: z.number(),
+  owner_uid: z.number().optional(),
   avatar_id: z.number(),
   data: avatarDataStoreSchema,
   level: z.number(),

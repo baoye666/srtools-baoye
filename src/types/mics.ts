@@ -29,7 +29,7 @@ export type AvatarProfileStore = {
 }
 
 export type AvatarStore = {
-    owner_uid: number;
+    owner_uid?: number;
     avatar_id: number;
     data: AvatarDataStore;
     level: number;
