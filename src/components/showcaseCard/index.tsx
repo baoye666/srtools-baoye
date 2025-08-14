@@ -144,16 +144,16 @@ export default function ShowCaseInfo() {
       return {
         img: `https://api.hakush.in/hsr/UI/relicfigures/IconRelic_${value.relic_set_id}_${key}.webp`,
         mainAffix: {
-          property: mainAffixMap?.[value.main_affix_id]?.property,
-          level: value.level,
-          valueAffix: calcMainAffixBonus(mainAffixMap?.[value.main_affix_id], value.level),
-          detail: mappingStats[mainAffixMap?.[value.main_affix_id].property]
+          property: mainAffixMap?.[value?.main_affix_id]?.property,
+          level: value?.level,
+          valueAffix: calcMainAffixBonus(mainAffixMap?.[value?.main_affix_id], value?.level),
+          detail: mappingStats?.[mainAffixMap?.[value?.main_affix_id]?.property]
         },
-        subAffix: value?.sub_affixes.map((subValue) => {
+        subAffix: value?.sub_affixes?.map((subValue) => {
           return {
-            property: subAffixMap?.[subValue.sub_affix_id]?.property,
-            valueAffix: calcAffixBonus(subAffixMap?.[subValue.sub_affix_id], subValue.step, subValue.count),
-            detail: mappingStats[subAffixMap?.[subValue.sub_affix_id].property]
+            property: subAffixMap?.[subValue?.sub_affix_id]?.property,
+            valueAffix: calcAffixBonus(subAffixMap?.[subValue?.sub_affix_id], subValue?.step, subValue?.count),
+            detail: mappingStats?.[subAffixMap?.[subValue?.sub_affix_id]?.property]
           }
         })
       }
@@ -899,7 +899,13 @@ export default function ShowCaseInfo() {
                             return (
                               <div key={index} className="flex flex-col">
                                 <div className="flex flex-row items-center">
-                                  <NextImage src={subAffix?.detail?.icon || ""} width={36} height={36} alt="Sub Affix Icon" className="h-auto w-9" />
+                                  {subAffix?.detail?.icon ? (
+                                    <NextImage src={subAffix?.detail?.icon || ""} width={36} height={36} alt="Sub Affix Icon" className="h-auto w-9" />
+                                  ) : (
+                                    <div className="h-9 w-9 bg-black/50 rounded flex items-center justify-center">
+                                      <span className="text-xs text-white">?</span>
+                                    </div>
+                                  )}
                                   <span className="text-sm">+{subAffix?.valueAffix + subAffix?.detail?.unit}</span>
                                 </div>
                               </div>
