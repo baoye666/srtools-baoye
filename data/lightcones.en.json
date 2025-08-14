@@ -239,7 +239,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20001": {
     "Name": "Cornucopia",
@@ -476,7 +477,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20002": {
     "Name": "Collapsing Sky",
@@ -713,7 +715,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20003": {
     "Name": "Amber",
@@ -960,7 +963,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "20004": {
     "Name": "Void",
@@ -1202,7 +1237,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20005": {
     "Name": "Chorus",
@@ -1439,7 +1475,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20006": {
     "Name": "Data Bank",
@@ -1676,7 +1713,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20007": {
     "Name": "Darting Arrow",
@@ -1918,7 +1956,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20008": {
     "Name": "Fine Fruit",
@@ -2155,7 +2194,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20009": {
     "Name": "Shattered Home",
@@ -2397,7 +2437,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20010": {
     "Name": "Defense",
@@ -2634,7 +2675,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20011": {
     "Name": "Loop",
@@ -2871,7 +2913,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20012": {
     "Name": "Meshing Cogs",
@@ -3108,7 +3151,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20013": {
     "Name": "Passkey",
@@ -3345,7 +3389,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20014": {
     "Name": "Adversarial",
@@ -3587,7 +3632,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20015": {
     "Name": "Multiplication",
@@ -3824,7 +3870,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20016": {
     "Name": "Mutual Demise",
@@ -4066,7 +4113,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20017": {
     "Name": "Pioneering",
@@ -4303,7 +4351,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20018": {
     "Name": "Hidden Shadow",
@@ -4540,7 +4589,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20019": {
     "Name": "Mediation",
@@ -4782,7 +4832,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20020": {
     "Name": "Sagacity",
@@ -5024,7 +5075,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20021": {
     "Name": "Shadowburn",
@@ -5266,7 +5318,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20022": {
     "Name": "Reminiscence",
@@ -5508,7 +5561,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21000": {
     "Name": "Post-Op Conversation",
@@ -5750,7 +5804,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "2": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "3": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "4": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.1599999964237213
+        }
+      ]
+    }
   },
   "21001": {
     "Name": "Good Night and Sleep Well",
@@ -5992,7 +6078,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21002": {
     "Name": "Day One of My New Life",
@@ -6234,7 +6321,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2199999988079071
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21003": {
     "Name": "Only Silence Remains",
@@ -6476,7 +6595,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21004": {
     "Name": "Memories of the Past",
@@ -6718,7 +6869,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4900000095367432
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.5600000023841858
+        }
+      ]
+    }
   },
   "21005": {
     "Name": "The Moles Welcome You",
@@ -6955,7 +7138,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21006": {
     "Name": "The Birth of the Self",
@@ -7202,7 +7386,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21007": {
     "Name": "Shared Feeling",
@@ -7444,7 +7629,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "1": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.125
+        }
+      ],
+      "2": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "3": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.17499999701976776
+        }
+      ],
+      "4": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21008": {
     "Name": "Eyes of the Prey",
@@ -7686,7 +7903,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "21009": {
     "Name": "Landau's Choice",
@@ -7928,7 +8177,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21010": {
     "Name": "Swordplay",
@@ -8170,7 +8420,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21011": {
     "Name": "Planetary Rendezvous",
@@ -8407,7 +8658,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21012": {
     "Name": "A Secret Vow",
@@ -8649,7 +8901,39 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "21013": {
     "Name": "Make the World Clamor",
@@ -8891,7 +9175,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21014": {
     "Name": "Perfect Timing",
@@ -9138,7 +9423,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21015": {
     "Name": "Resolution Shines As Pearls of Sweat",
@@ -9385,7 +9702,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21016": {
     "Name": "Trend of the Universal Market",
@@ -9637,7 +9955,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21017": {
     "Name": "Subscribe for More!",
@@ -9879,7 +10229,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21018": {
     "Name": "Dance! Dance! Dance!",
@@ -10116,7 +10467,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21019": {
     "Name": "Under the Blue Sky",
@@ -10363,7 +10715,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21020": {
     "Name": "Geniuses' Repose",
@@ -10610,7 +10994,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21021": {
     "Name": "Quid Pro Quo",
@@ -10852,7 +11268,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21022": {
     "Name": "Fermata",
@@ -11094,7 +11511,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21023": {
     "Name": "We Are Wildfire",
@@ -11341,7 +11790,8 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21024": {
     "Name": "River Flows in Spring",
@@ -11583,7 +12033,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21025": {
     "Name": "Past and Future",
@@ -11825,7 +12276,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21026": {
     "Name": "Woof! Walk Time!",
@@ -12067,7 +12519,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.125
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.15000000596046448
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.17499999701976776
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21027": {
     "Name": "The Seriousness of Breakfast",
@@ -12314,7 +12798,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21028": {
     "Name": "Warmth Shortens Cold Nights",
@@ -12556,7 +13072,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21029": {
     "Name": "We Will Meet Again",
@@ -12793,7 +13341,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21030": {
     "Name": "This Is Me!",
@@ -13035,7 +13584,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21031": {
     "Name": "Return to Darkness",
@@ -13277,7 +13858,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21032": {
     "Name": "Carve the Moon, Weave the Clouds",
@@ -13524,7 +14137,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21033": {
     "Name": "Nowhere to Run",
@@ -13766,7 +14380,39 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.36000001430511475
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.41999998688697815
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.47999998927116394
+        }
+      ]
+    }
   },
   "21034": {
     "Name": "Today Is Another Peaceful Day",
@@ -14008,7 +14654,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21035": {
     "Name": "What Is Real?",
@@ -14255,7 +14902,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.47999998927116394
+        }
+      ]
+    }
   },
   "21036": {
     "Name": "Dreamville Adventure",
@@ -14492,7 +15171,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21037": {
     "Name": "Final Victor",
@@ -14739,7 +15419,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21038": {
     "Name": "Flames Afar",
@@ -14996,7 +15708,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21039": {
     "Name": "Destiny's Threads Forewoven",
@@ -15248,7 +15961,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21040": {
     "Name": "The Day The Cosmos Fell",
@@ -15495,7 +16240,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2199999988079071
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21041": {
     "Name": "It's Showtime",
@@ -15752,7 +16529,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21042": {
     "Name": "Indelible Promise",
@@ -15999,7 +16777,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4900000095367432
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.5600000023841858
+        }
+      ]
+    }
   },
   "21043": {
     "Name": "Concert for Two",
@@ -16241,7 +17051,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21044": {
     "Name": "Boundless Choreo",
@@ -16483,7 +17325,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ]
+    }
   },
   "21045": {
     "Name": "After the Charmony Fall",
@@ -16730,7 +17604,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4900000095367432
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.5600000023841858
+        }
+      ]
+    }
   },
   "21046": {
     "Name": "Poised to Bloom",
@@ -16972,7 +17878,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21047": {
     "Name": "Shadowed by Night",
@@ -17219,7 +18157,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4900000095367432
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.5600000023841858
+        }
+      ]
+    }
   },
   "21048": {
     "Name": "Dream's Montage",
@@ -17466,7 +18436,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.09000000357627869
+        }
+      ],
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "3": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.10999999940395357
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
+    }
   },
   "21050": {
     "Name": "Victory In a Blink",
@@ -17713,7 +18715,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21051": {
     "Name": "Geniuses' Greetings",
@@ -17960,7 +18994,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21052": {
     "Name": "Sweat Now, Cry Less",
@@ -18202,7 +19268,39 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21053": {
     "Name": "Journey, Forever Peaceful",
@@ -18444,7 +19542,8 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21054": {
     "Name": "The Story's Next Page",
@@ -18691,11 +19790,43 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21055": {
     "Name": "Unto Tomorrow's Morrow",
-    "Desc": "<i>\"See you tomorrow, Tribios...\"</i>\\n\\nThe girl wiped the tears on her cheeks when her mother went somewhere far, far away.\\n\\nShe waited one tomorrow after another, till she grew up to be someone like her mother.\\nShe stands before the passage and grasps the Coreflame tight as she recalled her mother's words.\\n\\n<i>\"There are no blizzards, colds, or rain at that place...\"</i>\\n\\n<i>\"But if we don't see that place tomorrow, then...\"</i>\\n\\nShe falls towards the earth, leaving her young figure behind, like a shooting star across the sky —\\n\\n<i>\"Then we'll see it the day after tomorrow!\"</i>",
+    "Desc": "<i>\"See you tomorrow, Tribios...\"</i>\\n\\nThe girl wiped the tears on her cheeks when her mother went somewhere far, far away.\\n\\nShe waited one tomorrow after another, till she grew up to be someone like her mother.\\nShe stands before the passage and grasps the Coreflame tight as she recalled her mother's words.\\n\\n<i>\"There are no blizzards, colds, or rain at that place...\"</i>\\n\\n<i>\"But if we can't see you tomorrow, then...\"</i>\\n\\nShe falls towards the earth, leaving her young figure behind, like a shooting star across the sky —\\n\\n<i>\"Then, see you on tomorrow's morrow!\"</i>",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Priest",
     "Refinements": {
@@ -18938,7 +20069,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21056": {
     "Name": "In Pursuit of the Wind",
@@ -18947,7 +20110,7 @@
     "BaseType": "Shaman",
     "Refinements": {
       "Name": "Flustered",
-      "Desc": "After entering battle, increases all allies' Break DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Abilities of the same type cannot stack.",
+      "Desc": "After entering combat, increases all allies' Break DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Abilities of the same type cannot stack.",
       "Level": {
         "1": {
           "ParamList": [
@@ -19175,7 +20338,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21057": {
     "Name": "The Flower Remembers",
@@ -19417,11 +20581,43 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "21058": {
     "Name": "A Trail of Bygone Blood",
-    "Desc": "A storm broods in the distance. Tentacles extend from the Sea of Souls, as if intending to toy with that floating, fragile life.\\nThe broken limbs of the sea beast hammer giant sprays skyward, and sink into the oceanic abyss after shattering like rubble.\\n\\nThey say that the roar of the fight lasted for ten days and nights, overwhelming even the thunder and lightning.\\nThey say that even if a man had ten thousand lives, he would not be enough to resist the Sea of Souls's erosion.\\n\\nThen, courage washes away the immaturity and cold pride tempered timidity —\\n\\nAnd that thin figure stumbled onto the shore. The first ray of the morning sun shines down upon the sea's waters, dyeing it red like past blood.",
+    "Desc": "A storm broods in the distance. Tentacles extend from the Sea of Souls, as if intending to toy with that floating, fragile life.\\nThe broken limbs of the sea beast hammer giant sprays skyward, and sink into the oceanic abyss after shattering like rubble.\\n\\nThey say that the roar of the fight lasted for ten days and nights, overwhelming even the thunder and lightning.\\nThey say that even if a man had ten thousand lives, he would not be enough to resist the Sea of Souls's erosion.\\n\\nThen, courage washes away the immaturity and cold pride tempered timidity —\\n\\nAnd that thin figure stumbled onto the shore. The first ray of the morning sun shines down upon the sea's waters, dyeing it like past blood.",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Warrior",
     "Refinements": {
@@ -19659,7 +20855,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21060": {
     "Name": "A Dream Scented in Wheat",
@@ -19901,16 +21129,48 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21061": {
     "Name": "Holiday Thermae Escapade",
-    "Desc": "<i>\"Cinny, let's go try out that new special bath that recently opened.\"</i>\\n\\nAfter finishing her medical duties in Okhema, the girl followed the curious child into the eclectic set of pools.\\n\\n<i>\"How about a Tomato Juice Massage?\"</i>\\nStaring at the attendant’s crimson-stained hands, she hugged the eager Little Ica and retreated—\\n<i>\"I prefer something... drinkable....\"</i>\\n\\n<i>\"Dromas back massage, limited-time discount!\"</i>\\nA curious dromas lowered its head, its hot breath tousling her hair.\\n<i>\"N—Next time, maybe!\"</i>\\n\\n<i>\"Herbal Bath — strengthens body and soul! How many in your party?\"</i>\\nLured by the fragrant herbs, she tentatively dipped a foot into the pool.\\n<i>\"This... seems healthy...\"</i>\\n\\n<i>\"Doot, doot-doot!\"</i>\\nLittle Ica floated blissfully on its back.\\n<i>\"Guess even you needed a break from all we've been doing recently...\"</i>\\n\\nOn this rare day off, sipping grape juice, the girl chatted with the red-haired child about everything from sleep tips to pastry recipes.\\n\\n<i>\"Oh no—Little Ica!\"</i>\\nThe child's shriek shattered the bathhouse's calm.\\n\\n<i>\"Doot...\"\\n\"Hold on, Little Ica!\"</i>",
+    "Desc": "<i>\"Cinny, let's go try out that new special bath that recently opened.\"</i>\\n\\nAfter finishing her medical duties in Okhema, the girl followed the curious child into the eclectic set of pools.\\n\\n<i>\"How about a Tomato Juice Massage?\"</i>\\nStaring at the attendant's crimson-stained hands, she hugged the eager Little Ica and retreated—\\n<i>\"I prefer something... drinkable....\"</i>\\n\\n<i>\"Dromas back massage, limited-time discount!\"</i>\\nA curious dromas lowered its head, its hot breath tousling her hair.\\n<i>\"N—Next time, maybe!\"</i>\\n\\n<i>\"Herbal Bath — strengthens body and soul! How many in your party?\"</i>\\nLured by the fragrant herbs, she tentatively dipped a foot into the pool.\\n<i>\"This... seems healthy...\"</i>\\n\\n<i>\"Doot, doot-doot!\"</i>\\nLittle Ica floated blissfully on its back.\\n<i>\"Guess even you needed a break from all we've been doing recently...\"</i>\\n\\nOn this rare day off, sipping grape juice, the girl chatted with the red-haired child about everything from sleep tips to pastry recipes.\\n\\n<i>\"Oh no—Little Ica!\"</i>\\nThe child's shriek shattered the bathhouse's calm.\\n\\n<i>\"Doot...\"\\n\"Hold on, Little Ica!\"</i>",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Warlock",
     "Refinements": {
       "Name": "Chill Out",
-      "Desc": "Increases the wearer's DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After the wearer attacks, there is a <unbreak>#2[i]%</unbreak> base chance that the attacked target is inflicted with Vulnerability, increasing the DMG they receive by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> for <unbreak>#4[i]</unbreak> turn(s). The same effect type cannot be stacked.",
+      "Desc": "Increases the wearer's DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After the wearer attacks, there is a <unbreak>#2[i]%</unbreak> base chance to inflict the attacked target with Vulnerability, increasing the DMG they receive by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> for <unbreak>#4[i]</unbreak> turn(s). Effects of the same type cannot stack.",
       "Level": {
         "1": {
           "ParamList": [
@@ -20153,11 +21413,43 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21062": {
     "Name": "See You at the End",
-    "Desc": "Unwilling tears trailed down his cheeks. At the heart of the shattered ritual array lingered not just death’s shadow, but an abyss of silence and emptiness.\\n\\nThen, a sigh trembled through the darkness — a ripple from the \"soul's\" deepest recesses.\\n<i>\"Is that you... Sister...\"</i>\\nThe boy lifted his hand, a weak light flickering in his eyes. The silhouette of his loved one lingered but a breath, yet its imprint etched a millennium into his heart.\\n\\n<i>\"I see... Thank you... for this final farewell.\"</i>\\nHe rose slowly. Dawn's first rays caressed his resolute face, still streaked with tears.\\n\\n<i>\"The path of seeking is a solitary one... Let us meet again at the journey's end.\"</i>",
+    "Desc": "Unwilling tears trailed down his cheeks. At the heart of the shattered ritual array lingered not just death's shadow, but an abyss of silence and emptiness.\\n\\nThen, a sigh trembled through the darkness — a ripple from the \"soul's\" deepest recesses.\\n<i>\"Is that you... Sister...\"</i>\\nThe boy lifted his hand, a weak light flickering in his eyes. The silhouette of his loved one lingered but a breath, yet its imprint etched a millennium into his heart.\\n\\n<i>\"I see... Thank you... for this final farewell.\"</i>\\nHe rose slowly. Dawn's first rays caressed his resolute face, still streaked with tears.\\n\\n<i>\"The path of seeking is a solitary one... Let us meet again at the journey's end.\"</i>",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Rogue",
     "Refinements": {
@@ -20395,7 +21687,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "22000": {
     "Name": "Before the Tutorial Mission Starts",
@@ -20637,7 +21961,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "22001": {
     "Name": "Hey, Over Here",
@@ -20884,7 +22240,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.09000000357627869
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.10999999940395357
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
+    }
   },
   "22002": {
     "Name": "For Tomorrow's Journey",
@@ -21131,7 +22519,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "22003": {
     "Name": "Ninja Record: Sound Hunt",
@@ -21378,7 +22798,39 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "22004": {
     "Name": "The Great Cosmic Enterprise",
@@ -21620,16 +23072,48 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.14000000059604645
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ]
+    }
   },
   "22005": {
-    "Name": "Maze Restaurant Forever",
-    "Desc": "*BOOM*—\\nOutside the Maze, a storm rages endlessly.\\n*gurgle*—\\nThe fairies' magical cauldron burns with an eternal flame.\\n\\n<i>\"Sprinkle in the special spices...\"</i>\\n<i>\"Add some fresh vegetables!\"</i>\\n<i>\"This time, we'll succeed for sure!\"</i>\\n\\nThe huge cauldron bubbled up again as the fairies watched eagerly.\\n<i>\"Here it comes, here it comes!\"</i>\\nA brilliant light burst forth from the bottom of the pot—\\n\\nLook, everyone's gathering around!\\n\\n...\\n\\nAt the fragrant feast, guests raised their glasses to toast to these wonderful times—\\n\\nMay this dreamy paradise stay warm and joyful forever!",
+    "Name": "The Forever Victual",
+    "Desc": "*BOOM*...\\nOutside the Maze, a storm rages endlessly.\\n*gurgle*...\\nThe fairies' magical cauldron burns with an eternal flame.\\n\\n<i>\"Sprinkle in the special spices...\"</i>\\n<i>\"Add some fresh vegetables!\"</i>\\n<i>\"This time, we'll succeed for sure!\"</i>\\n\\nThe huge cauldron bubbled up again as the fairies watched eagerly.\\n<i>\"Here it comes, here it comes!\"</i>\\nA brilliant light burst forth from the bottom of the pot...\\n\\nLook, everyone's gathering around!\\n\\n...\\n\\nAt the fragrant feast, guests raised their glasses to toast to these wonderful times...\\n\\nMay this dreamy paradise stay warm and joyful forever!",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Shaman",
     "Refinements": {
       "Name": "So good!",
-      "Desc": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After using their Skill, the wearer's ATK increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, stacking up to <unbreak>#3[i]</unbreak> times.",
+      "Desc": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After the wearer uses Skill, increases ATK by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, stacking up to <unbreak>#3[i]</unbreak> times.",
       "Level": {
         "1": {
           "ParamList": [
@@ -21867,7 +23351,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "23000": {
     "Name": "Night on the Milky Way",
@@ -22109,7 +23625,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23001": {
     "Name": "In the Night",
@@ -22366,7 +23883,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23002": {
     "Name": "Something Irreplaceable",
@@ -22613,7 +24162,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23003": {
     "Name": "But the Battle Isn't Over",
@@ -22860,7 +24441,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "1": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "2": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "3": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "4": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.18000000715255737
+        }
+      ]
+    }
   },
   "23004": {
     "Name": "In the Name of the World",
@@ -23107,7 +24720,8 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23005": {
     "Name": "Moment of Victory",
@@ -23359,7 +24973,59 @@
         "BaseDefence": 275.40000000037253,
         "BaseDefenceAdd": 4.050000000046566
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.36000001430511475
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.4000000059604645
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23006": {
     "Name": "Patience Is All You Need",
@@ -23616,7 +25282,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23007": {
     "Name": "Incessant Rain",
@@ -23873,7 +25571,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23008": {
     "Name": "Echoes of the Coffin",
@@ -24125,7 +25855,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23009": {
     "Name": "The Unreachable Side",
@@ -24372,7 +26134,59 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.27000001072883606
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.30000001192092896
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23010": {
     "Name": "Before Dawn",
@@ -24619,7 +26433,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23011": {
     "Name": "She Already Shut Her Eyes",
@@ -24876,7 +26722,59 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.2800000011920929
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.3199999928474426
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.36000001430511475
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.4000000059604645
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "23012": {
     "Name": "Sleep Like the Dead",
@@ -25128,7 +27026,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.4000000059604645
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.44999998807907104
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5
+        }
+      ]
+    }
   },
   "23013": {
     "Name": "Time Waits for No One",
@@ -25375,7 +27305,59 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.18000000715255737
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20999999344348907
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.27000001072883606
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "23014": {
     "Name": "I Shall Be My Own Sword",
@@ -25627,7 +27609,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.2300000041723251
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.25999999046325684
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.28999999165534973
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "23015": {
     "Name": "Brighter Than the Sun",
@@ -25884,7 +27898,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23016": {
     "Name": "Worrisome, Blissful",
@@ -26136,7 +28182,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23017": {
     "Name": "Night of Fright",
@@ -26393,7 +28471,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "23018": {
     "Name": "An Instant Before A Gaze",
@@ -26640,7 +28750,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23019": {
     "Name": "Past Self in Mirror",
@@ -26897,7 +29039,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23020": {
     "Name": "Baptism of Pure Thought",
@@ -27159,7 +29333,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.2300000041723251
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.25999999046325684
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.28999999165534973
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "23021": {
     "Name": "Earthly Escapade",
@@ -27421,7 +29627,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.38999998569488525
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.4600000083446502
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5299999713897705
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23022": {
     "Name": "Reforged Remembrance",
@@ -27673,7 +29911,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.44999998807907104
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.5
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.550000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23023": {
     "Name": "Inherently Unjust Destiny",
@@ -27935,7 +30205,39 @@
         "BaseDefence": 306,
         "BaseDefenceAdd": 4.500000000465661
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.4600000083446502
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.5199999809265137
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.5799999833106995
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.6399999856948853
+        }
+      ]
+    }
   },
   "23024": {
     "Name": "Along the Passing Shore",
@@ -28182,7 +30484,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23025": {
     "Name": "Whereabouts Should Dreams Rest",
@@ -28434,7 +30768,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23026": {
     "Name": "Flowing Nightglow",
@@ -28691,7 +31057,8 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23027": {
     "Name": "Sailing Towards a Second Life",
@@ -28943,7 +31310,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23028": {
     "Name": "Yet Hope Is Priceless",
@@ -29210,7 +31609,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1899999976158142
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.2199999988079071
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.25
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.2800000011920929
+        }
+      ]
+    }
   },
   "23029": {
     "Name": "Those Many Springs",
@@ -29472,7 +31903,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23030": {
     "Name": "Dance at Sunset",
@@ -29724,7 +32187,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23031": {
     "Name": "I Venture Forth to Hunt",
@@ -29971,7 +32466,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.17499999701976776
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.22499999403953552
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.25
+        }
+      ]
+    }
   },
   "23032": {
     "Name": "Scent Alone Stays True",
@@ -30228,7 +32755,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23033": {
     "Name": "Ninjutsu Inscription: Dazzling Evilbreaker",
@@ -30475,7 +33034,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23034": {
     "Name": "A Grounded Ascent",
@@ -30732,7 +33323,8 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23035": {
     "Name": "Long Road Leads Home",
@@ -30989,7 +33581,39 @@
         "BaseDefence": 306,
         "BaseDefenceAdd": 4.500000000465661
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23036": {
     "Name": "Time Woven Into Gold",
@@ -31241,7 +33865,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BaseSpeed",
+          "value": 12
+        }
+      ],
+      "1": [
+        {
+          "type": "BaseSpeed",
+          "value": 14
+        }
+      ],
+      "2": [
+        {
+          "type": "BaseSpeed",
+          "value": 16
+        }
+      ],
+      "3": [
+        {
+          "type": "BaseSpeed",
+          "value": 18
+        }
+      ],
+      "4": [
+        {
+          "type": "BaseSpeed",
+          "value": 20
+        }
+      ]
+    }
   },
   "23037": {
     "Name": "Into the Unreachable Veil",
@@ -31498,7 +34154,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "23038": {
     "Name": "If Time Were a Flower",
@@ -31760,7 +34448,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23039": {
     "Name": "Flame of Blood, Blaze My Path",
@@ -32022,7 +34742,59 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.18000000715255737
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20999999344348907
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.27000001072883606
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23040": {
     "Name": "Make Farewells More Beautiful",
@@ -32274,7 +35046,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.375
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.44999998807907104
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.5249999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23041": {
     "Name": "Life Should Be Cast to Flames",
@@ -32531,7 +35335,8 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23042": {
     "Name": "Long May Rainbows Adorn the Sky",
@@ -32793,7 +35598,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23043": {
     "Name": "Lies Dance on the Breeze",
@@ -33060,7 +35897,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23044": {
     "Name": "Thus Burns the Dawn",
@@ -33069,7 +35938,7 @@
     "BaseType": "Warrior",
     "Refinements": {
       "Name": "Dispossession",
-      "Desc": "The wearer's base SPD increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>. When the wearer deals DMG, ignores <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the target's DEF. After the wearer uses Ultimate, obtains \"Blazing Sun,\" which is removed at the start of their turn. While \"Blazing Sun\" is in possession, increases the wearer's DMG dealt by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+      "Desc": "The wearer's base SPD increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>. When dealing DMG, ignores <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the target's DEF. After the wearer uses Ultimate, gains \"Blazing Sun,\" which is removed at the start of the turn. While holding \"Blazing Sun,\" increases the wearer's DMG dealt by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
       "Level": {
         "1": {
           "ParamList": [
@@ -33307,7 +36176,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BaseSpeed",
+          "value": 12
+        }
+      ],
+      "1": [
+        {
+          "type": "BaseSpeed",
+          "value": 14
+        }
+      ],
+      "2": [
+        {
+          "type": "BaseSpeed",
+          "value": 16
+        }
+      ],
+      "3": [
+        {
+          "type": "BaseSpeed",
+          "value": 18
+        }
+      ],
+      "4": [
+        {
+          "type": "BaseSpeed",
+          "value": 20
+        }
+      ]
+    }
   },
   "23045": {
     "Name": "A Thankless Coronation",
@@ -33569,7 +36470,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.44999998807907104
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6299999952316284
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.7200000286102295
+        }
+      ]
+    }
   },
   "23046": {
     "Name": "The Hell Where Ideals Burn",
@@ -33578,7 +36511,7 @@
     "BaseType": "Rogue",
     "Refinements": {
       "Name": "Hrunting",
-      "Desc": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When entering battle and if the allies' Skill Points max limit is <unbreak>#2[i]</unbreak> or higher, increases the wearer's ATK by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>. After the wearer uses a Skill, increases their ATK by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, stacking up to <unbreak>#5[i]</unbreak> time(s).",
+      "Desc": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When entering combat, if the allies' Skill Points limit is <unbreak>#2[i]</unbreak> or higher, increases the wearer's ATK by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>. After each use of the wearer's Skill, increases the wearer's ATK by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, stacking up to <unbreak>#5[i]</unbreak> time(s).",
       "Level": {
         "1": {
           "ParamList": [
@@ -33826,16 +36759,48 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "23047": {
     "Name": "Why Does the Ocean Sing",
-    "Desc": "Waves surge forth, their roar echoing across the heavens.\\nFish swim through the empty seas, where ancient foam churns and that melody seems to still linger.\\n\\n<i>\"Noble Princess, feast with us!\"</i>\\nAnswering the deep sea's call, she danced with the black tide until she alone remained on that grand stage.\\n<i>\"Swordmaster of the seas, why do you stay silent, what makes you sing?\"</i>\\nWith every step upon the Earth, she endured the pain, rarely singing, only her crimson blade sang the lament of life.\\n\\n<i>\"Dux Gladiorum, come with me to conquer the starry seas!\"</i>\\nWhen she found this blazing light, she finally took up her bow, believing it to be the start of the celebration.\\n\\n...\\n\\n<i>\"Helektra... Helektra... when your song ends, where will you swim to next?\"</i>\\n\\nWhen futile hopes shatter, she always answers their questions with a solitary melody, yet it enchants all who hear it—\\n\\nOr perhaps... whether in the mortal realm or the deep sea, the only true listener is the performer herself.",
+    "Desc": "Waves surge forth, their roar echoing across the heavens.\\nFish swim through the empty seas, where ancient foam churns and that melody seems to still linger.\\n\\n<i>\"Noble Princess, feast with us!\"</i>\\nAnswering the deep sea's call, she danced with the black tide until she alone remained on that grand stage.\\n\\n<i>\"Swordmaster of the seas, why do you stay silent, what makes you sing?\"</i>\\nWith every step upon the Earth, she endured the pain, rarely singing, only her crimson blade sang the lament of life.\\n\\n<i>\"Dux Gladiorum, come with me to conquer the starry seas!\"</i>\\nWhen she found this blazing light, she finally took up her bow, believing it to be the start of the celebration.\\n\\n...\\n\\n<i>\"Helektra... Helektra... when your song ends, where will you swim to next?\"</i>\\n\\nWhen futile hopes shatter, she always answers their questions with a solitary melody, yet it enchants all who hear it.\\n\\nOr perhaps... whether in the mortal realm or the deep sea, the only true listener is the performer herself.",
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Warlock",
     "Refinements": {
       "Name": "Solo",
-      "Desc": "Increases the wearer's Effect Hit Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer hits an enemy target with Basic ATK, Skill, or Ultimate, has a <unbreak>#2[i]%</unbreak> base chance to inflict \"Enthrallment\" state for <unbreak>#3[i]</unbreak> turn(s). Effects of the same type cannot stack. While in \"Enthrallment\" state, each debuff applied by the wearer increases DoT taken by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>, stacking up to <unbreak>#5[i]</unbreak> time(s). When attacked by an ally target, increases the attacker's SPD by <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> for <unbreak>#7[i]</unbreak> turn(s).",
+      "Desc": "Increases the wearer's Effect Hit Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When an enemy target gets inflicted with a debuff by the wearer, there is a <unbreak>#2[i]%</unbreak> base chance for them to enter \"Enthrallment,\" lasting for <unbreak>#3[i]</unbreak> turn(s). Effects of the same type cannot stack. While the target is in \"Enthrallment,\" for every 1 debuff applied by the wearer on the target, increases the target's received DoT by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>, stacking up to <unbreak>#5[i]</unbreak> time(s). When the target gets attacked by an ally, increases the attacker's SPD by <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> for <unbreak>#7[i]</unbreak> turn(s). When the wearer gets knocked down, removes all \"Enthrallment.\"",
       "Level": {
         "1": {
           "ParamList": [
@@ -34093,16 +37058,48 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.44999998807907104
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.5
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.550000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23048": {
-    "Name": "Era Engraved By Golden Blood",
-    "Desc": "<i>\"How will history remember Cerydra a thousand years from now?\"</i>\\nShe was once asked.\\n\\nTo some, she was the eminent \"Imperator.\"\\nThat cold and cruel tyrant, that ambitious \"Flamebearer,\" that empress who burned the Old Era with blood and fire...\\n\\nOthers argued she was merely a pitiful \"pawn.\"\\nThis forsaken ruler was but a prisoner of ambition, destined to lose everything in that game of chess against the gods.\\n\\nAnd some said that in the depths of her heart, darker than the ocean's abyss, she was just a mortal named \"Cerydra\"—\\nOne who mourned for fallen comrades, who hesitated and feared before her heavy fate, unable to move forward...\\n\\n<i>\"Heh, There is no need for history to remember me...\"</i>\\n\\nSwallowing the bitterness in her heart, she continued down that path of Flame-Chase paved with sacrifice—\\n\\n<i>\"It is our burning golden blood that shall engrave it!\"</i>",
+    "Name": "Epoch Etched in Golden Blood",
+    "Desc": "<i>\"How will history remember Cerydra a thousand years from now?\"</i>\\nShe was once asked.\\n\\nTo some, she was the eminent \"Imperator.\"\\nThat cold and cruel tyrant, that ambitious \"Flamecrowned,\" that empress who burned the Old Era with blood and fire...\\n\\nOthers argued she was merely a pitiful \"pawn.\"\\nThis forsaken ruler was but a prisoner of ambition, destined to lose everything in that game of chess against the gods.\\n\\nAnd some said that in the depths of her heart, darker than the ocean's abyss, she was just a mortal named \"Cerydra.\"\\nOne who mourned for fallen comrades, who hesitated and feared before her heavy fate, unable to move forward...\\n\\n<i>\"Heh. There is no need for history to remember me...\"</i>\\n\\nSwallowing the bitterness in her heart, she continued down that path of Flame-Chase paved with sacrifice.\\n\\n<i>\"It is our burning golden blood that shall engrave it!\"</i>",
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Shaman",
     "Refinements": {
       "Name": "Conquer",
-      "Desc": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After using Ultimate, recovers <unbreak>#3[i]</unbreak> Skill Point(s). When the wearer uses their Skill on an ally character, increases DMG dealt by target's Skill by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> for <unbreak>#5[i]</unbreak> turn(s).",
+      "Desc": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After using Ultimate to attack, recovers <unbreak>#3[i]</unbreak> Skill Point(s). When the wearer uses their Skill on one ally character, increases the Skill DMG dealt by the target by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> for <unbreak>#5[i]</unbreak> turn(s).",
       "Level": {
         "1": {
           "ParamList": [
@@ -34350,7 +37347,617 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.6399999856948853
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.959999978542328
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 1.1200000047683716
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 1.2799999713897705
+        }
+      ]
+    }
+  },
+  "23049": {
+    "Name": "To Evernight's Stars",
+    "Desc": "In the crevices of time, only her heartbeat echoes.\\nLike many nights before, watching in the darkness and resting in dormancy.\\n\\nShe treasures the memories entrusted to her.\\nThe girl sets forth from a blank starting point, painting each stop she lingered at with vibrant colors. A cozy Express, companions each with their unique personalities, dazzling and magnificent planets... like a dream too beautiful to leave behind.\\n\\n<i>\"My real journey starts now!\"</i>\\nThe girl's declaration seems to whisper right beside her ear.\\n\\nShe gazes toward the distant starry sky, as a beam of light approaches.\\nIt's the Express's headlight, like a shooting star.\\n\\n<i>\"Good night, March... When you awaken, continue on your Trailblaze journey ♭\"</i>\\n\\nAs the memoria tide surges, she buries her wish deep in her heart, those tiny whispers and that light\\n—she has never forgotten.",
+    "Rarity": "CombatPowerLightconeRarity5",
+    "BaseType": "Memory",
+    "Refinements": {
+      "Name": "Sleepless",
+      "Desc": "Increases the wearer's Max HP by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer's memosprite uses an ability, the wearer gains 1 stack of \"Noctis.\" While the wearer has \"Noctis,\" all allies' memosprites ignore <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the target's DEF when dealing DMG. Similar effects cannot stack. For each stack of \"Noctis\" the wearer has, increases the DMG dealt by the wearer and their memosprite by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>. \"Noctis\" can stack up to <unbreak>#4[i]</unbreak> times.",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.3000000002793968,
+            0.20000000018626451,
+            0.12000000011175871,
+            4
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.375,
+            0.2249999998603016,
+            0.14000000013038516,
+            4
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.45000000041909516,
+            0.25000000023283064,
+            0.1600000001490116,
+            4
+          ]
+        },
+        "4": {
+          "ParamList": [
+            0.5250000001396984,
+            0.27499999990686774,
+            0.18000000016763806,
+            4
+          ]
+        },
+        "5": {
+          "ParamList": [
+            0.6000000005587935,
+            0.3000000002793968,
+            0.20000000018626451,
+            4
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 23049,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 5000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115011,
+            "ItemNum": 8,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 52.80000000074506,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 24,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 21,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 10000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110251,
+            "ItemNum": 4,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115011,
+            "ItemNum": 12,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 116.16000000014901,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 52.80000000074506,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 46.200000000186265,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 20000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110252,
+            "ItemNum": 4,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115012,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 200.64000000059605,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 91.20000000018626,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 79.80000000074506,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 50000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110252,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115012,
+            "ItemNum": 12,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 285.12000000011176,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 129.6000000005588,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 113.40000000037253,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 100000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110253,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115013,
+            "ItemNum": 6,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 369.6000000005588,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 168,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 147,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 200000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110253,
+            "ItemNum": 10,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115013,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 454.0800000000745,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 206.40000000037253,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 180.6000000005588,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 538.5600000005215,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 244.80000000074506,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 214.20000000018626,
+        "BaseDefenceAdd": 3.1500000001396984
+      }
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.375
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.44999998807907104
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.5249999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
+  },
+  "23051": {
+    "Name": "Though Worlds Apart",
+    "Desc": "In the boundless ancient lands, a young man walks alone on his quest.\\nHe seems to return to those wandering days, wading through surging waves, weathering wind and frost, battling behemoths, struggling against raging tides.\\n\\nYet in those moments of respite, he is not alone.\\nThough thousands of miles stretch before him, he can still see the light ahead...\\n\\nIt is the light of hope of all living beings.\\nThe shattered earth can no longer sustain rebirths, and they gather around him, seeking comfort and shelter.\\n\\nThose are the words his companions left in his heart, like an endless voyage connecting them firmly together.\\n\\nThe troubles of his past may stir with the wind, but the path he's traveled will become the strength for his metamorphosis.\\n\\n<i>\"I will stand guard for the Path of the Trailblaze.\"</i>\\nThe young man leaps forth with his spear, advancing toward the light—\\n\\n<i>\"And I shall defend all hope that threatens to fade away!\"</i>",
+    "Rarity": "CombatPowerLightconeRarity5",
+    "BaseType": "Knight",
+    "Refinements": {
+      "Name": "New Scale",
+      "Desc": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Shield Effect provided by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. When the wearer uses Ultimate, restores HP equal to <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> of the wearer's ATK to all allies, and grants \"Redoubt\" to all allies for <unbreak>#5[i]</unbreak> turn(s). Targets with \"Redoubt\" deal <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> more DMG, which further increases by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> if they have summons.",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.24000000022351742,
+            0.3000000002793968,
+            0.24000000022351742,
+            0.12000000011175871,
+            3,
+            0.10000000009313226
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.3000000002793968,
+            0.3500000003259629,
+            0.3000000002793968,
+            0.1500000001396984,
+            3,
+            0.12499999976716936
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.3600000003352761,
+            0.40000000037252903,
+            0.3600000003352761,
+            0.18000000016763806,
+            3,
+            0.1500000001396984
+          ]
+        },
+        "4": {
+          "ParamList": [
+            0.4200000003911555,
+            0.45000000041909516,
+            0.4200000003911555,
+            0.21000000019557774,
+            3,
+            0.17499999981373549
+          ]
+        },
+        "5": {
+          "ParamList": [
+            0.48000000044703484,
+            0.5000000004656613,
+            0.48000000044703484,
+            0.24000000022351742,
+            3,
+            0.20000000018626451
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 23051,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 5000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 8,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 48,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 26.40000000037253,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 21,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 10000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110211,
+            "ItemNum": 4,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 12,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 105.6000000005588,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 58.080000000074506,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 46.200000000186265,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 20000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110212,
+            "ItemNum": 4,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 182.40000000037253,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 100.32000000029802,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 79.80000000074506,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 50000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110212,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 12,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 259.20000000018626,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 142.56000000052154,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 113.40000000037253,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 100000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110213,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 6,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 336,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 184.80000000074506,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 147,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 200000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110213,
+            "ItemNum": 10,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 412.80000000074506,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 227.04000000003725,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 180.6000000005588,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 489.6000000005588,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 269.28000000026077,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 214.20000000018626,
+        "BaseDefenceAdd": 3.1500000001396984
+      }
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.6399999856948853
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.959999978542328
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 1.1200000047683716
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 1.2799999713897705
+        }
+      ]
+    }
   },
   "24000": {
     "Name": "On the Fall of an Aeon",
@@ -34602,7 +38209,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "24001": {
     "Name": "Cruising in the Stellar Sea",
@@ -34859,11 +38467,43 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.24000000022351742
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.3000000002793968
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.3600000003352761
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.4200000003911555
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.48000000044703484
+        }
+      ]
+    }
   },
   "24002": {
     "Name": "Texture of Memories",
-    "Desc": "The universe was like a badland filled with rubbish.\\nThere were the occasional treasure that lies undiscovered.\\nTHEY looked through the cracks of the past, choosing seeds of memory.\\n...If a new life was to be born, its seed has to be dead.\\nPrecious stones of pink, blue, and white were brought forth,\\ntwinkling gently in THEIR seed plot,\\neven though the universe held onto its enigmatic silence.",
+    "Desc": "The universe is like a wasteland filled with rubbish,\\nwhere occasional treasures lie undiscovered.\\nTHEY sift through the cracks of yesterday, seeking seeds of memory.\\n...If a new life is to be born, its seed has to be dead.\\nPrecious stones of pink, blue, and white are brought forth,\\ntwinkling gently in THEIR seed plot,\\neven though the universe holds onto its enigmatic silence.",
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Knight",
     "Refinements": {
@@ -35116,7 +38756,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.1599999964237213
+        }
+      ]
+    }
   },
   "24003": {
     "Name": "Solitary Healing",
@@ -35368,7 +39040,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "24004": {
     "Name": "Eternal Calculus",
@@ -35625,7 +39329,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.09000000357627869
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.10999999940395357
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
+    }
   },
   "24005": {
     "Name": "Memory's Curtain Never Falls",
@@ -35872,6 +39608,38 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.05999999865889549
+        }
+      ],
+      "1": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.07500000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.09000000357627869
+        }
+      ],
+      "3": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.10499999672174454
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
+    }
   }
 }

@@ -8,10 +8,9 @@ import { listCurrentLanguageApi } from '@/constant/constant'
 import useLocaleStore from '@/stores/localeStore'
 import useUserDataStore from '@/stores/userDataStore'
 import { converterToAvatarStore } from '@/helper'
-import { CharacterDetail } from '@/types'
 
 export const useFetchAvatarData = () => {
-    const { setAvatars, avatars } = useUserDataStore()
+    const { setAvatar, avatars } = useUserDataStore()
     const { setListAvatar, setAllMapAvatarInfo, mapAvatarInfo, setAvatarSelected, avatarSelected } = useAvatarStore()
     const { locale } = useLocaleStore()
     const { data: dataAvatar, error: errorAvatar } = useQuery({
@@ -31,15 +30,13 @@ export const useFetchAvatarData = () => {
 
     useEffect(() => {
         const listAvatarId = Object.keys(avatars)
-        const listAvatarNotExist = Object.keys(mapAvatarInfo).filter((avatarId) => !listAvatarId.includes(avatarId))
-        const avatarDiff = listAvatarNotExist.reduce((acc, avatarId) => {
-            acc[avatarId] = mapAvatarInfo[avatarId]
-            return acc
-        }, {} as Record<string, CharacterDetail>)
-        const avatarStore = converterToAvatarStore(avatarDiff)
+        const listAvatarNotExist = Object.entries(mapAvatarInfo).filter(([avatarId]) => !listAvatarId.includes(avatarId))
+        console.log("avatarDiff", listAvatarNotExist)
+        const avatarStore = converterToAvatarStore(Object.fromEntries(listAvatarNotExist))
         if (Object.keys(avatarStore).length === 0) return
-    
-        setAvatars({...avatarStore })
+        for (const avatar of Object.values(avatarStore)) {
+            setAvatar(avatar)
+        }
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [mapAvatarInfo])
     

@@ -410,6 +410,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -460,6 +461,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -806,6 +808,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -856,6 +859,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -1214,6 +1218,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -1264,6 +1269,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -1622,6 +1628,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -1672,6 +1679,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -2080,6 +2088,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -2130,6 +2139,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -2471,6 +2481,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -2521,6 +2532,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -2862,6 +2874,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -2912,6 +2925,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -3253,6 +3267,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -3303,6 +3318,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -3740,6 +3756,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -3790,6 +3807,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -4160,6 +4178,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -4210,6 +4229,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -4580,6 +4600,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -4630,6 +4651,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -5000,6 +5022,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -5050,6 +5073,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -5478,6 +5502,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -5533,6 +5558,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -5896,6 +5922,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -5951,6 +5978,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -6321,6 +6349,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -6376,6 +6405,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -6746,6 +6776,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -6801,6 +6832,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -7209,6 +7241,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -7254,6 +7287,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -7595,6 +7629,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -7640,6 +7675,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -7987,6 +8023,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -8032,6 +8069,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -8379,6 +8417,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -8424,6 +8463,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -8859,6 +8899,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -8909,6 +8950,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -9278,6 +9320,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -9328,6 +9371,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -9697,6 +9741,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -9747,6 +9792,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -10116,6 +10162,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -10166,6 +10213,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -10587,6 +10635,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -10632,6 +10681,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -10984,6 +11034,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -11029,6 +11080,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -11381,6 +11433,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -11426,6 +11479,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -11778,6 +11832,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -11823,6 +11878,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -12237,6 +12293,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -12287,6 +12344,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -12634,6 +12692,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -12684,6 +12743,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -13031,6 +13091,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -13081,6 +13142,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -13428,6 +13490,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -13478,6 +13541,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -13894,6 +13958,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -13944,6 +14009,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -14292,6 +14358,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -14342,6 +14409,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -14696,6 +14764,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -14746,6 +14815,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -15100,6 +15170,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -15150,6 +15221,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -15185,7 +15257,7 @@
       },
       {
         "Name": "Tarsus Infection",
-        "Desc": "After an ally target deals DoT to an enemy, <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Energy is regenerated. DoT of all allies have <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> All-Type RES against enemy targets.",
+        "Desc": "After an ally target deals DoT to an enemy, <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Energy is regenerated. DoT dealt by all allies ignores <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of enemy targets' All-Type RES.",
         "Param": [
           6,
           0.3000000002793968
@@ -15543,6 +15615,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -15593,6 +15666,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -15921,6 +15995,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -15971,6 +16046,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -16299,6 +16375,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -16349,6 +16426,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -16677,6 +16755,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -16727,6 +16806,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -16738,7 +16818,7 @@
     "Name": "Lupine Warhead",
     "Buff": {
       "Name": "Ruinous Embers",
-      "Desc": "When enemy units with <color=#f29e38ff>\"Steadfast Safeguard\"</color> have their <color=#f29e38ff>Weakness Broken</color>, dispels all control debuffs, recovers Skill Points, and activates Ultimates for all allies.\\nAll enemies take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> more DoT. Skill DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+      "Desc": "When enemy units with <color=#f29e38ff>\"Steadfast Safeguard\"</color> have their <color=#f29e38ff>Weakness Broken</color>, dispels all control debuffs, recovers Skill Points, and activates Ultimates for all allies.\\nAll enemies take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> more DoT. Increases Skill DMG by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
       "Param": [
         0.25000000023283064,
         0.1500000001396984
@@ -16747,7 +16827,7 @@
     "BuffList1": [
       {
         "Name": "Fight in Unity",
-        "Desc": "When an ally target consumes 1 Skill Point, the DMG dealt by all allies increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+        "Desc": "When an ally target consumes 1 Skill Point, increases the DMG dealt by all allies by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
         "Param": [
           0.060000000055879354,
           10
@@ -16773,7 +16853,7 @@
     "BuffList2": [
       {
         "Name": "Fatality Exploitation",
-        "Desc": "Ultimate DMG dealt by all allies increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, and additionally increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> against enemy targets in Weakness Broken state.",
+        "Desc": "Increases Ultimate DMG dealt by all allies by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, and additionally increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> against enemy targets in Weakness Broken state.",
         "Param": [
           0.3000000002793968,
           0.3000000002793968
@@ -16788,7 +16868,7 @@
       },
       {
         "Name": "Heroic Vanguard",
-        "Desc": "After the character in position 1 in the team uses Ultimate, their Weakness Break Efficiency increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <color=#f29e38ff><unbreak>#3[i]</unbreak></color> turn(s).",
+        "Desc": "After the character in position 1 in the team uses Ultimate, their Weakness Break Efficiency increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and increases CRIT DMG by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <color=#f29e38ff><unbreak>#3[i]</unbreak></color> turn(s).",
         "Param": [
           0.5000000004656613,
           0.5000000004656613,
@@ -16797,7 +16877,7 @@
       }
     ],
     "BeginTime": "2025-06-30 04:00:02",
-    "EndTime": "2025-08-11 04:00:00",
+    "EndTime": "2025-09-22 04:00:00",
     "Level": [
       {
         "Id": 30111,
@@ -17125,6 +17205,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -17175,6 +17256,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -17505,6 +17587,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -17555,6 +17638,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -17885,6 +17969,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -17935,6 +18020,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -18265,6 +18351,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -18315,6 +18402,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -18323,70 +18411,74 @@
   },
   "3012": {
     "Id": 3012,
-    "Name": null,
+    "Name": "Gale of Netherveil",
     "Buff": {
-      "Name": null,
-      "Desc": null,
-      "Param": []
+      "Name": "Ruinous Embers",
+      "Desc": "When enemy units with <color=#f29e38ff>\"Steadfast Safeguard\"</color> are <color=#f29e38ff>Weakness Broken</color>, dispels control effects for all allies, activates Ultimates and restores HP.\\nAll enemies take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> more Memosprite Skill DMG, and <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> more Skill DMG.",
+      "Param": [
+        0.10000000009313226,
+        0.3000000002793968
+      ]
     },
     "BuffList1": [
       {
-        "Name": "Fight in Unity",
-        "Desc": "When an ally target consumes 1 Skill Point, the DMG dealt by all allies increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+        "Name": "Armed Up",
+        "Desc": "Increases Physical DMG dealt by all allies by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, and decreases all enemies' Physical RES by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
         "Param": [
-          0.060000000055879354,
-          10
+          0.5000000004656613,
+          0.20000000018626451
         ]
       },
       {
-        "Name": "Tangled Chaos",
-        "Desc": "After defeating enemy targets, increases Break DMG taken by all enemies by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> to a max of <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stack(s). This effect will also take effect on new enemies entering the battlefield.",
+        "Name": "Obstinate Weed",
+        "Desc": "When allies use Basic ATK or Skill to attack Weakness Broken enemies, all DoTs currently applied to the enemies will immediately produce DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG.",
         "Param": [
-          0.1500000001396984,
-          4
+          0.20000000018626451
         ]
       },
       {
-        "Name": "No Turning Back",
-        "Desc": "After any ally target consumes their own HP, their CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, lasting for <color=#f29e38ff><unbreak>#2[i]</unbreak></color> turn(s).",
+        "Name": "Rime Piercer",
+        "Desc": "Increases all enemies' Break DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After Breaking an enemy's Weakness, increases all allies' SPD by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> for <color=#f29e38ff><unbreak>#3[i]</unbreak></color> turn(s).",
         "Param": [
-          0.5500000005122274,
+          0.10000000009313226,
+          0.20000000018626451,
           2
         ]
       }
     ],
     "BuffList2": [
       {
-        "Name": "Fatality Exploitation",
-        "Desc": "Ultimate DMG dealt by all allies increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, and additionally increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> against enemy targets in Weakness Broken state.",
+        "Name": "Unstoppable Force",
+        "Desc": "DMG dealt by memosprites ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF.",
         "Param": [
-          0.3000000002793968,
-          0.3000000002793968
+          0.20000000018626451
         ]
       },
       {
-        "Name": "Obstinate Weed",
-        "Desc": "When allies use Basic ATK or Skill to attack Weakness Broken enemies, all DoTs currently applied to the enemies will immediately deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG.",
+        "Name": "Innervation",
+        "Desc": "Increases all allies' Skill DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. At the start of their turn, if their current HP percentage is equal to or lower than <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, restores HP equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of their Max HP.",
         "Param": [
+          0.3000000002793968,
+          0.010000000009313226,
           0.1500000001396984
         ]
       },
       {
-        "Name": "Heroic Vanguard",
-        "Desc": "After the character in position 1 in the team uses Ultimate, their Weakness Break Efficiency increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <color=#f29e38ff><unbreak>#3[i]</unbreak></color> turn(s).",
+        "Name": "Unstoppable Momentum",
+        "Desc": "When a character uses Ultimate, their Weakness Break Efficiency increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <color=#f29e38ff><unbreak>#3[i]</unbreak></color> turn(s).",
         "Param": [
-          0.5000000004656613,
-          0.5000000004656613,
-          1
+          1,
+          0.40000000037252903,
+          3
         ]
       }
     ],
-    "BeginTime": "2050-01-01 04:00:00",
-    "EndTime": "2099-12-31 04:00:00",
+    "BeginTime": "2025-08-11 04:00:02",
+    "EndTime": "2025-09-22 04:00:00",
     "Level": [
       {
         "Id": 30121,
-        "Name": "Lupine Warhead: Difficulty 1",
+        "Name": "Gale of Netherveil: Difficulty 1",
         "Challenge": [
           {
             "Name": "Gain #1 points",
@@ -18402,40 +18494,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401401,
-        "BossMonsterID2": 203302201,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401401,
+        "BossMonsterID2": 401403601,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 1,
@@ -18448,13 +18553,13 @@
           "TagList": [
             {
               "Name": "Steadfast Safeguard",
-              "Desc": "Decreases DMG taken by Boss Mirage by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and increases its DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18463,43 +18568,51 @@
               "Child": []
             },
             {
-              "Name": "Better Safe Than Sorry",
-              "Desc": "When the Boss Mirage uses \"Barrenness of Earth Gouged,\" all other Wolftroopers will be eliminated.",
+              "Name": "Battlefield Transfer",
+              "Desc": "Gepard will join the battle and provide protection for Boss Mirage. Boss Mirage will <color=#f29e38ff><u>Transfer</u></color> its own Weakness Type to summons, but when those summons are defeated, Boss Mirage's Toughness will be additionally reduced.",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "Transfer",
+                  "Desc": "Transfers the Weakness Type to the target. The Weakness Type returns to this unit after the target is defeated, and additionally reduces Toughness.",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "Apex Predator",
-              "Desc": "After Boss Mirage enters Phase II, it gains extra action per turn during \"Going Solo.\"",
+              "Name": "Nowhere to Escape",
+              "Desc": "Boss Mirage's summon will mark 1 target. After Boss Mirage uses a single-target ability, it will deliver a <color=#f29e38ff><u>Follow-Up Usage</u></color> on the marked target.",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "Follow-Up Usage",
+                  "Desc": "After using a single-target ability, the unit will re-select the target and use the ability again.",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "Till Death",
-              "Desc": "After Boss Mirage enters \"Going Solo,\" reduces its DMG taken by an additional <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness-Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "Decreases DMG taken by Boss Mirage by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and increases its DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18507,41 +18620,36 @@
               ]
             },
             {
-              "Desc": "When Boss Mirage enters the \"Lunar Devourer\" state, Weakness Protection will be removed, and the strongest ally character must be selected to engage in \"Going Solo\" against Boss Mirage. During \"Going Solo,\" apart from the selected character and their summoned unit, all other ally targets will enter the Departed state.",
-              "Param": [],
-              "SkillID": null,
-              "ParamFix": []
-            },
-            {
-              "Desc": "When an ally defeats an enemy Wolftrooper, gain \"Blood Surge.\" The character entering \"Going Solo\" and their summoned unit will be enhanced based on \"Blood Surge\" stacks.",
+              "Desc": "When there is a summon present in the battle, Boss Mirage will <color=#f29e38ff>transfer its own Weakness Type to the summon</color>.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "Prioritize defeating Wolftroopers before Boss Mirage enters \"Lunar Devourer\" state to grant \"Blood Surge\" to allies and accelerate Boss Mirage's progression toward \"Lunar Devourer\" state.",
-            "Reserve strength as Boss Mirage is about to enter \"Lunar Devourer\" state to better handle \"Going Solo.\"",
-            "During \"Going Solo,\" if the selected ally character has a summon, the summoned unit will enter \"Going Solo\" alongside the character."
+            "After <color=#f29e38ff>Breaking</color> Boss Mirage, the DMG it receives is greatly increased, Skill Points are recovered for the team, and the team's action is Advanced Forward.",
+            "Defeat or break <color=#f29e38ff>summons</color> first to effectively weaken Boss Mirage."
           ],
           "PhaseList": [
             {
-              "Name": "Phase I: Clash of Wind and Lightning",
-              "Desc": "When Boss Mirage enters \"Lunar Devourer\" state, the strongest ally character must be selected to engage in \"Going Solo\" against Boss Mirage.",
-              "Answer": "Strategy: Before Boss Mirage enters \"Lunar Devourer\" state, defeat as many Wolftroopers as possible to gain enhancements.",
+              "Name": "Phase I — Annihilator of Desolation Mistral",
+              "Desc": "Boss Mirage will use abilities to Freeze and deal DMG to targets. Gepard can Shield his team.",
+              "Answer": "Strategy: Defeat the summons first. If Gepard uses a Collective Shield, quickly break the shield and defeat Gepard.",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "Phase II: Devourer of Heaven and Moon",
-              "Desc": "Boss Mirage's abilities deal DMG to Wolftroopers. This is additionally enhanced when Boss Mirage enters \"Lunar Devourer\" state.",
-              "Answer": "Strategy: Defeat Wolftroopers before Boss Mirage acts to prevent Wolftroopers from being eliminated by Boss Mirage.",
+              "Name": "Phase II — Annihilator of Desolation Mistral: Mother of Deception",
+              "Desc": "Boss Mirage will keep using Last Choir of Genesis to deal massive DMG to everyone, as well as abilities that will restrict the team's actions.",
+              "Answer": "Strategy: After defeating the summons, quickly break Boss Mirage's Weakness.",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -18563,114 +18671,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "Steelbone Summit",
-              "Desc": "Parts take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After Boss Mirage's <color=#f29e38ff>Weakness is broken</color>, the DMG they receive increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "Sickleclawed Sawteeth",
-              "Desc": "Boss Mirage's Toughness increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "Withered Verdure",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "Beastly Rage",
-              "Desc": "The duration of <color=#f29e38ff>\"Malediction\"</color> state increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color> turns.",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "Tender the Rigid",
+              "Desc": "\"The Long Arms of Sorrow's\" Max Toughness increases.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "Boss Mirage and all other parts take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Desc": "Boss Mirage and its summons take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "When the Boss Mirage's parts get <color=#f29e38ff>Weakness Broken</color>, the Toughness of the Boss Mirage will be reduced.",
+              "Desc": "In this combat, ally targets' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "When the Boss Mirage uses \"Soul-Shattering Malediction,\" causes ally characters to <color=#f29e38ff>enter the \"Malediction\" state</color>. Ally characters and summons in the \"Malediction\" state will Depart the field. At the same time, summons Bloodstained Lupine to replace the Departed character and continue the battle, and the \"Bloodstained Lupine\"'s attacks can cause <color=#f29e38ff>heavy Toughness Reduction</color>.",
+              "Desc": "When an ally target's HP decreases, the Boss Mirage in \"Dream of Demise\" state will accumulate \"Desperate Bubble.\" When \"Desperate Bubble\" reaches its maximum, Boss Mirage enters the \"Fragrance of Death\" state, greatly enhancing the abilities of Boss Mirage and its summons.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "Weakness Break Boss Mirage's <color=#f29e38ff>parts</color> multiple times to effectively reduce Boss Mirage's Toughness. <color=#f29e38ff>Break</color> Boss Mirage to greatly increase the DMG taken by itself and all its parts, while recovering Skill Points and activating Ultimates for all allies.",
-            "When <color=#f29e38ff>\"Bloodstained Lupine\"</color> replaces an ally character in battle, it will additionally <color=#f29e38ff>reduce Toughness irrespective of Weakness Types</color> based on the <color=#f29e38ff>number of DoT debuffs</color> inflicted on the enemy target attacked. \"Bloodstained Lupine's\" <color=#f29e38ff>Basic ATK</color> can restore HP for all ally targets, and its <color=#f29e38ff>Skill</color> can hit multiple enemy targets while greatly reducing their Toughness. This <color=#f29e38ff>does not consume Skill Points</color>."
+            "When ally targets enter the \"HP Overload\" state, their DMG dealt and Weakness Break Efficiency are greatly reduced. Prioritize restoring their HP to dispel this state.",
+            "Inflicting Weakness Break on \"The Long Arms of Sorrow\" will reduce the Boss Mirage's Toughness and HP. If the Boss Mirage is in the \"Fragrance of Death\" state, it will also restore allies' HP."
           ],
           "PhaseList": [
             {
-              "Name": "Phase 1: Unyielding Winds",
-              "Desc": "The Boss Mirage will use \"Soul-Shattering Malediction\" to inflict the \"Malediction\" effect on allies.",
-              "Answer": "Strategy: When \"Soul-Shattering Malediction\" is used, prioritize selecting non-DMG dealing ally characters as the target of the ability.",
+              "Name": "Phase 1: Deathwish",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Answer": "Strategy: Prioritize healing ally targets in \"HP Overload\" state.",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "Phase 2: Sweep the Heavens",
-              "Desc": "The Boss Mirage will use \"Sweep the Heavens, Swallow the Earth\" to deal high DMG and debuffs.",
-              "Answer": "Strategy: Do what you can to break all parts before \"Sweep the Heavens, Swallow the Earth\" is used.",
+              "Name": "Phase 2: From Death, Comes Life",
+              "Desc": "When Boss Mirage uses \"Death Wishes For More Death,\" it will deal fatal damage to ally targets in \"HP Overload\" state.",
+              "Answer": "Strategy: Before \"Death Wishes For More Death\" is used, restore HP to dispel the \"HP Overload\" state from all ally units.",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420311,
+            "StageID": 420331,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 60,
-            "EliteGroup": 701,
+            "EliteGroup": 904,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -18689,18 +18784,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401401
+                "Monster0": 100401401,
+                "Monster1": 100402601
               }
             ],
             "LevelLoseCondition": [
@@ -18710,17 +18806,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420301,
+            "StageID": 420321,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 60,
-            "EliteGroup": 701,
+            "EliteGroup": 896,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -18739,18 +18836,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501201
+                "Monster0": 401403601
               }
             ],
             "LevelLoseCondition": [
@@ -18760,13 +18857,14 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
       },
       {
         "Id": 30122,
-        "Name": "Lupine Warhead: Difficulty 2",
+        "Name": "Gale of Netherveil: Difficulty 2",
         "Challenge": [
           {
             "Name": "Gain #1 points",
@@ -18782,40 +18880,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401402,
-        "BossMonsterID2": 203302202,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401402,
+        "BossMonsterID2": 401403602,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 2,
@@ -18828,13 +18939,13 @@
           "TagList": [
             {
               "Name": "Steadfast Safeguard",
-              "Desc": "Decreases DMG taken by Boss Mirage by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and increases its DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18843,43 +18954,51 @@
               "Child": []
             },
             {
-              "Name": "Better Safe Than Sorry",
-              "Desc": "When the Boss Mirage uses \"Barrenness of Earth Gouged,\" all other Wolftroopers will be eliminated.",
+              "Name": "Battlefield Transfer",
+              "Desc": "Gepard will join the battle and provide protection for Boss Mirage. Boss Mirage will <color=#f29e38ff><u>Transfer</u></color> its own Weakness Type to summons, but when those summons are defeated, Boss Mirage's Toughness will be additionally reduced.",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "Transfer",
+                  "Desc": "Transfers the Weakness Type to the target. The Weakness Type returns to this unit after the target is defeated, and additionally reduces Toughness.",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "Apex Predator",
-              "Desc": "After Boss Mirage enters Phase II, it gains extra action per turn during \"Going Solo.\"",
+              "Name": "Nowhere to Escape",
+              "Desc": "Boss Mirage's summon will mark 1 target. After Boss Mirage uses a single-target ability, it will deliver a <color=#f29e38ff><u>Follow-Up Usage</u></color> on the marked target.",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "Follow-Up Usage",
+                  "Desc": "After using a single-target ability, the unit will re-select the target and use the ability again.",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "Till Death",
-              "Desc": "After Boss Mirage enters \"Going Solo,\" reduces its DMG taken by an additional <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness-Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "Decreases DMG taken by Boss Mirage by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and increases its DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18887,41 +19006,36 @@
               ]
             },
             {
-              "Desc": "When Boss Mirage enters the \"Lunar Devourer\" state, Weakness Protection will be removed, and the strongest ally character must be selected to engage in \"Going Solo\" against Boss Mirage. During \"Going Solo,\" apart from the selected character and their summoned unit, all other ally targets will enter the Departed state.",
-              "Param": [],
-              "SkillID": null,
-              "ParamFix": []
-            },
-            {
-              "Desc": "When an ally defeats an enemy Wolftrooper, gain \"Blood Surge.\" The character entering \"Going Solo\" and their summoned unit will be enhanced based on \"Blood Surge\" stacks.",
+              "Desc": "When there is a summon present in the battle, Boss Mirage will <color=#f29e38ff>transfer its own Weakness Type to the summon</color>.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "Prioritize defeating Wolftroopers before Boss Mirage enters \"Lunar Devourer\" state to grant \"Blood Surge\" to allies and accelerate Boss Mirage's progression toward \"Lunar Devourer\" state.",
-            "Reserve strength as Boss Mirage is about to enter \"Lunar Devourer\" state to better handle \"Going Solo.\"",
-            "During \"Going Solo,\" if the selected ally character has a summon, the summoned unit will enter \"Going Solo\" alongside the character."
+            "After <color=#f29e38ff>Breaking</color> Boss Mirage, the DMG it receives is greatly increased, Skill Points are recovered for the team, and the team's action is Advanced Forward.",
+            "Defeat or break <color=#f29e38ff>summons</color> first to effectively weaken Boss Mirage."
           ],
           "PhaseList": [
             {
-              "Name": "Phase I: Clash of Wind and Lightning",
-              "Desc": "When Boss Mirage enters \"Lunar Devourer\" state, the strongest ally character must be selected to engage in \"Going Solo\" against Boss Mirage.",
-              "Answer": "Strategy: Before Boss Mirage enters \"Lunar Devourer\" state, defeat as many Wolftroopers as possible to gain enhancements.",
+              "Name": "Phase I — Annihilator of Desolation Mistral",
+              "Desc": "Boss Mirage will use abilities to Freeze and deal DMG to targets. Gepard can Shield his team.",
+              "Answer": "Strategy: Defeat the summons first. If Gepard uses a Collective Shield, quickly break the shield and defeat Gepard.",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "Phase II: Devourer of Heaven and Moon",
-              "Desc": "Boss Mirage's abilities deal DMG to Wolftroopers. This is additionally enhanced when Boss Mirage enters \"Lunar Devourer\" state.",
-              "Answer": "Strategy: Defeat Wolftroopers before Boss Mirage acts to prevent Wolftroopers from being eliminated by Boss Mirage.",
+              "Name": "Phase II — Annihilator of Desolation Mistral: Mother of Deception",
+              "Desc": "Boss Mirage will keep using Last Choir of Genesis to deal massive DMG to everyone, as well as abilities that will restrict the team's actions.",
+              "Answer": "Strategy: After defeating the summons, quickly break Boss Mirage's Weakness.",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -18943,114 +19057,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "Steelbone Summit",
-              "Desc": "Parts take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After Boss Mirage's <color=#f29e38ff>Weakness is broken</color>, the DMG they receive increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "Sickleclawed Sawteeth",
-              "Desc": "Boss Mirage's Toughness increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "Withered Verdure",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "Beastly Rage",
-              "Desc": "The duration of <color=#f29e38ff>\"Malediction\"</color> state increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color> turns.",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "Tender the Rigid",
+              "Desc": "\"The Long Arms of Sorrow's\" Max Toughness increases.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "Boss Mirage and all other parts take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Desc": "Boss Mirage and its summons take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "When the Boss Mirage's parts get <color=#f29e38ff>Weakness Broken</color>, the Toughness of the Boss Mirage will be reduced.",
+              "Desc": "In this combat, ally targets' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "When the Boss Mirage uses \"Soul-Shattering Malediction,\" causes ally characters to <color=#f29e38ff>enter the \"Malediction\" state</color>. Ally characters and summons in the \"Malediction\" state will Depart the field. At the same time, summons Bloodstained Lupine to replace the Departed character and continue the battle, and the \"Bloodstained Lupine\"'s attacks can cause <color=#f29e38ff>heavy Toughness Reduction</color>.",
+              "Desc": "When an ally target's HP decreases, the Boss Mirage in \"Dream of Demise\" state will accumulate \"Desperate Bubble.\" When \"Desperate Bubble\" reaches its maximum, Boss Mirage enters the \"Fragrance of Death\" state, greatly enhancing the abilities of Boss Mirage and its summons.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "Weakness Break Boss Mirage's <color=#f29e38ff>parts</color> multiple times to effectively reduce Boss Mirage's Toughness. <color=#f29e38ff>Break</color> Boss Mirage to greatly increase the DMG taken by itself and all its parts, while recovering Skill Points and activating Ultimates for all allies.",
-            "When <color=#f29e38ff>\"Bloodstained Lupine\"</color> replaces an ally character in battle, it will additionally <color=#f29e38ff>reduce Toughness irrespective of Weakness Types</color> based on the <color=#f29e38ff>number of DoT debuffs</color> inflicted on the enemy target attacked. \"Bloodstained Lupine's\" <color=#f29e38ff>Basic ATK</color> can restore HP for all ally targets, and its <color=#f29e38ff>Skill</color> can hit multiple enemy targets while greatly reducing their Toughness. This <color=#f29e38ff>does not consume Skill Points</color>."
+            "When ally targets enter the \"HP Overload\" state, their DMG dealt and Weakness Break Efficiency are greatly reduced. Prioritize restoring their HP to dispel this state.",
+            "Inflicting Weakness Break on \"The Long Arms of Sorrow\" will reduce the Boss Mirage's Toughness and HP. If the Boss Mirage is in the \"Fragrance of Death\" state, it will also restore allies' HP."
           ],
           "PhaseList": [
             {
-              "Name": "Phase 1: Unyielding Winds",
-              "Desc": "The Boss Mirage will use \"Soul-Shattering Malediction\" to inflict the \"Malediction\" effect on allies.",
-              "Answer": "Strategy: When \"Soul-Shattering Malediction\" is used, prioritize selecting non-DMG dealing ally characters as the target of the ability.",
+              "Name": "Phase 1: Deathwish",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Answer": "Strategy: Prioritize healing ally targets in \"HP Overload\" state.",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "Phase 2: Sweep the Heavens",
-              "Desc": "The Boss Mirage will use \"Sweep the Heavens, Swallow the Earth\" to deal high DMG and debuffs.",
-              "Answer": "Strategy: Do what you can to break all parts before \"Sweep the Heavens, Swallow the Earth\" is used.",
+              "Name": "Phase 2: From Death, Comes Life",
+              "Desc": "When Boss Mirage uses \"Death Wishes For More Death,\" it will deal fatal damage to ally targets in \"HP Overload\" state.",
+              "Answer": "Strategy: Before \"Death Wishes For More Death\" is used, restore HP to dispel the \"HP Overload\" state from all ally units.",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420312,
+            "StageID": 420332,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 70,
-            "EliteGroup": 702,
+            "EliteGroup": 905,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19069,18 +19170,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401402
+                "Monster0": 100401402,
+                "Monster1": 100402602
               }
             ],
             "LevelLoseCondition": [
@@ -19090,17 +19192,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420302,
+            "StageID": 420322,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 70,
-            "EliteGroup": 702,
+            "EliteGroup": 897,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19119,18 +19222,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501202
+                "Monster0": 401403602
               }
             ],
             "LevelLoseCondition": [
@@ -19140,13 +19243,14 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
       },
       {
         "Id": 30123,
-        "Name": "Lupine Warhead: Difficulty 3",
+        "Name": "Gale of Netherveil: Difficulty 3",
         "Challenge": [
           {
             "Name": "Gain #1 points",
@@ -19162,40 +19266,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401403,
-        "BossMonsterID2": 203302203,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401403,
+        "BossMonsterID2": 401403603,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 3,
@@ -19208,13 +19325,13 @@
           "TagList": [
             {
               "Name": "Steadfast Safeguard",
-              "Desc": "Decreases DMG taken by Boss Mirage by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and increases its DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19223,43 +19340,51 @@
               "Child": []
             },
             {
-              "Name": "Better Safe Than Sorry",
-              "Desc": "When the Boss Mirage uses \"Barrenness of Earth Gouged,\" all other Wolftroopers will be eliminated.",
+              "Name": "Battlefield Transfer",
+              "Desc": "Gepard will join the battle and provide protection for Boss Mirage. Boss Mirage will <color=#f29e38ff><u>Transfer</u></color> its own Weakness Type to summons, but when those summons are defeated, Boss Mirage's Toughness will be additionally reduced.",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "Transfer",
+                  "Desc": "Transfers the Weakness Type to the target. The Weakness Type returns to this unit after the target is defeated, and additionally reduces Toughness.",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "Apex Predator",
-              "Desc": "After Boss Mirage enters Phase II, it gains extra action per turn during \"Going Solo.\"",
+              "Name": "Nowhere to Escape",
+              "Desc": "Boss Mirage's summon will mark 1 target. After Boss Mirage uses a single-target ability, it will deliver a <color=#f29e38ff><u>Follow-Up Usage</u></color> on the marked target.",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "Follow-Up Usage",
+                  "Desc": "After using a single-target ability, the unit will re-select the target and use the ability again.",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "Till Death",
-              "Desc": "After Boss Mirage enters \"Going Solo,\" reduces its DMG taken by an additional <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness-Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "Decreases DMG taken by Boss Mirage by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and increases its DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19267,41 +19392,42 @@
               ]
             },
             {
-              "Desc": "When Boss Mirage enters the \"Lunar Devourer\" state, Weakness Protection will be removed, and the strongest ally character must be selected to engage in \"Going Solo\" against Boss Mirage. During \"Going Solo,\" apart from the selected character and their summoned unit, all other ally targets will enter the Departed state.",
+              "Desc": "When there is a summon present in the battle, Boss Mirage will <color=#f29e38ff>transfer its own Weakness Type to the summon</color>.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "When an ally defeats an enemy Wolftrooper, gain \"Blood Surge.\" The character entering \"Going Solo\" and their summoned unit will be enhanced based on \"Blood Surge\" stacks.",
+              "Desc": "Boss Mirage will launch a follow-up single target attack on the <color=#f29e38ff>summon's</color> locked-on target, with a chance to Freeze or Imprison the target.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "Prioritize defeating Wolftroopers before Boss Mirage enters \"Lunar Devourer\" state to grant \"Blood Surge\" to allies and accelerate Boss Mirage's progression toward \"Lunar Devourer\" state.",
-            "Reserve strength as Boss Mirage is about to enter \"Lunar Devourer\" state to better handle \"Going Solo.\"",
-            "During \"Going Solo,\" if the selected ally character has a summon, the summoned unit will enter \"Going Solo\" alongside the character."
+            "After <color=#f29e38ff>Breaking</color> Boss Mirage, the DMG it receives is greatly increased, Skill Points are recovered for the team, and the team's action is Advanced Forward.",
+            "Defeat or break <color=#f29e38ff>summons</color> first to effectively weaken Boss Mirage."
           ],
           "PhaseList": [
             {
-              "Name": "Phase I: Clash of Wind and Lightning",
-              "Desc": "When Boss Mirage enters \"Lunar Devourer\" state, the strongest ally character must be selected to engage in \"Going Solo\" against Boss Mirage.",
-              "Answer": "Strategy: Before Boss Mirage enters \"Lunar Devourer\" state, defeat as many Wolftroopers as possible to gain enhancements.",
+              "Name": "Phase I — Annihilator of Desolation Mistral",
+              "Desc": "Boss Mirage will use abilities to Freeze and deal DMG to targets. Gepard can Shield his team.",
+              "Answer": "Strategy: Defeat the summons first. If Gepard uses a Collective Shield, quickly break the shield and defeat Gepard.",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "Phase II: Devourer of Heaven and Moon",
-              "Desc": "Boss Mirage's abilities deal DMG to Wolftroopers. This is additionally enhanced when Boss Mirage enters \"Lunar Devourer\" state.",
-              "Answer": "Strategy: Defeat Wolftroopers before Boss Mirage acts to prevent Wolftroopers from being eliminated by Boss Mirage.",
+              "Name": "Phase II — Annihilator of Desolation Mistral: Mother of Deception",
+              "Desc": "Boss Mirage will keep using Last Choir of Genesis to deal massive DMG to everyone, as well as abilities that will restrict the team's actions.",
+              "Answer": "Strategy: After defeating the summons, quickly break Boss Mirage's Weakness.",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -19323,114 +19449,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "Steelbone Summit",
-              "Desc": "Parts take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After Boss Mirage's <color=#f29e38ff>Weakness is broken</color>, the DMG they receive increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "Sickleclawed Sawteeth",
-              "Desc": "Boss Mirage's Toughness increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "Withered Verdure",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "Beastly Rage",
-              "Desc": "The duration of <color=#f29e38ff>\"Malediction\"</color> state increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color> turns.",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "Tender the Rigid",
+              "Desc": "\"The Long Arms of Sorrow's\" Max Toughness increases.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "Boss Mirage and all other parts take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Desc": "Boss Mirage and its summons take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "When the Boss Mirage's parts get <color=#f29e38ff>Weakness Broken</color>, the Toughness of the Boss Mirage will be reduced.",
+              "Desc": "In this combat, ally targets' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "When the Boss Mirage uses \"Soul-Shattering Malediction,\" causes ally characters to <color=#f29e38ff>enter the \"Malediction\" state</color>. Ally characters and summons in the \"Malediction\" state will Depart the field. At the same time, summons Bloodstained Lupine to replace the Departed character and continue the battle, and the \"Bloodstained Lupine\"'s attacks can cause <color=#f29e38ff>heavy Toughness Reduction</color>.",
+              "Desc": "When an ally target's HP decreases, the Boss Mirage in \"Dream of Demise\" state will accumulate \"Desperate Bubble.\" When \"Desperate Bubble\" reaches its maximum, Boss Mirage enters the \"Fragrance of Death\" state, greatly enhancing the abilities of Boss Mirage and its summons.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "Weakness Break Boss Mirage's <color=#f29e38ff>parts</color> multiple times to effectively reduce Boss Mirage's Toughness. <color=#f29e38ff>Break</color> Boss Mirage to greatly increase the DMG taken by itself and all its parts, while recovering Skill Points and activating Ultimates for all allies.",
-            "When <color=#f29e38ff>\"Bloodstained Lupine\"</color> replaces an ally character in battle, it will additionally <color=#f29e38ff>reduce Toughness irrespective of Weakness Types</color> based on the <color=#f29e38ff>number of DoT debuffs</color> inflicted on the enemy target attacked. \"Bloodstained Lupine's\" <color=#f29e38ff>Basic ATK</color> can restore HP for all ally targets, and its <color=#f29e38ff>Skill</color> can hit multiple enemy targets while greatly reducing their Toughness. This <color=#f29e38ff>does not consume Skill Points</color>."
+            "When ally targets enter the \"HP Overload\" state, their DMG dealt and Weakness Break Efficiency are greatly reduced. Prioritize restoring their HP to dispel this state.",
+            "Inflicting Weakness Break on \"The Long Arms of Sorrow\" will reduce the Boss Mirage's Toughness and HP. If the Boss Mirage is in the \"Fragrance of Death\" state, it will also restore allies' HP."
           ],
           "PhaseList": [
             {
-              "Name": "Phase 1: Unyielding Winds",
-              "Desc": "The Boss Mirage will use \"Soul-Shattering Malediction\" to inflict the \"Malediction\" effect on allies.",
-              "Answer": "Strategy: When \"Soul-Shattering Malediction\" is used, prioritize selecting non-DMG dealing ally characters as the target of the ability.",
+              "Name": "Phase 1: Deathwish",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Answer": "Strategy: Prioritize healing ally targets in \"HP Overload\" state.",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "Phase 2: Sweep the Heavens",
-              "Desc": "The Boss Mirage will use \"Sweep the Heavens, Swallow the Earth\" to deal high DMG and debuffs.",
-              "Answer": "Strategy: Do what you can to break all parts before \"Sweep the Heavens, Swallow the Earth\" is used.",
+              "Name": "Phase 2: From Death, Comes Life",
+              "Desc": "When Boss Mirage uses \"Death Wishes For More Death,\" it will deal fatal damage to ally targets in \"HP Overload\" state.",
+              "Answer": "Strategy: Before \"Death Wishes For More Death\" is used, restore HP to dispel the \"HP Overload\" state from all ally units.",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420313,
+            "StageID": 420333,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 80,
-            "EliteGroup": 703,
+            "EliteGroup": 906,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19449,18 +19562,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401403
+                "Monster0": 100401403,
+                "Monster1": 100402603
               }
             ],
             "LevelLoseCondition": [
@@ -19470,17 +19584,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420303,
+            "StageID": 420323,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 80,
-            "EliteGroup": 703,
+            "EliteGroup": 898,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19499,18 +19614,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501203
+                "Monster0": 401403603
               }
             ],
             "LevelLoseCondition": [
@@ -19520,13 +19635,14 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
       },
       {
         "Id": 30124,
-        "Name": "Lupine Warhead: Difficulty 4",
+        "Name": "Gale of Netherveil: Difficulty 4",
         "Challenge": [
           {
             "Name": "Gain #1 points",
@@ -19542,40 +19658,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401404,
-        "BossMonsterID2": 203302204,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401404,
+        "BossMonsterID2": 401403604,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 4,
@@ -19588,13 +19717,13 @@
           "TagList": [
             {
               "Name": "Steadfast Safeguard",
-              "Desc": "Decreases DMG taken by Boss Mirage by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and increases its DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19603,43 +19732,51 @@
               "Child": []
             },
             {
-              "Name": "Better Safe Than Sorry",
-              "Desc": "When the Boss Mirage uses \"Barrenness of Earth Gouged,\" all other Wolftroopers will be eliminated.",
+              "Name": "Battlefield Transfer",
+              "Desc": "Gepard will join the battle and provide protection for Boss Mirage. Boss Mirage will <color=#f29e38ff><u>Transfer</u></color> its own Weakness Type to summons, but when those summons are defeated, Boss Mirage's Toughness will be additionally reduced.",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "Transfer",
+                  "Desc": "Transfers the Weakness Type to the target. The Weakness Type returns to this unit after the target is defeated, and additionally reduces Toughness.",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "Apex Predator",
-              "Desc": "After Boss Mirage enters Phase II, it gains extra action per turn during \"Going Solo.\"",
+              "Name": "Nowhere to Escape",
+              "Desc": "Boss Mirage's summon will mark 1 target. After Boss Mirage uses a single-target ability, it will deliver a <color=#f29e38ff><u>Follow-Up Usage</u></color> on the marked target.",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "Follow-Up Usage",
+                  "Desc": "After using a single-target ability, the unit will re-select the target and use the ability again.",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "Till Death",
-              "Desc": "After Boss Mirage enters \"Going Solo,\" reduces its DMG taken by an additional <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness-Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "Decreases DMG taken by Boss Mirage by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and increases its DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19647,41 +19784,42 @@
               ]
             },
             {
-              "Desc": "When Boss Mirage enters the \"Lunar Devourer\" state, Weakness Protection will be removed, and the strongest ally character must be selected to engage in \"Going Solo\" against Boss Mirage. During \"Going Solo,\" apart from the selected character and their summoned unit, all other ally targets will enter the Departed state.",
+              "Desc": "When there is a summon present in the battle, Boss Mirage will <color=#f29e38ff>transfer its own Weakness Type to the summon</color>.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "When an ally defeats an enemy Wolftrooper, gain \"Blood Surge.\" The character entering \"Going Solo\" and their summoned unit will be enhanced based on \"Blood Surge\" stacks.",
+              "Desc": "Boss Mirage will launch a follow-up single target attack on the <color=#f29e38ff>summon's</color> locked-on target, with a chance to Freeze or Imprison the target.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "Prioritize defeating Wolftroopers before Boss Mirage enters \"Lunar Devourer\" state to grant \"Blood Surge\" to allies and accelerate Boss Mirage's progression toward \"Lunar Devourer\" state.",
-            "Reserve strength as Boss Mirage is about to enter \"Lunar Devourer\" state to better handle \"Going Solo.\"",
-            "During \"Going Solo,\" if the selected ally character has a summon, the summoned unit will enter \"Going Solo\" alongside the character."
+            "After <color=#f29e38ff>Breaking</color> Boss Mirage, the DMG it receives is greatly increased, Skill Points are recovered for the team, and the team's action is Advanced Forward.",
+            "Defeat or break <color=#f29e38ff>summons</color> first to effectively weaken Boss Mirage."
           ],
           "PhaseList": [
             {
-              "Name": "Phase I: Clash of Wind and Lightning",
-              "Desc": "When Boss Mirage enters \"Lunar Devourer\" state, the strongest ally character must be selected to engage in \"Going Solo\" against Boss Mirage.",
-              "Answer": "Strategy: Before Boss Mirage enters \"Lunar Devourer\" state, defeat as many Wolftroopers as possible to gain enhancements.",
+              "Name": "Phase I — Annihilator of Desolation Mistral",
+              "Desc": "Boss Mirage will use abilities to Freeze and deal DMG to targets. Gepard can Shield his team.",
+              "Answer": "Strategy: Defeat the summons first. If Gepard uses a Collective Shield, quickly break the shield and defeat Gepard.",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "Phase II: Devourer of Heaven and Moon",
-              "Desc": "Boss Mirage's abilities deal DMG to Wolftroopers. This is additionally enhanced when Boss Mirage enters \"Lunar Devourer\" state.",
-              "Answer": "Strategy: Defeat Wolftroopers before Boss Mirage acts to prevent Wolftroopers from being eliminated by Boss Mirage.",
+              "Name": "Phase II — Annihilator of Desolation Mistral: Mother of Deception",
+              "Desc": "Boss Mirage will keep using Last Choir of Genesis to deal massive DMG to everyone, as well as abilities that will restrict the team's actions.",
+              "Answer": "Strategy: After defeating the summons, quickly break Boss Mirage's Weakness.",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -19703,114 +19841,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "Steelbone Summit",
-              "Desc": "Parts take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After Boss Mirage's <color=#f29e38ff>Weakness is broken</color>, the DMG they receive increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "Sickleclawed Sawteeth",
-              "Desc": "Boss Mirage's Toughness increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "Withered Verdure",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "Beastly Rage",
-              "Desc": "The duration of <color=#f29e38ff>\"Malediction\"</color> state increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color> turns.",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "Tender the Rigid",
+              "Desc": "\"The Long Arms of Sorrow's\" Max Toughness increases.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "Boss Mirage and all other parts take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Desc": "Boss Mirage and its summons take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "When the Boss Mirage's parts get <color=#f29e38ff>Weakness Broken</color>, the Toughness of the Boss Mirage will be reduced.",
+              "Desc": "In this combat, ally targets' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "When the Boss Mirage uses \"Soul-Shattering Malediction,\" causes ally characters to <color=#f29e38ff>enter the \"Malediction\" state</color>. Ally characters and summons in the \"Malediction\" state will Depart the field. At the same time, summons Bloodstained Lupine to replace the Departed character and continue the battle, and the \"Bloodstained Lupine\"'s attacks can cause <color=#f29e38ff>heavy Toughness Reduction</color>.",
+              "Desc": "When an ally target's HP decreases, the Boss Mirage in \"Dream of Demise\" state will accumulate \"Desperate Bubble.\" When \"Desperate Bubble\" reaches its maximum, Boss Mirage enters the \"Fragrance of Death\" state, greatly enhancing the abilities of Boss Mirage and its summons.",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "Weakness Break Boss Mirage's <color=#f29e38ff>parts</color> multiple times to effectively reduce Boss Mirage's Toughness. <color=#f29e38ff>Break</color> Boss Mirage to greatly increase the DMG taken by itself and all its parts, while recovering Skill Points and activating Ultimates for all allies.",
-            "When <color=#f29e38ff>\"Bloodstained Lupine\"</color> replaces an ally character in battle, it will additionally <color=#f29e38ff>reduce Toughness irrespective of Weakness Types</color> based on the <color=#f29e38ff>number of DoT debuffs</color> inflicted on the enemy target attacked. \"Bloodstained Lupine's\" <color=#f29e38ff>Basic ATK</color> can restore HP for all ally targets, and its <color=#f29e38ff>Skill</color> can hit multiple enemy targets while greatly reducing their Toughness. This <color=#f29e38ff>does not consume Skill Points</color>."
+            "When ally targets enter the \"HP Overload\" state, their DMG dealt and Weakness Break Efficiency are greatly reduced. Prioritize restoring their HP to dispel this state.",
+            "Inflicting Weakness Break on \"The Long Arms of Sorrow\" will reduce the Boss Mirage's Toughness and HP. If the Boss Mirage is in the \"Fragrance of Death\" state, it will also restore allies' HP."
           ],
           "PhaseList": [
             {
-              "Name": "Phase 1: Unyielding Winds",
-              "Desc": "The Boss Mirage will use \"Soul-Shattering Malediction\" to inflict the \"Malediction\" effect on allies.",
-              "Answer": "Strategy: When \"Soul-Shattering Malediction\" is used, prioritize selecting non-DMG dealing ally characters as the target of the ability.",
+              "Name": "Phase 1: Deathwish",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Answer": "Strategy: Prioritize healing ally targets in \"HP Overload\" state.",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "Phase 2: Sweep the Heavens",
-              "Desc": "The Boss Mirage will use \"Sweep the Heavens, Swallow the Earth\" to deal high DMG and debuffs.",
-              "Answer": "Strategy: Do what you can to break all parts before \"Sweep the Heavens, Swallow the Earth\" is used.",
+              "Name": "Phase 2: From Death, Comes Life",
+              "Desc": "When Boss Mirage uses \"Death Wishes For More Death,\" it will deal fatal damage to ally targets in \"HP Overload\" state.",
+              "Answer": "Strategy: Before \"Death Wishes For More Death\" is used, restore HP to dispel the \"HP Overload\" state from all ally units.",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420314,
+            "StageID": 420334,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 90,
-            "EliteGroup": 84,
+            "EliteGroup": 907,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19829,18 +19954,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401404
+                "Monster0": 100401404,
+                "Monster1": 100402604
               }
             ],
             "LevelLoseCondition": [
@@ -19850,17 +19976,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420304,
+            "StageID": 420324,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 90,
-            "EliteGroup": 704,
+            "EliteGroup": 899,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19879,18 +20006,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501204
+                "Monster0": 401403604
               }
             ],
             "LevelLoseCondition": [
@@ -19900,6 +20027,1632 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      }
+    ]
+  },
+  "3013": {
+    "Id": 3013,
+    "Name": "Gale of Netherveil",
+    "Buff": {
+      "Name": "Ruinous Embers",
+      "Desc": "When enemy units with <color=#f29e38ff>\"Steadfast Safeguard\"</color> are <color=#f29e38ff>Weakness Broken</color>, dispels control effects for all allies, activates Ultimates and restores HP.\\nAll enemies take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> more Memosprite Skill DMG, and <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> more Skill DMG.",
+      "Param": [
+        0.10000000009313226,
+        0.3000000002793968
+      ]
+    },
+    "BuffList1": [
+      {
+        "Name": "Armed Up",
+        "Desc": "Increases Physical DMG dealt by all allies by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, and decreases all enemies' Physical RES by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+        "Param": [
+          0.5000000004656613,
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "Obstinate Weed",
+        "Desc": "When allies use Basic ATK or Skill to attack Weakness Broken enemies, all DoTs currently applied to the enemies will immediately produce DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG.",
+        "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "Rime Piercer",
+        "Desc": "Increases all enemies' Break DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After Breaking an enemy's Weakness, increases all allies' SPD by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> for <color=#f29e38ff><unbreak>#3[i]</unbreak></color> turn(s).",
+        "Param": [
+          0.10000000009313226,
+          0.20000000018626451,
+          2
+        ]
+      }
+    ],
+    "BuffList2": [
+      {
+        "Name": "Unstoppable Force",
+        "Desc": "DMG dealt by memosprites ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF.",
+        "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "Innervation",
+        "Desc": "Increases all allies' Skill DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. At the start of their turn, if their current HP percentage is equal to or lower than <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, restores HP equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of their Max HP.",
+        "Param": [
+          0.3000000002793968,
+          0.010000000009313226,
+          0.1500000001396984
+        ]
+      },
+      {
+        "Name": "Unstoppable Momentum",
+        "Desc": "When a character uses Ultimate, their Weakness Break Efficiency increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <color=#f29e38ff><unbreak>#3[i]</unbreak></color> turn(s).",
+        "Param": [
+          1,
+          0.40000000037252903,
+          3
+        ]
+      }
+    ],
+    "BeginTime": "2025-09-22 04:00:00",
+    "EndTime": "2025-12-22 04:00:00",
+    "Level": [
+      {
+        "Id": 30131,
+        "Name": "Gale of Netherveil: Difficulty 1",
+        "Challenge": [
+          {
+            "Name": "Gain #1 points",
+            "Param": 4000
+          },
+          {
+            "Name": "Gain #1 points",
+            "Param": 5200
+          },
+          {
+            "Name": "Gain #1 points",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401401,
+        "BossMonsterID2": 401403601,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 1,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "Steadfast Safeguard",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "Battlefield Transfer",
+              "Desc": "Gepard will join the battle and provide protection for Boss Mirage. Boss Mirage will <color=#f29e38ff><u>Transfer</u></color> its own Weakness Type to summons, but when those summons are defeated, Boss Mirage's Toughness will be additionally reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "Transfer",
+                  "Desc": "Transfers the Weakness Type to the target. The Weakness Type returns to this unit after the target is defeated, and additionally reduces Toughness.",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "Nowhere to Escape",
+              "Desc": "Boss Mirage's summon will mark 1 target. After Boss Mirage uses a single-target ability, it will deliver a <color=#f29e38ff><u>Follow-Up Usage</u></color> on the marked target.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "Follow-Up Usage",
+                  "Desc": "After using a single-target ability, the unit will re-select the target and use the ability again.",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness-Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "When there is a summon present in the battle, Boss Mirage will <color=#f29e38ff>transfer its own Weakness Type to the summon</color>.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "After <color=#f29e38ff>Breaking</color> Boss Mirage, the DMG it receives is greatly increased, Skill Points are recovered for the team, and the team's action is Advanced Forward.",
+            "Defeat or break <color=#f29e38ff>summons</color> first to effectively weaken Boss Mirage."
+          ],
+          "PhaseList": [
+            {
+              "Name": "Phase I — Annihilator of Desolation Mistral",
+              "Desc": "Boss Mirage will use abilities to Freeze and deal DMG to targets. Gepard can Shield his team.",
+              "Answer": "Strategy: Defeat the summons first. If Gepard uses a Collective Shield, quickly break the shield and defeat Gepard.",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "Phase II — Annihilator of Desolation Mistral: Mother of Deception",
+              "Desc": "Boss Mirage will keep using Last Choir of Genesis to deal massive DMG to everyone, as well as abilities that will restrict the team's actions.",
+              "Answer": "Strategy: After defeating the summons, quickly break Boss Mirage's Weakness.",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 1,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "Steadfast Safeguard",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "Withered Verdure",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "Tender the Rigid",
+              "Desc": "\"The Long Arms of Sorrow's\" Max Toughness increases.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "Boss Mirage and its summons take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "In this combat, ally targets' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "When an ally target's HP decreases, the Boss Mirage in \"Dream of Demise\" state will accumulate \"Desperate Bubble.\" When \"Desperate Bubble\" reaches its maximum, Boss Mirage enters the \"Fragrance of Death\" state, greatly enhancing the abilities of Boss Mirage and its summons.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "When ally targets enter the \"HP Overload\" state, their DMG dealt and Weakness Break Efficiency are greatly reduced. Prioritize restoring their HP to dispel this state.",
+            "Inflicting Weakness Break on \"The Long Arms of Sorrow\" will reduce the Boss Mirage's Toughness and HP. If the Boss Mirage is in the \"Fragrance of Death\" state, it will also restore allies' HP."
+          ],
+          "PhaseList": [
+            {
+              "Name": "Phase 1: Deathwish",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Answer": "Strategy: Prioritize healing ally targets in \"HP Overload\" state.",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "Phase 2: From Death, Comes Life",
+              "Desc": "When Boss Mirage uses \"Death Wishes For More Death,\" it will deal fatal damage to ally targets in \"HP Overload\" state.",
+              "Answer": "Strategy: Before \"Death Wishes For More Death\" is used, restore HP to dispel the \"HP Overload\" state from all ally units.",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420331,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 60,
+            "EliteGroup": 904,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401401,
+                "Monster1": 100402601
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420321,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 60,
+            "EliteGroup": 896,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403601
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      },
+      {
+        "Id": 30132,
+        "Name": "Gale of Netherveil: Difficulty 2",
+        "Challenge": [
+          {
+            "Name": "Gain #1 points",
+            "Param": 4000
+          },
+          {
+            "Name": "Gain #1 points",
+            "Param": 5200
+          },
+          {
+            "Name": "Gain #1 points",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401402,
+        "BossMonsterID2": 401403602,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 2,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "Steadfast Safeguard",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "Battlefield Transfer",
+              "Desc": "Gepard will join the battle and provide protection for Boss Mirage. Boss Mirage will <color=#f29e38ff><u>Transfer</u></color> its own Weakness Type to summons, but when those summons are defeated, Boss Mirage's Toughness will be additionally reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "Transfer",
+                  "Desc": "Transfers the Weakness Type to the target. The Weakness Type returns to this unit after the target is defeated, and additionally reduces Toughness.",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "Nowhere to Escape",
+              "Desc": "Boss Mirage's summon will mark 1 target. After Boss Mirage uses a single-target ability, it will deliver a <color=#f29e38ff><u>Follow-Up Usage</u></color> on the marked target.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "Follow-Up Usage",
+                  "Desc": "After using a single-target ability, the unit will re-select the target and use the ability again.",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness-Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "When there is a summon present in the battle, Boss Mirage will <color=#f29e38ff>transfer its own Weakness Type to the summon</color>.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "After <color=#f29e38ff>Breaking</color> Boss Mirage, the DMG it receives is greatly increased, Skill Points are recovered for the team, and the team's action is Advanced Forward.",
+            "Defeat or break <color=#f29e38ff>summons</color> first to effectively weaken Boss Mirage."
+          ],
+          "PhaseList": [
+            {
+              "Name": "Phase I — Annihilator of Desolation Mistral",
+              "Desc": "Boss Mirage will use abilities to Freeze and deal DMG to targets. Gepard can Shield his team.",
+              "Answer": "Strategy: Defeat the summons first. If Gepard uses a Collective Shield, quickly break the shield and defeat Gepard.",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "Phase II — Annihilator of Desolation Mistral: Mother of Deception",
+              "Desc": "Boss Mirage will keep using Last Choir of Genesis to deal massive DMG to everyone, as well as abilities that will restrict the team's actions.",
+              "Answer": "Strategy: After defeating the summons, quickly break Boss Mirage's Weakness.",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 2,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "Steadfast Safeguard",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "Withered Verdure",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "Tender the Rigid",
+              "Desc": "\"The Long Arms of Sorrow's\" Max Toughness increases.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "Boss Mirage and its summons take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "In this combat, ally targets' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "When an ally target's HP decreases, the Boss Mirage in \"Dream of Demise\" state will accumulate \"Desperate Bubble.\" When \"Desperate Bubble\" reaches its maximum, Boss Mirage enters the \"Fragrance of Death\" state, greatly enhancing the abilities of Boss Mirage and its summons.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "When ally targets enter the \"HP Overload\" state, their DMG dealt and Weakness Break Efficiency are greatly reduced. Prioritize restoring their HP to dispel this state.",
+            "Inflicting Weakness Break on \"The Long Arms of Sorrow\" will reduce the Boss Mirage's Toughness and HP. If the Boss Mirage is in the \"Fragrance of Death\" state, it will also restore allies' HP."
+          ],
+          "PhaseList": [
+            {
+              "Name": "Phase 1: Deathwish",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Answer": "Strategy: Prioritize healing ally targets in \"HP Overload\" state.",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "Phase 2: From Death, Comes Life",
+              "Desc": "When Boss Mirage uses \"Death Wishes For More Death,\" it will deal fatal damage to ally targets in \"HP Overload\" state.",
+              "Answer": "Strategy: Before \"Death Wishes For More Death\" is used, restore HP to dispel the \"HP Overload\" state from all ally units.",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420332,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 70,
+            "EliteGroup": 905,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401402,
+                "Monster1": 100402602
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420322,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 70,
+            "EliteGroup": 897,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403602
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      },
+      {
+        "Id": 30133,
+        "Name": "Gale of Netherveil: Difficulty 3",
+        "Challenge": [
+          {
+            "Name": "Gain #1 points",
+            "Param": 4000
+          },
+          {
+            "Name": "Gain #1 points",
+            "Param": 5200
+          },
+          {
+            "Name": "Gain #1 points",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401403,
+        "BossMonsterID2": 401403603,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 3,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "Steadfast Safeguard",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "Battlefield Transfer",
+              "Desc": "Gepard will join the battle and provide protection for Boss Mirage. Boss Mirage will <color=#f29e38ff><u>Transfer</u></color> its own Weakness Type to summons, but when those summons are defeated, Boss Mirage's Toughness will be additionally reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "Transfer",
+                  "Desc": "Transfers the Weakness Type to the target. The Weakness Type returns to this unit after the target is defeated, and additionally reduces Toughness.",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "Nowhere to Escape",
+              "Desc": "Boss Mirage's summon will mark 1 target. After Boss Mirage uses a single-target ability, it will deliver a <color=#f29e38ff><u>Follow-Up Usage</u></color> on the marked target.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "Follow-Up Usage",
+                  "Desc": "After using a single-target ability, the unit will re-select the target and use the ability again.",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness-Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "When there is a summon present in the battle, Boss Mirage will <color=#f29e38ff>transfer its own Weakness Type to the summon</color>.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "Boss Mirage will launch a follow-up single target attack on the <color=#f29e38ff>summon's</color> locked-on target, with a chance to Freeze or Imprison the target.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "After <color=#f29e38ff>Breaking</color> Boss Mirage, the DMG it receives is greatly increased, Skill Points are recovered for the team, and the team's action is Advanced Forward.",
+            "Defeat or break <color=#f29e38ff>summons</color> first to effectively weaken Boss Mirage."
+          ],
+          "PhaseList": [
+            {
+              "Name": "Phase I — Annihilator of Desolation Mistral",
+              "Desc": "Boss Mirage will use abilities to Freeze and deal DMG to targets. Gepard can Shield his team.",
+              "Answer": "Strategy: Defeat the summons first. If Gepard uses a Collective Shield, quickly break the shield and defeat Gepard.",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "Phase II — Annihilator of Desolation Mistral: Mother of Deception",
+              "Desc": "Boss Mirage will keep using Last Choir of Genesis to deal massive DMG to everyone, as well as abilities that will restrict the team's actions.",
+              "Answer": "Strategy: After defeating the summons, quickly break Boss Mirage's Weakness.",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 3,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "Steadfast Safeguard",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "Withered Verdure",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "Tender the Rigid",
+              "Desc": "\"The Long Arms of Sorrow's\" Max Toughness increases.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "Boss Mirage and its summons take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "In this combat, ally targets' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "When an ally target's HP decreases, the Boss Mirage in \"Dream of Demise\" state will accumulate \"Desperate Bubble.\" When \"Desperate Bubble\" reaches its maximum, Boss Mirage enters the \"Fragrance of Death\" state, greatly enhancing the abilities of Boss Mirage and its summons.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "When ally targets enter the \"HP Overload\" state, their DMG dealt and Weakness Break Efficiency are greatly reduced. Prioritize restoring their HP to dispel this state.",
+            "Inflicting Weakness Break on \"The Long Arms of Sorrow\" will reduce the Boss Mirage's Toughness and HP. If the Boss Mirage is in the \"Fragrance of Death\" state, it will also restore allies' HP."
+          ],
+          "PhaseList": [
+            {
+              "Name": "Phase 1: Deathwish",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Answer": "Strategy: Prioritize healing ally targets in \"HP Overload\" state.",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "Phase 2: From Death, Comes Life",
+              "Desc": "When Boss Mirage uses \"Death Wishes For More Death,\" it will deal fatal damage to ally targets in \"HP Overload\" state.",
+              "Answer": "Strategy: Before \"Death Wishes For More Death\" is used, restore HP to dispel the \"HP Overload\" state from all ally units.",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420333,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 80,
+            "EliteGroup": 906,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401403,
+                "Monster1": 100402603
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420323,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 80,
+            "EliteGroup": 898,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403603
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      },
+      {
+        "Id": 30134,
+        "Name": "Gale of Netherveil: Difficulty 4",
+        "Challenge": [
+          {
+            "Name": "Gain #1 points",
+            "Param": 4000
+          },
+          {
+            "Name": "Gain #1 points",
+            "Param": 5200
+          },
+          {
+            "Name": "Gain #1 points",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401404,
+        "BossMonsterID2": 401403604,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 4,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "Steadfast Safeguard",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "Battlefield Transfer",
+              "Desc": "Gepard will join the battle and provide protection for Boss Mirage. Boss Mirage will <color=#f29e38ff><u>Transfer</u></color> its own Weakness Type to summons, but when those summons are defeated, Boss Mirage's Toughness will be additionally reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "Transfer",
+                  "Desc": "Transfers the Weakness Type to the target. The Weakness Type returns to this unit after the target is defeated, and additionally reduces Toughness.",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "Nowhere to Escape",
+              "Desc": "Boss Mirage's summon will mark 1 target. After Boss Mirage uses a single-target ability, it will deliver a <color=#f29e38ff><u>Follow-Up Usage</u></color> on the marked target.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "Follow-Up Usage",
+                  "Desc": "After using a single-target ability, the unit will re-select the target and use the ability again.",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness-Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color> and action gets additionally delayed, additionally increases DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "When there is a summon present in the battle, Boss Mirage will <color=#f29e38ff>transfer its own Weakness Type to the summon</color>.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "Boss Mirage will launch a follow-up single target attack on the <color=#f29e38ff>summon's</color> locked-on target, with a chance to Freeze or Imprison the target.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "After <color=#f29e38ff>Breaking</color> Boss Mirage, the DMG it receives is greatly increased, Skill Points are recovered for the team, and the team's action is Advanced Forward.",
+            "Defeat or break <color=#f29e38ff>summons</color> first to effectively weaken Boss Mirage."
+          ],
+          "PhaseList": [
+            {
+              "Name": "Phase I — Annihilator of Desolation Mistral",
+              "Desc": "Boss Mirage will use abilities to Freeze and deal DMG to targets. Gepard can Shield his team.",
+              "Answer": "Strategy: Defeat the summons first. If Gepard uses a Collective Shield, quickly break the shield and defeat Gepard.",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "Phase II — Annihilator of Desolation Mistral: Mother of Deception",
+              "Desc": "Boss Mirage will keep using Last Choir of Genesis to deal massive DMG to everyone, as well as abilities that will restrict the team's actions.",
+              "Answer": "Strategy: After defeating the summons, quickly break Boss Mirage's Weakness.",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 4,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "Steadfast Safeguard",
+              "Desc": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "Withered Verdure",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "Tender the Rigid",
+              "Desc": "\"The Long Arms of Sorrow's\" Max Toughness increases.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "Tenacious Resolve",
+              "Desc": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness Type</color> they have increases DMG received.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "Boss Mirage and its summons take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "In this combat, ally targets' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "When an ally target's HP decreases, the Boss Mirage in \"Dream of Demise\" state will accumulate \"Desperate Bubble.\" When \"Desperate Bubble\" reaches its maximum, Boss Mirage enters the \"Fragrance of Death\" state, greatly enhancing the abilities of Boss Mirage and its summons.",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "When ally targets enter the \"HP Overload\" state, their DMG dealt and Weakness Break Efficiency are greatly reduced. Prioritize restoring their HP to dispel this state.",
+            "Inflicting Weakness Break on \"The Long Arms of Sorrow\" will reduce the Boss Mirage's Toughness and HP. If the Boss Mirage is in the \"Fragrance of Death\" state, it will also restore allies' HP."
+          ],
+          "PhaseList": [
+            {
+              "Name": "Phase 1: Deathwish",
+              "Desc": "In this combat, ally units' HP will not drop below 1, and any DMG taken exceeding a certain amount of their current HP will be converted into \"HP Overload.\" Ally units in the \"HP Overload\" state will have their DMG dealt and Weakness Break Efficiency greatly reduced.",
+              "Answer": "Strategy: Prioritize healing ally targets in \"HP Overload\" state.",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "Phase 2: From Death, Comes Life",
+              "Desc": "When Boss Mirage uses \"Death Wishes For More Death,\" it will deal fatal damage to ally targets in \"HP Overload\" state.",
+              "Answer": "Strategy: Before \"Death Wishes For More Death\" is used, restore HP to dispel the \"HP Overload\" state from all ally units.",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420334,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 90,
+            "EliteGroup": 907,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401404,
+                "Monster1": 100402604
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420324,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 90,
+            "EliteGroup": 899,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403604
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]

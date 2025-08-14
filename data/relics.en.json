@@ -35,6 +35,15 @@
         "Desc": "At the start of the battle, immediately regenerates 1 Skill Point.",
         "ParamList": []
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "4": []
     }
   },
   "102": {
@@ -76,6 +85,20 @@
           0.10000000009313226
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.05999999865889549
+        }
+      ]
     }
   },
   "103": {
@@ -116,6 +139,15 @@
           0.20000000018626451
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.15000000596046448
+        }
+      ],
+      "4": []
     }
   },
   "104": {
@@ -157,6 +189,15 @@
           2
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "IceAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "4": []
     }
   },
   "105": {
@@ -198,6 +239,15 @@
           5
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "PhysicalAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "4": []
     }
   },
   "106": {
@@ -240,6 +290,10 @@
           5
         ]
       }
+    },
+    "Bonus": {
+      "2": [],
+      "4": []
     }
   },
   "107": {
@@ -281,6 +335,15 @@
           0.12000000011175871
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "FireAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "4": []
     }
   },
   "108": {
@@ -322,6 +385,15 @@
           0.10000000009313226
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "QuantumAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "4": []
     }
   },
   "109": {
@@ -363,6 +435,15 @@
           1
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "ThunderAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "4": []
     }
   },
   "110": {
@@ -403,6 +484,15 @@
           0.25000000023283064
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "WindAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "4": []
     }
   },
   "111": {
@@ -444,6 +534,20 @@
           3
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.1599999964237213
+        }
+      ]
     }
   },
   "112": {
@@ -485,6 +589,15 @@
           0.20000000018626451
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "ImaginaryAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "4": []
     }
   },
   "113": {
@@ -527,6 +640,15 @@
           2
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "4": []
     }
   },
   "114": {
@@ -568,6 +690,15 @@
           1
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.05999999865889549
+        }
+      ],
+      "4": []
     }
   },
   "115": {
@@ -610,6 +741,10 @@
           3
         ]
       }
+    },
+    "Bonus": {
+      "2": [],
+      "4": []
     }
   },
   "116": {
@@ -651,6 +786,15 @@
           3
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "4": []
     }
   },
   "117": {
@@ -696,6 +840,15 @@
           1
         ]
       }
+    },
+    "Bonus": {
+      "2": [],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.03999999910593033
+        }
+      ]
     }
   },
   "118": {
@@ -737,6 +890,15 @@
           2
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "4": []
     }
   },
   "119": {
@@ -780,6 +942,15 @@
           0.1500000001396984
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "4": []
     }
   },
   "120": {
@@ -822,6 +993,20 @@
           1
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.05999999865889549
+        }
+      ]
     }
   },
   "121": {
@@ -864,6 +1049,15 @@
           2
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.05999999865889549
+        }
+      ],
+      "4": []
     }
   },
   "122": {
@@ -905,6 +1099,15 @@
           0.25000000023283064
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.07999999821186066
+        }
+      ],
+      "4": []
     }
   },
   "123": {
@@ -947,6 +1150,15 @@
           2
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "4": []
     }
   },
   "124": {
@@ -992,6 +1204,20 @@
           0.0800000000745058
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "QuantumAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": -0.07999999821186066
+        }
+      ]
     }
   },
   "125": {
@@ -1011,7 +1237,7 @@
       "31253": {
         "Name": "Warrior Goddess's Dawn Cape",
         "Desc": "This cloak shielded the Daythunder Knight from rain and dust, accompanying her through every adventure, leaving behind the most striking silhouette in the sky.",
-        "Story": "The girl, not yet a knight, received exceptional combat training in the secluded mountain cave of her mentor.\\n\\n\"Well done. Soon, there will be nothing more I can teach you. What do you intend to do with this power?\"\\n\\nThe girl's thoughts were no longer on her training after hearing the divine oracle. Her gentle mentor noticed her troubled mind and quietly applied resin to the blade of her trusted short sword. \"Teacher, I want to live in truth. Have you heard... about the Holy Maiden of Janusapolis and the prophecy she delivered?\" The girl feared her mentor would try to dissuade her, yet her resolve had already been set.\\n\\n\"But what is truth?\" The gentle mentor asked in return. \"...You will need a lifetime to discern it, and that will not be easy.\"\\n\\nAt midnight, she quietly rose, hoping to leave in haste before dawn arrived, only to find that her travel pack already contained a neatly folded cloak."
+        "Story": "The girl, not yet a knight, received exceptional combat training in the secluded mountain cave of her mentor.\\n\\n\"Well done. Soon, there will be nothing more I can teach you. What do you intend to do with this power?\"\\n\\nThe girl's thoughts were no longer on her training after hearing the divine oracle. Her gentle mentor noticed her troubled mind and quietly applied resin to the blade of her trusted short sword. \"Teacher, I want to live in truth. Have you heard... about the Holy Maiden of Janusopolis and the prophecy she delivered?\" The girl feared her mentor would try to dissuade her, yet her resolve had already been set.\\n\\n\"But what is truth?\" The gentle mentor asked in return. \"...You will need a lifetime to discern it, and that will not be easy.\"\\n\\nAt midnight, she quietly rose, hoping to leave in haste before dawn arrived, only to find that her travel pack already contained a neatly folded cloak."
       },
       "31254": {
         "Name": "Warrior Goddess's Honor Spurs",
@@ -1027,13 +1253,22 @@
         ]
       },
       "4": {
-        "Desc": "When the wearer and their memosprite provide healing to ally targets aside from themselves, the wearer gains \"Gentle Rain,\" which can be triggered up to 1 time per turn, lasting for <unbreak>#3[i]</unbreak> turn(s). While the wearer has \"Gentle Rain,\" increases their SPD by <unbreak>#1[i]%</unbreak> and all allies' CRIT DMG by <unbreak>#2[i]%</unbreak>. This effect cannot be stacked.",
+        "Desc": "When the wearer or their memosprite provides healing to ally targets other than themselves, the wearer gains \"Gentle Rain,\" which lasts for <unbreak>#3[i]</unbreak> turn(s) and can only trigger once per turn. While the wearer has \"Gentle Rain,\" SPD increases by <unbreak>#1[i]%</unbreak> and all allies' CRIT DMG increases by <unbreak>#2[i]%</unbreak>. This effect cannot stack.",
         "ParamList": [
           0.060000000055879354,
           0.1500000001396984,
           2
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.05999999865889549
+        }
+      ],
+      "4": []
     }
   },
   "126": {
@@ -1076,6 +1311,121 @@
           1
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "4": []
+    }
+  },
+  "127": {
+    "Name": "World-Remaking Deliverer",
+    "Icon": "SpriteOutput/ItemIcon/71048.png",
+    "Parts": {
+      "31271": {
+        "Name": "Deliverer's Hood",
+        "Desc": "The hood that the legendary Deliverer wore to shield {F#herself}{M#himself} from storms. In actuality, it is probably nothing like what the bards describe.",
+        "Story": "The night fog of Oronyx entwines with laurel branches,\\nas the hero of deliverance descends from beyond the sky into the Abyss of Fate, alongside a black box.\\n\\n{F#She}{M#He} came in response to the prophecy, yet in those times the priests feared to speak of what lay beyond the sky.\\n<i>\"Do not speak loudly of the sky, for the suspicious Aquila never hesitates to castigate with Daythunder.\"</i>\\nHearing this, the confident Deliverer replied in fury:\\n<i>\"O diviner of calamities, you never considered that even the gods should fear punishment from the children of humanity.\"</i>\\n\\nUpon the city walls, the Deliverer witnessed the rosy dawn rising on the horizon,\\n<i>\"First comes Nikador, who wields Strife,</i>\\n<i>I pray they bring me glory, not madness.\"</i>\\nThe Deliverer pulled back {F#her}{M#his} hood and hurled a spear,\\nits swift shadow like a lone wolf in early spring, charging through the streets of Castrum Kremnos.\\n\\n<i>\"In the name of Mnestia! If destiny's threads are broken, I shall weave a new chapter.\"</i>\\nThe Mad King's roar echoed from afar, his spear heralding departure before his steps.\\n<i>\"My Chrysos Heir companions await me on this journey, I must set forth.\"</i>\\n\\nJanus's priests looked at the Deliverer's fluttering gray hair and cheered loudly,\\nrejoicing like withered plants bestowed with nourishment."
+      },
+      "31272": {
+        "Name": "Deliverer's Sword Gauntlet",
+        "Desc": "The gauntlets worn by the legendary Deliverer as {F#she}{M#he} blazed through adversities. In actuality, it is probably nothing like what the bards describe.",
+        "Story": "Phagousa's freezing seas engraved the vast shores of Styxia,\\nand the hero of deliverance has arrived at the crossing of the River of Souls, where a ghostly pale dragon transformed into a ferry to the netherworld.\\n\\nAlong the River of Souls, the spirits of the dead morph into sweet whispers, urging the hero to never return to the mortal realm.\\n<i>\"You have subjugated the Titans of that world. Why not leave your legacy to successors?\"</i>\\nHearing these words, the sorrowful Deliverer replied in anguish:\\n<i>\"O fallen souls who linger here, you've never considered how my desire to save the world outweighs my longing for reunion.\"</i>\\n\\nAboard the ferry, the Deliverer recalled memories of {F#her}{M#his} Flame-Chase journey,\\n<i>\"Farewell, Thanatos of Death,</i>\\n<i>I pray you'll watch over my dearest friends, even though they never feared death.\"</i>\\nThe Deliverer caressed {F#her}{M#his}  deerskin gauntlets, that still held the warmth of their fallen comrades.\\n{F#She}{M#He} drifted with the warm and humid west wind, from the shores blooming with Antila flowers to the mortal realm.\\n\\n<i>\"Cerces, please defend my rationality, so I need not face another shocking discovery.\"</i>\\nThat experience of reviving from the dead was enough to prove to anyone that {F#she}{M#he} had the makings of a hero.\\n<i>\"The wait won't be long now, my fellow Chrysos Heirs. I shall fulfill that unforgettable oath.\"</i>\\n\\nThe lands of Georios welcomed {F#her}{M#his} return, as the Flame-Chase journey continued.\\nLike dark clouds parting in the night, the morning star shall sparkle once more."
+      },
+      "31273": {
+        "Name": "Deliverer's Robe of Legacy",
+        "Desc": "The battle robe worn by the legendary Deliverer when {F#she}{M#he} engaged in combat. In actuality, it is probably nothing like what the bards describe.",
+        "Story": "Aquila's dark clouds rumbled with rage,\\nthe hero of deliverance trod upon a bridge of rainbows, and struck down the once untouchable sky.\\n\\nStanding beside the heroic Deliverer was {F#her}{M#his} companion who had faced life and death together.\\n<i>\"Losses are a constant on the Flame-Chase journey, among which even life itself holds little value.\"</i>\\nUpon hearing these words, the resolute Deliverer calmly replied:\\n<i>\"I have long understood your determination, and even after tens of thousands of times, I will never betray it.\"</i>\\n\\nOn the way to the Era Nova Ceremony, the Deliverer bid farewell to {F#her}{M#his} comrades who would defend their way back.\\n<i>\"That is an expedition and epic that lasted over a millennium,</i>\\n<i>a story entrusted to us by countless predecessors, one that must conclude here today.\"</i>\\nThe last companion donned their cloak on the Deliverer's shoulder guards, turning to face the formidable foes that rushed at them like unrelenting tides.\\nIt was a symbol of their fight together, of both delegation and legacy.\\n\\n<i>\"If you can hear me, Talanton, such a heroic sacrifice deserves a better tomorrow.\"</i>\\n<i>\"Indeed, we've waited for a blazing torch...\"</i>\\n<i>\"only to inscribe the first stroke in this epic of an era's creation.\"</i>\\n\\nUnder Kephale's gentle gaze, the Deliverer shall carry everyone's wishes and recreate the world..."
+      },
+      "31274": {
+        "Name": "Deliverer's Boots of Pioneering",
+        "Desc": "The boots worn by the legendary Deliverer as {F#she}{M#he} trampled over mountains and braved through tides. In actuality, it is probably nothing like what the bards describe.",
+        "Story": "<i>\"Chrysalis of Gold, witness the romantic finale with your own eyes, and reweave a flawless destiny.\"</i>\\n<i>\"Gate of Infinity, open countless paths home, and fulfill the prophecy of tomorrow's reunion.\"</i>\\n<i>\"Bough of Rift, plant the Nouspore of 'Suspicion,' which shall ultimately sprout under everyone's wisdom.\"</i>\\n<i>\"Eye of Twilight, behold! The sky is without flaw or seams, and at its end lies a healing rainbow light.\"</i>\\n\\n<i>\"Return home, Lance of Fury, ascend to the throne surrounded by the people, pledging for peace in this world.\"</i>\\n<i>\"Speak freely, Coin of Whimsy, whether in clever jest or sincere words, there is no need hide anything.\"</i>\\n<i>\"Immerse in embraces, Hand of Shadow, master of the River of Souls...\"</i>\\n<i>\"Your gentleness can warm the seas of flowers across the shores, for every parting is worthy of the anticipation of reunion.\"</i>\\n\\n<i>\"The world shall hear the Chalice of Plenty's song, echoing endlessly in revelry.\"</i>\\n<i>\"The world shall witness the Veil of Evernight, preserving memories that shall never fade.\"</i>\\n<i>\"The perennial Pillar of Stone shall bear all beings on their distant journey, until they reach their final destination.\"</i>\\n<i>\"The Scale of Justice shall bestow its impartial laws, crowning the countless heroes of the Flame-Chase Journey...\"</i>\\n\\n<i>\"Throne of Worlds, bear not everything alone.</i>\\n<i>Look, the inextinguishable sun has already risen...\"</i>\\n\\nThose verses forged by regrets shall find closure in a rewritten poem.\\nThat untouchable end shall be reached through the Trailblaze."
+      }
+    },
+    "RequireNum": {
+      "2": {
+        "Desc": "Increases CRIT Rate by <unbreak>#1[i]%</unbreak>.",
+        "ParamList": [
+          0.0800000000745058
+        ]
+      },
+      "4": {
+        "Desc": "After the wearer uses Basic ATK or Skill, if the wearer's memosprite is on the field, increases Max HP of the wearer and their memosprite by <unbreak>#1[i]%</unbreak>, and increases all allies' DMG by <unbreak>#2[i]%</unbreak> until the wearer's next Basic ATK or Skill.",
+        "ParamList": [
+          0.24000000022351742,
+          0.0800000000745058
+        ]
+      }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.0800000000745058
+        }
+      ],
+      "4": []
+    }
+  },
+  "128": {
+    "Name": "Self-Enshrouded Recluse",
+    "Icon": "SpriteOutput/ItemIcon/71049.png",
+    "Parts": {
+      "31281": {
+        "Name": "Recluse's Wide-Brimmed Fedora",
+        "Desc": "A classic, wide-brimmed fedora with a rollable brim. Very popular among intellectuals, artists, and professionals.",
+        "Story": "..."
+      },
+      "31282": {
+        "Name": "Recluse's Refined Timepiece",
+        "Desc": "A beautiful metal mesh band, paired with a minimalist round dial. Cool, precise, and industrial. Also understated, practical, and unpretentious.",
+        "Story": "..."
+      },
+      "31283": {
+        "Name": "Recluse's Camel-Colored Coat",
+        "Desc": "A brown corduroy jacket. He often wears it unbuttoned to break away from the frame of meticulousness.",
+        "Story": "..."
+      },
+      "31284": {
+        "Name": "Recluse's Soft Suede Boots",
+        "Desc": "A more sturdy and durable high-top lace-up leather shoe suitable for less formal occasions. Still maintains an elegant touch.",
+        "Story": "..."
+      }
+    },
+    "RequireNum": {
+      "2": {
+        "Desc": "Increases CRIT DMG by <unbreak>#1[i]%</unbreak>.",
+        "ParamList": [
+          0.1600000001490116
+        ]
+      },
+      "4": {
+        "Desc": "Increases the wearer's CRIT DMG by <unbreak>#3[i]%</unbreak>. When any ally target consumes Skill Points for the first time in a turn, recovers 1 Skill Point. This effect triggers up to <unbreak>#1[i]</unbreak> time(s) per battle, and <unbreak>#2[i]</unbreak> trigger count(s) will be restored at the start of each subsequent wave. Only 1 Skill Point Recovery effect can be active in the same team.",
+        "ParamList": [
+          1,
+          1,
+          0.1600000001490116
+        ]
+      }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.1599999964237213
+        }
+      ]
     }
   },
   "301": {
@@ -1102,6 +1452,14 @@
           0.12000000011175871
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
     }
   },
   "302": {
@@ -1128,6 +1486,14 @@
           0.0800000000745058
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
     }
   },
   "303": {
@@ -1147,13 +1513,21 @@
     },
     "RequireNum": {
       "2": {
-        "Desc": "Increases the wearer's Effect Hit Rate by <unbreak>#1[i]%</unbreak>. Meanwhile, the wearer's ATK increases by an amount that is equal to <unbreak>#2[i]%</unbreak> of the current Effect Hit Rate, up to a maximum of <unbreak>#3[i]%</unbreak>.",
+        "Desc": "Increases the wearer's Effect Hit Rate by <unbreak>#1[i]%</unbreak>. Meanwhile, the wearer's ATK increases by an amount that is equal to <unbreak>#2[i]%</unbreak> of the current Effect Hit Rate, up to a maximum increase of <unbreak>#3[i]%</unbreak>.",
         "ParamList": [
           0.10000000009313226,
           0.25000000023283064,
           0.25000000023283064
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.10000000149011612
+        }
+      ]
     }
   },
   "304": {
@@ -1180,6 +1554,14 @@
           0.1500000001396984
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.15000000596046448
+        }
+      ]
     }
   },
   "305": {
@@ -1189,12 +1571,12 @@
       "33055": {
         "Name": "Planet Screwllum's Mechanical Sun",
         "Desc": "Encapsulated in the plane is the core of Planet Screwllum, imprisoned in a cage composed of countless levers, pistons, and gears. The inhabitants of Planet Screwllum euphemistically refer to it as the \"Steel Sun.\"",
-        "Story": "Regarding the origin of mechanical life, the carbon-based scholars of the Intelligentsia Guild have a unique speculation: A cluster of electrons born by chance.\\n\\nElectric currents flow throughout the atmosphere and ground. It separated into secondary forms of different magnitudes under the countless acts of gravity and repulsive forces. According to the scholars' hypothesis, this action is tantamount to cell division in carbon-based life. Thereafter, currents randomly output different potentials via the transistor structure naturally formed on the planetary surface, creating the most primitive program. The proud scholars argued that in this way, machines have \"thoughts\" that are comparable to carbon-based life.\\n\\nA mechanic objected to this: How can carbon-based life, which has not even been able to understand the origin of their own beings, have the gall to spout such fallacies? As soon as the words came out, the academic world of the universe was shaken to the core. Mechanical life began to re-examine the arrogant \"carbon-based centrism\" and examine its own origin.\\n\\nHowever, the Screwllumites on the Planet Screwllum had no choice but to pause their march — their planet's energy was being exhausted faster than their inspiration circuits. They needed to first find a way for their population to survive.\\n\\nIn the end, they decided to carry out an extreme plan that transcended several Amber Eras: They used the dying planet as fuel to power the Celestial Differentiator. The awe-inspiring, gigantic gear tirelessly processed the punched tape, methodically repeating calculations. With its planetary energy supply, the huge machine simulated a bona fide and stable superecosystem. They would then build their new home around this parent star.\\n\\nWith their planetary crisis lifted, the Screwllumites could rest. Always rational, optimistic, and elegant, they are determined to explore the answer to their origins in a purely rational manner.\\n\\nThe massive system is filled with the sound of bearings grinding against each other, and the dense teeth of cogs drive the punched tape to churn out data. One branch flows into multiple branches, and countless branches guide trillions of gears to roar... Then, these branches collapse again and again, falling into the furnace and returning to silence in the bubbling core. Over a long period of time, the programmed super-ecosystem gradually became a wonderful and relatively stable one. Eventually, speculations about the origins of machines began to cause Screwllumites' imaginations to wander.\\n\\nThe steel construct that drives the dying star once again activated their intelligent thought circuits. They will continue to ponder and explore their origins until the ever-present mechanical sun completely burns out."
+        "Story": "Regarding the origin of mechanical life, the carbon-based scholars of the Intelligentsia Guild have a unique speculation: A cluster of electrons born by chance.\\n\\nElectric currents flow throughout the atmosphere and ground. It separated into secondary forms of different magnitudes under the countless acts of gravity and repulsive forces. According to the scholars' hypothesis, this action is tantamount to cell division in carbon-based life. Thereafter, currents randomly output different potentials via the transistor structure naturally formed on the planetary surface, creating the most primitive program. The proud scholars argued that in this way, machines have \"thoughts\" that are comparable to carbon-based life.\\n\\nA mechanic objected to this: How can carbon-based life, which has not even been able to understand the origin of their own beings, have the gall to spout such fallacies? As soon as the words came out, the academic world of the universe was shaken to the core. Mechanical life began to re-examine the arrogant \"carbon-based centrism\" and examine its own origin.\\n\\nHowever, the Screwlites on the Planet Screwllum had no choice but to pause their march — their planet's energy was being exhausted faster than their inspiration circuits. They needed to first find a way for their population to survive.\\n\\nIn the end, they decided to carry out an extreme plan that transcended several Amber Eras: They used the dying planet as fuel to power the Celestial Differentiator. The awe-inspiring, gigantic gear tirelessly processed the punched tape, methodically repeating calculations. With its planetary energy supply, the huge machine simulated a bona fide and stable superecosystem. They would then build their new home around this parent star.\\n\\nWith their planetary crisis lifted, the Screwlites could rest. Always rational, optimistic, and elegant, they are determined to explore the answer to their origins in a purely rational manner.\\n\\nThe massive system is filled with the sound of bearings grinding against each other, and the dense teeth of cogs drive the punched tape to churn out data. One branch flows into multiple branches, and countless branches guide trillions of gears to roar... Then, these branches collapse again and again, falling into the furnace and returning to silence in the bubbling core. Over a long period of time, the programmed super-ecosystem gradually became a wonderful and relatively stable one. Eventually, speculations about the origins of machines began to cause Screwlites' imaginations to wander.\\n\\nThe steel construct that drives the dying star once again activated their intelligent thought circuits. They will continue to ponder and explore their origins until the ever-present mechanical sun completely burns out."
       },
       "33056": {
         "Name": "Planet Screwllum's Ring System",
         "Desc": "The planetary ring supports all of Planet Screwllum. Just how many are aware that the dense porous rectangular array reflects the truth about the planetary system?",
-        "Story": "The vast majority of Screwllumites were unaware that Planet Screwllum was a great attempt by inorganic life to investigate their origin.\\n\\nScrewllum felt a little empty. The event of understanding the operation logic of Planet Screwllum did not even cause any exceptional fluctuations in his Intelligent Pulse Waveform.\\n\\nHe stood on the wide terrace of his mansion, looking up at the unstoppable planetary engine. The ring system with dense square holes pierced up from the back of the planet. Everything the planet supports was situated on the strip, revolving quietly with the engine as its axis, day after day. He had seen the despairingly absurd nature of this planetary system: An elegant string of state transient equations, a giant, icy cylinder — that's all Planet Screwllum is, nothing more.\\n\\nAccording to his interpretation of the equations, at the birth of the Celestial Differentiator, its lead creator tried to explain the origin of the universe as a cellular automaton and its recursion, and Planet Screwllum itself was a result of the game of life.\\n\\nScrewllumites and other inorganic life on the planet acted as the \"cells\" in this automaton, while also being smaller-scale cellular automatons. Automatons were always made up of many smaller automatons, going back to the smallest components that form the building blocks of the universe. What was the smallest component? No one knows. Neither Screwllum nor the scholar who first proposed building the Celestial Differentiator do.\\n\\nThat was why Screwllum felt empty.\\n\\nDid that scholar's attempt fail? But the Celestial Differentiator had worked tirelessly for many Amber Eras. Did that not mean that the origin of the Screwllumites, their parent star, and even the entire universe can be attributed to that elegant string of equations? Not really. Until the super-ecosystem collapsed entirely, the equations remained unfalsifiable.\\n\\nHe swirled the fine glass of machine oil, never taking his eyes off the ring that recorded the truth of the planet. The giant screen-like perforated belt was tireless, and the rectangular array filtered the late-night moonlight. Screwllum couldn't stop thinking. <i>Do ends to recursions really exist?</i> He thought. <i>What is the nature of inorganic life — or yet, what is the origin of the universe?</i>\\n\\n<i>Am I really willing to be only a witness to the ideas of my predecessors?</i>\\n\\n\"No,\" Screwllum concluded. He decided to seek answers."
+        "Story": "The vast majority of Screwlites were unaware that Planet Screwllum was a great attempt by inorganic life to investigate their origin.\\n\\nScrewllum felt a little empty. The event of understanding the operation logic of Planet Screwllum did not even cause any exceptional fluctuations in his Intelligent Pulse Waveform.\\n\\nHe stood on the wide terrace of his mansion, looking up at the unstoppable planetary engine. The ring system with dense square holes pierced up from the back of the planet. Everything the planet supports was situated on the strip, revolving quietly with the engine as its axis, day after day. He had seen the despairingly absurd nature of this planetary system: An elegant string of state transient equations, a giant, icy cylinder — that's all Planet Screwllum is, nothing more.\\n\\nAccording to his interpretation of the equations, at the birth of the Celestial Differentiator, its lead creator tried to explain the origin of the universe as a cellular automaton and its recursion, and Planet Screwllum itself was a result of the game of life.\\n\\nScrewlites and other inorganic life on the planet acted as the \"cells\" in this automaton, while also being smaller-scale cellular automatons. Automatons were always made up of many smaller automatons, going back to the smallest components that form the building blocks of the universe. What was the smallest component? No one knows. Neither Screwllum nor the scholar who first proposed building the Celestial Differentiator do.\\n\\nThat was why Screwllum felt empty.\\n\\nDid that scholar's attempt fail? But the Celestial Differentiator had worked tirelessly for many Amber Eras. Did that not mean that the origin of the Screwlites, their parent star, and even the entire universe can be attributed to that elegant string of equations? Not really. Until the super-ecosystem collapsed entirely, the equations remained unfalsifiable.\\n\\nHe swirled the fine glass of machine oil, never taking his eyes off the ring that recorded the truth of the planet. The giant screen-like perforated belt was tireless, and the rectangular array filtered the late-night moonlight. Screwllum couldn't stop thinking. <i>Do ends to recursions really exist?</i> He thought. <i>What is the nature of inorganic life — or yet, what is the origin of the universe?</i>\\n\\n<i>Am I really willing to be only a witness to the ideas of my predecessors?</i>\\n\\n\"No,\" Screwllum concluded. He decided to seek answers."
       }
     },
     "RequireNum": {
@@ -1206,6 +1588,14 @@
           0.6000000005587935
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.1599999964237213
+        }
+      ]
     }
   },
   "306": {
@@ -1232,6 +1622,14 @@
           0.1500000001396984
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.07999999821186066
+        }
+      ]
     }
   },
   "307": {
@@ -1258,6 +1656,14 @@
           0.20000000018626451
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.1599999964237213
+        }
+      ]
     }
   },
   "308": {
@@ -1284,6 +1690,14 @@
           0.40000000037252903
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.05000000074505806
+        }
+      ]
     }
   },
   "309": {
@@ -1310,6 +1724,14 @@
           0.20000000018626451
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.07999999821186066
+        }
+      ]
     }
   },
   "310": {
@@ -1336,6 +1758,14 @@
           0.10000000009313226
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.10000000149011612
+        }
+      ]
     }
   },
   "311": {
@@ -1364,6 +1794,14 @@
           0.18000000016763806
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
     }
   },
   "312": {
@@ -1389,6 +1827,14 @@
           0.10000000009313226
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.05000000074505806
+        }
+      ]
     }
   },
   "313": {
@@ -1415,6 +1861,14 @@
           0.0400000000372529
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.03999999910593033
+        }
+      ]
     }
   },
   "314": {
@@ -1440,6 +1894,14 @@
           0.12000000011175871
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
     }
   },
   "315": {
@@ -1466,6 +1928,9 @@
           0.25000000023283064
         ]
       }
+    },
+    "Bonus": {
+      "2": []
     }
   },
   "316": {
@@ -1492,6 +1957,14 @@
           1
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.05999999865889549
+        }
+      ]
     }
   },
   "317": {
@@ -1517,6 +1990,14 @@
           0.12000000011175871
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.05000000074505806
+        }
+      ]
     }
   },
   "318": {
@@ -1542,6 +2023,14 @@
           0.3200000002980232
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.1599999964237213
+        }
+      ]
     }
   },
   "319": {
@@ -1568,6 +2057,14 @@
           0.2800000002607703
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
     }
   },
   "320": {
@@ -1596,6 +2093,14 @@
           0.20000000018626451
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.05999999865889549
+        }
+      ]
     }
   },
   "321": {
@@ -1604,18 +2109,18 @@
     "Parts": {
       "33215": {
         "Name": "Membrance Maze's Serene Treehouse",
-        "Desc": "Encapsulated in the Planar Sphere is the Membrance Maze of Aedes Elysiae. Brush aside the golden wheat, and down, down, down you tumble into a deep tree hollow. Huh? There are so many little fairies! \"One two three four five six seven?\" Wrong! It's \"Do re mi fa sol la ti!\"",
+        "Desc": "Encapsulated in the Planar Sphere is the Membrance Maze of Aedes Elysiae. Brush aside the golden wheat, and down, down, down you tumble into a deep tree hollow. Huh? There are so many little fairies! \"One two three four five six seven?\" Wrong! It's \"Do re mi fa sol la si!\"",
         "Story": "\"Hehe, children, the Membrance Maze's harvest season is upon us once again. So... what must we prepare?\" The chief stroked his white beard with a jolly smile.\\n\"The Brew Festival!\" The fairies cheered in unison.\\n\\nAt the beginning, the Membrance Maze was but a barren land. A small boy and girl from Aedes Elysiae brought seeds from the outside world and taught the fairies to plant them. When the seeds bloomed into flowers, the fairies followed their lead, collecting nectar along the grape trellises, where golden fuzzy-legged bees buzzed about. Then came the fruits, ripe and plump — the season of harvest. The fairies would gather to sing celebratory songs and hold feasts lasting deep into the night. And after the night? They'd bottle up that year's nectar, bury it deep in the earth, and wait for it to ferment into a potion that'd heal both winter's cold and the aches of growing up.\\n\\nThat's how every Brew Festival goes.\\nBut this year, the chief asked as he tugged his white beard, \"Has anyone seen Relimem?\"\\n\\nThe fairies searched high and low — until they found Relimem fast asleep at the treehouse door. A bubble puffed from the corner of its mouth, clearly immersed in an exceptionally wonderful dream. The curious Milimem crept closer and heard it murmuring in its sleep — \"Snowy, Reney... you promised to return. Together, we'll drink the Quillorb Fruit Brew we buried last year!\"\\n\\nIn the dream, Relimem had turned into a giant — so humongous, it completely blocked the tree hole to Membrance Maze. The two tiny children couldn't find a way in. Snowy and Reney tried tickling Relimem's ears with bulrush, bouncing on its belly, calling its name over and over. But Relimem slept on, far too deeply to hear them.\\n\"Oh no... what if Snowy and Reney never came back because I blocked the way?\"\\nRelimem's heart began to pound in its dream.\\n\\n\"A... Achoo!\"\\nWith a loud sneeze, Relimem woke up. Phew! Good thing it hadn't turned into a giant treehole-blocking Relimem after all. But... there were fairies gathered all around.\\n\"Snowy and Reney... did they come?\"\\nThe fairies shook their heads. No one could remember how many Brew Festivals it had been since the last time they showed up.\\nRelimem drooped again. Maybe it should've stayed in that dream just a little longer.\\nLittle Relimem didn't quite know how to describe this emotion. But if it had to try — it felt just like the last day of summer, when you let those flickering fireflies in the glass jar flutter away."
       },
       "33216": {
         "Name": "Membrance Maze's Wishing Whistle",
         "Desc": "A flute whistle, shaped from clay. It symbolizes the promise between the little fairies and the two children. Whenever the boy and girl blew into it — \"Mem?\" — the tree hole leading to the maze would open, and the fairies would welcome them back with joy.",
-        "Story": "\"Don't forget our promise! Whenever you blow your Wishing Whistle, no matter how far away you are, we'll hear you.\"\\n\\nThat was the first time the small boy and girl from Aedes Elysiae had stumbled into the Membrance Maze and met the fairies. They'd been playing hide-and-seek in the yard with their friends when they accidentally fell into a tree hole hidden in the tall weeds. It was deep — so, so deep — like a bottomless slide. But instead of crashing in a daze at the bottom, they tumbled right into a crowd of fairies...\\n\"One two three four five six seven! So many puppies — wait, no, rabbits?\"\\n\"No no no! We're Do re mi fa sol la ti! I'm Dorimem, that's Solimem, and that one's Relimem!\"\\n\\nTheir friendship with the fairies was like a thousand shooting stars — sudden, sparkling, and unforgettable. They spent a day full of laughter together. But soon, it was time to go. If they didn't head back, Mom and Dad would start to worry.\\n\"Will we get to see each other again?\" the boy asked, a little sad.\\nFarewell... See you again... The fairies didn't quite understand those words. In the Membrance Maze, no one ever left, so there was no need to say goodbye. But judging from the look on the children's faces, they realized it must be something upsetting. The purple Relimem thought for a moment. \"Wait, Snowy, Reney! I have something for you!\"\\n\\nThe boy and girl held Relimem's gift in their palms. It was a tiny whistle shaped like a fairy's ear, handmade by Relimem itself. It had seven holes, and when blown, each note rang clear and sweet — Do, Re, Mi, Fa, Sol, La, Ti. Relimem said earnestly, \"If you ever want to come back and play in the Membrance Maze again, just blow this whistle. No matter if we're sleeping, singing, or building leaf houses... we'll hear you. And we'll open the tree hole to the maze for you.\"\\n\\n\"A mystery flute that wakes up fairies!\" the girl giggled. \"Pinky promise — we'll come back again.\"\\nFrom then on, Relimem's happiest moments were when the whistle sounded. It would always shout with joy — \"I hear it! I hear it with both ears!\"\\n\\nAs time passed, Snowy and Reney, who had left Aedes Elysiae behind, remembered everything about their childhood: The rusted tin toys, the armless toy soldiers in the barn, the crocheted felt flowers, the rains that never came, the dried-up blood, the wheat fields burned down to brittle husks...\\nBut they forgot the little whistle buried in the dirt... And a promise they could no longer keep."
+        "Story": "\"Don't forget our promise! Whenever you blow your Wishing Whistle, no matter how far away you are, we'll hear you.\"\\n\\nThat was the first time the small boy and girl from Aedes Elysiae had stumbled into the Membrance Maze and met the fairies. They'd been playing hide-and-seek in the yard with their friends when they accidentally fell into a tree hole hidden in the tall weeds. It was deep — so, so deep — like a bottomless slide. But instead of crashing in a daze at the bottom, they tumbled right into a crowd of fairies...\\n\"One two three four five six seven! So many puppies — wait, no, rabbits?\"\\n\"No no no! We're do re mi fa sol la ti! I'm Dolimem, that's Solimem, and that one's Relimem!\"\\n\\nTheir friendship with the fairies was like a thousand shooting stars — sudden, sparkling, and unforgettable. They spent a day full of laughter together. But soon, it was time to go. If they didn't head back, Mom and Dad would start to worry.\\n\"Will we get to see each other again?\" the boy asked, a little sad.\\nFarewell... See you again... The fairies didn't quite understand those words. In the Membrance Maze, no one ever left, so there was no need to say goodbye. But judging from the look on the children's faces, they realized it must be something upsetting. The purple Relimem thought for a moment. \"Wait, Snowy, Reney! I have something for you!\"\\n\\nThe boy and girl held Relimem's gift in their palms. It was a tiny whistle shaped like a fairy's ear, handmade by Relimem itself. It had seven holes, and when blown, each note rang clear and sweet — Do, Re, Mi, Fa, Sol, La, Ti. Relimem said earnestly, \"If you ever want to come back and play in the Membrance Maze again, just blow this whistle. No matter if we're sleeping, singing, or building leaf houses... we'll hear you. And we'll open the tree hole to the maze for you.\"\\n\\n\"A mystery flute that wakes up fairies!\" the girl giggled. \"Pinky promise — we'll come back again.\"\\nFrom then on, Relimem's happiest moments were when the whistle sounded. It would always shout with joy — \"I hear it! I hear it with both ears!\"\\n\\nAs time passed, Snowy and Reney, who had left Aedes Elysiae behind, remembered everything about their childhood: The rusted tin toys, the armless toy soldiers in the barn, the crocheted felt flowers, the rains that never came, the dried-up blood, the wheat fields burned down to brittle husks...\\nBut they forgot the little whistle buried in the dirt... And a promise they could no longer keep."
       }
     },
     "RequireNum": {
       "2": {
-        "Desc": "When there are currently more or less than 4 ally targets in battle, each additional/missing ally target increases the wearer and their memosprite's DMG by <unbreak>#1[i]%</unbreak>/<unbreak>#2[i]%</unbreak>, up to a maximum of <unbreak>#3[i]</unbreak>/<unbreak>#4[i]</unbreak> stacks.",
+        "Desc": "When the number of ally targets on the field is not equal to 4, for every 1 additional/missing ally target, increases the DMG dealt by the wearer and their memosprite by <unbreak>#1[i]%</unbreak>/<unbreak>#2[i]%</unbreak>, stacking up to <unbreak>#3[i]</unbreak>/<unbreak>#4[i]</unbreak> time(s).",
         "ParamList": [
           0.09000000008381903,
           0.12000000011175871,
@@ -1623,6 +2128,9 @@
           3
         ]
       }
+    },
+    "Bonus": {
+      "2": []
     }
   },
   "322": {
@@ -1637,12 +2145,12 @@
       "33226": {
         "Name": "Warbling Shores' Cantillation Trail",
         "Desc": "The people of Styxia firmly believe that the sea sirens, just as the legends say, guard their paradise with flesh and blood. And that one day, drawn by the lighthouse's endless cantillation, they will arrive at last, rewarded with an eternal feast.",
-        "Story": "Like those who came before him, the lonely sailor lingers between sea and city, poised on the threshold between the mortal world and revelry. He wipes the oil seeping from the wound of a stranded whale. At nightfall, he lights the beacon. Then, seated before the light, he begins to play the water lyre — melodies yet unplayed echo through the strings.\\n\\nThe lighthouse hums with each note, and all of Styxia is swept into song. The melodies, sometimes gentle, sometimes fevered, stir boundless fantasies of delight in the Styxia Queen's heart. When the sailor begins to play in reverse from the final semibreve rest, the tune becomes whimsical and sprightly. White longboats carry tumblers and jesters, gliding through the canals. Men and women in splendid attire line the shores, their faces masked in gold leaf and feathers. The Queen slips among them, drifting through the scent of lilac and almonds.\\n\\nThen, the sailor sharpens the rhythm, the notes ringing wild and triumphant. A city-wide play unfolds upon Styxia's very stage. Townsfolk dressed as pirates wave black flags, storming the undefended walls. They plunder wine and gold, hang nobles upon flower-strewn gallows, and crown the beggars. At the finale, the tower is set ablaze, and the crowd dances madly to the rising music, drunk beyond reason.\\n\\nThe crashing tide dampens the sheet music, blurring notes meant to soothe and slow. In the mist before the lighthouse, the Queen steps into a new script. Dressed in a sea-blue fishtail dress, she becomes the attendant of Phagousa — the Queen of the sea sirens.\\n\\nIn this tale, the sirens are tasked to guard in the ocean's deepest, where anguish beyond mortals festers. They bear the burden in flesh and blood, drawing the pitch-dark calamity into the Chalice of Plenty, so that Styxia may revel in eternal joy. And when the appointed time comes, the sirens will follow the lighthouse's light and song, walk along the causeway, and enter Styxia. The people will take their hands, and together, they shall join the never-ending celebration.\\n\\nThe Queen of Styxia wades into the water, embracing an imagined demise. On a night when the tides break free from the moon's restraints, deep beneath the waves, the hollow tears of the sea sirens rise like foam. They hope. They wait. They gaze upon moonlight they've never known — until their flesh dissolves. But there is no moonlight tonight. Only the lighthouse flickers, as always. And so their tears ascend alone, surfacing in a shimmer before dissolving into the waves.\\n\\nAt last, the lonely sailor is granted his wish. The revelers, eyes glistening with blissful tears, welcome him into Styxia. And with the first note of the eternal chorus, the withered wings of death unfurl above this city of everlasting joy."
+        "Story": "Like those who came before him, the lonely sailor lingers between sea and city, poised on the threshold between the mortal world and revelry. He wipes the oil seeping from the wound of a stranded whale. At nightfall, he lights the beacon. Then, seated before the light, he begins to play melodies yet unplayed on the water lyre.\\n\\nThe lighthouse hums with each note, and all of Styxia is swept into song. The melodies, sometimes gentle, sometimes fevered, stir boundless fantasies of delight in the Styxia Queen's heart. When the sailor begins to play in reverse from the final semibreve rest, the tune becomes whimsical and sprightly. Then, white longboats carry tumblers and jesters and glide through the canals. Men and women in splendid attire line the shores, their faces covered in masks decorated with gold leaf and feathers. The Queen slips among them, drifting through the scent of lilac and almonds.\\n\\nThen, the sailor sharpens the rhythm, the notes ringing wild and triumphant. A city-wide play unfolds with Styxia as the stage. Townsfolk dressed as pirates wave black flags, storming the walls that were never defended. They plunder wine and gold, hang nobles upon flower-strewn gallows, and crown every beggar in the city. At the finale, the tower is set ablaze, and the crowd dances madly to the lyre's music, drunk beyond reason.\\n\\nThe crashing tide dampens the sheet music, blurring notes that are soothing and slow. In the mist before the lighthouse, the Queen steps into a new script. Dressed in a sea-blue fishtail dress, she plays the attendant of Phagousa — the Queen of the sea sirens.\\n\\nIn this tale, the sirens are tasked to guard an anguish beyond mortal imagination in the ocean's deepest. Using their flesh and blood, they guide the pitch-dark calamity into the Chalice of Plenty, exchanging for Styxia's eternal joy. When the appointed time comes, the sirens will finally follow the lighthouse's light and the lyre's song, and walk along the causeway to enter Styxia. The people of the city will take their hands, and together, they shall join the never-ending celebration.\\n\\nThe Queen of Styxia wades into the water, embracing an imagined demise. On a night when the tides break free from the moon's restraints, the hollow tears of the sea sirens rise like foam deep beneath the waves. They hope. They wait. They gaze upon moonlight they've never known — then their flesh dissolves. A pity that there is no moonlight tonight. Only the lighthouse flickers, as always — The tears ascend instead of the sea sirens, surfacing onto the glimmering sea surface, like floating foam that dissolves into the waves.\\n\\nThe lonely sailor is granted his wish. The revelers, eyes glistening with blissful tears, welcome him into Styxia. By the time the first note of the song rings out, the withered wings of death have already covered this city of everlasting joy."
       }
     },
     "RequireNum": {
       "2": {
-        "Desc": "Increases the wearer's ATK by <unbreak>#1[i]%</unbreak>. When the wearer's ATK is higher than or equal to <unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak>, increases the DoT DMG dealt by <unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>.",
+        "Desc": "Increases the wearer's ATK by <unbreak>#1[i]%</unbreak>. When the wearer's ATK is higher than or equal to <unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak>, increases the DoT DMG dealt by <unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak> respectively.",
         "ParamList": [
           0.12000000011175871,
           2400,
@@ -1651,6 +2159,14 @@
           0.24000000022351742
         ]
       }
+    },
+    "Bonus": {
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
     }
   }
 }

@@ -59800,7 +59800,7 @@
       "Id": 4401,
       "Name": "Gambler's Plight (I)",
       "GroupName": "Gambler's Plight",
-      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Burn DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
+      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Fire DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
       "Param": [
         2.2000000001862645,
         1.800000000745058
@@ -59936,7 +59936,7 @@
       "Id": 4402,
       "Name": "Gambler's Plight (II)",
       "GroupName": "Gambler's Plight",
-      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Burn DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
+      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Fire DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
       "Param": [
         2.2000000001862645,
         1.800000000745058
@@ -60074,7 +60074,7 @@
       "Id": 4403,
       "Name": "Gambler's Plight (III)",
       "GroupName": "Gambler's Plight",
-      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Burn DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
+      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Fire DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
       "Param": [
         2.2000000001862645,
         1.800000000745058
@@ -60211,7 +60211,7 @@
       "Id": 4404,
       "Name": "Gambler's Plight (IV)",
       "GroupName": "Gambler's Plight",
-      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Burn DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
+      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Fire DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
       "Param": [
         2.2000000001862645,
         1.800000000745058
@@ -60351,7 +60351,7 @@
       "Id": 4405,
       "Name": "Gambler's Plight (V)",
       "GroupName": "Gambler's Plight",
-      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Burn DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
+      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Fire DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
       "Param": [
         2.2000000001862645,
         1.800000000745058
@@ -60488,7 +60488,7 @@
       "Id": 4406,
       "Name": "Gambler's Plight (VI)",
       "GroupName": "Gambler's Plight",
-      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Burn DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
+      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Fire DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
       "Param": [
         2.2000000001862645,
         1.800000000745058
@@ -60624,7 +60624,7 @@
       "Id": 4407,
       "Name": "Gambler's Plight (VII)",
       "GroupName": "Gambler's Plight",
-      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Burn DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
+      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Fire DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
       "Param": [
         2.2000000001862645,
         1.800000000745058
@@ -60762,7 +60762,7 @@
       "Id": 4408,
       "Name": "Gambler's Plight (VIII)",
       "GroupName": "Gambler's Plight",
-      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Burn DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
+      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Fire DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
       "Param": [
         2.2000000001862645,
         1.800000000745058
@@ -60899,7 +60899,7 @@
       "Id": 4409,
       "Name": "Gambler's Plight (IX)",
       "GroupName": "Gambler's Plight",
-      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Burn DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
+      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Fire DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
       "Param": [
         2.2000000001862645,
         1.800000000745058
@@ -61042,7 +61042,7 @@
       "Id": 4410,
       "Name": "Gambler's Plight (X)",
       "GroupName": "Gambler's Plight",
-      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Burn DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
+      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Fire DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
       "Param": [
         2.2000000001862645,
         1.800000000745058
@@ -61181,7 +61181,7 @@
       "Id": 4411,
       "Name": "Gambler's Plight (XI)",
       "GroupName": "Gambler's Plight",
-      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Burn DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
+      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Fire DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
       "Param": [
         2.2000000001862645,
         1.800000000745058
@@ -61320,7 +61320,7 @@
       "Id": 4412,
       "Name": "Gambler's Plight (XII)",
       "GroupName": "Gambler's Plight",
-      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Burn DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
+      "Desc": "At the start of every Wave or Cycle, apply Memory Imprint to an enemy target of elite level or higher. This effect lasts until the start of the next Cycle. \"Memory Imprint\" is a special kind of <color=#f29e38ff>Burn</color> effect. The holders of this effect receive Fire DoT at the start of each turn. When ally targets use their Skill Attacks on a target with \"Memory Imprint,\" they will deal DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK to the target and adjacent targets.",
       "Param": [
         2.2000000001862645,
         1.800000000745058
@@ -61592,7 +61592,7 @@
         }
       ],
       "BeginTime": "2025-06-30 04:00:00",
-      "EndTime": "2025-08-11 04:00:00"
+      "EndTime": "2025-09-22 04:00:00"
     },
     {
       "Id": 4502,
@@ -61731,7 +61731,7 @@
         }
       ],
       "BeginTime": "2025-06-30 04:00:00",
-      "EndTime": "2025-08-11 04:00:00"
+      "EndTime": "2025-09-22 04:00:00"
     },
     {
       "Id": 4503,
@@ -61872,7 +61872,7 @@
         }
       ],
       "BeginTime": "2025-06-30 04:00:00",
-      "EndTime": "2025-08-11 04:00:00"
+      "EndTime": "2025-09-22 04:00:00"
     },
     {
       "Id": 4504,
@@ -62013,7 +62013,7 @@
         }
       ],
       "BeginTime": "2025-06-30 04:00:00",
-      "EndTime": "2025-08-11 04:00:00"
+      "EndTime": "2025-09-22 04:00:00"
     },
     {
       "Id": 4505,
@@ -62154,7 +62154,7 @@
         }
       ],
       "BeginTime": "2025-06-30 04:00:00",
-      "EndTime": "2025-08-11 04:00:00"
+      "EndTime": "2025-09-22 04:00:00"
     },
     {
       "Id": 4506,
@@ -62294,7 +62294,7 @@
         }
       ],
       "BeginTime": "2025-06-30 04:00:00",
-      "EndTime": "2025-08-11 04:00:00"
+      "EndTime": "2025-09-22 04:00:00"
     },
     {
       "Id": 4507,
@@ -62433,7 +62433,7 @@
         }
       ],
       "BeginTime": "2025-06-30 04:00:00",
-      "EndTime": "2025-08-11 04:00:00"
+      "EndTime": "2025-09-22 04:00:00"
     },
     {
       "Id": 4508,
@@ -62574,7 +62574,7 @@
         }
       ],
       "BeginTime": "2025-06-30 04:00:00",
-      "EndTime": "2025-08-11 04:00:00"
+      "EndTime": "2025-09-22 04:00:00"
     },
     {
       "Id": 4509,
@@ -62715,7 +62715,7 @@
         }
       ],
       "BeginTime": "2025-06-30 04:00:00",
-      "EndTime": "2025-08-11 04:00:00"
+      "EndTime": "2025-09-22 04:00:00"
     },
     {
       "Id": 4510,
@@ -62857,7 +62857,7 @@
         }
       ],
       "BeginTime": "2025-06-30 04:00:00",
-      "EndTime": "2025-08-11 04:00:00"
+      "EndTime": "2025-09-22 04:00:00"
     },
     {
       "Id": 4511,
@@ -62997,7 +62997,7 @@
         }
       ],
       "BeginTime": "2025-06-30 04:00:00",
-      "EndTime": "2025-08-11 04:00:00"
+      "EndTime": "2025-09-22 04:00:00"
     },
     {
       "Id": 4512,
@@ -63137,7 +63137,1704 @@
         }
       ],
       "BeginTime": "2025-06-30 04:00:00",
-      "EndTime": "2025-08-11 04:00:00"
+      "EndTime": "2025-09-22 04:00:00"
+    }
+  ],
+  "1027": [
+    {
+      "Id": 4601,
+      "Name": "Category Mistake (I)",
+      "GroupName": "Category Mistake",
+      "Desc": "When ally character has summons, this unit and summons gain <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG Boost.\\nAt the start of each Cycle, \"Memory Turbulence\" deals 1 instance of True DMG to all enemies, plus 1 additional instance for each ally summon, up to <color=#f29e38ff><unbreak>#5[i]</unbreak></color> instances.",
+      "Param": [
+        0.40000000037252903,
+        0.25000000023283064,
+        0.0400000000372529,
+        0.0249999996740371,
+        2
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Ice",
+        "Thunder"
+      ],
+      "DamageType2": [
+        "Fire",
+        "Thunder"
+      ],
+      "MazeGroupID1": 6,
+      "MazeGroupID2": 7,
+      "NpcMonsterIDList1": [
+        1013010
+      ],
+      "NpcMonsterIDList2": [
+        8003040
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30117011,
+          "StageType": "Challenge",
+          "StageName": 13087150147011258000,
+          "HardLevelGroup": 3,
+          "Level": 68,
+          "EliteGroup": 273,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1012030,
+              "Monster1": 1013010,
+              "Monster2": 1012030
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1013010,
+              "Monster1": 1013020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30117012,
+          "StageType": "Challenge",
+          "StageName": 15864002628047024000,
+          "HardLevelGroup": 3,
+          "Level": 68,
+          "EliteGroup": 273,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 8002010,
+              "Monster1": 8003040,
+              "Monster2": 8002010,
+              "Monster3": 1012010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 8002010,
+              "Monster1": 8003040,
+              "Monster2": 3003040
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-08-11 04:00:00",
+      "EndTime": "2025-09-22 04:00:00"
+    },
+    {
+      "Id": 4602,
+      "Name": "Category Mistake (II)",
+      "GroupName": "Category Mistake",
+      "Desc": "When ally character has summons, this unit and summons gain <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG Boost.\\nAt the start of each Cycle, \"Memory Turbulence\" deals 1 instance of True DMG to all enemies, plus 1 additional instance for each ally summon, up to <color=#f29e38ff><unbreak>#5[i]</unbreak></color> instances.",
+      "Param": [
+        0.40000000037252903,
+        0.25000000023283064,
+        0.0400000000372529,
+        0.0249999996740371,
+        2
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Imaginary"
+      ],
+      "MazeGroupID1": 6,
+      "MazeGroupID2": 7,
+      "NpcMonsterIDList1": [
+        1023020
+      ],
+      "NpcMonsterIDList2": [
+        2013020
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30117021,
+          "StageType": "Challenge",
+          "StageName": 6366857954791301000,
+          "HardLevelGroup": 3,
+          "Level": 70,
+          "EliteGroup": 274,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 8002010,
+              "Monster1": 1023020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1023020,
+              "Monster1": 8003030
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30117022,
+          "StageType": "Challenge",
+          "StageName": 17363227603743607000,
+          "HardLevelGroup": 3,
+          "Level": 70,
+          "EliteGroup": 274,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2002030,
+              "Monster1": 2013020,
+              "Monster2": 2012010,
+              "Monster3": 2002030
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2013020,
+              "Monster1": 8013010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-08-11 04:00:00",
+      "EndTime": "2025-09-22 04:00:00"
+    },
+    {
+      "Id": 4603,
+      "Name": "Category Mistake (III)",
+      "GroupName": "Category Mistake",
+      "Desc": "When ally character has summons, this unit and summons gain <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG Boost.\\nAt the start of each Cycle, \"Memory Turbulence\" deals 1 instance of True DMG to all enemies, plus 1 additional instance for each ally summon, up to <color=#f29e38ff><unbreak>#5[i]</unbreak></color> instances.",
+      "Param": [
+        0.40000000037252903,
+        0.25000000023283064,
+        0.0400000000372529,
+        0.0249999996740371,
+        2
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Physical",
+        "Fire"
+      ],
+      "DamageType2": [
+        "Ice",
+        "Wind"
+      ],
+      "MazeGroupID1": 6,
+      "MazeGroupID2": 7,
+      "NpcMonsterIDList1": [
+        3003020
+      ],
+      "NpcMonsterIDList2": [
+        2023010
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30117031,
+          "StageType": "Challenge",
+          "StageName": 9524722474129506000,
+          "HardLevelGroup": 3,
+          "Level": 73,
+          "EliteGroup": 275,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3003020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3003020,
+              "Monster1": 3003040
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30117032,
+          "StageType": "Challenge",
+          "StageName": 189339872378837150,
+          "HardLevelGroup": 3,
+          "Level": 73,
+          "EliteGroup": 275,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2023010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2023010,
+              "Monster1": 2023020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-08-11 04:00:00",
+      "EndTime": "2025-09-22 04:00:00"
+    },
+    {
+      "Id": 4604,
+      "Name": "Category Mistake (IV)",
+      "GroupName": "Category Mistake",
+      "Desc": "When ally character has summons, this unit and summons gain <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG Boost.\\nAt the start of each Cycle, \"Memory Turbulence\" deals 1 instance of True DMG to all enemies, plus 1 additional instance for each ally summon, up to <color=#f29e38ff><unbreak>#5[i]</unbreak></color> instances.",
+      "Param": [
+        0.40000000037252903,
+        0.25000000023283064,
+        0.0400000000372529,
+        0.0249999996740371,
+        2
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Ice",
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Imaginary"
+      ],
+      "MazeGroupID1": 6,
+      "MazeGroupID2": 7,
+      "NpcMonsterIDList1": [
+        4013010
+      ],
+      "NpcMonsterIDList2": [
+        3003020
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30117041,
+          "StageType": "Challenge",
+          "StageName": 14859544075813415000,
+          "HardLevelGroup": 3,
+          "Level": 75,
+          "EliteGroup": 276,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4012030,
+              "Monster1": 4013010,
+              "Monster2": 4012030
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4013010,
+              "Monster1": 8003020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30117042,
+          "StageType": "Challenge",
+          "StageName": 9524722474129506000,
+          "HardLevelGroup": 3,
+          "Level": 75,
+          "EliteGroup": 276,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4012050,
+              "Monster1": 3003020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3003020,
+              "Monster1": 8013010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-08-11 04:00:00",
+      "EndTime": "2025-09-22 04:00:00"
+    },
+    {
+      "Id": 4605,
+      "Name": "Category Mistake (V)",
+      "GroupName": "Category Mistake",
+      "Desc": "When ally character has summons, this unit and summons gain <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG Boost.\\nAt the start of each Cycle, \"Memory Turbulence\" deals 1 instance of True DMG to all enemies, plus 1 additional instance for each ally summon, up to <color=#f29e38ff><unbreak>#5[i]</unbreak></color> instances.",
+      "Param": [
+        0.40000000037252903,
+        0.25000000023283064,
+        0.0400000000372529,
+        0.0249999996740371,
+        2
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Fire",
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Wind"
+      ],
+      "MazeGroupID1": 6,
+      "MazeGroupID2": 7,
+      "NpcMonsterIDList1": [
+        1004010
+      ],
+      "NpcMonsterIDList2": [
+        4033010
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30117051,
+          "StageType": "Challenge",
+          "StageName": 14813692740671814000,
+          "HardLevelGroup": 3,
+          "Level": 78,
+          "EliteGroup": 277,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4032040,
+              "Monster1": 4033030,
+              "Monster2": 4032040
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 100401010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30117052,
+          "StageType": "Challenge",
+          "StageName": 14552693742518040000,
+          "HardLevelGroup": 3,
+          "Level": 78,
+          "EliteGroup": 277,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4032010,
+              "Monster1": 4033010,
+              "Monster2": 4032010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4033010,
+              "Monster1": 4033020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-08-11 04:00:00",
+      "EndTime": "2025-09-22 04:00:00"
+    },
+    {
+      "Id": 4606,
+      "Name": "Category Mistake (VI)",
+      "GroupName": "Category Mistake",
+      "Desc": "When ally character has summons, this unit and summons gain <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG Boost.\\nAt the start of each Cycle, \"Memory Turbulence\" deals 1 instance of True DMG to all enemies, plus 1 additional instance for each ally summon, up to <color=#f29e38ff><unbreak>#5[i]</unbreak></color> instances.",
+      "Param": [
+        0.40000000037252903,
+        0.25000000023283064,
+        0.0400000000372529,
+        0.0249999996740371,
+        2
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Ice",
+        "Thunder"
+      ],
+      "DamageType2": [
+        "Fire",
+        "Thunder"
+      ],
+      "MazeGroupID1": 6,
+      "MazeGroupID2": 7,
+      "NpcMonsterIDList1": [
+        1013010
+      ],
+      "NpcMonsterIDList2": [
+        8003040
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30117061,
+          "StageType": "Challenge",
+          "StageName": 13087150147011258000,
+          "HardLevelGroup": 3,
+          "Level": 80,
+          "EliteGroup": 278,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1012030,
+              "Monster1": 1013010,
+              "Monster2": 1012030
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1013010,
+              "Monster1": 1013020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30117062,
+          "StageType": "Challenge",
+          "StageName": 15864002628047024000,
+          "HardLevelGroup": 3,
+          "Level": 80,
+          "EliteGroup": 278,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 8002010,
+              "Monster1": 8003040,
+              "Monster2": 8002010,
+              "Monster3": 1012010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 8002010,
+              "Monster1": 8003040,
+              "Monster2": 3003040
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-08-11 04:00:00",
+      "EndTime": "2025-09-22 04:00:00"
+    },
+    {
+      "Id": 4607,
+      "Name": "Category Mistake (VII)",
+      "GroupName": "Category Mistake",
+      "Desc": "When ally character has summons, this unit and summons gain <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG Boost.\\nAt the start of each Cycle, \"Memory Turbulence\" deals 1 instance of True DMG to all enemies, plus 1 additional instance for each ally summon, up to <color=#f29e38ff><unbreak>#5[i]</unbreak></color> instances.",
+      "Param": [
+        0.40000000037252903,
+        0.25000000023283064,
+        0.0400000000372529,
+        0.0249999996740371,
+        2
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Imaginary"
+      ],
+      "MazeGroupID1": 6,
+      "MazeGroupID2": 7,
+      "NpcMonsterIDList1": [
+        1023020
+      ],
+      "NpcMonsterIDList2": [
+        2013020
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30117071,
+          "StageType": "Challenge",
+          "StageName": 6366857954791301000,
+          "HardLevelGroup": 3,
+          "Level": 82,
+          "EliteGroup": 279,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 8002010,
+              "Monster1": 1023020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1023020,
+              "Monster1": 8003030
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30117072,
+          "StageType": "Challenge",
+          "StageName": 17363227603743607000,
+          "HardLevelGroup": 3,
+          "Level": 82,
+          "EliteGroup": 279,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2002030,
+              "Monster1": 2013020,
+              "Monster2": 2012010,
+              "Monster3": 2002030
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2013020,
+              "Monster1": 8013010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-08-11 04:00:00",
+      "EndTime": "2025-09-22 04:00:00"
+    },
+    {
+      "Id": 4608,
+      "Name": "Category Mistake (VIII)",
+      "GroupName": "Category Mistake",
+      "Desc": "When ally character has summons, this unit and summons gain <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG Boost.\\nAt the start of each Cycle, \"Memory Turbulence\" deals 1 instance of True DMG to all enemies, plus 1 additional instance for each ally summon, up to <color=#f29e38ff><unbreak>#5[i]</unbreak></color> instances.",
+      "Param": [
+        0.40000000037252903,
+        0.25000000023283064,
+        0.0400000000372529,
+        0.0249999996740371,
+        2
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Physical",
+        "Fire"
+      ],
+      "DamageType2": [
+        "Ice",
+        "Wind"
+      ],
+      "MazeGroupID1": 6,
+      "MazeGroupID2": 7,
+      "NpcMonsterIDList1": [
+        3003020
+      ],
+      "NpcMonsterIDList2": [
+        2023010
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30117081,
+          "StageType": "Challenge",
+          "StageName": 9524722474129506000,
+          "HardLevelGroup": 3,
+          "Level": 85,
+          "EliteGroup": 280,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3003020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3003020,
+              "Monster1": 3003040
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30117082,
+          "StageType": "Challenge",
+          "StageName": 189339872378837150,
+          "HardLevelGroup": 3,
+          "Level": 85,
+          "EliteGroup": 280,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2023010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2023010,
+              "Monster1": 2023020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-08-11 04:00:00",
+      "EndTime": "2025-09-22 04:00:00"
+    },
+    {
+      "Id": 4609,
+      "Name": "Category Mistake (IX)",
+      "GroupName": "Category Mistake",
+      "Desc": "When ally character has summons, this unit and summons gain <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG Boost.\\nAt the start of each Cycle, \"Memory Turbulence\" deals 1 instance of True DMG to all enemies, plus 1 additional instance for each ally summon, up to <color=#f29e38ff><unbreak>#5[i]</unbreak></color> instances.",
+      "Param": [
+        0.40000000037252903,
+        0.25000000023283064,
+        0.0400000000372529,
+        0.0249999996740371,
+        2
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Ice",
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Imaginary"
+      ],
+      "MazeGroupID1": 6,
+      "MazeGroupID2": 7,
+      "NpcMonsterIDList1": [
+        4013010
+      ],
+      "NpcMonsterIDList2": [
+        3003020
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30117091,
+          "StageType": "Challenge",
+          "StageName": 14859544075813415000,
+          "HardLevelGroup": 3,
+          "Level": 88,
+          "EliteGroup": 281,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4012030,
+              "Monster1": 4013010,
+              "Monster2": 4012030
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4013010,
+              "Monster1": 8003020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30117092,
+          "StageType": "Challenge",
+          "StageName": 9524722474129506000,
+          "HardLevelGroup": 3,
+          "Level": 88,
+          "EliteGroup": 281,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4012050,
+              "Monster1": 3003020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3003020,
+              "Monster1": 8013010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-08-11 04:00:00",
+      "EndTime": "2025-09-22 04:00:00"
+    },
+    {
+      "Id": 4610,
+      "Name": "Category Mistake (X)",
+      "GroupName": "Category Mistake",
+      "Desc": "When ally character has summons, this unit and summons gain <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG Boost.\\nAt the start of each Cycle, \"Memory Turbulence\" deals 1 instance of True DMG to all enemies, plus 1 additional instance for each ally summon, up to <color=#f29e38ff><unbreak>#5[i]</unbreak></color> instances.",
+      "Param": [
+        0.40000000037252903,
+        0.25000000023283064,
+        0.0400000000372529,
+        0.0249999996740371,
+        2
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Fire",
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Wind"
+      ],
+      "MazeGroupID1": 6,
+      "MazeGroupID2": 7,
+      "NpcMonsterIDList1": [
+        1004010
+      ],
+      "NpcMonsterIDList2": [
+        4044010
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30117101,
+          "StageType": "Challenge",
+          "StageName": 14813692740671814000,
+          "HardLevelGroup": 3,
+          "Level": 90,
+          "EliteGroup": 282,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4033030,
+              "Monster1": 402302001
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 100401010,
+              "Monster1": 402302001
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30117102,
+          "StageType": "Challenge",
+          "StageName": 7318916243052571000,
+          "HardLevelGroup": 3,
+          "Level": 90,
+          "EliteGroup": 282,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4033010,
+              "Monster1": 4033020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4044010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-08-11 04:00:00",
+      "EndTime": "2025-09-22 04:00:00"
+    },
+    {
+      "Id": 4611,
+      "Name": "Category Mistake (XI)",
+      "GroupName": "Category Mistake",
+      "Desc": "When ally character has summons, this unit and summons gain <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG Boost.\\nAt the start of each Cycle, \"Memory Turbulence\" deals 1 instance of True DMG to all enemies, plus 1 additional instance for each ally summon, up to <color=#f29e38ff><unbreak>#5[i]</unbreak></color> instances.",
+      "Param": [
+        0.40000000037252903,
+        0.25000000023283064,
+        0.0400000000372529,
+        0.0249999996740371,
+        2
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Physical",
+        "Thunder"
+      ],
+      "DamageType2": [
+        "Fire",
+        "Ice"
+      ],
+      "MazeGroupID1": 6,
+      "MazeGroupID2": 7,
+      "NpcMonsterIDList1": [
+        8034010
+      ],
+      "NpcMonsterIDList2": [
+        3003014
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30117111,
+          "StageType": "Challenge",
+          "StageName": 3756729761605363700,
+          "HardLevelGroup": 3,
+          "Level": 92,
+          "EliteGroup": 285,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4053010,
+              "Monster1": 2013020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 803401004
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30117112,
+          "StageType": "Challenge",
+          "StageName": 12223446868998010000,
+          "HardLevelGroup": 3,
+          "Level": 92,
+          "EliteGroup": 285,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 803301014,
+              "Monster1": 4063010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3004020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-08-11 04:00:00",
+      "EndTime": "2025-09-22 04:00:00"
+    },
+    {
+      "Id": 4612,
+      "Name": "Category Mistake (XII)",
+      "GroupName": "Category Mistake",
+      "Desc": "When ally character has summons, this unit and summons gain <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG Boost.\\nAt the start of each Cycle, \"Memory Turbulence\" deals 1 instance of True DMG to all enemies, plus 1 additional instance for each ally summon, up to <color=#f29e38ff><unbreak>#5[i]</unbreak></color> instances.",
+      "Param": [
+        0.40000000037252903,
+        0.25000000023283064,
+        0.0400000000372529,
+        0.0249999996740371,
+        2
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Ice",
+        "Thunder"
+      ],
+      "DamageType2": [
+        "Physical"
+      ],
+      "MazeGroupID1": 6,
+      "MazeGroupID2": 7,
+      "NpcMonsterIDList1": [
+        4034010
+      ],
+      "NpcMonsterIDList2": [
+        4064010
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30117121,
+          "StageType": "Challenge",
+          "StageName": 394586006630307500,
+          "HardLevelGroup": 3,
+          "Level": 95,
+          "EliteGroup": 290,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4013010,
+              "Monster1": 2023030
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4034010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30117122,
+          "StageType": "Challenge",
+          "StageName": 2590962765852260400,
+          "HardLevelGroup": 3,
+          "Level": 95,
+          "EliteGroup": 290,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30140"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3003020,
+              "Monster1": 2013020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4064010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1000000238419,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-08-11 04:00:00",
+      "EndTime": "2025-09-22 04:00:00"
     }
   ]
 }
