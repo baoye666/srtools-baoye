@@ -31,7 +31,6 @@ export const useFetchAvatarData = () => {
     useEffect(() => {
         const listAvatarId = Object.keys(avatars)
         const listAvatarNotExist = Object.entries(mapAvatarInfo).filter(([avatarId]) => !listAvatarId.includes(avatarId))
-        console.log("avatarDiff", listAvatarNotExist)
         const avatarStore = converterToAvatarStore(Object.fromEntries(listAvatarNotExist))
         if (Object.keys(avatarStore).length === 0) return
         for (const avatar of Object.values(avatarStore)) {
