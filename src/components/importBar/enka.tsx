@@ -41,9 +41,9 @@ export default function EnkaImport() {
                     rank: character.rank ?? 0,
                     level: character.level,
                     lightcone: {
-                        level: character.equipment.level,
-                        rank: character.equipment.rank,
-                        item_id: character.equipment.tid,
+                        level: character.equipment?.level ?? 0,
+                        rank: character.equipment?.rank ?? 0,
+                        item_id: character.equipment?.tid ?? "",
                     },
                     relics: character.relicList.map((relic) => ({
                         level: relic.level,
@@ -80,9 +80,9 @@ export default function EnkaImport() {
                     rank: character.rank ?? 0,
                     level: character.level,
                     lightcone: {
-                        level: character.equipment.level,
-                        rank: character.equipment.rank,
-                        item_id: character.equipment.tid,
+                        level: character.equipment?.level ?? 0,
+                        rank: character.equipment?.rank ?? 0,
+                        item_id: character.equipment?.tid ?? "",
                     },
                     relics: character.relicList.map((relic) => ({
                         level: relic.level,
@@ -109,8 +109,8 @@ export default function EnkaImport() {
         filterData.forEach((character) => {
             const newAvatar = { ...listAvatars[character.avatarId.toString()] }
             if (Object.keys(newAvatar).length !== 0) {
-                newAvatar.level = character.level
-                newAvatar.promotion = character.promotion
+                newAvatar.level = character.level ?? 0
+                newAvatar.promotion = character.promotion ?? 0
                 newAvatar.data = {
                     rank: character.rank ?? 0,
                     skills: character.skillTreeList.reduce((acc, skill) => {
@@ -198,14 +198,14 @@ export default function EnkaImport() {
                                 key: character.avatarId,
                                 avatar_id: character.avatarId,
                                 rank: character.rank ?? 0,
-                                level: character.level,
+                                level: character.level ?? 0,
                                 lightcone: {
-                                    level: character.equipment.level,
-                                    rank: character.equipment.rank,
-                                    item_id: character.equipment.tid,
+                                    level: character.equipment?.level ?? 0,
+                                    rank: character.equipment?.rank ?? 0,
+                                    item_id: character.equipment?.tid ?? "",
                                 },
                                 relics: character.relicList.map((relic) => ({
-                                    level: relic.level,
+                                    level: relic.level ?? 0,
                                     relic_id: relic.tid,
                                     relic_set_id: parseInt(relic.tid.toString().slice(1, -1), 10),
                                 })),

@@ -46,13 +46,13 @@ export function converterOneEnkaDataToAvatarStore(data: AvatarEnkaDetail, count:
     const profile: AvatarProfileStore = {
         profile_name: `Enka Profile ${count}`,
         lightcone: {
-            level: data.equipment.level,
-            item_id: data.equipment.tid,
-            rank: data.equipment.rank,
-            promotion: data.equipment.promotion,
+            level: data.equipment?.level ?? 0,
+            item_id: data.equipment?.tid ?? "",
+            rank: data.equipment?.rank ?? 0,
+            promotion: data.equipment?.promotion ?? 0,
         },
         relics: Object.fromEntries(data.relicList.map((relic) => [relic.tid.toString()[relic.tid.toString().length - 1], {
-            level: relic.level,
+            level: relic.level ?? 0,
             relic_id: relic.tid,
             relic_set_id: parseInt(relic.tid.toString().slice(1, -1), 10),
             main_affix_id: relic.mainAffixId,
