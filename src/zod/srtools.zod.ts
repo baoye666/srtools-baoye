@@ -32,7 +32,7 @@ export const avatarDataSchema = z.object({
 });
 
 export const avatarJsonSchema = z.object({
-  owner_uid: z.number(),
+  owner_uid: z.number().optional(),
   avatar_id: z.number(),
   data: avatarDataSchema,
   level: z.number(),
@@ -69,11 +69,19 @@ export const battleConfigJsonSchema = z.object({
   monsters: z.array(z.array(monsterJsonSchema)),
 });
 
+export const loadoutJsonSchema = z.object({
+  name: z.string(),
+  avatar_id: z.number(),
+  relic_list: z.array(z.string()),
+});
+
 export const freeSRJsonSchema = z.object({
+  key: z.string().optional(),
   lightcones: z.array(lightconeJsonSchema),
   relics: z.array(relicJsonSchema),
   avatars: z.record(avatarJsonSchema),
   battle_config: battleConfigJsonSchema,
+  loadout: z.array(loadoutJsonSchema).optional(),
 });
 
 export const pSResponseSchema = z.object({

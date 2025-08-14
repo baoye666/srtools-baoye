@@ -59,6 +59,7 @@ export default function FreeSRImport() {
     const handlerReadFile = (event: React.ChangeEvent<HTMLInputElement>) => {
         setIsLoading(true)
         const file = event.target.files?.[0];
+        console.log(event.target.files)
         if (!file) {
             setSelectedCharacters([])
             setFreeSRData(null)
@@ -104,10 +105,11 @@ export default function FreeSRImport() {
                             })) ?? [],
                         } as CharacterInfoCardType
                     }));
-                } catch {
+                } catch (e) {
+                    console.log(e)
                     setSelectedCharacters([])
                     setFreeSRData(null)
-                    setError(transI18n("fileIsNotAValidFreeSRJsonFile"))
+                    setError(transI18n("fileMustBeAValidJsonFile"))
                 }
             };
             reader.readAsText(file);

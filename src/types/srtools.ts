@@ -28,7 +28,7 @@ export interface AvatarData {
 }
 
 export interface AvatarJson {
-    owner_uid: number;
+    owner_uid?: number;
     avatar_id: number;
     data: AvatarData;
     level: number;
@@ -64,12 +64,18 @@ export interface BattleConfigJson {
     path_resonance_id: number;
     monsters: MonsterJson[][];
 }
-
+type LoadoutJson = {
+    name: string
+    avatar_id: number
+    relic_list: string[]
+}
 export interface FreeSRJson {
+    key?: string;
     lightcones: LightconeJson[];
     relics: RelicJson[];
     avatars: { [key: string]: AvatarJson };
     battle_config: BattleConfigJson;
+    loadout?: LoadoutJson[];
 }
 
 export interface PSResponse {
