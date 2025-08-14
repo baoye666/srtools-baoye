@@ -69,24 +69,24 @@ export function converterToFreeSRJson(
     let internalUidRelic = 0
     Object.entries(avatars).forEach(([avatarId, avatar]) => {
         avatarsJson[avatarId] = {
-            owner_uid: avatar.owner_uid,
-            avatar_id: avatar.avatar_id,
+            owner_uid: Number(avatar.owner_uid || 0),
+            avatar_id: Number(avatar.avatar_id || 0),
             data: avatar.data,
-            level: avatar.level,
-            promotion: avatar.promotion,
+            level: Number(avatar.level || 0),
+            promotion: Number(avatar.promotion || 0),
             techniques: avatar.techniques,
-            sp_value: avatar.sp_value,
-            sp_max: avatar.sp_max,
+            sp_value: Number(avatar.sp_value || 0),
+            sp_max: Number(avatar.sp_max || 0),
         }
         const currentProfile = avatar.profileList[avatar.profileSelect]
         if (currentProfile.lightcone && currentProfile.lightcone.item_id !== 0) {
             const newLightcone: LightconeJson = {
-                level: currentProfile.lightcone.level,
-                item_id: currentProfile.lightcone.item_id,
-                rank: currentProfile.lightcone.rank,
-                promotion: currentProfile.lightcone.promotion,
+                level: Number(currentProfile.lightcone.level || 0),
+                item_id: Number(currentProfile.lightcone.item_id || 0),
+                rank: Number(currentProfile.lightcone.rank || 0),
+                promotion: Number(currentProfile.lightcone.promotion || 0),
                 internal_uid: internalUidLightcone,
-                equip_avatar: avatar.avatar_id,
+                equip_avatar: Number(avatar.avatar_id || 0),
             }
             internalUidLightcone++
             lightcones.push(newLightcone)
@@ -97,13 +97,13 @@ export function converterToFreeSRJson(
                 const relic = currentProfile.relics[slot]
                 if (relic && relic.relic_id !== 0) {
                     const newRelic: RelicJson = {
-                        level: relic.level,
-                        relic_id: relic.relic_id,
-                        relic_set_id: relic.relic_set_id,
-                        main_affix_id: relic.main_affix_id,
+                        level: Number(relic.level || 0),
+                        relic_id: Number(relic.relic_id || 0),
+                        relic_set_id: Number(relic.relic_set_id || 0),
+                        main_affix_id: Number(relic.main_affix_id || 0),
                         sub_affixes: relic.sub_affixes,
                         internal_uid: internalUidRelic,
-                        equip_avatar: avatar.avatar_id,
+                        equip_avatar: Number(avatar.avatar_id || 0),
                     }
                     internalUidRelic++
                     relics.push(newRelic)

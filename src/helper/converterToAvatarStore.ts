@@ -47,7 +47,7 @@ export function converterOneEnkaDataToAvatarStore(data: AvatarEnkaDetail, count:
         profile_name: `Enka Profile ${count}`,
         lightcone: {
             level: data.equipment?.level ?? 0,
-            item_id: data.equipment?.tid ?? "",
+            item_id: data.equipment?.tid ?? 0,
             rank: data.equipment?.rank ?? 0,
             promotion: data.equipment?.promotion ?? 0,
         },

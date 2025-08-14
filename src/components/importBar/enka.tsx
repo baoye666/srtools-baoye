@@ -43,7 +43,7 @@ export default function EnkaImport() {
                     lightcone: {
                         level: character.equipment?.level ?? 0,
                         rank: character.equipment?.rank ?? 0,
-                        item_id: character.equipment?.tid ?? "",
+                        item_id: character.equipment?.tid ?? 0,
                     },
                     relics: character.relicList.map((relic) => ({
                         level: relic.level,
@@ -82,7 +82,7 @@ export default function EnkaImport() {
                     lightcone: {
                         level: character.equipment?.level ?? 0,
                         rank: character.equipment?.rank ?? 0,
-                        item_id: character.equipment?.tid ?? "",
+                        item_id: character.equipment?.tid ?? 0,
                     },
                     relics: character.relicList.map((relic) => ({
                         level: relic.level,
@@ -202,7 +202,7 @@ export default function EnkaImport() {
                                 lightcone: {
                                     level: character.equipment?.level ?? 0,
                                     rank: character.equipment?.rank ?? 0,
-                                    item_id: character.equipment?.tid ?? "",
+                                    item_id: character.equipment?.tid ?? 0,
                                 },
                                 relics: character.relicList.map((relic) => ({
                                     level: relic.level ?? 0,
