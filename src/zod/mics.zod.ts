@@ -106,6 +106,17 @@ export const cEConfigStoreSchema = z.object({
   monsters: z.array(z.array(monsterStoreSchema)),
 });
 
+export const pEAKConfigStoreSchema = z.object({
+    event_id: z.number(),
+    challenge_id: z.number(),
+    buff_id: z.number(),
+    boss_mode: z.string(),
+    blessings: z.array(battleBuffStoreSchema),
+    cycle_count: z.number(),
+    stage_id: z.number(),
+    monsters: z.array(z.array(monsterStoreSchema)),
+});
+
 export const micsSchema = z.object({
   avatars: z.record(avatarStoreSchema),
   battle_type: z.string(),
@@ -113,4 +124,5 @@ export const micsSchema = z.object({
   pf_config: pFConfigStoreSchema,
   as_config: aSConfigStoreSchema,
   ce_config: cEConfigStoreSchema,
+  peak_config: pEAKConfigStoreSchema,
 });

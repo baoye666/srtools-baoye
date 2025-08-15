@@ -5,7 +5,17 @@ import CharacterCard from "../card/characterCard"
 import useLocaleStore from "@/stores/localeStore"
 import useAvatarStore from "@/stores/avatarStore"
 import { useTranslations } from "next-intl"
-import { useFetchASData, useFetchAvatarData, useFetchConfigData, useFetchLightconeData, useFetchMOCData, useFetchMonsterData, useFetchPFData, useFetchRelicData } from "@/hooks"
+import { 
+    useFetchASData,
+    useFetchAvatarData,
+    useFetchConfigData,
+    useFetchLightconeData,
+    useFetchMOCData,
+    useFetchMonsterData,
+    useFetchPEAKData,
+    useFetchPFData,
+    useFetchRelicData 
+} from "@/hooks"
 
 
 export default function AvatarBar() {
@@ -23,6 +33,7 @@ export default function AvatarBar() {
     useFetchPFData()
     useFetchMOCData()
     useFetchASData()
+    useFetchPEAKData()
     
     useEffect(() => {
         setFilter({ ...filter, locale: locale, element: Object.keys(listElement).filter((key) => listElement[key]), path: Object.keys(listPath).filter((key) => listPath[key]) })

@@ -53,8 +53,8 @@ export const syncDataToPS = async (): Promise<{ success: boolean, message: strin
         password
     } = useConnectStore.getState()
 
-    const {avatars, battle_type, moc_config, pf_config, as_config, ce_config} = useUserDataStore.getState()
-    const data = converterToFreeSRJson(avatars, battle_type, moc_config, pf_config, as_config, ce_config)
+    const {avatars, battle_type, moc_config, pf_config, as_config, ce_config, peak_config} = useUserDataStore.getState()
+    const data = converterToFreeSRJson(avatars, battle_type, moc_config, pf_config, as_config, ce_config, peak_config)
 
     let urlQuery = serverUrl
     if (!urlQuery.startsWith("http://") && !urlQuery.startsWith("https://")) {

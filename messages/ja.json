@@ -236,6 +236,12 @@
 		"maxAll": "すべて最大化",
 		"maxAllSuccess": "スキルレベルを最大に設定しました。",
 		"maxAllFailed": "スキルレベルの最大設定に失敗しました。",
-		"noRelicEquipped": "聖遺物が装備されていません"
+		"noRelicEquipped": "聖遺物が装備されていません",
+		"anomalyArbitration": "異相の仲裁",
+		"normalMode": "通常モード",
+		"hardMode": "困難モード",
+		"selectPEAKEvent": "PEAK イベントを選択",
+		"mode": "モード",
+		"selectMode": "モードを選択"
 	}
 }

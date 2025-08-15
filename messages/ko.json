@@ -236,6 +236,12 @@
 		"maxAll": "모두 최대치",
 		"maxAllSuccess": "스킬 레벨이 최대치로 설정되었습니다.",
 		"maxAllFailed": "스킬 레벨을 최대치로 설정하지 못했습니다.",
-		"noRelicEquipped": "성유물이 장착되지 않음"
+		"noRelicEquipped": "성유물이 장착되지 않음",
+		"anomalyArbitration": "이상 중재",
+		"normalMode": "일반 모드",
+		"hardMode": "어려움 모드",
+		"selectPEAKEvent": "PEAK 이벤트 선택",
+		"mode": "모드",
+		"selectMode": "모드를 선택"
 	  }
 }

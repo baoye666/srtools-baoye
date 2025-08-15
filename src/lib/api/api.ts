@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { AffixDetail, ASDetail, CharacterDetail, ConfigMaze, FreeSRJson, LightConeDetail, MocDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
+import { AffixDetail, ASDetail, CharacterDetail, ConfigMaze, FreeSRJson, LightConeDetail, MocDetail, PeakDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
 import axios from 'axios';
 import { pSResponseSchema } from "@/zod";
 
@@ -176,7 +176,6 @@ export async function fetchPFByIdNative(ids: string, locale: string): Promise<PF
     }
 }
 
-
 export async function fetchMOCByIdsNative(ids: string[], locale: string): Promise<Record<string, MocDetail[]> | null> {
     try {
         const res = await axios.post<Record<string, MocDetail[]>>(`/api/${locale}/moc`, { mocIds: ids });
@@ -193,6 +192,27 @@ export async function fetchMOCByIdNative(ids: string, locale: string): Promise<M
         return res.data;
     } catch (error) {
         console.error('Failed to fetch MOC:', error);
+        return null;
+    }
+}
+
+
+export async function fetchPeakByIdsNative(ids: string[], locale: string): Promise<Record<string, PeakDetail> | null> {
+    try {
+        const res = await axios.post<Record<string, PeakDetail>>(`/api/${locale}/peak`, { peakIds: ids });
+        return res.data;
+    } catch (error) {
+        console.error('Failed to fetch peak:', error);
+        return null;
+    }
+}
+
+export async function fetchPeakByIdNative(ids: string, locale: string): Promise<PeakDetail | null> {
+    try {
+        const res = await axios.get<PeakDetail>(`/api/${locale}/peak/${ids}`);
+        return res.data;
+    } catch (error) {
+        console.error('Failed to fetch peak:', error);
         return null;
     }
 }

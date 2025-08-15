@@ -174,6 +174,7 @@ export default function AvatarInfo() {
                                                     <button
                                                         className="btn btn-sm btn-outline btn-warning"
                                                         onClick={() => {
+                                                            if (!avatars[avatarSelected?.id || ""]?.can_change_sp) return
                                                             const newSpValue = Math.ceil(avatars[avatarSelected?.id || ""]?.sp_max / 2);
                                                             const newAvatar = { ...avatars[avatarSelected?.id || ""], sp_value: newSpValue }
                                                             setAvatar(newAvatar)

@@ -56,7 +56,7 @@ export default function AsBar() {
         const challenge = mapASInfo[as_config.event_id.toString()]?.Level.find((as) => as.Id === as_config.challenge_id)
         if (as_config.event_id !== 0 && as_config.challenge_id !== 0 && challenge) {
             const newBattleConfig = cloneDeep(as_config)
-            newBattleConfig.cycle_count = 4
+            newBattleConfig.cycle_count = 0
 
             newBattleConfig.blessings = []
             if (as_config.buff_id !== 0) {

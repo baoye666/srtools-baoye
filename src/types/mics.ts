@@ -93,8 +93,18 @@ export type ASConfigStore = {
     monsters: MonsterStore[][];
 }
 
-export type CEConfigStore = {
+export type PEAKConfigStore = {
+    event_id: number;
+    challenge_id: number;
+    buff_id: number;
+    boss_mode: string;
+    blessings: BattleBuffStore[]
+    cycle_count: number;
+    stage_id: number;
+    monsters: MonsterStore[][];
+}
 
+export type CEConfigStore = {
     blessings: BattleBuffStore[]
     cycle_count: number;
     stage_id: number;

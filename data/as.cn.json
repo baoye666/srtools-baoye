@@ -410,6 +410,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -460,6 +461,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -806,6 +808,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -856,6 +859,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -1214,6 +1218,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -1264,6 +1269,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -1622,6 +1628,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -1672,6 +1679,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -2080,6 +2088,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -2130,6 +2139,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -2471,6 +2481,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -2521,6 +2532,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -2862,6 +2874,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -2912,6 +2925,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -3253,6 +3267,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -3303,6 +3318,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -3740,6 +3756,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -3790,6 +3807,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -4160,6 +4178,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -4210,6 +4229,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -4580,6 +4600,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -4630,6 +4651,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -5000,6 +5022,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -5050,6 +5073,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -5478,6 +5502,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -5533,6 +5558,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -5896,6 +5922,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -5951,6 +5978,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -6321,6 +6349,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -6376,6 +6405,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -6746,6 +6776,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -6801,6 +6832,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -7209,6 +7241,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -7254,6 +7287,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -7595,6 +7629,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -7640,6 +7675,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -7987,6 +8023,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -8032,6 +8069,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -8379,6 +8417,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -8424,6 +8463,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -8859,6 +8899,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -8909,6 +8950,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -9278,6 +9320,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -9328,6 +9371,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -9697,6 +9741,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -9747,6 +9792,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -10116,6 +10162,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -10166,6 +10213,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -10587,6 +10635,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -10632,6 +10681,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -10984,6 +11034,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -11029,6 +11080,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -11381,6 +11433,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -11426,6 +11479,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -11778,6 +11832,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -11823,6 +11878,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -12151,7 +12207,7 @@
               ]
             },
             {
-              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择一名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
+              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择1名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
@@ -12171,7 +12227,7 @@
           "PhaseList": [
             {
               "Name": "阶段一：风雷激荡",
-              "Desc": "首领幻影进入【噬月】状态时，我方需要选择一名最强的角色与首领幻影进行【孤战】。",
+              "Desc": "首领幻影进入【噬月】状态时，我方需要选择1名最强的角色与首领幻影进行【孤战】。",
               "Answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
               "Difficulty": 1,
               "SkillList": [
@@ -12237,6 +12293,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -12287,6 +12344,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -12548,7 +12606,7 @@
               ]
             },
             {
-              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择一名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
+              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择1名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
@@ -12568,7 +12626,7 @@
           "PhaseList": [
             {
               "Name": "阶段一：风雷激荡",
-              "Desc": "首领幻影进入【噬月】状态时，我方需要选择一名最强的角色与首领幻影进行【孤战】。",
+              "Desc": "首领幻影进入【噬月】状态时，我方需要选择1名最强的角色与首领幻影进行【孤战】。",
               "Answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
               "Difficulty": 1,
               "SkillList": [
@@ -12634,6 +12692,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -12684,6 +12743,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -12945,7 +13005,7 @@
               ]
             },
             {
-              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择一名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
+              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择1名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
@@ -12965,7 +13025,7 @@
           "PhaseList": [
             {
               "Name": "阶段一：风雷激荡",
-              "Desc": "首领幻影进入【噬月】状态时，我方需要选择一名最强的角色与首领幻影进行【孤战】。",
+              "Desc": "首领幻影进入【噬月】状态时，我方需要选择1名最强的角色与首领幻影进行【孤战】。",
               "Answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
               "Difficulty": 1,
               "SkillList": [
@@ -13031,6 +13091,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -13081,6 +13142,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -13342,7 +13404,7 @@
               ]
             },
             {
-              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择一名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
+              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择1名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
@@ -13362,7 +13424,7 @@
           "PhaseList": [
             {
               "Name": "阶段一：风雷激荡",
-              "Desc": "首领幻影进入【噬月】状态时，我方需要选择一名最强的角色与首领幻影进行【孤战】。",
+              "Desc": "首领幻影进入【噬月】状态时，我方需要选择1名最强的角色与首领幻影进行【孤战】。",
               "Answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
               "Difficulty": 1,
               "SkillList": [
@@ -13428,6 +13490,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -13478,6 +13541,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -13894,6 +13958,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -13944,6 +14009,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -14292,6 +14358,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -14342,6 +14409,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -14696,6 +14764,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -14746,6 +14815,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -15100,6 +15170,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -15150,6 +15221,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -15543,6 +15615,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -15593,6 +15666,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -15921,6 +15995,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -15971,6 +16046,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -16299,6 +16375,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -16349,6 +16426,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -16677,6 +16755,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -16727,6 +16806,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -16797,7 +16877,7 @@
       }
     ],
     "BeginTime": "2025-06-30 04:00:02",
-    "EndTime": "2025-08-11 04:00:00",
+    "EndTime": "2025-09-22 04:00:00",
     "Level": [
       {
         "Id": 30111,
@@ -16922,7 +17002,7 @@
               ]
             },
             {
-              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择一名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
+              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择1名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
@@ -16942,7 +17022,7 @@
           "PhaseList": [
             {
               "Name": "阶段一：风雷激荡",
-              "Desc": "首领幻影进入【噬月】状态时，我方需要选择一名最强的角色与首领幻影进行【孤战】。",
+              "Desc": "首领幻影进入【噬月】状态时，我方需要选择1名最强的角色与首领幻影进行【孤战】。",
               "Answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
               "Difficulty": 1,
               "SkillList": [
@@ -17125,6 +17205,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -17175,6 +17256,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -17302,7 +17384,7 @@
               ]
             },
             {
-              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择一名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
+              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择1名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
@@ -17322,7 +17404,7 @@
           "PhaseList": [
             {
               "Name": "阶段一：风雷激荡",
-              "Desc": "首领幻影进入【噬月】状态时，我方需要选择一名最强的角色与首领幻影进行【孤战】。",
+              "Desc": "首领幻影进入【噬月】状态时，我方需要选择1名最强的角色与首领幻影进行【孤战】。",
               "Answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
               "Difficulty": 1,
               "SkillList": [
@@ -17505,6 +17587,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -17555,6 +17638,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -17682,7 +17766,7 @@
               ]
             },
             {
-              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择一名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
+              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择1名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
@@ -17702,7 +17786,7 @@
           "PhaseList": [
             {
               "Name": "阶段一：风雷激荡",
-              "Desc": "首领幻影进入【噬月】状态时，我方需要选择一名最强的角色与首领幻影进行【孤战】。",
+              "Desc": "首领幻影进入【噬月】状态时，我方需要选择1名最强的角色与首领幻影进行【孤战】。",
               "Answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
               "Difficulty": 1,
               "SkillList": [
@@ -17885,6 +17969,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -17935,6 +18020,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -18062,7 +18148,7 @@
               ]
             },
             {
-              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择一名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
+              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择1名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
@@ -18082,7 +18168,7 @@
           "PhaseList": [
             {
               "Name": "阶段一：风雷激荡",
-              "Desc": "首领幻影进入【噬月】状态时，我方需要选择一名最强的角色与首领幻影进行【孤战】。",
+              "Desc": "首领幻影进入【噬月】状态时，我方需要选择1名最强的角色与首领幻影进行【孤战】。",
               "Answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
               "Difficulty": 1,
               "SkillList": [
@@ -18265,6 +18351,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -18315,6 +18402,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -18323,70 +18411,74 @@
   },
   "3012": {
     "Id": 3012,
-    "Name": null,
+    "Name": "冥茫冽风",
     "Buff": {
-      "Name": null,
-      "Desc": null,
-      "Param": []
+      "Name": "末法余烬",
+      "Desc": "拥有<color=#f29e38ff>【坚防守备】</color>的敌方单位被<color=#f29e38ff>弱点击破</color>时，使我方全体解除控制状态、激活终结技并回复生命值。\\n敌方全体受到的忆灵技伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，战技伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+      "Param": [
+        0.10000000009313226,
+        0.3000000002793968
+      ]
     },
     "BuffList1": [
       {
-        "Name": "戮力同心",
-        "Desc": "我方目标每消耗1个战技点时，使我方全体造成的伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，该效果最多叠加<color=#f29e38ff><unbreak>#2[i]</unbreak></color>层。",
+        "Name": "披坚执锐",
+        "Desc": "我方全体造成的物理属性伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，敌方全体的物理属性抗性降低<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
         "Param": [
-          0.060000000055879354,
-          10
-        ]
-      },
-      {
-        "Name": "牵丝攀藤",
-        "Desc": "消灭敌方目标后，敌方全体受到的击破伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，最多叠加<color=#f29e38ff><unbreak>#2[i]</unbreak></color>层，该效果对所有新上场的敌人也生效。",
-        "Param": [
-          0.1500000001396984,
-          4
-        ]
-      },
-      {
-        "Name": "破釜沉舟",
-        "Desc": "我方目标消耗自身生命值后，暴击伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，持续<color=#f29e38ff><unbreak>#2[i]</unbreak></color>回合。",
-        "Param": [
-          0.5500000005122274,
-          2
-        ]
-      }
-    ],
-    "BuffList2": [
-      {
-        "Name": "抵瑕陷隙",
-        "Desc": "我方全体造成的终结技伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，对处于弱点击破状态下的敌方目标额外提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
-        "Param": [
-          0.3000000002793968,
-          0.3000000002793968
+          0.5000000004656613,
+          0.20000000018626451
         ]
       },
       {
         "Name": "蔓草难除",
         "Desc": "我方全体施放普攻或战技攻击处于弱点击破状态下的敌人后，使其当前承受的所有持续伤害立即产生相当于原伤害<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>的伤害。",
         "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "臻冰彻骨",
+        "Desc": "敌方全体受到的击破伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。击破敌方弱点后，我方全体速度提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持续<color=#f29e38ff><unbreak>#3[i]</unbreak></color>回合。",
+        "Param": [
+          0.10000000009313226,
+          0.20000000018626451,
+          2
+        ]
+      }
+    ],
+    "BuffList2": [
+      {
+        "Name": "攻无不克",
+        "Desc": "忆灵造成伤害时无视目标<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>的防御力。",
+        "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "生机焕发",
+        "Desc": "我方全体造成的战技伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，回合开始时，若当前生命值百分比等于或低于<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，则回复生命上限<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>的生命值。",
+        "Param": [
+          0.3000000002793968,
+          0.010000000009313226,
           0.1500000001396984
         ]
       },
       {
-        "Name": "登锋陷阵",
-        "Desc": "队伍中的第1位角色施放终结技后，使自身的弱点击破效率提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，暴击伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持续<color=#f29e38ff><unbreak>#3[i]</unbreak></color>回合。",
+        "Name": "破竹之势",
+        "Desc": "角色施放终结技时，使自身的弱点击破效率提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，暴击伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持续<color=#f29e38ff><unbreak>#3[i]</unbreak></color>回合。",
         "Param": [
-          0.5000000004656613,
-          0.5000000004656613,
-          1
+          1,
+          0.40000000037252903,
+          3
         ]
       }
     ],
-    "BeginTime": "2050-01-01 04:00:00",
-    "EndTime": "2099-12-31 04:00:00",
+    "BeginTime": "2025-08-11 04:00:02",
+    "EndTime": "2025-09-22 04:00:00",
     "Level": [
       {
         "Id": 30121,
-        "Name": "天狼战首·难度<unbreak>01</unbreak>",
+        "Name": "冥茫冽风·难度<unbreak>01</unbreak>",
         "Challenge": [
           {
             "Name": "获得#1分",
@@ -18402,40 +18494,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401401,
-        "BossMonsterID2": 203302201,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401401,
+        "BossMonsterID2": 401403601,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 1,
@@ -18450,11 +18555,11 @@
               "Name": "坚防守备",
               "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18463,31 +18568,39 @@
               "Child": []
             },
             {
-              "Name": "宁枉勿纵",
-              "Desc": "首领幻影在施放【裂地三舍，寸草不留】时，将会消灭其他所有狼卒。",
+              "Name": "阵地转移",
+              "Desc": "杰帕德会加入战斗并为首领幻影提供保护。首领幻影会将自身弱点属性<color=#f29e38ff><u>转移</u></color>给召唤物，但当召唤物被消灭时，自身韧性值受到额外削减。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "转移",
+                  "Desc": "将弱点属性转移给目标，弱点属性会在目标被消灭后返回，并造成额外韧性值削减。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "狼顾鸱张",
-              "Desc": "首领幻影在进入第二阶段后，【孤战】期间每回合可再次行动。",
+              "Name": "逃无可逃",
+              "Desc": "首领幻影的召唤物会标记1个我方单位，首领幻影施放单攻技能后会对被标记的我方单位<color=#f29e38ff><u>追加施放</u></color>。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "追加施放",
+                  "Desc": "在施放单攻技能后，会重新选择目标并再次使用该技能。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "至死方休",
-              "Desc": "首领幻影在进入【孤战】后，受到的伤害额外降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
@@ -18495,11 +18608,11 @@
             {
               "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18507,41 +18620,36 @@
               ]
             },
             {
-              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择一名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
-              "Param": [],
-              "SkillID": null,
-              "ParamFix": []
-            },
-            {
-              "Desc": "我方在击杀敌方狼卒时，会获得【血涌】，进入【孤战】的角色和召唤的目标会根据【血涌】层数获得强化。",
+              "Desc": "有召唤物在场时，首领幻影会将<color=#f29e38ff>自身弱点属性转移给召唤物</color>。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "在首领幻影尚未进入【噬月】状态时，优先消灭狼卒，为我方提供【血涌】并使首领幻影快速进入【噬月】状态。",
-            "在首领幻影即将进入【噬月】状态时，保存实力以应对【孤战】。",
-            "在进行【孤战】时，若选择的我方角色存在召唤的目标，召唤的目标将一同进入【孤战】。"
+            "<color=#f29e38ff>击破</color>首领幻影会大幅提高其受到的伤害，使我方全体恢复战技点并行动提前。",
+            "优先消灭或击破<color=#f29e38ff>召唤物</color>，可以有效削弱首领幻影。"
           ],
           "PhaseList": [
             {
-              "Name": "阶段一：风雷激荡",
-              "Desc": "首领幻影进入【噬月】状态时，我方需要选择一名最强的角色与首领幻影进行【孤战】。",
-              "Answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
+              "Name": "阶段一：无望冽风的幻灭者",
+              "Desc": "首领幻影会使用技能冻结目标并造成伤害。杰帕德会提供群体护盾。",
+              "Answer": "应对策略：优先消灭召唤物，若杰帕德施放全体护盾，尽快击破并消灭杰帕德。",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "阶段二：吞天噬月",
-              "Desc": "首领幻影的技能会对狼卒造成伤害，且进入【噬月】状态时会获得额外强化。",
-              "Answer": "应对策略：在首领幻影行动前击杀狼卒，防止狼卒被首领幻影消灭。",
+              "Name": "阶段二：无望冽风的幻灭者•虚妄之母",
+              "Desc": "首领幻影会不断施放【创世绝响】造成高额全体伤害，并使用技能限制我方目标行动。",
+              "Answer": "应对策略：优先消灭召唤物后，尽快击破首领幻影的弱点。",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -18563,114 +18671,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "铁骨峥嵘",
-              "Desc": "部位受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。当首领幻影被<color=#f29e38ff>弱点击破</color>后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "钩爪锯牙",
-              "Desc": "首领幻影的韧性提高<color=#f29e38ff><unbreak>#1[i]</unbreak></color>点。",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "朽株枯木",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "兽血沸腾",
-              "Desc": "<color=#f29e38ff>【厉咒】</color>状态的持续时间延长<color=#f29e38ff><unbreak>#1[i]</unbreak></color>回合。",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "摧刚为柔",
+              "Desc": "【哀悯长臂】的韧性上限提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "首领幻影和其所有部位受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Desc": "首领幻影和其召唤物受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "首领幻影的部位被<color=#f29e38ff>弱点击破</color>时，首领幻影会削减一定韧性。",
+              "Desc": "本场战斗中我方目标的生命值最多降至1点，同时将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "首领幻影施放【蚀心厉咒】，使我方角色<color=#f29e38ff>陷入【厉咒】状态</color>。【厉咒】状态下的我方角色及其召唤物离场。同时召唤【浴血人狼】，代替该离场角色继续战斗，并且【浴血人狼】的攻击能<color=#f29e38ff>造成较多的韧性削减</color>。",
+              "Desc": "我方目标生命值降低时，处于【死梦深度】状态的首领幻影会积累【濒死梦泡】，【濒死梦泡】达到上限时首领幻影进入【死亡的芬芳】状态，此时首领幻影和其召唤物的技能大幅强化。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "多次击破首领幻影的<color=#f29e38ff>部位</color>可有效削减首领幻影的韧性，<color=#f29e38ff>击破</color>首领幻影会大幅提高首领幻影和其所有部位受到的伤害，并使我方全体恢复战技点并激活终结技。",
-            "当<color=#f29e38ff>【浴血人狼】</color>代替我方角色战斗时，会根据受到攻击的敌方目标<color=#f29e38ff>持续伤害类负面状态的数量</color>额外<color=#f29e38ff>无视弱点属性削减其韧性</color>。【浴血人狼】的<color=#f29e38ff>普攻</color>可为我方全体目标回复生命值，<color=#f29e38ff>战技</color>可命中多个敌方目标并大幅削减韧性，且<color=#f29e38ff>不消耗战技点</color>。"
+            "我方目标陷入【负载生命值】状态时造成的伤害和弱点击破效率大幅降低，优先回复其生命值以解除该状态。",
+            "对【哀悯长臂】造成弱点击破可以削减首领幻影的韧性和生命值，若此时首领幻影处于【死亡的芬芳】状态，还可以回复我方生命值。"
           ],
           "PhaseList": [
             {
-              "Name": "阶段一：叱咤风云",
-              "Desc": "首领幻影会施放【蚀心厉咒】使我方陷入【厉咒】效果。",
-              "Answer": "应对策略：在【蚀心厉咒】施放时，优先选择我方非输出角色作为技能的目标。",
+              "Name": "阶段一：求死不能",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Answer": "应对策略：优先对处于【负载生命值】状态的我方目标进行回复。",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "阶段二：席卷乾圜",
-              "Desc": "首领幻影会施放【席卷乾圜，气吞坤矩】造成高额伤害和负面效果。",
-              "Answer": "应对策略：在【席卷乾圜，气吞坤矩】施放前尽可能击破所有部位。",
+              "Name": "阶段二：向死而生",
+              "Desc": "首领幻影施放【死亡想要更多的死亡】时会对处于【负载生命值】状态的我方目标造成致命伤害。",
+              "Answer": "应对策略：在【死亡想要更多的死亡】施放前通过回复生命值解除所有我方单位的【负载生命值】状态。",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420311,
+            "StageID": 420331,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 60,
-            "EliteGroup": 701,
+            "EliteGroup": 904,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -18689,18 +18784,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401401
+                "Monster0": 100401401,
+                "Monster1": 100402601
               }
             ],
             "LevelLoseCondition": [
@@ -18710,17 +18806,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420301,
+            "StageID": 420321,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 60,
-            "EliteGroup": 701,
+            "EliteGroup": 896,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -18739,18 +18836,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501201
+                "Monster0": 401403601
               }
             ],
             "LevelLoseCondition": [
@@ -18760,13 +18857,14 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
       },
       {
         "Id": 30122,
-        "Name": "天狼战首·难度<unbreak>02</unbreak>",
+        "Name": "冥茫冽风·难度<unbreak>02</unbreak>",
         "Challenge": [
           {
             "Name": "获得#1分",
@@ -18782,40 +18880,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401402,
-        "BossMonsterID2": 203302202,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401402,
+        "BossMonsterID2": 401403602,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 2,
@@ -18830,11 +18941,11 @@
               "Name": "坚防守备",
               "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18843,31 +18954,39 @@
               "Child": []
             },
             {
-              "Name": "宁枉勿纵",
-              "Desc": "首领幻影在施放【裂地三舍，寸草不留】时，将会消灭其他所有狼卒。",
+              "Name": "阵地转移",
+              "Desc": "杰帕德会加入战斗并为首领幻影提供保护。首领幻影会将自身弱点属性<color=#f29e38ff><u>转移</u></color>给召唤物，但当召唤物被消灭时，自身韧性值受到额外削减。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "转移",
+                  "Desc": "将弱点属性转移给目标，弱点属性会在目标被消灭后返回，并造成额外韧性值削减。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "狼顾鸱张",
-              "Desc": "首领幻影在进入第二阶段后，【孤战】期间每回合可再次行动。",
+              "Name": "逃无可逃",
+              "Desc": "首领幻影的召唤物会标记1个我方单位，首领幻影施放单攻技能后会对被标记的我方单位<color=#f29e38ff><u>追加施放</u></color>。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "追加施放",
+                  "Desc": "在施放单攻技能后，会重新选择目标并再次使用该技能。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "至死方休",
-              "Desc": "首领幻影在进入【孤战】后，受到的伤害额外降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
@@ -18875,11 +18994,11 @@
             {
               "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18887,41 +19006,36 @@
               ]
             },
             {
-              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择一名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
-              "Param": [],
-              "SkillID": null,
-              "ParamFix": []
-            },
-            {
-              "Desc": "我方在击杀敌方狼卒时，会获得【血涌】，进入【孤战】的角色和召唤的目标会根据【血涌】层数获得强化。",
+              "Desc": "有召唤物在场时，首领幻影会将<color=#f29e38ff>自身弱点属性转移给召唤物</color>。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "在首领幻影尚未进入【噬月】状态时，优先消灭狼卒，为我方提供【血涌】并使首领幻影快速进入【噬月】状态。",
-            "在首领幻影即将进入【噬月】状态时，保存实力以应对【孤战】。",
-            "在进行【孤战】时，若选择的我方角色存在召唤的目标，召唤的目标将一同进入【孤战】。"
+            "<color=#f29e38ff>击破</color>首领幻影会大幅提高其受到的伤害，使我方全体恢复战技点并行动提前。",
+            "优先消灭或击破<color=#f29e38ff>召唤物</color>，可以有效削弱首领幻影。"
           ],
           "PhaseList": [
             {
-              "Name": "阶段一：风雷激荡",
-              "Desc": "首领幻影进入【噬月】状态时，我方需要选择一名最强的角色与首领幻影进行【孤战】。",
-              "Answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
+              "Name": "阶段一：无望冽风的幻灭者",
+              "Desc": "首领幻影会使用技能冻结目标并造成伤害。杰帕德会提供群体护盾。",
+              "Answer": "应对策略：优先消灭召唤物，若杰帕德施放全体护盾，尽快击破并消灭杰帕德。",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "阶段二：吞天噬月",
-              "Desc": "首领幻影的技能会对狼卒造成伤害，且进入【噬月】状态时会获得额外强化。",
-              "Answer": "应对策略：在首领幻影行动前击杀狼卒，防止狼卒被首领幻影消灭。",
+              "Name": "阶段二：无望冽风的幻灭者•虚妄之母",
+              "Desc": "首领幻影会不断施放【创世绝响】造成高额全体伤害，并使用技能限制我方目标行动。",
+              "Answer": "应对策略：优先消灭召唤物后，尽快击破首领幻影的弱点。",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -18943,114 +19057,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "铁骨峥嵘",
-              "Desc": "部位受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。当首领幻影被<color=#f29e38ff>弱点击破</color>后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "钩爪锯牙",
-              "Desc": "首领幻影的韧性提高<color=#f29e38ff><unbreak>#1[i]</unbreak></color>点。",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "朽株枯木",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "兽血沸腾",
-              "Desc": "<color=#f29e38ff>【厉咒】</color>状态的持续时间延长<color=#f29e38ff><unbreak>#1[i]</unbreak></color>回合。",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "摧刚为柔",
+              "Desc": "【哀悯长臂】的韧性上限提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "首领幻影和其所有部位受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Desc": "首领幻影和其召唤物受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "首领幻影的部位被<color=#f29e38ff>弱点击破</color>时，首领幻影会削减一定韧性。",
+              "Desc": "本场战斗中我方目标的生命值最多降至1点，同时将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "首领幻影施放【蚀心厉咒】，使我方角色<color=#f29e38ff>陷入【厉咒】状态</color>。【厉咒】状态下的我方角色及其召唤物离场。同时召唤【浴血人狼】，代替该离场角色继续战斗，并且【浴血人狼】的攻击能<color=#f29e38ff>造成较多的韧性削减</color>。",
+              "Desc": "我方目标生命值降低时，处于【死梦深度】状态的首领幻影会积累【濒死梦泡】，【濒死梦泡】达到上限时首领幻影进入【死亡的芬芳】状态，此时首领幻影和其召唤物的技能大幅强化。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "多次击破首领幻影的<color=#f29e38ff>部位</color>可有效削减首领幻影的韧性，<color=#f29e38ff>击破</color>首领幻影会大幅提高首领幻影和其所有部位受到的伤害，并使我方全体恢复战技点并激活终结技。",
-            "当<color=#f29e38ff>【浴血人狼】</color>代替我方角色战斗时，会根据受到攻击的敌方目标<color=#f29e38ff>持续伤害类负面状态的数量</color>额外<color=#f29e38ff>无视弱点属性削减其韧性</color>。【浴血人狼】的<color=#f29e38ff>普攻</color>可为我方全体目标回复生命值，<color=#f29e38ff>战技</color>可命中多个敌方目标并大幅削减韧性，且<color=#f29e38ff>不消耗战技点</color>。"
+            "我方目标陷入【负载生命值】状态时造成的伤害和弱点击破效率大幅降低，优先回复其生命值以解除该状态。",
+            "对【哀悯长臂】造成弱点击破可以削减首领幻影的韧性和生命值，若此时首领幻影处于【死亡的芬芳】状态，还可以回复我方生命值。"
           ],
           "PhaseList": [
             {
-              "Name": "阶段一：叱咤风云",
-              "Desc": "首领幻影会施放【蚀心厉咒】使我方陷入【厉咒】效果。",
-              "Answer": "应对策略：在【蚀心厉咒】施放时，优先选择我方非输出角色作为技能的目标。",
+              "Name": "阶段一：求死不能",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Answer": "应对策略：优先对处于【负载生命值】状态的我方目标进行回复。",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "阶段二：席卷乾圜",
-              "Desc": "首领幻影会施放【席卷乾圜，气吞坤矩】造成高额伤害和负面效果。",
-              "Answer": "应对策略：在【席卷乾圜，气吞坤矩】施放前尽可能击破所有部位。",
+              "Name": "阶段二：向死而生",
+              "Desc": "首领幻影施放【死亡想要更多的死亡】时会对处于【负载生命值】状态的我方目标造成致命伤害。",
+              "Answer": "应对策略：在【死亡想要更多的死亡】施放前通过回复生命值解除所有我方单位的【负载生命值】状态。",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420312,
+            "StageID": 420332,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 70,
-            "EliteGroup": 702,
+            "EliteGroup": 905,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19069,18 +19170,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401402
+                "Monster0": 100401402,
+                "Monster1": 100402602
               }
             ],
             "LevelLoseCondition": [
@@ -19090,17 +19192,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420302,
+            "StageID": 420322,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 70,
-            "EliteGroup": 702,
+            "EliteGroup": 897,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19119,18 +19222,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501202
+                "Monster0": 401403602
               }
             ],
             "LevelLoseCondition": [
@@ -19140,13 +19243,14 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
       },
       {
         "Id": 30123,
-        "Name": "天狼战首·难度<unbreak>03</unbreak>",
+        "Name": "冥茫冽风·难度<unbreak>03</unbreak>",
         "Challenge": [
           {
             "Name": "获得#1分",
@@ -19162,40 +19266,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401403,
-        "BossMonsterID2": 203302203,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401403,
+        "BossMonsterID2": 401403603,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 3,
@@ -19210,11 +19327,11 @@
               "Name": "坚防守备",
               "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19223,31 +19340,39 @@
               "Child": []
             },
             {
-              "Name": "宁枉勿纵",
-              "Desc": "首领幻影在施放【裂地三舍，寸草不留】时，将会消灭其他所有狼卒。",
+              "Name": "阵地转移",
+              "Desc": "杰帕德会加入战斗并为首领幻影提供保护。首领幻影会将自身弱点属性<color=#f29e38ff><u>转移</u></color>给召唤物，但当召唤物被消灭时，自身韧性值受到额外削减。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "转移",
+                  "Desc": "将弱点属性转移给目标，弱点属性会在目标被消灭后返回，并造成额外韧性值削减。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "狼顾鸱张",
-              "Desc": "首领幻影在进入第二阶段后，【孤战】期间每回合可再次行动。",
+              "Name": "逃无可逃",
+              "Desc": "首领幻影的召唤物会标记1个我方单位，首领幻影施放单攻技能后会对被标记的我方单位<color=#f29e38ff><u>追加施放</u></color>。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "追加施放",
+                  "Desc": "在施放单攻技能后，会重新选择目标并再次使用该技能。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "至死方休",
-              "Desc": "首领幻影在进入【孤战】后，受到的伤害额外降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
@@ -19255,11 +19380,11 @@
             {
               "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19267,41 +19392,42 @@
               ]
             },
             {
-              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择一名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
+              "Desc": "有召唤物在场时，首领幻影会将<color=#f29e38ff>自身弱点属性转移给召唤物</color>。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "我方在击杀敌方狼卒时，会获得【血涌】，进入【孤战】的角色和召唤的目标会根据【血涌】层数获得强化。",
+              "Desc": "首领幻影会根据<color=#f29e38ff>召唤物</color>锁定的目标，追加施放单体攻击，并有概率造成冻结或禁锢效果。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "在首领幻影尚未进入【噬月】状态时，优先消灭狼卒，为我方提供【血涌】并使首领幻影快速进入【噬月】状态。",
-            "在首领幻影即将进入【噬月】状态时，保存实力以应对【孤战】。",
-            "在进行【孤战】时，若选择的我方角色存在召唤的目标，召唤的目标将一同进入【孤战】。"
+            "<color=#f29e38ff>击破</color>首领幻影会大幅提高其受到的伤害，使我方全体恢复战技点并行动提前。",
+            "优先消灭或击破<color=#f29e38ff>召唤物</color>，可以有效削弱首领幻影。"
           ],
           "PhaseList": [
             {
-              "Name": "阶段一：风雷激荡",
-              "Desc": "首领幻影进入【噬月】状态时，我方需要选择一名最强的角色与首领幻影进行【孤战】。",
-              "Answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
+              "Name": "阶段一：无望冽风的幻灭者",
+              "Desc": "首领幻影会使用技能冻结目标并造成伤害。杰帕德会提供群体护盾。",
+              "Answer": "应对策略：优先消灭召唤物，若杰帕德施放全体护盾，尽快击破并消灭杰帕德。",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "阶段二：吞天噬月",
-              "Desc": "首领幻影的技能会对狼卒造成伤害，且进入【噬月】状态时会获得额外强化。",
-              "Answer": "应对策略：在首领幻影行动前击杀狼卒，防止狼卒被首领幻影消灭。",
+              "Name": "阶段二：无望冽风的幻灭者•虚妄之母",
+              "Desc": "首领幻影会不断施放【创世绝响】造成高额全体伤害，并使用技能限制我方目标行动。",
+              "Answer": "应对策略：优先消灭召唤物后，尽快击破首领幻影的弱点。",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -19323,114 +19449,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "铁骨峥嵘",
-              "Desc": "部位受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。当首领幻影被<color=#f29e38ff>弱点击破</color>后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "钩爪锯牙",
-              "Desc": "首领幻影的韧性提高<color=#f29e38ff><unbreak>#1[i]</unbreak></color>点。",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "朽株枯木",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "兽血沸腾",
-              "Desc": "<color=#f29e38ff>【厉咒】</color>状态的持续时间延长<color=#f29e38ff><unbreak>#1[i]</unbreak></color>回合。",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "摧刚为柔",
+              "Desc": "【哀悯长臂】的韧性上限提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "首领幻影和其所有部位受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Desc": "首领幻影和其召唤物受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "首领幻影的部位被<color=#f29e38ff>弱点击破</color>时，首领幻影会削减一定韧性。",
+              "Desc": "本场战斗中我方目标的生命值最多降至1点，同时将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "首领幻影施放【蚀心厉咒】，使我方角色<color=#f29e38ff>陷入【厉咒】状态</color>。【厉咒】状态下的我方角色及其召唤物离场。同时召唤【浴血人狼】，代替该离场角色继续战斗，并且【浴血人狼】的攻击能<color=#f29e38ff>造成较多的韧性削减</color>。",
+              "Desc": "我方目标生命值降低时，处于【死梦深度】状态的首领幻影会积累【濒死梦泡】，【濒死梦泡】达到上限时首领幻影进入【死亡的芬芳】状态，此时首领幻影和其召唤物的技能大幅强化。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "多次击破首领幻影的<color=#f29e38ff>部位</color>可有效削减首领幻影的韧性，<color=#f29e38ff>击破</color>首领幻影会大幅提高首领幻影和其所有部位受到的伤害，并使我方全体恢复战技点并激活终结技。",
-            "当<color=#f29e38ff>【浴血人狼】</color>代替我方角色战斗时，会根据受到攻击的敌方目标<color=#f29e38ff>持续伤害类负面状态的数量</color>额外<color=#f29e38ff>无视弱点属性削减其韧性</color>。【浴血人狼】的<color=#f29e38ff>普攻</color>可为我方全体目标回复生命值，<color=#f29e38ff>战技</color>可命中多个敌方目标并大幅削减韧性，且<color=#f29e38ff>不消耗战技点</color>。"
+            "我方目标陷入【负载生命值】状态时造成的伤害和弱点击破效率大幅降低，优先回复其生命值以解除该状态。",
+            "对【哀悯长臂】造成弱点击破可以削减首领幻影的韧性和生命值，若此时首领幻影处于【死亡的芬芳】状态，还可以回复我方生命值。"
           ],
           "PhaseList": [
             {
-              "Name": "阶段一：叱咤风云",
-              "Desc": "首领幻影会施放【蚀心厉咒】使我方陷入【厉咒】效果。",
-              "Answer": "应对策略：在【蚀心厉咒】施放时，优先选择我方非输出角色作为技能的目标。",
+              "Name": "阶段一：求死不能",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Answer": "应对策略：优先对处于【负载生命值】状态的我方目标进行回复。",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "阶段二：席卷乾圜",
-              "Desc": "首领幻影会施放【席卷乾圜，气吞坤矩】造成高额伤害和负面效果。",
-              "Answer": "应对策略：在【席卷乾圜，气吞坤矩】施放前尽可能击破所有部位。",
+              "Name": "阶段二：向死而生",
+              "Desc": "首领幻影施放【死亡想要更多的死亡】时会对处于【负载生命值】状态的我方目标造成致命伤害。",
+              "Answer": "应对策略：在【死亡想要更多的死亡】施放前通过回复生命值解除所有我方单位的【负载生命值】状态。",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420313,
+            "StageID": 420333,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 80,
-            "EliteGroup": 703,
+            "EliteGroup": 906,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19449,18 +19562,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401403
+                "Monster0": 100401403,
+                "Monster1": 100402603
               }
             ],
             "LevelLoseCondition": [
@@ -19470,17 +19584,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420303,
+            "StageID": 420323,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 80,
-            "EliteGroup": 703,
+            "EliteGroup": 898,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19499,18 +19614,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501203
+                "Monster0": 401403603
               }
             ],
             "LevelLoseCondition": [
@@ -19520,13 +19635,14 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
       },
       {
         "Id": 30124,
-        "Name": "天狼战首·难度<unbreak>04</unbreak>",
+        "Name": "冥茫冽风·难度<unbreak>04</unbreak>",
         "Challenge": [
           {
             "Name": "获得#1分",
@@ -19542,40 +19658,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401404,
-        "BossMonsterID2": 203302204,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401404,
+        "BossMonsterID2": 401403604,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 4,
@@ -19590,11 +19719,11 @@
               "Name": "坚防守备",
               "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19603,31 +19732,39 @@
               "Child": []
             },
             {
-              "Name": "宁枉勿纵",
-              "Desc": "首领幻影在施放【裂地三舍，寸草不留】时，将会消灭其他所有狼卒。",
+              "Name": "阵地转移",
+              "Desc": "杰帕德会加入战斗并为首领幻影提供保护。首领幻影会将自身弱点属性<color=#f29e38ff><u>转移</u></color>给召唤物，但当召唤物被消灭时，自身韧性值受到额外削减。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "转移",
+                  "Desc": "将弱点属性转移给目标，弱点属性会在目标被消灭后返回，并造成额外韧性值削减。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "狼顾鸱张",
-              "Desc": "首领幻影在进入第二阶段后，【孤战】期间每回合可再次行动。",
+              "Name": "逃无可逃",
+              "Desc": "首领幻影的召唤物会标记1个我方单位，首领幻影施放单攻技能后会对被标记的我方单位<color=#f29e38ff><u>追加施放</u></color>。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "追加施放",
+                  "Desc": "在施放单攻技能后，会重新选择目标并再次使用该技能。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "至死方休",
-              "Desc": "首领幻影在进入【孤战】后，受到的伤害额外降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
@@ -19635,11 +19772,11 @@
             {
               "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19647,41 +19784,42 @@
               ]
             },
             {
-              "Desc": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择一名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
+              "Desc": "有召唤物在场时，首领幻影会将<color=#f29e38ff>自身弱点属性转移给召唤物</color>。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "我方在击杀敌方狼卒时，会获得【血涌】，进入【孤战】的角色和召唤的目标会根据【血涌】层数获得强化。",
+              "Desc": "首领幻影会根据<color=#f29e38ff>召唤物</color>锁定的目标，追加施放单体攻击，并有概率造成冻结或禁锢效果。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "在首领幻影尚未进入【噬月】状态时，优先消灭狼卒，为我方提供【血涌】并使首领幻影快速进入【噬月】状态。",
-            "在首领幻影即将进入【噬月】状态时，保存实力以应对【孤战】。",
-            "在进行【孤战】时，若选择的我方角色存在召唤的目标，召唤的目标将一同进入【孤战】。"
+            "<color=#f29e38ff>击破</color>首领幻影会大幅提高其受到的伤害，使我方全体恢复战技点并行动提前。",
+            "优先消灭或击破<color=#f29e38ff>召唤物</color>，可以有效削弱首领幻影。"
           ],
           "PhaseList": [
             {
-              "Name": "阶段一：风雷激荡",
-              "Desc": "首领幻影进入【噬月】状态时，我方需要选择一名最强的角色与首领幻影进行【孤战】。",
-              "Answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
+              "Name": "阶段一：无望冽风的幻灭者",
+              "Desc": "首领幻影会使用技能冻结目标并造成伤害。杰帕德会提供群体护盾。",
+              "Answer": "应对策略：优先消灭召唤物，若杰帕德施放全体护盾，尽快击破并消灭杰帕德。",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "阶段二：吞天噬月",
-              "Desc": "首领幻影的技能会对狼卒造成伤害，且进入【噬月】状态时会获得额外强化。",
-              "Answer": "应对策略：在首领幻影行动前击杀狼卒，防止狼卒被首领幻影消灭。",
+              "Name": "阶段二：无望冽风的幻灭者•虚妄之母",
+              "Desc": "首领幻影会不断施放【创世绝响】造成高额全体伤害，并使用技能限制我方目标行动。",
+              "Answer": "应对策略：优先消灭召唤物后，尽快击破首领幻影的弱点。",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -19703,114 +19841,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "铁骨峥嵘",
-              "Desc": "部位受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。当首领幻影被<color=#f29e38ff>弱点击破</color>后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "钩爪锯牙",
-              "Desc": "首领幻影的韧性提高<color=#f29e38ff><unbreak>#1[i]</unbreak></color>点。",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "朽株枯木",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "兽血沸腾",
-              "Desc": "<color=#f29e38ff>【厉咒】</color>状态的持续时间延长<color=#f29e38ff><unbreak>#1[i]</unbreak></color>回合。",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "摧刚为柔",
+              "Desc": "【哀悯长臂】的韧性上限提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "首领幻影和其所有部位受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Desc": "首领幻影和其召唤物受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "首领幻影的部位被<color=#f29e38ff>弱点击破</color>时，首领幻影会削减一定韧性。",
+              "Desc": "本场战斗中我方目标的生命值最多降至1点，同时将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "首领幻影施放【蚀心厉咒】，使我方角色<color=#f29e38ff>陷入【厉咒】状态</color>。【厉咒】状态下的我方角色及其召唤物离场。同时召唤【浴血人狼】，代替该离场角色继续战斗，并且【浴血人狼】的攻击能<color=#f29e38ff>造成较多的韧性削减</color>。",
+              "Desc": "我方目标生命值降低时，处于【死梦深度】状态的首领幻影会积累【濒死梦泡】，【濒死梦泡】达到上限时首领幻影进入【死亡的芬芳】状态，此时首领幻影和其召唤物的技能大幅强化。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "多次击破首领幻影的<color=#f29e38ff>部位</color>可有效削减首领幻影的韧性，<color=#f29e38ff>击破</color>首领幻影会大幅提高首领幻影和其所有部位受到的伤害，并使我方全体恢复战技点并激活终结技。",
-            "当<color=#f29e38ff>【浴血人狼】</color>代替我方角色战斗时，会根据受到攻击的敌方目标<color=#f29e38ff>持续伤害类负面状态的数量</color>额外<color=#f29e38ff>无视弱点属性削减其韧性</color>。【浴血人狼】的<color=#f29e38ff>普攻</color>可为我方全体目标回复生命值，<color=#f29e38ff>战技</color>可命中多个敌方目标并大幅削减韧性，且<color=#f29e38ff>不消耗战技点</color>。"
+            "我方目标陷入【负载生命值】状态时造成的伤害和弱点击破效率大幅降低，优先回复其生命值以解除该状态。",
+            "对【哀悯长臂】造成弱点击破可以削减首领幻影的韧性和生命值，若此时首领幻影处于【死亡的芬芳】状态，还可以回复我方生命值。"
           ],
           "PhaseList": [
             {
-              "Name": "阶段一：叱咤风云",
-              "Desc": "首领幻影会施放【蚀心厉咒】使我方陷入【厉咒】效果。",
-              "Answer": "应对策略：在【蚀心厉咒】施放时，优先选择我方非输出角色作为技能的目标。",
+              "Name": "阶段一：求死不能",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Answer": "应对策略：优先对处于【负载生命值】状态的我方目标进行回复。",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "阶段二：席卷乾圜",
-              "Desc": "首领幻影会施放【席卷乾圜，气吞坤矩】造成高额伤害和负面效果。",
-              "Answer": "应对策略：在【席卷乾圜，气吞坤矩】施放前尽可能击破所有部位。",
+              "Name": "阶段二：向死而生",
+              "Desc": "首领幻影施放【死亡想要更多的死亡】时会对处于【负载生命值】状态的我方目标造成致命伤害。",
+              "Answer": "应对策略：在【死亡想要更多的死亡】施放前通过回复生命值解除所有我方单位的【负载生命值】状态。",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420314,
+            "StageID": 420334,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 90,
-            "EliteGroup": 84,
+            "EliteGroup": 907,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19829,18 +19954,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401404
+                "Monster0": 100401404,
+                "Monster1": 100402604
               }
             ],
             "LevelLoseCondition": [
@@ -19850,17 +19976,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420304,
+            "StageID": 420324,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 90,
-            "EliteGroup": 704,
+            "EliteGroup": 899,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19879,18 +20006,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501204
+                "Monster0": 401403604
               }
             ],
             "LevelLoseCondition": [
@@ -19900,6 +20027,1632 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      }
+    ]
+  },
+  "3013": {
+    "Id": 3013,
+    "Name": "冥茫冽风",
+    "Buff": {
+      "Name": "末法余烬",
+      "Desc": "拥有<color=#f29e38ff>【坚防守备】</color>的敌方单位被<color=#f29e38ff>弱点击破</color>时，使我方全体解除控制状态、激活终结技并回复生命值。\\n敌方全体受到的忆灵技伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，战技伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+      "Param": [
+        0.10000000009313226,
+        0.3000000002793968
+      ]
+    },
+    "BuffList1": [
+      {
+        "Name": "披坚执锐",
+        "Desc": "我方全体造成的物理属性伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，敌方全体的物理属性抗性降低<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+        "Param": [
+          0.5000000004656613,
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "蔓草难除",
+        "Desc": "我方全体施放普攻或战技攻击处于弱点击破状态下的敌人后，使其当前承受的所有持续伤害立即产生相当于原伤害<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>的伤害。",
+        "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "臻冰彻骨",
+        "Desc": "敌方全体受到的击破伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。击破敌方弱点后，我方全体速度提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持续<color=#f29e38ff><unbreak>#3[i]</unbreak></color>回合。",
+        "Param": [
+          0.10000000009313226,
+          0.20000000018626451,
+          2
+        ]
+      }
+    ],
+    "BuffList2": [
+      {
+        "Name": "攻无不克",
+        "Desc": "忆灵造成伤害时无视目标<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>的防御力。",
+        "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "生机焕发",
+        "Desc": "我方全体造成的战技伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，回合开始时，若当前生命值百分比等于或低于<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，则回复生命上限<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>的生命值。",
+        "Param": [
+          0.3000000002793968,
+          0.010000000009313226,
+          0.1500000001396984
+        ]
+      },
+      {
+        "Name": "破竹之势",
+        "Desc": "角色施放终结技时，使自身的弱点击破效率提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，暴击伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持续<color=#f29e38ff><unbreak>#3[i]</unbreak></color>回合。",
+        "Param": [
+          1,
+          0.40000000037252903,
+          3
+        ]
+      }
+    ],
+    "BeginTime": "2025-09-22 04:00:00",
+    "EndTime": "2025-12-22 04:00:00",
+    "Level": [
+      {
+        "Id": 30131,
+        "Name": "冥茫冽风·难度<unbreak>01</unbreak>",
+        "Challenge": [
+          {
+            "Name": "获得#1分",
+            "Param": 4000
+          },
+          {
+            "Name": "获得#1分",
+            "Param": 5200
+          },
+          {
+            "Name": "获得#1分",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401401,
+        "BossMonsterID2": 401403601,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 1,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "坚防守备",
+              "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "阵地转移",
+              "Desc": "杰帕德会加入战斗并为首领幻影提供保护。首领幻影会将自身弱点属性<color=#f29e38ff><u>转移</u></color>给召唤物，但当召唤物被消灭时，自身韧性值受到额外削减。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "转移",
+                  "Desc": "将弱点属性转移给目标，弱点属性会在目标被消灭后返回，并造成额外韧性值削减。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "逃无可逃",
+              "Desc": "首领幻影的召唤物会标记1个我方单位，首领幻影施放单攻技能后会对被标记的我方单位<color=#f29e38ff><u>追加施放</u></color>。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "追加施放",
+                  "Desc": "在施放单攻技能后，会重新选择目标并再次使用该技能。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "有召唤物在场时，首领幻影会将<color=#f29e38ff>自身弱点属性转移给召唤物</color>。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "<color=#f29e38ff>击破</color>首领幻影会大幅提高其受到的伤害，使我方全体恢复战技点并行动提前。",
+            "优先消灭或击破<color=#f29e38ff>召唤物</color>，可以有效削弱首领幻影。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "阶段一：无望冽风的幻灭者",
+              "Desc": "首领幻影会使用技能冻结目标并造成伤害。杰帕德会提供群体护盾。",
+              "Answer": "应对策略：优先消灭召唤物，若杰帕德施放全体护盾，尽快击破并消灭杰帕德。",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "阶段二：无望冽风的幻灭者•虚妄之母",
+              "Desc": "首领幻影会不断施放【创世绝响】造成高额全体伤害，并使用技能限制我方目标行动。",
+              "Answer": "应对策略：优先消灭召唤物后，尽快击破首领幻影的弱点。",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 1,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "坚防守备",
+              "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "朽株枯木",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "摧刚为柔",
+              "Desc": "【哀悯长臂】的韧性上限提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "首领幻影和其召唤物受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "本场战斗中我方目标的生命值最多降至1点，同时将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "我方目标生命值降低时，处于【死梦深度】状态的首领幻影会积累【濒死梦泡】，【濒死梦泡】达到上限时首领幻影进入【死亡的芬芳】状态，此时首领幻影和其召唤物的技能大幅强化。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "我方目标陷入【负载生命值】状态时造成的伤害和弱点击破效率大幅降低，优先回复其生命值以解除该状态。",
+            "对【哀悯长臂】造成弱点击破可以削减首领幻影的韧性和生命值，若此时首领幻影处于【死亡的芬芳】状态，还可以回复我方生命值。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "阶段一：求死不能",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Answer": "应对策略：优先对处于【负载生命值】状态的我方目标进行回复。",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "阶段二：向死而生",
+              "Desc": "首领幻影施放【死亡想要更多的死亡】时会对处于【负载生命值】状态的我方目标造成致命伤害。",
+              "Answer": "应对策略：在【死亡想要更多的死亡】施放前通过回复生命值解除所有我方单位的【负载生命值】状态。",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420331,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 60,
+            "EliteGroup": 904,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401401,
+                "Monster1": 100402601
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420321,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 60,
+            "EliteGroup": 896,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403601
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      },
+      {
+        "Id": 30132,
+        "Name": "冥茫冽风·难度<unbreak>02</unbreak>",
+        "Challenge": [
+          {
+            "Name": "获得#1分",
+            "Param": 4000
+          },
+          {
+            "Name": "获得#1分",
+            "Param": 5200
+          },
+          {
+            "Name": "获得#1分",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401402,
+        "BossMonsterID2": 401403602,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 2,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "坚防守备",
+              "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "阵地转移",
+              "Desc": "杰帕德会加入战斗并为首领幻影提供保护。首领幻影会将自身弱点属性<color=#f29e38ff><u>转移</u></color>给召唤物，但当召唤物被消灭时，自身韧性值受到额外削减。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "转移",
+                  "Desc": "将弱点属性转移给目标，弱点属性会在目标被消灭后返回，并造成额外韧性值削减。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "逃无可逃",
+              "Desc": "首领幻影的召唤物会标记1个我方单位，首领幻影施放单攻技能后会对被标记的我方单位<color=#f29e38ff><u>追加施放</u></color>。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "追加施放",
+                  "Desc": "在施放单攻技能后，会重新选择目标并再次使用该技能。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "有召唤物在场时，首领幻影会将<color=#f29e38ff>自身弱点属性转移给召唤物</color>。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "<color=#f29e38ff>击破</color>首领幻影会大幅提高其受到的伤害，使我方全体恢复战技点并行动提前。",
+            "优先消灭或击破<color=#f29e38ff>召唤物</color>，可以有效削弱首领幻影。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "阶段一：无望冽风的幻灭者",
+              "Desc": "首领幻影会使用技能冻结目标并造成伤害。杰帕德会提供群体护盾。",
+              "Answer": "应对策略：优先消灭召唤物，若杰帕德施放全体护盾，尽快击破并消灭杰帕德。",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "阶段二：无望冽风的幻灭者•虚妄之母",
+              "Desc": "首领幻影会不断施放【创世绝响】造成高额全体伤害，并使用技能限制我方目标行动。",
+              "Answer": "应对策略：优先消灭召唤物后，尽快击破首领幻影的弱点。",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 2,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "坚防守备",
+              "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "朽株枯木",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "摧刚为柔",
+              "Desc": "【哀悯长臂】的韧性上限提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "首领幻影和其召唤物受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "本场战斗中我方目标的生命值最多降至1点，同时将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "我方目标生命值降低时，处于【死梦深度】状态的首领幻影会积累【濒死梦泡】，【濒死梦泡】达到上限时首领幻影进入【死亡的芬芳】状态，此时首领幻影和其召唤物的技能大幅强化。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "我方目标陷入【负载生命值】状态时造成的伤害和弱点击破效率大幅降低，优先回复其生命值以解除该状态。",
+            "对【哀悯长臂】造成弱点击破可以削减首领幻影的韧性和生命值，若此时首领幻影处于【死亡的芬芳】状态，还可以回复我方生命值。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "阶段一：求死不能",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Answer": "应对策略：优先对处于【负载生命值】状态的我方目标进行回复。",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "阶段二：向死而生",
+              "Desc": "首领幻影施放【死亡想要更多的死亡】时会对处于【负载生命值】状态的我方目标造成致命伤害。",
+              "Answer": "应对策略：在【死亡想要更多的死亡】施放前通过回复生命值解除所有我方单位的【负载生命值】状态。",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420332,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 70,
+            "EliteGroup": 905,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401402,
+                "Monster1": 100402602
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420322,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 70,
+            "EliteGroup": 897,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403602
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      },
+      {
+        "Id": 30133,
+        "Name": "冥茫冽风·难度<unbreak>03</unbreak>",
+        "Challenge": [
+          {
+            "Name": "获得#1分",
+            "Param": 4000
+          },
+          {
+            "Name": "获得#1分",
+            "Param": 5200
+          },
+          {
+            "Name": "获得#1分",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401403,
+        "BossMonsterID2": 401403603,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 3,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "坚防守备",
+              "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "阵地转移",
+              "Desc": "杰帕德会加入战斗并为首领幻影提供保护。首领幻影会将自身弱点属性<color=#f29e38ff><u>转移</u></color>给召唤物，但当召唤物被消灭时，自身韧性值受到额外削减。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "转移",
+                  "Desc": "将弱点属性转移给目标，弱点属性会在目标被消灭后返回，并造成额外韧性值削减。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "逃无可逃",
+              "Desc": "首领幻影的召唤物会标记1个我方单位，首领幻影施放单攻技能后会对被标记的我方单位<color=#f29e38ff><u>追加施放</u></color>。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "追加施放",
+                  "Desc": "在施放单攻技能后，会重新选择目标并再次使用该技能。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "有召唤物在场时，首领幻影会将<color=#f29e38ff>自身弱点属性转移给召唤物</color>。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "首领幻影会根据<color=#f29e38ff>召唤物</color>锁定的目标，追加施放单体攻击，并有概率造成冻结或禁锢效果。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "<color=#f29e38ff>击破</color>首领幻影会大幅提高其受到的伤害，使我方全体恢复战技点并行动提前。",
+            "优先消灭或击破<color=#f29e38ff>召唤物</color>，可以有效削弱首领幻影。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "阶段一：无望冽风的幻灭者",
+              "Desc": "首领幻影会使用技能冻结目标并造成伤害。杰帕德会提供群体护盾。",
+              "Answer": "应对策略：优先消灭召唤物，若杰帕德施放全体护盾，尽快击破并消灭杰帕德。",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "阶段二：无望冽风的幻灭者•虚妄之母",
+              "Desc": "首领幻影会不断施放【创世绝响】造成高额全体伤害，并使用技能限制我方目标行动。",
+              "Answer": "应对策略：优先消灭召唤物后，尽快击破首领幻影的弱点。",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 3,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "坚防守备",
+              "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "朽株枯木",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "摧刚为柔",
+              "Desc": "【哀悯长臂】的韧性上限提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "首领幻影和其召唤物受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "本场战斗中我方目标的生命值最多降至1点，同时将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "我方目标生命值降低时，处于【死梦深度】状态的首领幻影会积累【濒死梦泡】，【濒死梦泡】达到上限时首领幻影进入【死亡的芬芳】状态，此时首领幻影和其召唤物的技能大幅强化。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "我方目标陷入【负载生命值】状态时造成的伤害和弱点击破效率大幅降低，优先回复其生命值以解除该状态。",
+            "对【哀悯长臂】造成弱点击破可以削减首领幻影的韧性和生命值，若此时首领幻影处于【死亡的芬芳】状态，还可以回复我方生命值。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "阶段一：求死不能",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Answer": "应对策略：优先对处于【负载生命值】状态的我方目标进行回复。",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "阶段二：向死而生",
+              "Desc": "首领幻影施放【死亡想要更多的死亡】时会对处于【负载生命值】状态的我方目标造成致命伤害。",
+              "Answer": "应对策略：在【死亡想要更多的死亡】施放前通过回复生命值解除所有我方单位的【负载生命值】状态。",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420333,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 80,
+            "EliteGroup": 906,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401403,
+                "Monster1": 100402603
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420323,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 80,
+            "EliteGroup": 898,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403603
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      },
+      {
+        "Id": 30134,
+        "Name": "冥茫冽风·难度<unbreak>04</unbreak>",
+        "Challenge": [
+          {
+            "Name": "获得#1分",
+            "Param": 4000
+          },
+          {
+            "Name": "获得#1分",
+            "Param": 5200
+          },
+          {
+            "Name": "获得#1分",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401404,
+        "BossMonsterID2": 401403604,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 4,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "坚防守备",
+              "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "阵地转移",
+              "Desc": "杰帕德会加入战斗并为首领幻影提供保护。首领幻影会将自身弱点属性<color=#f29e38ff><u>转移</u></color>给召唤物，但当召唤物被消灭时，自身韧性值受到额外削减。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "转移",
+                  "Desc": "将弱点属性转移给目标，弱点属性会在目标被消灭后返回，并造成额外韧性值削减。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "逃无可逃",
+              "Desc": "首领幻影的召唤物会标记1个我方单位，首领幻影施放单攻技能后会对被标记的我方单位<color=#f29e38ff><u>追加施放</u></color>。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "追加施放",
+                  "Desc": "在施放单攻技能后，会重新选择目标并再次使用该技能。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "有召唤物在场时，首领幻影会将<color=#f29e38ff>自身弱点属性转移给召唤物</color>。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "首领幻影会根据<color=#f29e38ff>召唤物</color>锁定的目标，追加施放单体攻击，并有概率造成冻结或禁锢效果。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "<color=#f29e38ff>击破</color>首领幻影会大幅提高其受到的伤害，使我方全体恢复战技点并行动提前。",
+            "优先消灭或击破<color=#f29e38ff>召唤物</color>，可以有效削弱首领幻影。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "阶段一：无望冽风的幻灭者",
+              "Desc": "首领幻影会使用技能冻结目标并造成伤害。杰帕德会提供群体护盾。",
+              "Answer": "应对策略：优先消灭召唤物，若杰帕德施放全体护盾，尽快击破并消灭杰帕德。",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "阶段二：无望冽风的幻灭者•虚妄之母",
+              "Desc": "首领幻影会不断施放【创世绝响】造成高额全体伤害，并使用技能限制我方目标行动。",
+              "Answer": "应对策略：优先消灭召唤物后，尽快击破首领幻影的弱点。",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 4,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "坚防守备",
+              "Desc": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "朽株枯木",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "摧刚为柔",
+              "Desc": "【哀悯长臂】的韧性上限提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "坚韧之志",
+              "Desc": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "首领幻影和其召唤物受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "本场战斗中我方目标的生命值最多降至1点，同时将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "我方目标生命值降低时，处于【死梦深度】状态的首领幻影会积累【濒死梦泡】，【濒死梦泡】达到上限时首领幻影进入【死亡的芬芳】状态，此时首领幻影和其召唤物的技能大幅强化。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "我方目标陷入【负载生命值】状态时造成的伤害和弱点击破效率大幅降低，优先回复其生命值以解除该状态。",
+            "对【哀悯长臂】造成弱点击破可以削减首领幻影的韧性和生命值，若此时首领幻影处于【死亡的芬芳】状态，还可以回复我方生命值。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "阶段一：求死不能",
+              "Desc": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+              "Answer": "应对策略：优先对处于【负载生命值】状态的我方目标进行回复。",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "阶段二：向死而生",
+              "Desc": "首领幻影施放【死亡想要更多的死亡】时会对处于【负载生命值】状态的我方目标造成致命伤害。",
+              "Answer": "应对策略：在【死亡想要更多的死亡】施放前通过回复生命值解除所有我方单位的【负载生命值】状态。",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420334,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 90,
+            "EliteGroup": 907,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401404,
+                "Monster1": 100402604
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420324,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 90,
+            "EliteGroup": 899,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403604
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]

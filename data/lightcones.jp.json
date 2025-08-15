@@ -239,7 +239,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20001": {
     "Name": "{RUBY_B#ぶつじょう}物穣{RUBY_E#}",
@@ -476,7 +477,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20002": {
     "Name": "{RUBY_B#てんけい}天傾{RUBY_E#}",
@@ -713,7 +715,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20003": {
     "Name": "{RUBY_B#こはく}琥珀{RUBY_E#}",
@@ -960,7 +963,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "20004": {
     "Name": "{RUBY_B#ゆうすい}幽邃{RUBY_E#}",
@@ -1202,7 +1237,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20005": {
     "Name": "{RUBY_B#せいしょう}斉頌{RUBY_E#}",
@@ -1439,7 +1475,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20006": {
     "Name": "アーカイブ",
@@ -1676,7 +1713,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20007": {
     "Name": "{RUBY_B#りげん}離弦{RUBY_E#}",
@@ -1918,7 +1956,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20008": {
     "Name": "{RUBY_B#かか}嘉果{RUBY_E#}",
@@ -2155,7 +2194,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20009": {
     "Name": "{RUBY_B#らくかい}楽壊{RUBY_E#}",
@@ -2397,7 +2437,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20010": {
     "Name": "{RUBY_B#ぼうえい}防衛{RUBY_E#}",
@@ -2634,7 +2675,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20011": {
     "Name": "{RUBY_B#えんかん}淵環{RUBY_E#}",
@@ -2871,7 +2913,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20012": {
     "Name": "{RUBY_B#りんけい}輪契{RUBY_E#}",
@@ -3108,7 +3151,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20013": {
     "Name": "{RUBY_B#れいけん}霊鍵{RUBY_E#}",
@@ -3345,7 +3389,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20014": {
     "Name": "{RUBY_B#そうこう}相抗{RUBY_E#}",
@@ -3587,7 +3632,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20015": {
     "Name": "{RUBY_B#はんしょく}蕃殖{RUBY_E#}",
@@ -3824,7 +3870,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20016": {
     "Name": "{RUBY_B#くぼつ}倶歿{RUBY_E#}",
@@ -4066,7 +4113,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20017": {
     "Name": "{RUBY_B#しんてんち}新天地{RUBY_E#}",
@@ -4303,7 +4351,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20018": {
     "Name": "{RUBY_B#とくえい}匿影{RUBY_E#}",
@@ -4540,7 +4589,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20019": {
     "Name": "{RUBY_B#どうちょう}同調{RUBY_E#}",
@@ -4782,7 +4832,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20020": {
     "Name": "{RUBY_B#けんしき}見識{RUBY_E#}",
@@ -5024,7 +5075,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20021": {
     "Name": "{RUBY_B#も}燃{RUBY_E#}ゆる{RUBY_B#かげ}影{RUBY_E#}",
@@ -5266,7 +5318,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20022": {
     "Name": "{RUBY_B#たど}辿{RUBY_E#}る{RUBY_B#きおく}記憶{RUBY_E#}",
@@ -5508,7 +5561,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21000": {
     "Name": "{RUBY_B#しゅじゅつご}手術後{RUBY_E#}の{RUBY_B#かいわ}会話{RUBY_E#}",
@@ -5750,7 +5804,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "2": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "3": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "4": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.1599999964237213
+        }
+      ]
+    }
   },
   "21001": {
     "Name": "おやすみなさいと{RUBY_B#ねがお}寝顔{RUBY_E#}",
@@ -5992,7 +6078,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21002": {
     "Name": "{RUBY_B#よせい}余生{RUBY_E#}の{RUBY_B#しょにち}初日{RUBY_E#}",
@@ -6234,7 +6321,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2199999988079071
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21003": {
     "Name": "{RUBY_B#ちんもく}沈黙{RUBY_E#}のみ",
@@ -6476,7 +6595,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21004": {
     "Name": "{RUBY_B#きおく}記憶{RUBY_E#}の{RUBY_B#なか}中{RUBY_E#}の{RUBY_B#すがた}姿{RUBY_E#}",
@@ -6718,7 +6869,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4900000095367432
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.5600000023841858
+        }
+      ]
+    }
   },
   "21005": {
     "Name": "モグラ{RUBY_B#とう}党{RUBY_E#}へようこそ",
@@ -6955,7 +7138,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21006": {
     "Name": "「{RUBY_B#わたし}私{RUBY_E#}」の{RUBY_B#たんじょう}誕生{RUBY_E#}",
@@ -7202,7 +7386,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21007": {
     "Name": "{RUBY_B#おな}同{RUBY_E#}じ{RUBY_B#きも}気持{RUBY_E#}ち",
@@ -7444,7 +7629,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "1": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.125
+        }
+      ],
+      "2": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "3": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.17499999701976776
+        }
+      ],
+      "4": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21008": {
     "Name": "{RUBY_B#えもの}獲物{RUBY_E#}の{RUBY_B#しせん}視線{RUBY_E#}",
@@ -7686,7 +7903,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "21009": {
     "Name": "ランドゥーの{RUBY_B#せんたく}選択{RUBY_E#}",
@@ -7928,7 +8177,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21010": {
     "Name": "{RUBY_B#ろんけん}論剣{RUBY_E#}",
@@ -8170,7 +8420,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21011": {
     "Name": "{RUBY_B#わくせい}惑星{RUBY_E#}との{RUBY_B#であ}出会{RUBY_E#}い",
@@ -8407,7 +8658,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21012": {
     "Name": "{RUBY_B#ひみつ}秘密{RUBY_E#}の{RUBY_B#ちか}誓{RUBY_E#}い",
@@ -8649,7 +8901,39 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "21013": {
     "Name": "この{RUBY_B#せかい}世界{RUBY_E#}に{RUBY_B#けんそう}喧噪{RUBY_E#}を",
@@ -8891,7 +9175,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21014": {
     "Name": "{RUBY_B#いま}今{RUBY_E#}が{RUBY_B#ちょうど}丁度{RUBY_E#}",
@@ -9138,7 +9423,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21015": {
     "Name": "{RUBY_B#けつい}決意{RUBY_E#}は{RUBY_B#あせ}汗{RUBY_E#}のように{RUBY_B#かがや}輝{RUBY_E#}く",
@@ -9385,7 +9702,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21016": {
     "Name": "{RUBY_B#せいかんいちば}星間市場{RUBY_E#}のトレンド",
@@ -9637,7 +9955,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21017": {
     "Name": "フォローして！",
@@ -9879,7 +10229,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21018": {
     "Name": "ダンス！ダンス！ダンス！",
@@ -10116,7 +10467,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21019": {
     "Name": "{RUBY_B#あおぞら}青空{RUBY_E#}の{RUBY_B#した}下{RUBY_E#}で",
@@ -10363,7 +10715,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21020": {
     "Name": "{RUBY_B#てんさい}天才{RUBY_E#}たちの{RUBY_B#きゅうそく}休息{RUBY_E#}",
@@ -10610,7 +10994,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21021": {
     "Name": "{RUBY_B#とうかこうかん}等価交換{RUBY_E#}",
@@ -10852,7 +11268,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21022": {
     "Name": "フェルマータ",
@@ -11094,7 +11511,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21023": {
     "Name": "{RUBY_B#われ}我{RUBY_E#}ら{RUBY_B#ちえん}地炎{RUBY_E#}",
@@ -11341,7 +11790,8 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21024": {
     "Name": "{RUBY_B#しゅんすい}春水{RUBY_E#}に{RUBY_B#しょせい}初生{RUBY_E#}する",
@@ -11583,7 +12033,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21025": {
     "Name": "{RUBY_B#かこ}過去{RUBY_E#}と{RUBY_B#みらい}未来{RUBY_E#}",
@@ -11825,7 +12276,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21026": {
     "Name": "ワン！{RUBY_B#さんぽ}散歩{RUBY_E#}の{RUBY_B#じかん}時間{RUBY_E#}！",
@@ -12067,7 +12519,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.125
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.15000000596046448
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.17499999701976776
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21027": {
     "Name": "{RUBY_B#ちょうしょく}朝食{RUBY_E#}の{RUBY_B#ぎしきかん}儀式感{RUBY_E#}",
@@ -12314,7 +12798,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21028": {
     "Name": "{RUBY_B#あたた}暖{RUBY_E#}かい{RUBY_B#よる}夜{RUBY_E#}は{RUBY_B#なが}長{RUBY_E#}くない",
@@ -12556,7 +13072,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21029": {
     "Name": "またお{RUBY_B#あ}会{RUBY_E#}いしましょう",
@@ -12793,7 +13341,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21030": {
     "Name": "これがウチだよ！",
@@ -13035,7 +13584,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21031": {
     "Name": "{RUBY_B#ゆうめい}幽冥{RUBY_E#}に{RUBY_B#き}帰{RUBY_E#}す",
@@ -13277,7 +13858,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21032": {
     "Name": "{RUBY_B#ちょうげつさいうん}彫月裁雲{RUBY_E#}の{RUBY_B#い}意{RUBY_E#}",
@@ -13524,7 +14137,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21033": {
     "Name": "{RUBY_B#に}逃{RUBY_E#}げ{RUBY_B#ば}場{RUBY_E#}なし",
@@ -13766,7 +14380,39 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.36000001430511475
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.41999998688697815
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.47999998927116394
+        }
+      ]
+    }
   },
   "21034": {
     "Name": "{RUBY_B#きょう}今日{RUBY_E#}も{RUBY_B#へいわ}平和{RUBY_E#}な{RUBY_B#いちにち}一日{RUBY_E#}",
@@ -14008,7 +14654,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21035": {
     "Name": "{RUBY_B#なに}何{RUBY_E#}が{RUBY_B#まこと}真{RUBY_E#}か",
@@ -14255,7 +14902,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.47999998927116394
+        }
+      ]
+    }
   },
   "21036": {
     "Name": "ドリームタウンの{RUBY_B#だいぼうけん}大冒険{RUBY_E#}",
@@ -14492,7 +15171,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21037": {
     "Name": "{RUBY_B#さいご}最後{RUBY_E#}の{RUBY_B#しょうしゃ}勝者{RUBY_E#}",
@@ -14739,7 +15419,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21038": {
     "Name": "{RUBY_B#れっか}烈火{RUBY_E#}の{RUBY_B#かなた}彼方{RUBY_E#}",
@@ -14996,7 +15708,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21039": {
     "Name": "{RUBY_B#うんめい}運命{RUBY_E#}を{RUBY_B#つむ}紡{RUBY_E#}ぐ{RUBY_B#いと}糸{RUBY_E#}",
@@ -15248,7 +15961,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21040": {
     "Name": "{RUBY_B#ぎんが}銀河{RUBY_E#}が{RUBY_B#かんらく}陥落{RUBY_E#}した{RUBY_B#ひ}日{RUBY_E#}",
@@ -15495,7 +16240,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2199999988079071
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21041": {
     "Name": "ショーの{RUBY_B#はじ}始{RUBY_E#}まり",
@@ -15752,7 +16529,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21042": {
     "Name": "{RUBY_B#こころ}心{RUBY_E#}に{RUBY_B#きざ}刻{RUBY_E#}まれた{RUBY_B#やくそく}約束{RUBY_E#}",
@@ -15999,7 +16777,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4900000095367432
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.5600000023841858
+        }
+      ]
+    }
   },
   "21043": {
     "Name": "{RUBY_B#ふたり}二人{RUBY_E#}だけのコンサート",
@@ -16241,7 +17051,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21044": {
     "Name": "{RUBY_B#お}終{RUBY_E#}わりなき{RUBY_B#ぶとう}舞踏{RUBY_E#}",
@@ -16483,7 +17325,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ]
+    }
   },
   "21045": {
     "Name": "{RUBY_B#ちょうわ}調和{RUBY_E#}が{RUBY_B#ちんもく}沈黙{RUBY_E#}した{RUBY_B#あと}後{RUBY_E#}",
@@ -16730,7 +17604,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4900000095367432
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.5600000023841858
+        }
+      ]
+    }
   },
   "21046": {
     "Name": "{RUBY_B#うつく}美{RUBY_E#}しき{RUBY_B#はな}華{RUBY_E#}よ{RUBY_B#いま}今{RUBY_E#}{RUBY_B#さ}咲{RUBY_E#}かん",
@@ -16972,7 +17878,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21047": {
     "Name": "{RUBY_B#よる}夜{RUBY_E#}は{RUBY_B#かげ}影{RUBY_E#}のように{RUBY_B#つ}付{RUBY_E#}き{RUBY_B#まと}纏{RUBY_E#}う",
@@ -17219,7 +18157,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4900000095367432
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.5600000023841858
+        }
+      ]
+    }
   },
   "21048": {
     "Name": "{RUBY_B#ゆめ}夢{RUBY_E#}のモンタージュ",
@@ -17466,7 +18436,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.09000000357627869
+        }
+      ],
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "3": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.10999999940395357
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
+    }
   },
   "21050": {
     "Name": "{RUBY_B#しゅんこく}瞬刻{RUBY_E#}の{RUBY_B#しょうき}勝機{RUBY_E#}",
@@ -17713,7 +18715,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21051": {
     "Name": "{RUBY_B#てんさい}天才{RUBY_E#}たちの「{RUBY_B#あいさつ}挨拶{RUBY_E#}」",
@@ -17960,7 +18994,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21052": {
     "Name": "{RUBY_B#なが}流{RUBY_E#}すなら{RUBY_B#なみだ}涙{RUBY_E#}より{RUBY_B#あせ}汗{RUBY_E#}",
@@ -18202,7 +19268,39 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21053": {
     "Name": "{RUBY_B#たび}旅{RUBY_E#}が{RUBY_B#へいおん}平穏{RUBY_E#}であるように",
@@ -18444,7 +19542,8 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21054": {
     "Name": "{RUBY_B#ものがたり}物語{RUBY_E#}をめくって",
@@ -18691,7 +19790,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21055": {
     "Name": "{RUBY_B#あした}明日{RUBY_E#}の{RUBY_B#あした}明日{RUBY_E#}まで",
@@ -18938,7 +20069,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21056": {
     "Name": "{RUBY_B#かぜ}風{RUBY_E#}を{RUBY_B#お}追{RUBY_E#}う{RUBY_B#とき}時{RUBY_E#}",
@@ -18947,7 +20110,7 @@
     "BaseType": "Shaman",
     "Refinements": {
       "Name": "あたふた",
-      "Desc": "戦闘に入った後、味方全体の弱点撃破ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。同系統のスキルは累積できない。",
+      "Desc": "戦闘に入った後、味方全体の弱点撃破ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。同系統のスキルは重ね掛け不可。",
       "Level": {
         "1": {
           "ParamList": [
@@ -19175,7 +20338,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21057": {
     "Name": "{RUBY_B#はな}花{RUBY_E#}は{RUBY_B#わす}忘{RUBY_E#}れない",
@@ -19417,7 +20581,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "21058": {
     "Name": "{RUBY_B#いにしえ}古{RUBY_E#}より{RUBY_B#う}受{RUBY_E#}け{RUBY_B#つ}継{RUBY_E#}がれる{RUBY_B#ち}血{RUBY_E#}",
@@ -19659,7 +20855,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21060": {
     "Name": "{RUBY_B#むぎ}麦{RUBY_E#}の{RUBY_B#かお}香{RUBY_E#}り{RUBY_B#ただよ}漂{RUBY_E#}う{RUBY_B#ゆめ}夢{RUBY_E#}",
@@ -19901,11 +21129,43 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21061": {
     "Name": "{RUBY_B#きゅうじつ}休日{RUBY_E#}のバルネア{RUBY_B#だいぼうけん}大冒険{RUBY_E#}",
-    "Desc": "<i>「ヒアンシーちゃん、一緒に新ちくオープンちたバルネアに行ってみない？」</i>\\n\\n少女はオクヘイマでの診療を終えた後、好奇心旺盛な子供のように次々とピュエロスを試して回った。\\n\\n<i>「フルーツジュースのマッサージ、試ちてみる？」</i>\\n真っ赤に染まった両手を見た少女は、イカルンを抱きしめながら後ずさった――\\n<i>「わたしはやっぱり…飲むほうが好きですね……」</i>\\n\\n<i>「大地獣の背中ふみふみマッサージ、割引中だよ！」</i>\\n大地獣は頭を下げ、その鼻息で少女の髪を揺らした。\\n<i>「ま…また今度にします！」</i>\\n\\n<i>「薬草のピュエロスなので健康に良いですよ。何名様でご利用になられますか？」</i>\\n香ばしい薬草の匂いを嗅ぎながら、少女はゆっくりと中に入ってみた。\\n<i>「あ…すごく健康に良さそうです……」</i>\\n\\n<i>「ブル、プー！」</i>\\nイカルンも嬉しそうに泳いでいる。\\n<i>「ここ数日でかなり疲れが溜まってたみたいですね……」</i>\\n\\nこの貴重な休日に、少女はブドウジュースを飲みながら、赤毛の女の子と「ぐっすり眠るコツ」や、「スイーツ作りの秘訣」などを思う存分話し合った。\\n\\n<i>「大変、イ…イカルン！」</i>\\nその時、少女の叫び声がバルネアの静寂を破った。\\n\\n<i>「ブルル……」\\n「イカルン、しっかり！」</i>",
+    "Desc": "<i>「ヒアンシーちゃん、一緒に新ちくオープンちたバルネアに行ってみない？」</i>\\n\\n少女はオクヘイマでの診療を終えた後、好奇心旺盛な子供のように次々とピュエロスを試して回った。\\n\\n<i>「フルーツジュースのマッサージ、試してみませんか？」</i>\\n真っ赤に染まった両手を見た少女は、イカルンを抱きしめながら後ずさった――\\n<i>「わたしはやっぱり…飲むほうが好きですね……」</i>\\n\\n<i>「大地獣の背中ふみふみマッサージ、割引中だよ！」</i>\\n大地獣は頭を下げ、その鼻息で少女の髪を揺らした。\\n<i>「ま…また今度にします！」</i>\\n\\n<i>「薬草のピュエロスなので健康に良いですよ。何名様でご利用になられますか？」</i>\\n香ばしい薬草の匂いを嗅ぎながら、少女はゆっくりと中に入ってみた。\\n<i>「あ…すごく健康に良さそうです……」</i>\\n\\n<i>「ブル、プー！」</i>\\nイカルンも嬉しそうに泳いでいる。\\n<i>「ここ数日でかなり疲れが溜まってたみたいですね……」</i>\\n\\nこの貴重な休日に、少女はブドウジュースを飲みながら、赤毛の女の子と「ぐっすり眠るコツ」や、「スイーツ作りの秘訣」などを思う存分話し合った。\\n\\n<i>「大変、イ…イカルン！」</i>\\nその時、少女の叫び声がバルネアの静寂を破った。\\n\\n<i>「ブルル……」\\n「イカルン、しっかり！」</i>",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Warlock",
     "Refinements": {
@@ -20153,7 +21413,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21062": {
     "Name": "{RUBY_B#しゅうてん}終点{RUBY_E#}でまた{RUBY_B#あ}会{RUBY_E#}おう",
@@ -20161,7 +21453,7 @@
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Rogue",
     "Refinements": {
-      "Name": "{RUBY_B#しゅうじゃく}執着{RUBY_E#}",
+      "Name": "{RUBY_B#しゅうちゃく}執着{RUBY_E#}",
       "Desc": "装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラの戦闘スキルダメージと追加攻撃ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
       "Level": {
         "1": {
@@ -20395,7 +21687,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "22000": {
     "Name": "{RUBY_B#はじ}初{RUBY_E#}めてのクエストの{RUBY_B#まえ}前{RUBY_E#}に",
@@ -20637,7 +21961,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "22001": {
     "Name": "よぉ、ここにいるぜ",
@@ -20884,7 +22240,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.09000000357627869
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.10999999940395357
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
+    }
   },
   "22002": {
     "Name": "{RUBY_B#あす}明日{RUBY_E#}のための{RUBY_B#たび}旅{RUBY_E#}",
@@ -21131,7 +22519,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "22003": {
     "Name": "{RUBY_B#にんじろく}忍事録{RUBY_E#}・{RUBY_B#おんりつしゅりょう}音律狩猟{RUBY_E#}",
@@ -21378,7 +22798,39 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "22004": {
     "Name": "{RUBY_B#うちゅういち}宇宙一{RUBY_E#}の{RUBY_B#おおあきな}大商{RUBY_E#}い！",
@@ -21620,15 +23072,47 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.14000000059604645
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ]
+    }
   },
   "22005": {
-    "Name": "永遠の迷境ごはん",
+    "Name": "{RUBY_B#えいえん}永遠{RUBY_E#}の{RUBY_B#めいきょう}迷境{RUBY_E#}ごはん",
     "Desc": "ゴロゴロ——\\n迷境の外で嵐が荒れ狂っている。\\nグツグツ——\\n妖精たちの不思議な大鍋が音を立てて煮えたぎる。\\n\\n<i>「特製スパイスを振って……」</i>\\n<i>「新鮮な野菜を投入！」</i>\\n<i>「今回こそ、きっと成功するはず！」</i>\\n\\n大鍋が再びグツグツと音を立て、妖精たちは目を輝かせながらそれを見守る。\\n<i>「くるぞ…きたーっ！」</i>\\n大鍋の底から、まばゆい光が溢れ出した——\\n\\nその瞬間、鍋のまわりにみんなが集まってくる！\\n\\n……\\n\\nいい匂いが漂う宴の席で、来客たちは杯を掲げ、この不思議なひと時を祝福する——\\n\\n願わくば、この夢の楽園がいつまでも温もりに満ち、いつまでも笑顔で溢れますように！",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Shaman",
     "Refinements": {
-      "Name": "いい匂い！",
+      "Name": "いい{RUBY_B#にお}匂{RUBY_E#}い！",
       "Desc": "装備キャラの攻撃力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが戦闘スキルを発動した後、攻撃力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、この効果は最大で<unbreak>#3[i]</unbreak>層累積できる。",
       "Level": {
         "1": {
@@ -21867,7 +23351,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "23000": {
     "Name": "{RUBY_B#ぎんがてつどう}銀河鉄道{RUBY_E#}の{RUBY_B#よる}夜{RUBY_E#}",
@@ -22109,7 +23625,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23001": {
     "Name": "{RUBY_B#よる}夜{RUBY_E#}の{RUBY_B#とばり}帳{RUBY_E#}の{RUBY_B#なか}中{RUBY_E#}で",
@@ -22366,7 +23883,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23002": {
     "Name": "かけがえのないもの",
@@ -22613,7 +24162,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23003": {
     "Name": "だが{RUBY_B#せんそう}戦争{RUBY_E#}は{RUBY_B#お}終{RUBY_E#}わらない",
@@ -22860,7 +24441,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "1": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "2": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "3": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "4": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.18000000715255737
+        }
+      ]
+    }
   },
   "23004": {
     "Name": "{RUBY_B#せかい}世界{RUBY_E#}の{RUBY_B#な}名{RUBY_E#}を{RUBY_B#もっ}以{RUBY_E#}て",
@@ -23107,7 +24720,8 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23005": {
     "Name": "{RUBY_B#しょうり}勝利{RUBY_E#}の{RUBY_B#せつな}刹那{RUBY_E#}",
@@ -23359,7 +24973,59 @@
         "BaseDefence": 275.40000000037253,
         "BaseDefenceAdd": 4.050000000046566
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.36000001430511475
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.4000000059604645
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23006": {
     "Name": "{RUBY_B#ま}待{RUBY_E#}つのみ",
@@ -23616,7 +25282,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23007": {
     "Name": "{RUBY_B#ふ}降{RUBY_E#}りやまぬ{RUBY_B#あめ}雨{RUBY_E#}",
@@ -23873,7 +25571,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23008": {
     "Name": "{RUBY_B#ひつぎ}棺{RUBY_E#}のこだま",
@@ -24125,7 +25855,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23009": {
     "Name": "{RUBY_B#つ}着{RUBY_E#}かない{RUBY_B#ひがん}彼岸{RUBY_E#}",
@@ -24372,7 +26134,59 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.27000001072883606
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.30000001192092896
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23010": {
     "Name": "{RUBY_B#よあ}夜明{RUBY_E#}け{RUBY_B#まえ}前{RUBY_E#}",
@@ -24619,7 +26433,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23011": {
     "Name": "{RUBY_B#と}閉{RUBY_E#}ざした{RUBY_B#ひとみ}瞳{RUBY_E#}",
@@ -24876,7 +26722,59 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.2800000011920929
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.3199999928474426
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.36000001430511475
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.4000000059604645
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "23012": {
     "Name": "{RUBY_B#どろ}泥{RUBY_E#}の{RUBY_B#ごと}如{RUBY_E#}き{RUBY_B#ねむ}眠{RUBY_E#}り",
@@ -25128,7 +27026,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.4000000059604645
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.44999998807907104
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5
+        }
+      ]
+    }
   },
   "23013": {
     "Name": "{RUBY_B#じせつ}時節{RUBY_E#}は{RUBY_B#お}居{RUBY_E#}らず",
@@ -25375,7 +27305,59 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.18000000715255737
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20999999344348907
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.27000001072883606
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "23014": {
     "Name": "この{RUBY_B#み}身{RUBY_E#}は{RUBY_B#けん}剣{RUBY_E#}なり",
@@ -25627,7 +27609,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.2300000041723251
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.25999999046325684
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.28999999165534973
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "23015": {
     "Name": "{RUBY_B#ようこう}陽光{RUBY_E#}より{RUBY_B#かがや}輝{RUBY_E#}くもの",
@@ -25884,7 +27898,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23016": {
     "Name": "{RUBY_B#なや}悩{RUBY_E#}んで{RUBY_B#わら}笑{RUBY_E#}って",
@@ -26136,7 +28182,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23017": {
     "Name": "{RUBY_B#きょうこん}驚魂{RUBY_E#}の{RUBY_B#よる}夜{RUBY_E#}",
@@ -26393,7 +28471,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "23018": {
     "Name": "その{RUBY_B#いっこく}一刻{RUBY_E#}、{RUBY_B#め}目{RUBY_E#}に{RUBY_B#や}焼{RUBY_E#}き{RUBY_B#つ}付{RUBY_E#}けて",
@@ -26640,7 +28750,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23019": {
     "Name": "{RUBY_B#かがみ}鏡{RUBY_E#}の{RUBY_B#なか}中{RUBY_E#}の{RUBY_B#わたし}私{RUBY_E#}",
@@ -26897,7 +29039,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23020": {
     "Name": "{RUBY_B#じゅんすい}純粋{RUBY_E#}なる{RUBY_B#しい}思惟{RUBY_E#}の{RUBY_B#せんれい}洗礼{RUBY_E#}",
@@ -27159,7 +29333,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.2300000041723251
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.25999999046325684
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.28999999165534973
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "23021": {
     "Name": "{RUBY_B#じんせい}人生{RUBY_E#}は{RUBY_B#あそ}遊{RUBY_E#}び",
@@ -27421,7 +29627,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.38999998569488525
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.4600000083446502
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5299999713897705
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23022": {
     "Name": "{RUBY_B#とき}時間{RUBY_E#}の{RUBY_B#きおく}記憶{RUBY_E#}を{RUBY_B#さいこうちく}再構築{RUBY_E#}して",
@@ -27673,7 +29911,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.44999998807907104
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.5
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.550000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23023": {
     "Name": "{RUBY_B#うんめい}運命{RUBY_E#}は{RUBY_B#つね}常{RUBY_E#}に{RUBY_B#ふこうへい}不公平{RUBY_E#}",
@@ -27935,7 +30205,39 @@
         "BaseDefence": 306,
         "BaseDefenceAdd": 4.500000000465661
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.4600000083446502
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.5199999809265137
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.5799999833106995
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.6399999856948853
+        }
+      ]
+    }
   },
   "23024": {
     "Name": "{RUBY_B#なが}流{RUBY_E#}れ{RUBY_B#ゆ}逝{RUBY_E#}く{RUBY_B#きし}岸{RUBY_E#}を{RUBY_B#ある}歩{RUBY_E#}いて",
@@ -28182,7 +30484,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23025": {
     "Name": "{RUBY_B#ゆめ}夢{RUBY_E#}が{RUBY_B#かえ}帰{RUBY_E#}り{RUBY_B#つ}着{RUBY_E#}く{RUBY_B#ばしょ}場所{RUBY_E#}",
@@ -28434,7 +30768,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23026": {
     "Name": "{RUBY_B#ひかり}光{RUBY_E#}あふれる{RUBY_B#よる}夜{RUBY_E#}",
@@ -28691,7 +31057,8 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23027": {
     "Name": "{RUBY_B#にどめ}二度目{RUBY_E#}の{RUBY_B#せい}生{RUBY_E#}に{RUBY_B#む}向{RUBY_E#}かって",
@@ -28943,7 +31310,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23028": {
     "Name": "されど{RUBY_B#きぼう}希望{RUBY_E#}の{RUBY_B#めい}銘{RUBY_E#}は{RUBY_B#むか}無価{RUBY_E#}",
@@ -29210,7 +31609,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1899999976158142
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.2199999988079071
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.25
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.2800000011920929
+        }
+      ]
+    }
   },
   "23029": {
     "Name": "{RUBY_B#いくどめ}幾度目{RUBY_E#}かの{RUBY_B#はる}春{RUBY_E#}",
@@ -29472,7 +31903,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23030": {
     "Name": "{RUBY_B#ゆうひ}夕日{RUBY_E#}に{RUBY_B#ま}舞{RUBY_E#}う",
@@ -29724,7 +32187,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23031": {
     "Name": "{RUBY_B#われ}我{RUBY_E#}が{RUBY_B#ゆ}征{RUBY_E#}く{RUBY_B#じゅんしゅ}巡狩{RUBY_E#}の{RUBY_B#みち}道{RUBY_E#}",
@@ -29971,7 +32466,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.17499999701976776
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.22499999403953552
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.25
+        }
+      ]
+    }
   },
   "23032": {
     "Name": "{RUBY_B#せきじつ}昔日{RUBY_E#}の{RUBY_B#かお}香{RUBY_E#}りは{RUBY_B#いま}今{RUBY_E#}も{RUBY_B#なお}猶{RUBY_E#}",
@@ -30228,7 +32755,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23033": {
     "Name": "{RUBY_B#にんぽうちょう}忍法帖{RUBY_E#}・{RUBY_B#りょうらんはま}繚乱破魔{RUBY_E#}",
@@ -30475,7 +33034,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23034": {
     "Name": "{RUBY_B#だいち}大地{RUBY_E#}より{RUBY_B#てん}天{RUBY_E#}を{RUBY_B#めざ}目指{RUBY_E#}して",
@@ -30732,7 +33323,8 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23035": {
     "Name": "{RUBY_B#ちょうと}長途{RUBY_E#}はやがて{RUBY_B#きと}帰途{RUBY_E#}へと{RUBY_B#つづ}続{RUBY_E#}く",
@@ -30989,7 +33581,39 @@
         "BaseDefence": 306,
         "BaseDefenceAdd": 4.500000000465661
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23036": {
     "Name": "{RUBY_B#こういん}光陰{RUBY_E#}を{RUBY_B#お}織{RUBY_E#}り{RUBY_B#おうごん}黄金{RUBY_E#}と{RUBY_B#な}成{RUBY_E#}す",
@@ -31241,7 +33865,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BaseSpeed",
+          "value": 12
+        }
+      ],
+      "1": [
+        {
+          "type": "BaseSpeed",
+          "value": 14
+        }
+      ],
+      "2": [
+        {
+          "type": "BaseSpeed",
+          "value": 16
+        }
+      ],
+      "3": [
+        {
+          "type": "BaseSpeed",
+          "value": 18
+        }
+      ],
+      "4": [
+        {
+          "type": "BaseSpeed",
+          "value": 20
+        }
+      ]
+    }
   },
   "23037": {
     "Name": "{RUBY_B#ふ}触{RUBY_E#}れてはならぬ{RUBY_B#りょういき}領域{RUBY_E#}へ",
@@ -31498,7 +34154,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "23038": {
     "Name": "もしも{RUBY_B#とき}時{RUBY_E#}が{RUBY_B#はな}花{RUBY_E#}だったら",
@@ -31760,7 +34448,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23039": {
     "Name": "{RUBY_B#ぜんと}前途{RUBY_E#}{RUBY_B#も}燃{RUBY_E#}やす{RUBY_B#ち}血{RUBY_E#}の{RUBY_B#ごと}如{RUBY_E#}き{RUBY_B#ほのお}炎{RUBY_E#}",
@@ -32022,7 +34742,59 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.18000000715255737
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20999999344348907
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.27000001072883606
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23040": {
     "Name": "{RUBY_B#えいけつ}永訣{RUBY_E#}よ{RUBY_B#うつく}美{RUBY_E#}しくあれ",
@@ -32274,7 +35046,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.375
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.44999998807907104
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.5249999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23041": {
     "Name": "{RUBY_B#せいめい}生命{RUBY_E#}、{RUBY_B#しょうめつ}焼滅{RUBY_E#}すべし",
@@ -32531,7 +35335,8 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23042": {
     "Name": "{RUBY_B#そら}空{RUBY_E#}の{RUBY_B#にじ}虹{RUBY_E#}が{RUBY_B#き}消{RUBY_E#}えぬように",
@@ -32793,7 +35598,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23043": {
     "Name": "{RUBY_B#かぜ}風{RUBY_E#}に{RUBY_B#たゆた}揺蕩{RUBY_E#}う{RUBY_B#きょげん}虚言{RUBY_E#}",
@@ -33060,11 +35897,43 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23044": {
     "Name": "{RUBY_B#も}燃{RUBY_E#}え{RUBY_B#さか}盛{RUBY_E#}る{RUBY_B#れいめい}黎明{RUBY_E#}のように",
-    "Desc": "男が再び旅の終点に立つと、その姿は金色の陽光に呑み込まれていった。\\n\\n<i>「黄金の血も…救世の希望も…本当は……」</i>\\n\\n彼の頬に伝う前に、その涙は蒸発して消えた。\\n<i>「ファイちゃん、また明日！」</i>\\n<i>「救世主よ、最後まで生きろ」</i>\\n<i>「オンパロスの新しい黎明になって……」</i>\\n\\n……\\n仲間たちの願いが空しく響く中、無名の英雄は打ち砕かれ、無惨な死が露わになった。\\n\\n<i>「怒りの炎が、この不条理な運命を焼き尽くせないのなら……」</i>\\n彼は幾度となく山頂を目指し、そして幾度となく転げ落ち、砕け散った——\\n\\n<i>「せめて、その運命と共に燃え尽きよう！」</i>",
+    "Desc": "男が再び旅の終点に立つと、その姿は金色の陽光に呑み込まれていった。\\n\\n<i>「黄金の血も…救世の希望も…本当は……」</i>\\n\\n彼の頬に伝う前に、その涙は蒸発して消えた。\\n<i>「ファイちゃん、また明日！」</i>\\n<i>「救世主よ、最後まで生きろ！」</i>\\n<i>「オンパロスの新しい黎明になってください…」</i>\\n\\n……\\n仲間たちの願いが空しく響く中、無名の英雄は打ち砕かれ、無惨な死が露わになった。\\n\\n<i>「怒りの炎が、この不条理な運命を焼き尽くせないのなら……」</i>\\n彼は幾度となく山頂を目指し、そして幾度となく転げ落ち、砕け散った——\\n\\n<i>「せめて、その運命と共に燃え尽きよう！」</i>",
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Warrior",
     "Refinements": {
@@ -33307,7 +36176,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BaseSpeed",
+          "value": 12
+        }
+      ],
+      "1": [
+        {
+          "type": "BaseSpeed",
+          "value": 14
+        }
+      ],
+      "2": [
+        {
+          "type": "BaseSpeed",
+          "value": 16
+        }
+      ],
+      "3": [
+        {
+          "type": "BaseSpeed",
+          "value": 18
+        }
+      ],
+      "4": [
+        {
+          "type": "BaseSpeed",
+          "value": 20
+        }
+      ]
+    }
   },
   "23045": {
     "Name": "{RUBY_B#むく}報{RUBY_E#}われぬ{RUBY_B#たいかん}戴冠{RUBY_E#}",
@@ -33569,7 +36470,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.44999998807907104
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6299999952316284
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.7200000286102295
+        }
+      ]
+    }
   },
   "23046": {
     "Name": "{RUBY_B#りそう}理想{RUBY_E#}を{RUBY_B#や}焼{RUBY_E#}く{RUBY_B#ならく}奈落{RUBY_E#}で",
@@ -33826,16 +36759,48 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "23047": {
-    "Name": "海の歌は何がため",
-    "Desc": "ほとばしる波の咆哮が空をも震わせる。\\n魚は何もない海を回遊する。旧き日の泡が渦巻く中、かつての旋律が今もなおこだまし続けているようだ。\\n\\n<i></i><i>「高貴なる姫様、私たちと一緒に宴を楽しみましょう！」</i>\\n深海からの呼び声に応え、彼女は暗黒の潮と共に舞い踊った——やがて、盛大なる舞台に独り取り残されるその時まで。\\n\\n<i>「海洋の剣士よ、あなたは何故沈黙し、その歌は何がためのものなのか？」</i>\\n大地を歩む彼女は、痛みに耐え続け、ほとんど歌うこともなくなった。もし彼女が奏でる音があるとすれば、それは血に染まった刃が響かせる、命の悲鳴だけだろう。\\n\\n<i>「剣旗卿、僕についてこい。共に星海を征服しようではないか！」</i>\\nその熱い灯火を見つけた時、ついに饗宴が始まるのだと確信し、彼女は琴を手に取った。\\n\\n……\\n\\n<i>「ヘレクトラ…ヘレクトラ…曲は終わった。次はどこへ向かうのだ？」</i>\\n\\n偽りの希望が砕け散るたびに、彼女はいつも同じ孤独に満ちた旋律で人々の詰問に答え、聴く者たちを心酔させた——\\n\\nあるいは…人間の世界でも深海でも、本当にその旋律を聞くことができるのは、奏でる者ただ1人だけなのかもしれない。",
+    "Name": "{RUBY_B#うみ}海{RUBY_E#}の{RUBY_B#うた}歌{RUBY_E#}は{RUBY_B#なに}何{RUBY_E#}がため",
+    "Desc": "ほとばしる波の咆哮が空をも震わせる。\\n魚は何もない海を回遊する。旧き日の泡が渦巻く中、かつての旋律が今もなおこだまし続けているようだ。\\n\\n<i>「高貴なる姫様、私たちと一緒に宴を楽しみましょう！」</i>\\n深海からの呼び声に応え、彼女は暗黒の潮と共に舞い踊った——やがて、盛大なる舞台に独り取り残されるその時まで。\\n\\n<i>「海洋の剣士よ、あなたは何故沈黙し、その歌は何がためのものなのか？」</i>\\n大地を歩む彼女は、痛みに耐え続け、ほとんど歌うこともなくなった。もし彼女が奏でる音があるとすれば、それは血に染まった刃が響かせる、命の悲鳴だけだろう。\\n\\n<i>「剣旗卿、僕についてこい。共に星海を征服しようではないか！」</i>\\nその熱い灯火を見つけた時、ついに饗宴が始まるのだと確信し、彼女は琴を手に取った。\\n\\n……\\n\\n<i>「ヘレクトラ…ヘレクトラ…曲は終わった。次はどこへ向かうのだ？」</i>\\n\\n偽りの希望が砕け散るたびに、彼女はいつも同じ孤独に満ちた旋律で人々の詰問に答え、聴く者たちを心酔させた——\\n\\nあるいは…人間の世界でも深海でも、本当にその旋律を聞くことができるのは、奏でる者ただ1人だけなのかもしれない。",
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Warlock",
     "Refinements": {
-      "Name": "独奏",
-      "Desc": "装備キャラの効果命中+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。敵が装備キャラによりデバフが付与された時、<unbreak>#2[i]%</unbreak>の基礎確率でその敵を「魂迷」状態にする。<unbreak>#3[i]</unbreak>ターン継続。なお、同系統のスキルは累積できない。「魂迷」状態の敵は、装備キャラが付与したデバフ1つにつき、受ける持続ダメージ+<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>、この効果は最大で<unbreak>#5[i]</unbreak>層累積できる。味方が「魂迷」状態の敵を攻撃した時、その味方の速度+<color=#f29e38ff><unbreak>#6[f1]%</unbreak></color>、<unbreak>#7[i]</unbreak>ターン継続。",
+      "Name": "{RUBY_B#どくそう}独奏{RUBY_E#}",
+      "Desc": "装備キャラの効果命中+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが敵にデバフを付与した時、<unbreak>#2[i]%</unbreak>の基礎確率でその敵を「魂迷」状態にする。<unbreak>#3[i]</unbreak>ターン継続。なお、同系統のスキルは累積できない。「魂迷」状態の敵は、装備キャラにデバフを1つ付与されるごとに、受ける持続ダメージ+<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>、この効果は最大で<unbreak>#5[i]</unbreak>層累積できる。味方が「魂迷」状態の敵を攻撃すると、その味方の速度+<color=#f29e38ff><unbreak>#6[f1]%</unbreak></color>、<unbreak>#7[i]</unbreak>ターン継続。装備キャラが戦闘不能状態になると、すべての「魂迷」をクリアする。",
       "Level": {
         "1": {
           "ParamList": [
@@ -34093,16 +37058,48 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.44999998807907104
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.5
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.550000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23048": {
-    "Name": "黄金の血で刻む時代",
+    "Name": "{RUBY_B#おうごん}黄金{RUBY_E#}の{RUBY_B#ち}血{RUBY_E#}で{RUBY_B#きざ}刻{RUBY_E#}む{RUBY_B#じだい}時代{RUBY_E#}",
     "Desc": "<i>「千年後、ケリュドラはどのような姿で歴史に刻まれるのか？」</i>\\n誰かが彼女にそう問いかけた。\\n\\nある者にとって彼女は誰もが知る「カイザー」——\\n冷酷な暴君にして野心に満ちた「炎冠」、血と炎で旧き時代を焼き払った女帝である……\\n\\n一方で、別の者は異を唱える。彼女は哀れな「駒」にすぎないと。\\n裏切られた王は所詮、野望の囚人。神との対局において、敗北は初めから決まっていたのだと。\\n\\nまた、こう語る者もいた。海よりもなお深く暗いその心の奥底では、彼女はただ「ケリュドラ」という名の凡庸な人にすぎないと——\\n犠牲になった仲間を悼み、重すぎる使命の前で怯え、迷い、そして立ちすくむ……\\n\\n<i>「ふっ、歴史に刻まれるだと？」</i>\\n\\n彼女は苦しみを飲み込みながら、仲間たちの犠牲によって敷かれた火を追う旅路を歩み続ける——\\n\\n<i>「逆だ。僕たちの燃える黄金の血が、歴史を刻むのだ！」</i>",
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Shaman",
     "Refinements": {
-      "Name": "征服",
-      "Desc": "装備キャラの攻撃力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。必殺技を発動して攻撃を行った後、SPを<unbreak>#3[i]</unbreak>回復する。装備キャラが味方単体キャラに戦闘スキルを発動した後、その味方の戦闘スキルダメージ+<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>、<unbreak>#5[i]</unbreak>ターン継続。",
+      "Name": "{RUBY_B#せいふく}征服{RUBY_E#}",
+      "Desc": "装備キャラの攻撃力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。必殺技で攻撃を行った後、SPを<unbreak>#3[i]</unbreak>回復する。装備キャラが味方単体キャラに戦闘スキルを発動した後、その味方の戦闘スキルダメージ+<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>、<unbreak>#5[i]</unbreak>ターン継続。",
       "Level": {
         "1": {
           "ParamList": [
@@ -34350,7 +37347,617 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.6399999856948853
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.959999978542328
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 1.1200000047683716
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 1.2799999713897705
+        }
+      ]
+    }
+  },
+  "23049": {
+    "Name": "長き夜に光る星へ",
+    "Desc": "歳月の隙間に、彼女の鼓動だけがこだましている。\\n幾度も繰り返された夜と同じように——闇の中で見守り、眠りにつく。\\n\\n彼女は託された思い出を大切に抱いている。\\n少女は、真っ白なキャンバスに旅の記憶を描いていく。立ち寄った場所ごとに、鮮やかな色を重ねて——居心地のいい列車に、個性豊かな仲間たち、そしてきらびやかに輝く星々…そのすべてが目覚めることさえ惜しいほどに美しい夢のようだった。\\n\\n<i>「三月なのかの真なる旅は今から始まる！」</i>\\n少女のその宣言は、今でも耳元で聞こえる気がする。\\n\\n星空を見上げると、一筋の光が遠くから近づいてくるのが見えた——\\nそれはまるで流れ星のような列車のライトだった。\\n\\n<i>「おやすみ、なのか…次に目覚めた時は、また開拓の旅を続けてね♭」</i>\\n\\n記憶の潮が満ち、彼女は願いを心の奥深くにそっとしまい込む。その小さな心の声も光も——\\n彼女は一度たりとも、忘れたことはなかった。",
+    "Rarity": "CombatPowerLightconeRarity5",
+    "BaseType": "Memory",
+    "Refinements": {
+      "Name": "眠れぬ",
+      "Desc": "装備キャラの最大HP+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラの記憶の精霊がスキルを発動する時、装備キャラは「夜色」を1層獲得する。装備キャラが「夜色」を持つ時、味方記憶の精霊全体の与えるダメージはターゲットの防御力を<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分無視する。同系統のスキルは累積できない。装備キャラが所持している「夜色」1層につき、装備キャラとその記憶の精霊の与ダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。「夜色」は最大<unbreak>#4[i]</unbreak>層まで累積できる。",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.3000000002793968,
+            0.20000000018626451,
+            0.12000000011175871,
+            4
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.375,
+            0.2249999998603016,
+            0.14000000013038516,
+            4
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.45000000041909516,
+            0.25000000023283064,
+            0.1600000001490116,
+            4
+          ]
+        },
+        "4": {
+          "ParamList": [
+            0.5250000001396984,
+            0.27499999990686774,
+            0.18000000016763806,
+            4
+          ]
+        },
+        "5": {
+          "ParamList": [
+            0.6000000005587935,
+            0.3000000002793968,
+            0.20000000018626451,
+            4
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 23049,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 5000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115011,
+            "ItemNum": 8,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 52.80000000074506,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 24,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 21,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 10000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110251,
+            "ItemNum": 4,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115011,
+            "ItemNum": 12,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 116.16000000014901,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 52.80000000074506,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 46.200000000186265,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 20000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110252,
+            "ItemNum": 4,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115012,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 200.64000000059605,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 91.20000000018626,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 79.80000000074506,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 50000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110252,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115012,
+            "ItemNum": 12,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 285.12000000011176,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 129.6000000005588,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 113.40000000037253,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 100000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110253,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115013,
+            "ItemNum": 6,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 369.6000000005588,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 168,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 147,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 200000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110253,
+            "ItemNum": 10,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115013,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 454.0800000000745,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 206.40000000037253,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 180.6000000005588,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 538.5600000005215,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 244.80000000074506,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 214.20000000018626,
+        "BaseDefenceAdd": 3.1500000001396984
+      }
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.375
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.44999998807907104
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.5249999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
+  },
+  "23051": {
+    "Name": "万里の山河を越えて",
+    "Desc": "果てしなき太古の地で、少年はただひとり、旅を続けている。\\nふと、かつて彷徨い歩いた日々の光景が脳裏に蘇る。あの頃も同じように、荒波を越え、風雪に晒され、巨獣と戦い、逆巻く奔流に抗っていた。\\n\\nだが、束の間の休息の中で、彼は決して孤独ではなかった。\\n遥か先に、確かな光が見えているから——\\n\\nそれは、すべての命の願い。\\n砕けた大地はもはや新たな命を育むことはできない。彼らは彼のもとに集い、慰めと庇護を求める。\\n\\nそれは、仲間たちが彼の心に残した言葉の数々。まるで途絶えない航路のように彼らをつなぐ堅固な絆。\\n\\n風と共に、彼を悩ませる過去が再びざわめき始める。だが、歩んできたその道のりこそが、やがて新生のための力となるだろう。\\n\\n<i>「俺は、開拓の道を守り抜く」</i>\\n少年は槍を構え、光の差すほうへと駆ける——\\n\\n<i>「そして、消えゆこうとするすべての希望を、この手で守ってみせる！」</i>",
+    "Rarity": "CombatPowerLightconeRarity5",
+    "BaseType": "Knight",
+    "Refinements": {
+      "Name": "新鱗",
+      "Desc": "装備キャラの攻撃力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、付与するバリアの耐久値+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。装備キャラが必殺技を発動する時、味方全体が装備キャラの攻撃力<color=#f29e38ff><unbreak>#6[i]%</unbreak></color>分のHPを回復し、「守備」を獲得する。「守備」は<unbreak>#5[i]</unbreak>ターン継続。「守備」を獲得した味方の与ダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>、さらに召喚物を持つ場合は追加で与ダメージ+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>。",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.24000000022351742,
+            0.3000000002793968,
+            0.24000000022351742,
+            0.12000000011175871,
+            3,
+            0.10000000009313226
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.3000000002793968,
+            0.3500000003259629,
+            0.3000000002793968,
+            0.1500000001396984,
+            3,
+            0.12499999976716936
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.3600000003352761,
+            0.40000000037252903,
+            0.3600000003352761,
+            0.18000000016763806,
+            3,
+            0.1500000001396984
+          ]
+        },
+        "4": {
+          "ParamList": [
+            0.4200000003911555,
+            0.45000000041909516,
+            0.4200000003911555,
+            0.21000000019557774,
+            3,
+            0.17499999981373549
+          ]
+        },
+        "5": {
+          "ParamList": [
+            0.48000000044703484,
+            0.5000000004656613,
+            0.48000000044703484,
+            0.24000000022351742,
+            3,
+            0.20000000018626451
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 23051,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 5000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 8,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 48,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 26.40000000037253,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 21,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 10000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110211,
+            "ItemNum": 4,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 12,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 105.6000000005588,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 58.080000000074506,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 46.200000000186265,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 20000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110212,
+            "ItemNum": 4,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 182.40000000037253,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 100.32000000029802,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 79.80000000074506,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 50000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110212,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 12,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 259.20000000018626,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 142.56000000052154,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 113.40000000037253,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 100000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110213,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 6,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 336,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 184.80000000074506,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 147,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 200000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110213,
+            "ItemNum": 10,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 412.80000000074506,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 227.04000000003725,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 180.6000000005588,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 489.6000000005588,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 269.28000000026077,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 214.20000000018626,
+        "BaseDefenceAdd": 3.1500000001396984
+      }
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.6399999856948853
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.959999978542328
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 1.1200000047683716
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 1.2799999713897705
+        }
+      ]
+    }
   },
   "24000": {
     "Name": "とある{RUBY_B#アイオーン}星神{RUBY_E#}の{RUBY_B#うんらく}殞落{RUBY_E#}を{RUBY_B#しる}記{RUBY_E#}す",
@@ -34602,7 +38209,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "24001": {
     "Name": "{RUBY_B#せいかいじゅんこう}星海巡航{RUBY_E#}",
@@ -34859,7 +38467,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.24000000022351742
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.3000000002793968
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.3600000003352761
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.4200000003911555
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.48000000044703484
+        }
+      ]
+    }
   },
   "24002": {
     "Name": "{RUBY_B#きおく}記憶{RUBY_E#}の{RUBY_B#そざい}素材{RUBY_E#}",
@@ -35116,7 +38756,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.1599999964237213
+        }
+      ]
+    }
   },
   "24003": {
     "Name": "{RUBY_B#こどく}孤独{RUBY_E#}の{RUBY_B#いや}癒{RUBY_E#}し",
@@ -35368,7 +39040,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "24004": {
     "Name": "{RUBY_B#た}絶{RUBY_E#}え{RUBY_B#ま}間{RUBY_E#}ない{RUBY_B#えんざん}演算{RUBY_E#}",
@@ -35625,7 +39329,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.09000000357627869
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.10999999940395357
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
+    }
   },
   "24005": {
     "Name": "{RUBY_B#つ}尽{RUBY_E#}きぬ{RUBY_B#ついおく}追憶{RUBY_E#}",
@@ -35872,6 +39608,38 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.05999999865889549
+        }
+      ],
+      "1": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.07500000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.09000000357627869
+        }
+      ],
+      "3": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.10499999672174454
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
+    }
   }
 }

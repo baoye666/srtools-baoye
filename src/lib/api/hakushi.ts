@@ -1,5 +1,5 @@
 import { convertAvatar, convertEvent, convertLightcone, convertMonster, convertRelicSet } from "@/helper";
-import { ASDetail, CharacterBasic, CharacterBasicRaw, CharacterDetail, EventBasic, EventBasicRaw, LightConeBasic, LightConeBasicRaw, LightConeDetail, MocDetail, MonsterBasic, MonsterBasicRaw, MonsterDetail, PFDetail, RelicBasic, RelicBasicRaw, RelicDetail } from "@/types";
+import { ASDetail, CharacterBasic, CharacterBasicRaw, CharacterDetail, EventBasic, EventBasicRaw, LightConeBasic, LightConeBasicRaw, LightConeDetail, MocDetail, MonsterBasic, MonsterBasicRaw, MonsterDetail, PeakDetail, PFDetail, RelicBasic, RelicBasicRaw, RelicDetail } from "@/types";
 import axios from "axios";
 
 export async function getLightconeInfoApi(lightconeId: number, locale: string): Promise<LightConeDetail | null> {
@@ -134,6 +134,28 @@ export async function getPFEventInfoApi(eventId: number, locale: string): Promis
     }
 }
 
+export async function getPeakEventInfoApi(eventId: number, locale: string): Promise<PeakDetail | null> {
+    try {
+        const res = await axios.get<PeakDetail>(
+            `https://api.hakush.in/hsr/data/${locale}/peak/${eventId}.json`,
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }
+        );
+
+        return res.data as PeakDetail;
+    } catch (error: unknown) {
+        if (axios.isAxiosError(error)) {
+            console.log(`Error: ${error.response?.status} - ${error.message}`);
+        } else {
+            console.log(`Unexpected error: ${String(error)}`);
+        }
+        return null;
+    }
+}
+
 export async function getCharacterListApi(): Promise<CharacterBasic[]> {
     try {
         const res = await axios.get<Record<string, CharacterBasicRaw>>(
@@ -258,6 +280,30 @@ export async function getPFEventListApi(): Promise<EventBasic[]> {
     try {
         const res = await axios.get<Record<string, EventBasicRaw>>(
             'https://api.hakush.in/hsr/data/maze_extra.json',
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }
+        );
+
+        const data = new Map(Object.entries(res.data));
+
+        return Array.from(data.entries()).map(([id, it]) => convertEvent(id, it));
+    } catch (error: unknown) {
+        if (axios.isAxiosError(error)) {
+            console.log(`Error: ${error.response?.status} - ${error.message}`);
+        } else {
+            console.log(`Unexpected error: ${String(error)}`);
+        }
+        return [];
+    }
+}
+
+export async function getPEAKEventListApi(): Promise<EventBasic[]> {
+    try {
+        const res = await axios.get<Record<string, EventBasicRaw>>(
+            'https://api.hakush.in/hsr/data/maze_peak.json',
             {
                 headers: {
                     'Content-Type': 'application/json',

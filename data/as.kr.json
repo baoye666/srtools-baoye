@@ -4,7 +4,7 @@
     "Name": "한풍의 기사",
     "Buff": {
       "Name": "말법의 잔화",
-      "Desc": "<color=#f29e38ff>[견고한 수비]</color>를 보유한 적이 <color=#f29e38ff>약점 격파</color>될 시 모든 아군이 전투 스킬 포인트를 회복하고 필살기를 활성화한다.\\n모든 적이 받는 약점 격파 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 슈퍼 격파 피해가 추가로 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+      "Desc": "<color=#f29e38ff>[견고한 수비]</color>를 보유한 적 유닛이 <color=#f29e38ff>약점 격파</color>될 시 모든 아군이 전투 스킬 포인트를 회복하고 필살기를 활성화한다.\\n모든 적이 받는 약점 격파 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 슈퍼 격파 피해가 추가로 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
       "Param": [
         0.1500000001396984,
         0.25000000023283064
@@ -301,7 +301,7 @@
             },
             {
               "Name": "별들의 호위",
-              "Desc": "보스 환영을 제외한 <color=#f29e38ff>적</color>이 1기 존재할 때마다 모든 적이 받는 피해가 감소하고 가하는 피해가 증가한다",
+              "Desc": "보스 환영을 제외한 <color=#f29e38ff>적 유닛</color>이 1기 존재할 때마다 모든 적이 받는 피해가 감소하고 가하는 피해가 증가한다",
               "Param": [
                 0.25
               ],
@@ -410,6 +410,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -460,6 +461,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -697,7 +699,7 @@
             },
             {
               "Name": "별들의 호위",
-              "Desc": "보스 환영을 제외한 <color=#f29e38ff>적</color>이 1기 존재할 때마다 모든 적이 받는 피해가 감소하고 가하는 피해가 증가한다",
+              "Desc": "보스 환영을 제외한 <color=#f29e38ff>적 유닛</color>이 1기 존재할 때마다 모든 적이 받는 피해가 감소하고 가하는 피해가 증가한다",
               "Param": [
                 0.25
               ],
@@ -806,6 +808,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -856,6 +859,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -1099,7 +1103,7 @@
             },
             {
               "Name": "별들의 호위",
-              "Desc": "보스 환영을 제외한 <color=#f29e38ff>적</color>이 1기 존재할 때마다 모든 적이 받는 피해가 감소하고 가하는 피해가 증가한다",
+              "Desc": "보스 환영을 제외한 <color=#f29e38ff>적 유닛</color>이 1기 존재할 때마다 모든 적이 받는 피해가 감소하고 가하는 피해가 증가한다",
               "Param": [
                 0.25
               ],
@@ -1214,6 +1218,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -1264,6 +1269,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -1507,7 +1513,7 @@
             },
             {
               "Name": "별들의 호위",
-              "Desc": "보스 환영을 제외한 <color=#f29e38ff>적</color>이 1기 존재할 때마다 모든 적이 받는 피해가 감소하고 가하는 피해가 증가한다",
+              "Desc": "보스 환영을 제외한 <color=#f29e38ff>적 유닛</color>이 1기 존재할 때마다 모든 적이 받는 피해가 감소하고 가하는 피해가 증가한다",
               "Param": [
                 0.25
               ],
@@ -1622,6 +1628,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -1672,6 +1679,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -1683,7 +1691,7 @@
     "Name": "괴수 지배",
     "Buff": {
       "Name": "말법의 잔화",
-      "Desc": "<color=#f29e38ff>[견고한 수비]</color>를 보유한 적이 <color=#f29e38ff>약점 격파</color>될 시, 모든 아군의 행동 게이지가 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가하고 필살기가 활성화된다.\\n모든 적이 받는 추가 공격 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 반격 피해가 추가로 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+      "Desc": "<color=#f29e38ff>[견고한 수비]</color>를 보유한 적 유닛이 <color=#f29e38ff>약점 격파</color>될 시, 모든 아군의 행동 게이지가 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가하고 필살기가 활성화된다.\\n모든 적이 받는 추가 공격 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 반격 피해가 추가로 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
       "Param": [
         0.1500000001396984,
         0.25000000023283064,
@@ -1969,7 +1977,7 @@
             },
             {
               "Name": "갈수록 샘솟는 용기",
-              "Desc": "적이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
+              "Desc": "적 유닛이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -2080,6 +2088,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -2130,6 +2139,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -2360,7 +2370,7 @@
             },
             {
               "Name": "갈수록 샘솟는 용기",
-              "Desc": "적이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
+              "Desc": "적 유닛이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -2471,6 +2481,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -2521,6 +2532,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -2751,7 +2763,7 @@
             },
             {
               "Name": "갈수록 샘솟는 용기",
-              "Desc": "적이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
+              "Desc": "적 유닛이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -2862,6 +2874,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -2912,6 +2925,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -3142,7 +3156,7 @@
             },
             {
               "Name": "갈수록 샘솟는 용기",
-              "Desc": "적이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
+              "Desc": "적 유닛이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -3253,6 +3267,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -3303,6 +3318,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -3314,7 +3330,7 @@
     "Name": "도박과 선동",
     "Buff": {
       "Name": "말법의 잔화",
-      "Desc": "<color=#f29e38ff>[견고한 수비]</color>를 보유한 적이 <color=#f29e38ff>약점 격파</color>될 시 모든 아군의 행동 게이지가 증가하고 전투 스킬 포인트가 회복된다.\\n모든 적이 받는 추가 공격 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 필살기 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+      "Desc": "<color=#f29e38ff>[견고한 수비]</color>를 보유한 적 유닛이 <color=#f29e38ff>약점 격파</color>될 시 모든 아군의 행동 게이지가 증가하고 전투 스킬 포인트가 회복된다.\\n모든 적이 받는 추가 공격 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 필살기 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
       "Param": [
         0.25000000023283064,
         0.1500000001396984
@@ -3486,7 +3502,7 @@
             },
             {
               "Name": "포인트 경쟁",
-              "Desc": "보스 환영의 스킬은 모든 아군 및 적에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
+              "Desc": "보스 환영의 스킬은 모든 아군 및 적 유닛에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -3740,6 +3756,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -3790,6 +3807,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -3906,7 +3924,7 @@
             },
             {
               "Name": "포인트 경쟁",
-              "Desc": "보스 환영의 스킬은 모든 아군 및 적에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
+              "Desc": "보스 환영의 스킬은 모든 아군 및 적 유닛에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -4160,6 +4178,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -4210,6 +4229,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -4326,7 +4346,7 @@
             },
             {
               "Name": "포인트 경쟁",
-              "Desc": "보스 환영의 스킬은 모든 아군 및 적에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
+              "Desc": "보스 환영의 스킬은 모든 아군 및 적 유닛에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -4580,6 +4600,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -4630,6 +4651,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -4746,7 +4768,7 @@
             },
             {
               "Name": "포인트 경쟁",
-              "Desc": "보스 환영의 스킬은 모든 아군 및 적에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
+              "Desc": "보스 환영의 스킬은 모든 아군 및 적 유닛에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -5000,6 +5022,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -5050,6 +5073,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -5478,6 +5502,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -5533,6 +5558,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -5896,6 +5922,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -5951,6 +5978,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -6321,6 +6349,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -6376,6 +6405,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -6746,6 +6776,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -6801,6 +6832,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -7209,6 +7241,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -7254,6 +7287,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -7595,6 +7629,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -7640,6 +7675,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -7987,6 +8023,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -8032,6 +8069,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -8379,6 +8417,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -8424,6 +8463,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -8859,6 +8899,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -8909,6 +8950,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -9278,6 +9320,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -9328,6 +9371,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -9697,6 +9741,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -9747,6 +9792,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -10116,6 +10162,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -10166,6 +10213,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -10337,7 +10385,7 @@
             },
             {
               "Name": "포인트 경쟁",
-              "Desc": "보스 환영의 스킬은 모든 아군 및 적에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
+              "Desc": "보스 환영의 스킬은 모든 아군 및 적 유닛에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -10587,6 +10635,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -10632,6 +10681,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -10734,7 +10784,7 @@
             },
             {
               "Name": "포인트 경쟁",
-              "Desc": "보스 환영의 스킬은 모든 아군 및 적에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
+              "Desc": "보스 환영의 스킬은 모든 아군 및 적 유닛에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -10984,6 +11034,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -11029,6 +11080,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -11131,7 +11183,7 @@
             },
             {
               "Name": "포인트 경쟁",
-              "Desc": "보스 환영의 스킬은 모든 아군 및 적에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
+              "Desc": "보스 환영의 스킬은 모든 아군 및 적 유닛에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -11381,6 +11433,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -11426,6 +11479,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -11528,7 +11582,7 @@
             },
             {
               "Name": "포인트 경쟁",
-              "Desc": "보스 환영의 스킬은 모든 아군 및 적에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
+              "Desc": "보스 환영의 스킬은 모든 아군 및 적 유닛에게 <color=#f29e38ff><u>포인트</u></color>를 부여한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -11778,6 +11832,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -11823,6 +11878,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -12237,6 +12293,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -12287,6 +12344,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -12634,6 +12692,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -12684,6 +12743,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -13031,6 +13091,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -13081,6 +13142,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -13428,6 +13490,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -13478,6 +13541,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -13894,6 +13958,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -13944,6 +14009,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -14292,6 +14358,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -14342,6 +14409,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -14696,6 +14764,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -14746,6 +14815,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -15100,6 +15170,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -15150,6 +15221,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -15366,7 +15438,7 @@
             }
           ],
           "TextGuideList": [
-            "보스 환영의 [재앙의 힘]이 초기화되지 않았을 시, 소환물을 처치해 보스 환영의 강력 스킬을 약화시키세요",
+            "보스 환영의 [재앙의 힘]이 초기화되지 않았을 시, 소환물을 처치해 보스 환영의 강력한 스킬을 약화시키세요",
             "[완전한 용기]를 우선 처치하면 보너스 턴 및 버프 상태 보상을 획득할 수 있으며, 동시에 [완전한 용기]가 보스 환영의 [재앙의 힘]을 충전하는 것을 막을 수 있습니다"
           ],
           "PhaseList": [
@@ -15432,7 +15504,7 @@
             },
             {
               "Name": "갈수록 샘솟는 용기",
-              "Desc": "적이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
+              "Desc": "적 유닛이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -15543,6 +15615,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -15593,6 +15666,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -15744,7 +15818,7 @@
             }
           ],
           "TextGuideList": [
-            "보스 환영의 [재앙의 힘]이 초기화되지 않았을 시, 소환물을 처치해 보스 환영의 강력 스킬을 약화시키세요",
+            "보스 환영의 [재앙의 힘]이 초기화되지 않았을 시, 소환물을 처치해 보스 환영의 강력한 스킬을 약화시키세요",
             "[완전한 용기]를 우선 처치하면 보너스 턴 및 버프 상태 보상을 획득할 수 있으며, 동시에 [완전한 용기]가 보스 환영의 [재앙의 힘]을 충전하는 것을 막을 수 있습니다"
           ],
           "PhaseList": [
@@ -15810,7 +15884,7 @@
             },
             {
               "Name": "갈수록 샘솟는 용기",
-              "Desc": "적이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
+              "Desc": "적 유닛이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -15921,6 +15995,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -15971,6 +16046,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -16122,7 +16198,7 @@
             }
           ],
           "TextGuideList": [
-            "보스 환영의 [재앙의 힘]이 초기화되지 않았을 시, 소환물을 처치해 보스 환영의 강력 스킬을 약화시키세요",
+            "보스 환영의 [재앙의 힘]이 초기화되지 않았을 시, 소환물을 처치해 보스 환영의 강력한 스킬을 약화시키세요",
             "[완전한 용기]를 우선 처치하면 보너스 턴 및 버프 상태 보상을 획득할 수 있으며, 동시에 [완전한 용기]가 보스 환영의 [재앙의 힘]을 충전하는 것을 막을 수 있습니다"
           ],
           "PhaseList": [
@@ -16188,7 +16264,7 @@
             },
             {
               "Name": "갈수록 샘솟는 용기",
-              "Desc": "적이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
+              "Desc": "적 유닛이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -16299,6 +16375,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -16349,6 +16426,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -16500,7 +16578,7 @@
             }
           ],
           "TextGuideList": [
-            "보스 환영의 [재앙의 힘]이 초기화되지 않았을 시, 소환물을 처치해 보스 환영의 강력 스킬을 약화시키세요",
+            "보스 환영의 [재앙의 힘]이 초기화되지 않았을 시, 소환물을 처치해 보스 환영의 강력한 스킬을 약화시키세요",
             "[완전한 용기]를 우선 처치하면 보너스 턴 및 버프 상태 보상을 획득할 수 있으며, 동시에 [완전한 용기]가 보스 환영의 [재앙의 힘]을 충전하는 것을 막을 수 있습니다"
           ],
           "PhaseList": [
@@ -16566,7 +16644,7 @@
             },
             {
               "Name": "갈수록 샘솟는 용기",
-              "Desc": "적이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
+              "Desc": "적 유닛이 단일 공격 스킬을 발동하면 속도가 증가한다, 지속 시간: 1턴. 범위 공격 스킬을 발동하면 공격력이 증가한다, 지속 시간: 1턴. 서포트 스킬을 발동하면 스킬 목표의 HP를 회복시킨다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -16677,6 +16755,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -16727,6 +16806,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -16797,7 +16877,7 @@
       }
     ],
     "BeginTime": "2025-06-30 04:00:02",
-    "EndTime": "2025-08-11 04:00:00",
+    "EndTime": "2025-09-22 04:00:00",
     "Level": [
       {
         "Id": 30111,
@@ -17046,7 +17126,7 @@
               "ParamFix": []
             },
             {
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군 캐릭터가 <color=#f29e38ff>[저주의 주문] 상태에 빠진다</color>. [저주의 주문] 상태의 아군 캐릭터와 해당 캐릭터의 소환물이 퇴장한다. 동시에 [피투성이 인랑]을 소환하여 해당 퇴장 캐릭터를 대신해 전투를 계속하며, [피투성이 인랑]의 공격은 <color=#f29e38ff>강인성을 비교적 많이 감소시킨다</color>",
+              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군 캐릭터를 <color=#f29e38ff>[저주] 상태에 빠트리며</color>, [저주] 상태의 아군 캐릭터와 해당 캐릭터의 소환물은 퇴장한다. 동시에 [피투성이 인랑]을 소환하여 퇴장한 캐릭터를 대신해 전투를 계속하며, [피투성이 인랑]의 공격은 <color=#f29e38ff>강인성을 비교적 많이 감소시킨다</color>",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
@@ -17054,13 +17134,13 @@
           ],
           "TextGuideList": [
             "보스 환영의 <color=#f29e38ff>부위</color>를 여러 번 격파하면 보스 환영의 강인성을 효과적으로 감소시킬 수 있습니다. 보스 환영을 <color=#f29e38ff>격파</color>하면 보스 환영과 모든 부위가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트가 회복되고 필살기가 활성화됩니다",
-            "<color=#f29e38ff>[피투성이 인랑]</color>이 아군 캐릭터를 대신해 전투 시, 피격된 적의 <color=#f29e38ff>지속 피해류 디버프 상태 수량</color>에 따라 추가로 <color=#f29e38ff>약점 속성을 무시하고 대상의 강인성을 감소시킵니다</color>. [피투성이 인랑]의 <color=#f29e38ff>일반 공격</color>은 모든 아군의 HP를 회복할 수 있습니다. <color=#f29e38ff>전투 스킬</color>은 여러 적을 명중하고 강인성을 대폭 감소시킬 수 있으며, <color=#f29e38ff>전투 스킬 포인트를 소모하지 않습니다</color>"
+            "<color=#f29e38ff>[피투성이 인랑]</color>이 아군 캐릭터를 대신해 전투 시, 피격된 적의 <color=#f29e38ff>지속 피해류 디버프 상태 수량</color>에 따라 추가로 <color=#f29e38ff>약점 속성을 무시하고 대상의 강인성을 감소시킵니다</color>. [피투성이 인랑]의 <color=#f29e38ff>일반 공격</color>은 모든 아군의 HP를 회복하고, <color=#f29e38ff>전투 스킬</color>은 여러 적을 명중하고 강인성을 대폭 감소시킬 수 있으며, <color=#f29e38ff>전투 스킬 포인트를 소모하지 않습니다</color>"
           ],
           "PhaseList": [
             {
-              "Name": "1단계: 풍운을 호령한다",
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군을 [저주의 주문] 상태에 빠트린다",
-              "Answer": "대응 전략: [식심의 저주] 발동 시, 아군 중 딜러가 아닌 캐릭터를 스킬의 목표로 우선 지정하세요",
+              "Name": "1단계: 풍운 호령",
+              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군을 [저주] 상태에 빠트린다",
+              "Answer": "대응 전략: [식심의 저주] 발동 시, 아군 중 딜러가 아닌 캐릭터를 우선 스킬 목표로 지정하세요",
               "Difficulty": 1,
               "SkillList": [
                 101211,
@@ -17068,7 +17148,7 @@
               ]
             },
             {
-              "Name": "2단계: 건곤을 휩쓴다",
+              "Name": "2단계: 건곤 소탕",
               "Desc": "보스 환영이 [건곤을 삼키는 기세]를 발동하여 높은 피해와 디버프 효과를 가한다",
               "Answer": "대응 전략: [건곤을 삼키는 기세] 발동 전에 가능한 모든 부위를 격파하세요",
               "Difficulty": 1,
@@ -17125,6 +17205,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -17175,6 +17256,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -17426,7 +17508,7 @@
               "ParamFix": []
             },
             {
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군 캐릭터가 <color=#f29e38ff>[저주의 주문] 상태에 빠진다</color>. [저주의 주문] 상태의 아군 캐릭터와 해당 캐릭터의 소환물이 퇴장한다. 동시에 [피투성이 인랑]을 소환하여 해당 퇴장 캐릭터를 대신해 전투를 계속하며, [피투성이 인랑]의 공격은 <color=#f29e38ff>강인성을 비교적 많이 감소시킨다</color>",
+              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군 캐릭터를 <color=#f29e38ff>[저주] 상태에 빠트리며</color>, [저주] 상태의 아군 캐릭터와 해당 캐릭터의 소환물은 퇴장한다. 동시에 [피투성이 인랑]을 소환하여 퇴장한 캐릭터를 대신해 전투를 계속하며, [피투성이 인랑]의 공격은 <color=#f29e38ff>강인성을 비교적 많이 감소시킨다</color>",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
@@ -17434,13 +17516,13 @@
           ],
           "TextGuideList": [
             "보스 환영의 <color=#f29e38ff>부위</color>를 여러 번 격파하면 보스 환영의 강인성을 효과적으로 감소시킬 수 있습니다. 보스 환영을 <color=#f29e38ff>격파</color>하면 보스 환영과 모든 부위가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트가 회복되고 필살기가 활성화됩니다",
-            "<color=#f29e38ff>[피투성이 인랑]</color>이 아군 캐릭터를 대신해 전투 시, 피격된 적의 <color=#f29e38ff>지속 피해류 디버프 상태 수량</color>에 따라 추가로 <color=#f29e38ff>약점 속성을 무시하고 대상의 강인성을 감소시킵니다</color>. [피투성이 인랑]의 <color=#f29e38ff>일반 공격</color>은 모든 아군의 HP를 회복할 수 있습니다. <color=#f29e38ff>전투 스킬</color>은 여러 적을 명중하고 강인성을 대폭 감소시킬 수 있으며, <color=#f29e38ff>전투 스킬 포인트를 소모하지 않습니다</color>"
+            "<color=#f29e38ff>[피투성이 인랑]</color>이 아군 캐릭터를 대신해 전투 시, 피격된 적의 <color=#f29e38ff>지속 피해류 디버프 상태 수량</color>에 따라 추가로 <color=#f29e38ff>약점 속성을 무시하고 대상의 강인성을 감소시킵니다</color>. [피투성이 인랑]의 <color=#f29e38ff>일반 공격</color>은 모든 아군의 HP를 회복하고, <color=#f29e38ff>전투 스킬</color>은 여러 적을 명중하고 강인성을 대폭 감소시킬 수 있으며, <color=#f29e38ff>전투 스킬 포인트를 소모하지 않습니다</color>"
           ],
           "PhaseList": [
             {
-              "Name": "1단계: 풍운을 호령한다",
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군을 [저주의 주문] 상태에 빠트린다",
-              "Answer": "대응 전략: [식심의 저주] 발동 시, 아군 중 딜러가 아닌 캐릭터를 스킬의 목표로 우선 지정하세요",
+              "Name": "1단계: 풍운 호령",
+              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군을 [저주] 상태에 빠트린다",
+              "Answer": "대응 전략: [식심의 저주] 발동 시, 아군 중 딜러가 아닌 캐릭터를 우선 스킬 목표로 지정하세요",
               "Difficulty": 1,
               "SkillList": [
                 101211,
@@ -17448,7 +17530,7 @@
               ]
             },
             {
-              "Name": "2단계: 건곤을 휩쓴다",
+              "Name": "2단계: 건곤 소탕",
               "Desc": "보스 환영이 [건곤을 삼키는 기세]를 발동하여 높은 피해와 디버프 효과를 가한다",
               "Answer": "대응 전략: [건곤을 삼키는 기세] 발동 전에 가능한 모든 부위를 격파하세요",
               "Difficulty": 1,
@@ -17505,6 +17587,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -17555,6 +17638,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -17806,7 +17890,7 @@
               "ParamFix": []
             },
             {
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군 캐릭터가 <color=#f29e38ff>[저주의 주문] 상태에 빠진다</color>. [저주의 주문] 상태의 아군 캐릭터와 해당 캐릭터의 소환물이 퇴장한다. 동시에 [피투성이 인랑]을 소환하여 해당 퇴장 캐릭터를 대신해 전투를 계속하며, [피투성이 인랑]의 공격은 <color=#f29e38ff>강인성을 비교적 많이 감소시킨다</color>",
+              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군 캐릭터를 <color=#f29e38ff>[저주] 상태에 빠트리며</color>, [저주] 상태의 아군 캐릭터와 해당 캐릭터의 소환물은 퇴장한다. 동시에 [피투성이 인랑]을 소환하여 퇴장한 캐릭터를 대신해 전투를 계속하며, [피투성이 인랑]의 공격은 <color=#f29e38ff>강인성을 비교적 많이 감소시킨다</color>",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
@@ -17814,13 +17898,13 @@
           ],
           "TextGuideList": [
             "보스 환영의 <color=#f29e38ff>부위</color>를 여러 번 격파하면 보스 환영의 강인성을 효과적으로 감소시킬 수 있습니다. 보스 환영을 <color=#f29e38ff>격파</color>하면 보스 환영과 모든 부위가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트가 회복되고 필살기가 활성화됩니다",
-            "<color=#f29e38ff>[피투성이 인랑]</color>이 아군 캐릭터를 대신해 전투 시, 피격된 적의 <color=#f29e38ff>지속 피해류 디버프 상태 수량</color>에 따라 추가로 <color=#f29e38ff>약점 속성을 무시하고 대상의 강인성을 감소시킵니다</color>. [피투성이 인랑]의 <color=#f29e38ff>일반 공격</color>은 모든 아군의 HP를 회복할 수 있습니다. <color=#f29e38ff>전투 스킬</color>은 여러 적을 명중하고 강인성을 대폭 감소시킬 수 있으며, <color=#f29e38ff>전투 스킬 포인트를 소모하지 않습니다</color>"
+            "<color=#f29e38ff>[피투성이 인랑]</color>이 아군 캐릭터를 대신해 전투 시, 피격된 적의 <color=#f29e38ff>지속 피해류 디버프 상태 수량</color>에 따라 추가로 <color=#f29e38ff>약점 속성을 무시하고 대상의 강인성을 감소시킵니다</color>. [피투성이 인랑]의 <color=#f29e38ff>일반 공격</color>은 모든 아군의 HP를 회복하고, <color=#f29e38ff>전투 스킬</color>은 여러 적을 명중하고 강인성을 대폭 감소시킬 수 있으며, <color=#f29e38ff>전투 스킬 포인트를 소모하지 않습니다</color>"
           ],
           "PhaseList": [
             {
-              "Name": "1단계: 풍운을 호령한다",
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군을 [저주의 주문] 상태에 빠트린다",
-              "Answer": "대응 전략: [식심의 저주] 발동 시, 아군 중 딜러가 아닌 캐릭터를 스킬의 목표로 우선 지정하세요",
+              "Name": "1단계: 풍운 호령",
+              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군을 [저주] 상태에 빠트린다",
+              "Answer": "대응 전략: [식심의 저주] 발동 시, 아군 중 딜러가 아닌 캐릭터를 우선 스킬 목표로 지정하세요",
               "Difficulty": 1,
               "SkillList": [
                 101211,
@@ -17828,7 +17912,7 @@
               ]
             },
             {
-              "Name": "2단계: 건곤을 휩쓴다",
+              "Name": "2단계: 건곤 소탕",
               "Desc": "보스 환영이 [건곤을 삼키는 기세]를 발동하여 높은 피해와 디버프 효과를 가한다",
               "Answer": "대응 전략: [건곤을 삼키는 기세] 발동 전에 가능한 모든 부위를 격파하세요",
               "Difficulty": 1,
@@ -17885,6 +17969,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -17935,6 +18020,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -18186,7 +18272,7 @@
               "ParamFix": []
             },
             {
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군 캐릭터가 <color=#f29e38ff>[저주의 주문] 상태에 빠진다</color>. [저주의 주문] 상태의 아군 캐릭터와 해당 캐릭터의 소환물이 퇴장한다. 동시에 [피투성이 인랑]을 소환하여 해당 퇴장 캐릭터를 대신해 전투를 계속하며, [피투성이 인랑]의 공격은 <color=#f29e38ff>강인성을 비교적 많이 감소시킨다</color>",
+              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군 캐릭터를 <color=#f29e38ff>[저주] 상태에 빠트리며</color>, [저주] 상태의 아군 캐릭터와 해당 캐릭터의 소환물은 퇴장한다. 동시에 [피투성이 인랑]을 소환하여 퇴장한 캐릭터를 대신해 전투를 계속하며, [피투성이 인랑]의 공격은 <color=#f29e38ff>강인성을 비교적 많이 감소시킨다</color>",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
@@ -18194,13 +18280,13 @@
           ],
           "TextGuideList": [
             "보스 환영의 <color=#f29e38ff>부위</color>를 여러 번 격파하면 보스 환영의 강인성을 효과적으로 감소시킬 수 있습니다. 보스 환영을 <color=#f29e38ff>격파</color>하면 보스 환영과 모든 부위가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트가 회복되고 필살기가 활성화됩니다",
-            "<color=#f29e38ff>[피투성이 인랑]</color>이 아군 캐릭터를 대신해 전투 시, 피격된 적의 <color=#f29e38ff>지속 피해류 디버프 상태 수량</color>에 따라 추가로 <color=#f29e38ff>약점 속성을 무시하고 대상의 강인성을 감소시킵니다</color>. [피투성이 인랑]의 <color=#f29e38ff>일반 공격</color>은 모든 아군의 HP를 회복할 수 있습니다. <color=#f29e38ff>전투 스킬</color>은 여러 적을 명중하고 강인성을 대폭 감소시킬 수 있으며, <color=#f29e38ff>전투 스킬 포인트를 소모하지 않습니다</color>"
+            "<color=#f29e38ff>[피투성이 인랑]</color>이 아군 캐릭터를 대신해 전투 시, 피격된 적의 <color=#f29e38ff>지속 피해류 디버프 상태 수량</color>에 따라 추가로 <color=#f29e38ff>약점 속성을 무시하고 대상의 강인성을 감소시킵니다</color>. [피투성이 인랑]의 <color=#f29e38ff>일반 공격</color>은 모든 아군의 HP를 회복하고, <color=#f29e38ff>전투 스킬</color>은 여러 적을 명중하고 강인성을 대폭 감소시킬 수 있으며, <color=#f29e38ff>전투 스킬 포인트를 소모하지 않습니다</color>"
           ],
           "PhaseList": [
             {
-              "Name": "1단계: 풍운을 호령한다",
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군을 [저주의 주문] 상태에 빠트린다",
-              "Answer": "대응 전략: [식심의 저주] 발동 시, 아군 중 딜러가 아닌 캐릭터를 스킬의 목표로 우선 지정하세요",
+              "Name": "1단계: 풍운 호령",
+              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군을 [저주] 상태에 빠트린다",
+              "Answer": "대응 전략: [식심의 저주] 발동 시, 아군 중 딜러가 아닌 캐릭터를 우선 스킬 목표로 지정하세요",
               "Difficulty": 1,
               "SkillList": [
                 101211,
@@ -18208,7 +18294,7 @@
               ]
             },
             {
-              "Name": "2단계: 건곤을 휩쓴다",
+              "Name": "2단계: 건곤 소탕",
               "Desc": "보스 환영이 [건곤을 삼키는 기세]를 발동하여 높은 피해와 디버프 효과를 가한다",
               "Answer": "대응 전략: [건곤을 삼키는 기세] 발동 전에 가능한 모든 부위를 격파하세요",
               "Difficulty": 1,
@@ -18265,6 +18351,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -18315,6 +18402,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -18323,70 +18411,74 @@
   },
   "3012": {
     "Id": 3012,
-    "Name": null,
+    "Name": "어둠과 한풍",
     "Buff": {
-      "Name": null,
-      "Desc": null,
-      "Param": []
+      "Name": "말법의 잔화",
+      "Desc": "<color=#f29e38ff>[견고한 수비]</color>를 보유한 적 유닛이 <color=#f29e38ff>약점 격파</color>될 시 모든 아군의 제어 상태를 해제하고 필살기를 활성화하며 HP를 회복시킨다.\\n모든 적이 받는 기억 정령 스킬 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 전투 스킬 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+      "Param": [
+        0.10000000009313226,
+        0.3000000002793968
+      ]
     },
     "BuffList1": [
       {
-        "Name": "일심동체",
-        "Desc": "아군이 전투 스킬 포인트를 1pt 소모할 때마다 모든 아군이 가하는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다, 해당 효과 최대 중첩수: <color=#f29e38ff><unbreak>#2[i]</unbreak></color>스택",
+        "Name": "전투 준비",
+        "Desc": "모든 아군이 가하는 물리 속성 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 모든 적의 물리 속성 저항이 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 감소한다",
         "Param": [
-          0.060000000055879354,
-          10
-        ]
-      },
-      {
-        "Name": "뒤엉킨 넝쿨",
-        "Desc": "적 처치 후 모든 적이 받는 격파 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다, 최대 중첩수: <color=#f29e38ff><unbreak>#2[i]</unbreak></color>스택. 해당 효과는 새로 필드 위에 나타난 모든 적에게도 적용된다",
-        "Param": [
-          0.1500000001396984,
-          4
-        ]
-      },
-      {
-        "Name": "결사의 각오",
-        "Desc": "아군이 자신의 HP를 소모하면 치명타 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다, 지속 시간: <color=#f29e38ff><unbreak>#2[i]</unbreak></color>턴",
-        "Param": [
-          0.5500000005122274,
-          2
-        ]
-      }
-    ],
-    "BuffList2": [
-      {
-        "Name": "약점 폭로",
-        "Desc": "모든 아군이 가하는 필살기 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 약점 격파 상태의 적에게는 추가로 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
-        "Param": [
-          0.3000000002793968,
-          0.3000000002793968
+          0.5000000004656613,
+          0.20000000018626451
         ]
       },
       {
         "Name": "끈질긴 넝쿨",
         "Desc": "모든 아군이 일반 공격 또는 전투 스킬을 발동해 약점 격파 상태의 적을 공격하면, 대상이 현재 받는 모든 지속 피해가 즉시 기존 피해의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 피해를 생성한다",
         "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "뼈저린 냉기",
+        "Desc": "모든 적이 받는 격파 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 적의 약점을 격파하면 모든 아군의 속도가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다, 지속 시간: <color=#f29e38ff><unbreak>#3[i]</unbreak></color>턴",
+        "Param": [
+          0.10000000009313226,
+          0.20000000018626451,
+          2
+        ]
+      }
+    ],
+    "BuffList2": [
+      {
+        "Name": "모든 것을 정복하는 힘",
+        "Desc": "기억 정령이 피해를 가할 시 목표의 방어력을 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 무시한다",
+        "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "생기발랄",
+        "Desc": "모든 아군이 가하는 전투 스킬 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 턴 시작 시 현재 HP 백분율이 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 이하일 경우, HP 최대치의 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>만큼 HP를 회복한다",
+        "Param": [
+          0.3000000002793968,
+          0.010000000009313226,
           0.1500000001396984
         ]
       },
       {
-        "Name": "맹렬한 돌격",
-        "Desc": "파티 내 첫 번째 캐릭터가 필살기 발동 후 자신의 약점 격파 효율이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고 치명타 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다, 지속 시간: <color=#f29e38ff><unbreak>#3[i]</unbreak></color>턴",
+        "Name": "파죽지세",
+        "Desc": "캐릭터가 필살기 발동 시 자신의 약점 격파 효율이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고 치명타 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다, 지속 시간: <color=#f29e38ff><unbreak>#3[i]</unbreak></color>턴",
         "Param": [
-          0.5000000004656613,
-          0.5000000004656613,
-          1
+          1,
+          0.40000000037252903,
+          3
         ]
       }
     ],
-    "BeginTime": "2050-01-01 04:00:00",
-    "EndTime": "2099-12-31 04:00:00",
+    "BeginTime": "2025-08-11 04:00:02",
+    "EndTime": "2025-09-22 04:00:00",
     "Level": [
       {
         "Id": 30121,
-        "Name": "천랑과 수장 • 난이도 <unbreak>01</unbreak>",
+        "Name": "어둠과 한풍•난이도 <unbreak>01</unbreak>",
         "Challenge": [
           {
             "Name": "#1점 획득",
@@ -18402,40 +18494,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401401,
-        "BossMonsterID2": 203302201,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401401,
+        "BossMonsterID2": 401403601,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 1,
@@ -18450,11 +18555,11 @@
               "Name": "견고한 수비",
               "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18463,43 +18568,51 @@
               "Child": []
             },
             {
-              "Name": "무차별적 몰살",
-              "Desc": "보스 환영이 [갈라진 땅, 흔적 없이 사라진 풀] 발동 시 다른 모든 늑대 병사를 처치한다",
+              "Name": "진지 이전",
+              "Desc": "게파드가 전투에 투입되고 보스 환영을 보호한다. 보스 환영은 자신의 약점 속성을 소환물에게 <color=#f29e38ff><u>이전</u></color>시킨다. 그러나 소환물이 처치되면 보스 환영 자신의 강인성 수치가 추가로 감소한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "이전",
+                  "Desc": "약점 속성을 목표에게 이전시킨다. 약점 속성은 목표가 처치되면 반환되며, 강인성을 추가로 감소시킨다",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "흉폭한 포식자",
-              "Desc": "보스 환영이 2단계 진입 후 [고독한 결전] 도중 턴마다 재행동할 수 있다",
+              "Name": "도주할 곳은 없다",
+              "Desc": "보스 환영의 소환물이 아군 유닛 1명을 표시하고, 보스 환영이 단일 공격 스킬을 발동한 후 표시된 아군 유닛에게 해당 스킬을 <color=#f29e38ff><u>추가 발동</u></color>한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "추가 발동",
+                  "Desc": "단일 공격 스킬 발동 후 목표를 재선택해 해당 스킬을 다시 사용한다",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "죽음에 이를 때까지",
-              "Desc": "보스 환영이 [고독한 결전] 진입 후 받는 피해가 추가로 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18507,41 +18620,36 @@
               ]
             },
             {
-              "Desc": "보스 환영이 [달의 포식자] 상태 진입 시 약점 보호가 해제된다. 아군은 가장 강한 캐릭터 한 명을 선택해 보스 환영과 [고독한 결전]을 펼쳐야 하며, [고독한 결전] 도중 선택된 캐릭터와 해당 캐릭터가 소환한 목표 외에 다른 아군은 퇴장 상태가 된다",
-              "Param": [],
-              "SkillID": null,
-              "ParamFix": []
-            },
-            {
-              "Desc": "아군이 적 늑대 병사 처치 시 [피의 분출]을 획득한다. [고독한 결전]에 진입한 캐릭터와 해당 캐릭터가 소환한 목표는 [피의 분출] 스택 수에 따라 강화를 획득한다",
+              "Desc": "소환물이 필드에 있으면 보스 환영이 <color=#f29e38ff>자신의 약점 속성을 소환물에게 이전시킨다</color>",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "보스 환영이 아직 [달의 포식자] 상태에 진입하지 않았을 때 먼저 늑대 병사를 처치하여 아군에게 [피의 분출]을 제공하고 보스 환영이 빠르게 [달의 포식자] 상태에 진입하도록 하세요",
-            "보스 환영이 [달의 포식자] 상태에 진입하려 할 때, [고독한 결전]에 대비할 수 있도록 전력을 남겨두세요",
-            "[고독한 결전] 진행 시 선택한 아군 캐릭터에게 소환한 목표가 존재할 경우, 소환한 목표도 함께 [고독한 결전]에 진입합니다"
+            "보스 환영을 <color=#f29e38ff>격파</color>하면 해당 목표가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트를 회복하고 행동 게이지를 증가시킵니다",
+            "<color=#f29e38ff>소환물</color>을 우선적으로 처치하거나 격파하면 효과적으로 보스 환영을 약화시킬 수 있습니다"
           ],
           "PhaseList": [
             {
-              "Name": "1단계: 요동치는 풍뢰",
-              "Desc": "보스 환영이 [달의 포식자] 상태 진입 시 아군은 가장 강한 캐릭터 한 명을 선택해 보스 환영과 [고독한 결전]을 펼쳐야 한다",
-              "Answer": "대응 전략: 보스 환영이 [달의 포식자] 상태에 진입하기 전에 최대한 늑대 병사를 처치해 강화를 획득하세요",
+              "Name": "1단계: 매서운 바람의 환멸자",
+              "Desc": "보스 환영은 스킬을 사용하여 목표를 빙결시키고 피해를 가한다. 게파드는 단체 실드를 제공한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치하세요. 게파드가 전체 실드를 발동하면 최대한 빨리 격파하고 게파드를 처치하세요",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "2단계: 하늘과 달의 포식자",
-              "Desc": "보스 환영의 스킬은 늑대 병사에게 피해를 가하며, [달의 포식자] 상태 진입 시 추가로 강화를 획득한다",
-              "Answer": "대응 전략: 보스 환영이 행동하기 전에 늑대 병사를 처치해 늑대 병사가 보스 환영에게 처치되는 것을 저지하세요",
+              "Name": "2단계: 매서운 바람의 환멸자•허망의 어머니",
+              "Desc": "보스 환영이 계속해서 [창세의 마지막 노래]를 발동하여 강력한 전체 피해를 가하고, 스킬을 사용해 아군의 행동을 제한한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치한 후 빠르게 보스 환영의 약점을 격파하세요",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -18563,114 +18671,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "강철 같은 기개",
-              "Desc": "부위가 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. 보스 환영이 <color=#f29e38ff>약점 격파</color>되면 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "날카로운 이와 발톱",
-              "Desc": "보스 환영의 강인성이 <color=#f29e38ff><unbreak>#1[i]</unbreak></color>pt 증가한다",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "부패한 그루터기",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "들끓는 짐승의 피",
-              "Desc": "<color=#f29e38ff>[저주]</color> 상태의 지속 시간이 <color=#f29e38ff><unbreak>#1[i]</unbreak></color>턴 연장된다",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "강함을 부드러움으로",
+              "Desc": "[연민의 긴 팔]의 강인성 최대치가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "보스 환영과 모든 부위가 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Desc": "보스 환영과 소환물이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "보스 환영의 부위가 <color=#f29e38ff>약점 격파</color>되면 보스 환영의 강인성이 일정량 감소한다",
+              "Desc": "이번 전투에서 아군의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군 캐릭터가 <color=#f29e38ff>[저주의 주문] 상태에 빠진다</color>. [저주의 주문] 상태의 아군 캐릭터와 해당 캐릭터의 소환물이 퇴장한다. 동시에 [피투성이 인랑]을 소환하여 해당 퇴장 캐릭터를 대신해 전투를 계속하며, [피투성이 인랑]의 공격은 <color=#f29e38ff>강인성을 비교적 많이 감소시킨다</color>",
+              "Desc": "아군 HP가 감소하면 [깊은 죽음의 꿈] 상태의 보스 환영이 [빈사의 꿈방울]을 누적한다. [빈사의 꿈방울]이 최대치에 도달하면 보스 환영은 [죽음의 향기] 상태에 진입한다. 이때 보스 환영과 그 소환물의 스킬이 대폭 강화된다",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "보스 환영의 <color=#f29e38ff>부위</color>를 여러 번 격파하면 보스 환영의 강인성을 효과적으로 감소시킬 수 있습니다. 보스 환영을 <color=#f29e38ff>격파</color>하면 보스 환영과 모든 부위가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트가 회복되고 필살기가 활성화됩니다",
-            "<color=#f29e38ff>[피투성이 인랑]</color>이 아군 캐릭터를 대신해 전투 시, 피격된 적의 <color=#f29e38ff>지속 피해류 디버프 상태 수량</color>에 따라 추가로 <color=#f29e38ff>약점 속성을 무시하고 대상의 강인성을 감소시킵니다</color>. [피투성이 인랑]의 <color=#f29e38ff>일반 공격</color>은 모든 아군의 HP를 회복할 수 있습니다. <color=#f29e38ff>전투 스킬</color>은 여러 적을 명중하고 강인성을 대폭 감소시킬 수 있으며, <color=#f29e38ff>전투 스킬 포인트를 소모하지 않습니다</color>"
+            "아군이 [부하 HP] 상태에 빠질 시 가하는 피해와 약점 격파 효율이 대폭 감소합니다. HP를 우선으로 회복하여 해당 상태를 해제하세요",
+            "[연민의 긴 팔]에 약점 격파를 가하면 보스 환영의 강인성과 HP가 감소하며, 이때 보스 환영이 [죽음의 향기] 상태일 경우 추가로 아군의 HP를 회복할 수 있습니다"
           ],
           "PhaseList": [
             {
-              "Name": "1단계: 풍운을 호령한다",
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군을 [저주의 주문] 상태에 빠트린다",
-              "Answer": "대응 전략: [식심의 저주] 발동 시, 아군 중 딜러가 아닌 캐릭터를 스킬의 목표로 우선 지정하세요",
+              "Name": "1단계: 진퇴양난",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Answer": "대응 전략: [부하 HP] 상태의 아군을 우선적으로 회복시키세요",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "2단계: 건곤을 휩쓴다",
-              "Desc": "보스 환영이 [건곤을 삼키는 기세]를 발동하여 높은 피해와 디버프 효과를 가한다",
-              "Answer": "대응 전략: [건곤을 삼키는 기세] 발동 전에 가능한 모든 부위를 격파하세요",
+              "Name": "2단계: 죽음을 향해가는 삶",
+              "Desc": "보스 환영이 [더 많은 죽음을 원하는 죽음] 발동 시 [부하 HP] 상태의 아군에게 치명적인 피해를 가한다",
+              "Answer": "대응 전략: [더 많은 죽음을 원하는 죽음] 발동 전에 HP를 회복하여 모든 아군 유닛의 [부하 HP] 상태를 해제하세요",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420311,
+            "StageID": 420331,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 60,
-            "EliteGroup": 701,
+            "EliteGroup": 904,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -18689,18 +18784,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401401
+                "Monster0": 100401401,
+                "Monster1": 100402601
               }
             ],
             "LevelLoseCondition": [
@@ -18710,17 +18806,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420301,
+            "StageID": 420321,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 60,
-            "EliteGroup": 701,
+            "EliteGroup": 896,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -18739,18 +18836,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501201
+                "Monster0": 401403601
               }
             ],
             "LevelLoseCondition": [
@@ -18760,13 +18857,14 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
       },
       {
         "Id": 30122,
-        "Name": "천랑과 수장 • 난이도 <unbreak>02</unbreak>",
+        "Name": "어둠과 한풍•난이도 <unbreak>02</unbreak>",
         "Challenge": [
           {
             "Name": "#1점 획득",
@@ -18782,40 +18880,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401402,
-        "BossMonsterID2": 203302202,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401402,
+        "BossMonsterID2": 401403602,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 2,
@@ -18830,11 +18941,11 @@
               "Name": "견고한 수비",
               "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18843,43 +18954,51 @@
               "Child": []
             },
             {
-              "Name": "무차별적 몰살",
-              "Desc": "보스 환영이 [갈라진 땅, 흔적 없이 사라진 풀] 발동 시 다른 모든 늑대 병사를 처치한다",
+              "Name": "진지 이전",
+              "Desc": "게파드가 전투에 투입되고 보스 환영을 보호한다. 보스 환영은 자신의 약점 속성을 소환물에게 <color=#f29e38ff><u>이전</u></color>시킨다. 그러나 소환물이 처치되면 보스 환영 자신의 강인성 수치가 추가로 감소한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "이전",
+                  "Desc": "약점 속성을 목표에게 이전시킨다. 약점 속성은 목표가 처치되면 반환되며, 강인성을 추가로 감소시킨다",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "흉폭한 포식자",
-              "Desc": "보스 환영이 2단계 진입 후 [고독한 결전] 도중 턴마다 재행동할 수 있다",
+              "Name": "도주할 곳은 없다",
+              "Desc": "보스 환영의 소환물이 아군 유닛 1명을 표시하고, 보스 환영이 단일 공격 스킬을 발동한 후 표시된 아군 유닛에게 해당 스킬을 <color=#f29e38ff><u>추가 발동</u></color>한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "추가 발동",
+                  "Desc": "단일 공격 스킬 발동 후 목표를 재선택해 해당 스킬을 다시 사용한다",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "죽음에 이를 때까지",
-              "Desc": "보스 환영이 [고독한 결전] 진입 후 받는 피해가 추가로 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18887,41 +19006,36 @@
               ]
             },
             {
-              "Desc": "보스 환영이 [달의 포식자] 상태 진입 시 약점 보호가 해제된다. 아군은 가장 강한 캐릭터 한 명을 선택해 보스 환영과 [고독한 결전]을 펼쳐야 하며, [고독한 결전] 도중 선택된 캐릭터와 해당 캐릭터가 소환한 목표 외에 다른 아군은 퇴장 상태가 된다",
-              "Param": [],
-              "SkillID": null,
-              "ParamFix": []
-            },
-            {
-              "Desc": "아군이 적 늑대 병사 처치 시 [피의 분출]을 획득한다. [고독한 결전]에 진입한 캐릭터와 해당 캐릭터가 소환한 목표는 [피의 분출] 스택 수에 따라 강화를 획득한다",
+              "Desc": "소환물이 필드에 있으면 보스 환영이 <color=#f29e38ff>자신의 약점 속성을 소환물에게 이전시킨다</color>",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "보스 환영이 아직 [달의 포식자] 상태에 진입하지 않았을 때 먼저 늑대 병사를 처치하여 아군에게 [피의 분출]을 제공하고 보스 환영이 빠르게 [달의 포식자] 상태에 진입하도록 하세요",
-            "보스 환영이 [달의 포식자] 상태에 진입하려 할 때, [고독한 결전]에 대비할 수 있도록 전력을 남겨두세요",
-            "[고독한 결전] 진행 시 선택한 아군 캐릭터에게 소환한 목표가 존재할 경우, 소환한 목표도 함께 [고독한 결전]에 진입합니다"
+            "보스 환영을 <color=#f29e38ff>격파</color>하면 해당 목표가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트를 회복하고 행동 게이지를 증가시킵니다",
+            "<color=#f29e38ff>소환물</color>을 우선적으로 처치하거나 격파하면 효과적으로 보스 환영을 약화시킬 수 있습니다"
           ],
           "PhaseList": [
             {
-              "Name": "1단계: 요동치는 풍뢰",
-              "Desc": "보스 환영이 [달의 포식자] 상태 진입 시 아군은 가장 강한 캐릭터 한 명을 선택해 보스 환영과 [고독한 결전]을 펼쳐야 한다",
-              "Answer": "대응 전략: 보스 환영이 [달의 포식자] 상태에 진입하기 전에 최대한 늑대 병사를 처치해 강화를 획득하세요",
+              "Name": "1단계: 매서운 바람의 환멸자",
+              "Desc": "보스 환영은 스킬을 사용하여 목표를 빙결시키고 피해를 가한다. 게파드는 단체 실드를 제공한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치하세요. 게파드가 전체 실드를 발동하면 최대한 빨리 격파하고 게파드를 처치하세요",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "2단계: 하늘과 달의 포식자",
-              "Desc": "보스 환영의 스킬은 늑대 병사에게 피해를 가하며, [달의 포식자] 상태 진입 시 추가로 강화를 획득한다",
-              "Answer": "대응 전략: 보스 환영이 행동하기 전에 늑대 병사를 처치해 늑대 병사가 보스 환영에게 처치되는 것을 저지하세요",
+              "Name": "2단계: 매서운 바람의 환멸자•허망의 어머니",
+              "Desc": "보스 환영이 계속해서 [창세의 마지막 노래]를 발동하여 강력한 전체 피해를 가하고, 스킬을 사용해 아군의 행동을 제한한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치한 후 빠르게 보스 환영의 약점을 격파하세요",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -18943,114 +19057,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "강철 같은 기개",
-              "Desc": "부위가 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. 보스 환영이 <color=#f29e38ff>약점 격파</color>되면 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "날카로운 이와 발톱",
-              "Desc": "보스 환영의 강인성이 <color=#f29e38ff><unbreak>#1[i]</unbreak></color>pt 증가한다",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "부패한 그루터기",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "들끓는 짐승의 피",
-              "Desc": "<color=#f29e38ff>[저주]</color> 상태의 지속 시간이 <color=#f29e38ff><unbreak>#1[i]</unbreak></color>턴 연장된다",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "강함을 부드러움으로",
+              "Desc": "[연민의 긴 팔]의 강인성 최대치가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "보스 환영과 모든 부위가 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Desc": "보스 환영과 소환물이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "보스 환영의 부위가 <color=#f29e38ff>약점 격파</color>되면 보스 환영의 강인성이 일정량 감소한다",
+              "Desc": "이번 전투에서 아군의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군 캐릭터가 <color=#f29e38ff>[저주의 주문] 상태에 빠진다</color>. [저주의 주문] 상태의 아군 캐릭터와 해당 캐릭터의 소환물이 퇴장한다. 동시에 [피투성이 인랑]을 소환하여 해당 퇴장 캐릭터를 대신해 전투를 계속하며, [피투성이 인랑]의 공격은 <color=#f29e38ff>강인성을 비교적 많이 감소시킨다</color>",
+              "Desc": "아군 HP가 감소하면 [깊은 죽음의 꿈] 상태의 보스 환영이 [빈사의 꿈방울]을 누적한다. [빈사의 꿈방울]이 최대치에 도달하면 보스 환영은 [죽음의 향기] 상태에 진입한다. 이때 보스 환영과 그 소환물의 스킬이 대폭 강화된다",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "보스 환영의 <color=#f29e38ff>부위</color>를 여러 번 격파하면 보스 환영의 강인성을 효과적으로 감소시킬 수 있습니다. 보스 환영을 <color=#f29e38ff>격파</color>하면 보스 환영과 모든 부위가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트가 회복되고 필살기가 활성화됩니다",
-            "<color=#f29e38ff>[피투성이 인랑]</color>이 아군 캐릭터를 대신해 전투 시, 피격된 적의 <color=#f29e38ff>지속 피해류 디버프 상태 수량</color>에 따라 추가로 <color=#f29e38ff>약점 속성을 무시하고 대상의 강인성을 감소시킵니다</color>. [피투성이 인랑]의 <color=#f29e38ff>일반 공격</color>은 모든 아군의 HP를 회복할 수 있습니다. <color=#f29e38ff>전투 스킬</color>은 여러 적을 명중하고 강인성을 대폭 감소시킬 수 있으며, <color=#f29e38ff>전투 스킬 포인트를 소모하지 않습니다</color>"
+            "아군이 [부하 HP] 상태에 빠질 시 가하는 피해와 약점 격파 효율이 대폭 감소합니다. HP를 우선으로 회복하여 해당 상태를 해제하세요",
+            "[연민의 긴 팔]에 약점 격파를 가하면 보스 환영의 강인성과 HP가 감소하며, 이때 보스 환영이 [죽음의 향기] 상태일 경우 추가로 아군의 HP를 회복할 수 있습니다"
           ],
           "PhaseList": [
             {
-              "Name": "1단계: 풍운을 호령한다",
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군을 [저주의 주문] 상태에 빠트린다",
-              "Answer": "대응 전략: [식심의 저주] 발동 시, 아군 중 딜러가 아닌 캐릭터를 스킬의 목표로 우선 지정하세요",
+              "Name": "1단계: 진퇴양난",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Answer": "대응 전략: [부하 HP] 상태의 아군을 우선적으로 회복시키세요",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "2단계: 건곤을 휩쓴다",
-              "Desc": "보스 환영이 [건곤을 삼키는 기세]를 발동하여 높은 피해와 디버프 효과를 가한다",
-              "Answer": "대응 전략: [건곤을 삼키는 기세] 발동 전에 가능한 모든 부위를 격파하세요",
+              "Name": "2단계: 죽음을 향해가는 삶",
+              "Desc": "보스 환영이 [더 많은 죽음을 원하는 죽음] 발동 시 [부하 HP] 상태의 아군에게 치명적인 피해를 가한다",
+              "Answer": "대응 전략: [더 많은 죽음을 원하는 죽음] 발동 전에 HP를 회복하여 모든 아군 유닛의 [부하 HP] 상태를 해제하세요",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420312,
+            "StageID": 420332,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 70,
-            "EliteGroup": 702,
+            "EliteGroup": 905,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19069,18 +19170,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401402
+                "Monster0": 100401402,
+                "Monster1": 100402602
               }
             ],
             "LevelLoseCondition": [
@@ -19090,17 +19192,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420302,
+            "StageID": 420322,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 70,
-            "EliteGroup": 702,
+            "EliteGroup": 897,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19119,18 +19222,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501202
+                "Monster0": 401403602
               }
             ],
             "LevelLoseCondition": [
@@ -19140,13 +19243,14 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
       },
       {
         "Id": 30123,
-        "Name": "천랑과 수장 • 난이도 <unbreak>03</unbreak>",
+        "Name": "어둠과 한풍•난이도 <unbreak>03</unbreak>",
         "Challenge": [
           {
             "Name": "#1점 획득",
@@ -19162,40 +19266,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401403,
-        "BossMonsterID2": 203302203,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401403,
+        "BossMonsterID2": 401403603,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 3,
@@ -19210,11 +19327,11 @@
               "Name": "견고한 수비",
               "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19223,43 +19340,51 @@
               "Child": []
             },
             {
-              "Name": "무차별적 몰살",
-              "Desc": "보스 환영이 [갈라진 땅, 흔적 없이 사라진 풀] 발동 시 다른 모든 늑대 병사를 처치한다",
+              "Name": "진지 이전",
+              "Desc": "게파드가 전투에 투입되고 보스 환영을 보호한다. 보스 환영은 자신의 약점 속성을 소환물에게 <color=#f29e38ff><u>이전</u></color>시킨다. 그러나 소환물이 처치되면 보스 환영 자신의 강인성 수치가 추가로 감소한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "이전",
+                  "Desc": "약점 속성을 목표에게 이전시킨다. 약점 속성은 목표가 처치되면 반환되며, 강인성을 추가로 감소시킨다",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "흉폭한 포식자",
-              "Desc": "보스 환영이 2단계 진입 후 [고독한 결전] 도중 턴마다 재행동할 수 있다",
+              "Name": "도주할 곳은 없다",
+              "Desc": "보스 환영의 소환물이 아군 유닛 1명을 표시하고, 보스 환영이 단일 공격 스킬을 발동한 후 표시된 아군 유닛에게 해당 스킬을 <color=#f29e38ff><u>추가 발동</u></color>한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "추가 발동",
+                  "Desc": "단일 공격 스킬 발동 후 목표를 재선택해 해당 스킬을 다시 사용한다",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "죽음에 이를 때까지",
-              "Desc": "보스 환영이 [고독한 결전] 진입 후 받는 피해가 추가로 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19267,41 +19392,42 @@
               ]
             },
             {
-              "Desc": "보스 환영이 [달의 포식자] 상태 진입 시 약점 보호가 해제된다. 아군은 가장 강한 캐릭터 한 명을 선택해 보스 환영과 [고독한 결전]을 펼쳐야 하며, [고독한 결전] 도중 선택된 캐릭터와 해당 캐릭터가 소환한 목표 외에 다른 아군은 퇴장 상태가 된다",
+              "Desc": "소환물이 필드에 있으면 보스 환영이 <color=#f29e38ff>자신의 약점 속성을 소환물에게 이전시킨다</color>",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "아군이 적 늑대 병사 처치 시 [피의 분출]을 획득한다. [고독한 결전]에 진입한 캐릭터와 해당 캐릭터가 소환한 목표는 [피의 분출] 스택 수에 따라 강화를 획득한다",
+              "Desc": "<color=#f29e38ff>소환물</color>이 고정한 목표에 따라 보스 환영이 단일 공격을 추가 발동하고, 일정 확률로 빙결 또는 속박 효과를 가한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "보스 환영이 아직 [달의 포식자] 상태에 진입하지 않았을 때 먼저 늑대 병사를 처치하여 아군에게 [피의 분출]을 제공하고 보스 환영이 빠르게 [달의 포식자] 상태에 진입하도록 하세요",
-            "보스 환영이 [달의 포식자] 상태에 진입하려 할 때, [고독한 결전]에 대비할 수 있도록 전력을 남겨두세요",
-            "[고독한 결전] 진행 시 선택한 아군 캐릭터에게 소환한 목표가 존재할 경우, 소환한 목표도 함께 [고독한 결전]에 진입합니다"
+            "보스 환영을 <color=#f29e38ff>격파</color>하면 해당 목표가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트를 회복하고 행동 게이지를 증가시킵니다",
+            "<color=#f29e38ff>소환물</color>을 우선적으로 처치하거나 격파하면 효과적으로 보스 환영을 약화시킬 수 있습니다"
           ],
           "PhaseList": [
             {
-              "Name": "1단계: 요동치는 풍뢰",
-              "Desc": "보스 환영이 [달의 포식자] 상태 진입 시 아군은 가장 강한 캐릭터 한 명을 선택해 보스 환영과 [고독한 결전]을 펼쳐야 한다",
-              "Answer": "대응 전략: 보스 환영이 [달의 포식자] 상태에 진입하기 전에 최대한 늑대 병사를 처치해 강화를 획득하세요",
+              "Name": "1단계: 매서운 바람의 환멸자",
+              "Desc": "보스 환영은 스킬을 사용하여 목표를 빙결시키고 피해를 가한다. 게파드는 단체 실드를 제공한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치하세요. 게파드가 전체 실드를 발동하면 최대한 빨리 격파하고 게파드를 처치하세요",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "2단계: 하늘과 달의 포식자",
-              "Desc": "보스 환영의 스킬은 늑대 병사에게 피해를 가하며, [달의 포식자] 상태 진입 시 추가로 강화를 획득한다",
-              "Answer": "대응 전략: 보스 환영이 행동하기 전에 늑대 병사를 처치해 늑대 병사가 보스 환영에게 처치되는 것을 저지하세요",
+              "Name": "2단계: 매서운 바람의 환멸자•허망의 어머니",
+              "Desc": "보스 환영이 계속해서 [창세의 마지막 노래]를 발동하여 강력한 전체 피해를 가하고, 스킬을 사용해 아군의 행동을 제한한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치한 후 빠르게 보스 환영의 약점을 격파하세요",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -19323,114 +19449,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "강철 같은 기개",
-              "Desc": "부위가 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. 보스 환영이 <color=#f29e38ff>약점 격파</color>되면 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "날카로운 이와 발톱",
-              "Desc": "보스 환영의 강인성이 <color=#f29e38ff><unbreak>#1[i]</unbreak></color>pt 증가한다",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "부패한 그루터기",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "들끓는 짐승의 피",
-              "Desc": "<color=#f29e38ff>[저주]</color> 상태의 지속 시간이 <color=#f29e38ff><unbreak>#1[i]</unbreak></color>턴 연장된다",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "강함을 부드러움으로",
+              "Desc": "[연민의 긴 팔]의 강인성 최대치가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "보스 환영과 모든 부위가 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Desc": "보스 환영과 소환물이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "보스 환영의 부위가 <color=#f29e38ff>약점 격파</color>되면 보스 환영의 강인성이 일정량 감소한다",
+              "Desc": "이번 전투에서 아군의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군 캐릭터가 <color=#f29e38ff>[저주의 주문] 상태에 빠진다</color>. [저주의 주문] 상태의 아군 캐릭터와 해당 캐릭터의 소환물이 퇴장한다. 동시에 [피투성이 인랑]을 소환하여 해당 퇴장 캐릭터를 대신해 전투를 계속하며, [피투성이 인랑]의 공격은 <color=#f29e38ff>강인성을 비교적 많이 감소시킨다</color>",
+              "Desc": "아군 HP가 감소하면 [깊은 죽음의 꿈] 상태의 보스 환영이 [빈사의 꿈방울]을 누적한다. [빈사의 꿈방울]이 최대치에 도달하면 보스 환영은 [죽음의 향기] 상태에 진입한다. 이때 보스 환영과 그 소환물의 스킬이 대폭 강화된다",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "보스 환영의 <color=#f29e38ff>부위</color>를 여러 번 격파하면 보스 환영의 강인성을 효과적으로 감소시킬 수 있습니다. 보스 환영을 <color=#f29e38ff>격파</color>하면 보스 환영과 모든 부위가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트가 회복되고 필살기가 활성화됩니다",
-            "<color=#f29e38ff>[피투성이 인랑]</color>이 아군 캐릭터를 대신해 전투 시, 피격된 적의 <color=#f29e38ff>지속 피해류 디버프 상태 수량</color>에 따라 추가로 <color=#f29e38ff>약점 속성을 무시하고 대상의 강인성을 감소시킵니다</color>. [피투성이 인랑]의 <color=#f29e38ff>일반 공격</color>은 모든 아군의 HP를 회복할 수 있습니다. <color=#f29e38ff>전투 스킬</color>은 여러 적을 명중하고 강인성을 대폭 감소시킬 수 있으며, <color=#f29e38ff>전투 스킬 포인트를 소모하지 않습니다</color>"
+            "아군이 [부하 HP] 상태에 빠질 시 가하는 피해와 약점 격파 효율이 대폭 감소합니다. HP를 우선으로 회복하여 해당 상태를 해제하세요",
+            "[연민의 긴 팔]에 약점 격파를 가하면 보스 환영의 강인성과 HP가 감소하며, 이때 보스 환영이 [죽음의 향기] 상태일 경우 추가로 아군의 HP를 회복할 수 있습니다"
           ],
           "PhaseList": [
             {
-              "Name": "1단계: 풍운을 호령한다",
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군을 [저주의 주문] 상태에 빠트린다",
-              "Answer": "대응 전략: [식심의 저주] 발동 시, 아군 중 딜러가 아닌 캐릭터를 스킬의 목표로 우선 지정하세요",
+              "Name": "1단계: 진퇴양난",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Answer": "대응 전략: [부하 HP] 상태의 아군을 우선적으로 회복시키세요",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "2단계: 건곤을 휩쓴다",
-              "Desc": "보스 환영이 [건곤을 삼키는 기세]를 발동하여 높은 피해와 디버프 효과를 가한다",
-              "Answer": "대응 전략: [건곤을 삼키는 기세] 발동 전에 가능한 모든 부위를 격파하세요",
+              "Name": "2단계: 죽음을 향해가는 삶",
+              "Desc": "보스 환영이 [더 많은 죽음을 원하는 죽음] 발동 시 [부하 HP] 상태의 아군에게 치명적인 피해를 가한다",
+              "Answer": "대응 전략: [더 많은 죽음을 원하는 죽음] 발동 전에 HP를 회복하여 모든 아군 유닛의 [부하 HP] 상태를 해제하세요",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420313,
+            "StageID": 420333,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 80,
-            "EliteGroup": 703,
+            "EliteGroup": 906,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19449,18 +19562,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401403
+                "Monster0": 100401403,
+                "Monster1": 100402603
               }
             ],
             "LevelLoseCondition": [
@@ -19470,17 +19584,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420303,
+            "StageID": 420323,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 80,
-            "EliteGroup": 703,
+            "EliteGroup": 898,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19499,18 +19614,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501203
+                "Monster0": 401403603
               }
             ],
             "LevelLoseCondition": [
@@ -19520,13 +19635,14 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
       },
       {
         "Id": 30124,
-        "Name": "천랑과 수장 • 난이도 <unbreak>04</unbreak>",
+        "Name": "어둠과 한풍•난이도 <unbreak>04</unbreak>",
         "Challenge": [
           {
             "Name": "#1점 획득",
@@ -19542,40 +19658,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401404,
-        "BossMonsterID2": 203302204,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401404,
+        "BossMonsterID2": 401403604,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 4,
@@ -19590,11 +19719,11 @@
               "Name": "견고한 수비",
               "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19603,43 +19732,51 @@
               "Child": []
             },
             {
-              "Name": "무차별적 몰살",
-              "Desc": "보스 환영이 [갈라진 땅, 흔적 없이 사라진 풀] 발동 시 다른 모든 늑대 병사를 처치한다",
+              "Name": "진지 이전",
+              "Desc": "게파드가 전투에 투입되고 보스 환영을 보호한다. 보스 환영은 자신의 약점 속성을 소환물에게 <color=#f29e38ff><u>이전</u></color>시킨다. 그러나 소환물이 처치되면 보스 환영 자신의 강인성 수치가 추가로 감소한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "이전",
+                  "Desc": "약점 속성을 목표에게 이전시킨다. 약점 속성은 목표가 처치되면 반환되며, 강인성을 추가로 감소시킨다",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "흉폭한 포식자",
-              "Desc": "보스 환영이 2단계 진입 후 [고독한 결전] 도중 턴마다 재행동할 수 있다",
+              "Name": "도주할 곳은 없다",
+              "Desc": "보스 환영의 소환물이 아군 유닛 1명을 표시하고, 보스 환영이 단일 공격 스킬을 발동한 후 표시된 아군 유닛에게 해당 스킬을 <color=#f29e38ff><u>추가 발동</u></color>한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "추가 발동",
+                  "Desc": "단일 공격 스킬 발동 후 목표를 재선택해 해당 스킬을 다시 사용한다",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "죽음에 이를 때까지",
-              "Desc": "보스 환영이 [고독한 결전] 진입 후 받는 피해가 추가로 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19647,41 +19784,42 @@
               ]
             },
             {
-              "Desc": "보스 환영이 [달의 포식자] 상태 진입 시 약점 보호가 해제된다. 아군은 가장 강한 캐릭터 한 명을 선택해 보스 환영과 [고독한 결전]을 펼쳐야 하며, [고독한 결전] 도중 선택된 캐릭터와 해당 캐릭터가 소환한 목표 외에 다른 아군은 퇴장 상태가 된다",
+              "Desc": "소환물이 필드에 있으면 보스 환영이 <color=#f29e38ff>자신의 약점 속성을 소환물에게 이전시킨다</color>",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "아군이 적 늑대 병사 처치 시 [피의 분출]을 획득한다. [고독한 결전]에 진입한 캐릭터와 해당 캐릭터가 소환한 목표는 [피의 분출] 스택 수에 따라 강화를 획득한다",
+              "Desc": "<color=#f29e38ff>소환물</color>이 고정한 목표에 따라 보스 환영이 단일 공격을 추가 발동하고, 일정 확률로 빙결 또는 속박 효과를 가한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "보스 환영이 아직 [달의 포식자] 상태에 진입하지 않았을 때 먼저 늑대 병사를 처치하여 아군에게 [피의 분출]을 제공하고 보스 환영이 빠르게 [달의 포식자] 상태에 진입하도록 하세요",
-            "보스 환영이 [달의 포식자] 상태에 진입하려 할 때, [고독한 결전]에 대비할 수 있도록 전력을 남겨두세요",
-            "[고독한 결전] 진행 시 선택한 아군 캐릭터에게 소환한 목표가 존재할 경우, 소환한 목표도 함께 [고독한 결전]에 진입합니다"
+            "보스 환영을 <color=#f29e38ff>격파</color>하면 해당 목표가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트를 회복하고 행동 게이지를 증가시킵니다",
+            "<color=#f29e38ff>소환물</color>을 우선적으로 처치하거나 격파하면 효과적으로 보스 환영을 약화시킬 수 있습니다"
           ],
           "PhaseList": [
             {
-              "Name": "1단계: 요동치는 풍뢰",
-              "Desc": "보스 환영이 [달의 포식자] 상태 진입 시 아군은 가장 강한 캐릭터 한 명을 선택해 보스 환영과 [고독한 결전]을 펼쳐야 한다",
-              "Answer": "대응 전략: 보스 환영이 [달의 포식자] 상태에 진입하기 전에 최대한 늑대 병사를 처치해 강화를 획득하세요",
+              "Name": "1단계: 매서운 바람의 환멸자",
+              "Desc": "보스 환영은 스킬을 사용하여 목표를 빙결시키고 피해를 가한다. 게파드는 단체 실드를 제공한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치하세요. 게파드가 전체 실드를 발동하면 최대한 빨리 격파하고 게파드를 처치하세요",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "2단계: 하늘과 달의 포식자",
-              "Desc": "보스 환영의 스킬은 늑대 병사에게 피해를 가하며, [달의 포식자] 상태 진입 시 추가로 강화를 획득한다",
-              "Answer": "대응 전략: 보스 환영이 행동하기 전에 늑대 병사를 처치해 늑대 병사가 보스 환영에게 처치되는 것을 저지하세요",
+              "Name": "2단계: 매서운 바람의 환멸자•허망의 어머니",
+              "Desc": "보스 환영이 계속해서 [창세의 마지막 노래]를 발동하여 강력한 전체 피해를 가하고, 스킬을 사용해 아군의 행동을 제한한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치한 후 빠르게 보스 환영의 약점을 격파하세요",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -19703,114 +19841,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "강철 같은 기개",
-              "Desc": "부위가 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. 보스 환영이 <color=#f29e38ff>약점 격파</color>되면 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "날카로운 이와 발톱",
-              "Desc": "보스 환영의 강인성이 <color=#f29e38ff><unbreak>#1[i]</unbreak></color>pt 증가한다",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "부패한 그루터기",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "들끓는 짐승의 피",
-              "Desc": "<color=#f29e38ff>[저주]</color> 상태의 지속 시간이 <color=#f29e38ff><unbreak>#1[i]</unbreak></color>턴 연장된다",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "강함을 부드러움으로",
+              "Desc": "[연민의 긴 팔]의 강인성 최대치가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "보스 환영과 모든 부위가 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Desc": "보스 환영과 소환물이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "보스 환영의 부위가 <color=#f29e38ff>약점 격파</color>되면 보스 환영의 강인성이 일정량 감소한다",
+              "Desc": "이번 전투에서 아군의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군 캐릭터가 <color=#f29e38ff>[저주의 주문] 상태에 빠진다</color>. [저주의 주문] 상태의 아군 캐릭터와 해당 캐릭터의 소환물이 퇴장한다. 동시에 [피투성이 인랑]을 소환하여 해당 퇴장 캐릭터를 대신해 전투를 계속하며, [피투성이 인랑]의 공격은 <color=#f29e38ff>강인성을 비교적 많이 감소시킨다</color>",
+              "Desc": "아군 HP가 감소하면 [깊은 죽음의 꿈] 상태의 보스 환영이 [빈사의 꿈방울]을 누적한다. [빈사의 꿈방울]이 최대치에 도달하면 보스 환영은 [죽음의 향기] 상태에 진입한다. 이때 보스 환영과 그 소환물의 스킬이 대폭 강화된다",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "보스 환영의 <color=#f29e38ff>부위</color>를 여러 번 격파하면 보스 환영의 강인성을 효과적으로 감소시킬 수 있습니다. 보스 환영을 <color=#f29e38ff>격파</color>하면 보스 환영과 모든 부위가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트가 회복되고 필살기가 활성화됩니다",
-            "<color=#f29e38ff>[피투성이 인랑]</color>이 아군 캐릭터를 대신해 전투 시, 피격된 적의 <color=#f29e38ff>지속 피해류 디버프 상태 수량</color>에 따라 추가로 <color=#f29e38ff>약점 속성을 무시하고 대상의 강인성을 감소시킵니다</color>. [피투성이 인랑]의 <color=#f29e38ff>일반 공격</color>은 모든 아군의 HP를 회복할 수 있습니다. <color=#f29e38ff>전투 스킬</color>은 여러 적을 명중하고 강인성을 대폭 감소시킬 수 있으며, <color=#f29e38ff>전투 스킬 포인트를 소모하지 않습니다</color>"
+            "아군이 [부하 HP] 상태에 빠질 시 가하는 피해와 약점 격파 효율이 대폭 감소합니다. HP를 우선으로 회복하여 해당 상태를 해제하세요",
+            "[연민의 긴 팔]에 약점 격파를 가하면 보스 환영의 강인성과 HP가 감소하며, 이때 보스 환영이 [죽음의 향기] 상태일 경우 추가로 아군의 HP를 회복할 수 있습니다"
           ],
           "PhaseList": [
             {
-              "Name": "1단계: 풍운을 호령한다",
-              "Desc": "보스 환영이 [식심의 저주]를 발동하여 아군을 [저주의 주문] 상태에 빠트린다",
-              "Answer": "대응 전략: [식심의 저주] 발동 시, 아군 중 딜러가 아닌 캐릭터를 스킬의 목표로 우선 지정하세요",
+              "Name": "1단계: 진퇴양난",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Answer": "대응 전략: [부하 HP] 상태의 아군을 우선적으로 회복시키세요",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "2단계: 건곤을 휩쓴다",
-              "Desc": "보스 환영이 [건곤을 삼키는 기세]를 발동하여 높은 피해와 디버프 효과를 가한다",
-              "Answer": "대응 전략: [건곤을 삼키는 기세] 발동 전에 가능한 모든 부위를 격파하세요",
+              "Name": "2단계: 죽음을 향해가는 삶",
+              "Desc": "보스 환영이 [더 많은 죽음을 원하는 죽음] 발동 시 [부하 HP] 상태의 아군에게 치명적인 피해를 가한다",
+              "Answer": "대응 전략: [더 많은 죽음을 원하는 죽음] 발동 전에 HP를 회복하여 모든 아군 유닛의 [부하 HP] 상태를 해제하세요",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420314,
+            "StageID": 420334,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 90,
-            "EliteGroup": 84,
+            "EliteGroup": 907,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19829,18 +19954,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401404
+                "Monster0": 100401404,
+                "Monster1": 100402604
               }
             ],
             "LevelLoseCondition": [
@@ -19850,17 +19976,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420304,
+            "StageID": 420324,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 90,
-            "EliteGroup": 704,
+            "EliteGroup": 899,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19879,18 +20006,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501204
+                "Monster0": 401403604
               }
             ],
             "LevelLoseCondition": [
@@ -19900,6 +20027,1632 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      }
+    ]
+  },
+  "3013": {
+    "Id": 3013,
+    "Name": "어둠과 한풍",
+    "Buff": {
+      "Name": "말법의 잔화",
+      "Desc": "<color=#f29e38ff>[견고한 수비]</color>를 보유한 적 유닛이 <color=#f29e38ff>약점 격파</color>될 시 모든 아군의 제어 상태를 해제하고 필살기를 활성화하며 HP를 회복시킨다.\\n모든 적이 받는 기억 정령 스킬 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 전투 스킬 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+      "Param": [
+        0.10000000009313226,
+        0.3000000002793968
+      ]
+    },
+    "BuffList1": [
+      {
+        "Name": "전투 준비",
+        "Desc": "모든 아군이 가하는 물리 속성 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 모든 적의 물리 속성 저항이 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 감소한다",
+        "Param": [
+          0.5000000004656613,
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "끈질긴 넝쿨",
+        "Desc": "모든 아군이 일반 공격 또는 전투 스킬을 발동해 약점 격파 상태의 적을 공격하면, 대상이 현재 받는 모든 지속 피해가 즉시 기존 피해의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 피해를 생성한다",
+        "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "뼈저린 냉기",
+        "Desc": "모든 적이 받는 격파 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 적의 약점을 격파하면 모든 아군의 속도가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다, 지속 시간: <color=#f29e38ff><unbreak>#3[i]</unbreak></color>턴",
+        "Param": [
+          0.10000000009313226,
+          0.20000000018626451,
+          2
+        ]
+      }
+    ],
+    "BuffList2": [
+      {
+        "Name": "모든 것을 정복하는 힘",
+        "Desc": "기억 정령이 피해를 가할 시 목표의 방어력을 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 무시한다",
+        "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "생기발랄",
+        "Desc": "모든 아군이 가하는 전투 스킬 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 턴 시작 시 현재 HP 백분율이 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 이하일 경우, HP 최대치의 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>만큼 HP를 회복한다",
+        "Param": [
+          0.3000000002793968,
+          0.010000000009313226,
+          0.1500000001396984
+        ]
+      },
+      {
+        "Name": "파죽지세",
+        "Desc": "캐릭터가 필살기 발동 시 자신의 약점 격파 효율이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고 치명타 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다, 지속 시간: <color=#f29e38ff><unbreak>#3[i]</unbreak></color>턴",
+        "Param": [
+          1,
+          0.40000000037252903,
+          3
+        ]
+      }
+    ],
+    "BeginTime": "2025-09-22 04:00:00",
+    "EndTime": "2025-12-22 04:00:00",
+    "Level": [
+      {
+        "Id": 30131,
+        "Name": "어둠과 한풍•난이도 <unbreak>01</unbreak>",
+        "Challenge": [
+          {
+            "Name": "#1점 획득",
+            "Param": 4000
+          },
+          {
+            "Name": "#1점 획득",
+            "Param": 5200
+          },
+          {
+            "Name": "#1점 획득",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401401,
+        "BossMonsterID2": 401403601,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 1,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "견고한 수비",
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "진지 이전",
+              "Desc": "게파드가 전투에 투입되고 보스 환영을 보호한다. 보스 환영은 자신의 약점 속성을 소환물에게 <color=#f29e38ff><u>이전</u></color>시킨다. 그러나 소환물이 처치되면 보스 환영 자신의 강인성 수치가 추가로 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "이전",
+                  "Desc": "약점 속성을 목표에게 이전시킨다. 약점 속성은 목표가 처치되면 반환되며, 강인성을 추가로 감소시킨다",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "도주할 곳은 없다",
+              "Desc": "보스 환영의 소환물이 아군 유닛 1명을 표시하고, 보스 환영이 단일 공격 스킬을 발동한 후 표시된 아군 유닛에게 해당 스킬을 <color=#f29e38ff><u>추가 발동</u></color>한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "추가 발동",
+                  "Desc": "단일 공격 스킬 발동 후 목표를 재선택해 해당 스킬을 다시 사용한다",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "소환물이 필드에 있으면 보스 환영이 <color=#f29e38ff>자신의 약점 속성을 소환물에게 이전시킨다</color>",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "보스 환영을 <color=#f29e38ff>격파</color>하면 해당 목표가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트를 회복하고 행동 게이지를 증가시킵니다",
+            "<color=#f29e38ff>소환물</color>을 우선적으로 처치하거나 격파하면 효과적으로 보스 환영을 약화시킬 수 있습니다"
+          ],
+          "PhaseList": [
+            {
+              "Name": "1단계: 매서운 바람의 환멸자",
+              "Desc": "보스 환영은 스킬을 사용하여 목표를 빙결시키고 피해를 가한다. 게파드는 단체 실드를 제공한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치하세요. 게파드가 전체 실드를 발동하면 최대한 빨리 격파하고 게파드를 처치하세요",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "2단계: 매서운 바람의 환멸자•허망의 어머니",
+              "Desc": "보스 환영이 계속해서 [창세의 마지막 노래]를 발동하여 강력한 전체 피해를 가하고, 스킬을 사용해 아군의 행동을 제한한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치한 후 빠르게 보스 환영의 약점을 격파하세요",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 1,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "견고한 수비",
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "부패한 그루터기",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "강함을 부드러움으로",
+              "Desc": "[연민의 긴 팔]의 강인성 최대치가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "보스 환영과 소환물이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "이번 전투에서 아군의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "아군 HP가 감소하면 [깊은 죽음의 꿈] 상태의 보스 환영이 [빈사의 꿈방울]을 누적한다. [빈사의 꿈방울]이 최대치에 도달하면 보스 환영은 [죽음의 향기] 상태에 진입한다. 이때 보스 환영과 그 소환물의 스킬이 대폭 강화된다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "아군이 [부하 HP] 상태에 빠질 시 가하는 피해와 약점 격파 효율이 대폭 감소합니다. HP를 우선으로 회복하여 해당 상태를 해제하세요",
+            "[연민의 긴 팔]에 약점 격파를 가하면 보스 환영의 강인성과 HP가 감소하며, 이때 보스 환영이 [죽음의 향기] 상태일 경우 추가로 아군의 HP를 회복할 수 있습니다"
+          ],
+          "PhaseList": [
+            {
+              "Name": "1단계: 진퇴양난",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Answer": "대응 전략: [부하 HP] 상태의 아군을 우선적으로 회복시키세요",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "2단계: 죽음을 향해가는 삶",
+              "Desc": "보스 환영이 [더 많은 죽음을 원하는 죽음] 발동 시 [부하 HP] 상태의 아군에게 치명적인 피해를 가한다",
+              "Answer": "대응 전략: [더 많은 죽음을 원하는 죽음] 발동 전에 HP를 회복하여 모든 아군 유닛의 [부하 HP] 상태를 해제하세요",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420331,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 60,
+            "EliteGroup": 904,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401401,
+                "Monster1": 100402601
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420321,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 60,
+            "EliteGroup": 896,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403601
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      },
+      {
+        "Id": 30132,
+        "Name": "어둠과 한풍•난이도 <unbreak>02</unbreak>",
+        "Challenge": [
+          {
+            "Name": "#1점 획득",
+            "Param": 4000
+          },
+          {
+            "Name": "#1점 획득",
+            "Param": 5200
+          },
+          {
+            "Name": "#1점 획득",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401402,
+        "BossMonsterID2": 401403602,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 2,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "견고한 수비",
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "진지 이전",
+              "Desc": "게파드가 전투에 투입되고 보스 환영을 보호한다. 보스 환영은 자신의 약점 속성을 소환물에게 <color=#f29e38ff><u>이전</u></color>시킨다. 그러나 소환물이 처치되면 보스 환영 자신의 강인성 수치가 추가로 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "이전",
+                  "Desc": "약점 속성을 목표에게 이전시킨다. 약점 속성은 목표가 처치되면 반환되며, 강인성을 추가로 감소시킨다",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "도주할 곳은 없다",
+              "Desc": "보스 환영의 소환물이 아군 유닛 1명을 표시하고, 보스 환영이 단일 공격 스킬을 발동한 후 표시된 아군 유닛에게 해당 스킬을 <color=#f29e38ff><u>추가 발동</u></color>한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "추가 발동",
+                  "Desc": "단일 공격 스킬 발동 후 목표를 재선택해 해당 스킬을 다시 사용한다",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "소환물이 필드에 있으면 보스 환영이 <color=#f29e38ff>자신의 약점 속성을 소환물에게 이전시킨다</color>",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "보스 환영을 <color=#f29e38ff>격파</color>하면 해당 목표가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트를 회복하고 행동 게이지를 증가시킵니다",
+            "<color=#f29e38ff>소환물</color>을 우선적으로 처치하거나 격파하면 효과적으로 보스 환영을 약화시킬 수 있습니다"
+          ],
+          "PhaseList": [
+            {
+              "Name": "1단계: 매서운 바람의 환멸자",
+              "Desc": "보스 환영은 스킬을 사용하여 목표를 빙결시키고 피해를 가한다. 게파드는 단체 실드를 제공한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치하세요. 게파드가 전체 실드를 발동하면 최대한 빨리 격파하고 게파드를 처치하세요",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "2단계: 매서운 바람의 환멸자•허망의 어머니",
+              "Desc": "보스 환영이 계속해서 [창세의 마지막 노래]를 발동하여 강력한 전체 피해를 가하고, 스킬을 사용해 아군의 행동을 제한한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치한 후 빠르게 보스 환영의 약점을 격파하세요",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 2,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "견고한 수비",
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "부패한 그루터기",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "강함을 부드러움으로",
+              "Desc": "[연민의 긴 팔]의 강인성 최대치가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "보스 환영과 소환물이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "이번 전투에서 아군의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "아군 HP가 감소하면 [깊은 죽음의 꿈] 상태의 보스 환영이 [빈사의 꿈방울]을 누적한다. [빈사의 꿈방울]이 최대치에 도달하면 보스 환영은 [죽음의 향기] 상태에 진입한다. 이때 보스 환영과 그 소환물의 스킬이 대폭 강화된다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "아군이 [부하 HP] 상태에 빠질 시 가하는 피해와 약점 격파 효율이 대폭 감소합니다. HP를 우선으로 회복하여 해당 상태를 해제하세요",
+            "[연민의 긴 팔]에 약점 격파를 가하면 보스 환영의 강인성과 HP가 감소하며, 이때 보스 환영이 [죽음의 향기] 상태일 경우 추가로 아군의 HP를 회복할 수 있습니다"
+          ],
+          "PhaseList": [
+            {
+              "Name": "1단계: 진퇴양난",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Answer": "대응 전략: [부하 HP] 상태의 아군을 우선적으로 회복시키세요",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "2단계: 죽음을 향해가는 삶",
+              "Desc": "보스 환영이 [더 많은 죽음을 원하는 죽음] 발동 시 [부하 HP] 상태의 아군에게 치명적인 피해를 가한다",
+              "Answer": "대응 전략: [더 많은 죽음을 원하는 죽음] 발동 전에 HP를 회복하여 모든 아군 유닛의 [부하 HP] 상태를 해제하세요",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420332,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 70,
+            "EliteGroup": 905,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401402,
+                "Monster1": 100402602
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420322,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 70,
+            "EliteGroup": 897,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403602
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      },
+      {
+        "Id": 30133,
+        "Name": "어둠과 한풍•난이도 <unbreak>03</unbreak>",
+        "Challenge": [
+          {
+            "Name": "#1점 획득",
+            "Param": 4000
+          },
+          {
+            "Name": "#1점 획득",
+            "Param": 5200
+          },
+          {
+            "Name": "#1점 획득",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401403,
+        "BossMonsterID2": 401403603,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 3,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "견고한 수비",
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "진지 이전",
+              "Desc": "게파드가 전투에 투입되고 보스 환영을 보호한다. 보스 환영은 자신의 약점 속성을 소환물에게 <color=#f29e38ff><u>이전</u></color>시킨다. 그러나 소환물이 처치되면 보스 환영 자신의 강인성 수치가 추가로 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "이전",
+                  "Desc": "약점 속성을 목표에게 이전시킨다. 약점 속성은 목표가 처치되면 반환되며, 강인성을 추가로 감소시킨다",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "도주할 곳은 없다",
+              "Desc": "보스 환영의 소환물이 아군 유닛 1명을 표시하고, 보스 환영이 단일 공격 스킬을 발동한 후 표시된 아군 유닛에게 해당 스킬을 <color=#f29e38ff><u>추가 발동</u></color>한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "추가 발동",
+                  "Desc": "단일 공격 스킬 발동 후 목표를 재선택해 해당 스킬을 다시 사용한다",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "소환물이 필드에 있으면 보스 환영이 <color=#f29e38ff>자신의 약점 속성을 소환물에게 이전시킨다</color>",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "<color=#f29e38ff>소환물</color>이 고정한 목표에 따라 보스 환영이 단일 공격을 추가 발동하고, 일정 확률로 빙결 또는 속박 효과를 가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "보스 환영을 <color=#f29e38ff>격파</color>하면 해당 목표가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트를 회복하고 행동 게이지를 증가시킵니다",
+            "<color=#f29e38ff>소환물</color>을 우선적으로 처치하거나 격파하면 효과적으로 보스 환영을 약화시킬 수 있습니다"
+          ],
+          "PhaseList": [
+            {
+              "Name": "1단계: 매서운 바람의 환멸자",
+              "Desc": "보스 환영은 스킬을 사용하여 목표를 빙결시키고 피해를 가한다. 게파드는 단체 실드를 제공한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치하세요. 게파드가 전체 실드를 발동하면 최대한 빨리 격파하고 게파드를 처치하세요",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "2단계: 매서운 바람의 환멸자•허망의 어머니",
+              "Desc": "보스 환영이 계속해서 [창세의 마지막 노래]를 발동하여 강력한 전체 피해를 가하고, 스킬을 사용해 아군의 행동을 제한한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치한 후 빠르게 보스 환영의 약점을 격파하세요",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 3,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "견고한 수비",
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "부패한 그루터기",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "강함을 부드러움으로",
+              "Desc": "[연민의 긴 팔]의 강인성 최대치가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "보스 환영과 소환물이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "이번 전투에서 아군의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "아군 HP가 감소하면 [깊은 죽음의 꿈] 상태의 보스 환영이 [빈사의 꿈방울]을 누적한다. [빈사의 꿈방울]이 최대치에 도달하면 보스 환영은 [죽음의 향기] 상태에 진입한다. 이때 보스 환영과 그 소환물의 스킬이 대폭 강화된다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "아군이 [부하 HP] 상태에 빠질 시 가하는 피해와 약점 격파 효율이 대폭 감소합니다. HP를 우선으로 회복하여 해당 상태를 해제하세요",
+            "[연민의 긴 팔]에 약점 격파를 가하면 보스 환영의 강인성과 HP가 감소하며, 이때 보스 환영이 [죽음의 향기] 상태일 경우 추가로 아군의 HP를 회복할 수 있습니다"
+          ],
+          "PhaseList": [
+            {
+              "Name": "1단계: 진퇴양난",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Answer": "대응 전략: [부하 HP] 상태의 아군을 우선적으로 회복시키세요",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "2단계: 죽음을 향해가는 삶",
+              "Desc": "보스 환영이 [더 많은 죽음을 원하는 죽음] 발동 시 [부하 HP] 상태의 아군에게 치명적인 피해를 가한다",
+              "Answer": "대응 전략: [더 많은 죽음을 원하는 죽음] 발동 전에 HP를 회복하여 모든 아군 유닛의 [부하 HP] 상태를 해제하세요",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420333,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 80,
+            "EliteGroup": 906,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401403,
+                "Monster1": 100402603
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420323,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 80,
+            "EliteGroup": 898,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403603
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      },
+      {
+        "Id": 30134,
+        "Name": "어둠과 한풍•난이도 <unbreak>04</unbreak>",
+        "Challenge": [
+          {
+            "Name": "#1점 획득",
+            "Param": 4000
+          },
+          {
+            "Name": "#1점 획득",
+            "Param": 5200
+          },
+          {
+            "Name": "#1점 획득",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401404,
+        "BossMonsterID2": 401403604,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 4,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "견고한 수비",
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "진지 이전",
+              "Desc": "게파드가 전투에 투입되고 보스 환영을 보호한다. 보스 환영은 자신의 약점 속성을 소환물에게 <color=#f29e38ff><u>이전</u></color>시킨다. 그러나 소환물이 처치되면 보스 환영 자신의 강인성 수치가 추가로 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "이전",
+                  "Desc": "약점 속성을 목표에게 이전시킨다. 약점 속성은 목표가 처치되면 반환되며, 강인성을 추가로 감소시킨다",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "도주할 곳은 없다",
+              "Desc": "보스 환영의 소환물이 아군 유닛 1명을 표시하고, 보스 환영이 단일 공격 스킬을 발동한 후 표시된 아군 유닛에게 해당 스킬을 <color=#f29e38ff><u>추가 발동</u></color>한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "추가 발동",
+                  "Desc": "단일 공격 스킬 발동 후 목표를 재선택해 해당 스킬을 다시 사용한다",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "소환물이 필드에 있으면 보스 환영이 <color=#f29e38ff>자신의 약점 속성을 소환물에게 이전시킨다</color>",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "<color=#f29e38ff>소환물</color>이 고정한 목표에 따라 보스 환영이 단일 공격을 추가 발동하고, 일정 확률로 빙결 또는 속박 효과를 가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "보스 환영을 <color=#f29e38ff>격파</color>하면 해당 목표가 받는 피해가 대폭 증가하며, 모든 아군의 전투 스킬 포인트를 회복하고 행동 게이지를 증가시킵니다",
+            "<color=#f29e38ff>소환물</color>을 우선적으로 처치하거나 격파하면 효과적으로 보스 환영을 약화시킬 수 있습니다"
+          ],
+          "PhaseList": [
+            {
+              "Name": "1단계: 매서운 바람의 환멸자",
+              "Desc": "보스 환영은 스킬을 사용하여 목표를 빙결시키고 피해를 가한다. 게파드는 단체 실드를 제공한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치하세요. 게파드가 전체 실드를 발동하면 최대한 빨리 격파하고 게파드를 처치하세요",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "2단계: 매서운 바람의 환멸자•허망의 어머니",
+              "Desc": "보스 환영이 계속해서 [창세의 마지막 노래]를 발동하여 강력한 전체 피해를 가하고, 스킬을 사용해 아군의 행동을 제한한다",
+              "Answer": "대응 전략: 소환물을 우선적으로 처치한 후 빠르게 보스 환영의 약점을 격파하세요",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 4,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "견고한 수비",
+              "Desc": "보스 환영이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하고 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "부패한 그루터기",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "강함을 부드러움으로",
+              "Desc": "[연민의 긴 팔]의 강인성 최대치가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "강인한 의지",
+              "Desc": "모든 적이 받는 피해가 감소한다. 그러나 <color=#f29e38ff>약점 속성</color>을 1개 보유할 때마다 받는 피해가 증가한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "보스 환영과 소환물이 받는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 감소한다. <color=#f29e38ff>약점 격파</color> 후 행동 게이지가 추가로 감소하며, 받는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "이번 전투에서 아군의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "아군 HP가 감소하면 [깊은 죽음의 꿈] 상태의 보스 환영이 [빈사의 꿈방울]을 누적한다. [빈사의 꿈방울]이 최대치에 도달하면 보스 환영은 [죽음의 향기] 상태에 진입한다. 이때 보스 환영과 그 소환물의 스킬이 대폭 강화된다",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "아군이 [부하 HP] 상태에 빠질 시 가하는 피해와 약점 격파 효율이 대폭 감소합니다. HP를 우선으로 회복하여 해당 상태를 해제하세요",
+            "[연민의 긴 팔]에 약점 격파를 가하면 보스 환영의 강인성과 HP가 감소하며, 이때 보스 환영이 [죽음의 향기] 상태일 경우 추가로 아군의 HP를 회복할 수 있습니다"
+          ],
+          "PhaseList": [
+            {
+              "Name": "1단계: 진퇴양난",
+              "Desc": "이번 전투에서 아군 유닛의 HP가 최대 1pt까지 감소하며, 동시에 받는 피해 중 현재 HP를 초과하는 부분이 [부하 HP]로 전환된다. [부하 HP] 상태인 아군 유닛의 가하는 피해와 약점 격파 효율이 대폭 감소한다",
+              "Answer": "대응 전략: [부하 HP] 상태의 아군을 우선적으로 회복시키세요",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "2단계: 죽음을 향해가는 삶",
+              "Desc": "보스 환영이 [더 많은 죽음을 원하는 죽음] 발동 시 [부하 HP] 상태의 아군에게 치명적인 피해를 가한다",
+              "Answer": "대응 전략: [더 많은 죽음을 원하는 죽음] 발동 전에 HP를 회복하여 모든 아군 유닛의 [부하 HP] 상태를 해제하세요",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420334,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 90,
+            "EliteGroup": 907,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401404,
+                "Monster1": 100402604
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420324,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 90,
+            "EliteGroup": 899,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403604
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]

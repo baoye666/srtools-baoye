@@ -410,6 +410,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -460,6 +461,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -806,6 +808,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -856,6 +859,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -1214,6 +1218,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -1264,6 +1269,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -1622,6 +1628,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -1672,6 +1679,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -2080,6 +2088,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -2130,6 +2139,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -2471,6 +2481,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -2521,6 +2532,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -2862,6 +2874,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -2912,6 +2925,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -3253,6 +3267,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -3303,6 +3318,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -3740,6 +3756,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -3790,6 +3807,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -4160,6 +4178,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -4210,6 +4229,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -4580,6 +4600,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -4630,6 +4651,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -5000,6 +5022,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -5050,6 +5073,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -5478,6 +5502,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -5533,6 +5558,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -5896,6 +5922,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -5951,6 +5978,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -6321,6 +6349,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -6376,6 +6405,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -6746,6 +6776,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -6801,6 +6832,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -7209,6 +7241,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -7254,6 +7287,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -7595,6 +7629,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -7640,6 +7675,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -7987,6 +8023,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -8032,6 +8069,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -8379,6 +8417,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -8424,6 +8463,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -8859,6 +8899,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -8909,6 +8950,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -9278,6 +9320,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -9328,6 +9371,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -9697,6 +9741,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -9747,6 +9792,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -10116,6 +10162,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -10166,6 +10213,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -10587,6 +10635,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -10632,6 +10681,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -10984,6 +11034,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -11029,6 +11080,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -11381,6 +11433,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -11426,6 +11479,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -11778,6 +11832,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -11823,6 +11878,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -12237,6 +12293,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -12287,6 +12344,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -12634,6 +12692,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -12684,6 +12743,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -13031,6 +13091,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -13081,6 +13142,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -13428,6 +13490,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -13478,6 +13541,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -13894,6 +13958,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -13944,6 +14009,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -14292,6 +14358,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -14342,6 +14409,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -14696,6 +14764,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -14746,6 +14815,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -15100,6 +15170,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -15150,6 +15221,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -15185,7 +15257,7 @@
       },
       {
         "Name": "腐骨の疽",
-        "Desc": "味方が敵に持続ダメージを与えた後、EPを<color=#f29e38ff><unbreak>#1[i]</unbreak></color>回復する。味方全体の持続ダメージは敵の全属性耐性を<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>無視する。",
+        "Desc": "味方が敵に持続ダメージを与えた後、EPを<color=#f29e38ff><unbreak>#1[i]</unbreak></color>回復する。味方全体が与える持続ダメージは敵の全属性耐性を<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>無視する。",
         "Param": [
           6,
           0.3000000002793968
@@ -15315,22 +15387,22 @@
               "Child": [
                 {
                   "Name": "枷鎖崩壊",
-                  "Desc": "「瀕死の嗚咽」と「必要な苦難」を交互に発動する。「瀕死の嗚咽」は「壊れた容器」を召喚してチャージ状態に入る。「必要な苦難」は強力な攻撃を発動する。「厄災の力」の層数は、強力な攻撃の段数を増やす。「壊れた容器」を倒すことで、靭性と「厄災の力」の層数を削ることができる。第二段階では、「沈黙の悲嘆」と「捨つることに涙せず」を発動し、「厄災の力」の層数がアップする。",
+                  "Desc": "「最期の嗚咽」と「必要な苦難」を交互に発動する。「最期の嗚咽」は「壊れた容器」を召喚してチャージ状態に入る。「必要な苦難」は強力な攻撃を発動する。「災厄の力」の層数は、強力な攻撃の段数を増やす。「壊れた容器」を倒すことで、靭性と「災厄の力」の層数を削ることができる。第二段階では、「沈黙の悲嘆」と「捨つることに涙せず」を発動し、「災厄の力」の層数がアップする。",
                   "Param": []
                 }
               ]
             },
             {
               "Name": "黒霧拡散",
-              "Desc": "「完全な容器」を倒しても、ボス幻影の靭性を削らない。",
+              "Desc": "「完璧な器」を倒しても、ボス幻影の靭性を削らない。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "容器強化",
-              "Desc": "すべての「壊れた容器」と「完全な容器」の最大HPがアップする。",
+              "Name": "器の強化",
+              "Desc": "すべての「壊れた容器」と「完璧な器」の最大HPがアップする。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -15366,14 +15438,14 @@
             }
           ],
           "TextGuideList": [
-            "ボス幻影の「厄災の力」がクリアされる前に、召喚物を倒すことで、ボス幻影の強力なスキルを弱体化させよう。",
-            "「完全な容器」を優先的に倒すと、追加ターンとバフを獲得でき、ボス幻影の「厄災の力」へのチャージを阻止できる。"
+            "ボス幻影の「災厄の力」がクリアされる前に、召喚物を倒すことで、ボス幻影の強力なスキルを弱体化させよう。",
+            "「完璧な器」を優先的に倒すと、追加ターンとバフを獲得でき、ボス幻影の「災厄の力」へのチャージを阻止できる。"
           ],
           "PhaseList": [
             {
               "Name": "末日の岐路に立つフレイムスティーラー",
-              "Desc": "幻影ボスが1層目の靭性を失った後、もしくは一定回数の行動を行った後、「枷鎖崩壊」状態に入る。すると、攻撃パターンが変わり、繰り返し召喚できる「壊れた容器」を召喚し始める。",
-              "Answer": "対処法：ボス幻影が強力なスキルを発動する前に、なるべく多くの「壊れた容器」を倒して、「厄災の力」の層数を減らし、「完全な容器」を優先的に倒そう。",
+              "Desc": "幻影ボスが1層目の靭性を失った後、もしくは一定回数の行動を行った後、「枷鎖崩壊」状態に入る。この状態中、ボスの攻撃パターンが変わり、繰り返し召喚できる「壊れた容器」を召喚し始める。",
+              "Answer": "対処法：ボス幻影が強力なスキルを発動する前に、なるべく多くの「壊れた容器」を倒して、「災厄の力」の層数を減らし、「完璧な器」を優先的に倒そう。",
               "Difficulty": 1,
               "SkillList": [
                 101111,
@@ -15543,6 +15615,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -15593,6 +15666,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -15693,22 +15767,22 @@
               "Child": [
                 {
                   "Name": "枷鎖崩壊",
-                  "Desc": "「瀕死の嗚咽」と「必要な苦難」を交互に発動する。「瀕死の嗚咽」は「壊れた容器」を召喚してチャージ状態に入る。「必要な苦難」は強力な攻撃を発動する。「厄災の力」の層数は、強力な攻撃の段数を増やす。「壊れた容器」を倒すことで、靭性と「厄災の力」の層数を削ることができる。第二段階では、「沈黙の悲嘆」と「捨つることに涙せず」を発動し、「厄災の力」の層数がアップする。",
+                  "Desc": "「最期の嗚咽」と「必要な苦難」を交互に発動する。「最期の嗚咽」は「壊れた容器」を召喚してチャージ状態に入る。「必要な苦難」は強力な攻撃を発動する。「災厄の力」の層数は、強力な攻撃の段数を増やす。「壊れた容器」を倒すことで、靭性と「災厄の力」の層数を削ることができる。第二段階では、「沈黙の悲嘆」と「捨つることに涙せず」を発動し、「災厄の力」の層数がアップする。",
                   "Param": []
                 }
               ]
             },
             {
               "Name": "黒霧拡散",
-              "Desc": "「完全な容器」を倒しても、ボス幻影の靭性を削らない。",
+              "Desc": "「完璧な器」を倒しても、ボス幻影の靭性を削らない。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "容器強化",
-              "Desc": "すべての「壊れた容器」と「完全な容器」の最大HPがアップする。",
+              "Name": "器の強化",
+              "Desc": "すべての「壊れた容器」と「完璧な器」の最大HPがアップする。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -15744,14 +15818,14 @@
             }
           ],
           "TextGuideList": [
-            "ボス幻影の「厄災の力」がクリアされる前に、召喚物を倒すことで、ボス幻影の強力なスキルを弱体化させよう。",
-            "「完全な容器」を優先的に倒すと、追加ターンとバフを獲得でき、ボス幻影の「厄災の力」へのチャージを阻止できる。"
+            "ボス幻影の「災厄の力」がクリアされる前に、召喚物を倒すことで、ボス幻影の強力なスキルを弱体化させよう。",
+            "「完璧な器」を優先的に倒すと、追加ターンとバフを獲得でき、ボス幻影の「災厄の力」へのチャージを阻止できる。"
           ],
           "PhaseList": [
             {
               "Name": "末日の岐路に立つフレイムスティーラー",
-              "Desc": "幻影ボスが1層目の靭性を失った後、もしくは一定回数の行動を行った後、「枷鎖崩壊」状態に入る。すると、攻撃パターンが変わり、繰り返し召喚できる「壊れた容器」を召喚し始める。",
-              "Answer": "対処法：ボス幻影が強力なスキルを発動する前に、なるべく多くの「壊れた容器」を倒して、「厄災の力」の層数を減らし、「完全な容器」を優先的に倒そう。",
+              "Desc": "幻影ボスが1層目の靭性を失った後、もしくは一定回数の行動を行った後、「枷鎖崩壊」状態に入る。この状態中、ボスの攻撃パターンが変わり、繰り返し召喚できる「壊れた容器」を召喚し始める。",
+              "Answer": "対処法：ボス幻影が強力なスキルを発動する前に、なるべく多くの「壊れた容器」を倒して、「災厄の力」の層数を減らし、「完璧な器」を優先的に倒そう。",
               "Difficulty": 1,
               "SkillList": [
                 101111,
@@ -15921,6 +15995,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -15971,6 +16046,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -16071,22 +16147,22 @@
               "Child": [
                 {
                   "Name": "枷鎖崩壊",
-                  "Desc": "「瀕死の嗚咽」と「必要な苦難」を交互に発動する。「瀕死の嗚咽」は「壊れた容器」を召喚してチャージ状態に入る。「必要な苦難」は強力な攻撃を発動する。「厄災の力」の層数は、強力な攻撃の段数を増やす。「壊れた容器」を倒すことで、靭性と「厄災の力」の層数を削ることができる。第二段階では、「沈黙の悲嘆」と「捨つることに涙せず」を発動し、「厄災の力」の層数がアップする。",
+                  "Desc": "「最期の嗚咽」と「必要な苦難」を交互に発動する。「最期の嗚咽」は「壊れた容器」を召喚してチャージ状態に入る。「必要な苦難」は強力な攻撃を発動する。「災厄の力」の層数は、強力な攻撃の段数を増やす。「壊れた容器」を倒すことで、靭性と「災厄の力」の層数を削ることができる。第二段階では、「沈黙の悲嘆」と「捨つることに涙せず」を発動し、「災厄の力」の層数がアップする。",
                   "Param": []
                 }
               ]
             },
             {
               "Name": "黒霧拡散",
-              "Desc": "「完全な容器」を倒しても、ボス幻影の靭性を削らない。",
+              "Desc": "「完璧な器」を倒しても、ボス幻影の靭性を削らない。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "容器強化",
-              "Desc": "すべての「壊れた容器」と「完全な容器」の最大HPがアップする。",
+              "Name": "器の強化",
+              "Desc": "すべての「壊れた容器」と「完璧な器」の最大HPがアップする。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -16122,14 +16198,14 @@
             }
           ],
           "TextGuideList": [
-            "ボス幻影の「厄災の力」がクリアされる前に、召喚物を倒すことで、ボス幻影の強力なスキルを弱体化させよう。",
-            "「完全な容器」を優先的に倒すと、追加ターンとバフを獲得でき、ボス幻影の「厄災の力」へのチャージを阻止できる。"
+            "ボス幻影の「災厄の力」がクリアされる前に、召喚物を倒すことで、ボス幻影の強力なスキルを弱体化させよう。",
+            "「完璧な器」を優先的に倒すと、追加ターンとバフを獲得でき、ボス幻影の「災厄の力」へのチャージを阻止できる。"
           ],
           "PhaseList": [
             {
               "Name": "末日の岐路に立つフレイムスティーラー",
-              "Desc": "幻影ボスが1層目の靭性を失った後、もしくは一定回数の行動を行った後、「枷鎖崩壊」状態に入る。すると、攻撃パターンが変わり、繰り返し召喚できる「壊れた容器」を召喚し始める。",
-              "Answer": "対処法：ボス幻影が強力なスキルを発動する前に、なるべく多くの「壊れた容器」を倒して、「厄災の力」の層数を減らし、「完全な容器」を優先的に倒そう。",
+              "Desc": "幻影ボスが1層目の靭性を失った後、もしくは一定回数の行動を行った後、「枷鎖崩壊」状態に入る。この状態中、ボスの攻撃パターンが変わり、繰り返し召喚できる「壊れた容器」を召喚し始める。",
+              "Answer": "対処法：ボス幻影が強力なスキルを発動する前に、なるべく多くの「壊れた容器」を倒して、「災厄の力」の層数を減らし、「完璧な器」を優先的に倒そう。",
               "Difficulty": 1,
               "SkillList": [
                 101111,
@@ -16299,6 +16375,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -16349,6 +16426,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -16449,22 +16527,22 @@
               "Child": [
                 {
                   "Name": "枷鎖崩壊",
-                  "Desc": "「瀕死の嗚咽」と「必要な苦難」を交互に発動する。「瀕死の嗚咽」は「壊れた容器」を召喚してチャージ状態に入る。「必要な苦難」は強力な攻撃を発動する。「厄災の力」の層数は、強力な攻撃の段数を増やす。「壊れた容器」を倒すことで、靭性と「厄災の力」の層数を削ることができる。第二段階では、「沈黙の悲嘆」と「捨つることに涙せず」を発動し、「厄災の力」の層数がアップする。",
+                  "Desc": "「最期の嗚咽」と「必要な苦難」を交互に発動する。「最期の嗚咽」は「壊れた容器」を召喚してチャージ状態に入る。「必要な苦難」は強力な攻撃を発動する。「災厄の力」の層数は、強力な攻撃の段数を増やす。「壊れた容器」を倒すことで、靭性と「災厄の力」の層数を削ることができる。第二段階では、「沈黙の悲嘆」と「捨つることに涙せず」を発動し、「災厄の力」の層数がアップする。",
                   "Param": []
                 }
               ]
             },
             {
               "Name": "黒霧拡散",
-              "Desc": "「完全な容器」を倒しても、ボス幻影の靭性を削らない。",
+              "Desc": "「完璧な器」を倒しても、ボス幻影の靭性を削らない。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "容器強化",
-              "Desc": "すべての「壊れた容器」と「完全な容器」の最大HPがアップする。",
+              "Name": "器の強化",
+              "Desc": "すべての「壊れた容器」と「完璧な器」の最大HPがアップする。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
@@ -16500,14 +16578,14 @@
             }
           ],
           "TextGuideList": [
-            "ボス幻影の「厄災の力」がクリアされる前に、召喚物を倒すことで、ボス幻影の強力なスキルを弱体化させよう。",
-            "「完全な容器」を優先的に倒すと、追加ターンとバフを獲得でき、ボス幻影の「厄災の力」へのチャージを阻止できる。"
+            "ボス幻影の「災厄の力」がクリアされる前に、召喚物を倒すことで、ボス幻影の強力なスキルを弱体化させよう。",
+            "「完璧な器」を優先的に倒すと、追加ターンとバフを獲得でき、ボス幻影の「災厄の力」へのチャージを阻止できる。"
           ],
           "PhaseList": [
             {
               "Name": "末日の岐路に立つフレイムスティーラー",
-              "Desc": "幻影ボスが1層目の靭性を失った後、もしくは一定回数の行動を行った後、「枷鎖崩壊」状態に入る。すると、攻撃パターンが変わり、繰り返し召喚できる「壊れた容器」を召喚し始める。",
-              "Answer": "対処法：ボス幻影が強力なスキルを発動する前に、なるべく多くの「壊れた容器」を倒して、「厄災の力」の層数を減らし、「完全な容器」を優先的に倒そう。",
+              "Desc": "幻影ボスが1層目の靭性を失った後、もしくは一定回数の行動を行った後、「枷鎖崩壊」状態に入る。この状態中、ボスの攻撃パターンが変わり、繰り返し召喚できる「壊れた容器」を召喚し始める。",
+              "Answer": "対処法：ボス幻影が強力なスキルを発動する前に、なるべく多くの「壊れた容器」を倒して、「災厄の力」の層数を減らし、「完璧な器」を優先的に倒そう。",
               "Difficulty": 1,
               "SkillList": [
                 101111,
@@ -16677,6 +16755,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -16727,6 +16806,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -16788,7 +16868,7 @@
       },
       {
         "Name": "先陣突破",
-        "Desc": "パーティの1枠目のキャラが必殺技を発動した後、自身の弱点撃破効率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、会心ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<color=#f29e38ff><unbreak>#3[i]</unbreak></color>ターン継続。",
+        "Desc": "現在1枠目にいるキャラが必殺技を発動した後、自身の弱点撃破効率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、会心ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<color=#f29e38ff><unbreak>#3[i]</unbreak></color>ターン継続。",
         "Param": [
           0.5000000004656613,
           0.5000000004656613,
@@ -16797,7 +16877,7 @@
       }
     ],
     "BeginTime": "2025-06-30 04:00:02",
-    "EndTime": "2025-08-11 04:00:00",
+    "EndTime": "2025-09-22 04:00:00",
     "Level": [
       {
         "Id": 30111,
@@ -17059,8 +17139,8 @@
           "PhaseList": [
             {
               "Name": "第一段階：風雲雷動",
-              "Desc": "ボス幻影は「蝕心の呪詛」を発動し味方を「呪詛」状態にする。",
-              "Answer": "対応戦略：「蝕心の呪詛」が発動した時、スキルターゲットにはアタッカー以外の味方キャラを優先して指定する。",
+              "Desc": "ボス幻影は「蝕心の呪詛」を発動し、味方を「呪詛」状態にする。",
+              "Answer": "対応戦略：「蝕心の呪詛」が発動した時、アタッカー以外の味方キャラをターゲットとして指定する。",
               "Difficulty": 1,
               "SkillList": [
                 101211,
@@ -17069,8 +17149,8 @@
             },
             {
               "Name": "第二段階：乾坤席巻",
-              "Desc": "ボス幻影は「乾坤呑噬」を発動し味方に大ダメージを与え、デバフを付与する。",
-              "Answer": "対応戦略：「乾坤呑噬」が発動する前にできるだけすべての部位を弱点撃破する。",
+              "Desc": "ボス幻影は「乾坤呑噬」を発動し、味方に大ダメージを与え、デバフを付与する。",
+              "Answer": "対応戦略：「乾坤呑噬」が発動される前にできるだけすべての部位を弱点撃破する。",
               "Difficulty": 1,
               "SkillList": [
                 101221
@@ -17125,6 +17205,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -17175,6 +17256,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -17439,8 +17521,8 @@
           "PhaseList": [
             {
               "Name": "第一段階：風雲雷動",
-              "Desc": "ボス幻影は「蝕心の呪詛」を発動し味方を「呪詛」状態にする。",
-              "Answer": "対応戦略：「蝕心の呪詛」が発動した時、スキルターゲットにはアタッカー以外の味方キャラを優先して指定する。",
+              "Desc": "ボス幻影は「蝕心の呪詛」を発動し、味方を「呪詛」状態にする。",
+              "Answer": "対応戦略：「蝕心の呪詛」が発動した時、アタッカー以外の味方キャラをターゲットとして指定する。",
               "Difficulty": 1,
               "SkillList": [
                 101211,
@@ -17449,8 +17531,8 @@
             },
             {
               "Name": "第二段階：乾坤席巻",
-              "Desc": "ボス幻影は「乾坤呑噬」を発動し味方に大ダメージを与え、デバフを付与する。",
-              "Answer": "対応戦略：「乾坤呑噬」が発動する前にできるだけすべての部位を弱点撃破する。",
+              "Desc": "ボス幻影は「乾坤呑噬」を発動し、味方に大ダメージを与え、デバフを付与する。",
+              "Answer": "対応戦略：「乾坤呑噬」が発動される前にできるだけすべての部位を弱点撃破する。",
               "Difficulty": 1,
               "SkillList": [
                 101221
@@ -17505,6 +17587,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -17555,6 +17638,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -17819,8 +17903,8 @@
           "PhaseList": [
             {
               "Name": "第一段階：風雲雷動",
-              "Desc": "ボス幻影は「蝕心の呪詛」を発動し味方を「呪詛」状態にする。",
-              "Answer": "対応戦略：「蝕心の呪詛」が発動した時、スキルターゲットにはアタッカー以外の味方キャラを優先して指定する。",
+              "Desc": "ボス幻影は「蝕心の呪詛」を発動し、味方を「呪詛」状態にする。",
+              "Answer": "対応戦略：「蝕心の呪詛」が発動した時、アタッカー以外の味方キャラをターゲットとして指定する。",
               "Difficulty": 1,
               "SkillList": [
                 101211,
@@ -17829,8 +17913,8 @@
             },
             {
               "Name": "第二段階：乾坤席巻",
-              "Desc": "ボス幻影は「乾坤呑噬」を発動し味方に大ダメージを与え、デバフを付与する。",
-              "Answer": "対応戦略：「乾坤呑噬」が発動する前にできるだけすべての部位を弱点撃破する。",
+              "Desc": "ボス幻影は「乾坤呑噬」を発動し、味方に大ダメージを与え、デバフを付与する。",
+              "Answer": "対応戦略：「乾坤呑噬」が発動される前にできるだけすべての部位を弱点撃破する。",
               "Difficulty": 1,
               "SkillList": [
                 101221
@@ -17885,6 +17969,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -17935,6 +18020,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -18199,8 +18285,8 @@
           "PhaseList": [
             {
               "Name": "第一段階：風雲雷動",
-              "Desc": "ボス幻影は「蝕心の呪詛」を発動し味方を「呪詛」状態にする。",
-              "Answer": "対応戦略：「蝕心の呪詛」が発動した時、スキルターゲットにはアタッカー以外の味方キャラを優先して指定する。",
+              "Desc": "ボス幻影は「蝕心の呪詛」を発動し、味方を「呪詛」状態にする。",
+              "Answer": "対応戦略：「蝕心の呪詛」が発動した時、アタッカー以外の味方キャラをターゲットとして指定する。",
               "Difficulty": 1,
               "SkillList": [
                 101211,
@@ -18209,8 +18295,8 @@
             },
             {
               "Name": "第二段階：乾坤席巻",
-              "Desc": "ボス幻影は「乾坤呑噬」を発動し味方に大ダメージを与え、デバフを付与する。",
-              "Answer": "対応戦略：「乾坤呑噬」が発動する前にできるだけすべての部位を弱点撃破する。",
+              "Desc": "ボス幻影は「乾坤呑噬」を発動し、味方に大ダメージを与え、デバフを付与する。",
+              "Answer": "対応戦略：「乾坤呑噬」が発動される前にできるだけすべての部位を弱点撃破する。",
               "Difficulty": 1,
               "SkillList": [
                 101221
@@ -18265,6 +18351,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
@@ -18315,6 +18402,7 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
@@ -18323,70 +18411,74 @@
   },
   "3012": {
     "Id": 3012,
-    "Name": null,
+    "Name": "茫々たる寒風",
     "Buff": {
-      "Name": null,
-      "Desc": null,
-      "Param": []
+      "Name": "末法の余燼",
+      "Desc": "<color=#f29e38ff>「鉄壁の防御」</color>を持つ敵が<color=#f29e38ff>弱点撃破</color>された時、味方全体の行動制限系デバフを解除し、必殺技を発動可能にし、HPを回復する。\\n敵全体が受ける精霊スキルダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、受ける戦闘スキルダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+      "Param": [
+        0.10000000009313226,
+        0.3000000002793968
+      ]
     },
     "BuffList1": [
       {
-        "Name": "一致団結",
-        "Desc": "味方がSPを1消費するたびに、味方全体の与ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。この効果は最大で<color=#f29e38ff><unbreak>#2[i]</unbreak></color>層累積できる。",
+        "Name": "武装完了",
+        "Desc": "味方全体の物理属性ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、敵全体の物理属性耐性-<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
         "Param": [
-          0.060000000055879354,
-          10
-        ]
-      },
-      {
-        "Name": "まとまりのない話",
-        "Desc": "敵を倒した後、敵全体の受ける弱点撃破ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、最大で<color=#f29e38ff><unbreak>#2[i]</unbreak></color>層累積できる。この効果は新たに出現した敵にも適用される。",
-        "Param": [
-          0.1500000001396984,
-          4
-        ]
-      },
-      {
-        "Name": "決死の覚悟",
-        "Desc": "味方が自身のHPを消費した後、会心ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、<color=#f29e38ff><unbreak>#2[i]</unbreak></color>ターン継続。",
-        "Param": [
-          0.5500000005122274,
-          2
-        ]
-      }
-    ],
-    "BuffList2": [
-      {
-        "Name": "弱点突き",
-        "Desc": "味方全体の必殺技ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、さらに弱点撃破状態の敵に対する必殺技ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
-        "Param": [
-          0.3000000002793968,
-          0.3000000002793968
+          0.5000000004656613,
+          0.20000000018626451
         ]
       },
       {
         "Name": "しぶとい蔓草",
         "Desc": "味方が通常攻撃または戦闘スキルを発動し、弱点撃破状態の敵に攻撃を行った後、その敵に付与されているすべての持続ダメージ系デバフが即座に本来のダメージ<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分のダメージを発生する。",
         "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "凍寒骨に徹す",
+        "Desc": "敵全体の受ける弱点撃破ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。敵を弱点撃破した後、味方全体の速度+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<color=#f29e38ff><unbreak>#3[i]</unbreak></color>ターン継続する。",
+        "Param": [
+          0.10000000009313226,
+          0.20000000018626451,
+          2
+        ]
+      }
+    ],
+    "BuffList2": [
+      {
+        "Name": "必勝の攻勢",
+        "Desc": "記憶の精霊がダメージを与える時、ターゲットの防御力を<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>無視する。",
+        "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "活力満点",
+        "Desc": "味方全体の戦闘スキルダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。ターンが回ってきた時、残りHPが最大HPの<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分以下の場合、最大HP<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>分のHPを回復する。",
+        "Param": [
+          0.3000000002793968,
+          0.010000000009313226,
           0.1500000001396984
         ]
       },
       {
-        "Name": "先陣突破",
-        "Desc": "パーティの1枠目のキャラが必殺技を発動した後、自身の弱点撃破効率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、会心ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<color=#f29e38ff><unbreak>#3[i]</unbreak></color>ターン継続。",
+        "Name": "破竹の勢い",
+        "Desc": "キャラが必殺技を発動する時、自身の弱点撃破効率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、会心ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<color=#f29e38ff><unbreak>#3[i]</unbreak></color>ターン継続。",
         "Param": [
-          0.5000000004656613,
-          0.5000000004656613,
-          1
+          1,
+          0.40000000037252903,
+          3
         ]
       }
     ],
-    "BeginTime": "2050-01-01 04:00:00",
-    "EndTime": "2099-12-31 04:00:00",
+    "BeginTime": "2025-08-11 04:00:02",
+    "EndTime": "2025-09-22 04:00:00",
     "Level": [
       {
         "Id": 30121,
-        "Name": "天狼戦首・難易度<unbreak>01</unbreak>",
+        "Name": "茫々たる寒風・難易度<unbreak>01</unbreak>",
         "Challenge": [
           {
             "Name": "#1ポイント獲得",
@@ -18402,40 +18494,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401401,
-        "BossMonsterID2": 203302201,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401401,
+        "BossMonsterID2": 401403601,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 1,
@@ -18450,11 +18555,11 @@
               "Name": "鉄壁の防御",
               "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18463,31 +18568,39 @@
               "Child": []
             },
             {
-              "Name": "無差別アタック",
-              "Desc": "ボス幻影が「地割れ、草残らず」を発動する時、他の狼兵を全て消滅させる。",
+              "Name": "陣地移転",
+              "Desc": "ジェパードが戦闘に加わりボス幻影を守る。ボス幻影は自身の弱点属性を召喚物に<color=#f29e38ff><u>転移</u></color>させる。召喚物が倒されると、ボス自身の靭性値が追加で削られる。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "転移",
+                  "Desc": "弱点属性をターゲットに移す。弱点属性はターゲットが倒された後に戻り、さらに靭性値を削られる。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "鷹視狼顧",
-              "Desc": "ボス幻影が第二段階に入った後、「一騎打ち」期間中は各ターン内にもう一度行動できる。",
+              "Name": "退路なし",
+              "Desc": "ボス幻影の召喚物が味方1人をマークし、ボス幻影が単体攻撃スキルを発動した後にマークされた味方に<color=#f29e38ff><u>追加発動</u></color>する。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "追加発動",
+                  "Desc": "単体攻撃スキルを発動した後、ターゲットを再選択してそのスキルを再度発動できる。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "死に至るまで",
-              "Desc": "ボス幻影は「一騎打ち」に入った後、受けるダメージがさらに<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>ダウンする。",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "強靭な志",
+              "Desc": "敵全体が受けるダメージがダウンする。ただし所持している<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
@@ -18495,11 +18608,11 @@
             {
               "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18507,41 +18620,36 @@
               ]
             },
             {
-              "Desc": "ボス幻影が「月喰み」状態に入ると、弱点保護が解除される。味方は最強のキャラクターを1名選択し、ボス幻影と「一騎打ち」を行う必要がある。その間、選択されたキャラとその召喚物を除き、他の味方は一時離脱状態になる。",
-              "Param": [],
-              "SkillID": null,
-              "ParamFix": []
-            },
-            {
-              "Desc": "味方が敵の狼兵を倒した時、「血騒ぎ」効果を獲得する。「一騎打ち」に入ったキャラとその召喚物は「血騒ぎ」の層数に応じて強化を獲得する。",
+              "Desc": "召喚物がフィールド上に存在するとき、ボス幻影は<color=#f29e38ff>自身の弱点属性を召喚物に転移させる</color>。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "ボス幻影が「月喰み」状態に入る前に、狼兵を優先的に倒し、味方に「血騒ぎ」効果を付与すると同時にボス幻影を早めに「月喰み」状態に入らせる。",
-            "ボス幻影が「月喰み」状態に入る前、「一騎打ち」に備えて力を温存しよう。",
-            "「一騎打ち」に入る時、選択した味方キャラが召喚物を持っている場合、その召喚物も「一騎打ち」状態に入る。"
+            "ボス幻影は<color=#f29e38ff>弱点撃破</color>された後に受けるダメージが大アップし、味方全体のSPを回復して行動順を早める。",
+            "優先的に<color=#f29e38ff>召喚物</color>を消滅または弱点撃破すると、効果的にボス幻影を弱体化できる。"
           ],
           "PhaseList": [
             {
-              "Name": "第一段階：迅雷風烈",
-              "Desc": "ボス幻影が「月喰み」状態に入った時、味方はボス幻影と「一騎打ち」を行う最強キャラを1名選ぶ必要がある。",
-              "Answer": "対応戦略：ボス幻影が「月喰み」状態に入る前に、できるだけ狼兵を倒して強化を獲得しよう。",
+              "Name": "第一段階：望みなき凛冽たる風の幻滅者",
+              "Desc": "ボス幻影はスキルを使用してターゲットを凍結し、ダメージを与える。ジェパードは全体バリアを提供する。",
+              "Answer": "対応戦略：召喚物を優先的に倒し、ジェパードが全体バリアを発動した時は速やかに弱点撃破してジェパードを倒す。",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "第二段階：呑天喰月",
-              "Desc": "ボス幻影のスキルは狼兵にダメージを与え、「月喰み」状態に入るとさらに強化される。",
-              "Answer": "対応戦略：ボス幻影が行動する前に狼兵を倒し、狼兵がボス幻影に消されるのを防ごう。",
+              "Name": "第二段階：望みなき凛冽たる風の幻滅者・虚妄の母",
+              "Desc": "ボス幻影は「創世の絶唱」を放ち続けて全体に大ダメージを与え、さらにスキルを使用して味方の行動を制限する。",
+              "Answer": "対応戦略：優先的に召喚物を倒した後、速やかにボス幻影を弱点撃破する。",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -18563,114 +18671,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "屹立する鉄骨",
-              "Desc": "部位が受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。ボス幻影が<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "鉤爪と鋸牙",
-              "Desc": "ボス幻影の靭性+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>。",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "朽ち株と枯れ木",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "沸き立つ獣血",
-              "Desc": "<color=#f29e38ff>「呪詛」</color>状態の継続時間+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>ターン。",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "剛を砕きて柔と成す",
+              "Desc": "「憐憫の腕」の最大靭性値がアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "強靭な志",
+              "Desc": "敵全体の受けるダメージがダウンする。ただし所持する<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "ボス幻影およびそのすべての部位の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Desc": "ボス幻影とその召喚物の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "ボス幻影の部位が<color=#f29e38ff>弱点撃破</color>された時、ボス幻影の靭性値が一定量削られる。",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "ボス幻影は「蝕心の呪詛」を発動して味方キャラを<color=#f29e38ff>「呪詛」</color>状態にし、同時に「血まみれの人狼」を召喚する。「呪詛」状態の味方キャラとその召喚物は一時離脱する。一時離脱したキャラの代わりに「血まみれの人狼」が戦闘を継続する。「血まみれの人狼」の攻撃は<color=#f29e38ff>比較的多くの靭性を削ることができる</color>。",
+              "Desc": "味方のHPが減った時、、「深き死夢」状態のボス幻影は「死へと誘う泡」を蓄積し、「死へと誘う泡」が上限に達すると、ボス幻影は「死の芳香」状態に入り、ボス幻影とその召喚物のスキルが大幅に強化される。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "ボス幻影の<color=#f29e38ff>部位</color>を複数回弱点撃破することで、ボス幻影の靭性を効果的に削ることができる。ボス幻影を<color=#f29e38ff>弱点撃破</color>すると、ボス幻影とそのすべての部位の受けるダメージが大幅にアップし、味方はSPを回復し、味方全体の必殺技が発動できるようになる。",
-            "味方キャラの代わりに<color=#f29e38ff>「血まみれの人狼」</color>が戦闘に参加している時、攻撃を受けた敵に付与されている<color=#f29e38ff>持続ダメージ系デバフの数</color>に応じて、追加で<color=#f29e38ff>弱点属性を無視してその敵の靭性を削る</color>。「血まみれの人狼」の<color=#f29e38ff>通常攻撃</color>は味方全体のHPを回復し、<color=#f29e38ff>戦闘スキル</color>は複数の敵に命中し、命中した敵の靭性を大幅に削ることができ、<color=#f29e38ff>SPを消費しない</color>。"
+            "味方が「負荷HP」状態になると、与ダメージと弱点撃破効率が大幅にダウンする。HPを優先的に回復して、状態を解除しよう。",
+            "「憐憫の腕」の弱点を撃破すると、ボス幻影の靭性とHPが削られる。この時、ボス幻影が「死の芳香」状態なら、味方のHPを回復できる。"
           ],
           "PhaseList": [
             {
-              "Name": "第一段階：風雲雷動",
-              "Desc": "ボス幻影は「蝕心の呪詛」を発動し味方を「呪詛」状態にする。",
-              "Answer": "対応戦略：「蝕心の呪詛」が発動した時、スキルターゲットにはアタッカー以外の味方キャラを優先して指定する。",
+              "Name": "第一段階：許されざる死",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Answer": "対応戦略：「負荷HP」状態にある味方を優先的に回復する。",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "第二段階：乾坤席巻",
-              "Desc": "ボス幻影は「乾坤呑噬」を発動し味方に大ダメージを与え、デバフを付与する。",
-              "Answer": "対応戦略：「乾坤呑噬」が発動する前にできるだけすべての部位を弱点撃破する。",
+              "Name": "第二段階：死へと向かう生",
+              "Desc": "ボス幻影が「死は更なる死を欲する」を発動すると、「負荷HP」状態の味方にHPが0になるダメージを与える。",
+              "Answer": "対応戦略：「死は更なる死を欲する」が発動する前に、味方全体のHPを回復して「負荷HP」状態を解除する。",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420311,
+            "StageID": 420331,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 60,
-            "EliteGroup": 701,
+            "EliteGroup": 904,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -18689,18 +18784,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401401
+                "Monster0": 100401401,
+                "Monster1": 100402601
               }
             ],
             "LevelLoseCondition": [
@@ -18710,17 +18806,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420301,
+            "StageID": 420321,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 60,
-            "EliteGroup": 701,
+            "EliteGroup": 896,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -18739,18 +18836,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501201
+                "Monster0": 401403601
               }
             ],
             "LevelLoseCondition": [
@@ -18760,13 +18857,14 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
       },
       {
         "Id": 30122,
-        "Name": "天狼戦首・難易度<unbreak>02</unbreak>",
+        "Name": "茫々たる寒風・難易度<unbreak>02</unbreak>",
         "Challenge": [
           {
             "Name": "#1ポイント獲得",
@@ -18782,40 +18880,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401402,
-        "BossMonsterID2": 203302202,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401402,
+        "BossMonsterID2": 401403602,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 2,
@@ -18830,11 +18941,11 @@
               "Name": "鉄壁の防御",
               "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18843,31 +18954,39 @@
               "Child": []
             },
             {
-              "Name": "無差別アタック",
-              "Desc": "ボス幻影が「地割れ、草残らず」を発動する時、他の狼兵を全て消滅させる。",
+              "Name": "陣地移転",
+              "Desc": "ジェパードが戦闘に加わりボス幻影を守る。ボス幻影は自身の弱点属性を召喚物に<color=#f29e38ff><u>転移</u></color>させる。召喚物が倒されると、ボス自身の靭性値が追加で削られる。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "転移",
+                  "Desc": "弱点属性をターゲットに移す。弱点属性はターゲットが倒された後に戻り、さらに靭性値を削られる。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "鷹視狼顧",
-              "Desc": "ボス幻影が第二段階に入った後、「一騎打ち」期間中は各ターン内にもう一度行動できる。",
+              "Name": "退路なし",
+              "Desc": "ボス幻影の召喚物が味方1人をマークし、ボス幻影が単体攻撃スキルを発動した後にマークされた味方に<color=#f29e38ff><u>追加発動</u></color>する。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "追加発動",
+                  "Desc": "単体攻撃スキルを発動した後、ターゲットを再選択してそのスキルを再度発動できる。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "死に至るまで",
-              "Desc": "ボス幻影は「一騎打ち」に入った後、受けるダメージがさらに<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>ダウンする。",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "強靭な志",
+              "Desc": "敵全体が受けるダメージがダウンする。ただし所持している<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
@@ -18875,11 +18994,11 @@
             {
               "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -18887,41 +19006,36 @@
               ]
             },
             {
-              "Desc": "ボス幻影が「月喰み」状態に入ると、弱点保護が解除される。味方は最強のキャラクターを1名選択し、ボス幻影と「一騎打ち」を行う必要がある。その間、選択されたキャラとその召喚物を除き、他の味方は一時離脱状態になる。",
-              "Param": [],
-              "SkillID": null,
-              "ParamFix": []
-            },
-            {
-              "Desc": "味方が敵の狼兵を倒した時、「血騒ぎ」効果を獲得する。「一騎打ち」に入ったキャラとその召喚物は「血騒ぎ」の層数に応じて強化を獲得する。",
+              "Desc": "召喚物がフィールド上に存在するとき、ボス幻影は<color=#f29e38ff>自身の弱点属性を召喚物に転移させる</color>。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "ボス幻影が「月喰み」状態に入る前に、狼兵を優先的に倒し、味方に「血騒ぎ」効果を付与すると同時にボス幻影を早めに「月喰み」状態に入らせる。",
-            "ボス幻影が「月喰み」状態に入る前、「一騎打ち」に備えて力を温存しよう。",
-            "「一騎打ち」に入る時、選択した味方キャラが召喚物を持っている場合、その召喚物も「一騎打ち」状態に入る。"
+            "ボス幻影は<color=#f29e38ff>弱点撃破</color>された後に受けるダメージが大アップし、味方全体のSPを回復して行動順を早める。",
+            "優先的に<color=#f29e38ff>召喚物</color>を消滅または弱点撃破すると、効果的にボス幻影を弱体化できる。"
           ],
           "PhaseList": [
             {
-              "Name": "第一段階：迅雷風烈",
-              "Desc": "ボス幻影が「月喰み」状態に入った時、味方はボス幻影と「一騎打ち」を行う最強キャラを1名選ぶ必要がある。",
-              "Answer": "対応戦略：ボス幻影が「月喰み」状態に入る前に、できるだけ狼兵を倒して強化を獲得しよう。",
+              "Name": "第一段階：望みなき凛冽たる風の幻滅者",
+              "Desc": "ボス幻影はスキルを使用してターゲットを凍結し、ダメージを与える。ジェパードは全体バリアを提供する。",
+              "Answer": "対応戦略：召喚物を優先的に倒し、ジェパードが全体バリアを発動した時は速やかに弱点撃破してジェパードを倒す。",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "第二段階：呑天喰月",
-              "Desc": "ボス幻影のスキルは狼兵にダメージを与え、「月喰み」状態に入るとさらに強化される。",
-              "Answer": "対応戦略：ボス幻影が行動する前に狼兵を倒し、狼兵がボス幻影に消されるのを防ごう。",
+              "Name": "第二段階：望みなき凛冽たる風の幻滅者・虚妄の母",
+              "Desc": "ボス幻影は「創世の絶唱」を放ち続けて全体に大ダメージを与え、さらにスキルを使用して味方の行動を制限する。",
+              "Answer": "対応戦略：優先的に召喚物を倒した後、速やかにボス幻影を弱点撃破する。",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -18943,114 +19057,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "屹立する鉄骨",
-              "Desc": "部位が受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。ボス幻影が<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "鉤爪と鋸牙",
-              "Desc": "ボス幻影の靭性+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>。",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "朽ち株と枯れ木",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "沸き立つ獣血",
-              "Desc": "<color=#f29e38ff>「呪詛」</color>状態の継続時間+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>ターン。",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "剛を砕きて柔と成す",
+              "Desc": "「憐憫の腕」の最大靭性値がアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "強靭な志",
+              "Desc": "敵全体の受けるダメージがダウンする。ただし所持する<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "ボス幻影およびそのすべての部位の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Desc": "ボス幻影とその召喚物の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "ボス幻影の部位が<color=#f29e38ff>弱点撃破</color>された時、ボス幻影の靭性値が一定量削られる。",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "ボス幻影は「蝕心の呪詛」を発動して味方キャラを<color=#f29e38ff>「呪詛」</color>状態にし、同時に「血まみれの人狼」を召喚する。「呪詛」状態の味方キャラとその召喚物は一時離脱する。一時離脱したキャラの代わりに「血まみれの人狼」が戦闘を継続する。「血まみれの人狼」の攻撃は<color=#f29e38ff>比較的多くの靭性を削ることができる</color>。",
+              "Desc": "味方のHPが減った時、、「深き死夢」状態のボス幻影は「死へと誘う泡」を蓄積し、「死へと誘う泡」が上限に達すると、ボス幻影は「死の芳香」状態に入り、ボス幻影とその召喚物のスキルが大幅に強化される。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "ボス幻影の<color=#f29e38ff>部位</color>を複数回弱点撃破することで、ボス幻影の靭性を効果的に削ることができる。ボス幻影を<color=#f29e38ff>弱点撃破</color>すると、ボス幻影とそのすべての部位の受けるダメージが大幅にアップし、味方はSPを回復し、味方全体の必殺技が発動できるようになる。",
-            "味方キャラの代わりに<color=#f29e38ff>「血まみれの人狼」</color>が戦闘に参加している時、攻撃を受けた敵に付与されている<color=#f29e38ff>持続ダメージ系デバフの数</color>に応じて、追加で<color=#f29e38ff>弱点属性を無視してその敵の靭性を削る</color>。「血まみれの人狼」の<color=#f29e38ff>通常攻撃</color>は味方全体のHPを回復し、<color=#f29e38ff>戦闘スキル</color>は複数の敵に命中し、命中した敵の靭性を大幅に削ることができ、<color=#f29e38ff>SPを消費しない</color>。"
+            "味方が「負荷HP」状態になると、与ダメージと弱点撃破効率が大幅にダウンする。HPを優先的に回復して、状態を解除しよう。",
+            "「憐憫の腕」の弱点を撃破すると、ボス幻影の靭性とHPが削られる。この時、ボス幻影が「死の芳香」状態なら、味方のHPを回復できる。"
           ],
           "PhaseList": [
             {
-              "Name": "第一段階：風雲雷動",
-              "Desc": "ボス幻影は「蝕心の呪詛」を発動し味方を「呪詛」状態にする。",
-              "Answer": "対応戦略：「蝕心の呪詛」が発動した時、スキルターゲットにはアタッカー以外の味方キャラを優先して指定する。",
+              "Name": "第一段階：許されざる死",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Answer": "対応戦略：「負荷HP」状態にある味方を優先的に回復する。",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "第二段階：乾坤席巻",
-              "Desc": "ボス幻影は「乾坤呑噬」を発動し味方に大ダメージを与え、デバフを付与する。",
-              "Answer": "対応戦略：「乾坤呑噬」が発動する前にできるだけすべての部位を弱点撃破する。",
+              "Name": "第二段階：死へと向かう生",
+              "Desc": "ボス幻影が「死は更なる死を欲する」を発動すると、「負荷HP」状態の味方にHPが0になるダメージを与える。",
+              "Answer": "対応戦略：「死は更なる死を欲する」が発動する前に、味方全体のHPを回復して「負荷HP」状態を解除する。",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420312,
+            "StageID": 420332,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 70,
-            "EliteGroup": 702,
+            "EliteGroup": 905,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19069,18 +19170,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401402
+                "Monster0": 100401402,
+                "Monster1": 100402602
               }
             ],
             "LevelLoseCondition": [
@@ -19090,17 +19192,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420302,
+            "StageID": 420322,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 70,
-            "EliteGroup": 702,
+            "EliteGroup": 897,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19119,18 +19222,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501202
+                "Monster0": 401403602
               }
             ],
             "LevelLoseCondition": [
@@ -19140,13 +19243,14 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
       },
       {
         "Id": 30123,
-        "Name": "天狼戦首・難易度<unbreak>03</unbreak>",
+        "Name": "茫々たる寒風・難易度<unbreak>03</unbreak>",
         "Challenge": [
           {
             "Name": "#1ポイント獲得",
@@ -19162,40 +19266,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401403,
-        "BossMonsterID2": 203302203,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401403,
+        "BossMonsterID2": 401403603,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 3,
@@ -19210,11 +19327,11 @@
               "Name": "鉄壁の防御",
               "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19223,31 +19340,39 @@
               "Child": []
             },
             {
-              "Name": "無差別アタック",
-              "Desc": "ボス幻影が「地割れ、草残らず」を発動する時、他の狼兵を全て消滅させる。",
+              "Name": "陣地移転",
+              "Desc": "ジェパードが戦闘に加わりボス幻影を守る。ボス幻影は自身の弱点属性を召喚物に<color=#f29e38ff><u>転移</u></color>させる。召喚物が倒されると、ボス自身の靭性値が追加で削られる。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "転移",
+                  "Desc": "弱点属性をターゲットに移す。弱点属性はターゲットが倒された後に戻り、さらに靭性値を削られる。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "鷹視狼顧",
-              "Desc": "ボス幻影が第二段階に入った後、「一騎打ち」期間中は各ターン内にもう一度行動できる。",
+              "Name": "退路なし",
+              "Desc": "ボス幻影の召喚物が味方1人をマークし、ボス幻影が単体攻撃スキルを発動した後にマークされた味方に<color=#f29e38ff><u>追加発動</u></color>する。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "追加発動",
+                  "Desc": "単体攻撃スキルを発動した後、ターゲットを再選択してそのスキルを再度発動できる。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "死に至るまで",
-              "Desc": "ボス幻影は「一騎打ち」に入った後、受けるダメージがさらに<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>ダウンする。",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "強靭な志",
+              "Desc": "敵全体が受けるダメージがダウンする。ただし所持している<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
@@ -19255,11 +19380,11 @@
             {
               "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19267,41 +19392,42 @@
               ]
             },
             {
-              "Desc": "ボス幻影が「月喰み」状態に入ると、弱点保護が解除される。味方は最強のキャラクターを1名選択し、ボス幻影と「一騎打ち」を行う必要がある。その間、選択されたキャラとその召喚物を除き、他の味方は一時離脱状態になる。",
+              "Desc": "召喚物がフィールド上に存在するとき、ボス幻影は<color=#f29e38ff>自身の弱点属性を召喚物に転移させる</color>。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "味方が敵の狼兵を倒した時、「血騒ぎ」効果を獲得する。「一騎打ち」に入ったキャラとその召喚物は「血騒ぎ」の層数に応じて強化を獲得する。",
+              "Desc": "ボス幻影は<color=#f29e38ff>召喚物</color>がロックオンしたターゲットに単体攻撃を追加発動し、確率で凍結または禁錮状態を付与する。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "ボス幻影が「月喰み」状態に入る前に、狼兵を優先的に倒し、味方に「血騒ぎ」効果を付与すると同時にボス幻影を早めに「月喰み」状態に入らせる。",
-            "ボス幻影が「月喰み」状態に入る前、「一騎打ち」に備えて力を温存しよう。",
-            "「一騎打ち」に入る時、選択した味方キャラが召喚物を持っている場合、その召喚物も「一騎打ち」状態に入る。"
+            "ボス幻影は<color=#f29e38ff>弱点撃破</color>された後に受けるダメージが大アップし、味方全体のSPを回復して行動順を早める。",
+            "優先的に<color=#f29e38ff>召喚物</color>を消滅または弱点撃破すると、効果的にボス幻影を弱体化できる。"
           ],
           "PhaseList": [
             {
-              "Name": "第一段階：迅雷風烈",
-              "Desc": "ボス幻影が「月喰み」状態に入った時、味方はボス幻影と「一騎打ち」を行う最強キャラを1名選ぶ必要がある。",
-              "Answer": "対応戦略：ボス幻影が「月喰み」状態に入る前に、できるだけ狼兵を倒して強化を獲得しよう。",
+              "Name": "第一段階：望みなき凛冽たる風の幻滅者",
+              "Desc": "ボス幻影はスキルを使用してターゲットを凍結し、ダメージを与える。ジェパードは全体バリアを提供する。",
+              "Answer": "対応戦略：召喚物を優先的に倒し、ジェパードが全体バリアを発動した時は速やかに弱点撃破してジェパードを倒す。",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "第二段階：呑天喰月",
-              "Desc": "ボス幻影のスキルは狼兵にダメージを与え、「月喰み」状態に入るとさらに強化される。",
-              "Answer": "対応戦略：ボス幻影が行動する前に狼兵を倒し、狼兵がボス幻影に消されるのを防ごう。",
+              "Name": "第二段階：望みなき凛冽たる風の幻滅者・虚妄の母",
+              "Desc": "ボス幻影は「創世の絶唱」を放ち続けて全体に大ダメージを与え、さらにスキルを使用して味方の行動を制限する。",
+              "Answer": "対応戦略：優先的に召喚物を倒した後、速やかにボス幻影を弱点撃破する。",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -19323,114 +19449,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "屹立する鉄骨",
-              "Desc": "部位が受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。ボス幻影が<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "鉤爪と鋸牙",
-              "Desc": "ボス幻影の靭性+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>。",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "朽ち株と枯れ木",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "沸き立つ獣血",
-              "Desc": "<color=#f29e38ff>「呪詛」</color>状態の継続時間+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>ターン。",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "剛を砕きて柔と成す",
+              "Desc": "「憐憫の腕」の最大靭性値がアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "強靭な志",
+              "Desc": "敵全体の受けるダメージがダウンする。ただし所持する<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "ボス幻影およびそのすべての部位の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Desc": "ボス幻影とその召喚物の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "ボス幻影の部位が<color=#f29e38ff>弱点撃破</color>された時、ボス幻影の靭性値が一定量削られる。",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "ボス幻影は「蝕心の呪詛」を発動して味方キャラを<color=#f29e38ff>「呪詛」</color>状態にし、同時に「血まみれの人狼」を召喚する。「呪詛」状態の味方キャラとその召喚物は一時離脱する。一時離脱したキャラの代わりに「血まみれの人狼」が戦闘を継続する。「血まみれの人狼」の攻撃は<color=#f29e38ff>比較的多くの靭性を削ることができる</color>。",
+              "Desc": "味方のHPが減った時、、「深き死夢」状態のボス幻影は「死へと誘う泡」を蓄積し、「死へと誘う泡」が上限に達すると、ボス幻影は「死の芳香」状態に入り、ボス幻影とその召喚物のスキルが大幅に強化される。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "ボス幻影の<color=#f29e38ff>部位</color>を複数回弱点撃破することで、ボス幻影の靭性を効果的に削ることができる。ボス幻影を<color=#f29e38ff>弱点撃破</color>すると、ボス幻影とそのすべての部位の受けるダメージが大幅にアップし、味方はSPを回復し、味方全体の必殺技が発動できるようになる。",
-            "味方キャラの代わりに<color=#f29e38ff>「血まみれの人狼」</color>が戦闘に参加している時、攻撃を受けた敵に付与されている<color=#f29e38ff>持続ダメージ系デバフの数</color>に応じて、追加で<color=#f29e38ff>弱点属性を無視してその敵の靭性を削る</color>。「血まみれの人狼」の<color=#f29e38ff>通常攻撃</color>は味方全体のHPを回復し、<color=#f29e38ff>戦闘スキル</color>は複数の敵に命中し、命中した敵の靭性を大幅に削ることができ、<color=#f29e38ff>SPを消費しない</color>。"
+            "味方が「負荷HP」状態になると、与ダメージと弱点撃破効率が大幅にダウンする。HPを優先的に回復して、状態を解除しよう。",
+            "「憐憫の腕」の弱点を撃破すると、ボス幻影の靭性とHPが削られる。この時、ボス幻影が「死の芳香」状態なら、味方のHPを回復できる。"
           ],
           "PhaseList": [
             {
-              "Name": "第一段階：風雲雷動",
-              "Desc": "ボス幻影は「蝕心の呪詛」を発動し味方を「呪詛」状態にする。",
-              "Answer": "対応戦略：「蝕心の呪詛」が発動した時、スキルターゲットにはアタッカー以外の味方キャラを優先して指定する。",
+              "Name": "第一段階：許されざる死",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Answer": "対応戦略：「負荷HP」状態にある味方を優先的に回復する。",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "第二段階：乾坤席巻",
-              "Desc": "ボス幻影は「乾坤呑噬」を発動し味方に大ダメージを与え、デバフを付与する。",
-              "Answer": "対応戦略：「乾坤呑噬」が発動する前にできるだけすべての部位を弱点撃破する。",
+              "Name": "第二段階：死へと向かう生",
+              "Desc": "ボス幻影が「死は更なる死を欲する」を発動すると、「負荷HP」状態の味方にHPが0になるダメージを与える。",
+              "Answer": "対応戦略：「死は更なる死を欲する」が発動する前に、味方全体のHPを回復して「負荷HP」状態を解除する。",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420313,
+            "StageID": 420333,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 80,
-            "EliteGroup": 703,
+            "EliteGroup": 906,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19449,18 +19562,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401403
+                "Monster0": 100401403,
+                "Monster1": 100402603
               }
             ],
             "LevelLoseCondition": [
@@ -19470,17 +19584,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420303,
+            "StageID": 420323,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 80,
-            "EliteGroup": 703,
+            "EliteGroup": 898,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19499,18 +19614,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501203
+                "Monster0": 401403603
               }
             ],
             "LevelLoseCondition": [
@@ -19520,13 +19635,14 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]
       },
       {
         "Id": 30124,
-        "Name": "天狼戦首・難易度<unbreak>04</unbreak>",
+        "Name": "茫々たる寒風・難易度<unbreak>04</unbreak>",
         "Challenge": [
           {
             "Name": "#1ポイント獲得",
@@ -19542,40 +19658,53 @@
           }
         ],
         "DamageType1": [
-          "Physical",
           "Fire",
+          "Thunder",
           "Wind",
           "Quantum"
         ],
         "DamageType2": [
-          "Physical",
-          "Fire",
-          "Thunder",
-          "Wind"
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
         ],
-        "MazeGroupID1": 8,
-        "MazeGroupID2": 6,
-        "BossMonsterID1": 203401404,
-        "BossMonsterID2": 203302204,
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401404,
+        "BossMonsterID2": 401403604,
         "BossMonsterID1SkillList": [
-          203401401,
-          203401402,
-          203401403,
-          203401404,
-          203401405,
-          203401406,
-          203401407,
-          203401408,
-          203401409,
-          203401410,
-          203401411,
-          203401412,
-          203401413,
-          203401414
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
         ],
         "BossMonsterID2SkillList": [
-          203302201,
-          203302202
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
         ],
         "BossMonsterConfig1": {
           "Difficulty": 4,
@@ -19590,11 +19719,11 @@
               "Name": "鉄壁の防御",
               "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19603,31 +19732,39 @@
               "Child": []
             },
             {
-              "Name": "無差別アタック",
-              "Desc": "ボス幻影が「地割れ、草残らず」を発動する時、他の狼兵を全て消滅させる。",
+              "Name": "陣地移転",
+              "Desc": "ジェパードが戦闘に加わりボス幻影を守る。ボス幻影は自身の弱点属性を召喚物に<color=#f29e38ff><u>転移</u></color>させる。召喚物が倒されると、ボス自身の靭性値が追加で削られる。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "転移",
+                  "Desc": "弱点属性をターゲットに移す。弱点属性はターゲットが倒された後に戻り、さらに靭性値を削られる。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "鷹視狼顧",
-              "Desc": "ボス幻影が第二段階に入った後、「一騎打ち」期間中は各ターン内にもう一度行動できる。",
+              "Name": "退路なし",
+              "Desc": "ボス幻影の召喚物が味方1人をマークし、ボス幻影が単体攻撃スキルを発動した後にマークされた味方に<color=#f29e38ff><u>追加発動</u></color>する。",
               "Param": [],
               "SkillID": null,
               "ParamFix": [],
-              "Child": []
+              "Child": [
+                {
+                  "Name": "追加発動",
+                  "Desc": "単体攻撃スキルを発動した後、ターゲットを再選択してそのスキルを再度発動できる。",
+                  "Param": []
+                }
+              ]
             },
             {
-              "Name": "死に至るまで",
-              "Desc": "ボス幻影は「一騎打ち」に入った後、受けるダメージがさらに<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>ダウンする。",
-              "Param": [
-                0.6000000238419
-              ],
-              "SkillID": 203401413,
-              "ParamFix": [
-                0.1500000001396984
-              ],
+              "Name": "強靭な志",
+              "Desc": "敵全体が受けるダメージがダウンする。ただし所持している<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
@@ -19635,11 +19772,11 @@
             {
               "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
-                0.5,
-                1,
-                1.5
+                0.6000000238419,
+                1.25,
+                1
               ],
-              "SkillID": 203401410,
+              "SkillID": 100401410,
               "ParamFix": [
                 0.5000000004656613,
                 1,
@@ -19647,41 +19784,42 @@
               ]
             },
             {
-              "Desc": "ボス幻影が「月喰み」状態に入ると、弱点保護が解除される。味方は最強のキャラクターを1名選択し、ボス幻影と「一騎打ち」を行う必要がある。その間、選択されたキャラとその召喚物を除き、他の味方は一時離脱状態になる。",
+              "Desc": "召喚物がフィールド上に存在するとき、ボス幻影は<color=#f29e38ff>自身の弱点属性を召喚物に転移させる</color>。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "味方が敵の狼兵を倒した時、「血騒ぎ」効果を獲得する。「一騎打ち」に入ったキャラとその召喚物は「血騒ぎ」の層数に応じて強化を獲得する。",
+              "Desc": "ボス幻影は<color=#f29e38ff>召喚物</color>がロックオンしたターゲットに単体攻撃を追加発動し、確率で凍結または禁錮状態を付与する。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "ボス幻影が「月喰み」状態に入る前に、狼兵を優先的に倒し、味方に「血騒ぎ」効果を付与すると同時にボス幻影を早めに「月喰み」状態に入らせる。",
-            "ボス幻影が「月喰み」状態に入る前、「一騎打ち」に備えて力を温存しよう。",
-            "「一騎打ち」に入る時、選択した味方キャラが召喚物を持っている場合、その召喚物も「一騎打ち」状態に入る。"
+            "ボス幻影は<color=#f29e38ff>弱点撃破</color>された後に受けるダメージが大アップし、味方全体のSPを回復して行動順を早める。",
+            "優先的に<color=#f29e38ff>召喚物</color>を消滅または弱点撃破すると、効果的にボス幻影を弱体化できる。"
           ],
           "PhaseList": [
             {
-              "Name": "第一段階：迅雷風烈",
-              "Desc": "ボス幻影が「月喰み」状態に入った時、味方はボス幻影と「一騎打ち」を行う最強キャラを1名選ぶ必要がある。",
-              "Answer": "対応戦略：ボス幻影が「月喰み」状態に入る前に、できるだけ狼兵を倒して強化を獲得しよう。",
+              "Name": "第一段階：望みなき凛冽たる風の幻滅者",
+              "Desc": "ボス幻影はスキルを使用してターゲットを凍結し、ダメージを与える。ジェパードは全体バリアを提供する。",
+              "Answer": "対応戦略：召喚物を優先的に倒し、ジェパードが全体バリアを発動した時は速やかに弱点撃破してジェパードを倒す。",
               "Difficulty": 1,
               "SkillList": [
-                101011,
-                101012
+                100111,
+                100112,
+                100113
               ]
             },
             {
-              "Name": "第二段階：呑天喰月",
-              "Desc": "ボス幻影のスキルは狼兵にダメージを与え、「月喰み」状態に入るとさらに強化される。",
-              "Answer": "対応戦略：ボス幻影が行動する前に狼兵を倒し、狼兵がボス幻影に消されるのを防ごう。",
+              "Name": "第二段階：望みなき凛冽たる風の幻滅者・虚妄の母",
+              "Desc": "ボス幻影は「創世の絶唱」を放ち続けて全体に大ダメージを与え、さらにスキルを使用して味方の行動を制限する。",
+              "Answer": "対応戦略：優先的に召喚物を倒した後、速やかにボス幻影を弱点撃破する。",
               "Difficulty": 1,
               "SkillList": [
-                101021
+                100121,
+                100122
               ]
             }
           ]
@@ -19703,114 +19841,101 @@
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
-              ],
-              "Child": []
-            },
-            {
-              "Name": "屹立する鉄骨",
-              "Desc": "部位が受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。ボス幻影が<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
-              "Param": [
-                0.5,
                 1,
-                1.5
-              ],
-              "SkillID": 203501212,
-              "ParamFix": [
-                0.5000000004656613,
-                1
+                1.5000000004656613
               ],
               "Child": []
             },
             {
-              "Name": "鉤爪と鋸牙",
-              "Desc": "ボス幻影の靭性+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>。",
-              "Param": [
-                40
-              ],
-              "SkillID": 203501213,
-              "ParamFix": [
-                40
-              ],
+              "Name": "朽ち株と枯れ木",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             },
             {
-              "Name": "沸き立つ獣血",
-              "Desc": "<color=#f29e38ff>「呪詛」</color>状態の継続時間+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>ターン。",
-              "Param": [
-                1
-              ],
-              "SkillID": 203501214,
-              "ParamFix": [
-                1
-              ],
+              "Name": "剛を砕きて柔と成す",
+              "Desc": "「憐憫の腕」の最大靭性値がアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "強靭な志",
+              "Desc": "敵全体の受けるダメージがダウンする。ただし所持する<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
               "Child": []
             }
           ],
           "DifficultyGuideList": [
             {
-              "Desc": "ボス幻影およびそのすべての部位の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Desc": "ボス幻影とその召喚物の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
               "Param": [
                 0.5,
                 1,
                 1.5
               ],
-              "SkillID": 203501211,
+              "SkillID": 401403609,
               "ParamFix": [
                 0.5000000004656613,
-                1
+                1,
+                1.5000000004656613
               ]
             },
             {
-              "Desc": "ボス幻影の部位が<color=#f29e38ff>弱点撃破</color>された時、ボス幻影の靭性値が一定量削られる。",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             },
             {
-              "Desc": "ボス幻影は「蝕心の呪詛」を発動して味方キャラを<color=#f29e38ff>「呪詛」</color>状態にし、同時に「血まみれの人狼」を召喚する。「呪詛」状態の味方キャラとその召喚物は一時離脱する。一時離脱したキャラの代わりに「血まみれの人狼」が戦闘を継続する。「血まみれの人狼」の攻撃は<color=#f29e38ff>比較的多くの靭性を削ることができる</color>。",
+              "Desc": "味方のHPが減った時、、「深き死夢」状態のボス幻影は「死へと誘う泡」を蓄積し、「死へと誘う泡」が上限に達すると、ボス幻影は「死の芳香」状態に入り、ボス幻影とその召喚物のスキルが大幅に強化される。",
               "Param": [],
               "SkillID": null,
               "ParamFix": []
             }
           ],
           "TextGuideList": [
-            "ボス幻影の<color=#f29e38ff>部位</color>を複数回弱点撃破することで、ボス幻影の靭性を効果的に削ることができる。ボス幻影を<color=#f29e38ff>弱点撃破</color>すると、ボス幻影とそのすべての部位の受けるダメージが大幅にアップし、味方はSPを回復し、味方全体の必殺技が発動できるようになる。",
-            "味方キャラの代わりに<color=#f29e38ff>「血まみれの人狼」</color>が戦闘に参加している時、攻撃を受けた敵に付与されている<color=#f29e38ff>持続ダメージ系デバフの数</color>に応じて、追加で<color=#f29e38ff>弱点属性を無視してその敵の靭性を削る</color>。「血まみれの人狼」の<color=#f29e38ff>通常攻撃</color>は味方全体のHPを回復し、<color=#f29e38ff>戦闘スキル</color>は複数の敵に命中し、命中した敵の靭性を大幅に削ることができ、<color=#f29e38ff>SPを消費しない</color>。"
+            "味方が「負荷HP」状態になると、与ダメージと弱点撃破効率が大幅にダウンする。HPを優先的に回復して、状態を解除しよう。",
+            "「憐憫の腕」の弱点を撃破すると、ボス幻影の靭性とHPが削られる。この時、ボス幻影が「死の芳香」状態なら、味方のHPを回復できる。"
           ],
           "PhaseList": [
             {
-              "Name": "第一段階：風雲雷動",
-              "Desc": "ボス幻影は「蝕心の呪詛」を発動し味方を「呪詛」状態にする。",
-              "Answer": "対応戦略：「蝕心の呪詛」が発動した時、スキルターゲットにはアタッカー以外の味方キャラを優先して指定する。",
+              "Name": "第一段階：許されざる死",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Answer": "対応戦略：「負荷HP」状態にある味方を優先的に回復する。",
               "Difficulty": 1,
               "SkillList": [
-                101211,
-                101212
+                101311,
+                101312
               ]
             },
             {
-              "Name": "第二段階：乾坤席巻",
-              "Desc": "ボス幻影は「乾坤呑噬」を発動し味方に大ダメージを与え、デバフを付与する。",
-              "Answer": "対応戦略：「乾坤呑噬」が発動する前にできるだけすべての部位を弱点撃破する。",
+              "Name": "第二段階：死へと向かう生",
+              "Desc": "ボス幻影が「死は更なる死を欲する」を発動すると、「負荷HP」状態の味方にHPが0になるダメージを与える。",
+              "Answer": "対応戦略：「死は更なる死を欲する」が発動する前に、味方全体のHPを回復して「負荷HP」状態を解除する。",
               "Difficulty": 1,
               "SkillList": [
-                101221
+                101321
               ]
             }
           ]
         },
         "EventIDList1": [
           {
-            "StageID": 420314,
+            "StageID": 420334,
             "StageType": "Challenge",
-            "StageName": 12811059761001697000,
+            "StageName": 1653639074891422500,
             "HardLevelGroup": 1,
             "Level": 90,
-            "EliteGroup": 84,
+            "EliteGroup": 907,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19829,18 +19954,19 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_LycanKing"
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203401404
+                "Monster0": 100401404,
+                "Monster1": 100402604
               }
             ],
             "LevelLoseCondition": [
@@ -19850,17 +19976,18 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ],
         "EventIDList2": [
           {
-            "StageID": 420304,
+            "StageID": 420324,
             "StageType": "Challenge",
-            "StageName": 4695934535145782000,
+            "StageName": 1712224853307385000,
             "HardLevelGroup": 1,
             "Level": 90,
-            "EliteGroup": 704,
+            "EliteGroup": 899,
             "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
             "StageAbilityConfig": [],
             "BattleScoringGroup": 902,
@@ -19879,18 +20006,18 @@
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BGM",
-                "MOJJBFBKBNC": "State_Xianzhou_Combat_Feixiao_P1"
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
               },
               {
                 "$type": "ILKEMJNAEKE",
                 "JDKAMOANICM": "_BindingMazeBuff",
-                "MOJJBFBKBNC": "3110011"
+                "MOJJBFBKBNC": "3110012"
               }
             ],
             "MonsterList": [
               {
                 "$type": "StageMonsterWave",
-                "Monster0": 203501204
+                "Monster0": 401403604
               }
             ],
             "LevelLoseCondition": [
@@ -19900,6 +20027,1632 @@
               "[CDT_WaitCustomString:Level_SpecialWin]"
             ],
             "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      }
+    ]
+  },
+  "3013": {
+    "Id": 3013,
+    "Name": "茫々たる寒風",
+    "Buff": {
+      "Name": "末法の余燼",
+      "Desc": "<color=#f29e38ff>「鉄壁の防御」</color>を持つ敵が<color=#f29e38ff>弱点撃破</color>された時、味方全体の行動制限系デバフを解除し、必殺技を発動可能にし、HPを回復する。\\n敵全体が受ける精霊スキルダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、受ける戦闘スキルダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+      "Param": [
+        0.10000000009313226,
+        0.3000000002793968
+      ]
+    },
+    "BuffList1": [
+      {
+        "Name": "武装完了",
+        "Desc": "味方全体の物理属性ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、敵全体の物理属性耐性-<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+        "Param": [
+          0.5000000004656613,
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "しぶとい蔓草",
+        "Desc": "味方が通常攻撃または戦闘スキルを発動し、弱点撃破状態の敵に攻撃を行った後、その敵に付与されているすべての持続ダメージ系デバフが即座に本来のダメージ<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分のダメージを発生する。",
+        "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "凍寒骨に徹す",
+        "Desc": "敵全体の受ける弱点撃破ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。敵を弱点撃破した後、味方全体の速度+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<color=#f29e38ff><unbreak>#3[i]</unbreak></color>ターン継続する。",
+        "Param": [
+          0.10000000009313226,
+          0.20000000018626451,
+          2
+        ]
+      }
+    ],
+    "BuffList2": [
+      {
+        "Name": "必勝の攻勢",
+        "Desc": "記憶の精霊がダメージを与える時、ターゲットの防御力を<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>無視する。",
+        "Param": [
+          0.20000000018626451
+        ]
+      },
+      {
+        "Name": "活力満点",
+        "Desc": "味方全体の戦闘スキルダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。ターンが回ってきた時、残りHPが最大HPの<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分以下の場合、最大HP<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>分のHPを回復する。",
+        "Param": [
+          0.3000000002793968,
+          0.010000000009313226,
+          0.1500000001396984
+        ]
+      },
+      {
+        "Name": "破竹の勢い",
+        "Desc": "キャラが必殺技を発動する時、自身の弱点撃破効率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、会心ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<color=#f29e38ff><unbreak>#3[i]</unbreak></color>ターン継続。",
+        "Param": [
+          1,
+          0.40000000037252903,
+          3
+        ]
+      }
+    ],
+    "BeginTime": "2025-09-22 04:00:00",
+    "EndTime": "2025-12-22 04:00:00",
+    "Level": [
+      {
+        "Id": 30131,
+        "Name": "茫々たる寒風・難易度<unbreak>01</unbreak>",
+        "Challenge": [
+          {
+            "Name": "#1ポイント獲得",
+            "Param": 4000
+          },
+          {
+            "Name": "#1ポイント獲得",
+            "Param": 5200
+          },
+          {
+            "Name": "#1ポイント獲得",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401401,
+        "BossMonsterID2": 401403601,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 1,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "鉄壁の防御",
+              "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "陣地移転",
+              "Desc": "ジェパードが戦闘に加わりボス幻影を守る。ボス幻影は自身の弱点属性を召喚物に<color=#f29e38ff><u>転移</u></color>させる。召喚物が倒されると、ボス自身の靭性値が追加で削られる。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "転移",
+                  "Desc": "弱点属性をターゲットに移す。弱点属性はターゲットが倒された後に戻り、さらに靭性値を削られる。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "退路なし",
+              "Desc": "ボス幻影の召喚物が味方1人をマークし、ボス幻影が単体攻撃スキルを発動した後にマークされた味方に<color=#f29e38ff><u>追加発動</u></color>する。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "追加発動",
+                  "Desc": "単体攻撃スキルを発動した後、ターゲットを再選択してそのスキルを再度発動できる。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "強靭な志",
+              "Desc": "敵全体が受けるダメージがダウンする。ただし所持している<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "召喚物がフィールド上に存在するとき、ボス幻影は<color=#f29e38ff>自身の弱点属性を召喚物に転移させる</color>。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "ボス幻影は<color=#f29e38ff>弱点撃破</color>された後に受けるダメージが大アップし、味方全体のSPを回復して行動順を早める。",
+            "優先的に<color=#f29e38ff>召喚物</color>を消滅または弱点撃破すると、効果的にボス幻影を弱体化できる。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "第一段階：望みなき凛冽たる風の幻滅者",
+              "Desc": "ボス幻影はスキルを使用してターゲットを凍結し、ダメージを与える。ジェパードは全体バリアを提供する。",
+              "Answer": "対応戦略：召喚物を優先的に倒し、ジェパードが全体バリアを発動した時は速やかに弱点撃破してジェパードを倒す。",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "第二段階：望みなき凛冽たる風の幻滅者・虚妄の母",
+              "Desc": "ボス幻影は「創世の絶唱」を放ち続けて全体に大ダメージを与え、さらにスキルを使用して味方の行動を制限する。",
+              "Answer": "対応戦略：優先的に召喚物を倒した後、速やかにボス幻影を弱点撃破する。",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 1,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "鉄壁の防御",
+              "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "朽ち株と枯れ木",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "剛を砕きて柔と成す",
+              "Desc": "「憐憫の腕」の最大靭性値がアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "強靭な志",
+              "Desc": "敵全体の受けるダメージがダウンする。ただし所持する<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "ボス幻影とその召喚物の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "味方のHPが減った時、、「深き死夢」状態のボス幻影は「死へと誘う泡」を蓄積し、「死へと誘う泡」が上限に達すると、ボス幻影は「死の芳香」状態に入り、ボス幻影とその召喚物のスキルが大幅に強化される。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "味方が「負荷HP」状態になると、与ダメージと弱点撃破効率が大幅にダウンする。HPを優先的に回復して、状態を解除しよう。",
+            "「憐憫の腕」の弱点を撃破すると、ボス幻影の靭性とHPが削られる。この時、ボス幻影が「死の芳香」状態なら、味方のHPを回復できる。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "第一段階：許されざる死",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Answer": "対応戦略：「負荷HP」状態にある味方を優先的に回復する。",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "第二段階：死へと向かう生",
+              "Desc": "ボス幻影が「死は更なる死を欲する」を発動すると、「負荷HP」状態の味方にHPが0になるダメージを与える。",
+              "Answer": "対応戦略：「死は更なる死を欲する」が発動する前に、味方全体のHPを回復して「負荷HP」状態を解除する。",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420331,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 60,
+            "EliteGroup": 904,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401401,
+                "Monster1": 100402601
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420321,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 60,
+            "EliteGroup": 896,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403601
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      },
+      {
+        "Id": 30132,
+        "Name": "茫々たる寒風・難易度<unbreak>02</unbreak>",
+        "Challenge": [
+          {
+            "Name": "#1ポイント獲得",
+            "Param": 4000
+          },
+          {
+            "Name": "#1ポイント獲得",
+            "Param": 5200
+          },
+          {
+            "Name": "#1ポイント獲得",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401402,
+        "BossMonsterID2": 401403602,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 2,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "鉄壁の防御",
+              "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "陣地移転",
+              "Desc": "ジェパードが戦闘に加わりボス幻影を守る。ボス幻影は自身の弱点属性を召喚物に<color=#f29e38ff><u>転移</u></color>させる。召喚物が倒されると、ボス自身の靭性値が追加で削られる。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "転移",
+                  "Desc": "弱点属性をターゲットに移す。弱点属性はターゲットが倒された後に戻り、さらに靭性値を削られる。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "退路なし",
+              "Desc": "ボス幻影の召喚物が味方1人をマークし、ボス幻影が単体攻撃スキルを発動した後にマークされた味方に<color=#f29e38ff><u>追加発動</u></color>する。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "追加発動",
+                  "Desc": "単体攻撃スキルを発動した後、ターゲットを再選択してそのスキルを再度発動できる。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "強靭な志",
+              "Desc": "敵全体が受けるダメージがダウンする。ただし所持している<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "召喚物がフィールド上に存在するとき、ボス幻影は<color=#f29e38ff>自身の弱点属性を召喚物に転移させる</color>。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "ボス幻影は<color=#f29e38ff>弱点撃破</color>された後に受けるダメージが大アップし、味方全体のSPを回復して行動順を早める。",
+            "優先的に<color=#f29e38ff>召喚物</color>を消滅または弱点撃破すると、効果的にボス幻影を弱体化できる。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "第一段階：望みなき凛冽たる風の幻滅者",
+              "Desc": "ボス幻影はスキルを使用してターゲットを凍結し、ダメージを与える。ジェパードは全体バリアを提供する。",
+              "Answer": "対応戦略：召喚物を優先的に倒し、ジェパードが全体バリアを発動した時は速やかに弱点撃破してジェパードを倒す。",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "第二段階：望みなき凛冽たる風の幻滅者・虚妄の母",
+              "Desc": "ボス幻影は「創世の絶唱」を放ち続けて全体に大ダメージを与え、さらにスキルを使用して味方の行動を制限する。",
+              "Answer": "対応戦略：優先的に召喚物を倒した後、速やかにボス幻影を弱点撃破する。",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 2,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "鉄壁の防御",
+              "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "朽ち株と枯れ木",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "剛を砕きて柔と成す",
+              "Desc": "「憐憫の腕」の最大靭性値がアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "強靭な志",
+              "Desc": "敵全体の受けるダメージがダウンする。ただし所持する<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "ボス幻影とその召喚物の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "味方のHPが減った時、、「深き死夢」状態のボス幻影は「死へと誘う泡」を蓄積し、「死へと誘う泡」が上限に達すると、ボス幻影は「死の芳香」状態に入り、ボス幻影とその召喚物のスキルが大幅に強化される。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "味方が「負荷HP」状態になると、与ダメージと弱点撃破効率が大幅にダウンする。HPを優先的に回復して、状態を解除しよう。",
+            "「憐憫の腕」の弱点を撃破すると、ボス幻影の靭性とHPが削られる。この時、ボス幻影が「死の芳香」状態なら、味方のHPを回復できる。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "第一段階：許されざる死",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Answer": "対応戦略：「負荷HP」状態にある味方を優先的に回復する。",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "第二段階：死へと向かう生",
+              "Desc": "ボス幻影が「死は更なる死を欲する」を発動すると、「負荷HP」状態の味方にHPが0になるダメージを与える。",
+              "Answer": "対応戦略：「死は更なる死を欲する」が発動する前に、味方全体のHPを回復して「負荷HP」状態を解除する。",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420332,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 70,
+            "EliteGroup": 905,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401402,
+                "Monster1": 100402602
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420322,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 70,
+            "EliteGroup": 897,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403602
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      },
+      {
+        "Id": 30133,
+        "Name": "茫々たる寒風・難易度<unbreak>03</unbreak>",
+        "Challenge": [
+          {
+            "Name": "#1ポイント獲得",
+            "Param": 4000
+          },
+          {
+            "Name": "#1ポイント獲得",
+            "Param": 5200
+          },
+          {
+            "Name": "#1ポイント獲得",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401403,
+        "BossMonsterID2": 401403603,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 3,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "鉄壁の防御",
+              "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "陣地移転",
+              "Desc": "ジェパードが戦闘に加わりボス幻影を守る。ボス幻影は自身の弱点属性を召喚物に<color=#f29e38ff><u>転移</u></color>させる。召喚物が倒されると、ボス自身の靭性値が追加で削られる。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "転移",
+                  "Desc": "弱点属性をターゲットに移す。弱点属性はターゲットが倒された後に戻り、さらに靭性値を削られる。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "退路なし",
+              "Desc": "ボス幻影の召喚物が味方1人をマークし、ボス幻影が単体攻撃スキルを発動した後にマークされた味方に<color=#f29e38ff><u>追加発動</u></color>する。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "追加発動",
+                  "Desc": "単体攻撃スキルを発動した後、ターゲットを再選択してそのスキルを再度発動できる。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "強靭な志",
+              "Desc": "敵全体が受けるダメージがダウンする。ただし所持している<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "召喚物がフィールド上に存在するとき、ボス幻影は<color=#f29e38ff>自身の弱点属性を召喚物に転移させる</color>。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "ボス幻影は<color=#f29e38ff>召喚物</color>がロックオンしたターゲットに単体攻撃を追加発動し、確率で凍結または禁錮状態を付与する。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "ボス幻影は<color=#f29e38ff>弱点撃破</color>された後に受けるダメージが大アップし、味方全体のSPを回復して行動順を早める。",
+            "優先的に<color=#f29e38ff>召喚物</color>を消滅または弱点撃破すると、効果的にボス幻影を弱体化できる。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "第一段階：望みなき凛冽たる風の幻滅者",
+              "Desc": "ボス幻影はスキルを使用してターゲットを凍結し、ダメージを与える。ジェパードは全体バリアを提供する。",
+              "Answer": "対応戦略：召喚物を優先的に倒し、ジェパードが全体バリアを発動した時は速やかに弱点撃破してジェパードを倒す。",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "第二段階：望みなき凛冽たる風の幻滅者・虚妄の母",
+              "Desc": "ボス幻影は「創世の絶唱」を放ち続けて全体に大ダメージを与え、さらにスキルを使用して味方の行動を制限する。",
+              "Answer": "対応戦略：優先的に召喚物を倒した後、速やかにボス幻影を弱点撃破する。",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 3,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "鉄壁の防御",
+              "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "朽ち株と枯れ木",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "剛を砕きて柔と成す",
+              "Desc": "「憐憫の腕」の最大靭性値がアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "強靭な志",
+              "Desc": "敵全体の受けるダメージがダウンする。ただし所持する<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "ボス幻影とその召喚物の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "味方のHPが減った時、、「深き死夢」状態のボス幻影は「死へと誘う泡」を蓄積し、「死へと誘う泡」が上限に達すると、ボス幻影は「死の芳香」状態に入り、ボス幻影とその召喚物のスキルが大幅に強化される。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "味方が「負荷HP」状態になると、与ダメージと弱点撃破効率が大幅にダウンする。HPを優先的に回復して、状態を解除しよう。",
+            "「憐憫の腕」の弱点を撃破すると、ボス幻影の靭性とHPが削られる。この時、ボス幻影が「死の芳香」状態なら、味方のHPを回復できる。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "第一段階：許されざる死",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Answer": "対応戦略：「負荷HP」状態にある味方を優先的に回復する。",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "第二段階：死へと向かう生",
+              "Desc": "ボス幻影が「死は更なる死を欲する」を発動すると、「負荷HP」状態の味方にHPが0になるダメージを与える。",
+              "Answer": "対応戦略：「死は更なる死を欲する」が発動する前に、味方全体のHPを回復して「負荷HP」状態を解除する。",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420333,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 80,
+            "EliteGroup": 906,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401403,
+                "Monster1": 100402603
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420323,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 80,
+            "EliteGroup": 898,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403603
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ]
+      },
+      {
+        "Id": 30134,
+        "Name": "茫々たる寒風・難易度<unbreak>04</unbreak>",
+        "Challenge": [
+          {
+            "Name": "#1ポイント獲得",
+            "Param": 4000
+          },
+          {
+            "Name": "#1ポイント獲得",
+            "Param": 5200
+          },
+          {
+            "Name": "#1ポイント獲得",
+            "Param": 6600
+          }
+        ],
+        "DamageType1": [
+          "Fire",
+          "Thunder",
+          "Wind",
+          "Quantum"
+        ],
+        "DamageType2": [
+          "Ice",
+          "Wind",
+          "Quantum",
+          "Imaginary"
+        ],
+        "MazeGroupID1": 5,
+        "MazeGroupID2": 9,
+        "BossMonsterID1": 100401404,
+        "BossMonsterID2": 401403604,
+        "BossMonsterID1SkillList": [
+          100401401,
+          100401402,
+          100401403,
+          100401404,
+          100401405,
+          100401406,
+          100401407,
+          100401409,
+          100401410,
+          100401411,
+          100401412,
+          100401413,
+          100401414
+        ],
+        "BossMonsterID2SkillList": [
+          401403601,
+          401403602,
+          401403603,
+          401403604,
+          401403605,
+          401403606,
+          401403607,
+          401403608,
+          401403609,
+          401403610,
+          401403611,
+          401403612,
+          401403613,
+          401403614,
+          401403615,
+          401403616
+        ],
+        "BossMonsterConfig1": {
+          "Difficulty": 4,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "鉄壁の防御",
+              "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "陣地移転",
+              "Desc": "ジェパードが戦闘に加わりボス幻影を守る。ボス幻影は自身の弱点属性を召喚物に<color=#f29e38ff><u>転移</u></color>させる。召喚物が倒されると、ボス自身の靭性値が追加で削られる。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "転移",
+                  "Desc": "弱点属性をターゲットに移す。弱点属性はターゲットが倒された後に戻り、さらに靭性値を削られる。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "退路なし",
+              "Desc": "ボス幻影の召喚物が味方1人をマークし、ボス幻影が単体攻撃スキルを発動した後にマークされた味方に<color=#f29e38ff><u>追加発動</u></color>する。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": [
+                {
+                  "Name": "追加発動",
+                  "Desc": "単体攻撃スキルを発動した後、ターゲットを再選択してそのスキルを再度発動できる。",
+                  "Param": []
+                }
+              ]
+            },
+            {
+              "Name": "強靭な志",
+              "Desc": "敵全体が受けるダメージがダウンする。ただし所持している<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.6000000238419,
+                1.25,
+                1
+              ],
+              "SkillID": 100401410,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "召喚物がフィールド上に存在するとき、ボス幻影は<color=#f29e38ff>自身の弱点属性を召喚物に転移させる</color>。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "ボス幻影は<color=#f29e38ff>召喚物</color>がロックオンしたターゲットに単体攻撃を追加発動し、確率で凍結または禁錮状態を付与する。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "ボス幻影は<color=#f29e38ff>弱点撃破</color>された後に受けるダメージが大アップし、味方全体のSPを回復して行動順を早める。",
+            "優先的に<color=#f29e38ff>召喚物</color>を消滅または弱点撃破すると、効果的にボス幻影を弱体化できる。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "第一段階：望みなき凛冽たる風の幻滅者",
+              "Desc": "ボス幻影はスキルを使用してターゲットを凍結し、ダメージを与える。ジェパードは全体バリアを提供する。",
+              "Answer": "対応戦略：召喚物を優先的に倒し、ジェパードが全体バリアを発動した時は速やかに弱点撃破してジェパードを倒す。",
+              "Difficulty": 1,
+              "SkillList": [
+                100111,
+                100112,
+                100113
+              ]
+            },
+            {
+              "Name": "第二段階：望みなき凛冽たる風の幻滅者・虚妄の母",
+              "Desc": "ボス幻影は「創世の絶唱」を放ち続けて全体に大ダメージを与え、さらにスキルを使用して味方の行動を制限する。",
+              "Answer": "対応戦略：優先的に召喚物を倒した後、速やかにボス幻影を弱点撃破する。",
+              "Difficulty": 1,
+              "SkillList": [
+                100121,
+                100122
+              ]
+            }
+          ]
+        },
+        "BossMonsterConfig2": {
+          "Difficulty": 4,
+          "DifficultyList": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "TagList": [
+            {
+              "Name": "鉄壁の防御",
+              "Desc": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ],
+              "Child": []
+            },
+            {
+              "Name": "朽ち株と枯れ木",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "剛を砕きて柔と成す",
+              "Desc": "「憐憫の腕」の最大靭性値がアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            },
+            {
+              "Name": "強靭な志",
+              "Desc": "敵全体の受けるダメージがダウンする。ただし所持する<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": [],
+              "Child": []
+            }
+          ],
+          "DifficultyGuideList": [
+            {
+              "Desc": "ボス幻影とその召喚物の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+              "Param": [
+                0.5,
+                1,
+                1.5
+              ],
+              "SkillID": 401403609,
+              "ParamFix": [
+                0.5000000004656613,
+                1,
+                1.5000000004656613
+              ]
+            },
+            {
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            },
+            {
+              "Desc": "味方のHPが減った時、、「深き死夢」状態のボス幻影は「死へと誘う泡」を蓄積し、「死へと誘う泡」が上限に達すると、ボス幻影は「死の芳香」状態に入り、ボス幻影とその召喚物のスキルが大幅に強化される。",
+              "Param": [],
+              "SkillID": null,
+              "ParamFix": []
+            }
+          ],
+          "TextGuideList": [
+            "味方が「負荷HP」状態になると、与ダメージと弱点撃破効率が大幅にダウンする。HPを優先的に回復して、状態を解除しよう。",
+            "「憐憫の腕」の弱点を撃破すると、ボス幻影の靭性とHPが削られる。この時、ボス幻影が「死の芳香」状態なら、味方のHPを回復できる。"
+          ],
+          "PhaseList": [
+            {
+              "Name": "第一段階：許されざる死",
+              "Desc": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+              "Answer": "対応戦略：「負荷HP」状態にある味方を優先的に回復する。",
+              "Difficulty": 1,
+              "SkillList": [
+                101311,
+                101312
+              ]
+            },
+            {
+              "Name": "第二段階：死へと向かう生",
+              "Desc": "ボス幻影が「死は更なる死を欲する」を発動すると、「負荷HP」状態の味方にHPが0になるダメージを与える。",
+              "Answer": "対応戦略：「死は更なる死を欲する」が発動する前に、味方全体のHPを回復して「負荷HP」状態を解除する。",
+              "Difficulty": 1,
+              "SkillList": [
+                101321
+              ]
+            }
+          ]
+        },
+        "EventIDList1": [
+          {
+            "StageID": 420334,
+            "StageType": "Challenge",
+            "StageName": 1653639074891422500,
+            "HardLevelGroup": 1,
+            "Level": 90,
+            "EliteGroup": 907,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Belobog_Combat_Cocolia_Low"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 100401404,
+                "Monster1": 100402604
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
+            "TrialAvatarList": []
+          }
+        ],
+        "EventIDList2": [
+          {
+            "StageID": 420324,
+            "StageType": "Challenge",
+            "StageName": 1712224853307385000,
+            "HardLevelGroup": 1,
+            "Level": 90,
+            "EliteGroup": 899,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "BattleScoringGroup": 902,
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BGM",
+                "MOJJBFBKBNC": "State_Amphoreus_Combat_Boss_Pollux_P1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_BindingMazeBuff",
+                "MOJJBFBKBNC": "3110012"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 401403604
+              }
+            ],
+            "LevelLoseCondition": [
+              "[CDT_WaitCustomString:Level_SpecialLose]"
+            ],
+            "LevelWinCondition": [
+              "[CDT_WaitCustomString:Level_SpecialWin]"
+            ],
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1,
             "TrialAvatarList": []
           }
         ]

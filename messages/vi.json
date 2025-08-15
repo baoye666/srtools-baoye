@@ -236,6 +236,12 @@
 		"maxAll": "Tối đa tất cả",
 		"maxAllSuccess": "Đã thiết lập cấp độ kỹ năng tối đa thành công.",
 		"maxAllFailed": "Thiết lập cấp độ kỹ năng tối đa thất bại.",
-		"noRelicEquipped": "Không có di vật"
+		"noRelicEquipped": "Không có di vật",
+		"anomalyArbitration": "Phán Quyết Dị Thường",
+		"normalMode": "Chế độ thường",
+		"hardMode": "Chế độ khó",
+		"selectPEAKEvent": "Chọn sự kiện",
+		"mode": "Chế độ",
+		"selectMode": "Chọn chế độ"
 	}
 }

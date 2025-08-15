@@ -1,4 +1,4 @@
-import { ASConfigStore, AvatarJson, AvatarStore, BattleConfigJson, CEConfigStore, FreeSRJson, LightconeJson, MOCConfigStore, PFConfigStore, RelicJson } from "@/types";
+import { ASConfigStore, AvatarJson, AvatarStore, BattleConfigJson, CEConfigStore, FreeSRJson, LightconeJson, MOCConfigStore, PEAKConfigStore, PFConfigStore, RelicJson } from "@/types";
 
 
 export function converterToFreeSRJson(
@@ -8,6 +8,7 @@ export function converterToFreeSRJson(
     pf_config: PFConfigStore,
     as_config: ASConfigStore,
     ce_config: CEConfigStore,
+    peak_config: PEAKConfigStore,
 ): FreeSRJson {
     const lightcones: LightconeJson[] = []
     const relics: RelicJson[] = []
@@ -51,6 +52,16 @@ export function converterToFreeSRJson(
             stage_id: ce_config.stage_id,
             path_resonance_id: 0,
             monsters: ce_config.monsters,
+        }
+    } else if (battle_type === "PEAK") {
+        battleJson = {
+            battle_type: battle_type,
+            blessings: peak_config.blessings,
+            custom_stats: [],
+            cycle_count: peak_config.cycle_count,
+            stage_id: peak_config.stage_id,
+            path_resonance_id: 0,
+            monsters: peak_config.monsters,
         }
     } else {
         battleJson = {

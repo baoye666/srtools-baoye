@@ -186,6 +186,7 @@
 		"useTurbulenceBuff": "使用紊乱增益？",
 		"firstHalfEnemies": "上半场敌人",
 		"secondHalfEnemies": "下半场敌人",
+		"listEnemies": "敌人列表",
 		"turbulenceBuff": "紊乱增益",
 		"noEventSelected": "未选择事件",
 		"noTurbulenceBuff": "未选择紊乱增益",
@@ -235,7 +236,12 @@
 		"defence": "防御",
 		"maxAllSuccess": "技能等级已成功设置为最大。",
 		"maxAllFailed": "设置技能等级为最大失败。",
-		"noRelicEquipped": "未装备圣遗物"
-		
+		"noRelicEquipped": "未装备圣遗物",
+		"anomalyArbitration": "异相仲裁",
+		"normalMode": "普通模式",
+		"hardMode": "困难模式",
+		"selectPEAKEvent": "选择 PEAK 事件",
+		"mode": "模式",
+    	"selectMode": "选择模式"
 	}
 }

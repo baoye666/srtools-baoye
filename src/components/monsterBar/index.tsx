@@ -5,6 +5,7 @@ import Image from "next/image";
 import AsBar from "./as";
 import { useTranslations } from "next-intl";
 import CeBar from "./ce";
+import PeakBar from "./peak";
 
 export default function MonsterBar() {
     const { battle_type, setBattleType } = useUserDataStore()
@@ -14,6 +15,7 @@ export default function MonsterBar() {
         { name: transI18n("memoryOfChaos"), icon: 'AbyssIcon01', value: 'MOC' },
         { name: transI18n("pureFiction"), icon: 'ChallengeStory', value: 'PF' },
         { name: transI18n("apocalypticShadow"), icon: 'ChallengeBoss', value: 'AS' },
+        { name: transI18n("anomalyArbitration"), icon: 'AbyssIcon02', value: 'PEAK' },
         { name: transI18n("customEnemy"), icon: 'MonsterIcon', value: 'CE' },
         { name: transI18n("simulatedUniverse"), icon: 'SimulatedUniverse', value: 'SU' },
     ];
@@ -24,9 +26,9 @@ export default function MonsterBar() {
             {/* Header Navigation */}
             <nav className="border-b border-warning/30 relative">
                 <div className="container mx-auto px-4">
-                    <div className="flex items-center justify-center h-16">
+                    <div className="flex items-center justify-center">
                         {/* Navigation Tabs */}
-                        <div className="flex space-x-1">
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1">
                             {navItems.map((item) => (
                                 <button
                                     key={item.name}
@@ -76,6 +78,7 @@ export default function MonsterBar() {
             {battle_type.toUpperCase() === 'PF' && <PfBar />}
             {battle_type.toUpperCase() === 'AS' && <AsBar />}
             {battle_type.toUpperCase() === 'CE' && <CeBar />}
+            {battle_type.toUpperCase() === 'PEAK' && <PeakBar />}
             {battle_type.toUpperCase() === 'SU' && (
                 <div className="container mx-auto px-4 py-8 text-center font-bold text-3xl">
                    {transI18n("comingSoon")}

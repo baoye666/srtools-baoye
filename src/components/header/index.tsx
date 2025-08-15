@@ -39,10 +39,12 @@ export default function Header() {
         pf_config,
         as_config,
         ce_config,
+        peak_config,
         setMocConfig,
         setPfConfig,
         setAsConfig,
         setCeConfig,
+        setPeakConfig,
     } = useUserDataStore()
 
     const router = useRouter()
@@ -170,8 +172,10 @@ export default function Header() {
                     setPfConfig(parsed.pf_config)
                     setAsConfig(parsed.as_config)
                     setCeConfig(parsed.ce_config)
+                    setPeakConfig(parsed.peak_config)
                     toast.success(transI18n("importDatabaseSuccess"))
-                } catch  {
+                } catch (e) {
+                    console.log(e)
                     toast.error(transI18n("fileMustBeAValidJsonFile"))
                 }
             };
@@ -231,8 +235,26 @@ export default function Header() {
                             <details>
                                 <summary className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium">{transI18n("exportData")}</summary>
                                 <ul className="p-2">
-                                    <li><a onClick={() => downloadJson("freesr-data", converterToFreeSRJson(avatars, battle_type, moc_config, pf_config, as_config, ce_config))}>{transI18n("freeSr")}</a></li>
-                                    <li><a onClick={() => downloadJson("database-data", { avatars: avatars, battle_type: battle_type, moc_config: moc_config, pf_config: pf_config, as_config: as_config, ce_config: ce_config })}>{transI18n("database")}</a></li>
+                                    <li><a onClick={() => downloadJson("freesr-data", 
+                                        converterToFreeSRJson(
+                                            avatars, 
+                                            battle_type, 
+                                            moc_config, 
+                                            pf_config, 
+                                            as_config, 
+                                            ce_config, 
+                                            peak_config
+                                        )
+                                    )}>{transI18n("freeSr")}</a></li>
+                                    <li><a onClick={() => downloadJson("database-data", { 
+                                        avatars: avatars, 
+                                        battle_type: battle_type, 
+                                        moc_config: moc_config, 
+                                        pf_config: pf_config, 
+                                        as_config: as_config, 
+                                        ce_config: ce_config, 
+                                        peak_config: peak_config 
+                                    })}>{transI18n("database")}</a></li>
                                 </ul>
                             </details>
                         </li>
@@ -320,8 +342,26 @@ export default function Header() {
                         <details>
                             <summary className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium">{transI18n("exportData")}</summary>
                             <ul className="p-2">
-                                <li><a onClick={() => downloadJson("freesr-data", converterToFreeSRJson(avatars, battle_type, moc_config, pf_config, as_config, ce_config))}>{transI18n("freeSr")}</a></li>
-                                <li><a onClick={() => downloadJson("database-data", { avatars: avatars, battle_type: battle_type, moc_config: moc_config, pf_config: pf_config, as_config: as_config, ce_config: ce_config })}>{transI18n("database")}</a></li>
+                                <li><a onClick={() => downloadJson("freesr-data", 
+                                    converterToFreeSRJson(
+                                        avatars, 
+                                        battle_type, 
+                                        moc_config, 
+                                        pf_config, 
+                                        as_config, 
+                                        ce_config, 
+                                        peak_config
+                                    )
+                                )}>{transI18n("freeSr")}</a></li>
+                                <li><a onClick={() => downloadJson("database-data", { 
+                                    avatars: avatars, 
+                                    battle_type: battle_type, 
+                                    moc_config: moc_config, 
+                                    pf_config: pf_config, 
+                                    as_config: as_config, 
+                                    ce_config: ce_config, 
+                                    peak_config: peak_config 
+                                })}>{transI18n("database")}</a></li>
                             </ul>
                         </details>
                     </li>

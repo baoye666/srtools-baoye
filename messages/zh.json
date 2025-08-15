@@ -236,6 +236,12 @@
 		"maxAll": "全部最大化",
 		"maxAllSuccess": "技能等级已成功设置为最大。",
 		"maxAllFailed": "设置技能等级为最大失败。",
-		"noRelicEquipped": "未装备圣遗物"
+		"noRelicEquipped": "未装备圣遗物",
+		"anomalyArbitration": "异相",
+		"normalMode": "普通模式",
+		"hardMode": "困难模式",
+		"selectPEAKEvent": "选择 PEAK 事件",
+		"mode": "模式",
+		"selectMode": "选择模式"
 	}
 }

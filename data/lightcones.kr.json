@@ -239,7 +239,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20001": {
     "Name": "풍작",
@@ -476,7 +477,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20002": {
     "Name": "천경",
@@ -713,7 +715,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20003": {
     "Name": "앰버",
@@ -960,7 +963,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "20004": {
     "Name": "그윽",
@@ -1202,7 +1237,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20005": {
     "Name": "합창",
@@ -1439,7 +1475,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20006": {
     "Name": "아카이브",
@@ -1676,7 +1713,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20007": {
     "Name": "시위를 떠난 화살",
@@ -1918,7 +1956,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20008": {
     "Name": "알찬 열매",
@@ -2155,7 +2194,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20009": {
     "Name": "무너진 행복",
@@ -2397,7 +2437,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20010": {
     "Name": "수비",
@@ -2634,7 +2675,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20011": {
     "Name": "심연의 고리",
@@ -2871,7 +2913,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20012": {
     "Name": "맞물린 톱니",
@@ -3108,7 +3151,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20013": {
     "Name": "영험한 열쇠",
@@ -3345,7 +3389,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20014": {
     "Name": "대립",
@@ -3587,7 +3632,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20015": {
     "Name": "증식",
@@ -3824,7 +3870,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20016": {
     "Name": "전멸",
@@ -4066,7 +4113,8 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20017": {
     "Name": "강토 개척",
@@ -4303,7 +4351,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20018": {
     "Name": "숨은 그림자",
@@ -4540,7 +4589,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20019": {
     "Name": "어울림",
@@ -4782,7 +4832,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20020": {
     "Name": "식견",
@@ -5024,7 +5075,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20021": {
     "Name": "불타는 그림자",
@@ -5266,7 +5318,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "20022": {
     "Name": "추억 회상",
@@ -5508,7 +5561,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21000": {
     "Name": "수술 후의 대화",
@@ -5750,7 +5804,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "2": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "3": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "4": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.1599999964237213
+        }
+      ]
+    }
   },
   "21001": {
     "Name": "밤 인사와 잠든 얼굴",
@@ -5992,7 +6078,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21002": {
     "Name": "여생의 첫날",
@@ -6234,7 +6321,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2199999988079071
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21003": {
     "Name": "침묵만이",
@@ -6476,7 +6595,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21004": {
     "Name": "기억 속 모습",
@@ -6718,7 +6869,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4900000095367432
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.5600000023841858
+        }
+      ]
+    }
   },
   "21005": {
     "Name": "두더지파가 환영해",
@@ -6955,7 +7138,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21006": {
     "Name": "「나」의 탄생",
@@ -7202,7 +7386,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21007": {
     "Name": "같은 심정",
@@ -7444,7 +7629,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "1": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.125
+        }
+      ],
+      "2": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "3": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.17499999701976776
+        }
+      ],
+      "4": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21008": {
     "Name": "사냥감의 시선",
@@ -7686,7 +7903,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "21009": {
     "Name": "랜도의 선택",
@@ -7928,7 +8177,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21010": {
     "Name": "논검",
@@ -8170,7 +8420,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21011": {
     "Name": "행성과의 만남",
@@ -8407,7 +8658,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21012": {
     "Name": "비밀 맹세",
@@ -8649,7 +8901,39 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "21013": {
     "Name": "세상을 진정시키지 마",
@@ -8891,7 +9175,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21014": {
     "Name": "알맞은 타이밍",
@@ -9138,7 +9423,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21015": {
     "Name": "땀방울처럼 빛나는 결심",
@@ -9385,7 +9702,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21016": {
     "Name": "우주 시장 동향",
@@ -9637,7 +9955,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21017": {
     "Name": "팔로우를 부탁해!",
@@ -9879,7 +10229,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21018": {
     "Name": "댄스! 댄스! 댄스!",
@@ -10116,7 +10467,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21019": {
     "Name": "푸른 하늘 아래",
@@ -10363,7 +10715,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21020": {
     "Name": "천재들의 휴식",
@@ -10610,7 +10994,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21021": {
     "Name": "등가교환",
@@ -10852,7 +11268,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21022": {
     "Name": "페르마타",
@@ -11094,7 +11511,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21023": {
     "Name": "우리는 와일드 파이어",
@@ -11341,7 +11790,8 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21024": {
     "Name": "움트는 봄물",
@@ -11583,7 +12033,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21025": {
     "Name": "과거와 미래",
@@ -11825,7 +12276,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21026": {
     "Name": "멍! 산책 시간!",
@@ -12067,7 +12519,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.125
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.15000000596046448
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.17499999701976776
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21027": {
     "Name": "느낌 있는 아침 식사 루틴",
@@ -12314,7 +12798,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21028": {
     "Name": "따듯한 밤은 길지 않고",
@@ -12556,7 +13072,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21029": {
     "Name": "훗날 기약",
@@ -12793,7 +13341,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21030": {
     "Name": "이게 바로 나야!",
@@ -13035,7 +13584,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21031": {
     "Name": "또다시 저승으로",
@@ -13277,7 +13858,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21032": {
     "Name": "누월재운의 뜻",
@@ -13524,7 +14137,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21033": {
     "Name": "도망칠 곳은 없다",
@@ -13766,7 +14380,39 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.36000001430511475
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.41999998688697815
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.47999998927116394
+        }
+      ]
+    }
   },
   "21034": {
     "Name": "오늘도 평화로운 하루",
@@ -14008,7 +14654,8 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21035": {
     "Name": "무엇이 진실인가",
@@ -14255,7 +14902,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.47999998927116394
+        }
+      ]
+    }
   },
   "21036": {
     "Name": "좋은꿈 마을 대모험",
@@ -14492,7 +15171,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21037": {
     "Name": "최후의 승자",
@@ -14739,7 +15419,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21038": {
     "Name": "불의 먼 곳에서",
@@ -14996,7 +15708,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21039": {
     "Name": "운명의 실을 엮다",
@@ -15248,7 +15961,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21040": {
     "Name": "은하 함락의 날",
@@ -15495,7 +16240,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2199999988079071
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21041": {
     "Name": "쇼타임",
@@ -15752,7 +16529,8 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21042": {
     "Name": "마음에 새긴 약속",
@@ -15999,7 +16777,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4900000095367432
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.5600000023841858
+        }
+      ]
+    }
   },
   "21043": {
     "Name": "두 사람의 콘서트",
@@ -16241,7 +17051,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21044": {
     "Name": "끝없는 춤",
@@ -16483,7 +17325,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ]
+    }
   },
   "21045": {
     "Name": "조화가 침묵한 후",
@@ -16730,7 +17604,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4900000095367432
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.5600000023841858
+        }
+      ]
+    }
   },
   "21046": {
     "Name": "피어나길 기다리는 꽃",
@@ -16972,7 +17878,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21047": {
     "Name": "그림자처럼 뒤따르는 밤",
@@ -17219,7 +18157,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4900000095367432
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.5600000023841858
+        }
+      ]
+    }
   },
   "21048": {
     "Name": "꿈의 몽타주",
@@ -17466,7 +18436,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.09000000357627869
+        }
+      ],
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "3": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.10999999940395357
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
+    }
   },
   "21050": {
     "Name": "찰나에 결정되는 승리",
@@ -17713,7 +18715,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21051": {
     "Name": "천재들의 안부 인사",
@@ -17960,7 +18994,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21052": {
     "Name": "땀은 많이, 눈물은 적게",
@@ -18202,11 +19268,43 @@
         "BaseDefence": 91.80000000074506,
         "BaseDefenceAdd": 1.350000000325963
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21053": {
     "Name": "언제나 여정이 평탄하기를",
-    "Desc": "소년은 별처럼 쏟아지는 빗속을 달리며, 오랜 가뭄 끝에 내린 단비에 환호했다.\\n\\n그 비는 아주 오랫동안 내렸고, 수레는 초록빛으로 뒤덮인 땅에 멈춰 섰다.\\n<i>「엄마, 누나, 이제 더 이상 굶거나 추위에 떨지 않아도 돼!」\\n</i>에브긴인들의 모닥불은 긴 밤을 따뜻하게 밝혔고, 소년은 누나의 이야기를 들으며 아침을 기다렸다.\\n\\n<i>「카카바샤, 너도 지모신께서 주신 행운으로 우리가 할 수 없는 일을 해낼 거야…. 너의 언제나 여정이 평탄하며, 영원히 계략을 들키는 일이 없기를……」</i>\\n\\n황금빛 햇살이 꿈에서 새어나와 현실의 거처를 비추자, 거래와 숫자가 또다시 시야에 들어왔다.\\n그는 움켜쥐었던 손을 풀었다——\\n\\n마치 아무것도 잡지 못한 것처럼, 마치 온기가 아직 남아 있는 것처럼",
+    "Desc": "소년은 별처럼 쏟아지는 빗속을 달리며, 오랜 가뭄 끝에 내린 단비에 환호했다.\\n\\n그 비는 아주 오랫동안 내렸고, 수레는 초록빛으로 뒤덮인 땅에 멈춰 섰다.\\n<i>「엄마, 누나, 이제 더 이상 굶거나 추위에 떨지 않아도 돼!」\\n</i>에브긴인들의 모닥불은 긴 밤을 따뜻하게 밝혔고, 소년은 누나의 이야기를 들으며 아침을 기다렸다.\\n\\n<i>「카카바샤, 너도 지모신께서 주신 행운으로 우리가 할 수 없는 일을 해낼 거야…. 너의 여정이 언제나 평탄하며, 영원히 계략을 들키는 일이 없기를……」</i>\\n\\n황금빛 햇살이 꿈에서 새어나와 현실의 거처를 비추자, 거래와 숫자가 또다시 시야에 들어왔다.\\n그는 움켜쥐었던 손을 풀었다——\\n\\n마치 아무것도 잡지 못한 것처럼, 마치 온기가 아직 남아 있는 것처럼",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Knight",
     "Refinements": {
@@ -18444,11 +19542,12 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21054": {
     "Name": "이야기의 다음 페이지",
-    "Desc": "산들바람에 물결치는 밀밭 속에서 소녀는 빈 수기를 들고 그 사이를 거닌다.\\n\\n엘리사이 에데스 밖, 낯설고도 익숙한 도시 국가에서, 각양각색의 동료들이 서로를 만나고 꿈 같은 여정이 시작될 것이다…….\\n\\n<i>「이번엔 나와 함께……」</i>\\n밀밭의 끝에서 오랫동안 기다려온 소녀가 책장을 덮고 「미래」를 향해 손을 내민다——\\n\\n<i>「이야기의 새로운 장을 써 보자♪」</i>",
+    "Desc": "산들바람에 물결치는 밀밭 속에서 소녀는 아무것도 적히지 않은 수기를 들고 그 사이를 거닌다.\\n\\n엘리사이 에데스 밖, 낯설고도 익숙한 도시 국가에서, 각양각색의 동료들이 서로를 만나고 꿈 같은 여정이 시작될 것이다…….\\n\\n<i>「이번엔 나와 함께……」</i>\\n밀밭의 끝에서 오랫동안 기다려온 소녀가 책장을 덮고 「미래」를 향해 손을 내민다——\\n\\n<i>「이야기의 새로운 장을 써 보자♪」</i>",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Memory",
     "Refinements": {
@@ -18691,7 +19790,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21055": {
     "Name": "내일의 내일이 올 때까지",
@@ -18938,7 +20069,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "HealRatioBase",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "21056": {
     "Name": "바람을 쫓을 때",
@@ -19175,7 +20338,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "21057": {
     "Name": "꽃은 잊지 않는다",
@@ -19417,7 +20581,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "21058": {
     "Name": "과거의 핏자국",
@@ -19659,7 +20855,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21060": {
     "Name": "밀 내음이 가득한 꿈",
@@ -19901,7 +21129,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "21061": {
     "Name": "휴일의 목욕탕 대모험",
@@ -20153,7 +21413,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "21062": {
     "Name": "그 종착지에서 다시 만나자",
@@ -20395,7 +21687,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "22000": {
     "Name": "초보자 임무 시작 전",
@@ -20637,7 +21961,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "22001": {
     "Name": "저기, 나 여기 있어",
@@ -20884,7 +22240,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.09000000357627869
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.10999999940395357
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
+    }
   },
   "22002": {
     "Name": "내일을 위한 여정",
@@ -21131,7 +22519,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "22003": {
     "Name": "인사록•음률 사냥",
@@ -21378,7 +22798,39 @@
         "BaseDefence": 122.40000000037253,
         "BaseDefenceAdd": 1.800000000745058
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.15000000596046448
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ]
+    }
   },
   "22004": {
     "Name": "우주 대사업",
@@ -21620,15 +23072,47 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.14000000059604645
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ]
+    }
   },
   "22005": {
     "Name": "영원한 미궁의 식사",
-    "Desc": "우르릉 쾅쾅——\\n미궁 밖, 비바람이 끊임없이 휘몰아친다.\\n보글보글——\\n요정들의 신기한 거대 솥이 펄펄 끓는다.\\n\\n<i>「특제 향신료를 뿌리고…」</i>\\n<i>「신선한 채소를 넣자!」</i>\\n<i>「이번에는 분명 성공할 수 있을 거야!」</i>\\n\\n솥이 또다시 보글보글 끓었고, 요정들은 솥을 간절하게 바라봤다.\\n<i>「온다, 온다!」</i>\\n강렬한 빛이 솥 아래에서 뿜어져 나왔다——\\n\\n이에 모두가 모여들었다!\\n\\n……\\n\\n향기로운 연회에서 손님들은 잔을 들고 함께 기묘한 세월을 축하한다——\\n\\n이 꿈속의 낙원이 영원히 따뜻하고, 영원히 즐겁기를!",
+    "Desc": "우르릉 쾅쾅——\\n미궁 밖, 비바람이 끊임없이 휘몰아친다.\\n보글보글——\\n요정들의 신기한 거대 솥이 펄펄 끓는다.\\n\\n<i>「특제 향신료를 뿌리고…」</i>\\n<i>「신선한 채소를 넣자!」</i>\\n<i>「이번에는 분명 성공할 수 있을 거야!」</i>\\n\\n솥이 또다시 보글보글 끓었고, 요정들은 솥을 간절하게 바라봤다.\\n<i>「온다, 온다!」</i>\\n강렬한 빛이 솥 밑바닥에서 뿜어져 나왔다——\\n\\n이에 모두가 모여들었다!\\n\\n……\\n\\n향기로운 연회에서 손님들은 잔을 들고 함께 기묘한 세월을 축하한다——\\n\\n이 꿈속의 낙원이 영원히 따뜻하고, 영원히 즐겁기를!",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Shaman",
     "Refinements": {
-      "Name": "최고!",
+      "Name": "맛있는 냄새",
       "Desc": "장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 전투 스킬 발동 후 공격력이 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다, 해당 효과 최대 중첩수: <unbreak>#3[i]</unbreak>스택",
       "Level": {
         "1": {
@@ -21867,7 +23351,39 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "23000": {
     "Name": "은하철도의 밤",
@@ -22109,7 +23625,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23001": {
     "Name": "야경 속에서",
@@ -22366,7 +23883,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23002": {
     "Name": "대체할 수 없는 것",
@@ -22613,7 +24162,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23003": {
     "Name": "아직 전투는 끝나지 않았다",
@@ -22860,7 +24441,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "1": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "2": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "3": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "4": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.18000000715255737
+        }
+      ]
+    }
   },
   "23004": {
     "Name": "세계의 이름으로",
@@ -23107,7 +24720,8 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23005": {
     "Name": "승리의 순간",
@@ -23359,7 +24973,59 @@
         "BaseDefence": 275.40000000037253,
         "BaseDefenceAdd": 4.050000000046566
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.2800000011920929
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.3199999928474426
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.36000001430511475
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.4000000059604645
+        },
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23006": {
     "Name": "필요한 건 기다림뿐",
@@ -23616,7 +25282,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "AllDamageTypeAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23007": {
     "Name": "계속 내리는 비",
@@ -23873,7 +25571,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23008": {
     "Name": "관의 울림",
@@ -24125,7 +25855,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.2800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.3199999928474426
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.36000001430511475
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23009": {
     "Name": "닿을 수 없는 저편",
@@ -24372,7 +26134,59 @@
         "BaseDefence": 153,
         "BaseDefenceAdd": 2.2500000002328306
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.27000001072883606
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.30000001192092896
+        },
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23010": {
     "Name": "동트기 전",
@@ -24619,7 +26433,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23011": {
     "Name": "그녀는 두 눈을 감았네",
@@ -24876,7 +26722,59 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.2800000011920929
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.3199999928474426
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.36000001430511475
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.4000000059604645
+        },
+        {
+          "type": "SPRatioBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "23012": {
     "Name": "깊게 든 단잠",
@@ -25128,7 +27026,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.4000000059604645
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.44999998807907104
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5
+        }
+      ]
+    }
   },
   "23013": {
     "Name": "세월은 흐를 뿐",
@@ -25375,7 +27305,59 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.18000000715255737
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20999999344348907
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.27000001072883606
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        },
+        {
+          "type": "HealRatioBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "23014": {
     "Name": "이 몸이 검이니",
@@ -25627,7 +27609,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.2300000041723251
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.25999999046325684
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.28999999165534973
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "23015": {
     "Name": "태양보다 밝게 빛나는 것",
@@ -25884,7 +27898,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23016": {
     "Name": "고민, 그리고 행복",
@@ -26136,7 +28182,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23017": {
     "Name": "섬뜩한 밤",
@@ -26393,7 +28471,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "SPRatioBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "23018": {
     "Name": "눈에 담긴 순간",
@@ -26640,7 +28750,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23019": {
     "Name": "거울 속 지난날의 나",
@@ -26897,7 +29039,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23020": {
     "Name": "순수 사유의 세례",
@@ -27159,7 +29333,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.2300000041723251
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.25999999046325684
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.28999999165534973
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "23021": {
     "Name": "속세에서의 유희",
@@ -27421,7 +29627,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.3199999928474426
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.38999998569488525
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.4600000083446502
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5299999713897705
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23022": {
     "Name": "시간의 기억에 대한 재구성",
@@ -27673,7 +29911,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.44999998807907104
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.5
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.550000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23023": {
     "Name": "언제나 불공평한 운명",
@@ -27935,7 +30205,39 @@
         "BaseDefence": 306,
         "BaseDefenceAdd": 4.500000000465661
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.4000000059604645
+        }
+      ],
+      "1": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.4600000083446502
+        }
+      ],
+      "2": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.5199999809265137
+        }
+      ],
+      "3": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.5799999833106995
+        }
+      ],
+      "4": [
+        {
+          "type": "DefenceAddedRatio",
+          "value": 0.6399999856948853
+        }
+      ]
+    }
   },
   "23024": {
     "Name": "흘러가는 강가를 따라",
@@ -28182,7 +30484,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23025": {
     "Name": "꿈은 어디로 돌아가야 하는가",
@@ -28434,7 +30768,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23026": {
     "Name": "찬란하게 빛나는 밤",
@@ -28691,7 +31057,8 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23027": {
     "Name": "두 번째 생명을 향해",
@@ -28943,7 +31310,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23028": {
     "Name": "값을 매길 수 없는 건 희망뿐",
@@ -29210,7 +31609,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1899999976158142
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.2199999988079071
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.25
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.2800000011920929
+        }
+      ]
+    }
   },
   "23029": {
     "Name": "그 무수한 봄날",
@@ -29472,7 +31903,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23030": {
     "Name": "해 질 무렵 시작되는 춤",
@@ -29724,7 +32187,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23031": {
     "Name": "정복하고 사냥하리",
@@ -29971,7 +32466,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.15000000596046448
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.17499999701976776
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.22499999403953552
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.25
+        }
+      ]
+    }
   },
   "23032": {
     "Name": "오직 향만이 변함없이",
@@ -30228,7 +32755,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23033": {
     "Name": "인법첩•요란 파마",
@@ -30475,7 +33034,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23034": {
     "Name": "대지로 돌아온 비행",
@@ -30732,7 +33323,8 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23035": {
     "Name": "먼 길 끝의 귀로",
@@ -30989,7 +33581,39 @@
         "BaseDefence": 306,
         "BaseDefenceAdd": 4.500000000465661
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.6000000238418579
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.699999988079071
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.800000011920929
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.8999999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 1
+        }
+      ]
+    }
   },
   "23036": {
     "Name": "시간을 황금으로 엮어",
@@ -31241,7 +33865,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BaseSpeed",
+          "value": 12
+        }
+      ],
+      "1": [
+        {
+          "type": "BaseSpeed",
+          "value": 14
+        }
+      ],
+      "2": [
+        {
+          "type": "BaseSpeed",
+          "value": 16
+        }
+      ],
+      "3": [
+        {
+          "type": "BaseSpeed",
+          "value": 18
+        }
+      ],
+      "4": [
+        {
+          "type": "BaseSpeed",
+          "value": 20
+        }
+      ]
+    }
   },
   "23037": {
     "Name": "추궁할 수 없는 곳을 향해",
@@ -31498,7 +34154,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.18000000715255737
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ]
+    }
   },
   "23038": {
     "Name": "시간이 한 송이 꽃이라면",
@@ -31760,7 +34448,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.41999998688697815
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.47999998927116394
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23039": {
     "Name": "피의 불꽃이여, 앞길을 태워라",
@@ -32022,7 +34742,59 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.18000000715255737
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.20999999344348907
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.23999999463558197
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.27000001072883606
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        },
+        {
+          "type": "HealTakenRatio",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "23040": {
     "Name": "이별이 더 아름답도록",
@@ -32274,7 +35046,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.375
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.44999998807907104
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.5249999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23041": {
     "Name": "생명은 불태워야 하는 것",
@@ -32531,7 +35335,8 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "23042": {
     "Name": "무지개가 영원히 하늘에 머물길",
@@ -32793,7 +35598,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23043": {
     "Name": "바람에 흩날리는 거짓말",
@@ -33060,7 +35897,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.18000000715255737
+        }
+      ],
+      "1": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.20999999344348907
+        }
+      ],
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.27000001072883606
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ]
+    }
   },
   "23044": {
     "Name": "이와 같이 타오르는 여명",
@@ -33307,7 +36176,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BaseSpeed",
+          "value": 12
+        }
+      ],
+      "1": [
+        {
+          "type": "BaseSpeed",
+          "value": 14
+        }
+      ],
+      "2": [
+        {
+          "type": "BaseSpeed",
+          "value": 16
+        }
+      ],
+      "3": [
+        {
+          "type": "BaseSpeed",
+          "value": 18
+        }
+      ],
+      "4": [
+        {
+          "type": "BaseSpeed",
+          "value": 20
+        }
+      ]
+    }
   },
   "23045": {
     "Name": "보답 없는 왕관",
@@ -33569,7 +36470,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.36000001430511475
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.44999998807907104
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.5400000214576721
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.6299999952316284
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalDamageBase",
+          "value": 0.7200000286102295
+        }
+      ]
+    }
   },
   "23046": {
     "Name": "이상이 불타는 지옥",
@@ -33826,16 +36759,48 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.1599999964237213
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.23999999463558197
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.2800000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.3199999928474426
+        }
+      ]
+    }
   },
   "23047": {
     "Name": "바다는 왜 노래하는가",
-    "Desc": "파도가 몰아치고, 그 울림이 하늘 끝까지 울려 퍼진다.\\n물고기는 텅 빈 바다를 유영하고, 과거의 거품은 출렁거린다. 한 곡의 선율이 여전히 메아리치는 듯하다.\\n\\n<i>「존귀한 공주님, 저희와 함께 연회를 즐기시죠!」</i>\\n심해의 부름에 응답하기 위해, 그녀는 성대한 무대 위에 혼자 남을 때까지 검은 물결과 함께 춤췄다.\\n\\n<i>「바다의 검객이여, 어째서 침묵하고, 무엇을 위해 노래하시나요?」</i>\\n그녀는 대지를 딛는 매 순간 고통을 견뎠다. 그녀는 좀처럼 노래하지 않고, 오직 그 핏빛의 검날로 생명의 비명을 연주할 뿐이었다.\\n\\n<i>「글래디오럼 경, 나와 함께 별바다를 정복하자!」</i>\\n그 뜨거운 불빛을 발견했을 때 그녀는 그것이 연회의 시작이라 믿었고, 마침내 연주의 활을 들었다.\\n\\n……\\n\\n<i>「헬렉트라... 헬렉트라… 노래가 끝난 지금, 어디로 향해야 할까?」</i>\\n\\n헛된 희망이 부서질 때마다 그녀는 늘 고독한 선율로 사람들의 질문에 답했지만, 그 소리는 듣는 이를 매혹시킬 뿐이었다——\\n\\n어쩌면… 인간 세상이든 깊은 바다든, 진정으로 들을 수 있는 자는 연주자 자신뿐일지도 모른다",
+    "Desc": "파도가 몰아치고, 그 울림이 하늘 끝까지 울려 퍼진다.\\n물고기는 텅 빈 바다를 유영하고, 과거의 거품은 출렁거린다. 한 곡의 선율이 여전히 메아리치는 듯하다.\\n\\n<i>「존귀한 공주님, 저희와 함께 연회를 즐기시죠!」</i>\\n심해의 부름에 응답하기 위해, 그녀는 성대한 무대 위에 혼자 남을 때까지 검은 물결과 함께 춤췄다.\\n\\n<i>「바다의 검객이여, 어째서 침묵하고, 무엇을 위해 노래하시나요?」</i>\\n그녀는 대지를 딛는 매 순간 고통을 견뎠다. 그녀는 좀처럼 노래하지 않고, 오직 그 핏빛의 검날로 생명의 비명을 연주할 뿐이었다.\\n\\n<i>「글래디오럼 경, 나와 함께 별바다를 정복하자!」</i>\\n그 뜨거운 불빛을 발견했을 때 그녀는 그것이 연회의 시작이라 믿었고, 마침내 연주의 활을 들었다.\\n\\n……\\n\\n<i>「헬렉트라… 헬렉트라… 노래가 끝난 지금, 어디로 향해야 할까?」</i>\\n\\n헛된 희망이 부서질 때마다 그녀는 늘 고독한 선율로 사람들의 질문에 답했지만, 그 소리는 듣는 이를 매혹시킬 뿐이었다——\\n\\n어쩌면… 인간 세상이든 깊은 바다든, 진정으로 들을 수 있는 자는 연주자 자신뿐일지도 모른다",
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Warlock",
     "Refinements": {
       "Name": "독주",
-      "Desc": "장착한 캐릭터의 효과 명중이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 장착한 캐릭터가 부여한 디버프 상태에 빠진 적이 있을 시 대상을 <unbreak>#2[i]%</unbreak>의 기본 확률로 [혼미] 상태에 빠트린다, 지속 시간: <unbreak>#3[i]</unbreak>턴, 같은 유형의 효과는 중첩되지 않는다. [혼미] 상태일 때 장착한 캐릭터가 부여한 디버프 상태 1개당 받는 지속 피해가 <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> 증가한다, 해당 효과 최대 중첩수: <unbreak>#5[i]</unbreak>스택, 아군의 공격을 받을 시 공격자의 속도가 <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> 증가한다, 지속 시간: <unbreak>#7[i]</unbreak>턴",
+      "Desc": "장착한 캐릭터의 효과 명중이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 장착한 캐릭터가 부여한 디버프 효과에 빠진 적이 있을 시 대상을 <unbreak>#2[i]%</unbreak>의 기본 확률로 [혼미] 상태에 빠트린다, 지속 시간: <unbreak>#3[i]</unbreak>턴, 같은 유형의 효과는 중첩되지 않는다. [혼미] 상태일 때 장착한 캐릭터가 부여한 디버프 효과 1개당 받는 지속 피해가 <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> 증가한다, 해당 효과 최대 중첩수: <unbreak>#5[i]</unbreak>스택, 아군의 공격을 받을 시 공격자의 속도가 <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> 증가한다, 지속 시간: <unbreak>#7[i]</unbreak>턴. 장착한 캐릭터가 전투 불능 상태에 빠질 시 모든 [혼미]를 해제한다",
       "Level": {
         "1": {
           "ParamList": [
@@ -34093,15 +37058,47 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.4000000059604645
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.44999998807907104
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.5
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.550000011920929
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusProbabilityBase",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
   },
   "23048": {
     "Name": "황금 피가 새긴 시대",
-    "Desc": "<i>「천 년 후, 역사는 케리드라를 어떻게 기억할까?」</i>\\n누군가 그녀에게 이렇게 물은 적이 있다.\\n\\n어떤 이들의 마음속에서 그녀는 위명을 떨친 「카이사르」였다.\\n차갑고 잔혹한 폭군, 야망을 품은 「화염의 왕관」, 그리고 피와 불로 구시대를 태운 여황……\\n\\n어떤 이들은 그녀가 가여운 한낱 「체스 말」에 불과하다고 반박했다.\\n모두에게 버림받은 왕은 결국 야망의 포로였으며, 신과의 대국에서 그녀는 모든 것을 잃을 수밖에 없는 운명이었다고.\\n\\n또 어떤 이들은 말했다. 바다보다 어두운 마음 깊은 곳에서, 그녀는 다만 「케리드라」라는 이름의 평범한 인간이었노라고——\\n그녀 역시 희생된 동료를 애도했고, 무거운 사명 앞에서 두려움에 떨며 망설였다고……\\n\\n<i>「훗, 역사가 나를 기억할 필요 없다……」</i>\\n\\n그녀는 가슴 깊이의 쓰라림을 삼키고, 희생으로 포장된 불 쫓는 길을 계속 걸어갔다——\\n\\n<i>「우리의 타오르는 황금 피가 그것을 새겼노라!」</i>",
+    "Desc": "<i>「천 년 후, 역사는 케리드라를 어떻게 기억할까?」</i>\\n누군가 그녀에게 이렇게 물은 적이 있다.\\n\\n어떤 이들의 마음속에서 그녀는 위명을 떨친 「카이사르」였다.\\n차갑고 잔혹한 폭군, 야망을 품은 「화염의 왕관」, 그리고 피와 불로 구시대를 태운 여황……\\n\\n어떤 이들은 그녀가 한낱 가여운 「체스 말」에 불과하다고 반박했다.\\n모두에게 버림받은 군왕은 그저 야망의 포로였으며, 신과의 대국에서 그녀는 모든 것을 잃을 수밖에 없는 운명이었다고.\\n\\n또 어떤 이들은 말했다. 바다보다 어두운 마음 깊은 곳에서, 그녀는 단지 「케리드라」라는 이름의 평범한 인간이었노라고——\\n그녀 역시 희생된 동료를 애도했고, 무거운 사명 앞에서 두려움에 떨며 망설였다고……\\n\\n<i>「훗, 역사가 나를 기억할 필요 없다……」</i>\\n\\n그녀는 가슴 속의 쓰라림을 삼키고, 희생으로 포장된 불을 쫓는 길을 계속 걸어갔다——\\n\\n<i>「우리의 타오르는 황금 피가 그것을 새겼노라!」</i>",
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Shaman",
     "Refinements": {
-      "Name": "정벌",
+      "Name": "정복",
       "Desc": "장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 필살기를 발동해 공격하면 전투 스킬 포인트를 <unbreak>#3[i]</unbreak>pt 회복하며, 장착한 캐릭터가 단일 아군 캐릭터에게 전투 스킬 발동 후 목표가 가하는 전투 스킬 피해가 <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> 증가한다, 지속 시간: <unbreak>#5[i]</unbreak>턴",
       "Level": {
         "1": {
@@ -34350,7 +37347,617 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.6399999856948853
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.959999978542328
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 1.1200000047683716
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 1.2799999713897705
+        }
+      ]
+    }
+  },
+  "23049": {
+    "Name": "긴 밤의 별빛에",
+    "Desc": "세월의 틈새에서, 오직 그녀의 심장 소리만이 메아리친다.\\n과거의 수많은 낮과 밤처럼——밤빛 아래에서 수호하고, 밤빛 아래에서 깊이 잠든다.\\n\\n그녀는 자신에게 맡겨진 기억을 소중히 간직했다.\\n소녀는 텅 빈 시작점에서 출발해, 한때 머물렀던 곳들을 선명한 색채로 물들였다. 따스한 정취가 느껴지는 열차, 저마다 개성을 지닌 동료들, 반짝이는 행성들…. 마치 깨어나고 싶지 않을 만큼 아름다운 꿈 같았다.\\n\\n<i>「Mar. 7th의 진정한 여정은 이제부터 시작이야!」</i>\\n소녀의 선언이 마치 귓가에 들리는 듯했다.\\n\\n그녀는 머나먼 별하늘을 바라보았고, 한 줄기 빛이 다가오고 있었다——\\n그것은 유성과도 같은 열차의 불빛이었다.\\n\\n<i>「잘 자, Mar. 7th.... 네가 깨어나는 날, 다시 개척의 여정을 이어가렴♭」</i>\\n\\n기억 물결이 밀려왔고, 그녀는 소원을 마음 깊이 간직했다. 그 미세한 마음의 소리와 빛을,\\n——그녀는 단 한 번도 잊은 적이 없다",
+    "Rarity": "CombatPowerLightconeRarity5",
+    "BaseType": "Memory",
+    "Refinements": {
+      "Name": "불면",
+      "Desc": "장착한 캐릭터의 HP 최대치가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 장착한 캐릭터의 기억 정령이 스킬 발동 시 장착한 캐릭터가 [밤빛]을 1스택 획득한다. 장착한 캐릭터가 [밤빛] 보유 시 모든 아군 기억 정령이 가하는 피해가 목표의 방어력을 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 무시하며, 같은 유형의 효과는 중첩되지 않는다. 장착한 캐릭터가 [밤빛]을 1스택 보유할 때마다 장착한 캐릭터와 장착한 캐릭터의 기억 정령이 가하는 피해가 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가하며, [밤빛]은 최대 <unbreak>#4[i]</unbreak>스택 중첩된다",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.3000000002793968,
+            0.20000000018626451,
+            0.12000000011175871,
+            4
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.375,
+            0.2249999998603016,
+            0.14000000013038516,
+            4
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.45000000041909516,
+            0.25000000023283064,
+            0.1600000001490116,
+            4
+          ]
+        },
+        "4": {
+          "ParamList": [
+            0.5250000001396984,
+            0.27499999990686774,
+            0.18000000016763806,
+            4
+          ]
+        },
+        "5": {
+          "ParamList": [
+            0.6000000005587935,
+            0.3000000002793968,
+            0.20000000018626451,
+            4
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 23049,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 5000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115011,
+            "ItemNum": 8,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 52.80000000074506,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 24,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 21,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 10000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110251,
+            "ItemNum": 4,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115011,
+            "ItemNum": 12,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 116.16000000014901,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 52.80000000074506,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 46.200000000186265,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 20000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110252,
+            "ItemNum": 4,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115012,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 200.64000000059605,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 91.20000000018626,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 79.80000000074506,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 50000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110252,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115012,
+            "ItemNum": 12,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 285.12000000011176,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 129.6000000005588,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 113.40000000037253,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 100000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110253,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115013,
+            "ItemNum": 6,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 369.6000000005588,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 168,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 147,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 200000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110253,
+            "ItemNum": 10,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115013,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 454.0800000000745,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 206.40000000037253,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 180.6000000005588,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23049,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 538.5600000005215,
+        "BaseHPAdd": 7.920000000856817,
+        "BaseAttack": 244.80000000074506,
+        "BaseAttackAdd": 3.6000000005587935,
+        "BaseDefence": 214.20000000018626,
+        "BaseDefenceAdd": 3.1500000001396984
+      }
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.30000001192092896
+        }
+      ],
+      "1": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.375
+        }
+      ],
+      "2": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.44999998807907104
+        }
+      ],
+      "3": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.5249999761581421
+        }
+      ],
+      "4": [
+        {
+          "type": "HPAddedRatio",
+          "value": 0.6000000238418579
+        }
+      ]
+    }
+  },
+  "23051": {
+    "Name": "끝없는 산과 강이 가로막아도",
+    "Desc": "끝없이 펼쳐진 태고의 땅에서, 소년은 홀로 찾아 나서는 여정에 올랐다.\\n그는 떠돌던 그 시절로 돌아간 듯했다. 파도를 헤치고 비바람을 견디며, 거대한 괴수와 싸우고 거친 물결에 맞서 몸부림쳤다.\\n\\n하지만 잠시 숨을 고르던 그 순간, 그는 결코 외롭지 않았다.\\n설령 앞길이 험난하고 끝이 보이지 않더라도, 그는 여전히 저 너머의 빛을 볼 수 있었다——\\n\\n그것은 수많은 생령들의 기대였다.\\n부서진 대지가 더 이상 새 생명을 품을 수 없게 되자, 그들은 위로와 보호를 구하며 그의 곁에 모여들었다.\\n\\n그것은 또한 동료들이 그의 마음속에 남긴 말들이었다. 그 말들은 마치 끝없이 이어지는 항로처럼, 그들을 굳건히 이어주었다.\\n\\n그를 괴롭히던 과거 역시 바람과 함께 떠올랐지만, 걸어온 길은 결국 새로운 모습으로 탈바꿈하는 힘이 되어줄 것이다.\\n\\n<i>「난 개척의 길을 지키고」</i>\\n소년은 창을 들고 날아올라 빛을 향해 전진했다——\\n\\n<i>「사라져가는 모든 희망을 수호하리라!」</i>",
+    "Rarity": "CombatPowerLightconeRarity5",
+    "BaseType": "Knight",
+    "Refinements": {
+      "Name": "새로운 비늘",
+      "Desc": "장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 제공하는 실드량이 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 필살기 발동 시 모든 아군의 HP를 장착한 캐릭터 공격력의 <color=#f29e38ff><unbreak>#6[i]%</unbreak></color>만큼 회복하고 모든 아군이 [방위]를 획득한다, [방위] 지속 시간: <unbreak>#5[i]</unbreak>턴. [방위]를 획득한 목표는 가하는 피해가 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가하며, 목표가 소환물을 보유한 경우 가하는 피해가 추가로 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> 증가한다",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.24000000022351742,
+            0.3000000002793968,
+            0.24000000022351742,
+            0.12000000011175871,
+            3,
+            0.10000000009313226
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.3000000002793968,
+            0.3500000003259629,
+            0.3000000002793968,
+            0.1500000001396984,
+            3,
+            0.12499999976716936
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.3600000003352761,
+            0.40000000037252903,
+            0.3600000003352761,
+            0.18000000016763806,
+            3,
+            0.1500000001396984
+          ]
+        },
+        "4": {
+          "ParamList": [
+            0.4200000003911555,
+            0.45000000041909516,
+            0.4200000003911555,
+            0.21000000019557774,
+            3,
+            0.17499999981373549
+          ]
+        },
+        "5": {
+          "ParamList": [
+            0.48000000044703484,
+            0.5000000004656613,
+            0.48000000044703484,
+            0.24000000022351742,
+            3,
+            0.20000000018626451
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 23051,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 5000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 8,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 48,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 26.40000000037253,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 21,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 10000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110211,
+            "ItemNum": 4,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 12,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 105.6000000005588,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 58.080000000074506,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 46.200000000186265,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 20000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110212,
+            "ItemNum": 4,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 182.40000000037253,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 100.32000000029802,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 79.80000000074506,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 50000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110212,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 12,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 259.20000000018626,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 142.56000000052154,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 113.40000000037253,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 100000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110213,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 6,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 336,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 184.80000000074506,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 147,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 200000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110213,
+            "ItemNum": 10,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 412.80000000074506,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 227.04000000003725,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 180.6000000005588,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23051,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 489.6000000005588,
+        "BaseHPAdd": 7.2000000001862645,
+        "BaseAttack": 269.28000000026077,
+        "BaseAttackAdd": 3.9600000008940697,
+        "BaseDefence": 214.20000000018626,
+        "BaseDefenceAdd": 3.1500000001396984
+      }
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.6399999856948853
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.800000011920929
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.959999978542328
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 1.1200000047683716
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 1.2799999713897705
+        }
+      ]
+    }
   },
   "24000": {
     "Name": "어떤 에이언즈의 몰락",
@@ -34602,7 +38209,8 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {}
   },
   "24001": {
     "Name": "별바다 순항",
@@ -34859,7 +38467,39 @@
         "BaseDefence": 214.20000000018626,
         "BaseDefenceAdd": 3.1500000001396984
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.24000000022351742
+        }
+      ],
+      "1": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.3000000002793968
+        }
+      ],
+      "2": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.3600000003352761
+        }
+      ],
+      "3": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.4200000003911555
+        }
+      ],
+      "4": [
+        {
+          "type": "CriticalChanceBase",
+          "value": 0.48000000044703484
+        }
+      ]
+    }
   },
   "24002": {
     "Name": "기억의 소재",
@@ -35116,7 +38756,39 @@
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.10000000149011612
+        }
+      ],
+      "2": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.119999997317791
+        }
+      ],
+      "3": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.14000000059604645
+        }
+      ],
+      "4": [
+        {
+          "type": "StatusResistanceBase",
+          "value": 0.1599999964237213
+        }
+      ]
+    }
   },
   "24003": {
     "Name": "고독의 치유",
@@ -35368,7 +39040,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.20000000298023224
+        }
+      ],
+      "1": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.25
+        }
+      ],
+      "2": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.30000001192092896
+        }
+      ],
+      "3": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.3499999940395355
+        }
+      ],
+      "4": [
+        {
+          "type": "BreakDamageAddedRatioBase",
+          "value": 0.4000000059604645
+        }
+      ]
+    }
   },
   "24004": {
     "Name": "멈추지 않는 연산",
@@ -35625,7 +39329,39 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.07999999821186066
+        }
+      ],
+      "1": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.09000000357627869
+        }
+      ],
+      "2": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.10000000149011612
+        }
+      ],
+      "3": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.10999999940395357
+        }
+      ],
+      "4": [
+        {
+          "type": "AttackAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
+    }
   },
   "24005": {
     "Name": "기억은 영원히 막을 내리지 않는다",
@@ -35872,6 +39608,38 @@
         "BaseDefence": 183.6000000005588,
         "BaseDefenceAdd": 2.700000000651926
       }
-    ]
+    ],
+    "Bonus": {
+      "0": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.05999999865889549
+        }
+      ],
+      "1": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.07500000298023224
+        }
+      ],
+      "2": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.09000000357627869
+        }
+      ],
+      "3": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.10499999672174454
+        }
+      ],
+      "4": [
+        {
+          "type": "SpeedAddedRatio",
+          "value": 0.119999997317791
+        }
+      ]
+    }
   }
 }

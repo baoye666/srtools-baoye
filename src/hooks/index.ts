@@ -7,3 +7,4 @@ export * from "./useFetchMonsterData";
 export * from "./useFetchPFData";
 export * from "./useFetchMOCData";
 export * from "./useFetchASData";
+export * from "./useFetchPEAKData";

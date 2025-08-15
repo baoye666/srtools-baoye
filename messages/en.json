@@ -186,6 +186,7 @@
 		"useTurbulenceBuff": "Use turbulence buff?",
 		"firstHalfEnemies": "First half enemies",
 		"secondHalfEnemies": "Second half enemies",
+		"listEnemies": "List enemies",
 		"turbulenceBuff": "Turbulence Buff",
 		"noEventSelected": "No event selected",
 		"noTurbulenceBuff": "No Turbulence Buff",
@@ -236,6 +237,13 @@
 		"maxAll": "Max All",
 		"maxAllSuccess": "Successfully set skill level to max.",
 		"maxAllFailed": "Failed to set skill level to max.",
-		"noRelicEquipped": "No relic equipped"
+		"noRelicEquipped": "No relic equipped",
+		"anomalyArbitration": "Anomaly Arbitration",
+		"normalMode": "Normal Mode",
+		"hardMode": "Hard Mode",
+		"selectPEAKEvent": "Select PEAK Event",
+		"mode": "Mode",
+		"selectMode": "Select a mode"
+		
 	}
 }

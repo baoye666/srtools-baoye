@@ -1,4 +1,4 @@
-import { ASConfigStore, AvatarStore, CEConfigStore, MOCConfigStore, PFConfigStore } from '@/types';
+import { ASConfigStore, AvatarStore, CEConfigStore, MOCConfigStore, PEAKConfigStore, PFConfigStore } from '@/types';
 import { create } from 'zustand'
 import { createJSONStorage, persist } from 'zustand/middleware';
 
@@ -9,6 +9,7 @@ interface UserDataState {
     moc_config: MOCConfigStore;
     pf_config: PFConfigStore;
     as_config: ASConfigStore;
+    peak_config: PEAKConfigStore;
     ce_config: CEConfigStore;
     setAvatars: (newAvatars: { [key: string]: AvatarStore }) => void;
     setAvatar: (newAvatar: AvatarStore) => void;
@@ -16,6 +17,7 @@ interface UserDataState {
     setMocConfig: (newMocConfig: MOCConfigStore) => void;
     setPfConfig: (newPfConfig: PFConfigStore) => void;
     setAsConfig: (newAsConfig: ASConfigStore) => void;
+    setPeakConfig: (newPeakConfig: PEAKConfigStore) => void;
     setCeConfig: (newCeConfig: CEConfigStore) => void;
 }
 
@@ -61,12 +63,23 @@ const useUserDataStore = create<UserDataState>()(
                 stage_id: 0,
                 monsters: [],
             },
+            peak_config: {
+                event_id: 0,
+                challenge_id: 0,
+                buff_id: 0,
+                boss_mode: "Normal",
+                blessings: [],
+                cycle_count: 0,
+                stage_id: 0,
+                monsters: [],
+            },
             setAvatars: (newAvatars: { [key: string]: AvatarStore }) => set({ avatars: newAvatars }),
             setAvatar: (newAvatar: AvatarStore) => set((state) => ({ avatars: { ...state.avatars, [newAvatar.avatar_id.toString()]: newAvatar } })),
             setBattleType: (newBattleType: string) => set({ battle_type: newBattleType }),
             setMocConfig: (newMocConfig: MOCConfigStore) => set({ moc_config: newMocConfig }),
             setPfConfig: (newPfConfig: PFConfigStore) => set({ pf_config: newPfConfig }),
             setAsConfig: (newAsConfig: ASConfigStore) => set({ as_config: newAsConfig }),
+            setPeakConfig: (newPeakConfig: PEAKConfigStore) => set({ peak_config: newPeakConfig }),
             setCeConfig: (newCeConfig: CEConfigStore) => set({ ce_config: newCeConfig }),
         }),
         {
