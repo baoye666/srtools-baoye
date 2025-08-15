@@ -111,7 +111,7 @@ export default function MocBar() {
         moc_config.use_cycle_count,
         moc_config.use_turbulence_buff,
     ])
-
+    if (!MOCEvent) return null
     return (
         <div className="container mx-auto px-4 py-8 relative">
 

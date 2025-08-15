@@ -10,6 +10,8 @@ import { ToastContainer } from 'react-toastify';
 import AvatarBar from "@/components/avatarBar";
 import ActionBar from "@/components/actionBar";
 import QueryProviderWrapper from "@/components/queryProvider";
+import ClientDataFetcher from "@/components/clientDataFetcher";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,6 +62,7 @@ export default async function RootLayout({
 }>) {
   const messages = await getMessages();
   const locale = await getLocale()
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
@@ -70,6 +73,7 @@ export default async function RootLayout({
           <QueryProviderWrapper>
             <ThemeProvider>
               <ClientThemeWrapper>
+              <ClientDataFetcher /> 
                 <div className="min-h-screen w-full">
                   <Header />
                   <div className="grid grid-cols-12 w-full">

@@ -32,83 +32,84 @@ export default function PfBar() {
     }, [pf_config, mapPFInfo])
 
     useEffect(() => {
-        const challenge = mapPFInfo[pf_config.event_id.toString()]?.Level.find((pf) => pf.Id === pf_config.challenge_id)
-        if (pf_config.event_id !== 0 && pf_config.challenge_id !== 0 && challenge) {
-            const newBattleConfig = cloneDeep(pf_config)
-            newBattleConfig.cycle_count = 4
-            newBattleConfig.blessings = []
-            if (pf_config.buff_id !== 0) {
-                newBattleConfig.blessings.push({
-                    id: pf_config.buff_id,
-                    level: 1
-                })
-            }
-            if (PF[pf_config.challenge_id.toString()]) {
-                newBattleConfig.blessings.push({
-                    id: Number(PF[pf_config.challenge_id.toString()].maze_buff),
-                    level: 1
-                })
-            }
-
-            newBattleConfig.monsters = []
-            newBattleConfig.stage_id = 0
-            if ((pf_config.floor_side === "Upper" || pf_config.floor_side === "Upper -> Lower" ) && challenge.EventIDList1.length > 0 ) {
-                newBattleConfig.stage_id = challenge.EventIDList1[0].StageID
-                for (const wave of challenge.EventIDList1[0].MonsterList) {
-                    const newWave: MonsterStore[] = []
-                    for (const value of Object.values(wave)) {
-                        newWave.push({
-                            monster_id: Number(value),
-                            level: challenge.EventIDList1[0].Level,
-                            amount: 1,
-                        })
-                    }
-                    newBattleConfig.monsters.push(newWave)
-                }
-            }
-            if ((pf_config.floor_side === "Lower" || pf_config.floor_side === "Lower -> Upper") && challenge.EventIDList2.length > 0) {
-                newBattleConfig.stage_id = challenge.EventIDList2[0].StageID
-                for (const wave of challenge.EventIDList2[0].MonsterList) {
-                    const newWave: MonsterStore[] = []
-                    for (const value of Object.values(wave)) {
-                        newWave.push({
-                            monster_id: Number(value),
-                            level: challenge.EventIDList2[0].Level,
-                            amount: 1,
-                        })
-                    }
-                    newBattleConfig.monsters.push(newWave)
-                }
-            }
-            if (pf_config.floor_side === "Lower -> Upper" && challenge.EventIDList1.length > 0) {
-                for (const wave of challenge.EventIDList1[0].MonsterList) {
-                    const newWave: MonsterStore[] = []
-                    for (const value of Object.values(wave)) {
-                        newWave.push({
-                            monster_id: Number(value),
-                            level: challenge.EventIDList1[0].Level,
-                            amount: 1,
-                        })
-                    }
-                    newBattleConfig.monsters.push(newWave)
-                }
-            } else if (pf_config.floor_side === "Upper -> Lower" && challenge.EventIDList2.length > 0) {
-                for (const wave of challenge.EventIDList2[0].MonsterList) {
-                    const newWave: MonsterStore[] = []
-                    for (const value of Object.values(wave)) {
-                        newWave.push({
-                            monster_id: Number(value),
-                            level: challenge.EventIDList2[0].Level,
-                            amount: 1,
-                        })
-                    }
-                    newBattleConfig.monsters.push(newWave)
-                }
-            }
-            setPfConfig(newBattleConfig)
+        if (!challengeSelected || pf_config.event_id === 0 || pf_config.challenge_id === 0) {
+            return
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        const newBattleConfig = cloneDeep(pf_config)
+        newBattleConfig.cycle_count = 4
+        newBattleConfig.blessings = []
+        if (pf_config.buff_id !== 0) {
+            newBattleConfig.blessings.push({
+                id: pf_config.buff_id,
+                level: 1
+            })
+        }
+        if (PF[pf_config.challenge_id.toString()]) {
+            newBattleConfig.blessings.push({
+                id: Number(PF[pf_config.challenge_id.toString()].maze_buff),
+                level: 1
+            })
+        }
+
+        newBattleConfig.monsters = []
+        newBattleConfig.stage_id = 0
+        if ((pf_config.floor_side === "Upper" || pf_config.floor_side === "Upper -> Lower") && challengeSelected.EventIDList1.length > 0) {
+            newBattleConfig.stage_id = challengeSelected.EventIDList1[0].StageID
+            for (const wave of challengeSelected.EventIDList1[0].MonsterList) {
+                const newWave: MonsterStore[] = []
+                for (const value of Object.values(wave)) {
+                    newWave.push({
+                        monster_id: Number(value),
+                        level: challengeSelected.EventIDList1[0].Level,
+                        amount: 1,
+                    })
+                }
+                newBattleConfig.monsters.push(newWave)
+            }
+        }
+        if ((pf_config.floor_side === "Lower" || pf_config.floor_side === "Lower -> Upper") && challengeSelected.EventIDList2.length > 0) {
+            newBattleConfig.stage_id = challengeSelected.EventIDList2[0].StageID
+            for (const wave of challengeSelected.EventIDList2[0].MonsterList) {
+                const newWave: MonsterStore[] = []
+                for (const value of Object.values(wave)) {
+                    newWave.push({
+                        monster_id: Number(value),
+                        level: challengeSelected.EventIDList2[0].Level,
+                        amount: 1,
+                    })
+                }
+                newBattleConfig.monsters.push(newWave)
+            }
+        }
+        if (pf_config.floor_side === "Lower -> Upper" && challengeSelected.EventIDList1.length > 0) {
+            for (const wave of challengeSelected.EventIDList1[0].MonsterList) {
+                const newWave: MonsterStore[] = []
+                for (const value of Object.values(wave)) {
+                    newWave.push({
+                        monster_id: Number(value),
+                        level: challengeSelected.EventIDList1[0].Level,
+                        amount: 1,
+                    })
+                }
+                newBattleConfig.monsters.push(newWave)
+            }
+        } else if (pf_config.floor_side === "Upper -> Lower" && challengeSelected.EventIDList2.length > 0) {
+            for (const wave of challengeSelected.EventIDList2[0].MonsterList) {
+                const newWave: MonsterStore[] = []
+                for (const value of Object.values(wave)) {
+                    newWave.push({
+                        monster_id: Number(value),
+                        level: challengeSelected.EventIDList2[0].Level,
+                        amount: 1,
+                    })
+                }
+                newBattleConfig.monsters.push(newWave)
+            }
+        }
+        setPfConfig(newBattleConfig)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [
+        challengeSelected,
         pf_config.event_id,
         pf_config.challenge_id,
         pf_config.floor_side,
@@ -116,7 +117,7 @@ export default function PfBar() {
         mapPFInfo,
         PF,
     ])
-
+    if (!PFEvent) return null
 
     return (
         <div className="container mx-auto px-4 py-8 relative">

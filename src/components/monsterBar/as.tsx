@@ -11,6 +11,7 @@ import { MonsterStore } from "@/types";
 import cloneDeep from 'lodash/cloneDeep'
 import useMazeStore from "@/stores/mazeStore";
 import { useTranslations } from "next-intl";
+import { listCurrentLanguageApi } from "@/constant/constant";
 
 export default function AsBar() {
     const { ASEvent, mapASInfo } = useEventStore()
@@ -53,84 +54,88 @@ export default function AsBar() {
 
 
     useEffect(() => {
-        const challenge = mapASInfo[as_config.event_id.toString()]?.Level.find((as) => as.Id === as_config.challenge_id)
-        if (as_config.event_id !== 0 && as_config.challenge_id !== 0 && challenge) {
-            const newBattleConfig = cloneDeep(as_config)
-            newBattleConfig.cycle_count = 0
+        if (!challengeSelected || as_config.event_id === 0 || as_config.challenge_id === 0) return
+        const newBattleConfig = cloneDeep(as_config)
+        newBattleConfig.cycle_count = 0
 
-            newBattleConfig.blessings = []
-            if (as_config.buff_id !== 0) {
-                newBattleConfig.blessings.push({
-                    id: as_config.buff_id,
-                    level: 1
-                })
-            }
-            if (AS[as_config.challenge_id.toString()]) {
-                newBattleConfig.blessings.push({
-                    id: Number(AS[as_config.challenge_id.toString()].maze_buff),
-                    level: 1
-                })
-            }
-
-            newBattleConfig.monsters = []
-            newBattleConfig.stage_id = 0
-            if ((as_config.floor_side === "Upper" || as_config.floor_side === "Upper -> Lower") && challenge.EventIDList1.length > 0) {
-                newBattleConfig.stage_id = challenge.EventIDList1[0].StageID
-                for (const wave of challenge.EventIDList1[0].MonsterList) {
-                    const newWave: MonsterStore[] = []
-                    for (const value of Object.values(wave)) {
-                        newWave.push({
-                            monster_id: Number(value),
-                            level: challenge.EventIDList1[0].Level,
-                            amount: 1,
-                        })
-                    }
-                    newBattleConfig.monsters.push(newWave)
-                }
-            }
-            if ((as_config.floor_side === "Lower" || as_config.floor_side === "Lower -> Upper") && challenge.EventIDList2.length > 0) {
-                newBattleConfig.stage_id = challenge.EventIDList2[0].StageID
-                for (const wave of challenge.EventIDList2[0].MonsterList) {
-                    const newWave: MonsterStore[] = []
-                    for (const value of Object.values(wave)) {
-                        newWave.push({
-                            monster_id: Number(value),
-                            level: challenge.EventIDList2[0].Level,
-                            amount: 1,
-                        })
-                    }
-                    newBattleConfig.monsters.push(newWave)
-                }
-            }
-            if (as_config.floor_side === "Lower -> Upper" && challenge.EventIDList1.length > 0) {
-                for (const wave of challenge.EventIDList1[0].MonsterList) {
-                    const newWave: MonsterStore[] = []
-                    for (const value of Object.values(wave)) {
-                        newWave.push({
-                            monster_id: Number(value),
-                            level: challenge.EventIDList1[0].Level,
-                            amount: 1,
-                        })
-                    }
-                    newBattleConfig.monsters.push(newWave)
-                }
-            } else if (as_config.floor_side === "Upper -> Lower" && challenge.EventIDList2.length > 0) {
-                for (const wave of challenge.EventIDList2[0].MonsterList) {
-                    const newWave: MonsterStore[] = []
-                    for (const value of Object.values(wave)) {
-                        newWave.push({
-                            monster_id: Number(value),
-                            level: challenge.EventIDList2[0].Level,
-                            amount: 1,
-                        })
-                    }
-                    newBattleConfig.monsters.push(newWave)
-                }
-            }
-            setAsConfig(newBattleConfig)
+        newBattleConfig.blessings = []
+        if (as_config.buff_id !== 0) {
+            newBattleConfig.blessings.push({
+                id: as_config.buff_id,
+                level: 1
+            })
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        if (AS[as_config.challenge_id.toString()]) {
+            newBattleConfig.blessings.push({
+                id: Number(AS[as_config.challenge_id.toString()].maze_buff),
+                level: 1
+            })
+        }
+
+        newBattleConfig.monsters = []
+        newBattleConfig.stage_id = 0
+        if ((as_config.floor_side === "Upper" || as_config.floor_side === "Upper -> Lower") 
+            && challengeSelected.EventIDList1.length > 0) {
+            newBattleConfig.stage_id = challengeSelected.EventIDList1[0].StageID
+            for (const wave of challengeSelected.EventIDList1[0].MonsterList) {
+                const newWave: MonsterStore[] = []
+                for (const value of Object.values(wave)) {
+                    newWave.push({
+                        monster_id: Number(value),
+                        level: challengeSelected.EventIDList1[0].Level,
+                        amount: 1,
+                    })
+                }
+                newBattleConfig.monsters.push(newWave)
+            }
+        }
+        if ((as_config.floor_side === "Lower" || as_config.floor_side === "Lower -> Upper") 
+            && challengeSelected.EventIDList2.length > 0) {
+            newBattleConfig.stage_id = challengeSelected.EventIDList2[0].StageID
+            for (const wave of challengeSelected.EventIDList2[0].MonsterList) {
+                const newWave: MonsterStore[] = []
+                for (const value of Object.values(wave)) {
+                    newWave.push({
+                        monster_id: Number(value),
+                        level: challengeSelected.EventIDList2[0].Level,
+                        amount: 1,
+                    })
+                }
+                newBattleConfig.monsters.push(newWave)
+            }
+        }
+        if (as_config.floor_side === "Lower -> Upper" 
+            && challengeSelected.EventIDList1.length > 0) {
+            for (const wave of challengeSelected.EventIDList1[0].MonsterList) {
+                const newWave: MonsterStore[] = []
+                for (const value of Object.values(wave)) {
+                    newWave.push({
+                        monster_id: Number(value),
+                        level: challengeSelected.EventIDList1[0].Level,
+                        amount: 1,
+                    })
+                }
+                newBattleConfig.monsters.push(newWave)
+            }
+        } else if (as_config.floor_side === "Upper -> Lower" 
+            && challengeSelected.EventIDList2.length > 0) {
+            for (const wave of challengeSelected.EventIDList2[0].MonsterList) {
+                const newWave: MonsterStore[] = []
+                for (const value of Object.values(wave)) {
+                    newWave.push({
+                        monster_id: Number(value),
+                        level: challengeSelected.EventIDList2[0].Level,
+                        amount: 1,
+                    })
+                }
+                newBattleConfig.monsters.push(newWave)
+            }
+        }
+        setAsConfig(newBattleConfig)
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [
+        challengeSelected,
         as_config.event_id,
         as_config.challenge_id,
         as_config.floor_side,
@@ -139,7 +144,7 @@ export default function AsBar() {
         AS,
     ])
 
-
+    if (!ASEvent) return null
     return (
         <div className="container mx-auto px-4 py-8 relative">
 
@@ -147,7 +152,7 @@ export default function AsBar() {
             <div className="rounded-xl p-4 mb-2 border border-warning">
                 <div className="mb-4 w-full">
                     <SelectCustomText
-                        customSet={ASEvent.filter(as => as.lang.get(locale)).map((as) => ({
+                        customSet={ASEvent.filter(as => as.lang.get(listCurrentLanguageApi[locale])).map((as) => ({
                             id: as.id,
                             name: getLocaleName(locale, as),
                             time: `${as.begin} - ${as.end}`,

@@ -8,7 +8,6 @@ import useUserDataStore from "@/stores/userDataStore";
 import useMonsterStore from "@/stores/monsterStore";
 import Image from "next/image";
 import cloneDeep from 'lodash/cloneDeep'
-
 import { useTranslations } from "next-intl";
 import { MonsterStore } from "@/types";
 
@@ -99,6 +98,7 @@ export default function PeakBar() {
             mapPEAKInfo,
         ])
 
+    if (!PEAKEvent) return null
 
     return (
         <div className="container mx-auto px-4 py-8 relative">
@@ -106,8 +106,11 @@ export default function PeakBar() {
             {/* Title Card */}
             <div className="rounded-xl p-4 mb-2 border border-warning">
                 <div className="mb-4 w-full">
+                    {PEAKEvent.map((peak) => (
+                        <div key={peak.id}>{peak.id}</div>
+                    ))}
                     <SelectCustomText
-                        customSet={PEAKEvent.filter(peak => peak.lang.get(locale)).map((peak) => ({
+                        customSet={PEAKEvent.map((peak) => ({
                             id: peak.id,
                             name: `${getLocaleName(locale, peak)} (${peak.id}) `,
                         }))}
