@@ -35,7 +35,7 @@ export default function PfBar() {
         const challenge = mapPFInfo[pf_config.event_id.toString()]?.Level.find((pf) => pf.Id === pf_config.challenge_id)
         if (pf_config.event_id !== 0 && pf_config.challenge_id !== 0 && challenge) {
             const newBattleConfig = cloneDeep(pf_config)
-            newBattleConfig.cycle_count = 0
+            newBattleConfig.cycle_count = 4
             newBattleConfig.blessings = []
             if (pf_config.buff_id !== 0) {
                 newBattleConfig.blessings.push({
