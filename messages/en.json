@@ -243,7 +243,10 @@
 		"hardMode": "Hard Mode",
 		"selectPEAKEvent": "Select PEAK Event",
 		"mode": "Mode",
-		"selectMode": "Select a mode"
-		
+		"selectMode": "Select a mode",
+		"rollBack": "Roll Back",
+		"upRoll": "Up Roll",
+		"downRoll": "Down Roll"
+
 	}
 }

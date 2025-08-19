@@ -242,6 +242,9 @@
 		"hardMode": "어려움 모드",
 		"selectPEAKEvent": "PEAK 이벤트 선택",
 		"mode": "모드",
-		"selectMode": "모드를 선택"
+		"selectMode": "모드를 선택",
+		"rollBack": "이전 상태로 되돌리기",
+		"upRoll": "부옵션 추가",
+		"downRoll": "부옵션 감소"
 	  }
 }

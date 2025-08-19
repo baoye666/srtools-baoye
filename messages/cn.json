@@ -242,6 +242,9 @@
 		"hardMode": "困难模式",
 		"selectPEAKEvent": "选择 PEAK 事件",
 		"mode": "模式",
-    	"selectMode": "选择模式"
+    	"selectMode": "选择模式",
+		"rollBack": "回到之前的状态",
+		"upRoll": "增加副属性",
+		"downRoll": "减少副属性"
 	}
 }

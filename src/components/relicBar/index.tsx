@@ -13,6 +13,7 @@ import useRelicMakerStore from '@/stores/relicMakerStore';
 import { toast } from 'react-toastify';
 import { useTranslations } from 'next-intl';
 import cloneDeep from 'lodash/cloneDeep'
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function RelicMaker() {
     const { avatars, setAvatars } = useUserDataStore()
@@ -344,85 +345,118 @@ export default function RelicMaker() {
                         </div>
                     </div>
                     {listSelectedSubStats.map((v, index) => (
-                        <div key={index} className={`bg-base-100 rounded-xl p-4 border border-slate-700`}>
-                            <div className="grid grid-cols-12 gap-2 items-center">
+    <div key={index} className={`bg-base-100 rounded-xl p-4 border border-slate-700`}>
+        <div className="grid grid-cols-12 gap-2 items-center">
 
-                                {/* Stat Selection */}
-                                <div className="col-span-8">
-                                    <SelectCustomImage
-                                        customSet={Object.entries(subAffixOptions).map(([key, value]) => ({
-                                            value: key,
-                                            label: mappingStats[value.property].name + " " + mappingStats[value.property].unit,
-                                            imageUrl: mappingStats[value.property].icon
-                                        }))}
-                                        excludeSet={Object.entries(exSubAffixOptions).map(([key, value]) => ({
-                                            value: key,
-                                            label: mappingStats[value.property].name + " " + mappingStats[value.property].unit,
-                                            imageUrl: mappingStats[value.property].icon
-                                        }))}
-                                        selectedCustomSet={v.affixId}
-                                        placeholder={transI18n("selectASubStat")}
-                                        setSelectedCustomSet={(key) => handleSubStatChange(key, index, 0, 0)}
-                                    />
-                                </div>
+            {/* Stat Selection */}
+            <div className="col-span-8">
+                <SelectCustomImage
+                    customSet={Object.entries(subAffixOptions).map(([key, value]) => ({
+                        value: key,
+                        label: mappingStats[value.property].name + " " + mappingStats[value.property].unit,
+                        imageUrl: mappingStats[value.property].icon
+                    }))}
+                    excludeSet={Object.entries(exSubAffixOptions).map(([key, value]) => ({
+                        value: key,
+                        label: mappingStats[value.property].name + " " + mappingStats[value.property].unit,
+                        imageUrl: mappingStats[value.property].icon
+                    }))}
+                    selectedCustomSet={v.affixId}
+                    placeholder={transI18n("selectASubStat")}
+                    setSelectedCustomSet={(key) => handleSubStatChange(key, index, 0, 0)}
+                />
+            </div>
 
-                                {/* Current Value */}
-                                <div className="col-span-4 text-center flex items-center justify-center gap-2">
-                                    <span className="text-2xl font-mono">+{ }</span>
-                                    <div className="text-xl font-bold text-info">{calcAffixBonus(subAffixOptions[v.affixId], v.stepCount, v.rollCount)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}</div>
-                                </div>
+            {/* Current Value */}
+            <div className="col-span-4 text-center flex items-center justify-center gap-2">
+                <span className="text-2xl font-mono">+{ }</span>
+                <div className="text-xl font-bold text-info">{calcAffixBonus(subAffixOptions[v.affixId], v.stepCount, v.rollCount)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}</div>
+            </div>
 
-                                {/* Roll Values */}
-                                <div className="col-span-12 grid grid-cols-3 gap-1">
-                                    <button
-                                    onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 0)}
-                                        className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
-                                    >
-                                        {calcAffixBonus(subAffixOptions[v.affixId], 0 , v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
-                                    </button>
-                                    <button
-                                    onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 1)}
-                                        className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
-                                    >
-                                        {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 1, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
-                                    </button>
-                                    <button
-                                    onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 2)}
-                                        className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
-                                    >
-                                        {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 2, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
-                                    </button>
-                                </div>
+            {/* Up Roll Values */}
+            <div className="col-span-12">
+                <div className="flex items-center gap-2 mb-2">
+                    <ChevronUp className="w-4 h-4 text-success" />
+                    <span className="text-sm font-semibold text-success">{transI18n("upRoll")}</span>
+                </div>
+                <div className="grid grid-cols-3 gap-1">
+                    <button
+                    onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 0)}
+                        className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
+                    >
+                        {calcAffixBonus(subAffixOptions[v.affixId], 0 , v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                    </button>
+                    <button
+                    onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 1)}
+                        className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
+                    >
+                        {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 1, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                    </button>
+                    <button
+                    onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 2)}
+                        className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
+                    >
+                        {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 2, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                    </button>
+                </div>
+            </div>
 
-                                {/* Reset Button & Roll Info */}
-                                <div className="col-span-12 text-center">
-                                    <div className="grid grid-cols-2 gap-1 items-center justify-items-start">
-                                        <div className="flex items-center gap-2">
-                                            <button
-                                                className="btn btn-error btn-sm mb-1"
-                                                onClick={() => resetSubStat(index)}
-                                            >
-                                                {transI18n("reset")}
-                                            </button>
-                                            <button
-                                                className="btn btn-warning btn-sm mb-1"
-                                                onClick={() => handlerRollback(index)}
-                                            >
-                                                -
-                                            </button>
-                                        </div>
+            {/* Down Roll Values */}
+            <div className="col-span-12">
+                <div className="flex items-center gap-2 mb-2">
+                    <ChevronDown className="w-4 h-4 text-error" />
+                    <span className="text-sm font-semibold text-error">{transI18n("downRoll")}</span>
+                </div>
+                <div className="grid grid-cols-3 gap-1">
+                    <button
+                    onClick={() => handleSubStatChange(v.affixId, index, Math.max(v.rollCount - 1, 0), Math.max(v.stepCount, 0))}
+                        className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
+                    >
+                        {calcAffixBonus(subAffixOptions[v.affixId], 0 , Math.max(v.rollCount - 1, 0))}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                    </button>
+                    <button
+                    onClick={() => handleSubStatChange(v.affixId, index, Math.max(v.rollCount - 1, 0), Math.max(v.stepCount - 1, 0))}
+                        className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
+                    >
+                        {calcAffixBonus(subAffixOptions[v.affixId], Math.max(v.stepCount - 1, 0), Math.max(v.rollCount - 1, 0))}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                    </button>
+                    <button
+                    onClick={() => handleSubStatChange(v.affixId, index, Math.max(v.rollCount - 1, 0), Math.max(v.stepCount - 2, 0))}
+                        className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
+                    >
+                        {calcAffixBonus(subAffixOptions[v.affixId], Math.max(v.stepCount - 2, 0), Math.max(v.rollCount - 1, 0))}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                    </button>
+                </div>
+            </div>
 
-                                        <div className="text-lg flex items-center gap-2 text-gray-400">
-                                            <span className="font-bold">{transI18n("roll")}: <span className="text-info">{v.rollCount}</span></span>
-                                            <span className="font-bold">{transI18n("step")}: <span className="text-info">{v.stepCount}</span></span>
-                                        </div>
-                                    </div>
+            {/* Reset Button & Roll Info */}
+            <div className="col-span-12 text-center">
+                <div className="grid grid-cols-2 gap-1 items-center justify-items-start">
+                    <div className="flex items-center gap-2">
+                        <button
+                            className="btn btn-error btn-sm mb-1"
+                            onClick={() => resetSubStat(index)}
+                        >
+                            {transI18n("reset")}
+                        </button>
+                        <button
+                            className="btn btn-warning btn-sm mb-1"
+                            onClick={() => handlerRollback(index)}
+                        >
+                            {transI18n("rollBack")}
+                        </button>
+                    </div>
 
-                                </div>
+                    <div className="text-lg flex items-center gap-2 text-gray-400">
+                        <span className="font-bold">{transI18n("roll")}: <span className="text-info">{v.rollCount}</span></span>
+                        <span className="font-bold">{transI18n("step")}: <span className="text-info">{v.stepCount}</span></span>
+                    </div>
+                </div>
+            </div>
 
-                            </div>
-                        </div>
-                    ))}
+        </div>
+    </div>
+))}
 
 
                 </div>

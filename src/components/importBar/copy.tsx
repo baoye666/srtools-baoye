@@ -74,7 +74,7 @@ export default function CopyImport() {
         }
         setMessage({
             type: "success",
-            text: transI18n("selectedAll")
+            text: transI18n("selectAll")
         })
     };
 

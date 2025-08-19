@@ -242,6 +242,9 @@
 		"hardMode": "困難モード",
 		"selectPEAKEvent": "PEAK イベントを選択",
 		"mode": "モード",
-		"selectMode": "モードを選択"
+		"selectMode": "モードを選択",
+		"rollBack": "前の状態に戻る",
+		"upRoll": "サブステータスを増やす",
+		"downRoll": "サブステータスを減らす"
 	}
 }
