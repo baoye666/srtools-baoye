@@ -174,8 +174,7 @@ export default function Header() {
                     setCeConfig(parsed.ce_config)
                     setPeakConfig(parsed.peak_config)
                     toast.success(transI18n("importDatabaseSuccess"))
-                } catch (e) {
-                    console.log(e)
+                } catch {
                     toast.error(transI18n("fileMustBeAValidJsonFile"))
                 }
             };
