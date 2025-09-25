@@ -47,13 +47,18 @@ export default function SkillsInfo() {
         return avatarSkillTree?.[skillSelected || ""]?.["1"]
     }, [avatarSelected, avatarSkillTree, skillSelected])
 
-    const getImageSkill = useCallback((icon: string | undefined, status: StatusAddType | undefined) => {
+    const getImageSkill = useCallback((icon: string | undefined, status: StatusAddType | undefined, provider: string = "hakushin") => {
         if (!icon) return
+        let urlPrefix = "https://homdgcat.wiki/images/skillicons/avatar/";
+        if (provider === "hakushin") {
+            urlPrefix = "https://api.hakush.in/hsr/UI/skillicons/"
+        }
         if (icon.startsWith("SkillIcon")) {
-            if (Number(avatarSelected?.id) > 8000 && Number(avatarSelected?.id) % 2 === 0) {
-                return `https://homdgcat.wiki/images/skillicons/avatar/${Number(avatarSelected?.id) - 1}/${icon.replaceAll(avatarSelected?.id || "", (Number(avatarSelected?.id) - 1).toString())}`
+            if (provider === "homdgcat") {
+                return `${urlPrefix}${avatarSelected?.id}/${icon}`
+            } else if (provider === "hakushin") {
+                return `${urlPrefix}${icon.replace(".png", ".webp")}`
             }
-            return `https://homdgcat.wiki/images/skillicons/avatar/${avatarSelected?.id}/${icon}`
         } else if (status && mappingStats[status.PropertyType]) {
             return mappingStats[status.PropertyType].icon
         }
@@ -194,6 +199,10 @@ export default function SkillsInfo() {
                                                 filter: btn.size !== "big"
                                                     ? 'brightness(0%)'
                                                     : 'brightness(200%)'
+                                            }}
+                                            onError={(e) => {
+                                                e.currentTarget.onerror = null; // tránh loop
+                                                e.currentTarget.src = getImageSkill(avatarInfo?.SkillTrees?.[btn.id]?.["1"]?.Icon, avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0], "homdgcat") || "";       
                                             }}
                                         />
                                         {btn.size === "big" && (
