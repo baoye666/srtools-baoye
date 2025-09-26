@@ -161,7 +161,8 @@ export const traceButtonsInfo: Record<string, { id: string, size: string, left: 
         { id: 'Point15', size: 'small', left: '65%', top: '82%' },
         { id: 'Point09', size: 'small', left: '9%', top: '51%' },
         { id: 'Point10', size: 'small', left: '13%', top: '40%' },
-        { id: 'Point11', size: 'small', left: '13%', top: '63%' }
+        { id: 'Point11', size: 'small', left: '13%', top: '63%' },
+        { id: 'Point21', size: 'big', left: '70%', top: '34%'}
     ]
 }
 
@@ -1006,6 +1007,14 @@ export const traceShowCaseMap : Record<string, Record<string, { id: string, size
             {
                 id: "Point20",
                 size: "big-memory",
+                isLink: false
+            }
+        ],
+
+        "6": [
+            {
+                id: "Point21",
+                size: "big",
                 isLink: false
             }
         ]

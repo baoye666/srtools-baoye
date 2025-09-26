@@ -7,4 +7,4 @@ export * from "./asLoader";
 export * from "./pfLoader";
 export * from "./mocLoader";
 export * from "./peakLoader";
-
+export * from "./monsterLoader";

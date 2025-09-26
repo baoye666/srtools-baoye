@@ -7,6 +7,7 @@ import {
     ChevronUp,
     ChevronDown,
     Search,
+    CopyPlus,
 } from "lucide-react";
 
 import useMazeStore from "@/stores/mazeStore";
@@ -18,6 +19,7 @@ import Image from "next/image";
 import { MonsterBasic } from "@/types";
 import { cloneDeep } from "lodash";
 import { useTranslations } from "next-intl";
+import { listCurrentLanguageApi } from "@/constant/constant";
 
 
 export default function CeBar() {
@@ -25,7 +27,7 @@ export default function CeBar() {
     const [showSearchWaveId, setShowSearchWaveId] = useState<number | null>(null);
     const { Stage } = useMazeStore()
     const { ce_config, setCeConfig } = useUserDataStore()
-    const { listMonster } = useMonsterStore()
+    const { mapMonsterInfo } = useMonsterStore()
     const { locale } = useLocaleStore()
     const transI18n = useTranslations("DataPage")
     const [showSearchStage, setShowSearchStage] = useState(false)
@@ -34,9 +36,36 @@ export default function CeBar() {
 
     const pageSize = 30
 
-    const filteredMonsters = useMemo(() => {
+    const pageSizeMonsters = 30
+    const [monsterPage, setMonsterPage] = useState(1)
+
+    const listMonsterDetail = useMemo(() => {
+        const result: MonsterBasic[] = []
+      
+        for (const monster of Object.values(mapMonsterInfo)) {
+          for (const monsterChild of monster.Child) {
+            result.push({
+              id: monsterChild.Id.toString(),
+              rank: monster.Rank,
+              camp: null,
+              icon: monster.ImagePath,
+              weak: monsterChild.StanceWeakList,
+              desc: monster.Desc,
+              child: [],
+              lang: new Map<string, string>([
+                [listCurrentLanguageApi[locale], monster.Name],
+              ]),
+            })
+          }
+        }
+      
+        return result
+      }, [mapMonsterInfo, locale])
+      
+
+      const filteredMonsters = useMemo(() => {
         const newlistMonster = new Set<MonsterBasic>()
-        for (const monster of listMonster) {
+        for (const monster of listMonsterDetail) {
             if (getLocaleName(locale, monster).toLowerCase().includes(searchTerm.toLowerCase())) {
                 newlistMonster.add(monster)
             }
@@ -45,7 +74,21 @@ export default function CeBar() {
             }
         }
         return Array.from(newlistMonster)
-    }, [listMonster, locale, searchTerm]);
+    }, [listMonsterDetail, locale, searchTerm]);
+
+    const paginatedMonsters = useMemo(() =>
+        filteredMonsters.slice((monsterPage - 1) * pageSizeMonsters, monsterPage * pageSizeMonsters),
+        [filteredMonsters, monsterPage]
+    )
+
+    const hasMoreMonsterPages = useMemo(
+        () => monsterPage * pageSizeMonsters < filteredMonsters.length,
+        [monsterPage, filteredMonsters]
+    )
+
+    useEffect(() => {
+        setMonsterPage(1) // reset về trang 1 khi searchTerm thay đổi
+    }, [searchTerm])
 
     const stageList = useMemo(() => Object.values(Stage).map((stage) => ({
         id: stage.stage_id.toString(),
@@ -68,35 +111,52 @@ export default function CeBar() {
     }, [stageSearchTerm])
 
     return (
-        <div className="container mx-auto p-6 z-4" onClick={() => {
-            setShowSearchWaveId(null)
-            setShowSearchStage(false)
-        }}>
+        <div className="p-6 z-4 h-full w-full" onClick={() => {
+                     
+                        setShowSearchWaveId(null)
+                        setShowSearchStage(false)
+                    }}>
+      
             <div className="mb-4 w-full relative">
                 <div className="flex items-center justify-center gap-2">
-                    <Search className="w-6 h-6" />
+
                     <button
-                        className="btn btn-outline w-[95%] text-left"
+                        className="btn btn-outline w-full text-left flex items-center gap-2"
                         onClick={(e) => {
                             e.stopPropagation()
                             setShowSearchStage(true)
                         }}
                     >
+                        <Search className="w-6 h-6" />
                         <span className="text-left"> {transI18n("stage")}: {stageList.find((s) => s.id === ce_config.stage_id.toString())?.name || transI18n("selectStage")}</span>
                     </button>
                 </div>
                 {showSearchStage && (
-                    <div className="absolute top-full mt-2 w-full z-50 border bg-base-200 border-slate-600 rounded-lg p-4 shadow-lg">
+                    <div onClick={(e) => e.stopPropagation()} className="absolute top-full mt-2 w-full z-50 border bg-base-200 border-slate-600 rounded-lg p-4 shadow-lg">
                         <div className="flex items-center gap-2 mb-2">
-                            <Search className="w-4 h-4 text-slate-400" />
-                            <input
-                                type="text"
-                                placeholder={transI18n("searchStage")}
-                                className="input input-sm w-full placeholder-slate-400"
-                                value={stageSearchTerm}
-                                onChange={(e) => setStageSearchTerm(e.target.value)}
-                                autoFocus
-                            />
+
+                            <label className="input w-full">
+                                <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <g
+                                        strokeLinejoin="round"
+                                        strokeLinecap="round"
+                                        strokeWidth="2.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                    >
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <path d="m21 21-4.3-4.3"></path>
+                                    </g>
+                                </svg>
+                                <input
+                                    type="search" className="grow"
+                                    placeholder={transI18n("searchStage")}
+                                    value={stageSearchTerm}
+                                    onChange={(e) => setStageSearchTerm(e.target.value)}
+                                    autoFocus
+                                />
+
+                            </label>
                         </div>
 
                         <div className="max-h-60 overflow-y-auto space-y-1">
@@ -107,7 +167,9 @@ export default function CeBar() {
                                             key={stage.id}
                                             className="p-2 hover:bg-primary/20 rounded cursor-pointer"
                                             onClick={() => {
-                                                setCeConfig({ ...ce_config, stage_id: Number(stage.id), cycle_count: 30 })
+                                                if (ce_config.stage_id !== Number(stage.id)) {
+                                                    setCeConfig({ ...ce_config, stage_id: Number(stage.id), cycle_count: 30 })
+                                                }
                                                 setShowSearchStage(false)
                                                 setStageSearchTerm("")
                                             }}
@@ -191,6 +253,20 @@ export default function CeBar() {
                                         className="btn btn-sm btn-success">
                                         <ChevronDown className="w-4 h-4" />
                                     </button>
+
+                                    <button
+                                        onClick={(e) => {
+                                            e.stopPropagation()
+                                            const newCeConfig = cloneDeep(ce_config)
+                                            const waves = newCeConfig.monsters
+                                            const temp = waves[waveIndex]
+                                            newCeConfig.monsters.push([...temp])
+                                            setCeConfig(newCeConfig)
+                                        }}
+                                        className="btn btn-sm btn-success">
+                                        <CopyPlus className="w-4 h-4" />
+                                    </button>
+
                                     <button
                                         onClick={(e) => {
                                             e.stopPropagation()
@@ -210,7 +286,22 @@ export default function CeBar() {
                                         <div className="card border hover:border-slate-500 transition-colors w-full h-full">
                                             <div className="card-body p-4">
                                                 <button
-                                                    className="btn btn-xs btn-error absolute -top-2 -right-2 opacity-50 group-hover:opacity-100 transition-opacity"
+                                                    className="btn btn-xs btn-success absolute -top-2 right-5 opacity-50 group-hover:opacity-100 transition-opacity"
+                                                    onClick={() => {
+                                                        const newCeConfig = cloneDeep(ce_config)
+                                            
+                                                        newCeConfig.monsters[waveIndex].push({
+                                                            monster_id: Number(member.monster_id),
+                                                            level: member.level,
+                                                            amount: member.amount,
+                                                        })
+                                                        setCeConfig(newCeConfig)
+                                                    }}
+                                                >
+                                                    <CopyPlus className="w-3 h-3" />
+                                                </button>
+                                                <button
+                                                    className="btn btn-xs btn-error absolute -top-2 -right-4 opacity-50 group-hover:opacity-100 transition-opacity"
                                                     onClick={() => {
                                                         const newCeConfig = cloneDeep(ce_config)
                                                         newCeConfig.monsters[waveIndex].splice(memberIndex, 1)
@@ -220,10 +311,9 @@ export default function CeBar() {
                                                     <Trash2 className="w-3 h-3" />
                                                 </button>
 
-
                                                 <div className="flex justify-center">
-                                                    {listMonster.find((monster2) => monster2.child.includes(member.monster_id))?.icon && <Image
-                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster2) => monster2.child.includes(member.monster_id))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                    {listMonsterDetail.find((monster2) => monster2.id === member.monster_id.toString())?.icon && <Image
+                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonsterDetail.find((monster2) => monster2.id === member.monster_id.toString())?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
                                                         alt="Enemy Icon"
                                                         width={376}
                                                         height={512}
@@ -231,9 +321,9 @@ export default function CeBar() {
                                                     />}
                                                 </div>
 
-                                                <div className="flex justify-center gap-1 mb-2">
-                                                    {listMonster
-                                                        .find((monster) => monster.child.includes(member.monster_id))
+                                                <div className="flex flex-wrap justify-center gap-1 mb-2">
+                                                    {listMonsterDetail
+                                                        .find((monster) => monster.id === member.monster_id.toString())
                                                         ?.weak?.map((icon, iconIndex) => (
                                                             <Image
                                                                 src={`/icon/${icon.toLowerCase()}.webp`}
@@ -247,7 +337,7 @@ export default function CeBar() {
                                                 </div>
                                                 <div className="text-center flex flex-col items-center justify-center">
                                                     <div className="text-sm font-medium">
-                                                        {getLocaleName(locale, listMonster.find((monster) => monster.child.includes(member.monster_id)))}
+                                                        {getLocaleName(locale, listMonsterDetail.find((monster) => monster.id === member.monster_id.toString())) }  {`(${member.monster_id})`}
                                                     </div>
                                                     <div className="flex items-center gap-1 mt-1">
                                                         <span className="text-sm">Lv.</span>
@@ -257,14 +347,12 @@ export default function CeBar() {
                                                             value={member.level}
 
                                                             onChange={(e) => {
-                                                                try {
-                                                                    Number(e.target.value)
-                                                                } catch {
-                                                                    return;
-                                                                }
-                                                                if (Number(e.target.value) < 1 || Number(e.target.value) > 95) return;
+                                                                const val = Number(e.target.value)
+                                                                if (isNaN(val) || val < 1 || val > 95) return
+                                                                if (ce_config.monsters[waveIndex][memberIndex].level === val) return
+
                                                                 const newCeConfig = cloneDeep(ce_config)
-                                                                newCeConfig.monsters[waveIndex][memberIndex].level = Number(e.target.value)
+                                                                newCeConfig.monsters[waveIndex][memberIndex].level = val
                                                                 setCeConfig(newCeConfig)
                                                             }}
                                                         />
@@ -277,11 +365,16 @@ export default function CeBar() {
                                 ))}
 
                                 {/* Add Member Button + Search */}
-                                <div className="relative flex items-start justify-center w-full h-full">
+                                <div className="relative flex items-start justify-center w-full h-full z-39" onClick={(e) => e.stopPropagation()}>
                                     <button
                                         className="btn btn-outline btn-primary w-full h-full border-dashed"
                                         onClick={(e) => {
                                             e.stopPropagation();
+                                            if (showSearchWaveId === waveIndex) {
+                                                setShowSearchWaveId(null)
+                                                return
+                                            }
+                                    
                                             setShowSearchWaveId(waveIndex)
                                         }}
                                     >
@@ -289,22 +382,37 @@ export default function CeBar() {
                                     </button>
 
                                     {showSearchWaveId === waveIndex && (
-                                        <div className="absolute top-full mt-2 w-72 z-50 border bg-base-200 border-slate-600 rounded-lg p-4 shadow-lg">
+                                        <div className="absolute top-full mt-2 w-72 border bg-base-200 border-slate-600 rounded-lg p-4 shadow-lg">
                                             <div className="flex items-center gap-2 mb-2">
-                                                <Search className="w-4 h-4" />
-                                                <input
-                                                    type="text"
-                                                    placeholder={transI18n("searchMonster")}
-                                                    className="input input-sm w-full placeholder-slate-400"
-                                                    value={searchTerm}
-                                                    onChange={(e) => setSearchTerm(e.target.value)}
-                                                    autoFocus
-                                                />
+
+                                                <label className="input w-full">
+                                                    <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                        <g
+                                                            strokeLinejoin="round"
+                                                            strokeLinecap="round"
+                                                            strokeWidth="2.5"
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                        >
+                                                            <circle cx="11" cy="11" r="8"></circle>
+                                                            <path d="m21 21-4.3-4.3"></path>
+                                                        </g>
+                                                    </svg>
+                                                    <input
+                                                        type="search" className="grow"
+                                                        placeholder={transI18n("searchMonster")}
+                                                        value={searchTerm}
+                                                        onChange={(e) => setSearchTerm(e.target.value)}
+                                                        autoFocus
+                                                    />
+
+                                                </label>
+
                                             </div>
 
                                             <div className="max-h-60 overflow-y-auto space-y-1">
-                                                {filteredMonsters.length > 0 ? (
-                                                    filteredMonsters.map((monster) => (
+                                                {paginatedMonsters.length > 0 ? (
+                                                    paginatedMonsters.map((monster) => (
                                                         <div
                                                             key={monster.id}
                                                             className="flex items-center gap-2 p-2 hover:bg-success/40 rounded cursor-pointer"
@@ -316,13 +424,13 @@ export default function CeBar() {
                                                                     amount: 1,
                                                                 })
                                                                 setCeConfig(newCeConfig)
-                                                                setShowSearchWaveId(null);
+                                                                setShowSearchWaveId(null)
                                                             }}
                                                         >
                                                             <div className="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
-                                                                {listMonster.find((monster2) => monster2.child.includes(Number(monster.id)))?.icon?.split("/")?.pop()?.replace(".png", "") && (
+                                                                {listMonsterDetail.find((monster2) => monster2.id === monster.id)?.icon?.split("/")?.pop()?.replace(".png", "") && (
                                                                     <Image
-                                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster2) => monster2.child.includes(Number(monster.id)))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonsterDetail.find((monster2) => monster2.id ===monster.id)?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
                                                                         alt="Enemy Icon"
                                                                         width={376}
                                                                         height={512}
@@ -330,7 +438,7 @@ export default function CeBar() {
                                                                     />
                                                                 )}
                                                             </div>
-                                                            <span className="">{getLocaleName(locale, monster)} {`(${monster.id})`}</span>
+                                                            <span>{getLocaleName(locale, monster)} {`(${monster.id})`}</span>
                                                         </div>
                                                     ))
                                                 ) : (
@@ -339,6 +447,33 @@ export default function CeBar() {
                                                     </div>
                                                 )}
                                             </div>
+
+                                            {filteredMonsters.length > 0 && (
+                                                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
+                                                    <button
+                                                        disabled={monsterPage === 1}
+                                                        className="btn btn-sm btn-outline btn-success"
+                                                        onClick={(e) => {
+                                                            e.stopPropagation()
+                                                            setMonsterPage(monsterPage - 1)
+                                                        }}
+                                                    >
+                                                        {transI18n("previous")}
+                                                    </button>
+
+                                                    <button
+                                                        disabled={!hasMoreMonsterPages}
+                                                        className="btn btn-sm btn-outline btn-success"
+                                                        onClick={(e) => {
+                                                            e.stopPropagation()
+                                                            setMonsterPage(monsterPage + 1)
+                                                        }}
+                                                    >
+                                                        {transI18n("next")}
+                                                    </button>
+                                                </div>
+                                            )}
+
                                         </div>
                                     )}
                                 </div>
@@ -348,7 +483,7 @@ export default function CeBar() {
                 ))}
 
                 {/* Add New Wave Button */}
-                <div className="card backdrop-blur-sm border border-slate-700/50 border-dashed">
+                <div className="card border border-slate-700/50 border-dashed">
                     <div className="card-body p-8">
                         <button
                             onClick={() => {

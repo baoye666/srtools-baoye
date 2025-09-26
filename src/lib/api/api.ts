@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { AffixDetail, ASDetail, CharacterDetail, ConfigMaze, FreeSRJson, LightConeDetail, MocDetail, PeakDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
+import { AffixDetail, ASDetail, CharacterDetail, ConfigMaze, FreeSRJson, LightConeDetail, MocDetail, MonsterDetail, PeakDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
 import axios from 'axios';
 import { pSResponseSchema } from "@/zod";
 
@@ -196,7 +196,6 @@ export async function fetchMOCByIdNative(ids: string, locale: string): Promise<M
     }
 }
 
-
 export async function fetchPeakByIdsNative(ids: string[], locale: string): Promise<Record<string, PeakDetail> | null> {
     try {
         const res = await axios.post<Record<string, PeakDetail>>(`/api/${locale}/peak`, { peakIds: ids });
@@ -216,6 +215,28 @@ export async function fetchPeakByIdNative(ids: string, locale: string): Promise<
         return null;
     }
 }
+
+export async function fetchMonsterByIdsNative(ids: string[], locale: string): Promise<Record<string, MonsterDetail> | null> {
+    try {
+        const res = await axios.post<Record<string, MonsterDetail>>(`/api/${locale}/monster`, { monsterIds: ids });
+        return res.data;
+    } catch (error) {
+        console.error('Failed to fetch monster:', error);
+        return null;
+    }
+}
+
+export async function fetchMonsterByIdNative(ids: string, locale: string): Promise<MonsterDetail | null> {
+    try {
+        const res = await axios.get<MonsterDetail>(`/api/${locale}/monster/${ids}`);
+        return res.data;
+    } catch (error) {
+        console.error('Failed to fetch monster:', error);
+        return null;
+    }
+}
+
+
 
 export async function SendDataToServer(username: string, password: string, serverUrl: string, data: FreeSRJson | null): Promise<PSResponse | string> {
     try {

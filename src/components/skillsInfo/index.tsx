@@ -165,7 +165,11 @@ export default function SkillsInfo() {
                                     }}
                                     className={`w-full h-full object-cover rounded-xl`}
                                 />
-                                {traceButtons.map((btn, index) => (
+                                {traceButtons.map((btn, index) => {
+                                    if (!avatarInfo?.SkillTrees?.[btn.id]) {
+                                        return null
+                                    }
+                                    return (
                                     <div
                                         key={`${btn.id} + ${index}`}
                                         id={btn.id}
@@ -206,12 +210,12 @@ export default function SkillsInfo() {
                                             }}
                                         />
                                         {btn.size === "big" && (
-                                            <p className="text-xs md:text-base font-bold text-center rounded-full absolute bottom-[-1.4vw] left-1/2 transform -translate-x-1/2">{`${avatarData?.data.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID]}/${avatarSkillTree?.[btn.id]?.["1"]?.MaxLevel}`}</p>
+                                            <p className="text-xs md:text-base font-bold text-center rounded-full absolute bottom-[-1.4vw] left-1/2 transform -translate-x-1/2">{`${avatarData?.data.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID] || 0}/${avatarSkillTree?.[btn.id]?.["1"]?.MaxLevel}`}</p>
                                         )}
                                     </div>
 
 
-                                ))}
+                                )})}
                             </div>
                         )}
                     </div>

@@ -1,5 +1,5 @@
 import { convertAvatar, convertEvent, convertLightcone, convertMonster, convertRelicSet } from "@/helper";
-import { ASDetail, CharacterBasic, CharacterBasicRaw, CharacterDetail, EventBasic, EventBasicRaw, LightConeBasic, LightConeBasicRaw, LightConeDetail, MocDetail, MonsterBasic, MonsterBasicRaw, MonsterDetail, PeakDetail, PFDetail, RelicBasic, RelicBasicRaw, RelicDetail } from "@/types";
+import { ASDetail, CharacterBasic, CharacterBasicRaw, CharacterDetail, EventBasic, EventBasicRaw, LightConeBasic, LightConeBasicRaw, LightConeDetail, MocDetail, MonsterBasic, MonsterBasicRaw, MonsterDetail, MonsterValue, PeakDetail, PFDetail, RelicBasic, RelicBasicRaw, RelicDetail } from "@/types";
 import axios from "axios";
 
 export async function getLightconeInfoApi(lightconeId: number, locale: string): Promise<LightConeDetail | null> {
@@ -352,10 +352,34 @@ export async function getMonsterListApi(): Promise<{list: MonsterBasic[], map: R
     }
 }
 
-export async function getMonsterDetailApi(): Promise<Record<string, MonsterDetail> | null> {
+export async function getMonsterValueApi(): Promise<Record<string, MonsterValue> | null> {
     try {
-        const res = await axios.get<Record<string, MonsterDetail>>(
+        const res = await axios.get<Record<string, MonsterValue>>(
             `https://api.hakush.in/hsr/data/monstervalue.json`,
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }
+        );
+
+        return res.data;
+    } catch (error: unknown) {
+        if (axios.isAxiosError(error)) {
+            console.log(`Error: ${error.response?.status} - ${error.message}`);
+        } else {
+            console.log(`Unexpected error: ${String(error)}`);
+        }
+        return null;
+    }
+}
+
+
+
+export async function getMonsterDetailApi(monsterId: number, locale: string): Promise<MonsterDetail | null> {
+    try {
+        const res = await axios.get<MonsterDetail>(
+            `https://api.hakush.in/hsr/data/${locale}/monster/${monsterId}.json`,
             {
                 headers: {
                     'Content-Type': 'application/json',
