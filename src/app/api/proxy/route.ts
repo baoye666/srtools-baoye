@@ -20,6 +20,35 @@ function isPrivateHost(hostname: string): boolean {
   return false
 }
 
+export async function GET(req: NextRequest) {
+  try {
+    const { searchParams } = new URL(req.url)
+    const targetUrl = searchParams.get("url")
+    if (!targetUrl) {
+      return NextResponse.json({ error: "Missing url" }, { status: 400 })
+    }
+
+    const response = await fetch(targetUrl)
+
+    if (!response.ok) {
+      return NextResponse.json({ error: "Failed to fetch image" }, { status: 500 })
+    }
+
+    const buffer = await response.arrayBuffer()
+    
+    return new NextResponse(buffer, {
+      headers: {
+        "Content-Type": response.headers.get("content-type") || "image/png",
+        "Cache-Control": "public, max-age=3600",
+        "Access-Control-Allow-Origin": "*", 
+      },
+    })
+  } catch (e: unknown) {
+    return NextResponse.json({ error: (e as Error)?.message }, { status: 500 })
+  }
+}
+
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -49,7 +78,7 @@ export async function POST(request: NextRequest) {
 
     switch (method.toUpperCase()) {
       case 'GET':
-        const queryString = new URLSearchParams(payload as any).toString()
+        const queryString = new URLSearchParams(payload as Record<string, string>).toString()
         const fullUrl = queryString ? `${url}?${queryString}` : url
         response = await axios.get(fullUrl)
         break
@@ -67,7 +96,7 @@ export async function POST(request: NextRequest) {
     }
 
     return NextResponse.json(response.data)
-  } catch (err: any) {
-    return NextResponse.json({ error: err.message || 'Proxy failed' }, { status: 500 })
+  } catch (err: unknown) {
+    return NextResponse.json({ error: (err as Error)?.message || 'Proxy failed' }, { status: 500 })
   }
 }

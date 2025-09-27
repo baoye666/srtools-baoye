@@ -16,7 +16,6 @@ import { useTranslations } from 'next-intl';
 import useAffixStore from '@/stores/affixStore';
 import useRelicStore from '@/stores/relicStore';
 import { toast } from 'react-toastify';
-import html2canvas from 'html2canvas-pro';
 
 export default function ShowCaseInfo() {
   const { avatarSelected, mapAvatarInfo } = useListAvatarStore()
@@ -36,17 +35,27 @@ export default function ShowCaseInfo() {
       return;
     }
 
-    html2canvas(cardRef.current, {scale: 2, backgroundColor: '#000000'})
-      .then(function (canvas: HTMLCanvasElement) {
-        const link = document.createElement('a');
+    import("html2canvas-pro")
+      .then(({ default: html2canvas }) =>
+        html2canvas(cardRef.current!, { 
+          scale: 2, 
+          backgroundColor: "#000000", 
+          logging: false,
+          proxy: '/api/proxy/',
+          imageTimeout: 30000,
+        })
+      )
+      .then((canvas: HTMLCanvasElement) => {
+        const link = document.createElement("a");
         link.download = `${getNameChar(locale, avatarSelected)}_showcase.png`;
-        link.href = canvas.toDataURL('image/png');
+        link.href = canvas.toDataURL("image/png");
         link.click();
       })
       .catch(() => {
         toast.error("Error generating showcase card!");
       });
-  }, [cardRef, avatarSelected, locale])
+  }, [cardRef, avatarSelected, locale]);
+
 
   useEffect(() => {
     if (!avatarSelected?.id) return;
@@ -464,10 +473,10 @@ export default function ShowCaseInfo() {
     const r = Math.round(parseInt(hex.slice(1, 3), 16) * brightness);
     const g = Math.round(parseInt(hex.slice(3, 5), 16) * brightness);
     const b = Math.round(parseInt(hex.slice(5, 7), 16) * brightness);
-  
+
     return `#${r.toString(16).padStart(2, "0")}${g.toString(16).padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
   }, [])
-  
+
   const getImageSkill = useCallback((icon: string | undefined, status: StatusAddType | undefined) => {
     if (!icon) return
     if (icon.startsWith("SkillIcon")) {
@@ -490,15 +499,15 @@ export default function ShowCaseInfo() {
         <button className="btn btn-success w-24 text-sm" onClick={handleSaveImage}>Save Img</button>
       </div>
 
-      <div  className="overflow-auto">
-        <div 
-        ref={cardRef} 
-        className=" relative min-h-[650px] w-[1400px] rounded-3xl transition-all duration-500"
-        style={{
-          backgroundColor: `${applyBrightness(avgColor, 0.3)}`,
-          backdropFilter: "blur(50px)",
-          WebkitBackdropFilter: "blur(50px)",
-        }}
+      <div className="overflow-auto">
+        <div
+          ref={cardRef}
+          className=" relative min-h-[650px] w-[1400px] rounded-3xl transition-all duration-500"
+          style={{
+            backgroundColor: `${applyBrightness(avgColor, 0.3)}`,
+            backdropFilter: "blur(50px)",
+            WebkitBackdropFilter: "blur(50px)",
+          }}
         >
           <div className="absolute bottom-2 left-4 z-10">
             <span className="shadow-black [text-shadow:1px_1px_2px_var(--tw-shadow-color)]"></span>
@@ -545,7 +554,7 @@ export default function ShowCaseInfo() {
                       return (
                         <div key={index} className="relative my-1 flex rounded-full">
                           <NextImage
-                            src={src}
+                            src={src ?? null}
                             alt="Rank Icon"
                             width={50}
                             height={50}
@@ -596,6 +605,8 @@ export default function ShowCaseInfo() {
                     <div className="flex flex-col gap-4">
                       {avatarData && avatarInfo && avatarSkillTree && traceShowCaseMap[avatarSelected?.baseType || ""]
                         && Object.values(traceShowCaseMap[avatarSelected?.baseType || ""] || []).map((item, index) => {
+
+
                           return (
                             <div key={`row-${index}`} className="flex flex-row items-center">
                               {item.map((btn, idx) => {
@@ -622,6 +633,9 @@ export default function ShowCaseInfo() {
                                     ? "filter sepia brightness-150 hue-rotate-15 saturate-200"
                                     : "";
 
+                                if (!avatarSkillTree?.[btn.id]) {
+                                  return null;
+                                }
                                 return (
                                   <div key={`item-${idx}`} className="relative flex flex-row items-center">
                                     <div
@@ -631,18 +645,25 @@ export default function ShowCaseInfo() {
                                         ${avatarData.data.skills[avatarSkillTree?.[btn.id]?.["1"]?.PointID] ? "" : "opacity-50"}
                                       `}
                                     >
-                                      <NextImage
-                                        src={
-                                          getImageSkill(
+                                      {
+                                        (() => {
+                                          const skillImg = getImageSkill(
                                             avatarInfo.SkillTrees?.[btn.id]?.["1"]?.Icon,
                                             avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0]
-                                          ) || ""
-                                        }
-                                        alt={btn.id}
-                                        width={32}
-                                        height={32}
-                                        className={`h-auto ${imageSize} ${filterClass}`}
-                                      />
+                                          );
+
+                                          return skillImg ? (
+                                            <NextImage
+                                              src={skillImg}
+                                              alt={btn.id}
+                                              width={32}
+                                              height={32}
+                                              className={`h-auto ${imageSize} ${filterClass}`}
+                                            />
+                                          ) : null;
+                                        })()
+                                      }
+
                                       {(isBig || isBigMemory) && (
                                         <span className="absolute bottom-0 left-0 text-[12px] text-white bg-black/70 px-1 rounded-sm">
                                           {avatarData?.data?.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID] ? avatarData?.data?.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID] : 1}
@@ -867,7 +888,7 @@ export default function ShowCaseInfo() {
                       <div key={index} className="black-blur relative flex flex-row items-center rounded-s-lg border-l-2 p-1 border-yellow-600">
                         <div className="flex">
                           <NextImage src={relic?.img || ""} width={80} height={80} alt="Relic Icon" className="h-auto w-20" />
-                          {/* <img src="https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/deco/Star5.png" alt="Relic Rarity Icon" className="absolute bottom-1 h-auto w-20" /> */}
+
                           <div
                             className="absolute text-yellow-500 font-bold z-10"
                             style={{

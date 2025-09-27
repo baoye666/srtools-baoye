@@ -1008,15 +1008,12 @@ export const traceShowCaseMap : Record<string, Record<string, { id: string, size
                 id: "Point20",
                 size: "big-memory",
                 isLink: false
-            }
-        ],
-
-        "6": [
+            },
             {
                 id: "Point21",
                 size: "big",
                 isLink: false
             }
-        ]
+        ],
     }
 }
