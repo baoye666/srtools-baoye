@@ -11,6 +11,7 @@ import useModelStore from '@/stores/modelStore';
 import { replaceByParam } from '@/helper';
 import useRelicMakerStore from '@/stores/relicMakerStore';
 import useAffixStore from '@/stores/affixStore';
+import QuickView from "../quickView";
 
 export default function RelicsInfo() {
   const { avatars, setAvatars } = useUserDataStore()
@@ -27,7 +28,12 @@ export default function RelicsInfo() {
     listSelectedSubStats,
   } = useRelicMakerStore()
   const { mapSubAffix } = useAffixStore()
-  const { isOpenRelic, setIsOpenRelic } = useModelStore()
+  const { 
+    isOpenRelic, 
+    setIsOpenRelic,
+    isOpenQuickView,
+    setIsOpenQuickView 
+  } = useModelStore()
   const transI18n = useTranslations("DataPage")
  
   const { mapRelicInfo } = useRelicStore()
@@ -35,14 +41,12 @@ export default function RelicsInfo() {
   const handleShow = (modalId: string) => {
     const modal = document.getElementById(modalId) as HTMLDialogElement | null;
     if (modal) {
-      setIsOpenRelic(true);
       modal.showModal();
     }
   };
 
   // Close modal handler
   const handleCloseModal = (modalId: string) => {
-    setIsOpenRelic(false);
     const modal = document.getElementById(modalId) as HTMLDialogElement | null;
     if (modal) {
       modal.close();
@@ -55,10 +59,17 @@ export default function RelicsInfo() {
       handleCloseModal("action_detail_modal");
       return;
     };
+    if (!isOpenQuickView) {
+      handleCloseModal("quick_view_modal");
+      return;
+    };
 
     const handleEscKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape' && isOpenRelic) {
         handleCloseModal("action_detail_modal");
+      }
+      if (event.key === 'Escape' && isOpenQuickView) {
+        handleCloseModal("quick_view_modal");
       }
     };
 
@@ -114,7 +125,7 @@ export default function RelicsInfo() {
 
       setListSelectedSubStats(newSubAffixes)
     }
-
+    setIsOpenRelic(true)
     handleShow("action_detail_modal")
   }
 
@@ -153,7 +164,7 @@ export default function RelicsInfo() {
                 {transI18n("relics")}
               </h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-2xl mx-auto">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
                 {["1", "2", "3", "4", "5", "6"].map((item, index) => (
                   <div key={index} className="relative group">
                     <div
@@ -229,6 +240,15 @@ export default function RelicsInfo() {
                     {transI18n("deleteRelic")}
                 </button>
               </div>
+              <button
+                onClick={() => {
+                  setIsOpenQuickView(true)
+                  handleShow("quick_view_modal")
+                }}
+                className="btn btn-info w-full mt-2"
+              >
+                  {transI18n("quickView")}
+              </button>
             </div>
           </div>
 
@@ -302,7 +322,10 @@ export default function RelicsInfo() {
               whileHover={{ scale: 1.1, rotate: 90 }}
               transition={{ duration: 0.2 }}
               className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
-              onClick={() => handleCloseModal("action_detail_modal")}
+              onClick={() => {
+                setIsOpenRelic(false)
+                handleCloseModal("action_detail_modal")
+              }}
             >
               ✕
             </motion.button>
@@ -310,6 +333,30 @@ export default function RelicsInfo() {
           <RelicMaker />
         </div>
 
+      </dialog>
+
+      <dialog id="quick_view_modal" className="modal lg:backdrop-blur-sm z-10">
+        <div className="modal-box w-11/12 max-w-7xl bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+          <div className="sticky top-0 z-10">
+            <motion.button
+              whileHover={{ scale: 1.1, rotate: 90 }}
+              transition={{ duration: 0.2 }}
+              className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
+              onClick={() => {
+                setIsOpenQuickView(false)
+                handleCloseModal("quick_view_modal")
+              }}
+            >
+              ✕
+            </motion.button>
+          </div>
+          <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
+              <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
+                {transI18n("quickView").toUpperCase()}
+              </h3>
+            </div>
+          <QuickView />
+        </div>
       </dialog>
     </div>
   );

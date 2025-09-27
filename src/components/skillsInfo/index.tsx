@@ -179,9 +179,9 @@ export default function SkillsInfo() {
                                             cursor-pointer transition-all duration-200 ease-in-out 
                                             shadow-[0_0_5px_white] flex justify-center items-center 
                                             hover:scale-110
-                                            ${btn.size === "small" ? "w-[2vw] h-[2vw] bg-white" : ""}
-                                            ${btn.size === "medium" ? "w-[3vw] h-[3vw] bg-white" : ""}
-                                            ${btn.size === "big" ? "w-[3.5vw] h-[3.5vw] bg-black" : ""}
+                                            ${btn.size === "small" ? "w-[6vw] h-[6vw] md:w-[2vw] md:h-[2vw] bg-white" : ""}
+                                            ${btn.size === "medium" ? "w-[8vw] h-[8vw] md:w-[3vw] md:h-[3vw] bg-white" : ""}
+                                            ${btn.size === "big" ? "w-[9vw] h-[9vw] md:w-[3.5vw] md:h-[3.5vw] bg-black" : ""}
                                             ${skillSelected === btn.id ? "border-4 border-primary" : ""}
                                             ${avatarData?.data.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID] === 0 ? "opacity-50 cursor-not-allowed" : ""}
                                         `}

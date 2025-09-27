@@ -10,6 +10,10 @@ interface ModelState {
     isOpenCopy: boolean;
     isOpenMonster: boolean;
     isOpenConnect: boolean;
+    isOpenAvatars: boolean;
+    isOpenQuickView: boolean;
+    setIsOpenQuickView: (newIsOpenQuickView: boolean) => void;
+    setIsOpenAvatars: (newIsOpenAvatars: boolean) => void;
     setIsOpenConnect: (newIsOpenConnect: boolean) => void;
     setIsOpenMonster: (newIsOpenMonster: boolean) => void;
     setIsOpenLightcone: (newIsOpenLightcone: boolean) => void;
@@ -29,6 +33,10 @@ const useModelStore = create<ModelState>((set) => ({
     isOpenCopy: false,
     isOpenMonster: false,
     isOpenConnect: false,
+    isOpenAvatars: false,
+    isOpenQuickView: false,
+    setIsOpenQuickView: (newIsOpenQuickView: boolean) => set({ isOpenQuickView: newIsOpenQuickView }),
+    setIsOpenAvatars: (newIsOpenAvatars: boolean) => set({ isOpenAvatars: newIsOpenAvatars }),
     setIsOpenConnect: (newIsOpenConnect: boolean) => set({ isOpenConnect: newIsOpenConnect }),
     setIsOpenMonster: (newIsOpenMonster: boolean) => set({ isOpenMonster: newIsOpenMonster }),
     setIsOpenLightcone: (newIsOpenLightcone: boolean) => set({ isOpenLightcone: newIsOpenLightcone }),

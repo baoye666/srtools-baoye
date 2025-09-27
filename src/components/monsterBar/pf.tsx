@@ -134,7 +134,11 @@ export default function PfBar() {
                         excludeSet={[]}
                         selectedCustomSet={pf_config.event_id.toString()}
                         placeholder={transI18n("selectPFEvent")}
-                        setSelectedCustomSet={(id) => setPfConfig({ ...pf_config, event_id: Number(id), challenge_id: 0, buff_id: 0 })}
+                        setSelectedCustomSet={(id) => setPfConfig({ 
+                            ...pf_config, 
+                            event_id: Number(id), 
+                            challenge_id: mapPFInfo[Number(id)]?.Level.slice(-1)[0]?.Id || 0, 
+                            buff_id: 0 })}
                     />
                 </div>
                 {/* Settings */}

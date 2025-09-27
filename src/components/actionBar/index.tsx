@@ -17,6 +17,7 @@ import useGlobalStore from "@/stores/globalStore";
 import { connectToPS, syncDataToPS } from "@/helper";
 import CopyImport from "../importBar/copy";
 import useCopyProfileStore from "@/stores/copyProfile";
+import AvatarBar from "../avatarBar";
 
 
 export default function ActionBar() {
@@ -25,7 +26,14 @@ export default function ActionBar() {
   const { setListCopyAvatar } = useCopyProfileStore()
   const transI18n = useTranslations("DataPage")
   const { locale } = useLocaleStore()
-  const { isOpenCreateProfile, setIsOpenCreateProfile, isOpenCopy, setIsOpenCopy } = useModelStore()
+  const { 
+    isOpenCreateProfile, 
+    setIsOpenCreateProfile, 
+    isOpenCopy, 
+    setIsOpenCopy,
+    isOpenAvatars,
+    setIsOpenAvatars 
+  } = useModelStore()
   const { avatars, setAvatar } = useUserDataStore()
   const [profileName, setProfileName] = useState("");
   const [formState, setFormState] = useState("EDIT");
@@ -85,12 +93,19 @@ export default function ActionBar() {
 
   // Handle ESC key to close modal
   useEffect(() => {
+
     if (!isOpenCreateProfile) {
       handleCloseModal("update_profile_modal");
       return;
     }
     if (!isOpenCopy) {
       handleCloseModal("copy_profile_modal");
+      return;
+    }
+    console.log(isOpenAvatars)
+    if (!isOpenAvatars) {
+    
+      handleCloseModal("avatars_modal");
       return;
     }
 
@@ -101,12 +116,15 @@ export default function ActionBar() {
       if (event.key === 'Escape' && isOpenCopy) {
         handleCloseModal("copy_profile_modal");
       }
+      if (event.key === 'Escape' && isOpenAvatars) {
+        handleCloseModal("avatars_modal");
+      }
     };
 
     window.addEventListener('keydown', handleEscKey);
 
     return () => window.removeEventListener('keydown', handleEscKey);
-  }, [isOpenCopy, isOpenCreateProfile]);
+  }, [isOpenCopy, isOpenCreateProfile, isOpenAvatars]);
 
   const actionMove = (path: string) => {
     router.push(`/${path}`)
@@ -154,49 +172,48 @@ export default function ActionBar() {
   }
 
   return (
-    <div className="w-full mb-2">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-items-center">
-        <div className="grid grid-rows-2 lg:grid-rows-1 items-center w-full">
-          <div className="flex justify-between gap-10 w-full">
-            <div className="flex items-center p-1 h-full lg:p-2 opacity-80 lg:hover:opacity-100 cursor-pointer text-base md:text-lg lg:text-xl">
+    <div className="w-full px-4 pb-4 bg-base-200">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center justify-items-center">
+
+        <div className="flex flex-col justify-center w-full">
+          <div className="flex flex-wrap items-center gap-2 ">
+            <div className="flex flex-wrap items-center h-full opacity-80 lg:hover:opacity-100 cursor-pointer text-base md:text-lg lg:text-xl">
               {avatarSelected && (
-                <>
+                <div className="flex items-center justify-start h-full w-full">
                   <Image
-                    src={ `/icon/${avatarSelected.damageType.toLowerCase()}.webp`}
+                    src={`/icon/${avatarSelected.damageType.toLowerCase()}.webp`}
                     alt={'fire'}
                     className="h-[40px] w-[40px] object-contain"
                     width={100}
                     height={100}
                   />
-                  <div className="flex items-center justify-center h-full w-full">
-                    <p className="text-center font-bold text-xl">
-                      {transI18n(avatarSelected.baseType.toLowerCase())}
-                    </p>
-                    <div className="text-center font-bold text-xl">{" / "}</div>
-                    <ParseText
-                      locale={locale}
-                      text={getNameChar(locale, avatarSelected).toWellFormed()}
-                      className={"font-bold text-xl"}
-                    />
-                    {avatarSelected?.id && (
-                      <div className="text-center italic text-sm ml-2"> {`(${avatarSelected.id})`}</div>
-                    )}
-                  </div>
-                </>
+                  <p className="text-center font-bold text-xl">
+                    {transI18n(avatarSelected.baseType.toLowerCase())}
+                  </p>
+                  <div className="text-center font-bold text-xl">{" / "}</div>
+                  <ParseText
+                    locale={locale}
+                    text={getNameChar(locale, avatarSelected).toWellFormed()}
+                    className={"font-bold text-xl"}
+                  />
+                  {avatarSelected?.id && (
+                    <div className="text-center italic text-sm ml-2"> {`(${avatarSelected.id})`}</div>
+                  )}
+                </div>
               )}
             </div>
 
           </div>
 
-          <div className="flex items-center gap-2 ml-4 w-full">
+          <div className="flex flex-wrap items-center gap-2">
             <span className="text-base opacity-70 font-bold w-16">{transI18n("profile")}:</span>
-            <div className="dropdown dropdown-end w-full">
+            <div className="dropdown dropdown-center md:dropdown-start">
               <div
                 tabIndex={0}
                 role="button"
-                className="btn btn-warning border-info btn-soft gap-1 min-w-0"
+                className="btn btn-warning border-info btn-soft gap-1"
               >
-                <span className="truncate max-w-24 font-bold">
+                <span className="truncate max-w-48 font-bold">
                   {profileCurrent?.profile_name}
                 </span>
                 <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -204,7 +221,7 @@ export default function ActionBar() {
                 </svg>
               </div>
 
-              <ul className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-full mt-1 border border-base-300 max-h-60 overflow-y-auto">
+              <ul className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box min-w-max w-full mt-1 border border-base-300 max-h-60 overflow-y-auto">
                 {listProfile.map((profile, index) => (
                   <li key={index} className="grid grid-cols-12">
                     <button
@@ -269,7 +286,7 @@ export default function ActionBar() {
                   <button
                     className="btn btn-ghost flex justify-start px-3 py-2 h-full w-full hover:bg-base-200 cursor-pointer text-primary z-20"
                     onClick={() => {
-                      
+
                       setIsOpenCreateProfile(true)
                       setFormState("CREATE");
                       setProfileName("")
@@ -284,23 +301,82 @@ export default function ActionBar() {
                 </li>
               </ul>
             </div>
+            <div className=" grid grid-cols-2 w-full sm:hidden gap-2">
+              <button 
+              onClick={() => {
+                setIsOpenAvatars(true)
+                handleShow("avatars_modal")
+              }}
+              className="col-span-1 btn btn-warning btn-sm w-full">
+                {transI18n("avatars")}
+              </button>
+              <div className="col-span-1 dropdown dropdown-center w-full">
+                <label tabIndex={0} className="btn btn-info btn-sm w-full">
+                  {transI18n("actions")}
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box min-w-max w-full mt-1 border border-base-300 max-h-60 overflow-y-auto"
+                >
+                  <li>
+                    <button onClick={() => actionMove('')}>
+                      {transI18n("characterInformation")}
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => actionMove('relics-info')}>
+                      {transI18n("relics")}
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => actionMove('eidolons-info')}>
+                      {transI18n("eidolons")}
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => actionMove('skills-info')}>
+                      {transI18n("skills")}
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => actionMove('showcase-card')}>
+                      {transI18n("showcaseCard")}
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={handleConnectOrSyncPS} className="btn btn-primary btn-sm">
+                      {isConnectPS ? transI18n("sync") : transI18n("connectPs")}
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 w-full">
-          {/* Action Buttons */}
-          <div className="grid grid-cols-2 xl:grid-cols-3 gap-2 w-full">
-            <button className="btn btn-success btn-sm" onClick={() => actionMove('')}>{transI18n("characterInformation")}</button>
-            <button className="btn btn-success btn-sm" onClick={() => actionMove('relics-info')}>{transI18n("relics")}</button>
-            <button className="btn btn-success btn-sm" onClick={() => actionMove('eidolons-info')}>{transI18n("eidolons")}</button>
-            <button className="btn btn-success btn-sm" onClick={() => actionMove('skills-info')}>{transI18n("skills")}</button>
-            <button className="btn btn-success btn-sm" onClick={() => actionMove('showcase-card')}>{transI18n("showcaseCard")}</button>
-            <button onClick={handleConnectOrSyncPS} className="btn btn-primary btn-sm"> {isConnectPS ? transI18n("sync") : transI18n("connectPs")}</button>
-          </div>
+        <div className="hidden sm:grid grid-cols-3 gap-2 w-full">
+          <button className="btn btn-success btn-sm" onClick={() => actionMove("")}>
+            {transI18n("characterInformation")}
+          </button>
+          <button className="btn btn-success btn-sm" onClick={() => actionMove("relics-info")}>
+            {transI18n("relics")}
+          </button>
+          <button className="btn btn-success btn-sm" onClick={() => actionMove("eidolons-info")}>
+            {transI18n("eidolons")}
+          </button>
+          <button className="btn btn-success btn-sm" onClick={() => actionMove("skills-info")}>
+            {transI18n("skills")}
+          </button>
+          <button className="btn btn-success btn-sm" onClick={() => actionMove("showcase-card")}>
+            {transI18n("showcaseCard")}
+          </button>
+          <button onClick={handleConnectOrSyncPS} className="btn btn-primary btn-sm">
+            {isConnectPS ? transI18n("sync") : transI18n("connectPs")}
+          </button>
         </div>
 
-
-        <dialog id="update_profile_modal" className="modal sm:modal-middle backdrop-blur-sm">
+        <dialog id="update_profile_modal" className="modal ">
           <div className="modal-box w-11/12 max-w-7xl bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
             <div className="sticky top-0 z-10">
               <motion.button
@@ -335,7 +411,7 @@ export default function ActionBar() {
 
               <div className="modal-action">
                 <button className="btn btn-success btn-sm sm:btn-md" onClick={handleUpdateProfile}>
-                  {formState === "CREATE" ? transI18n("create")  : transI18n("update")}
+                  {formState === "CREATE" ? transI18n("create") : transI18n("update")}
                 </button>
               </div>
             </div>
@@ -365,6 +441,32 @@ export default function ActionBar() {
             <CopyImport />
           </div>
         </dialog>
+
+
+        <dialog id="avatars_modal" className="modal">
+          <div className="modal-box w-11/12 max-w-7xl bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+            <div className="sticky top-0 z-10">
+              <motion.button
+                whileHover={{ scale: 1.1, rotate: 90 }}
+                transition={{ duration: 0.2 }}
+                className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
+                onClick={() => {
+                  setIsOpenAvatars(false)
+                  handleCloseModal("avatars_modal")
+                }}
+              >
+                ✕
+              </motion.button>
+            </div>
+            <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
+              <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
+                {transI18n("avatars").toUpperCase()}
+              </h3>
+            </div>
+            <AvatarBar onClose={() => {setIsOpenAvatars(false); handleCloseModal("avatars_modal")}} />
+          </div>
+        </dialog>
+
 
       </div>
     </div>

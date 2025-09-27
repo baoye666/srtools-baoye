@@ -245,6 +245,9 @@
 		"selectMode": "Chọn chế độ",
 		"rollBack": "Quay lại bước trước",
 		"upRoll": "Tăng dòng",
-		"downRoll": "Giảm dòng"
+		"downRoll": "Giảm dòng",
+		"actions": "Hành động",
+		"avatars": "Nhân vật",
+		"quickView": "Xem nhanh"
 	}
 }

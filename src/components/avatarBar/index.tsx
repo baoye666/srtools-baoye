@@ -7,13 +7,12 @@ import useAvatarStore from "@/stores/avatarStore"
 import { useTranslations } from "next-intl"
 
 
-export default function AvatarBar() {
+export default function AvatarBar({ onClose }: { onClose?: () => void }) {
     const [listElement, setListElement] = useState<Record<string, boolean>>({ "fire": false, "ice": false, "imaginary": false, "physical": false, "quantum": false, "thunder": false, "wind": false })
     const [listPath, setListPath] = useState<Record<string, boolean>>({ "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false })
     const { listAvatar, setAvatarSelected, setSkillSelected, setFilter, filter } = useAvatarStore()
     const transI18n = useTranslations("DataPage")
     const { locale } = useLocaleStore()
-    
 
     
     useEffect(() => {
@@ -31,12 +30,12 @@ export default function AvatarBar() {
                             <div className="flex justify-center">
                                 <input type="text"
                                     placeholder={transI18n("placeholderCharacter")}
-                                    className="input input-bordered input-primary w-full max-w-xs"
+                                    className="input input-bordered input-primary w-full"
                                     value={filter.name}
                                     onChange={(e) => setFilter({ ...filter, name: e.target.value, locale: locale })}
                                 />
                             </div>
-                            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-7 mb-1 mx-1 gap-2 w-full max-h-[17vh] min-h-[5vh] overflow-y-auto">
+                            <div className="grid grid-cols-4  lg:grid-cols-7 mb-1 mx-1 gap-2 w-full max-h-[17vh] min-h-[5vh] overflow-y-auto">
                                 {Object.keys(listElement).map((key, index) => (
                                     <div
                                         key={index}
@@ -56,7 +55,7 @@ export default function AvatarBar() {
                                 ))}
                             </div>
 
-                            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-8 mb-1 mx-1 gap-2 overflow-y-auto w-full max-h-[17vh] min-h-[5vh]">
+                            <div className="grid grid-cols-4 lg:grid-cols-8 mb-1 mx-1 gap-2 overflow-y-auto w-full max-h-[17vh] min-h-[5vh]">
                                 {Object.keys(listPath).map((key, index) => (
                                     <div
                                         key={index}
@@ -81,9 +80,13 @@ export default function AvatarBar() {
                         </div>
 
                         <div className="flex items-start h-full">
-                            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 w-full h-[65vh] overflow-y-scroll overflow-x-hidden">
+                            <ul className="grid grid-cols-2 lg:grid-cols-3 gap-2 w-full h-[65vh] overflow-y-scroll overflow-x-hidden">
                                 {listAvatar.map((item, index) => (
-                                    <div key={index} onClick={() => {setAvatarSelected(item); setSkillSelected(null)}}>
+                                    <div key={index} onClick={() => {
+                                        setAvatarSelected(item); 
+                                        setSkillSelected(null)
+                                        if (onClose) onClose()
+                                    }}>
                                         <CharacterCard data={item} />
                                     </div>
                                 ))}

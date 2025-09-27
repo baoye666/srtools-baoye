@@ -7,12 +7,11 @@ import Footer from "@/components/footer";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { ToastContainer } from 'react-toastify';
-import AvatarBar from "@/components/avatarBar";
-import ActionBar from "@/components/actionBar";
 import QueryProviderWrapper from "@/components/queryProvider";
 import ClientDataFetcher from "@/components/clientDataFetcher";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/next"
+import AvatarBar from "@/components/avatarBar";
+import ActionBar from "@/components/actionBar";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -74,19 +73,19 @@ export default async function RootLayout({
           <QueryProviderWrapper>
             <ThemeProvider>
               <ClientThemeWrapper>
-              <ClientDataFetcher /> 
+                <ClientDataFetcher />
                 <div className="min-h-screen w-full">
                   <Header />
                   <div className="grid grid-cols-12 w-full">
-                    <div className="col-span-3 sticky top-0 self-start h-fit">
+                    <div className="hidden sm:block col-span-3 sticky top-0 self-start h-fit">
                       <AvatarBar />
                     </div>
-                    <div className="col-span-9">
+                    <div className="col-span-12 sm:col-span-9 lg:col-span-9">
                       <ActionBar />
                       {children}
-
                     </div>
                   </div>
+
                   <Footer />
                 </div>
 
@@ -95,8 +94,7 @@ export default async function RootLayout({
           </QueryProviderWrapper>
         </NextIntlClientProvider>
         <ToastContainer />
-        <SpeedInsights />
-        <Analytics />
+
       </body>
 
     </html>

@@ -112,18 +112,18 @@
 		"max": "최대",
 		"ultimateEnergy": "궁극 에너지",
 		"currentEnergy": "현재 에너지",
-		"setTo50": "50%로 설정",  
+		"setTo50": "50%로 설정",
 		"battleConfiguration": "전투 구성",
 		"useTechnique": "비기 사용",
 		"techniqueNote": "전투 전 비기 효과 활성화",
-		"enhancement": "강화",  
+		"enhancement": "강화",
 		"enhancementLevel": "강화 레벨",
 		"origin": "출처",
 		"enhancedNote": "강화 레벨이 높을수록 추가 효과 해제",
 		"lightconeEquipment": "라이트콘 장비",
 		"lightconeSettings": "라이트콘 설정",
 		"placeholderLevel": "레벨 입력",
-		"superimpositionRank": "중첩 등급",  
+		"superimpositionRank": "중첩 등급",
 		"ranksNote": "등급이 높을수록 효과가 강함",
 		"changeLightcone": "라이트콘 변경",
 		"removeLightcone": "라이트콘 제거",
@@ -245,6 +245,9 @@
 		"selectMode": "모드를 선택",
 		"rollBack": "이전 상태로 되돌리기",
 		"upRoll": "부옵션 추가",
-		"downRoll": "부옵션 감소"
-	  }
+		"downRoll": "부옵션 감소",
+		"actions": "동작",
+		"avatars": "아바타",
+		"quickView": "빠른 조회"
+	}
 }

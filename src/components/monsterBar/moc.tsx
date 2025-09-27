@@ -127,7 +127,11 @@ export default function MocBar() {
                         excludeSet={[]}
                         selectedCustomSet={moc_config.event_id.toString()}
                         placeholder={transI18n("selectMOCEvent")}
-                        setSelectedCustomSet={(id) => setMocConfig({ ...moc_config, event_id: Number(id), challenge_id: 0 })}
+                        setSelectedCustomSet={(id) => setMocConfig({ 
+                            ...moc_config, 
+                            event_id: Number(id), 
+                            challenge_id: mapMOCInfo[Number(id)]?.slice(-1)[0]?.Id || 0, 
+                        })}
                     />
                 </div>
                 {/* Settings */}
@@ -140,7 +144,10 @@ export default function MocBar() {
                         <select
                             value={moc_config.challenge_id}
                             className="select select-success"
-                            onChange={(e) => setMocConfig({ ...moc_config, challenge_id: Number(e.target.value) })}
+                            onChange={(e) => setMocConfig({ 
+                                ...moc_config, 
+                                challenge_id: Number(e.target.value) 
+                            })}
                         >
                             <option value={0} disabled={true}>Select a Floor</option>
                             {mapMOCInfo[moc_config.event_id.toString()]?.map((moc) => (

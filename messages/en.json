@@ -246,7 +246,9 @@
 		"selectMode": "Select a mode",
 		"rollBack": "Roll Back",
 		"upRoll": "Up Roll",
-		"downRoll": "Down Roll"
-
+		"downRoll": "Down Roll",
+		"actions": "Actions",
+		"avatars": "Avatars",
+		"quickView": "Quick View"
 	}
 }

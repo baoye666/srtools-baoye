@@ -160,7 +160,12 @@ export default function AsBar() {
                         excludeSet={[]}
                         selectedCustomSet={as_config.event_id.toString()}
                         placeholder={transI18n("selectASEvent")}
-                        setSelectedCustomSet={(id) => setAsConfig({ ...as_config, event_id: Number(id), challenge_id: 0, buff_id: 0 })}
+                        setSelectedCustomSet={(id) => setAsConfig({ 
+                            ...as_config, 
+                            event_id: Number(id), 
+                            challenge_id: mapASInfo[Number(id)]?.Level.slice(-1)[0]?.Id || 0,
+                            buff_id: 0 
+                        })}
                     />
                 </div>
                 {/* Settings */}

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useRef, useMemo, useCallback } from 'react';
-import useListAvatarStore from "@/stores/avatarStore";
+import useAvatarStore from "@/stores/avatarStore";
 import { FastAverageColor, FastAverageColorResult } from 'fast-average-color';
 import NextImage from 'next/image';
 import ParseText from '../parseText';
@@ -18,7 +18,7 @@ import useRelicStore from '@/stores/relicStore';
 import { toast } from 'react-toastify';
 
 export default function ShowCaseInfo() {
-  const { avatarSelected, mapAvatarInfo } = useListAvatarStore()
+  const { avatarSelected, mapAvatarInfo } = useAvatarStore()
   const { mapLightconeInfo } = useLightconeStore()
   const { mapMainAffix, mapSubAffix } = useAffixStore()
   const { avatars } = useUserDataStore()
@@ -469,6 +469,7 @@ export default function ShowCaseInfo() {
     mapRelicInfo,
     avatarSkillTree
   ])
+
   const applyBrightness = useCallback((hex: string, brightness: number): string => {
     const r = Math.round(parseInt(hex.slice(1, 3), 16) * brightness);
     const g = Math.round(parseInt(hex.slice(3, 5), 16) * brightness);

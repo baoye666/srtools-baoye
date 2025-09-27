@@ -134,7 +134,7 @@ export default function CopyImport() {
 
                         <div className="flex items-start flex-col gap-2 mt-2 w-full">
                             <div>{transI18n("filter")}</div>
-                            <div className="flex flex-wrap justify-start gap-10 mt-2 w-full">
+                            <div className="flex flex-wrap justify-start gap-5 md:gap-10 mt-2 w-full">
                                 {/* Path */}
                                 <div>
                                     <div className="flex flex-wrap gap-2 justify-start items-center">
