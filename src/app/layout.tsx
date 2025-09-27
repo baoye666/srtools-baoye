@@ -12,6 +12,7 @@ import ActionBar from "@/components/actionBar";
 import QueryProviderWrapper from "@/components/queryProvider";
 import ClientDataFetcher from "@/components/clientDataFetcher";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -95,6 +96,7 @@ export default async function RootLayout({
         </NextIntlClientProvider>
         <ToastContainer />
         <SpeedInsights />
+        <Analytics />
       </body>
 
     </html>
