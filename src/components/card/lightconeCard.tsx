@@ -4,6 +4,7 @@ import { getLocaleName } from '@/helper';
 import useLocaleStore from '@/stores/localeStore';
 import { LightConeBasic } from '@/types';
 import ParseText from '../parseText';
+import Image from 'next/image';
 
 interface LightconeCardProps {
     data: LightConeBasic
@@ -27,9 +28,11 @@ export default function LightconeCard({ data }: LightconeCardProps) {
             >
 
                 <div className="relative w-full h-full">
-                    <img
+                    <Image
                         loading="lazy"
                         src={`https://api.hakush.in/hsr/UI/lightconemediumicon/${data.id}.webp`}
+                        width={348}
+                        height={408}
                         className="w-full h-full rounded-md object-cover"
                         alt="ALT"
                     />

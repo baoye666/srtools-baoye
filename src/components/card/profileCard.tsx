@@ -26,9 +26,11 @@ export default function ProfileCard({ profile, selectedProfile, onProfileToggle 
             {profile.lightcone && (
                 <div className="">
                     <div className="rounded-lg h-42 flex items-center justify-center">
-                        <img
+                        <Image
                             src={`https://api.hakush.in/hsr/UI/lightconemediumicon/${profile.lightcone.item_id}.webp`}
                             alt={mapLightconeInfo[profile.lightcone.item_id.toString()]?.Name}
+                            width={348}
+                            height={408}
                             className="w-full h-full object-contain rounded-lg"
                         />
 

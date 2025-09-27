@@ -157,9 +157,9 @@ export default function SkillsInfo() {
                                 <Image
                                     src={`/skilltree/${avatarSelected?.baseType?.toUpperCase()}.webp`}
                                     alt=""
-                                    width={612}
+                                    width={312}
                                     priority={true}
-                                    height={612}
+                                    height={312}
                                     style={{
                                         filter: (theme === "winter" || theme === "cupcake") ? "invert(1)" : "none"
                                     }}

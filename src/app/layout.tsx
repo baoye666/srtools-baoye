@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://srtools.kain.id.vn/ff-srtool.png",
-        width: 630,
-        height: 630,
+        width: 312,
+        height: 312,
         alt: "Firefly SrTools Logo",
       },
     ],
