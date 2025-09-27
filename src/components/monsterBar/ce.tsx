@@ -17,7 +17,7 @@ import useLocaleStore from "@/stores/localeStore";
 import { getLocaleName } from "@/helper";
 import Image from "next/image";
 import { MonsterBasic } from "@/types";
-import { cloneDeep } from "lodash";
+import cloneDeep from 'lodash/cloneDeep'
 import { useTranslations } from "next-intl";
 import { listCurrentLanguageApi } from "@/constant/constant";
 
