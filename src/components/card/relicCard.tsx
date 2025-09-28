@@ -18,6 +18,7 @@ const getRarityColor = (rarity: string) => {
         default: return 'border-gray-500 shadow-gray-500/50';
     }
 };
+
 const getRarityName = (slot: string) => {
     switch (slot) {
         case '1': return (

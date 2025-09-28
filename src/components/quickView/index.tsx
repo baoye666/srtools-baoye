@@ -390,14 +390,14 @@ export default function QuickView() {
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="col-span-1 md:col-span-2 flex flex-col justify-between py-3 z-10">
-                <div className="flex w-full flex-col justify-between gap-y-0.5 text-base h-[500px]">
+            <div className="col-span-1 md:col-span-2 flex flex-col justify-between py-3">
+                <div className="flex w-full flex-col justify-between gap-y-0.5 text-base">
                     {Object.entries(characterStats || {})?.map(([key, stat], index) => {
                         if (!stat || (key.includes("Add") && stat.value === 0)) return null
                         return (
                             <div key={index} className="flex flex-row items-center justify-between">
                                 <div className="flex flex-row items-center">
-                                    <NextImage src={stat?.icon || ""} alt="Stat Icon" width={40} height={40} className="h-auto w-10 p-2" />
+                                    <NextImage src={stat?.icon || ""} alt="Stat Icon" width={40} height={40} className="h-auto w-10 p-1 mx-1 bg-black/20 rounded-full" />
                                     <span className="font-bold">{stat.name}</span>
                                 </div>
                                 <div className="ml-3 mr-3 flex-grow border rounded opacity-50" />
@@ -429,7 +429,7 @@ export default function QuickView() {
                                     }}
                                 />
                                 <div>
-                                    <span className="black-blur bg-black/50 flex w-5 justify-center rounded px-1.5 py-0.5">{setEffect.count}</span>
+                                    <span className="black-blur bg-black/20 flex w-5 justify-center rounded px-1.5 py-0.5">{setEffect.count}</span>
                                 </div>
                             </div>
                         )
@@ -437,67 +437,65 @@ export default function QuickView() {
                 </div>
             </div>
 
-            <div className="z-10">
-                <div className="grid grid-cols-1 gap-2 justify-between py-3 text-lg">
+            <div className="grid grid-cols-1 gap-2 justify-between py-3 text-lg">
 
-                    {relicStats?.map((relic, index) => {
-                        if (!relic) return null
-                        return (
-                            <div key={index} className="black-blur relative flex flex-row items-center rounded-lg border-2 p-1 border-yellow-600">
-                                <div className="flex">
-                                    <NextImage src={relic?.img || ""} width={80} height={80} alt="Relic Icon" className="h-auto w-20" />
+                {relicStats?.map((relic, index) => {
+                    if (!relic) return null
+                    return (
+                        <div key={index} className="black-blur relative flex flex-row items-center rounded-lg border-2 p-1 border-yellow-600">
+                            <div className="flex">
+                                <NextImage src={relic?.img || ""} width={80} height={80} alt="Relic Icon" className="h-auto w-20" />
 
-                                    <div
-                                        className="absolute text-yellow-500 font-bold z-10"
-                                        style={{
-                                            left: '0.7rem',
-                                            bottom: '-0.5rem',
-                                            fontSize: '1.1rem',
-                                            letterSpacing: '-0.1em',
-                                            textShadow: `
-                                                    0 0 0.2em #f59e0b,
-                                                    0 0 0.4em #f59e0b,
-                                                    0 0 0.8em #f59e0b,
-                                                    -0.05em -0.05em 0.05em rgba(0,0,0,0.7),
-                                                    0.05em 0.05em 0.05em rgba(0,0,0,0.7)
-                                            `
-                                        }}
-                                    >
-                                        ✦✦✦✦✦
-                                    </div>
-                                </div>
-                                <div className="mx-1 flex w-1/6 flex-col items-center justify-center">
-                                    <NextImage src={relic?.mainAffix?.detail?.icon || ""} width={36} height={36} alt="Main Affix Icon" className="h-auto w-9" />
-                                    <span className="text-base text-[#f1a23c]">{relic?.mainAffix?.valueAffix + relic?.mainAffix?.detail?.unit}</span>
-                                    <span className="black-blur rounded px-1 text-xs">+{relic?.mainAffix?.level}</span>
-                                </div>
-                                <div style={{ opacity: 0.5, height: '80px', borderLeftWidth: '1px' }}></div>
-                                <div className="m-auto grid w-1/2 grid-cols-2 gap-2">
-                                    {relic?.subAffix?.map((subAffix, index) => {
-                                        if (!subAffix) return null
-                                        return (
-                                            <div key={index} className="flex flex-col">
-                                                <div className="flex flex-row items-center">
-                                                    {subAffix?.detail?.icon ? (
-                                                        <NextImage src={subAffix?.detail?.icon || ""} width={36} height={36} alt="Sub Affix Icon" className="h-auto w-9" />
-                                                    ) : (
-                                                        <div className="h-9 w-9 bg-black/50 rounded flex items-center justify-center">
-                                                            <span className="text-xs text-white">?</span>
-                                                        </div>
-                                                    )}
-                                                    <span className="text-sm">+{subAffix?.valueAffix + subAffix?.detail?.unit}</span>
-                                                </div>
-                                            </div>
-                                        )
-                                    })}
+                                <div
+                                    className="absolute text-yellow-500 font-bold z-10"
+                                    style={{
+                                        left: '0.7rem',
+                                        bottom: '-0.5rem',
+                                        fontSize: '1.1rem',
+                                        letterSpacing: '-0.1em',
+                                        textShadow: `
+                                0 0 0.2em #f59e0b,
+                                0 0 0.4em #f59e0b,
+                                0 0 0.8em #f59e0b,
+                                -0.05em -0.05em 0.05em rgba(0,0,0,0.7),
+                                0.05em 0.05em 0.05em rgba(0,0,0,0.7)
+                        `
+                                    }}
+                                >
+                                    ✦✦✦✦✦
                                 </div>
                             </div>
-                        )
-                    })}
-                    {(!relicStats || !relicStats?.length) && <div className="flex flex-col items-center justify-center ">
-                        <span className="text-lg">{transI18n("noRelicEquipped")}</span>
-                    </div>}
-                </div>
+                            <div className="mx-1 flex w-1/6 flex-col items-center justify-center">
+                                <NextImage src={relic?.mainAffix?.detail?.icon || ""} width={36} height={36} alt="Main Affix Icon" className="h-auto w-9 bg-black/20 rounded-full" />
+                                <span className="text-base text-[#f1a23c]">{relic?.mainAffix?.valueAffix + relic?.mainAffix?.detail?.unit}</span>
+                                <span className="black-blur rounded px-1 text-xs">+{relic?.mainAffix?.level}</span>
+                            </div>
+                            <div style={{ opacity: 0.5, height: '80px', borderLeftWidth: '1px' }}></div>
+                            <div className="m-auto grid w-1/2 grid-cols-2 gap-2">
+                                {relic?.subAffix?.map((subAffix, index) => {
+                                    if (!subAffix) return null
+                                    return (
+                                        <div key={index} className="flex flex-col">
+                                            <div className="flex flex-row items-center">
+                                                {subAffix?.detail?.icon ? (
+                                                    <NextImage src={subAffix?.detail?.icon || ""} width={36} height={36} alt="Sub Affix Icon" className="h-auto w-9 bg-black/20 rounded-full" />
+                                                ) : (
+                                                    <div className="h-9 w-9 bg-black/20 rounded flex items-center justify-center">
+                                                        <span className="text-xs text-white">?</span>
+                                                    </div>
+                                                )}
+                                                <span className="text-sm">+{subAffix?.valueAffix + subAffix?.detail?.unit}</span>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                    )
+                })}
+                {(!relicStats || !relicStats?.length) && <div className="flex flex-col items-center justify-center ">
+                    <span className="text-lg">{transI18n("noRelicEquipped")}</span>
+                </div>}
             </div>
         </div>
     )
