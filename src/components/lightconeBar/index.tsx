@@ -67,7 +67,7 @@ export default function LightconeBar() {
                     <div>Filter</div>
                     <div className="grid grid-cols-12 mt-1 w-full">
                         <div className="grid justify-items-start col-span-8">
-                            <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 mb-1 mx-1 gap-2">
+                            <div className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-8 mb-1 mx-1 gap-2">
                                 {Object.keys(listPath).map((key, index) => (
                                     <div
                                         key={index}
@@ -89,7 +89,7 @@ export default function LightconeBar() {
                         </div>
 
                         <div className="grid justify-items-end col-span-4 w-full">
-                            <div className="grid grid-cols-1 sm:grid-cols-3 mb-1 mx-1 gap-2">
+                            <div className="grid grid-cols-2 sm:grid-cols-3 mb-1 mx-1 gap-2">
                                 {Object.keys(listRank).map((key, index) => (
                                     <div
                                         key={index}

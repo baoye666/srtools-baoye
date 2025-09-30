@@ -35,7 +35,7 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                                     onChange={(e) => setFilter({ ...filter, name: e.target.value, locale: locale })}
                                 />
                             </div>
-                            <div className="grid grid-cols-4  lg:grid-cols-7 mb-1 mx-1 gap-2 w-full max-h-[17vh] min-h-[5vh] overflow-y-auto">
+                            <div className="grid grid-cols-7 sm:grid-cols-4  lg:grid-cols-7 mb-1 mx-1 gap-2 w-full max-h-[17vh] min-h-[5vh] overflow-y-auto">
                                 {Object.keys(listElement).map((key, index) => (
                                     <div
                                         key={index}
@@ -55,7 +55,7 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                                 ))}
                             </div>
 
-                            <div className="grid grid-cols-4 lg:grid-cols-8 mb-1 mx-1 gap-2 overflow-y-auto w-full max-h-[17vh] min-h-[5vh]">
+                            <div className="grid grid-cols-8 sm:grid-cols-4 lg:grid-cols-8 mb-1 mx-1 gap-2 overflow-y-auto w-full max-h-[17vh] min-h-[5vh]">
                                 {Object.keys(listPath).map((key, index) => (
                                     <div
                                         key={index}
@@ -80,7 +80,7 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                         </div>
 
                         <div className="flex items-start h-full">
-                            <ul className="grid grid-cols-2 lg:grid-cols-3 gap-2 w-full h-[65vh] overflow-y-scroll overflow-x-hidden">
+                            <ul className="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 gap-2 w-full h-[65vh] overflow-y-scroll overflow-x-hidden">
                                 {listAvatar.map((item, index) => (
                                     <div key={index} onClick={() => {
                                         setAvatarSelected(item); 
