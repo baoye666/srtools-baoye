@@ -55,53 +55,53 @@ export default function PeakBar() {
     }, [peak_config, listFloor, mapPEAKInfo, bossConfig])
 
     useEffect(() => {
-            if (!challengeSelected) return
-            if (peak_config.event_id !== 0 && peak_config.challenge_id !== 0 && challengeSelected) {
-                const newBattleConfig = cloneDeep(peak_config)
-                newBattleConfig.cycle_count = 6
-                newBattleConfig.blessings = []
-                for (const value of challengeSelected.TagList) {
-                    newBattleConfig.blessings.push({
-                        id: Number(value.Id),
-                        level: 1
-                    })
-                }
-                if (peak_config.buff_id !== 0) {
-                    newBattleConfig.blessings.push({
-                        id: peak_config.buff_id,
-                        level: 1
-                    })
-                }
-                newBattleConfig.monsters = []
-                newBattleConfig.stage_id = challengeSelected.EventIDList[0].StageID
-                for (const wave of challengeSelected.EventIDList[0].MonsterList) {
-                    if (!wave) continue
-                    const newWave: MonsterStore[] = []
-                    for (const value of Object.values(wave)) {
-                        if (!value) continue
-                        newWave.push({
-                            monster_id: Number(value),
-                            level: challengeSelected.EventIDList[0].Level,
-                            amount: 1,
-                        })
-                    }
-                    newBattleConfig.monsters.push(newWave)
-                }
-
-                setPeakConfig(newBattleConfig)
+        if (!challengeSelected) return
+        if (peak_config.event_id !== 0 && peak_config.challenge_id !== 0 && challengeSelected) {
+            const newBattleConfig = cloneDeep(peak_config)
+            newBattleConfig.cycle_count = 6
+            newBattleConfig.blessings = []
+            for (const value of challengeSelected.TagList) {
+                newBattleConfig.blessings.push({
+                    id: Number(value.Id),
+                    level: 1
+                })
             }
+            if (peak_config.buff_id !== 0) {
+                newBattleConfig.blessings.push({
+                    id: peak_config.buff_id,
+                    level: 1
+                })
+            }
+            newBattleConfig.monsters = []
+            newBattleConfig.stage_id = challengeSelected.EventIDList[0].StageID
+            for (const wave of challengeSelected.EventIDList[0].MonsterList) {
+                if (!wave) continue
+                const newWave: MonsterStore[] = []
+                for (const value of Object.values(wave)) {
+                    if (!value) continue
+                    newWave.push({
+                        monster_id: Number(value),
+                        level: challengeSelected.EventIDList[0].Level,
+                        amount: 1,
+                    })
+                }
+                newBattleConfig.monsters.push(newWave)
+            }
+
+            setPeakConfig(newBattleConfig)
+        }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-        }, [
-            peak_config.event_id,
-            peak_config.challenge_id,
-            peak_config.buff_id,
-            mapPEAKInfo,
-        ])
+    }, [
+        peak_config.event_id,
+        peak_config.challenge_id,
+        peak_config.buff_id,
+        mapPEAKInfo,
+    ])
 
     if (!PEAKEvent) return null
 
     return (
-        <div className="container mx-auto px-4 py-8 relative">
+        <div className="py-8 relative">
 
             {/* Title Card */}
             <div className="rounded-xl p-4 mb-2 border border-warning">
@@ -113,7 +113,7 @@ export default function PeakBar() {
                         }))}
                         excludeSet={[]}
                         selectedCustomSet={peak_config.event_id.toString()}
-                        placeholder={transI18n("selectASEvent")}
+                        placeholder={transI18n("selectPEAKEvent")}
                         setSelectedCustomSet={(id) => setPeakConfig({ ...peak_config, event_id: Number(id), challenge_id: 0, buff_id: 0 })}
                     />
                 </div>
@@ -216,57 +216,61 @@ export default function PeakBar() {
             </div>
 
             {/* Enemy Waves */}
-            <div className="grid grid-cols-1 gap-4">
 
-                <div className="rounded-xl p-4 mt-2 border border-warning">
-                    <h2 className="text-2xl font-bold mb-6 text-info">{challengeSelected?.Name}</h2>
+            {(peak_config?.challenge_id ?? 0) !== 0  && (
+                <div className="grid grid-cols-1 gap-4">
 
-                    {challengeSelected && Object.values(challengeSelected.InfiniteList).map((waveValue, waveIndex) => (
-                        <div key={waveIndex} className="mb-6">
-                            <h3 className="text-lg font-semibold mb-t">{transI18n("wave")} {waveIndex + 1}</h3>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                {Array.from(new Set(waveValue.MonsterGroupIDList)).map((monsterId, enemyIndex) => (
-                                    <div
-                                        key={enemyIndex}
-                                        className="rounded-xl p-2 border border-white/10 shadow-md hover:border-white/20 hover:shadow-lg transition"
-                                    >
+                    <div className="rounded-xl p-4 mt-2 border border-warning">
+                        <h2 className="text-2xl font-bold mb-6 text-info">{challengeSelected?.Name}</h2>
 
-                                        <div className="flex items-center space-x-3">
-                                            <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
-                                                {listMonster.find((monster) => monster.child.includes(monsterId))?.icon && <Image
-                                                    src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(monsterId))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
-                                                    alt="Enemy Icon"
-                                                    width={376}
-                                                    height={512}
-                                                    className="w-full h-full object-cover"
-                                                />}
-                                            </div>
+                        {challengeSelected && Object.values(challengeSelected.InfiniteList).map((waveValue, waveIndex) => (
+                            <div key={waveIndex} className="mb-6">
+                                <h3 className="text-lg font-semibold mb-t">{transI18n("wave")} {waveIndex + 1}</h3>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    {Array.from(new Set(waveValue.MonsterGroupIDList)).map((monsterId, enemyIndex) => (
+                                        <div
+                                            key={enemyIndex}
+                                            className="rounded-xl p-2 border border-white/10 shadow-md hover:border-white/20 hover:shadow-lg transition"
+                                        >
 
-                                            <div className="flex flex-col">
-                                                <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList[0].Level}</div>
-                                                <div className="flex items-center space-x-1 mt-1">
-                                                    {listMonster
-                                                        .find((monster) => monster.child.includes(monsterId))
-                                                        ?.weak?.map((icon, iconIndex) => (
-                                                            <Image
-                                                                src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                alt={icon}
-                                                                className="h-[28px] w-[28px] 2xl:h-[40px] 2xl:w-[40px] object-contain rounded-md border border-white/20 shadow-sm"
-                                                                width={200}
-                                                                height={200}
-                                                                key={iconIndex}
-                                                            />
-                                                        ))}
+                                            <div className="flex items-center space-x-3">
+                                                <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
+                                                    {listMonster.find((monster) => monster.child.includes(monsterId))?.icon && <Image
+                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(monsterId))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                        alt="Enemy Icon"
+                                                        width={376}
+                                                        height={512}
+                                                        className="w-full h-full object-cover"
+                                                    />}
+                                                </div>
+
+                                                <div className="flex flex-col">
+                                                    <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList[0].Level}</div>
+                                                    <div className="flex items-center space-x-1 mt-1">
+                                                        {listMonster
+                                                            .find((monster) => monster.child.includes(monsterId))
+                                                            ?.weak?.map((icon, iconIndex) => (
+                                                                <Image
+                                                                    src={`/icon/${icon.toLowerCase()}.webp`}
+                                                                    alt={icon}
+                                                                    className="h-[28px] w-[28px] 2xl:h-[40px] 2xl:w-[40px] object-contain rounded-md border border-white/20 shadow-sm"
+                                                                    width={200}
+                                                                    height={200}
+                                                                    key={iconIndex}
+                                                                />
+                                                            ))}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
+            )}
+
         </div>
     )
 }

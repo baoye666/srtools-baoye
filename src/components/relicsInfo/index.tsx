@@ -174,6 +174,7 @@ export default function RelicsInfo() {
                         } else {
                           setSelectedRelicSlot(item)
                         }
+                        handlerChangeRelic(item)
                       }}
                       className="cursor-pointer"
                     >

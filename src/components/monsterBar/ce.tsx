@@ -111,7 +111,7 @@ export default function CeBar() {
     }, [stageSearchTerm])
 
     return (
-        <div className="p-6 z-4 h-full w-full" onClick={() => {
+        <div className="z-4 py-8 h-full w-full" onClick={() => {
                      
                         setShowSearchWaveId(null)
                         setShowSearchStage(false)
@@ -217,7 +217,7 @@ export default function CeBar() {
                 {ce_config.monsters.map((wave, waveIndex) => (
                     <div key={waveIndex} className="card border border-slate-700/50 ">
                         <div className="card-body p-6">
-                            <div className="flex items-center justify-between mb-4">
+                            <div className="flex items-center flex-wrap justify-between mb-4">
                                 <h2 className="text-xl font-bold text-white">{transI18n("wave")} {waveIndex + 1}</h2>
                                 <div className="flex gap-2">
                                     <button
@@ -286,7 +286,7 @@ export default function CeBar() {
                                         <div className="card border hover:border-slate-500 transition-colors w-full h-full">
                                             <div className="card-body p-4">
                                                 <button
-                                                    className="btn btn-xs btn-success absolute -top-2 right-5 opacity-50 group-hover:opacity-100 transition-opacity"
+                                                    className="btn btn-xs btn-success absolute -top-2 right-12 opacity-50 group-hover:opacity-100 transition-opacity"
                                                     onClick={() => {
                                                         const newCeConfig = cloneDeep(ce_config)
                                             
@@ -301,7 +301,7 @@ export default function CeBar() {
                                                     <CopyPlus className="w-3 h-3" />
                                                 </button>
                                                 <button
-                                                    className="btn btn-xs btn-error absolute -top-2 -right-4 opacity-50 group-hover:opacity-100 transition-opacity"
+                                                    className="btn btn-xs btn-error absolute -top-2 right-2 opacity-50 group-hover:opacity-100 transition-opacity"
                                                     onClick={() => {
                                                         const newCeConfig = cloneDeep(ce_config)
                                                         newCeConfig.monsters[waveIndex].splice(memberIndex, 1)

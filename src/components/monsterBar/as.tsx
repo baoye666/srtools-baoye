@@ -74,7 +74,7 @@ export default function AsBar() {
 
         newBattleConfig.monsters = []
         newBattleConfig.stage_id = 0
-        if ((as_config.floor_side === "Upper" || as_config.floor_side === "Upper -> Lower") 
+        if ((as_config.floor_side === "Upper" || as_config.floor_side === "Upper -> Lower")
             && challengeSelected.EventIDList1.length > 0) {
             newBattleConfig.stage_id = challengeSelected.EventIDList1[0].StageID
             for (const wave of challengeSelected.EventIDList1[0].MonsterList) {
@@ -89,7 +89,7 @@ export default function AsBar() {
                 newBattleConfig.monsters.push(newWave)
             }
         }
-        if ((as_config.floor_side === "Lower" || as_config.floor_side === "Lower -> Upper") 
+        if ((as_config.floor_side === "Lower" || as_config.floor_side === "Lower -> Upper")
             && challengeSelected.EventIDList2.length > 0) {
             newBattleConfig.stage_id = challengeSelected.EventIDList2[0].StageID
             for (const wave of challengeSelected.EventIDList2[0].MonsterList) {
@@ -104,7 +104,7 @@ export default function AsBar() {
                 newBattleConfig.monsters.push(newWave)
             }
         }
-        if (as_config.floor_side === "Lower -> Upper" 
+        if (as_config.floor_side === "Lower -> Upper"
             && challengeSelected.EventIDList1.length > 0) {
             for (const wave of challengeSelected.EventIDList1[0].MonsterList) {
                 const newWave: MonsterStore[] = []
@@ -117,7 +117,7 @@ export default function AsBar() {
                 }
                 newBattleConfig.monsters.push(newWave)
             }
-        } else if (as_config.floor_side === "Upper -> Lower" 
+        } else if (as_config.floor_side === "Upper -> Lower"
             && challengeSelected.EventIDList2.length > 0) {
             for (const wave of challengeSelected.EventIDList2[0].MonsterList) {
                 const newWave: MonsterStore[] = []
@@ -146,7 +146,7 @@ export default function AsBar() {
 
     if (!ASEvent) return null
     return (
-        <div className="container mx-auto px-4 py-8 relative">
+        <div className="py-8 relative">
 
             {/* Title Card */}
             <div className="rounded-xl p-4 mb-2 border border-warning">
@@ -160,11 +160,11 @@ export default function AsBar() {
                         excludeSet={[]}
                         selectedCustomSet={as_config.event_id.toString()}
                         placeholder={transI18n("selectASEvent")}
-                        setSelectedCustomSet={(id) => setAsConfig({ 
-                            ...as_config, 
-                            event_id: Number(id), 
+                        setSelectedCustomSet={(id) => setAsConfig({
+                            ...as_config,
+                            event_id: Number(id),
                             challenge_id: mapASInfo[Number(id)]?.Level.slice(-1)[0]?.Id || 0,
-                            buff_id: 0 
+                            buff_id: 0
                         })}
                     />
                 </div>
@@ -243,106 +243,109 @@ export default function AsBar() {
             </div>
 
             {/* Enemy Waves */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                {/* First Half */}
-                <div className="rounded-xl p-4 mt-2 border border-warning">
-                    <h2 className="text-2xl font-bold mb-6 text-info">{transI18n("firstHalfEnemies")}</h2>
+            {(as_config?.challenge_id ?? 0) !== 0 && (
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    {/* First Half */}
+                    <div className="rounded-xl p-4 mt-2 border border-warning">
+                        <h2 className="text-2xl font-bold mb-6 text-info">{transI18n("firstHalfEnemies")}</h2>
 
-                    {challengeSelected && challengeSelected?.EventIDList1?.length > 0 && challengeSelected?.EventIDList1[0].MonsterList.map((wave, waveIndex) => (
-                        <div key={waveIndex} className="mb-6">
-                            <h3 className="text-lg font-semibold mb-t">{transI18n("wave")} {waveIndex + 1}</h3>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                {Object.values(wave).map((waveValue, enemyIndex) => (
-                                    <div
-                                        key={enemyIndex}
-                                        className="rounded-xl p-2 border border-white/10 shadow-md hover:border-white/20 hover:shadow-lg transition"
-                                    >
-                                        <div className="flex items-center space-x-3">
-                                            <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
-                                                {listMonster.find((monster) => monster.child.includes(waveValue))?.icon && <Image
-                                                    src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(waveValue))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
-                                                    alt="Enemy Icon"
-                                                    width={376}
-                                                    height={512}
-                                                    className="w-full h-full object-cover"
-                                                />}
-                                            </div>
+                        {challengeSelected && challengeSelected?.EventIDList1?.length > 0 && challengeSelected?.EventIDList1[0].MonsterList.map((wave, waveIndex) => (
+                            <div key={waveIndex} className="mb-6">
+                                <h3 className="text-lg font-semibold mb-t">{transI18n("wave")} {waveIndex + 1}</h3>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    {Object.values(wave).map((waveValue, enemyIndex) => (
+                                        <div
+                                            key={enemyIndex}
+                                            className="rounded-xl p-2 border border-white/10 shadow-md hover:border-white/20 hover:shadow-lg transition"
+                                        >
+                                            <div className="flex items-center space-x-3">
+                                                <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
+                                                    {listMonster.find((monster) => monster.child.includes(waveValue))?.icon && <Image
+                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(waveValue))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                        alt="Enemy Icon"
+                                                        width={376}
+                                                        height={512}
+                                                        className="w-full h-full object-cover"
+                                                    />}
+                                                </div>
 
-                                            <div className="flex flex-col">
-                                                <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList1[0].Level}</div>
-                                                <div className="flex items-center space-x-1 mt-1">
-                                                    {listMonster
-                                                        .find((monster) => monster.child.includes(waveValue))
-                                                        ?.weak?.map((icon, iconIndex) => (
-                                                            <Image
-                                                                src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                alt={icon}
-                                                                className="h-[28px] w-[28px] 2xl:h-[40px] 2xl:w-[40px] object-contain rounded-md border border-white/20 shadow-sm"
-                                                                width={200}
-                                                                height={200}
-                                                                key={iconIndex}
-                                                            />
-                                                        ))}
+                                                <div className="flex flex-col">
+                                                    <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList1[0].Level}</div>
+                                                    <div className="flex items-center space-x-1 mt-1">
+                                                        {listMonster
+                                                            .find((monster) => monster.child.includes(waveValue))
+                                                            ?.weak?.map((icon, iconIndex) => (
+                                                                <Image
+                                                                    src={`/icon/${icon.toLowerCase()}.webp`}
+                                                                    alt={icon}
+                                                                    className="h-[28px] w-[28px] 2xl:h-[40px] 2xl:w-[40px] object-contain rounded-md border border-white/20 shadow-sm"
+                                                                    width={200}
+                                                                    height={200}
+                                                                    key={iconIndex}
+                                                                />
+                                                            ))}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
 
-                {/* Second Half */}
-                <div className="rounded-xl p-4 mt-2 border border-warning">
-                    <h2 className="text-2xl font-bold mb-6 text-info">{transI18n("secondHalfEnemies")}</h2>
+                    {/* Second Half */}
+                    <div className="rounded-xl p-4 mt-2 border border-warning">
+                        <h2 className="text-2xl font-bold mb-6 text-info">{transI18n("secondHalfEnemies")}</h2>
 
-                    {challengeSelected && challengeSelected?.EventIDList2?.length > 0 && challengeSelected?.EventIDList2[0].MonsterList.map((wave, waveIndex) => (
-                        <div key={waveIndex} className="mb-6">
-                            <h3 className="text-lg font-semibold mb-t">{transI18n("wave")} {waveIndex + 1}</h3>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                {Object.values(wave).map((waveValue, enemyIndex) => (
-                                    <div
-                                        key={enemyIndex}
-                                        className="rounded-xl p-2 border border-white/10 shadow-md hover:border-white/20 hover:shadow-lg transition"
-                                    >
+                        {challengeSelected && challengeSelected?.EventIDList2?.length > 0 && challengeSelected?.EventIDList2[0].MonsterList.map((wave, waveIndex) => (
+                            <div key={waveIndex} className="mb-6">
+                                <h3 className="text-lg font-semibold mb-t">{transI18n("wave")} {waveIndex + 1}</h3>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    {Object.values(wave).map((waveValue, enemyIndex) => (
+                                        <div
+                                            key={enemyIndex}
+                                            className="rounded-xl p-2 border border-white/10 shadow-md hover:border-white/20 hover:shadow-lg transition"
+                                        >
 
-                                        <div className="flex items-center space-x-3">
-                                            <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
-                                                {listMonster.find((monster) => monster.child.includes(waveValue))?.icon && <Image
-                                                    src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(waveValue))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
-                                                    alt="Enemy Icon"
-                                                    width={376}
-                                                    height={512}
-                                                    className="w-full h-full object-cover"
-                                                />}
-                                            </div>
+                                            <div className="flex items-center space-x-3">
+                                                <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
+                                                    {listMonster.find((monster) => monster.child.includes(waveValue))?.icon && <Image
+                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(waveValue))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                        alt="Enemy Icon"
+                                                        width={376}
+                                                        height={512}
+                                                        className="w-full h-full object-cover"
+                                                    />}
+                                                </div>
 
-                                            <div className="flex flex-col">
-                                                <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList1[0].Level}</div>
-                                                <div className="flex items-center space-x-1 mt-1">
-                                                    {listMonster
-                                                        .find((monster) => monster.child.includes(waveValue))
-                                                        ?.weak?.map((icon, iconIndex) => (
-                                                            <Image
-                                                                src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                alt={icon}
-                                                                className="h-[28px] w-[28px] 2xl:h-[40px] 2xl:w-[40px] object-contain rounded-md border border-white/20 shadow-sm"
-                                                                width={200}
-                                                                height={200}
-                                                                key={iconIndex}
-                                                            />
-                                                        ))}
+                                                <div className="flex flex-col">
+                                                    <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList1[0].Level}</div>
+                                                    <div className="flex items-center space-x-1 mt-1">
+                                                        {listMonster
+                                                            .find((monster) => monster.child.includes(waveValue))
+                                                            ?.weak?.map((icon, iconIndex) => (
+                                                                <Image
+                                                                    src={`/icon/${icon.toLowerCase()}.webp`}
+                                                                    alt={icon}
+                                                                    className="h-[28px] w-[28px] 2xl:h-[40px] 2xl:w-[40px] object-contain rounded-md border border-white/20 shadow-sm"
+                                                                    width={200}
+                                                                    height={200}
+                                                                    key={iconIndex}
+                                                                />
+                                                            ))}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
+            )}
+
         </div>
     )
 }

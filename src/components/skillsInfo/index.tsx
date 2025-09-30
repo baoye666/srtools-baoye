@@ -189,9 +189,10 @@ export default function SkillsInfo() {
                                             setSkillSelected(btn.id === skillSelected ? null : btn.id)
                                         }}
                                         style={{
-                                            left: `calc(${btn.left} - var(--size-${btn.size}) / 2)`,
-                                            top: `calc(${btn.top} - var(--size-${btn.size}) / 2)`,
-                                        }}
+                                            left: btn.left,
+                                            top: btn.top,
+                                            transform: "translate(-50%, -50%)",
+                                          }}
                                     >
                                         <Image
                                             src={getImageSkill(avatarInfo?.SkillTrees?.[btn.id]?.["1"]?.Icon, avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0]) || ""}
