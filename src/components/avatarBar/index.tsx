@@ -80,7 +80,7 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                         </div>
 
                         <div className="flex items-start h-full">
-                            <ul className="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 gap-2 w-full h-[65vh] overflow-y-scroll overflow-x-hidden">
+                            <ul className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-2 w-full h-[65vh] overflow-y-scroll overflow-x-hidden">
                                 {listAvatar.map((item, index) => (
                                     <div key={index} onClick={() => {
                                         setAvatarSelected(item); 

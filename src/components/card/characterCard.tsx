@@ -60,7 +60,7 @@ export default function CharacterCard({ data }: CharacterCardProps) {
       <ParseText
         locale={locale}
         text={text}
-        className="mt-2 px-1 text-center text-shadow-white font-bold leading-tight 2xl:text-lg"
+        className="mt-2 px-1 text-center text-shadow-white font-bold leading-tight text-sm sm:text-base 2xl:text-lg"
       />
     </li>
 

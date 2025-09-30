@@ -42,7 +42,7 @@ export default function LightconeCard({ data }: LightconeCardProps) {
             <ParseText
                 locale={locale}
                 text={text}
-                className="mt-2 px-1 text-center text-base font-normal leading-tight"
+                className="mt-2 px-1 text-center text-sm sm:text-base  font-bold leading-tight"
             />
         </li>
 

@@ -44,7 +44,7 @@ export default function LightconeBar() {
             path: Object.keys(listPath).filter((key) => listPath[key]),
             rarity: Object.keys(listRank).filter((key) => listRank[key])
         })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [listPath, listRank, locale])
 
     return (
@@ -65,47 +65,52 @@ export default function LightconeBar() {
                 </div>
                 <div className="flex items-start flex-col gap-2 mt-2 w-full">
                     <div>Filter</div>
-                    <div className="grid grid-cols-12 mt-1 w-full">
-                        <div className="grid justify-items-start col-span-8">
-                            <div className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-8 mb-1 mx-1 gap-2">
-                                {Object.keys(listPath).map((key, index) => (
-                                    <div
-                                        key={index}
-                                        onClick={() => {
-                                            setListPath((prev) => ({ ...prev, [key]: !prev[key] }))
-                                        }}
-                                        className="w-[50px] h-[50px] hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-lg cursor-pointer"
-                                        style={{
-                                            backgroundColor: listPath[key] ? "#374151" : "#6B7280"
-                                        }}>
-                                        <Image src={`/icon/${key}.webp`}
-                                            alt={key}   
-                                            className="h-[32px] w-[32px] object-contain rounded-md "
-                                            width={200}
-                                            height={200} />
-                                    </div>
-                                ))}
-                            </div>
+                    <div className="flex flex-row flex-wrap justify-between mt-1 w-full">
+                        {/* Nhóm 1 - Path icons */}
+                        <div className="flex flex-wrap mb-1 mx-1 gap-2">
+                            {Object.keys(listPath).map((key, index) => (
+                                <div
+                                    key={index}
+                                    onClick={() => {
+                                        setListPath((prev) => ({ ...prev, [key]: !prev[key] }))
+                                    }}
+                                    className="h-[38px] w-[38px] md:h-[50px] md:w-[50px] hover:bg-gray-600 grid place-items-center rounded-md shadow-lg cursor-pointer"
+                                    style={{
+                                        backgroundColor: listPath[key] ? "#374151" : "#6B7280"
+                                    }}
+                                >
+                                    <Image
+                                        src={`/icon/${key}.webp`}
+                                        alt={key}
+                                        className="h-[28px] w-[28px] md:h-[32px] md:w-[32px] object-contain rounded-md"
+                                        width={200}
+                                        height={200}
+                                    />
+                                </div>
+                            ))}
                         </div>
 
-                        <div className="grid justify-items-end col-span-4 w-full">
-                            <div className="grid grid-cols-2 sm:grid-cols-3 mb-1 mx-1 gap-2">
-                                {Object.keys(listRank).map((key, index) => (
-                                    <div
-                                        key={index}
-                                        onClick={() => {
-                                            setListRank((prev) => ({ ...prev, [key]: !prev[key] }))
-                                        }}
-                                        className="w-[50px] h-[50px] hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-lg cursor-pointer"
-                                        style={{
-                                            backgroundColor: listRank[key] ? "#374151" : "#6B7280"
-                                        }}>
-                                        <div className="font-bold text-white h-[32px] w-[32px] text-center flex items-center justify-center">{key}*</div>
+                        {/* Nhóm 2 - Rank icons */}
+                        <div className="flex flex-wrap mb-1 mx-1 gap-2">
+                            {Object.keys(listRank).map((key, index) => (
+                                <div
+                                    key={index}
+                                    onClick={() => {
+                                        setListRank((prev) => ({ ...prev, [key]: !prev[key] }))
+                                    }}
+                                    className="h-[38px] w-[38px] md:h-[50px] md:w-[50px] hover:bg-gray-600 grid place-items-center rounded-md shadow-lg cursor-pointer"
+                                    style={{
+                                        backgroundColor: listRank[key] ? "#374151" : "#6B7280"
+                                    }}
+                                >
+                                    <div className="font-bold text-white h-[32px] w-[32px] text-center flex items-center justify-center">
+                                        {key}*
                                     </div>
-                                ))}
-                            </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
+
                 </div>
             </div>
             <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 mt-2 gap-2">
