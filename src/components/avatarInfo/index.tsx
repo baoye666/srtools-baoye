@@ -510,7 +510,7 @@ export default function AvatarInfo() {
             )}
 
             <dialog id="action_detail_modal" className="modal backdrop-blur-sm">
-                <div className="modal-box w-11/12 max-w-5xl bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+                <div className="modal-box w-11/12 max-w-5xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
                     <div className="sticky top-0 z-10">
                         <motion.button
                             whileHover={{ scale: 1.1, rotate: 90 }}

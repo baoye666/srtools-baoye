@@ -376,8 +376,8 @@ export default function ActionBar() {
           </button>
         </div>
 
-        <dialog id="update_profile_modal" className="modal ">
-          <div className="modal-box w-11/12 max-w-7xl bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+        <dialog id="update_profile_modal" className="modal">
+          <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
             <div className="sticky top-0 z-10">
               <motion.button
                 whileHover={{ scale: 1.1, rotate: 90 }}
@@ -419,7 +419,7 @@ export default function ActionBar() {
         </dialog>
 
         <dialog id="copy_profile_modal" className="modal">
-          <div className="modal-box w-11/12 max-w-7xl bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+          <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
             <div className="sticky top-0 z-10">
               <motion.button
                 whileHover={{ scale: 1.1, rotate: 90 }}
@@ -444,7 +444,7 @@ export default function ActionBar() {
 
 
         <dialog id="avatars_modal" className="modal">
-          <div className="modal-box w-11/12 max-w-7xl bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+          <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
             <div className="sticky top-0 z-10">
               <motion.button
                 whileHover={{ scale: 1.1, rotate: 90 }}

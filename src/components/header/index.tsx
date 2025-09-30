@@ -30,10 +30,10 @@ const themes = [
 export default function Header() {
     const { changeTheme } = useChangeTheme()
     const { locale, setLocale } = useLocaleStore()
-    const { 
-        avatars, 
-        battle_type, 
-        setAvatars, 
+    const {
+        avatars,
+        battle_type,
+        setAvatars,
         setBattleType,
         moc_config,
         pf_config,
@@ -49,10 +49,10 @@ export default function Header() {
 
     const router = useRouter()
     const transI18n = useTranslations("DataPage")
-    const { 
-        setIsOpenImport, 
-        isOpenImport, 
-        setIsOpenMonster, 
+    const {
+        setIsOpenImport,
+        isOpenImport,
+        setIsOpenMonster,
         isOpenMonster,
         setIsOpenConnect,
         isOpenConnect
@@ -234,25 +234,25 @@ export default function Header() {
                             <details>
                                 <summary className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium">{transI18n("exportData")}</summary>
                                 <ul className="p-2">
-                                    <li><a onClick={() => downloadJson("freesr-data", 
+                                    <li><a onClick={() => downloadJson("freesr-data",
                                         converterToFreeSRJson(
-                                            avatars, 
-                                            battle_type, 
-                                            moc_config, 
-                                            pf_config, 
-                                            as_config, 
-                                            ce_config, 
+                                            avatars,
+                                            battle_type,
+                                            moc_config,
+                                            pf_config,
+                                            as_config,
+                                            ce_config,
                                             peak_config
                                         )
                                     )}>{transI18n("freeSr")}</a></li>
-                                    <li><a onClick={() => downloadJson("database-data", { 
-                                        avatars: avatars, 
-                                        battle_type: battle_type, 
-                                        moc_config: moc_config, 
-                                        pf_config: pf_config, 
-                                        as_config: as_config, 
-                                        ce_config: ce_config, 
-                                        peak_config: peak_config 
+                                    <li><a onClick={() => downloadJson("database-data", {
+                                        avatars: avatars,
+                                        battle_type: battle_type,
+                                        moc_config: moc_config,
+                                        pf_config: pf_config,
+                                        as_config: as_config,
+                                        ce_config: ce_config,
+                                        peak_config: peak_config
                                     })}>{transI18n("database")}</a></li>
                                 </ul>
                             </details>
@@ -341,25 +341,25 @@ export default function Header() {
                         <details>
                             <summary className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium">{transI18n("exportData")}</summary>
                             <ul className="p-2">
-                                <li><a onClick={() => downloadJson("freesr-data", 
+                                <li><a onClick={() => downloadJson("freesr-data",
                                     converterToFreeSRJson(
-                                        avatars, 
-                                        battle_type, 
-                                        moc_config, 
-                                        pf_config, 
-                                        as_config, 
-                                        ce_config, 
+                                        avatars,
+                                        battle_type,
+                                        moc_config,
+                                        pf_config,
+                                        as_config,
+                                        ce_config,
                                         peak_config
                                     )
                                 )}>{transI18n("freeSr")}</a></li>
-                                <li><a onClick={() => downloadJson("database-data", { 
-                                    avatars: avatars, 
-                                    battle_type: battle_type, 
-                                    moc_config: moc_config, 
-                                    pf_config: pf_config, 
-                                    as_config: as_config, 
-                                    ce_config: ce_config, 
-                                    peak_config: peak_config 
+                                <li><a onClick={() => downloadJson("database-data", {
+                                    avatars: avatars,
+                                    battle_type: battle_type,
+                                    moc_config: moc_config,
+                                    pf_config: pf_config,
+                                    as_config: as_config,
+                                    ce_config: ce_config,
+                                    peak_config: peak_config
                                 })}>{transI18n("database")}</a></li>
                             </ul>
                         </details>
@@ -495,8 +495,8 @@ export default function Header() {
                 </Link>
             </div>
 
-            <dialog id="connect_modal" className="modal sm:modal-middle backdrop-blur-sm">
-                <div className="modal-box w-11/12 max-w-7xl bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+            <dialog id="connect_modal" className="modal">
+                <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
                     <div className="sticky top-0 z-10">
                         <motion.button
                             whileHover={{ scale: 1.1, rotate: 90 }}
@@ -597,71 +597,73 @@ export default function Header() {
                             </div>
                         )}
 
-                        <div className="flex flex-col sm:flex-row justify-between items-center mt-6 mb-2">
-                            <div className="mb-4 sm:mb-0">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 mb-2">
+                            {/* Status */}
+                            <div className="flex items-center justify-center md:justify-start">
                                 <span className="text-md mr-2">{transI18n("status")}:</span>
-                                <span className={`badge ${isConnectPS ? 'badge-success' : 'badge-error'} badge-lg`}>
+                                <span
+                                    className={`badge ${isConnectPS ? "badge-success" : "badge-error"
+                                        } badge-lg`}
+                                >
                                     {isConnectPS ? transI18n("connected") : transI18n("unconnected")}
                                 </span>
                             </div>
 
-                            <div className="flex space-x-2">
+                            {/* Buttons */}
+                            <div className="flex flex-col sm:flex-row gap-2 w-full justify-center md:justify-end">
                                 <button
-                                    onClick={
-                                        async () => {
-                                            const response = await connectToPS()
-                                            if (response.success) {
-                                                setIsConnectPS(true)
-                                                setMessage({
-                                                    type: "success",
-                                                    text: transI18n("connectedSuccess")
-                                                })
-                                            } else {
-                                                setIsConnectPS(false)
-                                                setMessage({
-                                                    type: "error",
-                                                    text: response.message
-                                                })
-                                            }
+                                    onClick={async () => {
+                                        const response = await connectToPS();
+                                        if (response.success) {
+                                            setIsConnectPS(true);
+                                            setMessage({
+                                                type: "success",
+                                                text: transI18n("connectedSuccess"),
+                                            });
+                                        } else {
+                                            setIsConnectPS(false);
+                                            setMessage({
+                                                type: "error",
+                                                text: response.message,
+                                            });
                                         }
-                                    }
-                                    className={`btn btn-primary`}
-
+                                    }}
+                                    className="btn btn-primary w-full sm:w-auto"
                                 >
                                     {transI18n("connectPs")}
                                 </button>
+
                                 {isConnectPS && (
                                     <button
-                                        onClick={
-                                            async () => {
-                                                const response = await syncDataToPS()
-                                                if (response.success) {
-                                                    setMessage({
-                                                        type: "success",
-                                                        text: transI18n("syncSuccess")
-                                                    })
-                                                } else {
-                                                    setMessage({
-                                                        type: "error",
-                                                        text: `${transI18n("syncFailed")}: ${response.message}`
-                                                    })
-                                                }
+                                        onClick={async () => {
+                                            const response = await syncDataToPS();
+                                            if (response.success) {
+                                                setMessage({
+                                                    type: "success",
+                                                    text: transI18n("syncSuccess"),
+                                                });
+                                            } else {
+                                                setMessage({
+                                                    type: "error",
+                                                    text: `${transI18n("syncFailed")}: ${response.message}`,
+                                                });
                                             }
-                                        }
-                                        className={`btn btn-success`}
+                                        }}
+                                        className="btn btn-success w-full sm:w-auto"
                                     >
                                         {transI18n("sync")}
                                     </button>
                                 )}
                             </div>
                         </div>
+
                     </div>
                 </div>
             </dialog>
 
 
-            <dialog id="import_modal" className="modal backdrop-blur-sm">
-                <div className="modal-box w-11/12 max-w-max bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+            <dialog id="import_modal" className="modal">
+                <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
                     <div className="sticky top-0 z-10">
                         <motion.button
                             whileHover={{ scale: 1.1, rotate: 90 }}
@@ -687,8 +689,8 @@ export default function Header() {
                 </div>
             </dialog>
 
-            <dialog id="monster_modal" className="modal sm:backdrop-blur-sm md:backdrop-blur-none">
-                <div className="modal-box w-11/12 max-w-max bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+            <dialog id="monster_modal" className="modal">
+                <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
                     <div className="sticky top-0 z-10">
                         <motion.button
                             whileHover={{ scale: 1.1, rotate: 90 }}
