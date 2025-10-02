@@ -11,3 +11,4 @@ export * from "./mics.zod";
 export * from "./relicBasic.zod";
 export * from "./relicDetail.zod";
 export * from "./srtools.zod";
+export * from "./extraData.zod";

@@ -20,6 +20,7 @@ import { MonsterBasic } from "@/types";
 import cloneDeep from 'lodash/cloneDeep'
 import { useTranslations } from "next-intl";
 import { listCurrentLanguageApi } from "@/constant/constant";
+import useGlobalStore from "@/stores/globalStore";
 
 
 export default function CeBar() {
@@ -33,6 +34,7 @@ export default function CeBar() {
     const [showSearchStage, setShowSearchStage] = useState(false)
     const [stageSearchTerm, setStageSearchTerm] = useState("")
     const [stagePage, setStagePage] = useState(1)
+    const { extraData, setExtraData } = useGlobalStore()
 
     const pageSize = 30
 
@@ -41,29 +43,29 @@ export default function CeBar() {
 
     const listMonsterDetail = useMemo(() => {
         const result: MonsterBasic[] = []
-      
-        for (const monster of Object.values(mapMonsterInfo)) {
-          for (const monsterChild of monster.Child) {
-            result.push({
-              id: monsterChild.Id.toString(),
-              rank: monster.Rank,
-              camp: null,
-              icon: monster.ImagePath,
-              weak: monsterChild.StanceWeakList,
-              desc: monster.Desc,
-              child: [],
-              lang: new Map<string, string>([
-                [listCurrentLanguageApi[locale], monster.Name],
-              ]),
-            })
-          }
-        }
-      
-        return result
-      }, [mapMonsterInfo, locale])
-      
 
-      const filteredMonsters = useMemo(() => {
+        for (const monster of Object.values(mapMonsterInfo)) {
+            for (const monsterChild of monster.Child) {
+                result.push({
+                    id: monsterChild.Id.toString(),
+                    rank: monster.Rank,
+                    camp: null,
+                    icon: monster.ImagePath,
+                    weak: monsterChild.StanceWeakList,
+                    desc: monster.Desc,
+                    child: [],
+                    lang: new Map<string, string>([
+                        [listCurrentLanguageApi[locale], monster.Name],
+                    ]),
+                })
+            }
+        }
+
+        return result
+    }, [mapMonsterInfo, locale])
+
+
+    const filteredMonsters = useMemo(() => {
         const newlistMonster = new Set<MonsterBasic>()
         for (const monster of listMonsterDetail) {
             if (getLocaleName(locale, monster).toLowerCase().includes(searchTerm.toLowerCase())) {
@@ -110,13 +112,39 @@ export default function CeBar() {
         setStagePage(1)
     }, [stageSearchTerm])
 
+
+    useEffect(() => {
+        if (!ce_config) return
+        if (!extraData || !extraData.theory_craft?.mode) return
+    
+        const newExtraData = cloneDeep(extraData)
+        if (!newExtraData.theory_craft.hp) {
+            newExtraData.theory_craft.hp = {}
+        }
+    
+        for (let i = 0; i < ce_config.monsters.length; i++) {
+            const waveKey = (i + 1).toString()
+            if (!newExtraData.theory_craft.hp[waveKey]) {
+                newExtraData.theory_craft.hp[waveKey] = []
+            }
+            for (let j = 0; j < ce_config.monsters[i].length; j++) {
+                if (newExtraData.theory_craft.hp[waveKey][j] === undefined) {
+                    newExtraData.theory_craft.hp[waveKey][j] = 0
+                }
+            }
+        }
+        setExtraData(newExtraData)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [ce_config])
+    
+
     return (
         <div className="z-4 py-8 h-full w-full" onClick={() => {
-                     
-                        setShowSearchWaveId(null)
-                        setShowSearchStage(false)
-                    }}>
-      
+
+            setShowSearchWaveId(null)
+            setShowSearchStage(false)
+        }}>
+
             <div className="mb-4 w-full relative">
                 <div className="flex items-center justify-center gap-2">
 
@@ -289,7 +317,7 @@ export default function CeBar() {
                                                     className="btn btn-xs btn-success absolute -top-2 right-12 opacity-50 group-hover:opacity-100 transition-opacity"
                                                     onClick={() => {
                                                         const newCeConfig = cloneDeep(ce_config)
-                                            
+
                                                         newCeConfig.monsters[waveIndex].push({
                                                             monster_id: Number(member.monster_id),
                                                             level: member.level,
@@ -337,13 +365,13 @@ export default function CeBar() {
                                                 </div>
                                                 <div className="text-center flex flex-col items-center justify-center">
                                                     <div className="text-sm font-medium">
-                                                        {getLocaleName(locale, listMonsterDetail.find((monster) => monster.id === member.monster_id.toString())) }  {`(${member.monster_id})`}
+                                                        {getLocaleName(locale, listMonsterDetail.find((monster) => monster.id === member.monster_id.toString()))}  {`(${member.monster_id})`}
                                                     </div>
-                                                    <div className="flex items-center gap-1 mt-1">
-                                                        <span className="text-sm">Lv.</span>
+                                                    <div className="flex items-center gap-1 mt-1 mx-2">
+                                                        <span className="text-sm">LV.</span>
                                                         <input
                                                             type="number"
-                                                            className="w-16 text-center input input-sm"
+                                                            className="text-center input input-sm"
                                                             value={member.level}
 
                                                             onChange={(e) => {
@@ -357,6 +385,31 @@ export default function CeBar() {
                                                             }}
                                                         />
                                                     </div>
+                                                    {(extraData?.theory_craft?.mode === true && (
+                                                        <div className="flex items-center gap-1 mt-1 mx-2">
+                                                            <span className="text-sm">HP</span>
+                                                            <input
+                                                                type="number"
+                                                                className="text-center input input-sm"
+                                                                value={extraData?.theory_craft?.hp?.[(waveIndex + 1).toString()]?.[memberIndex] || 0}
+
+                                                                onChange={(e) => {
+                                                                    const val = Number(e.target.value)
+                                                                    if (isNaN(val) || val < 0) return
+                            
+                                                                    const newData = cloneDeep(extraData)
+
+                                                                    if (!newData?.theory_craft?.hp?.[(waveIndex + 1).toString()]) {
+                                                                      newData.theory_craft.hp[(waveIndex + 1).toString()] = []
+                                                                    }
+                                                                    
+                                                                    newData.theory_craft.hp[(waveIndex + 1).toString()][memberIndex] = val
+                                                                    
+                                                                    setExtraData(newData)
+                                                                }}
+                                                            />
+                                                        </div>
+                                                    ))}
                                                 </div>
 
                                             </div>
@@ -374,7 +427,7 @@ export default function CeBar() {
                                                 setShowSearchWaveId(null)
                                                 return
                                             }
-                                    
+
                                             setShowSearchWaveId(waveIndex)
                                         }}
                                     >
@@ -430,7 +483,7 @@ export default function CeBar() {
                                                             <div className="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
                                                                 {listMonsterDetail.find((monster2) => monster2.id === monster.id)?.icon?.split("/")?.pop()?.replace(".png", "") && (
                                                                     <Image
-                                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonsterDetail.find((monster2) => monster2.id ===monster.id)?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonsterDetail.find((monster2) => monster2.id === monster.id)?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
                                                                         alt="Enemy Icon"
                                                                         width={376}
                                                                         height={512}

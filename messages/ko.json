@@ -248,6 +248,11 @@
 		"downRoll": "부옵션 감소",
 		"actions": "동작",
 		"avatars": "아바타",
-		"quickView": "빠른 조회"
+		"quickView": "빠른 조회",
+		"extraSetting": "추가 설정",
+		"disableCensorship": "검열 비활성화",
+		"hideUI": "UI 숨기기",
+		"theoryCraftMode": "이론 제작 모드",
+		"cycleCount": "사이클 수"
 	}
 }

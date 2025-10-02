@@ -248,6 +248,11 @@
 		"downRoll": "减少副属性",
 		"actions": "操作",
 		"avatars": "头像",
-		"quickView": "快速预览"
+		"quickView": "快速预览",
+		"extraSetting": "额外设置",
+		"disableCensorship": "禁用审查",
+		"hideUI": "隐藏界面",
+		"theoryCraftMode": "理论研究模式",
+		"cycleCount": "循环次数"
 	}
 }

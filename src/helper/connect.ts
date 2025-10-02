@@ -4,6 +4,7 @@ import useConnectStore from "@/stores/connectStore"
 import useUserDataStore from "@/stores/userDataStore"
 import { converterToFreeSRJson } from "./converterToFreeSRJson"
 import { pSResponseSchema } from "@/zod"
+import useGlobalStore from "@/stores/globalStore"
 
 export const connectToPS = async (): Promise<{ success: boolean, message: string }> => {
     const {
@@ -13,6 +14,7 @@ export const connectToPS = async (): Promise<{ success: boolean, message: string
         username,
         password
     } = useConnectStore.getState()
+    const {setExtraData, setIsConnectPS} = useGlobalStore.getState()
 
     let urlQuery = serverUrl
     if (!urlQuery.startsWith("http://") && !urlQuery.startsWith("https://")) {
@@ -36,10 +38,14 @@ export const connectToPS = async (): Promise<{ success: boolean, message: string
     } 
     const response = await SendDataToServer(username, password, urlQuery, null)
     if (typeof response === "string") {
+        setIsConnectPS(false)
         return { success: false, message: response }
     } else if (response.status != 200) {
+        setIsConnectPS(false)
         return { success: false, message: response.message }
     } else {
+        setIsConnectPS(true)
+        setExtraData(response?.extra_data)
         return { success: true, message: "" }
     }
 }
@@ -52,6 +58,9 @@ export const syncDataToPS = async (): Promise<{ success: boolean, message: strin
         username,
         password
     } = useConnectStore.getState()
+
+    const {extraData, setIsConnectPS, setExtraData} = useGlobalStore.getState()
+
 
     const {avatars, battle_type, moc_config, pf_config, as_config, ce_config, peak_config} = useUserDataStore.getState()
     const data = converterToFreeSRJson(avatars, battle_type, moc_config, pf_config, as_config, ce_config, peak_config)
@@ -76,12 +85,16 @@ export const syncDataToPS = async (): Promise<{ success: boolean, message: strin
             return { success: true, message: "" }
         }
     } 
-    const response = await SendDataToServer(username, password, urlQuery, data)
+    const response = await SendDataToServer(username, password, urlQuery, data, extraData)
     if (typeof response === "string") {
+        setIsConnectPS(false)
         return { success: false, message: response }
     } else if (response.status != 200) {
+        setIsConnectPS(false)
         return { success: false, message: response.message }
     } else {
+        setIsConnectPS(true)
+        setExtraData(response?.extra_data)
         return { success: true, message: "" }
     }
 }

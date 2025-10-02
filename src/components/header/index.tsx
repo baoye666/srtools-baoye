@@ -1,5 +1,5 @@
 "use client"
-import { connectToPS, downloadJson, syncDataToPS } from "@/helper";
+import { downloadJson } from "@/helper";
 import { converterToFreeSRJson } from "@/helper/converterToFreeSRJson";
 import { useChangeTheme } from "@/hooks/useChangeTheme";
 import { listCurrentLanguage } from "@/constant/constant";
@@ -15,10 +15,11 @@ import useModelStore from "@/stores/modelStore";
 import FreeSRImport from "../importBar/freesr";
 import { toast } from "react-toastify";
 import { micsSchema } from "@/zod";
-import useConnectStore from "@/stores/connectStore";
 import useGlobalStore from "@/stores/globalStore";
 import MonsterBar from "../monsterBar";
 import Image from "next/image";
+import ConnectBar from "../connectBar";
+import ExtraSettingBar from "../extraSettingBar";
 
 const themes = [
     { label: "Winter" },
@@ -55,24 +56,14 @@ export default function Header() {
         setIsOpenMonster,
         isOpenMonster,
         setIsOpenConnect,
-        isOpenConnect
+        isOpenConnect,
+        setIsOpenExtra,
+        isOpenExtra
     } = useModelStore()
 
-    const [message, setMessage] = useState({ text: '', type: '' });
     const [importModal, setImportModal] = useState("enka");
-    const {
-        connectionType,
-        privateType,
-        serverUrl,
-        username,
-        password,
-        setConnectionType,
-        setPrivateType,
-        setServerUrl,
-        setUsername,
-        setPassword
-    } = useConnectStore()
-    const { isConnectPS, setIsConnectPS } = useGlobalStore()
+
+    const { isConnectPS, extraData } = useGlobalStore()
 
     useEffect(() => {
 
@@ -134,17 +125,22 @@ export default function Header() {
             handleCloseModal("connect_modal");
             return;
         }
+        if (!isOpenExtra) {
+            handleCloseModal("extra_modal");
+            return;
+        }
         const handleEscKey = (event: KeyboardEvent) => {
             if (event.key === 'Escape') {
                 handleCloseModal("connect_modal");
                 handleCloseModal("import_modal");
                 handleCloseModal("monster_modal");
+                handleCloseModal("extra_modal");
             }
         };
 
         window.addEventListener('keydown', handleEscKey);
         return () => window.removeEventListener('keydown', handleEscKey);
-    }, [isOpenImport, isOpenMonster, isOpenConnect]);
+    }, [isOpenImport, isOpenMonster, isOpenConnect, isOpenExtra]);
 
     const handleImportDatabase = (event: React.ChangeEvent<HTMLInputElement>) => {
 
@@ -182,6 +178,56 @@ export default function Header() {
         }
 
     };
+
+
+    const modalConfigs = [
+        {
+            id: "connect_modal",
+            title: transI18n("psConnection"),
+            isOpen: isOpenConnect,
+            onClose: () => {
+                setIsOpenConnect(false)
+                handleCloseModal("connect_modal")
+            },
+            content: <ConnectBar />
+        },
+        {
+            id: "import_modal",
+            title: transI18n("importSetting"),
+            isOpen: isOpenImport,
+            onClose: () => {
+                setIsOpenImport(false)
+                handleCloseModal("import_modal")
+            },
+            content: (
+                <>
+                    {importModal === "enka" && <EnkaImport />}
+                    {importModal === "freesr" && <FreeSRImport />}
+                </>
+            )
+        },
+        {
+            id: "monster_modal",
+            title: transI18n("monsterSetting"),
+            isOpen: isOpenMonster,
+            onClose: () => {
+                setIsOpenMonster(false)
+                handleCloseModal("monster_modal")
+            },
+            content: <MonsterBar />
+        },
+        {
+            id: "extra_modal",
+            title: transI18n("extraSetting"),
+            isOpen: isOpenExtra,
+            onClose: () => {
+                setIsOpenExtra(false)
+                handleCloseModal("extra_modal")
+            },
+            content: <ExtraSettingBar />
+        }
+    ]
+
 
     return (
         <div className="navbar bg-base-100 shadow-md sticky top-0 z-50 px-3 py-1">
@@ -279,6 +325,20 @@ export default function Header() {
                                 {transI18n("monsterSetting")}
                             </button>
                         </li>
+
+                        {extraData && (
+                            <li>
+                                <button
+                                    onClick={() => {
+                                        setIsOpenExtra(true)
+                                        handleShow("extra_modal")
+                                    }}
+                                    className="disabled px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
+                                >
+                                    {transI18n("extraSetting")}
+                                </button>
+                            </li>
+                        )}
                     </ul>
                 </div>
 
@@ -386,6 +446,19 @@ export default function Header() {
                             {transI18n("monsterSetting")}
                         </button>
                     </li>
+                    {extraData && (
+                        <li>
+                            <button
+                                onClick={() => {
+                                    setIsOpenExtra(true)
+                                    handleShow("extra_modal")
+                                }}
+                                className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
+                            >
+                                {transI18n("extraSetting")}
+                            </button>
+                        </li>
+                    )}
                 </ul>
             </div>
 
@@ -495,225 +568,30 @@ export default function Header() {
                 </Link>
             </div>
 
-            <dialog id="connect_modal" className="modal">
-                <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
-                    <div className="sticky top-0 z-10">
-                        <motion.button
-                            whileHover={{ scale: 1.1, rotate: 90 }}
-                            transition={{ duration: 0.2 }}
-                            className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
-                            onClick={() => {
-                                setIsOpenConnect(false)
-                                handleCloseModal("connect_modal")
-                            }}
-                        >
-                            ✕
-                        </motion.button>
-                    </div>
-
-                    <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
-                        <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
-                            {"PS Connection"}
-                        </h3>
-                    </div>
-
-                    <div className="px-6 py-4">
-                        {/* Select connection type */}
-                        <div className="form-control grid grid-cols-1 w-full mb-6">
-                            <label className="label">
-                                <span className="label-text font-semibold text-purple-300">{transI18n("connectionType")}</span>
-                            </label>
-                            <select
-                                className="select w-full select-bordered border-purple-500/30 focus:border-purple-500 bg-base-200 mt-1"
-                                value={connectionType}
-                                onChange={(e) => setConnectionType(e.target.value)}
+            {modalConfigs.map(({ id, title, onClose, content }) => (
+                <dialog key={id} id={id} className="modal">
+                    <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+                        <div className="sticky top-0 z-10">
+                            <motion.button
+                                whileHover={{ scale: 1.1, rotate: 90 }}
+                                transition={{ duration: 0.2 }}
+                                className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
+                                onClick={onClose}
                             >
-                                <option value="FireflyGo">FireflyGo</option>
-                                <option value="Other">{transI18n("other")}</option>
-                            </select>
+                                ✕
+                            </motion.button>
                         </div>
 
-                        {/* Show host/port if Other */}
-                        {connectionType === "Other" && (
-                            <div className="flex flex-col md:space-x-4 mb-6 gap-2">
-                                <div className="form-control w-full mb-4 md:mb-0">
-                                    <label className="label">
-                                        <span className="label-text font-semibold text-purple-300">{transI18n("serverUrl")}</span>
-                                    </label>
-                                    <input
-                                        type="text"
-                                        placeholder={transI18n("placeholderServerUrl")}
-                                        className="input input-bordered w-full border-purple-500/30 focus:border-purple-500 bg-base-200 mt-1"
-                                        value={serverUrl}
-                                        onChange={(e) => setServerUrl(e.target.value)}
-                                    />
-                                </div>
-                                <div className="form-control w-full mb-4 md:mb-0">
-                                    <label className="label">
-                                        <span className="label-text font-semibold text-purple-300">{transI18n("privateType")}</span>
-                                    </label>
-                                    <select
-                                        className="select w-full select-bordered border-purple-500/30 focus:border-purple-500 bg-base-200 mt-1"
-                                        value={privateType}
-                                        onChange={(e) => setPrivateType(e.target.value)}
-                                    >
-                                        <option value="Local">{transI18n("local")}</option>
-                                        <option value="Server">{transI18n("server")}</option>
-                                    </select>
-                                </div>
-
-                                <div className="form-control w-full mb-4 md:mb-0">
-                                    <label className="label">
-                                        <span className="label-text font-semibold text-purple-300">{transI18n("username")}</span>
-                                    </label>
-                                    <input
-                                        type="text"
-                                        placeholder={transI18n("placeholderUsername")}
-                                        className="input input-bordered w-full border-purple-500/30 focus:border-purple-500 bg-base-200 mt-1"
-                                        value={username}
-                                        onChange={(e) => setUsername(e.target.value)}
-                                    />
-                                </div>
-                                <div className="form-control w-full mb-4 md:mb-0">
-                                    <label className="label">
-                                        <span className="label-text font-semibold text-purple-300">{transI18n("password")}</span>
-                                    </label>
-                                    <input
-                                        type="password"
-                                        placeholder={transI18n("placeholderPassword")}
-                                        className="input input-bordered w-full border-purple-500/30 focus:border-purple-500 bg-base-200 mt-1"
-                                        value={password}
-                                        onChange={(e) => setPassword(e.target.value)}
-                                    />
-                                </div>
-                            </div>
-                        )}
-
-                        {message.text && (
-                            <div className={`alert ${message.type === 'success' ? 'alert-success' :
-                                message.type === 'error' ? 'alert-error' : 'alert-info'
-                                } mb-6`}>
-                                <span>{message.text}</span>
-                            </div>
-                        )}
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 mb-2">
-                            {/* Status */}
-                            <div className="flex items-center justify-center md:justify-start">
-                                <span className="text-md mr-2">{transI18n("status")}:</span>
-                                <span
-                                    className={`badge ${isConnectPS ? "badge-success" : "badge-error"
-                                        } badge-lg`}
-                                >
-                                    {isConnectPS ? transI18n("connected") : transI18n("unconnected")}
-                                </span>
-                            </div>
-
-                            {/* Buttons */}
-                            <div className="flex flex-col sm:flex-row gap-2 w-full justify-center md:justify-end">
-                                <button
-                                    onClick={async () => {
-                                        const response = await connectToPS();
-                                        if (response.success) {
-                                            setIsConnectPS(true);
-                                            setMessage({
-                                                type: "success",
-                                                text: transI18n("connectedSuccess"),
-                                            });
-                                        } else {
-                                            setIsConnectPS(false);
-                                            setMessage({
-                                                type: "error",
-                                                text: response.message,
-                                            });
-                                        }
-                                    }}
-                                    className="btn btn-primary w-full sm:w-auto"
-                                >
-                                    {transI18n("connectPs")}
-                                </button>
-
-                                {isConnectPS && (
-                                    <button
-                                        onClick={async () => {
-                                            const response = await syncDataToPS();
-                                            if (response.success) {
-                                                setMessage({
-                                                    type: "success",
-                                                    text: transI18n("syncSuccess"),
-                                                });
-                                            } else {
-                                                setMessage({
-                                                    type: "error",
-                                                    text: `${transI18n("syncFailed")}: ${response.message}`,
-                                                });
-                                            }
-                                        }}
-                                        className="btn btn-success w-full sm:w-auto"
-                                    >
-                                        {transI18n("sync")}
-                                    </button>
-                                )}
-                            </div>
+                        <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
+                            <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
+                                {title}
+                            </h3>
                         </div>
 
+                        {content}
                     </div>
-                </div>
-            </dialog>
-
-
-            <dialog id="import_modal" className="modal">
-                <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
-                    <div className="sticky top-0 z-10">
-                        <motion.button
-                            whileHover={{ scale: 1.1, rotate: 90 }}
-                            transition={{ duration: 0.2 }}
-                            className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
-                            onClick={() => {
-                                handleCloseModal("import_modal")
-                                setIsOpenImport(false)
-                            }}
-                        >
-                            ✕
-                        </motion.button>
-                    </div>
-
-                    <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
-                        <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
-                            {transI18n("importSetting")}
-                        </h3>
-                    </div>
-
-                    {importModal === "enka" && <EnkaImport />}
-                    {importModal === "freesr" && <FreeSRImport />}
-                </div>
-            </dialog>
-
-            <dialog id="monster_modal" className="modal">
-                <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
-                    <div className="sticky top-0 z-10">
-                        <motion.button
-                            whileHover={{ scale: 1.1, rotate: 90 }}
-                            transition={{ duration: 0.2 }}
-                            className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
-                            onClick={() => {
-                                handleCloseModal("monster_modal")
-                                setIsOpenMonster(false)
-                            }}
-                        >
-                            ✕
-                        </motion.button>
-                    </div>
-
-                    <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
-                        <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
-                            {transI18n("monsterSetting")}
-                        </h3>
-                    </div>
-                    <MonsterBar />
-                </div>
-            </dialog>
-
+                </dialog>
+            ))}
         </div>
     )
 }

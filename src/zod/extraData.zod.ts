@@ -1,0 +1,15 @@
+import { z } from "zod";
+
+export const extraDataSchema = z.object({
+    theory_craft: z.object({
+        hp: z.record(z.string(), z.array(z.number())),
+        cycle_count: z.number(),
+        mode: z.boolean(),
+    }),
+    setting: z.object({
+        censorship: z.boolean(),
+        cm: z.boolean(),
+        first_person: z.boolean(),
+        hide_ui: z.boolean(),
+    }),
+});

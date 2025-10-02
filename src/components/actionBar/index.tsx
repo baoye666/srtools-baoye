@@ -26,19 +26,19 @@ export default function ActionBar() {
   const { setListCopyAvatar } = useCopyProfileStore()
   const transI18n = useTranslations("DataPage")
   const { locale } = useLocaleStore()
-  const { 
-    isOpenCreateProfile, 
-    setIsOpenCreateProfile, 
-    isOpenCopy, 
+  const {
+    isOpenCreateProfile,
+    setIsOpenCreateProfile,
+    isOpenCopy,
     setIsOpenCopy,
     isOpenAvatars,
-    setIsOpenAvatars 
+    setIsOpenAvatars
   } = useModelStore()
   const { avatars, setAvatar } = useUserDataStore()
   const [profileName, setProfileName] = useState("");
   const [formState, setFormState] = useState("EDIT");
   const [profileEdit, setProfileEdit] = useState(-1);
-  const { isConnectPS, setIsConnectPS } = useGlobalStore()
+  const { isConnectPS } = useGlobalStore()
 
   const profileCurrent = useMemo(() => {
     if (!avatarSelected) return null;
@@ -104,7 +104,7 @@ export default function ActionBar() {
     }
     console.log(isOpenAvatars)
     if (!isOpenAvatars) {
-    
+
       handleCloseModal("avatars_modal");
       return;
     }
@@ -157,19 +157,70 @@ export default function ActionBar() {
         toast.success(transI18n("syncSuccess"))
       } else {
         toast.error(`${transI18n("syncFailed")}: ${res.message}`)
-        setIsConnectPS(false)
       }
     } else {
       const res = await connectToPS()
       if (res.success) {
         toast.success(transI18n("connectedSuccess"))
-        setIsConnectPS(true)
       } else {
         toast.error(`${transI18n("connectedFailed")}: ${res.message}`)
-        setIsConnectPS(false)
       }
     }
   }
+
+
+  const modalConfigs = [
+    {
+      id: "update_profile_modal",
+      title: formState === "CREATE" ? transI18n("createNewProfile") : transI18n("editProfile"),
+      onClose: () => {
+        setIsOpenCreateProfile(false)
+        handleCloseModal("update_profile_modal")
+      },
+      content: (
+        <div className="px-6 space-y-4">
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text text-primary font-semibold text-lg">
+                {transI18n("profileName")}
+              </span>
+            </label>
+            <input
+              type="text"
+              placeholder={transI18n("placeholderProfileName")}
+              className="input input-warning mt-1 w-full"
+              value={profileName}
+              onChange={(e) => setProfileName(e.target.value)}
+            />
+          </div>
+          <div className="modal-action">
+            <button className="btn btn-success btn-sm sm:btn-md" onClick={handleUpdateProfile}>
+              {formState === "CREATE" ? transI18n("create") : transI18n("update")}
+            </button>
+          </div>
+        </div>
+      )
+    },
+    {
+      id: "copy_profile_modal",
+      title: transI18n("copyProfiles").toUpperCase(),
+      onClose: () => {
+        setIsOpenCopy(false)
+        handleCloseModal("copy_profile_modal")
+      },
+      content: <CopyImport />
+    },
+    {
+      id: "avatars_modal",
+      title: transI18n("avatars").toUpperCase(),
+      onClose: () => {
+        setIsOpenAvatars(false)
+        handleCloseModal("avatars_modal")
+      },
+      content: <AvatarBar onClose={() => { setIsOpenAvatars(false); handleCloseModal("avatars_modal") }} />
+    }
+  ]
+
 
   return (
     <div className="w-full px-4 pb-4 bg-base-200">
@@ -302,12 +353,12 @@ export default function ActionBar() {
               </ul>
             </div>
             <div className=" grid grid-cols-2 w-full sm:hidden gap-2">
-              <button 
-              onClick={() => {
-                setIsOpenAvatars(true)
-                handleShow("avatars_modal")
-              }}
-              className="col-span-1 btn btn-warning btn-sm w-full">
+              <button
+                onClick={() => {
+                  setIsOpenAvatars(true)
+                  handleShow("avatars_modal")
+                }}
+                className="col-span-1 btn btn-warning btn-sm w-full">
                 {transI18n("avatars")}
               </button>
               <div className="col-span-1 dropdown dropdown-center w-full">
@@ -376,96 +427,28 @@ export default function ActionBar() {
           </button>
         </div>
 
-        <dialog id="update_profile_modal" className="modal">
-          <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
-            <div className="sticky top-0 z-10">
-              <motion.button
-                whileHover={{ scale: 1.1, rotate: 90 }}
-                transition={{ duration: 0.2 }}
-                className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
-                onClick={() => {
-                  setIsOpenCreateProfile(false)
-                  handleCloseModal("update_profile_modal")
-                }}
-              >
-                ✕
-              </motion.button>
-            </div>
-
-            <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
-              <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
-                {formState === "CREATE" ? transI18n("createNewProfile") : transI18n("editProfile")}
-              </h3>
-            </div>
-
-            <div className="px-6 space-y-4">
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-primary font-semibold text-lg">{transI18n("profileName")}</span>
-                </label>
-                <input type="text" placeholder={transI18n("placeholderProfileName")} className="input input-warning mt-1 w-full"
-                  value={profileName}
-                  onChange={(e) => setProfileName(e.target.value)}
-                />
+        {modalConfigs.map(({ id, title, onClose, content }) => (
+          <dialog key={id} id={id} className="modal">
+            <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+              <div className="sticky top-0 z-10">
+                <motion.button
+                  whileHover={{ scale: 1.1, rotate: 90 }}
+                  transition={{ duration: 0.2 }}
+                  className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
+                  onClick={onClose}
+                >
+                  ✕
+                </motion.button>
               </div>
-
-              <div className="modal-action">
-                <button className="btn btn-success btn-sm sm:btn-md" onClick={handleUpdateProfile}>
-                  {formState === "CREATE" ? transI18n("create") : transI18n("update")}
-                </button>
+              <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
+                <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
+                  {title}
+                </h3>
               </div>
+              {content}
             </div>
-          </div>
-        </dialog>
-
-        <dialog id="copy_profile_modal" className="modal">
-          <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
-            <div className="sticky top-0 z-10">
-              <motion.button
-                whileHover={{ scale: 1.1, rotate: 90 }}
-                transition={{ duration: 0.2 }}
-                className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
-                onClick={() => {
-                  setIsOpenCopy(false)
-                  handleCloseModal("copy_profile_modal")
-                }}
-              >
-                ✕
-              </motion.button>
-            </div>
-            <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
-              <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
-                {transI18n("copyProfiles").toUpperCase()}
-              </h3>
-            </div>
-            <CopyImport />
-          </div>
-        </dialog>
-
-
-        <dialog id="avatars_modal" className="modal">
-          <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
-            <div className="sticky top-0 z-10">
-              <motion.button
-                whileHover={{ scale: 1.1, rotate: 90 }}
-                transition={{ duration: 0.2 }}
-                className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
-                onClick={() => {
-                  setIsOpenAvatars(false)
-                  handleCloseModal("avatars_modal")
-                }}
-              >
-                ✕
-              </motion.button>
-            </div>
-            <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
-              <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
-                {transI18n("avatars").toUpperCase()}
-              </h3>
-            </div>
-            <AvatarBar onClose={() => {setIsOpenAvatars(false); handleCloseModal("avatars_modal")}} />
-          </div>
-        </dialog>
+          </dialog>
+        ))}
 
 
       </div>

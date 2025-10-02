@@ -3,6 +3,7 @@
 import { AffixDetail, ASDetail, CharacterDetail, ConfigMaze, FreeSRJson, LightConeDetail, MocDetail, MonsterDetail, PeakDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
 import axios from 'axios';
 import { pSResponseSchema } from "@/zod";
+import { ExtraData } from "@/types";
 
 export async function getConfigMazeApi(): Promise<ConfigMaze> {
     try {
@@ -236,11 +237,15 @@ export async function fetchMonsterByIdNative(ids: string, locale: string): Promi
     }
 }
 
-
-
-export async function SendDataToServer(username: string, password: string, serverUrl: string, data: FreeSRJson | null): Promise<PSResponse | string> {
+export async function SendDataToServer(
+    username: string,
+    password: string,
+    serverUrl: string,
+    data: FreeSRJson | null,
+    extraData?: ExtraData
+): Promise<PSResponse | string> {
     try {
-        const response = await axios.post(`${serverUrl}`, { username, password, data })
+        const response = await axios.post(`${serverUrl}`, { username, password, data, extra_data: extraData })
         const parsed = pSResponseSchema.safeParse(response.data)
         if (!parsed.success) {
             return "Invalid response schema";
@@ -251,7 +256,7 @@ export async function SendDataToServer(username: string, password: string, serve
     }
 }
 
-export async function SendDataThroughProxy({data}: {data: any}) {
+export async function SendDataThroughProxy({ data }: { data: any }) {
     try {
         const response = await axios.post(`/api/proxy`, { ...data })
         return response.data;

@@ -249,6 +249,11 @@
 		"downRoll": "Down Roll",
 		"actions": "Actions",
 		"avatars": "Avatars",
-		"quickView": "Quick View"
+		"quickView": "Quick View",
+		"extraSetting": "Extra Settings",
+		"disableCensorship": "Disable Censorship",
+		"hideUI": "Hide UI",
+		"theoryCraftMode": "Theorycraft Mode",
+		"cycleCount": "Cycle Count"
 	}
 }

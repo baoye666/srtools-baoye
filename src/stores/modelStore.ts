@@ -12,6 +12,8 @@ interface ModelState {
     isOpenConnect: boolean;
     isOpenAvatars: boolean;
     isOpenQuickView: boolean;
+    isOpenExtra: boolean;
+    setIsOpenExtra: (newIsOpenExtra: boolean) => void;
     setIsOpenQuickView: (newIsOpenQuickView: boolean) => void;
     setIsOpenAvatars: (newIsOpenAvatars: boolean) => void;
     setIsOpenConnect: (newIsOpenConnect: boolean) => void;
@@ -35,6 +37,8 @@ const useModelStore = create<ModelState>((set) => ({
     isOpenConnect: false,
     isOpenAvatars: false,
     isOpenQuickView: false,
+    isOpenExtra: false,
+    setIsOpenExtra: (newIsOpenExtra: boolean) => set({ isOpenExtra: newIsOpenExtra }),
     setIsOpenQuickView: (newIsOpenQuickView: boolean) => set({ isOpenQuickView: newIsOpenQuickView }),
     setIsOpenAvatars: (newIsOpenAvatars: boolean) => set({ isOpenAvatars: newIsOpenAvatars }),
     setIsOpenConnect: (newIsOpenConnect: boolean) => set({ isOpenConnect: newIsOpenConnect }),

@@ -248,6 +248,11 @@
 		"downRoll": "サブステータスを減らす",
 		"actions": "アクション",
 		"avatars": "アバター",
-		"quickView": "クイックビュー"
+		"quickView": "クイックビュー",
+		"extraSetting": "追加設定",
+		"disableCensorship": "検閲を無効化",
+		"hideUI": "UIを非表示",
+		"theoryCraftMode": "シアリークラフトモード",
+		"cycleCount": "サイクル数"
 	}
 }
