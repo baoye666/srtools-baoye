@@ -418,7 +418,10 @@ export default function CeBar() {
                                 ))}
 
                                 {/* Add Member Button + Search */}
-                                <div className="relative flex items-start justify-center w-full h-full z-39" onClick={(e) => e.stopPropagation()}>
+                                <div 
+                                    className="relative flex items-start justify-center w-full h-full" 
+                                    onClick={(e) => e.stopPropagation()}
+                                >
                                     <button
                                         className="btn btn-outline btn-primary w-full h-full border-dashed"
                                         onClick={(e) => {
@@ -435,7 +438,7 @@ export default function CeBar() {
                                     </button>
 
                                     {showSearchWaveId === waveIndex && (
-                                        <div className="absolute top-full mt-2 w-72 border bg-base-200 border-slate-600 rounded-lg p-4 shadow-lg">
+                                        <div className="absolute top-full mt-2 w-72 border bg-base-200 border-slate-600 rounded-lg p-4 shadow-lg z-50">
                                             <div className="flex items-center gap-2 mb-2">
 
                                                 <label className="input w-full">
