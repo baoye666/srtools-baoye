@@ -2173,7 +2173,7 @@
     "Icon": "SpriteOutput/ItemIcon/71050.png",
     "Parts": {
       "33235": {
-        "Name": "West Wind's End of Amphoreus",
+        "Name": "Last West Wind of Amphoreus",
         "Desc": null,
         "Story": null
       },
@@ -2202,16 +2202,16 @@
     }
   },
   "324": {
-    "Name": "Tengoku @Live Stream",
+    "Name": "Tengoku@Livestream",
     "Icon": "SpriteOutput/ItemIcon/71051.png",
     "Parts": {
       "33245": {
-        "Name": "Livestream's Myriad Facades",
+        "Name": "Livestream's Protean Vistas",
         "Desc": null,
         "Story": null
       },
       "33246": {
-        "Name": "Livestream's Continuous Chatter",
+        "Name": "Livestream's Chatter Banter",
         "Desc": null,
         "Story": null
       }

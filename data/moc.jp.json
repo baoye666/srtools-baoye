@@ -66473,7 +66473,7 @@
             {
               "$type": "StageMonsterWave",
               "Monster0": 2023030,
-              "Monster1": 4013010,
+              "Monster1": 4053020,
               "Monster2": 2023030
             },
             {
@@ -66520,7 +66520,7 @@
           "MonsterList": [
             {
               "$type": "StageMonsterWave",
-              "Monster0": 4053020,
+              "Monster0": 402301001,
               "Monster1": 4063010
             },
             {
