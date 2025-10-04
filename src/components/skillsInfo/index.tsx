@@ -183,7 +183,7 @@ export default function SkillsInfo() {
                                             ${btn.size === "medium" ? "w-[8vw] h-[8vw] md:w-[3vw] md:h-[3vw] bg-white" : ""}
                                             ${btn.size === "big" ? "w-[9vw] h-[9vw] md:w-[3.5vw] md:h-[3.5vw] bg-black" : ""}
                                             ${btn.size === "special" ? "w-[9vw] h-[9vw] md:w-[3.5vw] md:h-[3.5vw] bg-white" : ""}
-                                            ${btn.size === "memory" ? "w-[9vw] h-[9vw] md:w-[3.5vw] md:h-[3.5vw] bg-white" : ""}
+                                            ${btn.size === "memory" ? "w-[9vw] h-[9vw] md:w-[3.5vw] md:h-[3.5vw] bg-black" : ""}
                                             ${skillSelected === btn.id ? "border-4 border-primary" : ""}
                                             ${!avatarData?.data.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID]
                                                 ? "opacity-50 cursor-not-allowed"
@@ -205,14 +205,14 @@ export default function SkillsInfo() {
                                                 width={124}
                                                 height={124}
                                                 style={{
-                                                    filter: btn.size !== "big" ? "brightness(0%)" : ""
+                                                    filter: (btn.size !== "big" && btn.size !== "memory") ? "brightness(0%)" : ""
                                                 }}
                                                 onError={(e) => {
                                                     e.currentTarget.onerror = null;
                                                     e.currentTarget.src = getImageSkill(avatarInfo?.SkillTrees?.[btn.id]?.["1"]?.Icon, avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0], "homdgcat") || "";
                                                 }}
                                             />
-                                            {btn.size === "big" && (
+                                            {(btn.size === "big" || btn.size === "memory")  && (
                                                 <p className="
                                                 z-12 text-sm sm:text-xs lg:text-sm xl:text-base 2xl:text-2xl
                                                 font-bold text-center rounded-full absolute
@@ -243,7 +243,7 @@ export default function SkillsInfo() {
                                                         inset: 0,
                                                         backgroundColor: "#9a89ff",
                                                         mixBlendMode: "screen",
-                                                        opacity: 0.8,
+                                                        opacity: 0.4,
                                                         borderRadius: "50%"
                                                     }}
                                                 />
