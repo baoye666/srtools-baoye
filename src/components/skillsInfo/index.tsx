@@ -88,7 +88,7 @@ export default function SkillsInfo() {
         }
         if (result && result.length > 0) {
             return {
-                isServant: false, 
+                isServant: false,
                 data: result,
                 servantData: null,
             }
@@ -170,53 +170,101 @@ export default function SkillsInfo() {
                                         return null
                                     }
                                     return (
-                                    <div
-                                        key={`${btn.id} + ${index}`}
-                                        id={btn.id}
-                                        className={`
+                                        <div
+                                            key={`${btn.id} + ${index}`}
+                                            id={btn.id}
+                                            className={`
                                             absolute rounded-full border border-black 
                                             bg-no-repeat bg-contain 
                                             cursor-pointer transition-all duration-200 ease-in-out 
                                             shadow-[0_0_5px_white] flex justify-center items-center 
-                                            hover:scale-110
+                                            hover:scale-110z-10
                                             ${btn.size === "small" ? "w-[6vw] h-[6vw] md:w-[2vw] md:h-[2vw] bg-white" : ""}
                                             ${btn.size === "medium" ? "w-[8vw] h-[8vw] md:w-[3vw] md:h-[3vw] bg-white" : ""}
                                             ${btn.size === "big" ? "w-[9vw] h-[9vw] md:w-[3.5vw] md:h-[3.5vw] bg-black" : ""}
+                                            ${btn.size === "special" ? "w-[9vw] h-[9vw] md:w-[3.5vw] md:h-[3.5vw] bg-white" : ""}
+                                            ${btn.size === "memory" ? "w-[9vw] h-[9vw] md:w-[3.5vw] md:h-[3.5vw] bg-white" : ""}
                                             ${skillSelected === btn.id ? "border-4 border-primary" : ""}
-                                            ${avatarData?.data.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID] === 0 ? "opacity-50 cursor-not-allowed" : ""}
+                                            ${!avatarData?.data.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID]
+                                                ? "opacity-50 cursor-not-allowed"
+                                                : ""}
                                         `}
-                                        onClick={() => {
-                                            setSkillSelected(btn.id === skillSelected ? null : btn.id)
-                                        }}
-                                        style={{
-                                            left: btn.left,
-                                            top: btn.top,
-                                            transform: "translate(-50%, -50%)",
-                                          }}
-                                    >
-                                        <Image
-                                            src={getImageSkill(avatarInfo?.SkillTrees?.[btn.id]?.["1"]?.Icon, avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0]) || ""}
-                                            alt={btn.id.replaceAll("Point", "")}
-                                            priority={true}
-                                            width={124}
-                                            height={124}
+                                            onClick={() => {
+                                                setSkillSelected(btn.id === skillSelected ? null : btn.id)
+                                            }}
                                             style={{
-                                                filter: btn.size !== "big"
-                                                    ? 'brightness(0%)'
-                                                    : 'brightness(200%)'
+                                                left: btn.left,
+                                                top: btn.top,
+                                                transform: "translate(-50%, -50%)",
                                             }}
-                                            onError={(e) => {
-                                                e.currentTarget.onerror = null; // tránh loop
-                                                e.currentTarget.src = getImageSkill(avatarInfo?.SkillTrees?.[btn.id]?.["1"]?.Icon, avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0], "homdgcat") || "";       
-                                            }}
-                                        />
-                                        {btn.size === "big" && (
-                                            <p className="text-xs md:text-base font-bold text-center rounded-full absolute bottom-[-1.4vw] left-1/2 transform -translate-x-1/2">{`${avatarData?.data.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID] || 0}/${avatarSkillTree?.[btn.id]?.["1"]?.MaxLevel}`}</p>
-                                        )}
-                                    </div>
+                                        >
+                                            <Image
+                                                src={getImageSkill(avatarInfo?.SkillTrees?.[btn.id]?.["1"]?.Icon, avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0]) || ""}
+                                                alt={btn.id.replaceAll("Point", "")}
+                                                priority={true}
+                                                width={124}
+                                                height={124}
+                                                style={{
+                                                    filter: btn.size !== "big" ? "brightness(0%)" : ""
+                                                }}
+                                                onError={(e) => {
+                                                    e.currentTarget.onerror = null;
+                                                    e.currentTarget.src = getImageSkill(avatarInfo?.SkillTrees?.[btn.id]?.["1"]?.Icon, avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0], "homdgcat") || "";
+                                                }}
+                                            />
+                                            {btn.size === "big" && (
+                                                <p className="
+                                                z-12 text-sm sm:text-xs lg:text-sm xl:text-base 2xl:text-2xl
+                                                font-bold text-center rounded-full absolute
+                                                translate-y-full mt-1
+                                                bg-base-300 px-1
+                                                left-1/2 transform -translate-x-1/2
+                                                ">
+                                                    {`${avatarData?.data.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID] || 0}/${avatarSkillTree?.[btn.id]?.["1"]?.MaxLevel}`}
+                                                </p>
+
+                                            )}
+                                            {btn.size === "special" && (
+                                                <div
+                                                    style={{
+                                                        position: "absolute",
+                                                        inset: 0,
+                                                        backgroundColor: "#4a6eff",
+                                                        mixBlendMode: "screen",
+                                                        opacity: 0.8,
+                                                        borderRadius: "50%"
+                                                    }}
+                                                />
+                                            )}
+                                            {btn.size === "memory" && (
+                                                <div
+                                                    style={{
+                                                        position: "absolute",
+                                                        inset: 0,
+                                                        backgroundColor: "#9a89ff",
+                                                        mixBlendMode: "screen",
+                                                        opacity: 0.8,
+                                                        borderRadius: "50%"
+                                                    }}
+                                                />
+                                            )}
+                                            {btn.size === "big" && (
+                                                <div
+                                                    style={{
+                                                    position: "absolute",
+                                                    inset: 0,
+                                                    backgroundColor: "#f5e4b0",
+                                                    mixBlendMode: "screen",
+                                                    opacity: 0.3,
+                                                    borderRadius: "50%"
+                                                    }}
+                                                />
+                                            )}
+                                        </div>
 
 
-                                )})}
+                                    )
+                                })}
                             </div>
                         )}
                     </div>
@@ -258,6 +306,18 @@ export default function SkillsInfo() {
                                         checked={avatarData?.data.skills?.[skillInfo?.PointID] === 1}
                                         className="toggle toggle-success"
                                         onChange={(e) => {
+                                            if (traceButtons?.find((btn) => btn.id === skillSelected)?.size === "special") {
+                                                if (e.target.checked) {
+                                                    const newData = cloneDeep(avatarData)
+                                                    newData.data.skills[skillInfo?.PointID] = 1
+                                                    setAvatar(newData)
+                                                    return
+                                                }
+                                                const newData = cloneDeep(avatarData)
+                                                delete newData.data.skills[skillInfo?.PointID]
+                                                setAvatar(newData)
+                                                return
+                                            }
                                             handlerChangeStatusTrace(e.target.checked)
                                         }}
                                     />

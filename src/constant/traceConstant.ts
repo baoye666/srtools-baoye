@@ -2,10 +2,10 @@
 
 export const traceButtonsInfo: Record<string, { id: string, size: string, left: string, top: string }[]> = {
     Knight: [
-        { id: 'Point03', size: 'big', left: '51%', top: '52%' },
-        { id: 'Point04', size: 'big', left: '51%', top: '35%' },
+        { id: 'Point03', size: 'big', left: '50%', top: '52%' },
+        { id: 'Point04', size: 'big', left: '50%', top: '35%' },
         { id: 'Point02', size: 'big', left: '67%', top: '55%' },
-        { id: 'Point05', size: 'big', left: '51%', top: '69.5%' },
+        { id: 'Point05', size: 'big', left: '50%', top: '69.5%' },
         { id: 'Point01', size: 'big', left: '33%', top: '55%' },
         { id: 'Point08', size: 'medium', left: '50%', top: '21.5%' },
         { id: 'Point07', size: 'medium', left: '71%', top: '86%' },
@@ -22,11 +22,11 @@ export const traceButtonsInfo: Record<string, { id: string, size: string, left: 
         { id: 'Point11', size: 'small', left: '11%', top: '70%' }
     ],
     Mage: [
-        { id: 'Point03', size: 'big', left: '50.5%', top: '53.5%' },
-        { id: 'Point04', size: 'big', left: '51%', top: '32%' },
-        { id: 'Point02', size: 'big', left: '68.5%', top: '53.5%' },
-        { id: 'Point05', size: 'big', left: '51%', top: '84%' },
-        { id: 'Point01', size: 'big', left: '33.5%', top: '53.5%' },
+        { id: 'Point03', size: 'big', left: '50%', top: '52%' },
+        { id: 'Point04', size: 'big', left: '50%', top: '30%' },
+        { id: 'Point02', size: 'big', left: '67%', top: '52%' },
+        { id: 'Point05', size: 'big', left: '50%', top: '82.5%' },
+        { id: 'Point01', size: 'big', left: '33.5%', top: '52%' },
         { id: 'Point08', size: 'medium', left: '50%', top: '14.5%' },
         { id: 'Point07', size: 'medium', left: '80.5%', top: '53%' },
         { id: 'Point06', size: 'medium', left: '19.5%', top: '53%' },
@@ -42,10 +42,10 @@ export const traceButtonsInfo: Record<string, { id: string, size: string, left: 
         { id: 'Point12', size: 'small', left: '12%', top: '41.5%' }
     ],
     Priest: [
-        { id: 'Point03', size: 'big', left: '51%', top: '49%' },
-        { id: 'Point04', size: 'big', left: '51%', top: '31%' },
-        { id: 'Point02', size: 'big', left: '68.5%', top: '46%' },
-        { id: 'Point05', size: 'big', left: '51%', top: '66%' },
+        { id: 'Point03', size: 'big', left: '50%', top: '47%' },
+        { id: 'Point04', size: 'big', left: '50%', top: '30%' },
+        { id: 'Point02', size: 'big', left: '67%', top: '46%' },
+        { id: 'Point05', size: 'big', left: '50%', top: '65%' },
         { id: 'Point01', size: 'big', left: '33.5%', top: '46%' },
         { id: 'Point08', size: 'medium', left: '50%', top: '13%' },
         { id: 'Point07', size: 'medium', left: '68%', top: '79%' },
@@ -62,14 +62,14 @@ export const traceButtonsInfo: Record<string, { id: string, size: string, left: 
         { id: 'Point15', size: 'small', left: '20%', top: '39%' }
     ],
     Rogue: [
-        { id: 'Point03', size: 'big', left: '51%', top: '53%' },
-        { id: 'Point04', size: 'big', left: '51%', top: '36%' },
-        { id: 'Point02', size: 'big', left: '68.5%', top: '46%' },
-        { id: 'Point05', size: 'big', left: '51%', top: '70%' },
+        { id: 'Point03', size: 'big', left: '50%', top: '52%' },
+        { id: 'Point04', size: 'big', left: '50%', top: '35%' },
+        { id: 'Point02', size: 'big', left: '67%', top: '46%' },
+        { id: 'Point05', size: 'big', left: '50%', top: '69%' },
         { id: 'Point01', size: 'big', left: '33.5%', top: '46%' },
         { id: 'Point08', size: 'medium', left: '50%', top: '22%' },
         { id: 'Point07', size: 'medium', left: '68%', top: '71%' },
-        { id: 'Point06', size: 'medium', left: '32%', top: '71%' },
+        { id: 'Point06', size: 'medium', left: '30%', top: '71%' },
         { id: 'Point16', size: 'small', left: '50%', top: '9%' },
         { id: 'Point18', size: 'small', left: '66%', top: '14%' },
         { id: 'Point17', size: 'small', left: '34%', top: '14%' },
@@ -82,10 +82,10 @@ export const traceButtonsInfo: Record<string, { id: string, size: string, left: 
         { id: 'Point11', size: 'small', left: '7%', top: '44%' }
     ],
     Shaman: [
-        { id: 'Point03', size: 'big', left: '51%', top: '57%' },
-        { id: 'Point04', size: 'big', left: '51%', top: '36%' },
-        { id: 'Point02', size: 'big', left: '68.5%', top: '41%' },
-        { id: 'Point05', size: 'big', left: '51%', top: '75%' },
+        { id: 'Point03', size: 'big', left: '50%', top: '56%' },
+        { id: 'Point04', size: 'big', left: '50%', top: '35%' },
+        { id: 'Point02', size: 'big', left: '67%', top: '41%' },
+        { id: 'Point05', size: 'big', left: '50%', top: '74%' },
         { id: 'Point01', size: 'big', left: '33.5%', top: '41%' },
         { id: 'Point08', size: 'medium', left: '50%', top: '22%' },
         { id: 'Point07', size: 'medium', left: '89.5%', top: '56.5%' },
@@ -102,11 +102,11 @@ export const traceButtonsInfo: Record<string, { id: string, size: string, left: 
         { id: 'Point11', size: 'small', left: '20%', top: '31%' }
     ],
     Warlock: [
-        { id: 'Point03', size: 'big', left: '51%', top: '44%' },
-        { id: 'Point04', size: 'big', left: '51%', top: '25%' },
-        { id: 'Point02', size: 'big', left: '68.5%', top: '47%' },
-        { id: 'Point05', size: 'big', left: '51%', top: '62%' },
-        { id: 'Point01', size: 'big', left: '33.5%', top: '47%' },
+        { id: 'Point03', size: 'big', left: '50%', top: '44%' },
+        { id: 'Point04', size: 'big', left: '50%', top: '24%' },
+        { id: 'Point02', size: 'big', left: '67%', top: '47%' },
+        { id: 'Point05', size: 'big', left: '50%', top: '61%' },
+        { id: 'Point01', size: 'big', left: '33%', top: '47%' },
         { id: 'Point08', size: 'medium', left: '50%', top: '8%' },
         { id: 'Point07', size: 'medium', left: '81.5%', top: '37%' },
         { id: 'Point06', size: 'medium', left: '20.5%', top: '37%' },
@@ -122,10 +122,10 @@ export const traceButtonsInfo: Record<string, { id: string, size: string, left: 
         { id: 'Point12', size: 'small', left: '33%', top: '74%' }
     ],
     Warrior: [
-        { id: 'Point03', size: 'big', left: '51%', top: '53%' },
-        { id: 'Point04', size: 'big', left: '51%', top: '36%' },
+        { id: 'Point03', size: 'big', left: '50%', top: '52%' },
+        { id: 'Point04', size: 'big', left: '50%', top: '35%' },
         { id: 'Point02', size: 'big', left: '69%', top: '48%' },
-        { id: 'Point05', size: 'big', left: '51%', top: '70.5%' },
+        { id: 'Point05', size: 'big', left: '50%', top: '69%' },
         { id: 'Point01', size: 'big', left: '33%', top: '48%' },
         { id: 'Point08', size: 'medium', left: '50%', top: '22%' },
         { id: 'Point07', size: 'medium', left: '67%', top: '83%' },
@@ -142,27 +142,27 @@ export const traceButtonsInfo: Record<string, { id: string, size: string, left: 
         { id: 'Point11', size: 'small', left: '7%', top: '56.5%' }
     ],
     Memory: [
-        { id: 'Point03', size: 'big', left: '51%', top: '72%' },
+        { id: 'Point03', size: 'big', left: '50%', top: '72%' },
         { id: 'Point04', size: 'big', left: '75%', top: '53%' },
         { id: 'Point02', size: 'big', left: '67%', top: '67%' },
         { id: 'Point05', size: 'big', left: '27%', top: '53%' },
         { id: 'Point01', size: 'big', left: '35%', top: '67%' },
         { id: 'Point08', size: 'medium', left: '34%', top: '34%' },
         { id: 'Point07', size: 'medium', left: '50%', top: '87%' },
-        { id: 'Point06', size: 'medium', left: '91%', top: '51%' },
+        { id: 'Point06', size: 'medium', left: '90%', top: '50%' },
         { id: 'Point16', size: 'small', left: '27.5%', top: '22%' },
         { id: 'Point17', size: 'small', left: '43%', top: '14%' },
         { id: 'Point18', size: 'small', left: '59%', top: '14%' },
-        { id: 'Point19', size: 'big', left: '51%', top: '50%' },
-        { id: 'Point20', size: 'big', left: '51%', top: '28%' },
+        { id: 'Point19', size: 'memory', left: '50%', top: '48%' },
+        { id: 'Point20', size: 'memory', left: '50%', top: '28%' },
         { id: 'Point12', size: 'small', left: '86%', top: '40%' },
         { id: 'Point13', size: 'small', left: '86%', top: '63%' },
         { id: 'Point14', size: 'small', left: '35%', top: '82%' },
         { id: 'Point15', size: 'small', left: '65%', top: '82%' },
-        { id: 'Point09', size: 'small', left: '9%', top: '51%' },
+        { id: 'Point09', size: 'small', left: '9%', top: '50%' },
         { id: 'Point10', size: 'small', left: '13%', top: '40%' },
         { id: 'Point11', size: 'small', left: '13%', top: '63%' },
-        { id: 'Point21', size: 'big', left: '70%', top: '34%'}
+        { id: 'Point21', size: 'special', left: '70%', top: '34%'}
     ]
 }
 
@@ -231,6 +231,7 @@ export const traceLink : Record<string, Record<string, string[]>> = {
     },
     Memory: {
         Point16: ["Point17", "Point18"],
+        Point08: ["Point16", "Point17", "Point18"],
         Point17: ["Point18"],
         Point09: ["Point10", "Point11"],
         Point07: ["Point14", "Point15"],
