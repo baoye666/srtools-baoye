@@ -83,9 +83,9 @@ export default function RelicShowcase({
                                     <span className="text-xs text-gray-200 ml-0.5 truncate flex-1 min-w-0">
                                         +{subAffix?.valueAffix + subAffix?.detail?.unit}
                                     </span>
-                                    {subAffix.step > 1 && (
+                                    {subAffix.count > 1 && (
                                         <span className="ml-1 bg-yellow-600/20 text-yellow-400 rounded-full px-1 py-0.5 text-[10px] font-semibold border border-yellow-600/30 flex-shrink-0 leading-none">
-                                            {subAffix?.step}
+                                            {subAffix?.count}
                                         </span>
                                     )}
                                 </div>
