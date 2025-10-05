@@ -173,6 +173,20 @@ export default function ShowCaseInfo() {
     })
   }, [avatarSelected, avatarProfile, mapMainAffix, mapSubAffix])
 
+  const totalSubStats = useMemo(() => {
+    if (!relicStats?.length) return 0
+    return (relicStats ?? []).reduce((acc, relic) => {
+      const subAffixList = relic?.subAffix ?? []
+      return acc + subAffixList.reduce((subAcc, subAffix) => {
+        if (avatarInfo?.Relics?.SubAffixPropertyList.findIndex(it => it === subAffix.property) !== -1) {
+          return subAcc + (subAffix?.count ?? 0)
+        }
+        return subAcc
+      }, 0)
+    }, 0)
+  }, [relicStats, avatarInfo])
+  
+
   const characterStats = useMemo(() => {
     if (!avatarSelected || !avatarData) return
     const charPromotion = calcPromotion(avatarData.level)
@@ -588,12 +602,17 @@ export default function ShowCaseInfo() {
                     <div className="flex flex-row items-center justify-between">
                       <ParseText className="text-3xl" text={getNameChar(locale, avatarSelected || undefined)} locale={locale} />
                     </div>
-                    <div className="flex flex-row items-center gap-6">
+                    <div className="flex flex-row items-center gap-4 mt-2">
                       <div className="text-2xl text-[#d8b46e]">Lv. <span className="text-white">{avatarData?.level}</span>/<span className="text-neutral-400">80</span></div>
+                      <span className="px-1.5 py-0.5 rounded-full text-lg font-bold text-[#E6D5B5] bg-[#5c4022] border-2 border-[#d8b46e] shadow-[0_0_10px_rgba(250,204,21,0.3)] select-none">
+                        {totalSubStats}
+                      </span>
+
                       {avatarSelected && (
                         <div className="flex gap-1">
                           <NextImage src={`/icon/${avatarSelected?.baseType.toLowerCase()}.webp`} alt="Path Icon" width={32} height={32} className="h-auto w-8" />
                           <NextImage src={`/icon/${avatarSelected?.damageType.toLowerCase()}.webp`} alt="Element Icon" width={32} height={32} className="h-auto w-8" />
+
                         </div>
                       )}
 
@@ -886,9 +905,9 @@ export default function ShowCaseInfo() {
                 <div className="flex h-[650px] flex-col justify-between py-3 mr-1 text-lg w-full" >
 
                   {relicStats?.map((relic, index) => {
-                    if (!relic) return null
+                    if (!relic || !avatarInfo) return null
                     return (
-                      <RelicShowcase key={index} relic={relic} />
+                      <RelicShowcase key={index} relic={relic} avatarInfo={avatarInfo} />
                     )
                   })}
 

@@ -2,12 +2,14 @@
 "use client"
 
 import NextImage from "next/image"
-import { RelicShowcaseType } from "@/types";
+import { CharacterDetail, RelicShowcaseType } from "@/types";
 
 export default function RelicShowcase({
     relic,
+    avatarInfo,
 }: {
     relic: RelicShowcaseType;
+    avatarInfo: CharacterDetail;
 }) {
     return (
         <>
@@ -83,9 +85,10 @@ export default function RelicShowcase({
                                     <span className="text-xs text-gray-200 ml-0.5 truncate flex-1 min-w-0">
                                         +{subAffix?.valueAffix + subAffix?.detail?.unit}
                                     </span>
-                                    {subAffix.count > 1 && (
+                                    {
+                                    (avatarInfo?.Relics?.SubAffixPropertyList.findIndex((item) => item === subAffix?.property) !== -1) && (
                                         <span className="ml-1 bg-yellow-600/20 text-yellow-400 rounded-full px-1 py-0.5 text-[10px] font-semibold border border-yellow-600/30 flex-shrink-0 leading-none">
-                                            {subAffix?.count-1}
+                                            {subAffix?.count}
                                         </span>
                                     )}
                                 </div>

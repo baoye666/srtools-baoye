@@ -443,9 +443,9 @@ export default function QuickView() {
             <div className="grid grid-cols-1 gap-2 justify-between py-3 text-lg">
 
                 {relicStats?.map((relic, index) => {
-                    if (!relic) return null
+                    if (!relic || !avatarInfo) return null
                     return (
-                        <RelicShowcase key={index} relic={relic} />
+                        <RelicShowcase key={index} relic={relic} avatarInfo={avatarInfo} />
                     )
                 })}
 
