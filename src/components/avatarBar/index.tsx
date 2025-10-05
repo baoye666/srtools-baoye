@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import CharacterCard from "../card/characterCard"
 import useLocaleStore from "@/stores/localeStore"
 import useAvatarStore from "@/stores/avatarStore"
@@ -8,9 +8,17 @@ import { useTranslations } from "next-intl"
 
 
 export default function AvatarBar({ onClose }: { onClose?: () => void }) {
-    const [listElement, setListElement] = useState<Record<string, boolean>>({ "fire": false, "ice": false, "imaginary": false, "physical": false, "quantum": false, "thunder": false, "wind": false })
-    const [listPath, setListPath] = useState<Record<string, boolean>>({ "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false })
-    const { listAvatar, setAvatarSelected, setSkillSelected, setFilter, filter } = useAvatarStore()
+    const { 
+        listAvatar, 
+        setAvatarSelected, 
+        setSkillSelected, 
+        setFilter, 
+        filter, 
+        listElement, 
+        listPath,
+        setListElement,
+        setListPath
+    } = useAvatarStore()
     const transI18n = useTranslations("DataPage")
     const { locale } = useLocaleStore()
 
@@ -40,7 +48,7 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                                     <div
                                         key={index}
                                         onClick={() => {
-                                            setListElement((prev) => ({ ...prev, [key]: !prev[key] }))
+                                            setListElement({ ...listElement, [key]: !listElement[key] })
                                         }}
                                         className="hover:bg-gray-600 grid items-center justify-items-center cursor-pointer rounded-md shadow-lg"
                                         style={{
@@ -60,7 +68,7 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                                     <div
                                         key={index}
                                         onClick={() => {
-                                            setListPath((prev) => ({ ...prev, [key]: !prev[key] }))
+                                            setListPath({ ...listPath, [key]: !listPath[key] })
                                         }}
                                         className="hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-lg cursor-pointer"
                                         style={{

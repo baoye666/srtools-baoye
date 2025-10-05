@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import Image from "next/image";
 import useLocaleStore from "@/stores/localeStore"
 import useLightconeStore from "@/stores/lightconeStore";
@@ -11,10 +11,17 @@ import useModelStore from "@/stores/modelStore";
 import { useTranslations } from "next-intl";
 
 export default function LightconeBar() {
-    const [listPath, setListPath] = useState<Record<string, boolean>>({ "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false })
-    const [listRank, setListRank] = useState<Record<string, boolean>>({ "3": false, "4": false, "5": false })
     const { locale } = useLocaleStore()
-    const { listLightcone, filter, setFilter, defaultFilter } = useLightconeStore()
+    const { 
+        listLightcone, 
+        filter, 
+        setFilter, 
+        defaultFilter, 
+        listPath, 
+        listRank, 
+        setListPath, 
+        setListRank 
+    } = useLightconeStore()
     const { setAvatar, avatars } = useUserDataStore()
     const { avatarSelected } = useAvatarStore()
     const { setIsOpenLightcone } = useModelStore()
@@ -35,7 +42,7 @@ export default function LightconeBar() {
         }
         setListPath(newListPath)
         setListRank(newListRank)
-    }, [defaultFilter])
+    }, [defaultFilter, setListPath, setListRank])
 
     useEffect(() => {
         setFilter({
@@ -72,7 +79,7 @@ export default function LightconeBar() {
                                 <div
                                     key={index}
                                     onClick={() => {
-                                        setListPath((prev) => ({ ...prev, [key]: !prev[key] }))
+                                        setListPath({ ...listPath, [key]: !listPath[key] })
                                     }}
                                     className="h-[38px] w-[38px] md:h-[50px] md:w-[50px] hover:bg-gray-600 grid place-items-center rounded-md shadow-lg cursor-pointer"
                                     style={{
@@ -96,7 +103,7 @@ export default function LightconeBar() {
                                 <div
                                     key={index}
                                     onClick={() => {
-                                        setListRank((prev) => ({ ...prev, [key]: !prev[key] }))
+                                        setListRank({ ...listRank, [key]: !listRank[key] })
                                     }}
                                     className="h-[38px] w-[38px] md:h-[50px] md:w-[50px] hover:bg-gray-600 grid place-items-center rounded-md shadow-lg cursor-pointer"
                                     style={{

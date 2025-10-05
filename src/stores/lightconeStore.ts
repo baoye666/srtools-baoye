@@ -4,9 +4,13 @@ import { create } from 'zustand'
 interface LightconeState {
     listLightcone: LightConeBasic[];
     listRawLightcone: LightConeBasic[];
+    listPath: Record<string, boolean>;
+    listRank: Record<string, boolean>;
     filter: FilterLightconeType;
     defaultFilter: { path: string[], rarity: string[] };
     mapLightconeInfo: Record<string, LightConeDetail>;
+    setListPath: (newListPath: Record<string, boolean>) => void;
+    setListRank: (newListRank: Record<string, boolean>) => void;
     setDefaultFilter: (newDefaultFilter: { path: string[], rarity: string[] }) => void;
     setListLightcone: (newListLightcone: LightConeBasic[]) => void;
     setFilter: (newFilter: FilterLightconeType) => void;
@@ -18,6 +22,7 @@ const useLightconeStore = create<LightconeState>((set, get) => ({
     listLightcone: [],
     listRawLightcone: [],
     mapLightconeInfo: {},
+
     filter: {
         name: "",
         path: [],
@@ -25,6 +30,10 @@ const useLightconeStore = create<LightconeState>((set, get) => ({
         rarity: [],
     },
     defaultFilter: { path: [], rarity: [] },
+    listPath: { "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false },
+    listRank: { "3": false, "4": false, "5": false },
+    setListPath: (newListPath: Record<string, boolean>) => set({ listPath: newListPath }),
+    setListRank: (newListRank: Record<string, boolean>) => set({ listRank: newListRank }),
     setDefaultFilter: (newDefaultFilter: { path: string[], rarity: string[] }) => set({ defaultFilter: newDefaultFilter }),
     setListLightcone: (newListLightcone: LightConeBasic[]) => set({ listLightcone: newListLightcone, listRawLightcone: newListLightcone }),
     setFilter: (newFilter: FilterLightconeType) => {

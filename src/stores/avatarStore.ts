@@ -9,6 +9,10 @@ interface AvatarState {
     avatarSelected: CharacterBasic | null;
     mapAvatarInfo: Record<string, CharacterDetail>;
     skillSelected: string | null;
+    listElement: Record<string, boolean>;
+    listPath: Record<string, boolean>;
+    setListElement: (newListElement: Record<string, boolean>) => void;
+    setListPath: (newListPath: Record<string, boolean>) => void;
     setListAvatar: (newListAvatar: CharacterBasic[]) => void;
     setAvatarSelected: (newAvatarSelected: CharacterBasic) => void;
     setFilter: (newFilter: FilterAvatarType) => void;
@@ -30,6 +34,10 @@ const useAvatarStore = create<AvatarState>((set, get) => ({
     avatarSelected: null,
     skillSelected: null,
     mapAvatarInfo: {},
+    listElement: { "fire": false, "ice": false, "imaginary": false, "physical": false, "quantum": false, "thunder": false, "wind": false },
+    listPath: { "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false },
+    setListElement: (newListElement: Record<string, boolean>) => set({ listElement: newListElement }),
+    setListPath: (newListPath: Record<string, boolean>) => set({ listPath: newListPath }),
     setSkillSelected: (newSkillSelected: string | null) => set({ skillSelected: newSkillSelected }),
     setListAvatar: (newListAvatar: CharacterBasic[]) => set({ listAvatar: newListAvatar, listRawAvatar: newListAvatar }),
     setAvatarSelected: (newAvatarSelected: CharacterBasic) => set({ avatarSelected: newAvatarSelected }),

@@ -9,6 +9,7 @@ import { useMemo } from "react";
 import useAvatarStore from "@/stores/avatarStore";
 import { calcAffixBonus, calcBaseStatRaw, calcBonusStatRaw, calcMainAffixBonus, calcMainAffixBonusRaw, calcPromotion, calcSubAffixBonusRaw, replaceByParam } from "@/helper";
 import { mappingStats } from "@/constant/constant";
+import RelicShowcase from "../showcaseCard/relicShowcase";
 export default function QuickView() {
     const { avatarSelected, mapAvatarInfo } = useAvatarStore()
     const { mapLightconeInfo } = useLightconeStore()
@@ -80,7 +81,9 @@ export default function QuickView() {
                     return {
                         property: subAffixMap?.[subValue?.sub_affix_id]?.property,
                         valueAffix: calcAffixBonus(subAffixMap?.[subValue?.sub_affix_id], subValue?.step, subValue?.count),
-                        detail: mappingStats?.[subAffixMap?.[subValue?.sub_affix_id]?.property]
+                        detail: mappingStats?.[subAffixMap?.[subValue?.sub_affix_id]?.property],
+                        step: subValue?.step,
+                        count: subValue?.count
                     }
                 })
             }
@@ -398,7 +401,7 @@ export default function QuickView() {
                             <div key={index} className="flex flex-row items-center justify-between">
                                 <div className="flex flex-row items-center">
                                     <NextImage src={stat?.icon || ""} alt="Stat Icon" width={40} height={40} className="h-auto w-10 p-1 mx-1 bg-black/20 rounded-full" />
-                                    <span className="font-bold">{stat.name}</span>
+                                    <div className="font-bold">{stat.name}</div>
                                 </div>
                                 <div className="ml-3 mr-3 flex-grow border rounded opacity-50" />
                                 <div className="flex cursor-default flex-col text-right font-bold">{
@@ -439,63 +442,79 @@ export default function QuickView() {
 
             <div className="grid grid-cols-1 gap-2 justify-between py-3 text-lg">
 
-                {relicStats?.map((relic, index) => {
+                  {relicStats?.map((relic, index) => {
                     if (!relic) return null
                     return (
-                        <div key={index} className="black-blur relative flex flex-row items-center rounded-lg border-2 p-1 border-yellow-600">
-                            <div className="flex">
-                                <NextImage src={relic?.img || ""} width={80} height={80} alt="Relic Icon" className="h-auto w-20" />
+                      <div
+                        key={index}
+                        className="relative w-full flex flex-row items-center rounded-s-lg border-l-2 p-1 border-yellow-600/60  bg-gradient-to-r from-yellow-600/20 to-transparent"
+                      >
+                        {/* Subtle glow overlay */}
+                        <div className="absolute inset-0 rounded-s-lg  pointer-events-none"></div>
 
-                                <div
-                                    className="absolute text-yellow-500 font-bold z-10"
-                                    style={{
-                                        left: '0.7rem',
-                                        bottom: '-0.5rem',
-                                        fontSize: '1.1rem',
-                                        letterSpacing: '-0.1em',
-                                        textShadow: `
-                                0 0 0.2em #f59e0b,
-                                0 0 0.4em #f59e0b,
-                                0 0 0.8em #f59e0b,
-                                -0.05em -0.05em 0.05em rgba(0,0,0,0.7),
-                                0.05em 0.05em 0.05em rgba(0,0,0,0.7)
-                        `
-                                    }}
-                                >
-                                    ✦✦✦✦✦
-                                </div>
-                            </div>
-                            <div className="mx-1 flex w-1/6 flex-col items-center justify-center">
-                                <NextImage src={relic?.mainAffix?.detail?.icon || ""} width={36} height={36} alt="Main Affix Icon" className="h-auto w-9 bg-black/20 rounded-full" />
-                                <span className="text-base text-[#f1a23c]">{relic?.mainAffix?.valueAffix + relic?.mainAffix?.detail?.unit}</span>
-                                <span className="black-blur rounded px-1 text-xs">+{relic?.mainAffix?.level}</span>
-                            </div>
-                            <div style={{ opacity: 0.5, height: '80px', borderLeftWidth: '1px' }}></div>
-                            <div className="m-auto grid w-1/2 grid-cols-2 gap-2">
-                                {relic?.subAffix?.map((subAffix, index) => {
-                                    if (!subAffix) return null
-                                    return (
-                                        <div key={index} className="flex flex-col">
-                                            <div className="flex flex-row items-center">
-                                                {subAffix?.detail?.icon ? (
-                                                    <NextImage src={subAffix?.detail?.icon || ""} width={36} height={36} alt="Sub Affix Icon" className="h-auto w-9 bg-black/20 rounded-full" />
-                                                ) : (
-                                                    <div className="h-9 w-9 bg-black/20 rounded flex items-center justify-center">
-                                                        <span className="text-xs text-white">?</span>
-                                                    </div>
-                                                )}
-                                                <span className="text-sm">+{subAffix?.valueAffix + subAffix?.detail?.unit}</span>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
-                            </div>
+                        <div className="flex relative">
+                          <div className="absolute inset-0 rounded-lg blur-lg -z-10"></div>
+                          <NextImage
+                            src={relic?.img || ""}
+                            width={78}
+                            height={78}
+                            alt="Relic Icon"
+                            className="h-auto w-[78px] rounded-lg"
+                          />
+
+                          <div
+                            className="absolute text-yellow-400 font-bold z-10 drop-shadow-[0_0_6px_rgba(251,191,36,0.8)]"
+                            style={{
+                              left: '0.65rem',
+                              bottom: '-0.45rem',
+                              fontSize: '1.05rem',
+                              letterSpacing: '-0.1em',
+                            }}
+                          >
+                            ✦✦✦✦✦
+                          </div>
                         </div>
+
+                        <div className=" flex w-1/6 flex-col items-center justify-center">
+                          <div className="relative">
+                            <div className="absolute inset-0 bg-yellow-500/15 rounded-full blur-md -z-10"></div>
+                            <NextImage
+                              src={relic?.mainAffix?.detail?.icon || ""}
+                              width={35}
+                              height={35}
+                              alt="Main Affix Icon"
+                              className="h-auto w-[35px]"
+                            />
+                          </div>
+                          <span className="text-base text-yellow-400 font-semibold drop-shadow-[0_0_4px_rgba(251,191,36,0.5)]">
+                            {relic?.mainAffix?.valueAffix + relic?.mainAffix?.detail?.unit}
+                          </span>
+                          <span className="bg-black/20 backdrop-blur-sm rounded px-1.5 py-0.5 text-xs border border-white/10">
+                            +{relic?.mainAffix?.level}
+                          </span>
+                        </div>
+
+                        <div style={{ opacity: 0.3, height: '78px', borderLeftWidth: '1px' }}></div>
+
+                        <div className="grid w-[65%] m-2 grid-cols-2 gap-1">
+                          {relic?.subAffix?.map((subAffix, index) => {
+                            if (!subAffix) return null
+                            return (
+                              <RelicShowcase key={index} relic={relic} />
+                            )
+                          })}
+                        </div>
+                      </div>
                     )
-                })}
-                {(!relicStats || !relicStats?.length) && <div className="flex flex-col items-center justify-center ">
-                    <span className="text-lg">{transI18n("noRelicEquipped")}</span>
-                </div>}
+                  })}
+
+                  {(!relicStats || !relicStats?.length) && (
+                    <div className="flex flex-col items-center justify-center">
+                      <div className="text-center p-6 rounded-lg bg-black/40 backdrop-blur-sm border border-white/10">
+                        <span className="text-lg text-gray-400">{transI18n("noRelicEquipped")}</span>
+                      </div>
+                    </div>
+                  )}
             </div>
         </div>
     )

@@ -13,7 +13,7 @@ import SelectCustomImage from "../select/customSelectImage";
 
 export default function CopyImport() {
     const { avatars, setAvatar } = useUserDataStore();
-    const {avatarSelected} = useListAvatarStore()
+    const { avatarSelected } = useListAvatarStore()
     const { locale } = useLocaleStore()
     const {
         selectedProfiles,
@@ -22,12 +22,16 @@ export default function CopyImport() {
         setSelectedProfiles,
         filterCopy,
         setFilterCopy,
-        setAvatarCopySelected
+        setAvatarCopySelected,
+        listElement,
+        listPath,
+        listRank,
+        setListElement,
+        setListPath,
+        setListRank
     } = useCopyProfileStore()
     const transI18n = useTranslations("DataPage")
-    const [listPath, setListPath] = useState<Record<string, boolean>>({ "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false })
-    const [listElement, setListElement] = useState<Record<string, boolean>>({ "fire": false, "ice": false, "imaginary": false, "physical": false, "quantum": false, "thunder": false, "wind": false })
-    const [listRank, setListRank] = useState<Record<string, boolean>>({ "4": false, "5": false })
+
     const [message, setMessage] = useState({
         type: "",
         text: ""
@@ -49,8 +53,9 @@ export default function CopyImport() {
             element: Object.keys(listElement).filter((key) => listElement[key]),
             rarity: Object.keys(listRank).filter((key) => listRank[key])
         })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [listPath, listRank, locale])
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [listPath, listRank, listElement, locale, setFilterCopy])
 
     const clearSelection = () => {
         setSelectedProfiles([]);
@@ -142,7 +147,7 @@ export default function CopyImport() {
                                             <div
                                                 key={index}
                                                 onClick={() => {
-                                                    setListPath((prev) => ({ ...prev, [key]: !prev[key] }))
+                                                    setListPath({ ...listPath, [key]: !listPath[key] })
                                                 }}
                                                 className="w-[50px] h-[50px] hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-md cursor-pointer"
                                                 style={{
@@ -167,7 +172,7 @@ export default function CopyImport() {
                                             <div
                                                 key={index}
                                                 onClick={() => {
-                                                    setListElement((prev) => ({ ...prev, [key]: !prev[key] }))
+                                                    setListElement({ ...listElement, [key]: !listElement[key] })
                                                 }}
                                                 className="w-[50px] h-[50px] hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-md cursor-pointer"
                                                 style={{
@@ -192,7 +197,7 @@ export default function CopyImport() {
                                             <div
                                                 key={index}
                                                 onClick={() => {
-                                                    setListRank((prev) => ({ ...prev, [key]: !prev[key] }))
+                                                    setListRank({ ...listRank, [key]: !listRank[key] })
                                                 }}
                                                 className="w-[50px] h-[50px] hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-md cursor-pointer"
                                                 style={{
@@ -207,9 +212,10 @@ export default function CopyImport() {
 
                         </div>
                         <div className="grid grid-cols-1 gap-2">
-                            <div>
-                                <div>{transI18n("characterName")}</div>
-                                {listCopyAvatar.length > 0 && (
+
+                            {listCopyAvatar.length > 0 && (
+                                <div>
+                                    <div>{transI18n("characterName")}</div>
                                     <SelectCustomImage
                                         customSet={listCopyAvatar.map((avatar) => ({
                                             value: avatar.id.toString(),
@@ -221,8 +227,9 @@ export default function CopyImport() {
                                         placeholder="Character Select"
                                         setSelectedCustomSet={(value) => setAvatarCopySelected(listCopyAvatar.find((avatar) => avatar.id.toString() === value) || null)}
                                     />
-                                )}
-                            </div>
+                                </div>
+                            )}
+
                         </div>
                     </div>
 
@@ -240,7 +247,7 @@ export default function CopyImport() {
                             {transI18n("clearAll")}
                         </button>
                         <button
-                            onClick={selectAll} 
+                            onClick={selectAll}
                             className="text-primary/75 hover:text-primary text-sm font-medium px-3 py-1 border border-primary/75 rounded hover:bg-primary/10 transition-colors cursor-pointer">
                             {transI18n("selectAll")}
                         </button>

@@ -7,6 +7,12 @@ interface CopyProfileState {
     listRawCopyAvatar: CharacterBasic[];
     filterCopy: FilterAvatarType;
     avatarCopySelected: CharacterBasic | null;
+    listElement: Record<string, boolean>;
+    listPath: Record<string, boolean>;
+    listRank: Record<string, boolean>;
+    setListElement: (newListElement: Record<string, boolean>) => void;
+    setListPath: (newListPath: Record<string, boolean>) => void;
+    setListRank: (newListRank: Record<string, boolean>) => void;
     setSelectedProfiles: (newListAvatar: AvatarProfileCardType[]) => void;
     setAvatarCopySelected: (newAvatarSelected: CharacterBasic | null) => void;
     setFilterCopy: (newFilter: FilterAvatarType) => void;
@@ -25,6 +31,12 @@ const useCopyProfileStore = create<CopyProfileState>((set, get) => ({
         locale: "",
     },
     avatarCopySelected: null,
+    listElement: { "fire": false, "ice": false, "imaginary": false, "physical": false, "quantum": false, "thunder": false, "wind": false },
+    listPath: { "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false },
+    listRank: { "4": false, "5": false },
+    setListElement: (newListElement: Record<string, boolean>) => set({ listElement: newListElement }),
+    setListPath: (newListPath: Record<string, boolean>) => set({ listPath: newListPath }),
+    setListRank: (newListRank: Record<string, boolean>) => set({ listRank: newListRank }),
     setListCopyAvatar: (newListAvatar: CharacterBasic[]) => set({ listCopyAvatar: newListAvatar, listRawCopyAvatar: newListAvatar }),
     setAvatarCopySelected: (newAvatarSelected: CharacterBasic | null) => set({ avatarCopySelected: newAvatarSelected }),
     setFilterCopy: (newFilter: FilterAvatarType) => {

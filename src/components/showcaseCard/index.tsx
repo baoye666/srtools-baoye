@@ -16,6 +16,8 @@ import { useTranslations } from 'next-intl';
 import useAffixStore from '@/stores/affixStore';
 import useRelicStore from '@/stores/relicStore';
 import { toast } from 'react-toastify';
+import RelicShowcase from './relicShowcase';
+
 
 export default function ShowCaseInfo() {
   const { avatarSelected, mapAvatarInfo } = useAvatarStore()
@@ -37,9 +39,9 @@ export default function ShowCaseInfo() {
 
     import("html2canvas-pro")
       .then(({ default: html2canvas }) =>
-        html2canvas(cardRef.current!, { 
-          scale: 2, 
-          backgroundColor: "#000000", 
+        html2canvas(cardRef.current!, {
+          scale: 2,
+          backgroundColor: "#000000",
           logging: false,
           proxy: '/api/proxy/',
           imageTimeout: 30000,
@@ -162,7 +164,9 @@ export default function ShowCaseInfo() {
           return {
             property: subAffixMap?.[subValue?.sub_affix_id]?.property,
             valueAffix: calcAffixBonus(subAffixMap?.[subValue?.sub_affix_id], subValue?.step, subValue?.count),
-            detail: mappingStats?.[subAffixMap?.[subValue?.sub_affix_id]?.property]
+            detail: mappingStats?.[subAffixMap?.[subValue?.sub_affix_id]?.property],
+            step: subValue?.step,
+            count: subValue?.count
           }
         })
       }
@@ -495,7 +499,7 @@ export default function ShowCaseInfo() {
   }, [avatarSelected])
 
   return (
-    <div className="flex flex-col justify-start m-2 text-white">
+    <div className="flex flex-col justify-start m-1 text-white">
       <div className="flex items-center justify-start mt-4 mb-4">
         <button className="btn btn-success w-24 text-sm" onClick={handleSaveImage}>Save Img</button>
       </div>
@@ -503,7 +507,7 @@ export default function ShowCaseInfo() {
       <div className="overflow-auto">
         <div
           ref={cardRef}
-          className=" relative min-h-[650px] w-[1400px] rounded-3xl transition-all duration-500"
+          className=" relative min-h-[650px] w-[1600px] rounded-3xl transition-all duration-500 overflow-hidden"
           style={{
             backgroundColor: `${applyBrightness(avgColor, 0.3)}`,
             backdropFilter: "blur(50px)",
@@ -522,7 +526,7 @@ export default function ShowCaseInfo() {
                   <NextImage
                     ref={imgRef}
                     src={`https://api.hakush.in/hsr/UI/avatardrawcard/${avatarSelected?.id}.webp`}
-                    className="object-cover scale-[2]"
+                    className="object-cover scale-[2] overflow-hidden"
                     alt="Character Preview"
                     width={1024}
                     height={1024}
@@ -606,7 +610,6 @@ export default function ShowCaseInfo() {
                     <div className="flex flex-col gap-4">
                       {avatarData && avatarInfo && avatarSkillTree && traceShowCaseMap[avatarSelected?.baseType || ""]
                         && Object.values(traceShowCaseMap[avatarSelected?.baseType || ""] || []).map((item, index) => {
-
 
                           return (
                             <div key={`row-${index}`} className="flex flex-row items-center">
@@ -803,7 +806,6 @@ export default function ShowCaseInfo() {
                           </div>
                         </div>
 
-                        {/* Chỉ số */}
                         <div className="flex justify-center items-center flex-col gap-1 mt-1 ">
                           <div className="flex gap-1 text-sm ">
                             <div className="flex items-center gap-1 rounded bg-black/30 px-1 w-fit py-1">
@@ -872,7 +874,7 @@ export default function ShowCaseInfo() {
                           }}
                         />
                         <div>
-                          <span className="black-blur bg-black/50 flex w-5 justify-center rounded px-1.5 py-0.5">{setEffect.count}</span>
+                          <span className="black-blur bg-black/30 flex w-5 justify-center rounded px-1.5 py-0.5">{setEffect.count}</span>
                         </div>
                       </div>
                     )
@@ -881,65 +883,22 @@ export default function ShowCaseInfo() {
               </div>
 
               <div className="w-1/3 z-10">
-                <div className="flex h-[650px] flex-col justify-between py-3 text-lg">
+                <div className="flex h-[650px] flex-col justify-between py-3 mr-1 text-lg w-full" >
 
                   {relicStats?.map((relic, index) => {
                     if (!relic) return null
                     return (
-                      <div key={index} className="black-blur relative flex flex-row items-center rounded-s-lg border-l-2 p-1 border-yellow-600">
-                        <div className="flex">
-                          <NextImage src={relic?.img || ""} width={80} height={80} alt="Relic Icon" className="h-auto w-20" />
-
-                          <div
-                            className="absolute text-yellow-500 font-bold z-10"
-                            style={{
-                              left: '0.7rem',
-                              bottom: '-0.5rem',
-                              fontSize: '1.1rem',
-                              letterSpacing: '-0.1em',
-                              textShadow: `
-                            0 0 0.2em #f59e0b,
-                            0 0 0.4em #f59e0b,
-                            0 0 0.8em #f59e0b,
-                            -0.05em -0.05em 0.05em rgba(0,0,0,0.7),
-                            0.05em 0.05em 0.05em rgba(0,0,0,0.7)
-                          `
-                            }}
-                          >
-                            ✦✦✦✦✦
-                          </div>
-                        </div>
-                        <div className="mx-1 flex w-1/6 flex-col items-center justify-center">
-                          <NextImage src={relic?.mainAffix?.detail?.icon || ""} width={36} height={36} alt="Main Affix Icon" className="h-auto w-9" />
-                          <span className="text-base text-[#f1a23c]">{relic?.mainAffix?.valueAffix + relic?.mainAffix?.detail?.unit}</span>
-                          <span className="black-blur rounded px-1 text-xs">+{relic?.mainAffix?.level}</span>
-                        </div>
-                        <div style={{ opacity: 0.5, height: '80px', borderLeftWidth: '1px' }}></div>
-                        <div className="m-auto grid w-1/2 grid-cols-2 gap-2">
-                          {relic?.subAffix?.map((subAffix, index) => {
-                            if (!subAffix) return null
-                            return (
-                              <div key={index} className="flex flex-col">
-                                <div className="flex flex-row items-center">
-                                  {subAffix?.detail?.icon ? (
-                                    <NextImage src={subAffix?.detail?.icon || ""} width={36} height={36} alt="Sub Affix Icon" className="h-auto w-9" />
-                                  ) : (
-                                    <div className="h-9 w-9 bg-black/50 rounded flex items-center justify-center">
-                                      <span className="text-xs text-white">?</span>
-                                    </div>
-                                  )}
-                                  <span className="text-sm">+{subAffix?.valueAffix + subAffix?.detail?.unit}</span>
-                                </div>
-                              </div>
-                            )
-                          })}
-                        </div>
-                      </div>
+                      <RelicShowcase key={index} relic={relic} />
                     )
                   })}
-                  {(!relicStats || !relicStats?.length) && <div className="flex flex-col items-center justify-center ">
-                    <span className="text-lg">{transI18n("noRelicEquipped")}</span>
-                  </div>}
+
+                  {(!relicStats || !relicStats?.length) && (
+                    <div className="flex flex-col items-center justify-center">
+                      <div className="text-center p-6">
+                        <span className="text-lg text-white">{transI18n("noRelicEquipped")}</span>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
 
