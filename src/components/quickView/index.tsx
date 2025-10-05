@@ -442,79 +442,20 @@ export default function QuickView() {
 
             <div className="grid grid-cols-1 gap-2 justify-between py-3 text-lg">
 
-                  {relicStats?.map((relic, index) => {
+                {relicStats?.map((relic, index) => {
                     if (!relic) return null
                     return (
-                      <div
-                        key={index}
-                        className="relative w-full flex flex-row items-center rounded-s-lg border-l-2 p-1 border-yellow-600/60  bg-gradient-to-r from-yellow-600/20 to-transparent"
-                      >
-                        {/* Subtle glow overlay */}
-                        <div className="absolute inset-0 rounded-s-lg  pointer-events-none"></div>
-
-                        <div className="flex relative">
-                          <div className="absolute inset-0 rounded-lg blur-lg -z-10"></div>
-                          <NextImage
-                            src={relic?.img || ""}
-                            width={78}
-                            height={78}
-                            alt="Relic Icon"
-                            className="h-auto w-[78px] rounded-lg"
-                          />
-
-                          <div
-                            className="absolute text-yellow-400 font-bold z-10 drop-shadow-[0_0_6px_rgba(251,191,36,0.8)]"
-                            style={{
-                              left: '0.65rem',
-                              bottom: '-0.45rem',
-                              fontSize: '1.05rem',
-                              letterSpacing: '-0.1em',
-                            }}
-                          >
-                            ✦✦✦✦✦
-                          </div>
-                        </div>
-
-                        <div className=" flex w-1/6 flex-col items-center justify-center">
-                          <div className="relative">
-                            <div className="absolute inset-0 bg-yellow-500/15 rounded-full blur-md -z-10"></div>
-                            <NextImage
-                              src={relic?.mainAffix?.detail?.icon || ""}
-                              width={35}
-                              height={35}
-                              alt="Main Affix Icon"
-                              className="h-auto w-[35px]"
-                            />
-                          </div>
-                          <span className="text-base text-yellow-400 font-semibold drop-shadow-[0_0_4px_rgba(251,191,36,0.5)]">
-                            {relic?.mainAffix?.valueAffix + relic?.mainAffix?.detail?.unit}
-                          </span>
-                          <span className="bg-black/20 backdrop-blur-sm rounded px-1.5 py-0.5 text-xs border border-white/10">
-                            +{relic?.mainAffix?.level}
-                          </span>
-                        </div>
-
-                        <div style={{ opacity: 0.3, height: '78px', borderLeftWidth: '1px' }}></div>
-
-                        <div className="grid w-[65%] m-2 grid-cols-2 gap-1">
-                          {relic?.subAffix?.map((subAffix, index) => {
-                            if (!subAffix) return null
-                            return (
-                              <RelicShowcase key={index} relic={relic} />
-                            )
-                          })}
-                        </div>
-                      </div>
+                        <RelicShowcase key={index} relic={relic} />
                     )
-                  })}
+                })}
 
-                  {(!relicStats || !relicStats?.length) && (
+                {(!relicStats || !relicStats?.length) && (
                     <div className="flex flex-col items-center justify-center">
-                      <div className="text-center p-6 rounded-lg bg-black/40 backdrop-blur-sm border border-white/10">
-                        <span className="text-lg text-gray-400">{transI18n("noRelicEquipped")}</span>
-                      </div>
+                        <div className="text-center p-6 rounded-lg bg-black/40 backdrop-blur-sm border border-white/10">
+                            <span className="text-lg text-gray-400">{transI18n("noRelicEquipped")}</span>
+                        </div>
                     </div>
-                  )}
+                )}
             </div>
         </div>
     )

@@ -85,7 +85,7 @@ export default function RelicShowcase({
                                     </span>
                                     {subAffix.count > 1 && (
                                         <span className="ml-1 bg-yellow-600/20 text-yellow-400 rounded-full px-1 py-0.5 text-[10px] font-semibold border border-yellow-600/30 flex-shrink-0 leading-none">
-                                            {subAffix?.count}
+                                            {subAffix?.count-1}
                                         </span>
                                     )}
                                 </div>
