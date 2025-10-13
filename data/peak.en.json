@@ -59,7 +59,7 @@
             "LevelWinCondition": [],
             "Release": true,
             "ForbidExitBattle": true,
-            "MonsterWarningRatio": 1.1000000238419,
+            "MonsterWarningRatio": 1.1,
             "TrialAvatarList": []
           }
         ],
@@ -70,7 +70,7 @@
             "Desc": "Enemy target initially has <color=#f29e38ff><unbreak>#1[i]</unbreak></color> stacks of \"Resilient Armor,\" and each stack reduces DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Enemy targets lose 1 stack of \"Resilient Armor\" each time their Toughness is reduced to 0.",
             "Param": [
               2,
-              0.1500000001396984
+              0.15
             ]
           }
         ],
@@ -159,7 +159,7 @@
             "LevelWinCondition": [],
             "Release": true,
             "ForbidExitBattle": true,
-            "MonsterWarningRatio": 1.1000000238419,
+            "MonsterWarningRatio": 1.1,
             "TrialAvatarList": []
           }
         ],
@@ -169,7 +169,7 @@
             "Name": "Tempering",
             "Desc": "For every 1% HP the enemy target loses, reduces CRIT DMG dealt to them by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
             "Param": [
-              0.030000000027939677
+              0.03
             ]
           }
         ],
@@ -262,7 +262,7 @@
             "LevelWinCondition": [],
             "Release": true,
             "ForbidExitBattle": true,
-            "MonsterWarningRatio": 1.1000000238419,
+            "MonsterWarningRatio": 1.1,
             "TrialAvatarList": []
           }
         ],
@@ -272,7 +272,7 @@
             "Name": "Inversion",
             "Desc": "Each time after the enemy target is attacked, the attacker will lose HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of their own Max HP. This effect in Non-fatal.",
             "Param": [
-              0.02000000001862645
+              0.02
             ]
           },
           {
@@ -372,7 +372,7 @@
           "LevelWinCondition": [],
           "Release": true,
           "ForbidExitBattle": true,
-          "MonsterWarningRatio": 1.1000000238419,
+          "MonsterWarningRatio": 1.1,
           "TrialAvatarList": []
         }
       ],
@@ -382,7 +382,7 @@
           "Name": "Inversion",
           "Desc": "Each time after the enemy target is attacked, the attacker will lose HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of their own Max HP. This effect in Non-fatal.",
           "Param": [
-            0.02000000001862645
+            0.02
           ]
         },
         {
@@ -399,7 +399,7 @@
           "Name": "Sunder",
           "Desc": "When ally targets are being attacked by enemies, the \"Sunder\" effect will be inflicted on them. Each stack additionally causes the holder to lose HP equal to <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of their Max HP. This effect can be stacked indefinitely and cannot be dissipated. After targets with \"Sunder\" received a Shield from an ally target other than themselves or healing, all \"Sunder\" effects are dispelled on both targets.",
           "Param": [
-            0.007999999448657036
+            0.008
           ]
         }
       ],
@@ -439,7 +439,7 @@
           "Name": "Think Outside the Box",
           "Desc": "When the number of ally targets currently on the field is not 4, all allies' dealt DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
           "Param": [
-            0.6000000005587935
+            0.6
           ]
         },
         {
@@ -447,8 +447,8 @@
           "Name": "Infantry and Calvary",
           "Desc": "Whenever any ally uses their Ultimate, ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of target's DEF. After Ultimate deals DMG, the next Skill will ignore <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of target's DEF.",
           "Param": [
-            0.40000000037252903,
-            0.40000000037252903
+            0.4,
+            0.4
           ]
         },
         {
@@ -456,8 +456,8 @@
           "Name": "Hammer and Anvil",
           "Desc": "After receiving Shield effects or healing from ally targets (excluding this unit), reduces DMG taken by this unit by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, and increases All-Type RES PEN by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> for <color=#f29e38ff><unbreak>#3[i]</unbreak></color> turn(s).",
           "Param": [
-            0.25000000023283064,
-            0.20000000018626451,
+            0.25,
+            0.2,
             2
           ]
         }
@@ -509,7 +509,7 @@
           "LevelWinCondition": [],
           "Release": true,
           "ForbidExitBattle": true,
-          "MonsterWarningRatio": 1.1000000238419,
+          "MonsterWarningRatio": 1.1,
           "TrialAvatarList": []
         }
       ],
@@ -519,7 +519,7 @@
           "Name": "Inversion+",
           "Desc": "Each time after the enemy target is attacked, the attacker will lose HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of their own Max HP. This effect in Non-fatal.",
           "Param": [
-            0.030000000027939677
+            0.03
           ]
         },
         {
@@ -536,7 +536,7 @@
           "Name": "Sunder++",
           "Desc": "When ally targets are being attacked by enemies, the \"Sunder++\" effect will be inflicted on them. Each stack additionally causes the holder to lose HP equal to <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of their Max HP. This effect can be stacked indefinitely and cannot be dissipated. After targets with \"Sunder++\" received a Shield from an ally target other than themselves or healing, all \"Sunder++\" effects are dispelled on both targets.",
           "Param": [
-            0.015999999595806003
+            0.016
           ]
         }
       ],
@@ -625,7 +625,7 @@
             "LevelWinCondition": [],
             "Release": true,
             "ForbidExitBattle": true,
-            "MonsterWarningRatio": 1.1000000238419,
+            "MonsterWarningRatio": 1.1,
             "TrialAvatarList": []
           }
         ],
@@ -717,7 +717,7 @@
             "LevelWinCondition": [],
             "Release": true,
             "ForbidExitBattle": true,
-            "MonsterWarningRatio": 1.1000000238419,
+            "MonsterWarningRatio": 1.1,
             "TrialAvatarList": []
           }
         ],
@@ -727,8 +727,8 @@
             "Name": "Interference",
             "Desc": "After the enemy target uses an attack, randomly causes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> or <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> action delay to the attacked target.",
             "Param": [
-              0.05000000004656613,
-              0.10000000009313226
+              0.05,
+              0.1
             ]
           },
           {
@@ -823,7 +823,7 @@
             "LevelWinCondition": [],
             "Release": true,
             "ForbidExitBattle": true,
-            "MonsterWarningRatio": 1.1000000238419,
+            "MonsterWarningRatio": 1.1,
             "TrialAvatarList": []
           }
         ],
@@ -834,7 +834,7 @@
             "Desc": "Enemy target initially has <color=#f29e38ff><unbreak>#1[i]</unbreak></color> stacks of \"Resilient Armor,\" and each stack reduces DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Enemy targets lose 1 stack of \"Resilient Armor\" each time their Toughness is reduced to 0.",
             "Param": [
               2,
-              0.1500000001396984
+              0.15
             ]
           }
         ],
@@ -917,7 +917,7 @@
           "LevelWinCondition": [],
           "Release": true,
           "ForbidExitBattle": true,
-          "MonsterWarningRatio": 1.1000000238419,
+          "MonsterWarningRatio": 1.1,
           "TrialAvatarList": []
         }
       ],
@@ -931,12 +931,12 @@
           ]
         },
         {
-          "Id": 3033026,
-          "Name": "Interference+",
-          "Desc": "After the enemy target uses an attack, randomly causes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> or <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> action delay to the attacked target.",
+          "Id": 3033012,
+          "Name": "Energy Absorption+",
+          "Desc": "After an enemy target receives an attack, reduces the attacker's Energy by <color=#f29e38ff><unbreak>#1[i]</unbreak></color> points, except when the attacker's Energy is maxed. When an enemy target is defeated, the attacker regenerates <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Energy.",
           "Param": [
-            0.05000000004656613,
-            0.20000000018626451
+            3,
+            10
           ]
         },
         {
@@ -944,7 +944,7 @@
           "Name": "Sunder",
           "Desc": "When ally targets are being attacked by enemies, the \"Sunder\" effect will be inflicted on them. Each stack additionally causes the holder to lose HP equal to <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of their Max HP. This effect can be stacked indefinitely and cannot be dissipated. After targets with \"Sunder\" received a Shield from an ally target other than themselves or healing, all \"Sunder\" effects are dispelled on both targets.",
           "Param": [
-            0.007999999448657036
+            0.008
           ]
         }
       ],
@@ -971,8 +971,8 @@
           "Name": "Sanguine Vitality",
           "Desc": "Increases CRIT DMG of all ally targets by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When using \"Healing Rainbow\", the increased Max HP is further raised by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
           "Param": [
-            0.5000000004656613,
-            0.6000000005587935
+            0.5,
+            0.6
           ]
         },
         {
@@ -980,7 +980,7 @@
           "Name": "Power Surge",
           "Desc": "Increases all allies' Basic ATK, Skill, and Ultimate DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When using \"Healing Rainbow,\" additionally increases all allies' ATK by <color=#f29e38ff><unbreak>#2[i]</unbreak></color> points.",
           "Param": [
-            0.8000000007450581,
+            0.8,
             2000
           ]
         },
@@ -989,8 +989,8 @@
           "Name": "Fluid Dash",
           "Desc": "All allies' DoT All-Type RES PEN increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When using \"Healing Rainbow,\" additionally increases all allies' SPD by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
           "Param": [
-            0.40000000037252903,
-            0.3000000002793968
+            0.4,
+            0.3
           ]
         }
       ],
@@ -1036,7 +1036,7 @@
           "LevelWinCondition": [],
           "Release": true,
           "ForbidExitBattle": true,
-          "MonsterWarningRatio": 1.1000000238419,
+          "MonsterWarningRatio": 1.1,
           "TrialAvatarList": []
         }
       ],
@@ -1050,12 +1050,12 @@
           ]
         },
         {
-          "Id": 3033027,
-          "Name": "Interference++",
-          "Desc": "After the enemy target uses an attack, randomly causes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> or <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> action delay to the attacked target.",
+          "Id": 3033013,
+          "Name": "Energy Absorption++",
+          "Desc": "After an enemy target receives an attack, reduces the attacker's Energy by <color=#f29e38ff><unbreak>#1[i]</unbreak></color> points, except when the attacker's Energy is maxed. When an enemy target is defeated, the attacker regenerates <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Energy.",
           "Param": [
-            0.05000000004656613,
-            0.3000000002793968
+            4,
+            10
           ]
         },
         {
@@ -1063,7 +1063,7 @@
           "Name": "Sunder++",
           "Desc": "When ally targets are being attacked by enemies, the \"Sunder++\" effect will be inflicted on them. Each stack additionally causes the holder to lose HP equal to <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of their Max HP. This effect can be stacked indefinitely and cannot be dissipated. After targets with \"Sunder++\" received a Shield from an ally target other than themselves or healing, all \"Sunder++\" effects are dispelled on both targets.",
           "Param": [
-            0.015999999595806003
+            0.016
           ]
         }
       ],
