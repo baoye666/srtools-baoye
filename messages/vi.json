@@ -253,6 +253,8 @@
 		"disableCensorship": "Tắt kiểm duyệt",
 		"hideUI": "Ẩn giao diện",
 		"theoryCraftMode": "Chế độ Theorycraft",
-		"cycleCount": "Số vòng"
+		"cycleCount": "Số vòng",
+		"pleaseSelectAllSubStats": "Vui lòng chọn tất cả chỉ số phụ",
+		"subStatRollCountCannotBeZero": "Số dòng của chỉ số phụ không thể bằng 0"
 	}
 }

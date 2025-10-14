@@ -254,6 +254,8 @@
 		"disableCensorship": "Disable Censorship",
 		"hideUI": "Hide UI",
 		"theoryCraftMode": "Theorycraft Mode",
-		"cycleCount": "Cycle Count"
+		"cycleCount": "Cycle Count",
+		"pleaseSelectAllSubStats": "Please select all sub stats",
+		"subStatRollCountCannotBeZero": "Sub stat roll count cannot be zero"
 	}
 }

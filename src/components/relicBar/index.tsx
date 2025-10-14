@@ -2,7 +2,7 @@
 import useRelicStore from '@/stores/relicStore';
 import useUserDataStore from '@/stores/userDataStore';
 import { AffixDetail, RelicDetail } from '@/types';
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import SelectCustomImage from '../select/customSelectImage';
 import { calcAffixBonus, calcMainAffixBonus, randomPartition, randomStep, replaceByParam } from '@/helper';
 import useAffixStore from '@/stores/affixStore';
@@ -14,6 +14,7 @@ import { toast } from 'react-toastify';
 import { useTranslations } from 'next-intl';
 import cloneDeep from 'lodash/cloneDeep'
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function RelicMaker() {
     const { avatars, setAvatars } = useUserDataStore()
@@ -37,6 +38,7 @@ export default function RelicMaker() {
         popHistory,
         addHistory,
     } = useRelicMakerStore()
+    const [error, setError] = useState<string>("");
 
     const relicSets = useMemo(() => {
         const listSet: Record<string, RelicDetail> = {};
@@ -123,6 +125,7 @@ export default function RelicMaker() {
     }, [mapMainAffix, selectedRelicSlot, selectedMainStat, selectedRelicLevel]);
 
     const handleSubStatChange = (key: string, index: number, rollCount: number, stepCount: number) => {
+        setError("");
         const newSubAffixes = cloneDeep(listSelectedSubStats);
         if (!subAffixOptions[key]) {
             newSubAffixes[index].affixId = "";
@@ -142,6 +145,7 @@ export default function RelicMaker() {
     };
 
     const handlerRollback = (index: number) => {
+        setError("");
         if (!preSelectedSubStats[index]) return;
 
         const keys = Object.keys(preSelectedSubStats[index]);
@@ -204,8 +208,21 @@ export default function RelicMaker() {
         const avatar = avatars[avatarSelected?.id || ""];
         if (!selectedRelicSet || !selectedMainStat || !selectedRelicLevel || !selectedRelicSlot) {
             toast.error(transI18n("pleaseSelectAllOptions"));
+            setError(transI18n("pleaseSelectAllOptions"));
             return;
         };
+
+        if (listSelectedSubStats.find((item) => item.affixId === "")) {
+            setError(transI18n("pleaseSelectAllSubStats"));
+            return;
+        };
+
+        for (let i = 0; i < listSelectedSubStats.length; i++) {
+            if (listSelectedSubStats[i].rollCount === 0) {
+                setError(transI18n("subStatRollCountCannotBeZero"));
+                return;
+            }
+        }
         if (avatar) {
             avatar.profileList[avatar.profileSelect].relics[selectedRelicSlot] = {
                 level: selectedRelicLevel,
@@ -315,6 +332,26 @@ export default function RelicMaker() {
                                 <div className="text-center text-2xl font-bold mt-2">{selectedRelicLevel}</div>
                             </div>
                         </div>
+                        <AnimatePresence>
+                            {error && (
+                                <motion.p
+                                    key="error"
+                                    initial={{ x: 0 }}
+                                    animate={{ x: [0, -2, 2, -2, 2, 0] }}
+                                    transition={{
+                                        duration: 6,
+                                        repeat: Infinity,
+                                        ease: "easeInOut",
+                                        repeatDelay: 1.5,
+                                    }}
+                                    className="text-error my-2 text-center font-bold"
+                                >
+                                    {error}!
+                                </motion.p>
+                            )}
+                        </AnimatePresence>
+
+
 
                         {/* Save Button */}
                         <button onClick={handlerSaveRelic} className="btn btn-success w-full">

@@ -253,6 +253,8 @@
 		"disableCensorship": "検閲を無効化",
 		"hideUI": "UIを非表示",
 		"theoryCraftMode": "シアリークラフトモード",
-		"cycleCount": "サイクル数"
+		"cycleCount": "サイクル数",
+		"pleaseSelectAllSubStats": "すべてのサブステータスを選択してください",
+		"subStatRollCountCannotBeZero": "サブステータスの行数は0にできません"
 	}
 }

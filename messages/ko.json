@@ -253,6 +253,8 @@
 		"disableCensorship": "검열 비활성화",
 		"hideUI": "UI 숨기기",
 		"theoryCraftMode": "이론 제작 모드",
-		"cycleCount": "사이클 수"
+		"cycleCount": "사이클 수",
+		"pleaseSelectAllSubStats": "모든 부옵션을 선택하세요",
+		"subStatRollCountCannotBeZero": "부옵션의 줄 수는 0일 수 없습니다"
 	}
 }
