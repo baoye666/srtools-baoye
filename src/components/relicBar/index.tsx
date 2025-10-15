@@ -205,6 +205,7 @@ export default function RelicMaker() {
     };
 
     const handlerSaveRelic = () => {
+        setError("");
         const avatar = avatars[avatarSelected?.id || ""];
         if (!selectedRelicSet || !selectedMainStat || !selectedRelicLevel || !selectedRelicSlot) {
             toast.error(transI18n("pleaseSelectAllOptions"));
@@ -217,12 +218,6 @@ export default function RelicMaker() {
             return;
         };
 
-        for (let i = 0; i < listSelectedSubStats.length; i++) {
-            if (listSelectedSubStats[i].rollCount === 0) {
-                setError(transI18n("subStatRollCountCannotBeZero"));
-                return;
-            }
-        }
         if (avatar) {
             avatar.profileList[avatar.profileSelect].relics[selectedRelicSlot] = {
                 level: selectedRelicLevel,
@@ -240,6 +235,7 @@ export default function RelicMaker() {
         }
         setAvatars({ ...avatars });
         setIsOpenRelic(false);
+
         toast.success(transI18n("relicSavedSuccessfully"));
     }
 
