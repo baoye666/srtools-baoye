@@ -208,7 +208,6 @@ export default function RelicMaker() {
         setError("");
         const avatar = avatars[avatarSelected?.id || ""];
         if (!selectedRelicSet || !selectedMainStat || !selectedRelicLevel || !selectedRelicSlot) {
-            toast.error(transI18n("pleaseSelectAllOptions"));
             setError(transI18n("pleaseSelectAllOptions"));
             return;
         };
