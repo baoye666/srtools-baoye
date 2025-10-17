@@ -10,7 +10,6 @@
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
-    "baseUrl": ".",
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,

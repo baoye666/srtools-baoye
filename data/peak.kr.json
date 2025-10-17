@@ -923,14 +923,6 @@
       ],
       "TagList": [
         {
-          "Id": 3033023,
-          "Name": "자극",
-          "Desc": "적이 <color=#f29e38ff><unbreak>#1[i]</unbreak></color>회 피격된 후 즉시 행동하며, 해당 카운트는 적의 턴 시작 시 초기화된다",
-          "Param": [
-            6
-          ]
-        },
-        {
           "Id": 3033012,
           "Name": "에너지 흡수+",
           "Desc": "매번 적이 피격된 후 공격자의 에너지가 <color=#f29e38ff><unbreak>#1[i]</unbreak></color>pt 감소하지만, 공격자의 에너지가 최대치 도달 시 감소하지 않는다. 적이 처치될 시 공격자의 에너지를 고정으로 <color=#f29e38ff><unbreak>#2[i]</unbreak></color>pt 회복한다",
@@ -959,7 +951,7 @@
           "Ability": "",
           "ParamList": [],
           "ClearPreviousAbility": true,
-          "EliteGroup": 348
+          "EliteGroup": 353
         }
       }
     },
@@ -1041,14 +1033,6 @@
         }
       ],
       "TagList": [
-        {
-          "Id": 3033024,
-          "Name": "자극+",
-          "Desc": "적이 <color=#f29e38ff><unbreak>#1[i]</unbreak></color>회 피격된 후 즉시 행동하며, 해당 카운트는 적의 턴 시작 시 초기화된다",
-          "Param": [
-            5
-          ]
-        },
         {
           "Id": 3033013,
           "Name": "에너지 흡수++",

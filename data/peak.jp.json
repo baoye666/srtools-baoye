@@ -923,14 +923,6 @@
       ],
       "TagList": [
         {
-          "Id": 3033023,
-          "Name": "挑発",
-          "Desc": "敵は攻撃を<color=#f29e38ff><unbreak>#1[i]</unbreak></color>回受けた後即座に行動する。攻撃回数のカウントは敵のターンが回ってきた時にクリアされる。",
-          "Param": [
-            6
-          ]
-        },
-        {
           "Id": 3033012,
           "Name": "エネルギー吸収+",
           "Desc": "敵が攻撃を受けるたびに、攻撃者のEP-<color=#f29e38ff><unbreak>#1[i]</unbreak></color>。ただし、攻撃者のEPが満タンの場合はEPは減らない。敵が倒された時、攻撃者のEPを固定で<color=#f29e38ff><unbreak>#2[i]</unbreak></color>回復する。",
@@ -959,7 +951,7 @@
           "Ability": "",
           "ParamList": [],
           "ClearPreviousAbility": true,
-          "EliteGroup": 348
+          "EliteGroup": 353
         }
       }
     },
@@ -1041,14 +1033,6 @@
         }
       ],
       "TagList": [
-        {
-          "Id": 3033024,
-          "Name": "挑発+",
-          "Desc": "敵は攻撃を<color=#f29e38ff><unbreak>#1[i]</unbreak></color>回受けた後即座に行動する。攻撃回数のカウントは敵のターンが回ってきた時にクリアされる。",
-          "Param": [
-            5
-          ]
-        },
         {
           "Id": 3033013,
           "Name": "エネルギー吸収++",

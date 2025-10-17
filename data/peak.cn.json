@@ -923,14 +923,6 @@
       ],
       "TagList": [
         {
-          "Id": 3033023,
-          "Name": "挑衅",
-          "Desc": "敌方目标受到<color=#f29e38ff><unbreak>#1[i]</unbreak></color>次攻击后立即行动，该计数在敌方目标回合开始时清空。",
-          "Param": [
-            6
-          ]
-        },
-        {
           "Id": 3033012,
           "Name": "吸能+",
           "Desc": "敌方目标每次受到攻击后都会使攻击者能量降低<color=#f29e38ff><unbreak>#1[i]</unbreak></color>点，但攻击者能量达到上限时不会降低；敌方目标被消灭时固定恢复攻击者<color=#f29e38ff><unbreak>#2[i]</unbreak></color>点能量。",
@@ -959,7 +951,7 @@
           "Ability": "",
           "ParamList": [],
           "ClearPreviousAbility": true,
-          "EliteGroup": 348
+          "EliteGroup": 353
         }
       }
     },
@@ -1041,14 +1033,6 @@
         }
       ],
       "TagList": [
-        {
-          "Id": 3033024,
-          "Name": "挑衅+",
-          "Desc": "敌方目标受到<color=#f29e38ff><unbreak>#1[i]</unbreak></color>次攻击后立即行动，该计数在敌方目标回合开始时清空。",
-          "Param": [
-            5
-          ]
-        },
         {
           "Id": 3033013,
           "Name": "吸能++",
