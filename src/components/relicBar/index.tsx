@@ -11,8 +11,7 @@ import useAvatarStore from '@/stores/avatarStore';
 import useModelStore from '@/stores/modelStore';
 import useRelicMakerStore from '@/stores/relicMakerStore';
 import { toast } from 'react-toastify';
-import { useTranslations } from 'next-intl';
-import cloneDeep from 'lodash/cloneDeep'
+import { useTranslations } from 'next-intl'
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -81,7 +80,7 @@ export default function RelicMaker() {
         const mainProp = mainAffixMap[selectedMainStat]?.property;
         if (!mainProp) return;
 
-        const newSubAffixes = cloneDeep(listSelectedSubStats);
+        const newSubAffixes = structuredClone(listSelectedSubStats);
         let updated = false;
 
         for (let i = 0; i < newSubAffixes.length; i++) {
@@ -126,7 +125,7 @@ export default function RelicMaker() {
 
     const handleSubStatChange = (key: string, index: number, rollCount: number, stepCount: number) => {
         setError("");
-        const newSubAffixes = cloneDeep(listSelectedSubStats);
+        const newSubAffixes = structuredClone(listSelectedSubStats);
         if (!subAffixOptions[key]) {
             newSubAffixes[index].affixId = "";
             newSubAffixes[index].property = "";
@@ -151,8 +150,8 @@ export default function RelicMaker() {
         const keys = Object.keys(preSelectedSubStats[index]);
         if (keys.length <= 1) return;
 
-        const newSubAffixes = cloneDeep(listSelectedSubStats);
-        const listHistory = cloneDeep(preSelectedSubStats[index]);
+        const newSubAffixes = structuredClone(listSelectedSubStats);
+        const listHistory = structuredClone(preSelectedSubStats[index]);
         const secondLastKey = listHistory.length - 2;
         const preSubAffixes = { ...listHistory[secondLastKey] };
         newSubAffixes[index].rollCount = preSubAffixes.rollCount;
@@ -162,7 +161,7 @@ export default function RelicMaker() {
     };
 
     const resetSubStat = (index: number) => {
-        const newSubAffixes = cloneDeep(listSelectedSubStats);
+        const newSubAffixes = structuredClone(listSelectedSubStats);
         resetHistory(index);
         newSubAffixes[index].affixId = "";
         newSubAffixes[index].property = "";
@@ -172,7 +171,7 @@ export default function RelicMaker() {
     };
 
     const randomizeStats = () => {
-        const newSubAffixes = cloneDeep(listSelectedSubStats);
+        const newSubAffixes = structuredClone(listSelectedSubStats);
         const exKeys = Object.keys(exSubAffixOptions);
         for (let i = 0; i < newSubAffixes.length; i++) {
             const keys = Object.keys(subAffixOptions).filter((key) => !exKeys.includes(key));
@@ -192,7 +191,7 @@ export default function RelicMaker() {
     };
 
     const randomizeRolls = () => {
-        const newSubAffixes = cloneDeep(listSelectedSubStats);
+        const newSubAffixes = structuredClone(listSelectedSubStats);
         const randomRolls = randomPartition(9, listSelectedSubStats.length);
         for (let i = 0; i < listSelectedSubStats.length; i++) {
             newSubAffixes[i].rollCount = randomRolls[i];

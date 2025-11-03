@@ -425,6 +425,7 @@ export default function AvatarInfo() {
                                                     <Image
                                                         width={904}
                                                         height={1260}
+                                                        priority
                                                         src={`https://api.hakush.in/hsr/UI/lightconemaxfigures/${lightconeDetail.id}.webp`}
                                                         className="w-full h-full rounded-lg object-cover shadow-lg"
                                                         alt="Lightcone"

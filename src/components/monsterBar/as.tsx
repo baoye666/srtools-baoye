@@ -8,7 +8,6 @@ import useUserDataStore from "@/stores/userDataStore";
 import useMonsterStore from "@/stores/monsterStore";
 import Image from "next/image";
 import { MonsterStore } from "@/types";
-import cloneDeep from 'lodash/cloneDeep'
 import useMazeStore from "@/stores/mazeStore";
 import { useTranslations } from "next-intl";
 import { listCurrentLanguageApi } from "@/constant/constant";
@@ -55,7 +54,7 @@ export default function AsBar() {
 
     useEffect(() => {
         if (!challengeSelected || as_config.event_id === 0 || as_config.challenge_id === 0) return
-        const newBattleConfig = cloneDeep(as_config)
+        const newBattleConfig = structuredClone(as_config)
         newBattleConfig.cycle_count = 0
 
         newBattleConfig.blessings = []

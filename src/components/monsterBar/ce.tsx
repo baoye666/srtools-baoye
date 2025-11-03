@@ -17,7 +17,6 @@ import useLocaleStore from "@/stores/localeStore";
 import { getLocaleName } from "@/helper";
 import Image from "next/image";
 import { MonsterBasic } from "@/types";
-import cloneDeep from 'lodash/cloneDeep'
 import { useTranslations } from "next-intl";
 import { listCurrentLanguageApi } from "@/constant/constant";
 import useGlobalStore from "@/stores/globalStore";
@@ -117,7 +116,7 @@ export default function CeBar() {
         if (!ce_config) return
         if (!extraData || !extraData.theory_craft?.mode) return
     
-        const newExtraData = cloneDeep(extraData)
+        const newExtraData = structuredClone(extraData)
         if (!newExtraData.theory_craft.hp) {
             newExtraData.theory_craft.hp = {}
         }
@@ -253,7 +252,7 @@ export default function CeBar() {
                                         onClick={(e) => {
                                             e.stopPropagation()
 
-                                            const newCeConfig = cloneDeep(ce_config)
+                                            const newCeConfig = structuredClone(ce_config)
                                             const waves = newCeConfig.monsters
                                             const temp = waves[waveIndex - 1]
                                             waves[waveIndex - 1] = waves[waveIndex]
@@ -270,7 +269,7 @@ export default function CeBar() {
                                         disabled={waveIndex === ce_config.monsters.length - 1}
                                         onClick={(e) => {
                                             e.stopPropagation()
-                                            const newCeConfig = cloneDeep(ce_config)
+                                            const newCeConfig = structuredClone(ce_config)
                                             const waves = newCeConfig.monsters
                                             const temp = waves[waveIndex + 1]
                                             waves[waveIndex + 1] = waves[waveIndex]
@@ -285,7 +284,7 @@ export default function CeBar() {
                                     <button
                                         onClick={(e) => {
                                             e.stopPropagation()
-                                            const newCeConfig = cloneDeep(ce_config)
+                                            const newCeConfig = structuredClone(ce_config)
                                             const waves = newCeConfig.monsters
                                             const temp = waves[waveIndex]
                                             newCeConfig.monsters.push([...temp])
@@ -298,7 +297,7 @@ export default function CeBar() {
                                     <button
                                         onClick={(e) => {
                                             e.stopPropagation()
-                                            const newCeConfig = cloneDeep(ce_config)
+                                            const newCeConfig = structuredClone(ce_config)
                                             newCeConfig.monsters.splice(waveIndex, 1)
                                             setCeConfig(newCeConfig)
                                         }}
@@ -316,7 +315,7 @@ export default function CeBar() {
                                                 <button
                                                     className="btn btn-xs btn-success absolute -top-2 right-12 opacity-50 group-hover:opacity-100 transition-opacity"
                                                     onClick={() => {
-                                                        const newCeConfig = cloneDeep(ce_config)
+                                                        const newCeConfig = structuredClone(ce_config)
 
                                                         newCeConfig.monsters[waveIndex].push({
                                                             monster_id: Number(member.monster_id),
@@ -331,7 +330,7 @@ export default function CeBar() {
                                                 <button
                                                     className="btn btn-xs btn-error absolute -top-2 right-2 opacity-50 group-hover:opacity-100 transition-opacity"
                                                     onClick={() => {
-                                                        const newCeConfig = cloneDeep(ce_config)
+                                                        const newCeConfig = structuredClone(ce_config)
                                                         newCeConfig.monsters[waveIndex].splice(memberIndex, 1)
                                                         setCeConfig(newCeConfig)
                                                     }}
@@ -379,7 +378,7 @@ export default function CeBar() {
                                                                 if (isNaN(val) || val < 1 || val > 95) return
                                                                 if (ce_config.monsters[waveIndex][memberIndex].level === val) return
 
-                                                                const newCeConfig = cloneDeep(ce_config)
+                                                                const newCeConfig = structuredClone(ce_config)
                                                                 newCeConfig.monsters[waveIndex][memberIndex].level = val
                                                                 setCeConfig(newCeConfig)
                                                             }}
@@ -397,7 +396,7 @@ export default function CeBar() {
                                                                     const val = Number(e.target.value)
                                                                     if (isNaN(val) || val < 0) return
                             
-                                                                    const newData = cloneDeep(extraData)
+                                                                    const newData = structuredClone(extraData)
 
                                                                     if (!newData?.theory_craft?.hp?.[(waveIndex + 1).toString()]) {
                                                                       newData.theory_craft.hp[(waveIndex + 1).toString()] = []
@@ -473,7 +472,7 @@ export default function CeBar() {
                                                             key={monster.id}
                                                             className="flex items-center gap-2 p-2 hover:bg-success/40 rounded cursor-pointer"
                                                             onClick={() => {
-                                                                const newCeConfig = cloneDeep(ce_config)
+                                                                const newCeConfig = structuredClone(ce_config)
                                                                 newCeConfig.monsters[waveIndex].push({
                                                                     monster_id: Number(monster.id),
                                                                     level: 95,
@@ -543,7 +542,7 @@ export default function CeBar() {
                     <div className="card-body p-8">
                         <button
                             onClick={() => {
-                                const newCeConfig = cloneDeep(ce_config)
+                                const newCeConfig = structuredClone(ce_config)
                                 newCeConfig.monsters.push([])
                                 setCeConfig(newCeConfig)
                             }}

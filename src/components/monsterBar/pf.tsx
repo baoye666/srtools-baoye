@@ -8,7 +8,6 @@ import useUserDataStore from "@/stores/userDataStore";
 import useMonsterStore from "@/stores/monsterStore";
 import Image from "next/image";
 import { MonsterStore } from "@/types";
-import cloneDeep from 'lodash/cloneDeep'
 import useMazeStore from "@/stores/mazeStore";
 import { useTranslations } from "next-intl";
 
@@ -35,7 +34,7 @@ export default function PfBar() {
         if (!challengeSelected || pf_config.event_id === 0 || pf_config.challenge_id === 0) {
             return
         }
-        const newBattleConfig = cloneDeep(pf_config)
+        const newBattleConfig = structuredClone(pf_config)
         newBattleConfig.cycle_count = 4
         newBattleConfig.blessings = []
         if (pf_config.buff_id !== 0) {

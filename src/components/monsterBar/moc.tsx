@@ -8,10 +8,9 @@ import useLocaleStore from "@/stores/localeStore";
 import useUserDataStore from "@/stores/userDataStore";
 import useMonsterStore from "@/stores/monsterStore";
 import Image from "next/image";
-import { MonsterStore } from "@/types";
-import cloneDeep from 'lodash/cloneDeep'
 import useMazeStore from "@/stores/mazeStore";
 import { useTranslations } from "next-intl";
+import { MonsterStore } from "@/types";
 
 export default function MocBar() {
     const { MOCEvent, mapMOCInfo } = useEventStore()
@@ -32,7 +31,7 @@ export default function MocBar() {
     useEffect(() => {
         const challenge = mapMOCInfo[moc_config.event_id.toString()]?.find((moc) => moc.Id === moc_config.challenge_id)
         if (moc_config.event_id !== 0 && moc_config.challenge_id !== 0 && challenge) {
-            const newBattleConfig = cloneDeep(moc_config)
+            const newBattleConfig = structuredClone(moc_config)
             newBattleConfig.cycle_count = 0
             if (moc_config.use_cycle_count) {
                 newBattleConfig.cycle_count = challenge.Countdown

@@ -7,7 +7,6 @@ import useLocaleStore from "@/stores/localeStore";
 import useUserDataStore from "@/stores/userDataStore";
 import useMonsterStore from "@/stores/monsterStore";
 import Image from "next/image";
-import cloneDeep from 'lodash/cloneDeep'
 import { useTranslations } from "next-intl";
 import { MonsterStore } from "@/types";
 
@@ -39,7 +38,7 @@ export default function PeakBar() {
     }, [peak_config, mapPEAKInfo])
 
     const challengeSelected = useMemo(() => {
-        const challenge = cloneDeep(listFloor.find((peak) => peak.Id === peak_config.challenge_id))
+        const challenge = structuredClone(listFloor.find((peak) => peak.Id === peak_config.challenge_id))
         if (
             challenge
             && challenge.Id === mapPEAKInfo?.[peak_config?.event_id?.toString()]?.BossLevel?.Id
@@ -57,7 +56,7 @@ export default function PeakBar() {
     useEffect(() => {
         if (!challengeSelected) return
         if (peak_config.event_id !== 0 && peak_config.challenge_id !== 0 && challengeSelected) {
-            const newBattleConfig = cloneDeep(peak_config)
+            const newBattleConfig = structuredClone(peak_config)
             newBattleConfig.cycle_count = 6
             newBattleConfig.blessings = []
             for (const value of challengeSelected.TagList) {

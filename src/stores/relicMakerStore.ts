@@ -1,6 +1,4 @@
 import { create } from 'zustand'
-import cloneDeep from 'lodash/cloneDeep'
-
 interface RelicMakerState {
     selectedRelicSlot: string;
     selectedMainStat: string;
@@ -185,14 +183,14 @@ const useRelicMakerStore = create<RelicMakerState>((set) => ({
         return {}
     }),
     popHistory: (index: number) => set((state) => {
-        const newPreSelectedSubStats = cloneDeep(state.preSelectedSubStats);
+        const newPreSelectedSubStats = structuredClone(state.preSelectedSubStats);
         const copied = state.preSelectedSubStats[index].map(item => ({ ...item }));
         copied.pop();
         newPreSelectedSubStats[index] = copied;
         return { preSelectedSubStats: newPreSelectedSubStats };
     }),
     addHistory: (index, affix) => set((state) => {
-        const newPreSelectedSubStats = cloneDeep(state.preSelectedSubStats);
+        const newPreSelectedSubStats = structuredClone(state.preSelectedSubStats);
 
         const currentList = state.preSelectedSubStats[index];
         const copied = currentList ? currentList.map(item => ({ ...item })) : [
@@ -203,7 +201,7 @@ const useRelicMakerStore = create<RelicMakerState>((set) => ({
         ];
 
         if (copied) {
-            const newAffix = cloneDeep(affix);
+            const newAffix = structuredClone(affix);
             copied.push(newAffix);
             newPreSelectedSubStats[index] = copied;
             return { preSelectedSubStats: newPreSelectedSubStats };

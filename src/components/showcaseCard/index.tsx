@@ -739,6 +739,7 @@ export default function ShowCaseInfo() {
                           alt="Lightcone Image"
                           width={904}
                           height={1206}
+                          priority
                           style={{
                             top: '0px',
                             left: '6px',

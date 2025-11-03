@@ -10,7 +10,6 @@ import Image from "next/image";
 import { replaceByParam } from "@/helper";
 import { mappingStats } from "@/constant/constant";
 import { StatusAddType } from "@/types";
-import cloneDeep from "lodash/cloneDeep";
 import { toast } from "react-toastify";
 
 export default function SkillsInfo() {
@@ -115,7 +114,7 @@ export default function SkillsInfo() {
             toast.error(transI18n("maxAllFailed"))
             return
         }
-        const newData = cloneDeep(avatarData)
+        const newData = structuredClone(avatarData)
         newData.data.skills = Object.values(avatarSkillTree).reduce((acc, dataPointEntry) => {
             const firstEntry = Object.values(dataPointEntry)[0];
             if (firstEntry) {
@@ -129,7 +128,7 @@ export default function SkillsInfo() {
 
     const handlerChangeStatusTrace = (status: boolean) => {
         if (!avatarData || !skillInfo) return
-        const newData = cloneDeep(avatarData)
+        const newData = structuredClone(avatarData)
         newData.data.skills[skillInfo?.PointID] = status ? 1 : 0
 
         if (!status && traceLink?.[avatarSelected?.baseType || ""]?.[skillSelected || ""]) {
@@ -286,7 +285,7 @@ export default function SkillsInfo() {
                                             max={skillInfo?.MaxLevel || 1}
                                             value={avatarData?.data.skills?.[skillInfo?.PointID] || 1}
                                             onChange={(e) => {
-                                                const newData = cloneDeep(avatarData)
+                                                const newData = structuredClone(avatarData)
                                                 newData.data.skills[skillInfo?.PointID] = parseInt(e.target.value)
                                                 setAvatar(newData)
                                             }}
@@ -308,12 +307,12 @@ export default function SkillsInfo() {
                                         onChange={(e) => {
                                             if (traceButtons?.find((btn) => btn.id === skillSelected)?.size === "special") {
                                                 if (e.target.checked) {
-                                                    const newData = cloneDeep(avatarData)
+                                                    const newData = structuredClone(avatarData)
                                                     newData.data.skills[skillInfo?.PointID] = 1
                                                     setAvatar(newData)
                                                     return
                                                 }
-                                                const newData = cloneDeep(avatarData)
+                                                const newData = structuredClone(avatarData)
                                                 delete newData.data.skills[skillInfo?.PointID]
                                                 setAvatar(newData)
                                                 return
