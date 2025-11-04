@@ -1066,5 +1066,516 @@
         }
       }
     }
+  },
+  "3": {
+    "Id": 3,
+    "Name": "不協和音",
+    "PreLevel": [
+      {
+        "Id": 301,
+        "Name": "ナイト（I）",
+        "DamageType": [
+          "Ice",
+          "Thunder"
+        ],
+        "EventIDList": [
+          {
+            "StageID": 30503011,
+            "StageType": "Challenge",
+            "StageName": 6678071601873633000,
+            "HardLevelGroup": 3,
+            "Level": 95,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_StageInfiniteGroup",
+                "MOJJBFBKBNC": "30503011"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_CreateBattleEvent",
+                "MOJJBFBKBNC": "30502"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 4053020,
+                "Monster1": 2023030
+              }
+            ],
+            "LevelLoseCondition": [],
+            "LevelWinCondition": [],
+            "Release": true,
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1.1,
+            "TrialAvatarList": []
+          }
+        ],
+        "TagList": [
+          {
+            "Id": 3033003,
+            "Name": "反相",
+            "Desc": "敵が攻撃を受けるたびに、攻撃者は自身の最大HP<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分のHPを失う。この効果は非致死性である。",
+            "Param": [
+              0.02
+            ]
+          }
+        ],
+        "InfiniteList": {
+          "305030111": {
+            "InfiniteWaveID": 305030111,
+            "MonsterGroupIDList": [
+              4053020,
+              2023030,
+              4053020,
+              2023030
+            ],
+            "MaxMonsterCount": 4,
+            "MaxTeammateCount": 2,
+            "Ability": "",
+            "ParamList": [],
+            "ClearPreviousAbility": true,
+            "EliteGroup": 349
+          }
+        }
+      },
+      {
+        "Id": 302,
+        "Name": "ナイト（II）",
+        "DamageType": [
+          "Fire",
+          "Imaginary"
+        ],
+        "EventIDList": [
+          {
+            "StageID": 30503012,
+            "StageType": "Challenge",
+            "StageName": 17584672809448223000,
+            "HardLevelGroup": 3,
+            "Level": 95,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "2"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_StageInfiniteGroup",
+                "MOJJBFBKBNC": "30503012"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_CreateBattleEvent",
+                "MOJJBFBKBNC": "30502"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 4023010,
+                "Monster1": 4023020
+              },
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 802401107
+              }
+            ],
+            "LevelLoseCondition": [],
+            "LevelWinCondition": [],
+            "Release": true,
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1.1,
+            "TrialAvatarList": []
+          }
+        ],
+        "TagList": [
+          {
+            "Id": 3033002,
+            "Name": "焼入れ",
+            "Desc": "敵のHPが1%減少するにつき、味方がその敵に与える会心ダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
+            "Param": [
+              0.03
+            ]
+          }
+        ],
+        "InfiniteList": {
+          "305030121": {
+            "InfiniteWaveID": 305030121,
+            "MonsterGroupIDList": [
+              4023010,
+              4023020
+            ],
+            "MaxMonsterCount": 2,
+            "MaxTeammateCount": 2,
+            "Ability": "",
+            "ParamList": [],
+            "ClearPreviousAbility": true,
+            "EliteGroup": 350
+          },
+          "305030122": {
+            "InfiniteWaveID": 305030122,
+            "MonsterGroupIDList": [
+              802401107
+            ],
+            "MaxMonsterCount": 1,
+            "MaxTeammateCount": 1,
+            "Ability": "",
+            "ParamList": [],
+            "ClearPreviousAbility": true,
+            "EliteGroup": 350
+          }
+        }
+      },
+      {
+        "Id": 303,
+        "Name": "ナイト（III）",
+        "DamageType": [
+          "Physical",
+          "Imaginary"
+        ],
+        "EventIDList": [
+          {
+            "StageID": 30503013,
+            "StageType": "Challenge",
+            "StageName": 2590962765852260400,
+            "HardLevelGroup": 3,
+            "Level": 95,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "2"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_StageInfiniteGroup",
+                "MOJJBFBKBNC": "30503013"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_CreateBattleEvent",
+                "MOJJBFBKBNC": "30502"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 1013020,
+                "Monster1": 3003020,
+                "Monster2": 1013020
+              },
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 4064010
+              }
+            ],
+            "LevelLoseCondition": [],
+            "LevelWinCondition": [],
+            "Release": true,
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1.1,
+            "TrialAvatarList": []
+          }
+        ],
+        "TagList": [
+          {
+            "Id": 3033023,
+            "Name": "挑発",
+            "Desc": "敵は攻撃を<color=#f29e38ff><unbreak>#1[i]</unbreak></color>回受けた後即座に行動する。攻撃回数のカウントは敵のターンが回ってきた時にクリアされる。",
+            "Param": [
+              6
+            ]
+          },
+          {
+            "Id": 3033025,
+            "Name": "妨害",
+            "Desc": "敵が攻撃を行った後、ターゲットの行動順を遅らせる。遅延幅はランダムに決められ、<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>または<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>になる。",
+            "Param": [
+              0.05,
+              0.1
+            ]
+          }
+        ],
+        "InfiniteList": {
+          "305030131": {
+            "InfiniteWaveID": 305030131,
+            "MonsterGroupIDList": [
+              1013020,
+              3003020
+            ],
+            "MaxMonsterCount": 2,
+            "MaxTeammateCount": 2,
+            "Ability": "",
+            "ParamList": [],
+            "ClearPreviousAbility": true,
+            "EliteGroup": 351
+          },
+          "305030132": {
+            "InfiniteWaveID": 305030132,
+            "MonsterGroupIDList": [
+              4064010
+            ],
+            "MaxMonsterCount": 1,
+            "MaxTeammateCount": 1,
+            "Ability": "",
+            "ParamList": [],
+            "ClearPreviousAbility": true,
+            "EliteGroup": 351
+          }
+        }
+      }
+    ],
+    "BossLevel": {
+      "Id": 304,
+      "Name": "キングへの挑戦",
+      "DamageType": [
+        "Fire"
+      ],
+      "EventIDList": [
+        {
+          "StageID": 30503021,
+          "StageType": "Challenge",
+          "StageName": 8883840217250798000,
+          "HardLevelGroup": 3,
+          "Level": 100,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_StageInfiniteGroup",
+              "MOJJBFBKBNC": "30503021"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30503"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3025016
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "TagList": [
+        {
+          "Id": 3033028,
+          "Name": "靭甲+",
+          "Desc": "敵は初期状態で「靭甲+」を<color=#f29e38ff><unbreak>#1[i]</unbreak></color>層持ち、1層につき敵の受けるダメージ-<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。敵の靭性が0になるたびに「靭甲+」が1層減少する。この効果の層数は敵の各段階でリセットされる。",
+          "Param": [
+            3,
+            0.15
+          ]
+        },
+        {
+          "Id": 3033038,
+          "Name": "エネルギーロス",
+          "Desc": "戦闘に入る時、味方のEP-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、自身のターン以外でのEP回復効率-<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。<color=#f29e38ff><unbreak>#3[i]</unbreak></color>ターン継続。",
+          "Param": [
+            0.5,
+            0.5,
+            2
+          ]
+        },
+        {
+          "Id": 3033035,
+          "Name": "百戦錬磨",
+          "Desc": "敵が攻撃を受けるたびに、自身の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、受ける会心ダメージ-<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。この効果は最大で<color=#f29e38ff><unbreak>#2[i]</unbreak></color>層まで累積でき、敵のターンが回ってきた、または弱点撃破状態になった時に層数がクリアされる。また、敵が弱点撃破状態にある場合、この効果は重ね掛け不可。",
+          "Param": [
+            0.02,
+            10,
+            0.04
+          ]
+        }
+      ],
+      "InfiniteList": {
+        "305030211": {
+          "InfiniteWaveID": 305030211,
+          "MonsterGroupIDList": [
+            3025016
+          ],
+          "MaxMonsterCount": 1,
+          "MaxTeammateCount": 1,
+          "Ability": "",
+          "ParamList": [],
+          "ClearPreviousAbility": true,
+          "EliteGroup": 354
+        }
+      }
+    },
+    "BossConfig": {
+      "HardName": "キングへの挑戦・絶体絶命",
+      "BuffList": [
+        {
+          "Id": 3033032,
+          "Name": "不破不立",
+          "Desc": "味方全体の撃破特効+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。敵を弱点撃破するたびに、その敵への弱点撃破ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。この効果は最大で<color=#f29e38ff><unbreak>#3[i]</unbreak></color>層累積できる。",
+          "Param": [
+            0.6,
+            0.1,
+            4
+          ]
+        },
+        {
+          "Id": 3033033,
+          "Name": "意気軒昂",
+          "Desc": "味方全体の攻撃力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。「遥かなる地平の長音」を発動するたびに、さらに味方全体の攻撃力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。この効果は重ね掛け可能。",
+          "Param": [
+            0.4,
+            0.2
+          ]
+        },
+        {
+          "Id": 3033034,
+          "Name": "不意打ち",
+          "Desc": "味方全体の与ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。味方が攻撃を行った後、攻撃された敵に自身の属性に対応する弱点を付与する。この効果は敵が弱点撃破状態から回復した時に解除される。",
+          "Param": [
+            0.5
+          ]
+        }
+      ],
+      "EventIDList": [
+        {
+          "StageID": 30503022,
+          "StageType": "Challenge",
+          "StageName": 8883840217250798000,
+          "HardLevelGroup": 3,
+          "Level": 120,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_StageInfiniteGroup",
+              "MOJJBFBKBNC": "30503022"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30504"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3025016
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "TagList": [
+        {
+          "Id": 3033029,
+          "Name": "靭甲++",
+          "Desc": "敵は初期状態で「靭甲++」を<color=#f29e38ff><unbreak>#1[i]</unbreak></color>層持ち、1層につき敵の受けるダメージ-<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。敵の靭性が0になるたびに「靭甲++」が1層減少する。この効果の層数は敵の各段階でリセットされる。",
+          "Param": [
+            4,
+            0.15
+          ]
+        },
+        {
+          "Id": 3033040,
+          "Name": "エネルギーロス++",
+          "Desc": "戦闘に入る時、味方のEP-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、自身のターン以外でのEP回復効率-<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。<color=#f29e38ff><unbreak>#3[i]</unbreak></color>ターン継続。",
+          "Param": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "Id": 3033036,
+          "Name": "百戦錬磨+",
+          "Desc": "敵が攻撃を受けるたびに、自身の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、受ける会心ダメージ-<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。この効果は最大で<color=#f29e38ff><unbreak>#2[i]</unbreak></color>層まで累積でき、敵のターンが回ってきた、または弱点撃破状態になった時に層数がクリアされる。また、敵が弱点撃破状態にある場合、この効果は重ね掛け不可。",
+          "Param": [
+            0.03,
+            10,
+            0.06
+          ]
+        }
+      ],
+      "InfiniteList": {
+        "305030221": {
+          "InfiniteWaveID": 305030221,
+          "MonsterGroupIDList": [
+            3025016
+          ],
+          "MaxMonsterCount": 1,
+          "MaxTeammateCount": 1,
+          "Ability": "",
+          "ParamList": [],
+          "ClearPreviousAbility": true,
+          "EliteGroup": 352
+        }
+      }
+    }
   }
 }

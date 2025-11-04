@@ -3316,5 +3316,37 @@
         "value": 0.30000001192092896
       }
     ]
+  },
+  "23050": {
+        "0": [
+      {
+        "type": "BreakDamageAddedRatioBase",
+        "value": 0.6000000238418579
+      }
+    ],
+    "1": [
+      {
+        "type": "BreakDamageAddedRatioBase",
+        "value": 0.75
+      }
+    ],
+    "2": [
+      {
+        "type": "BreakDamageAddedRatioBase",
+        "value": 0.8999999761581421
+      }
+    ],
+    "3": [
+      {
+        "type": "BreakDamageAddedRatioBase",
+        "value": 1.05
+      }
+    ],
+    "4": [
+      {
+        "type": "BreakDamageAddedRatioBase",
+        "value": 1.2
+      }
+    ]
   }
 }

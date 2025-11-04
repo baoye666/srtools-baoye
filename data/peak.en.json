@@ -979,7 +979,7 @@
         {
           "Id": 3033022,
           "Name": "Fluid Dash",
-          "Desc": "All allies' DoT All-Type RES PEN increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When using \"Healing Rainbow,\" additionally increases all allies' SPD by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+          "Desc": "Increases all allies' DoT All-Type RES PEN by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When using \"Healing Rainbow,\" additionally increases all allies' SPD by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
           "Param": [
             0.4,
             0.3
@@ -1063,6 +1063,517 @@
           "ParamList": [],
           "ClearPreviousAbility": true,
           "EliteGroup": 348
+        }
+      }
+    }
+  },
+  "3": {
+    "Id": 3,
+    "Name": "Dissonance",
+    "PreLevel": [
+      {
+        "Id": 301,
+        "Name": "Knight (I)",
+        "DamageType": [
+          "Ice",
+          "Thunder"
+        ],
+        "EventIDList": [
+          {
+            "StageID": 30503011,
+            "StageType": "Challenge",
+            "StageName": 6678071601873633000,
+            "HardLevelGroup": 3,
+            "Level": 95,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_StageInfiniteGroup",
+                "MOJJBFBKBNC": "30503011"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_CreateBattleEvent",
+                "MOJJBFBKBNC": "30502"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 4053020,
+                "Monster1": 2023030
+              }
+            ],
+            "LevelLoseCondition": [],
+            "LevelWinCondition": [],
+            "Release": true,
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1.1,
+            "TrialAvatarList": []
+          }
+        ],
+        "TagList": [
+          {
+            "Id": 3033003,
+            "Name": "Inversion",
+            "Desc": "Each time after the enemy target is attacked, the attacker will lose HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of their own Max HP. This effect in Non-fatal.",
+            "Param": [
+              0.02
+            ]
+          }
+        ],
+        "InfiniteList": {
+          "305030111": {
+            "InfiniteWaveID": 305030111,
+            "MonsterGroupIDList": [
+              4053020,
+              2023030,
+              4053020,
+              2023030
+            ],
+            "MaxMonsterCount": 4,
+            "MaxTeammateCount": 2,
+            "Ability": "",
+            "ParamList": [],
+            "ClearPreviousAbility": true,
+            "EliteGroup": 349
+          }
+        }
+      },
+      {
+        "Id": 302,
+        "Name": "Knight (II)",
+        "DamageType": [
+          "Fire",
+          "Imaginary"
+        ],
+        "EventIDList": [
+          {
+            "StageID": 30503012,
+            "StageType": "Challenge",
+            "StageName": 17584672809448223000,
+            "HardLevelGroup": 3,
+            "Level": 95,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "2"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_StageInfiniteGroup",
+                "MOJJBFBKBNC": "30503012"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_CreateBattleEvent",
+                "MOJJBFBKBNC": "30502"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 4023010,
+                "Monster1": 4023020
+              },
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 802401107
+              }
+            ],
+            "LevelLoseCondition": [],
+            "LevelWinCondition": [],
+            "Release": true,
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1.1,
+            "TrialAvatarList": []
+          }
+        ],
+        "TagList": [
+          {
+            "Id": 3033002,
+            "Name": "Tempering",
+            "Desc": "For every 1% HP the enemy target loses, reduces CRIT DMG dealt to them by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+            "Param": [
+              0.03
+            ]
+          }
+        ],
+        "InfiniteList": {
+          "305030121": {
+            "InfiniteWaveID": 305030121,
+            "MonsterGroupIDList": [
+              4023010,
+              4023020
+            ],
+            "MaxMonsterCount": 2,
+            "MaxTeammateCount": 2,
+            "Ability": "",
+            "ParamList": [],
+            "ClearPreviousAbility": true,
+            "EliteGroup": 350
+          },
+          "305030122": {
+            "InfiniteWaveID": 305030122,
+            "MonsterGroupIDList": [
+              802401107
+            ],
+            "MaxMonsterCount": 1,
+            "MaxTeammateCount": 1,
+            "Ability": "",
+            "ParamList": [],
+            "ClearPreviousAbility": true,
+            "EliteGroup": 350
+          }
+        }
+      },
+      {
+        "Id": 303,
+        "Name": "Knight (III)",
+        "DamageType": [
+          "Physical",
+          "Imaginary"
+        ],
+        "EventIDList": [
+          {
+            "StageID": 30503013,
+            "StageType": "Challenge",
+            "StageName": 2590962765852260400,
+            "HardLevelGroup": 3,
+            "Level": 95,
+            "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+            "StageAbilityConfig": [],
+            "SubLevelGraphs": [],
+            "StageConfigData": [
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_Wave",
+                "MOJJBFBKBNC": "2"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_IsEliteBattle",
+                "MOJJBFBKBNC": "1"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_StageInfiniteGroup",
+                "MOJJBFBKBNC": "30503013"
+              },
+              {
+                "$type": "ILKEMJNAEKE",
+                "JDKAMOANICM": "_CreateBattleEvent",
+                "MOJJBFBKBNC": "30502"
+              }
+            ],
+            "MonsterList": [
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 1013020,
+                "Monster1": 3003020,
+                "Monster2": 1013020
+              },
+              {
+                "$type": "StageMonsterWave",
+                "Monster0": 4064010
+              }
+            ],
+            "LevelLoseCondition": [],
+            "LevelWinCondition": [],
+            "Release": true,
+            "ForbidExitBattle": true,
+            "MonsterWarningRatio": 1.1,
+            "TrialAvatarList": []
+          }
+        ],
+        "TagList": [
+          {
+            "Id": 3033023,
+            "Name": "Taunting",
+            "Desc": "Enemy target takes immediate action after being attacked <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s). This tally resets at the start of the enemy target's turn.",
+            "Param": [
+              6
+            ]
+          },
+          {
+            "Id": 3033025,
+            "Name": "Interference",
+            "Desc": "After the enemy target uses an attack, randomly causes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> or <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> action delay to the attacked target.",
+            "Param": [
+              0.05,
+              0.1
+            ]
+          }
+        ],
+        "InfiniteList": {
+          "305030131": {
+            "InfiniteWaveID": 305030131,
+            "MonsterGroupIDList": [
+              1013020,
+              3003020
+            ],
+            "MaxMonsterCount": 2,
+            "MaxTeammateCount": 2,
+            "Ability": "",
+            "ParamList": [],
+            "ClearPreviousAbility": true,
+            "EliteGroup": 351
+          },
+          "305030132": {
+            "InfiniteWaveID": 305030132,
+            "MonsterGroupIDList": [
+              4064010
+            ],
+            "MaxMonsterCount": 1,
+            "MaxTeammateCount": 1,
+            "Ability": "",
+            "ParamList": [],
+            "ClearPreviousAbility": true,
+            "EliteGroup": 351
+          }
+        }
+      }
+    ],
+    "BossLevel": {
+      "Id": 304,
+      "Name": "King in Check",
+      "DamageType": [
+        "Fire"
+      ],
+      "EventIDList": [
+        {
+          "StageID": 30503021,
+          "StageType": "Challenge",
+          "StageName": 8883840217250798000,
+          "HardLevelGroup": 3,
+          "Level": 100,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_StageInfiniteGroup",
+              "MOJJBFBKBNC": "30503021"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30503"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3025016
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "TagList": [
+        {
+          "Id": 3033028,
+          "Name": "Resilient Armor+",
+          "Desc": "Enemy target initially has <color=#f29e38ff><unbreak>#1[i]</unbreak></color> stacks of \"Resilient Armor+,\" and each stack reduces DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Enemy targets lose 1 stack of \"Resilient Armor+\" each time their Toughness is reduced to 0. Stacks of this effect will reset at each of the monster's phase.",
+          "Param": [
+            3,
+            0.15
+          ]
+        },
+        {
+          "Id": 3033038,
+          "Name": "Depowered",
+          "Desc": "When entering combat, reduces ally target's Energy by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and decreases their Energy Regeneration Rate by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> outside of their turn for <color=#f29e38ff><unbreak>#3[i]</unbreak></color> turn(s).",
+          "Param": [
+            0.5,
+            0.5,
+            2
+          ]
+        },
+        {
+          "Id": 3033035,
+          "Name": "Unending Refinement",
+          "Desc": "After the enemy target takes DMG, reduces DMG taken by this unit by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG taken by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s). These stacks are cleared when the enemy target's turn begins or when they enter the Weakness Break state. While the enemy target is in the Weakness Break state, stacks cannot be accumulated.",
+          "Param": [
+            0.02,
+            10,
+            0.04
+          ]
+        }
+      ],
+      "InfiniteList": {
+        "305030211": {
+          "InfiniteWaveID": 305030211,
+          "MonsterGroupIDList": [
+            3025016
+          ],
+          "MaxMonsterCount": 1,
+          "MaxTeammateCount": 1,
+          "Ability": "",
+          "ParamList": [],
+          "ClearPreviousAbility": true,
+          "EliteGroup": 354
+        }
+      }
+    },
+    "BossConfig": {
+      "HardName": "King in Check: Plight",
+      "BuffList": [
+        {
+          "Id": 3033032,
+          "Name": "No Break No Rise",
+          "Desc": "Increases all ally targets' Break Effect by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Each time an enemy target's is Weakness Broken, increases Break DMG taken by that target by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> times.",
+          "Param": [
+            0.6,
+            0.1,
+            4
+          ]
+        },
+        {
+          "Id": 3033033,
+          "Name": "Impassioned Spirits",
+          "Desc": "Increases all ally targets' ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When using \"Horizon's Echo From Afar,\" additionally increases all ally targets' ATK by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, this effect is stackable.",
+          "Param": [
+            0.4,
+            0.2
+          ]
+        },
+        {
+          "Id": 3033034,
+          "Name": "Seize the Moment",
+          "Desc": "Increases all ally targets' DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After an ally target uses an attack, applies Weakness corresponding to this unit's Type to the attacked enemy target. This effect is removed when the enemy target recovers from Weakness Break state.",
+          "Param": [
+            0.5
+          ]
+        }
+      ],
+      "EventIDList": [
+        {
+          "StageID": 30503022,
+          "StageType": "Challenge",
+          "StageName": 8883840217250798000,
+          "HardLevelGroup": 3,
+          "Level": 120,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_StageInfiniteGroup",
+              "MOJJBFBKBNC": "30503022"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30504"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3025016
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "TagList": [
+        {
+          "Id": 3033029,
+          "Name": "Resilient Armor++",
+          "Desc": "Enemy target initially has <color=#f29e38ff><unbreak>#1[i]</unbreak></color> stacks of \"Resilient Armor++,\" and each stack reduces DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Enemy targets lose 1 stack of \"Resilient Armor++\" each time their Toughness is reduced to 0. Stacks of this effect will reset at each of the monster's phase.",
+          "Param": [
+            4,
+            0.15
+          ]
+        },
+        {
+          "Id": 3033040,
+          "Name": "Depowered++",
+          "Desc": "When entering combat, reduces ally target's Energy by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and decreases their Energy Regeneration Rate by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> outside of their turn for <color=#f29e38ff><unbreak>#3[i]</unbreak></color> turn(s).",
+          "Param": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "Id": 3033036,
+          "Name": "Unending Refinement+",
+          "Desc": "After the enemy target takes DMG, reduces DMG taken by this unit by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG taken by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s). These stacks are cleared when the enemy target's turn begins or when they enter the Weakness Break state. While the enemy target is in the Weakness Break state, stacks cannot be accumulated.",
+          "Param": [
+            0.03,
+            10,
+            0.06
+          ]
+        }
+      ],
+      "InfiniteList": {
+        "305030221": {
+          "InfiniteWaveID": 305030221,
+          "MonsterGroupIDList": [
+            3025016
+          ],
+          "MaxMonsterCount": 1,
+          "MaxTeammateCount": 1,
+          "Ability": "",
+          "ParamList": [],
+          "ClearPreviousAbility": true,
+          "EliteGroup": 352
         }
       }
     }

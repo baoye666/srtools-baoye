@@ -64840,7 +64840,7 @@
   "1028": [
     {
       "Id": 4701,
-      "Name": "Monkey Business 1",
+      "Name": "Monkey Business (I)",
       "GroupName": "Monkey Business",
       "Desc": "When an ally target attacks an Elite or Boss enemy with a corresponding Type weakness, add <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Hits Per Action to \"Memory Turbulence\". Breaking an Elite or Boss enemy's weakness adds an additional <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Hits Per Action, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak> hits</color>.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals 1 True DMG to a random enemy target.",
       "Param": [
@@ -64977,11 +64977,11 @@
         }
       ],
       "BeginTime": "2025-09-22 04:00:00",
-      "EndTime": "2025-11-03 04:00:00"
+      "EndTime": "2025-12-15 04:00:00"
     },
     {
       "Id": 4702,
-      "Name": "Monkey Business 2",
+      "Name": "Monkey Business (II)",
       "GroupName": "Monkey Business",
       "Desc": "When an ally target attacks an Elite or Boss enemy with a corresponding Type weakness, add <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Hits Per Action to \"Memory Turbulence\". Breaking an Elite or Boss enemy's weakness adds an additional <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Hits Per Action, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak> hits</color>.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals 1 True DMG to a random enemy target.",
       "Param": [
@@ -65117,11 +65117,11 @@
         }
       ],
       "BeginTime": "2025-09-22 04:00:00",
-      "EndTime": "2025-11-03 04:00:00"
+      "EndTime": "2025-12-15 04:00:00"
     },
     {
       "Id": 4703,
-      "Name": "Monkey Business 3",
+      "Name": "Monkey Business (III)",
       "GroupName": "Monkey Business",
       "Desc": "When an ally target attacks an Elite or Boss enemy with a corresponding Type weakness, add <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Hits Per Action to \"Memory Turbulence\". Breaking an Elite or Boss enemy's weakness adds an additional <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Hits Per Action, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak> hits</color>.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals 1 True DMG to a random enemy target.",
       "Param": [
@@ -65259,11 +65259,11 @@
         }
       ],
       "BeginTime": "2025-09-22 04:00:00",
-      "EndTime": "2025-11-03 04:00:00"
+      "EndTime": "2025-12-15 04:00:00"
     },
     {
       "Id": 4704,
-      "Name": "Monkey Business 4",
+      "Name": "Monkey Business (IV)",
       "GroupName": "Monkey Business",
       "Desc": "When an ally target attacks an Elite or Boss enemy with a corresponding Type weakness, add <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Hits Per Action to \"Memory Turbulence\". Breaking an Elite or Boss enemy's weakness adds an additional <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Hits Per Action, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak> hits</color>.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals 1 True DMG to a random enemy target.",
       "Param": [
@@ -65401,11 +65401,11 @@
         }
       ],
       "BeginTime": "2025-09-22 04:00:00",
-      "EndTime": "2025-11-03 04:00:00"
+      "EndTime": "2025-12-15 04:00:00"
     },
     {
       "Id": 4705,
-      "Name": "Monkey Business 5",
+      "Name": "Monkey Business (V)",
       "GroupName": "Monkey Business",
       "Desc": "When an ally target attacks an Elite or Boss enemy with a corresponding Type weakness, add <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Hits Per Action to \"Memory Turbulence\". Breaking an Elite or Boss enemy's weakness adds an additional <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Hits Per Action, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak> hits</color>.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals 1 True DMG to a random enemy target.",
       "Param": [
@@ -65543,11 +65543,11 @@
         }
       ],
       "BeginTime": "2025-09-22 04:00:00",
-      "EndTime": "2025-11-03 04:00:00"
+      "EndTime": "2025-12-15 04:00:00"
     },
     {
       "Id": 4706,
-      "Name": "Monkey Business 6",
+      "Name": "Monkey Business (VI)",
       "GroupName": "Monkey Business",
       "Desc": "When an ally target attacks an Elite or Boss enemy with a corresponding Type weakness, add <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Hits Per Action to \"Memory Turbulence\". Breaking an Elite or Boss enemy's weakness adds an additional <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Hits Per Action, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak> hits</color>.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals 1 True DMG to a random enemy target.",
       "Param": [
@@ -65685,11 +65685,11 @@
         }
       ],
       "BeginTime": "2025-09-22 04:00:00",
-      "EndTime": "2025-11-03 04:00:00"
+      "EndTime": "2025-12-15 04:00:00"
     },
     {
       "Id": 4707,
-      "Name": "Monkey Business 7",
+      "Name": "Monkey Business (VII)",
       "GroupName": "Monkey Business",
       "Desc": "When an ally target attacks an Elite or Boss enemy with a corresponding Type weakness, add <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Hits Per Action to \"Memory Turbulence\". Breaking an Elite or Boss enemy's weakness adds an additional <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Hits Per Action, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak> hits</color>.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals 1 True DMG to a random enemy target.",
       "Param": [
@@ -65829,11 +65829,11 @@
         }
       ],
       "BeginTime": "2025-09-22 04:00:00",
-      "EndTime": "2025-11-03 04:00:00"
+      "EndTime": "2025-12-15 04:00:00"
     },
     {
       "Id": 4708,
-      "Name": "Monkey Business 8",
+      "Name": "Monkey Business (VIII)",
       "GroupName": "Monkey Business",
       "Desc": "When an ally target attacks an Elite or Boss enemy with a corresponding Type weakness, add <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Hits Per Action to \"Memory Turbulence\". Breaking an Elite or Boss enemy's weakness adds an additional <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Hits Per Action, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak> hits</color>.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals 1 True DMG to a random enemy target.",
       "Param": [
@@ -65972,11 +65972,11 @@
         }
       ],
       "BeginTime": "2025-09-22 04:00:00",
-      "EndTime": "2025-11-03 04:00:00"
+      "EndTime": "2025-12-15 04:00:00"
     },
     {
       "Id": 4709,
-      "Name": "Monkey Business 9",
+      "Name": "Monkey Business (IX)",
       "GroupName": "Monkey Business",
       "Desc": "When an ally target attacks an Elite or Boss enemy with a corresponding Type weakness, add <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Hits Per Action to \"Memory Turbulence\". Breaking an Elite or Boss enemy's weakness adds an additional <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Hits Per Action, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak> hits</color>.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals 1 True DMG to a random enemy target.",
       "Param": [
@@ -66112,11 +66112,11 @@
         }
       ],
       "BeginTime": "2025-09-22 04:00:00",
-      "EndTime": "2025-11-03 04:00:00"
+      "EndTime": "2025-12-15 04:00:00"
     },
     {
       "Id": 4710,
-      "Name": "Monkey Business <unbreak>10</unbreak>",
+      "Name": "Monkey Business (X)",
       "GroupName": "Monkey Business",
       "Desc": "When an ally target attacks an Elite or Boss enemy with a corresponding Type weakness, add <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Hits Per Action to \"Memory Turbulence\". Breaking an Elite or Boss enemy's weakness adds an additional <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Hits Per Action, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak> hits</color>.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals 1 True DMG to a random enemy target.",
       "Param": [
@@ -66255,11 +66255,11 @@
         }
       ],
       "BeginTime": "2025-09-22 04:00:00",
-      "EndTime": "2025-11-03 04:00:00"
+      "EndTime": "2025-12-15 04:00:00"
     },
     {
       "Id": 4711,
-      "Name": "Monkey Business <unbreak>11</unbreak>",
+      "Name": "Monkey Business (XI)",
       "GroupName": "Monkey Business",
       "Desc": "When an ally target attacks an Elite or Boss enemy with a corresponding Type weakness, add <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Hits Per Action to \"Memory Turbulence\". Breaking an Elite or Boss enemy's weakness adds an additional <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Hits Per Action, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak> hits</color>.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals 1 True DMG to a random enemy target.",
       "Param": [
@@ -66396,11 +66396,11 @@
         }
       ],
       "BeginTime": "2025-09-22 04:00:00",
-      "EndTime": "2025-11-03 04:00:00"
+      "EndTime": "2025-12-15 04:00:00"
     },
     {
       "Id": 4712,
-      "Name": "Monkey Business <unbreak>12</unbreak>",
+      "Name": "Monkey Business (XII)",
       "GroupName": "Monkey Business",
       "Desc": "When an ally target attacks an Elite or Boss enemy with a corresponding Type weakness, add <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Hits Per Action to \"Memory Turbulence\". Breaking an Elite or Boss enemy's weakness adds an additional <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Hits Per Action, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak> hits</color>.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals 1 True DMG to a random enemy target.",
       "Param": [
@@ -66536,7 +66536,1713 @@
         }
       ],
       "BeginTime": "2025-09-22 04:00:00",
-      "EndTime": "2025-11-03 04:00:00"
+      "EndTime": "2025-12-15 04:00:00"
+    }
+  ],
+  "1029": [
+    {
+      "Id": 4801,
+      "Name": "Breached Nest (I)",
+      "GroupName": "Breached Nest",
+      "Desc": "At the start of each wave, recovers <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s) for allies. When ally targets use Skills or consume Skill Points, add <color=#f29e38ff><unbreak>#2[i]</unbreak></color> hits to \"Memory Turbulence,\" stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals True DMG once to a random enemy target.",
+      "Param": [
+        4,
+        1,
+        15,
+        0.15,
+        0.025,
+        0.015
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Imaginary"
+      ],
+      "MazeGroupID1": 4,
+      "MazeGroupID2": 5,
+      "NpcMonsterIDList1": [
+        1023020
+      ],
+      "NpcMonsterIDList2": [
+        2013020
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30119011,
+          "StageType": "Challenge",
+          "StageName": 6366857954791301000,
+          "HardLevelGroup": 3,
+          "Level": 68,
+          "EliteGroup": 273,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 8002010,
+              "Monster1": 1023020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1023020,
+              "Monster1": 8003030
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30119012,
+          "StageType": "Challenge",
+          "StageName": 17363227603743607000,
+          "HardLevelGroup": 3,
+          "Level": 68,
+          "EliteGroup": 273,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2002030,
+              "Monster1": 2013020,
+              "Monster2": 2002030
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2013020,
+              "Monster1": 8013010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-11-03 04:00:00",
+      "EndTime": "2025-12-15 04:00:00"
+    },
+    {
+      "Id": 4802,
+      "Name": "Breached Nest (II)",
+      "GroupName": "Breached Nest",
+      "Desc": "At the start of each wave, recovers <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s) for allies. When ally targets use Skills or consume Skill Points, add <color=#f29e38ff><unbreak>#2[i]</unbreak></color> hits to \"Memory Turbulence,\" stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals True DMG once to a random enemy target.",
+      "Param": [
+        4,
+        1,
+        15,
+        0.15,
+        0.025,
+        0.015
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Ice",
+        "Thunder"
+      ],
+      "DamageType2": [
+        "Fire",
+        "Thunder"
+      ],
+      "MazeGroupID1": 4,
+      "MazeGroupID2": 5,
+      "NpcMonsterIDList1": [
+        1013010
+      ],
+      "NpcMonsterIDList2": [
+        8003040
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30119021,
+          "StageType": "Challenge",
+          "StageName": 13087150147011258000,
+          "HardLevelGroup": 3,
+          "Level": 70,
+          "EliteGroup": 274,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1012010,
+              "Monster1": 1013010,
+              "Monster2": 1012010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1013010,
+              "Monster1": 1013020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30119022,
+          "StageType": "Challenge",
+          "StageName": 15864002628047024000,
+          "HardLevelGroup": 3,
+          "Level": 70,
+          "EliteGroup": 274,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3002010,
+              "Monster1": 8003040,
+              "Monster2": 3002010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 8003040,
+              "Monster1": 3003040
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-11-03 04:00:00",
+      "EndTime": "2025-12-15 04:00:00"
+    },
+    {
+      "Id": 4803,
+      "Name": "Breached Nest (III)",
+      "GroupName": "Breached Nest",
+      "Desc": "At the start of each wave, recovers <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s) for allies. When ally targets use Skills or consume Skill Points, add <color=#f29e38ff><unbreak>#2[i]</unbreak></color> hits to \"Memory Turbulence,\" stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals True DMG once to a random enemy target.",
+      "Param": [
+        4,
+        1,
+        15,
+        0.15,
+        0.025,
+        0.015
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Fire",
+        "Thunder"
+      ],
+      "DamageType2": [
+        "Physical"
+      ],
+      "MazeGroupID1": 4,
+      "MazeGroupID2": 5,
+      "NpcMonsterIDList1": [
+        4053010
+      ],
+      "NpcMonsterIDList2": [
+        4063010
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30119031,
+          "StageType": "Challenge",
+          "StageName": 6737091100483890000,
+          "HardLevelGroup": 3,
+          "Level": 73,
+          "EliteGroup": 275,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4053020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4053020,
+              "Monster1": 4053010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30119032,
+          "StageType": "Challenge",
+          "StageName": 10875975535548862000,
+          "HardLevelGroup": 3,
+          "Level": 73,
+          "EliteGroup": 275,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4062010,
+              "Monster1": 4063010,
+              "Monster2": 4062010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4063010,
+              "Monster1": 2013020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-11-03 04:00:00",
+      "EndTime": "2025-12-15 04:00:00"
+    },
+    {
+      "Id": 4804,
+      "Name": "Breached Nest (IV)",
+      "GroupName": "Breached Nest",
+      "Desc": "At the start of each wave, recovers <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s) for allies. When ally targets use Skills or consume Skill Points, add <color=#f29e38ff><unbreak>#2[i]</unbreak></color> hits to \"Memory Turbulence,\" stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals True DMG once to a random enemy target.",
+      "Param": [
+        4,
+        1,
+        15,
+        0.15,
+        0.025,
+        0.015
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Fire",
+        "Ice"
+      ],
+      "DamageType2": [
+        "Fire"
+      ],
+      "MazeGroupID1": 4,
+      "MazeGroupID2": 5,
+      "NpcMonsterIDList1": [
+        1013010
+      ],
+      "NpcMonsterIDList2": [
+        3003010
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30119041,
+          "StageType": "Challenge",
+          "StageName": 13087150147011258000,
+          "HardLevelGroup": 3,
+          "Level": 75,
+          "EliteGroup": 276,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1012030,
+              "Monster1": 1013010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1013010,
+              "Monster1": 8003050
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30119042,
+          "StageType": "Challenge",
+          "StageName": 9344842774432864000,
+          "HardLevelGroup": 3,
+          "Level": 75,
+          "EliteGroup": 276,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3012020,
+              "Monster1": 3003010,
+              "Monster2": 3012020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3003050,
+              "Monster1": 3003010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-11-03 04:00:00",
+      "EndTime": "2025-12-15 04:00:00"
+    },
+    {
+      "Id": 4805,
+      "Name": "Breached Nest (V)",
+      "GroupName": "Breached Nest",
+      "Desc": "At the start of each wave, recovers <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s) for allies. When ally targets use Skills or consume Skill Points, add <color=#f29e38ff><unbreak>#2[i]</unbreak></color> hits to \"Memory Turbulence,\" stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals True DMG once to a random enemy target.",
+      "Param": [
+        4,
+        1,
+        15,
+        0.15,
+        0.025,
+        0.015
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Wind"
+      ],
+      "DamageType2": [
+        "Thunder",
+        "Imaginary"
+      ],
+      "MazeGroupID1": 4,
+      "MazeGroupID2": 5,
+      "NpcMonsterIDList1": [
+        2033010
+      ],
+      "NpcMonsterIDList2": [
+        1004020
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30119051,
+          "StageType": "Challenge",
+          "StageName": 16830651616508960000,
+          "HardLevelGroup": 3,
+          "Level": 78,
+          "EliteGroup": 277,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2032010,
+              "Monster1": 2033010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2033010,
+              "Monster1": 8003010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30119052,
+          "StageType": "Challenge",
+          "StageName": 3927571639738102000,
+          "HardLevelGroup": 3,
+          "Level": 78,
+          "EliteGroup": 277,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1012030,
+              "Monster1": 1013020,
+              "Monster2": 1012030
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 100402010,
+              "Monster1": 1013020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-11-03 04:00:00",
+      "EndTime": "2025-12-15 04:00:00"
+    },
+    {
+      "Id": 4806,
+      "Name": "Breached Nest (VI)",
+      "GroupName": "Breached Nest",
+      "Desc": "At the start of each wave, recovers <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s) for allies. When ally targets use Skills or consume Skill Points, add <color=#f29e38ff><unbreak>#2[i]</unbreak></color> hits to \"Memory Turbulence,\" stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals True DMG once to a random enemy target.",
+      "Param": [
+        4,
+        1,
+        15,
+        0.15,
+        0.025,
+        0.015
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Imaginary"
+      ],
+      "MazeGroupID1": 4,
+      "MazeGroupID2": 5,
+      "NpcMonsterIDList1": [
+        1023020
+      ],
+      "NpcMonsterIDList2": [
+        2013020
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30119061,
+          "StageType": "Challenge",
+          "StageName": 6366857954791301000,
+          "HardLevelGroup": 3,
+          "Level": 80,
+          "EliteGroup": 278,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 8002010,
+              "Monster1": 1023020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1023020,
+              "Monster1": 8003030
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30119062,
+          "StageType": "Challenge",
+          "StageName": 17363227603743607000,
+          "HardLevelGroup": 3,
+          "Level": 80,
+          "EliteGroup": 278,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2002030,
+              "Monster1": 2013020,
+              "Monster2": 2002030
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2013020,
+              "Monster1": 8013010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-11-03 04:00:00",
+      "EndTime": "2025-12-15 04:00:00"
+    },
+    {
+      "Id": 4807,
+      "Name": "Breached Nest (VII)",
+      "GroupName": "Breached Nest",
+      "Desc": "At the start of each wave, recovers <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s) for allies. When ally targets use Skills or consume Skill Points, add <color=#f29e38ff><unbreak>#2[i]</unbreak></color> hits to \"Memory Turbulence,\" stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals True DMG once to a random enemy target.",
+      "Param": [
+        4,
+        1,
+        15,
+        0.15,
+        0.025,
+        0.015
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Ice",
+        "Thunder"
+      ],
+      "DamageType2": [
+        "Fire",
+        "Thunder"
+      ],
+      "MazeGroupID1": 4,
+      "MazeGroupID2": 5,
+      "NpcMonsterIDList1": [
+        1013010
+      ],
+      "NpcMonsterIDList2": [
+        8003040
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30119071,
+          "StageType": "Challenge",
+          "StageName": 13087150147011258000,
+          "HardLevelGroup": 3,
+          "Level": 82,
+          "EliteGroup": 279,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1012010,
+              "Monster1": 1013010,
+              "Monster2": 1012010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1013010,
+              "Monster1": 1013020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30119072,
+          "StageType": "Challenge",
+          "StageName": 15864002628047024000,
+          "HardLevelGroup": 3,
+          "Level": 82,
+          "EliteGroup": 279,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3002010,
+              "Monster1": 8003040,
+              "Monster2": 3002010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 8003040,
+              "Monster1": 3003040
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-11-03 04:00:00",
+      "EndTime": "2025-12-15 04:00:00"
+    },
+    {
+      "Id": 4808,
+      "Name": "Breached Nest (VIII)",
+      "GroupName": "Breached Nest",
+      "Desc": "At the start of each wave, recovers <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s) for allies. When ally targets use Skills or consume Skill Points, add <color=#f29e38ff><unbreak>#2[i]</unbreak></color> hits to \"Memory Turbulence,\" stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals True DMG once to a random enemy target.",
+      "Param": [
+        4,
+        1,
+        15,
+        0.15,
+        0.025,
+        0.015
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Fire",
+        "Ice"
+      ],
+      "DamageType2": [
+        "Fire"
+      ],
+      "MazeGroupID1": 4,
+      "MazeGroupID2": 5,
+      "NpcMonsterIDList1": [
+        1013010
+      ],
+      "NpcMonsterIDList2": [
+        3003010
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30119081,
+          "StageType": "Challenge",
+          "StageName": 13087150147011258000,
+          "HardLevelGroup": 3,
+          "Level": 85,
+          "EliteGroup": 280,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1012030,
+              "Monster1": 1013010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1013010,
+              "Monster1": 8003050
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30119082,
+          "StageType": "Challenge",
+          "StageName": 9344842774432864000,
+          "HardLevelGroup": 3,
+          "Level": 85,
+          "EliteGroup": 280,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3012020,
+              "Monster1": 3003010,
+              "Monster2": 3012020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3003050,
+              "Monster1": 3003010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-11-03 04:00:00",
+      "EndTime": "2025-12-15 04:00:00"
+    },
+    {
+      "Id": 4809,
+      "Name": "Breached Nest (IX)",
+      "GroupName": "Breached Nest",
+      "Desc": "At the start of each wave, recovers <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s) for allies. When ally targets use Skills or consume Skill Points, add <color=#f29e38ff><unbreak>#2[i]</unbreak></color> hits to \"Memory Turbulence,\" stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals True DMG once to a random enemy target.",
+      "Param": [
+        4,
+        1,
+        15,
+        0.15,
+        0.025,
+        0.015
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Wind"
+      ],
+      "DamageType2": [
+        "Thunder",
+        "Imaginary"
+      ],
+      "MazeGroupID1": 4,
+      "MazeGroupID2": 5,
+      "NpcMonsterIDList1": [
+        2033010
+      ],
+      "NpcMonsterIDList2": [
+        1004020
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30119091,
+          "StageType": "Challenge",
+          "StageName": 16830651616508960000,
+          "HardLevelGroup": 3,
+          "Level": 88,
+          "EliteGroup": 281,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 2032010,
+              "Monster1": 2033010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 8003010,
+              "Monster1": 2033010,
+              "Monster2": 8003010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30119092,
+          "StageType": "Challenge",
+          "StageName": 3927571639738102000,
+          "HardLevelGroup": 3,
+          "Level": 88,
+          "EliteGroup": 281,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1012030,
+              "Monster1": 1013020,
+              "Monster2": 1012030
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 1013020,
+              "Monster1": 100402010,
+              "Monster2": 1013020
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-11-03 04:00:00",
+      "EndTime": "2025-12-15 04:00:00"
+    },
+    {
+      "Id": 4810,
+      "Name": "Breached Nest (X)",
+      "GroupName": "Breached Nest",
+      "Desc": "At the start of each wave, recovers <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s) for allies. When ally targets use Skills or consume Skill Points, add <color=#f29e38ff><unbreak>#2[i]</unbreak></color> hits to \"Memory Turbulence,\" stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals True DMG once to a random enemy target.",
+      "Param": [
+        4,
+        1,
+        15,
+        0.15,
+        0.025,
+        0.015
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Ice",
+        "Thunder"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Thunder"
+      ],
+      "MazeGroupID1": 4,
+      "MazeGroupID2": 5,
+      "NpcMonsterIDList1": [
+        4034010
+      ],
+      "NpcMonsterIDList2": [
+        8034010
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30119101,
+          "StageType": "Challenge",
+          "StageName": 394586006630307500,
+          "HardLevelGroup": 3,
+          "Level": 90,
+          "EliteGroup": 282,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4013010,
+              "Monster1": 2023030
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4034010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30119102,
+          "StageType": "Challenge",
+          "StageName": 3756729761605363700,
+          "HardLevelGroup": 3,
+          "Level": 90,
+          "EliteGroup": 282,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4053010,
+              "Monster1": 2013020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 803401004
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-11-03 04:00:00",
+      "EndTime": "2025-12-15 04:00:00"
+    },
+    {
+      "Id": 4811,
+      "Name": "Breached Nest (XI)",
+      "GroupName": "Breached Nest",
+      "Desc": "At the start of each wave, recovers <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s) for allies. When ally targets use Skills or consume Skill Points, add <color=#f29e38ff><unbreak>#2[i]</unbreak></color> hits to \"Memory Turbulence,\" stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals True DMG once to a random enemy target.",
+      "Param": [
+        4,
+        1,
+        15,
+        0.15,
+        0.025,
+        0.015
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Fire",
+        "Thunder"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Imaginary"
+      ],
+      "MazeGroupID1": 4,
+      "MazeGroupID2": 5,
+      "NpcMonsterIDList1": [
+        3003041
+      ],
+      "NpcMonsterIDList2": [
+        4064010
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30119111,
+          "StageType": "Challenge",
+          "StageName": 15692447060244044000,
+          "HardLevelGroup": 3,
+          "Level": 92,
+          "EliteGroup": 266,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3003030,
+              "Monster1": 4053020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3004012
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30119112,
+          "StageType": "Challenge",
+          "StageName": 2590962765852260400,
+          "HardLevelGroup": 3,
+          "Level": 92,
+          "EliteGroup": 266,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3003020,
+              "Monster1": 2013020
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4064010
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-11-03 04:00:00",
+      "EndTime": "2025-12-15 04:00:00"
+    },
+    {
+      "Id": 4812,
+      "Name": "Breached Nest (XII)",
+      "GroupName": "Breached Nest",
+      "Desc": "At the start of each wave, recovers <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s) for allies. When ally targets use Skills or consume Skill Points, add <color=#f29e38ff><unbreak>#2[i]</unbreak></color> hits to \"Memory Turbulence,\" stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits.\\nAt the start of each Cycle, each hit of \"Memory Turbulence\" deals True DMG once to a random enemy target.",
+      "Param": [
+        4,
+        1,
+        15,
+        0.15,
+        0.025,
+        0.015
+      ],
+      "Challenge": [
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 10
+        },
+        {
+          "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+          "Param": 20
+        },
+        {
+          "Name": "Have no downed characters"
+        }
+      ],
+      "Countdown": 30,
+      "DamageType1": [
+        "Fire",
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Fire"
+      ],
+      "MazeGroupID1": 4,
+      "MazeGroupID2": 5,
+      "NpcMonsterIDList1": [
+        1004010
+      ],
+      "NpcMonsterIDList2": [
+        3024030
+      ],
+      "EventIDList1": [
+        {
+          "StageID": 30119121,
+          "StageType": "Challenge",
+          "StageName": 14813692740671814000,
+          "HardLevelGroup": 3,
+          "Level": 95,
+          "EliteGroup": 291,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4033030,
+              "Monster1": 8003010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 100403002,
+              "Monster1": 100401014
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "EventIDList2": [
+        {
+          "StageID": 30119122,
+          "StageType": "Challenge",
+          "StageName": 18134484362013514000,
+          "HardLevelGroup": 3,
+          "Level": 95,
+          "EliteGroup": 291,
+          "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+          "StageAbilityConfig": [],
+          "SubLevelGraphs": [],
+          "StageConfigData": [
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_Wave",
+              "MOJJBFBKBNC": "2"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_IsEliteBattle",
+              "MOJJBFBKBNC": "1"
+            },
+            {
+              "$type": "ILKEMJNAEKE",
+              "JDKAMOANICM": "_CreateBattleEvent",
+              "MOJJBFBKBNC": "30142"
+            }
+          ],
+          "MonsterList": [
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 4053010,
+              "Monster1": 4063010
+            },
+            {
+              "$type": "StageMonsterWave",
+              "Monster0": 3024030
+            }
+          ],
+          "LevelLoseCondition": [],
+          "LevelWinCondition": [],
+          "Release": true,
+          "ForbidExitBattle": true,
+          "MonsterWarningRatio": 1.1,
+          "TrialAvatarList": []
+        }
+      ],
+      "BeginTime": "2025-11-03 04:00:00",
+      "EndTime": "2025-12-15 04:00:00"
     }
   ]
 }
