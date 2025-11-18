@@ -13,7 +13,9 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
 
     const asData = await loadAS(asIds, locale);
 
-    return NextResponse.json(asData);
+    return new NextResponse(JSON.stringify(asData), {
+      headers: { "Content-Type": "application/json" }
+    });
   } catch {
     return NextResponse.json({ error: 'Failed to load as data' }, { status: 500 });
   }

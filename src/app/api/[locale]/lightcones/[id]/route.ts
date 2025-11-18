@@ -14,5 +14,7 @@ export async function GET(
     return NextResponse.json({ error: 'Lightcone not found' }, { status: 404 })
   }
 
-  return NextResponse.json(lightcone)
+  return new NextResponse(JSON.stringify(lightcone), {
+    headers: { "Content-Type": "application/json" }
+  });
 }

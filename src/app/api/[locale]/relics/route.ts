@@ -6,14 +6,16 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
     const body = await request.json();
     const relicIds = body.relicIds as string[];
     const { locale } = await params;
-    
+
     if (!Array.isArray(relicIds) || relicIds.some(id => typeof id !== 'string')) {
       return NextResponse.json({ error: 'Invalid relicIds' }, { status: 400 });
     }
 
     const relics = await loadRelics(relicIds, locale);
 
-    return NextResponse.json(relics);
+    return new NextResponse(JSON.stringify(relics), {
+      headers: { "Content-Type": "application/json" }
+    });
   } catch {
     return NextResponse.json({ error: 'Failed to load relics' }, { status: 500 });
   }

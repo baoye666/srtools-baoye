@@ -13,7 +13,9 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
 
     const peakData = await loadPeak(peakIds, locale);
 
-    return NextResponse.json(peakData);
+    return new NextResponse(JSON.stringify(peakData), {
+      headers: { "Content-Type": "application/json" }
+    });
   } catch {
     return NextResponse.json({ error: 'Failed to load peak data' }, { status: 500 });
   }

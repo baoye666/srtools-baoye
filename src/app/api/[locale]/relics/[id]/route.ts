@@ -14,5 +14,7 @@ export async function GET(
     return NextResponse.json({ error: 'Relic not found' }, { status: 404 })
   }
 
-  return NextResponse.json(relic)
+  return new NextResponse(JSON.stringify(relic), {
+    headers: { "Content-Type": "application/json" }
+  });
 }

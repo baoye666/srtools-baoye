@@ -14,5 +14,7 @@ export async function GET(
     return NextResponse.json({ error: 'Character not found' }, { status: 404 })
   }
 
-  return NextResponse.json(char)
+  return new NextResponse(JSON.stringify(char), {
+    headers: { "Content-Type": "application/json" }
+  });
 }

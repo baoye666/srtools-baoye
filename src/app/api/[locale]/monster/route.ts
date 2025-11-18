@@ -6,14 +6,16 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
     const body = await request.json();
     const monsterIds = body.monsterIds as string[];
     const { locale } = await params;
-    
+
     if (!Array.isArray(monsterIds) || monsterIds.some(id => typeof id !== 'string')) {
       return NextResponse.json({ error: 'Invalid monsterIds' }, { status: 400 });
     }
 
     const monsterData = await loadMonster(monsterIds, locale);
 
-    return NextResponse.json(monsterData);
+    return new NextResponse(JSON.stringify(monsterData), {
+      headers: { "Content-Type": "application/json" }
+    });
   } catch {
     return NextResponse.json({ error: 'Failed to load monster data' }, { status: 500 });
   }

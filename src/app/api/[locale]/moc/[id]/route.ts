@@ -14,5 +14,7 @@ export async function GET(
     return NextResponse.json({ error: 'MOC info not found' }, { status: 404 })
   }
 
-  return NextResponse.json(moc)
+  return new NextResponse(JSON.stringify(moc), {
+    headers: { "Content-Type": "application/json" }
+  });
 }

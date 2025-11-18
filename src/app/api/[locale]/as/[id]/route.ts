@@ -13,6 +13,7 @@ export async function GET(
   if (!as) {
     return NextResponse.json({ error: 'AS info not found' }, { status: 404 })
   }
-
-  return NextResponse.json(as)
+  return new NextResponse(JSON.stringify(as), {
+    headers: { "Content-Type": "application/json" }
+  });
 }

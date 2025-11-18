@@ -14,5 +14,7 @@ export async function GET(
     return NextResponse.json({ error: 'Peak info not found' }, { status: 404 })
   }
 
-  return NextResponse.json(peak)
+  return new NextResponse(JSON.stringify(peak), {
+    headers: { "Content-Type": "application/json" }
+  });
 }

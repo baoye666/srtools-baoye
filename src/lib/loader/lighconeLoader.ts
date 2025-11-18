@@ -56,7 +56,7 @@ export async function loadLightcones(charIds: string[], locale: string): Promise
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
   const filePath = getJsonFilePath(locale);
-  fs.writeFileSync(filePath, JSON.stringify(result, null, 2), 'utf-8');
+  fs.writeFileSync(filePath, JSON.stringify(result), 'utf-8');
 
   lightconeFileCache[locale] = result;
   lightconeMap = result;

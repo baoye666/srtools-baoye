@@ -6,14 +6,16 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
     const body = await request.json();
     const lightconeIds = body.lightconeIds as string[];
     const { locale } = await params;
-    
+
     if (!Array.isArray(lightconeIds) || lightconeIds.some(id => typeof id !== 'string')) {
       return NextResponse.json({ error: 'Invalid lightconeIds' }, { status: 400 });
     }
 
     const lightcones = await loadLightcones(lightconeIds, locale);
 
-    return NextResponse.json(lightcones);
+    return new NextResponse(JSON.stringify(lightcones), {
+      headers: { "Content-Type": "application/json" }
+    });
   } catch {
     return NextResponse.json({ error: 'Failed to load lightcones' }, { status: 500 });
   }

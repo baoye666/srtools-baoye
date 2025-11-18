@@ -13,7 +13,9 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
 
     const mocData = await loadMOC(mocIds, locale);
 
-    return NextResponse.json(mocData);
+    return new NextResponse(JSON.stringify(mocData), {
+      headers: { "Content-Type": "application/json" }
+    });
   } catch {
     return NextResponse.json({ error: 'Failed to load moc data' }, { status: 500 });
   }

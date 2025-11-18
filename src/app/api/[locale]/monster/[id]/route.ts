@@ -13,6 +13,7 @@ export async function GET(
   if (!monster) {
     return NextResponse.json({ error: 'Monster info not found' }, { status: 404 })
   }
-
-  return NextResponse.json(monster)
+  return new NextResponse(JSON.stringify(monster), {
+    headers: { "Content-Type": "application/json" }
+  });
 }

@@ -14,5 +14,8 @@ export async function GET(
     return NextResponse.json({ error: 'PF info not found' }, { status: 404 })
   }
 
-  return NextResponse.json(pf)
+
+  return new NextResponse(JSON.stringify(pf), {
+    headers: { "Content-Type": "application/json" }
+  });
 }
