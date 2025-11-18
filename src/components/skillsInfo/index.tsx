@@ -146,7 +146,7 @@ export default function SkillsInfo() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                 <div className="rounded-xl p-6 shadow-lg">
                     <h2 className="flex items-center gap-2 text-2xl font-bold mb-6 text-base-content">
-                        <div className="w-2 h-6 bg-gradient-to-b from-primary to-primary/50 rounded-full"></div>
+                        <div className="w-2 h-6 bg-linear-to-b from-primary to-primary/50 rounded-full"></div>
                         {transI18n("skills")}
                     </h2>
                     <div className="flex flex-col items-center">
@@ -271,7 +271,7 @@ export default function SkillsInfo() {
                 </div>
                 <div className="bg-base-100 rounded-xl p-6 shadow-lg">
                     <h2 className="flex items-center gap-2 text-2xl font-bold mb-6 text-base-content">
-                        <div className="w-2 h-6 bg-gradient-to-b from-primary to-primary/50 rounded-full"></div>
+                        <div className="w-2 h-6 bg-linear-to-b from-primary to-primary/50 rounded-full"></div>
                         {transI18n("details")}
                     </h2>
                     {skillSelected && avatarInfo?.SkillTrees && avatarData && (

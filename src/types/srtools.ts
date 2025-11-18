@@ -26,7 +26,7 @@ export interface LightconeJson {
 }
 export interface AvatarData {
     rank: number,
-    skills: { [key: string]: number }
+    skills: Record<string, number>
 }
 
 export interface AvatarJson {
@@ -75,7 +75,7 @@ export interface FreeSRJson {
     key?: string;
     lightcones: LightconeJson[];
     relics: RelicJson[];
-    avatars: { [key: string]: AvatarJson };
+    avatars: Record<string, AvatarJson>;
     battle_config: BattleConfigJson;
     loadout?: LoadoutJson[];
 }

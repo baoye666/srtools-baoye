@@ -2,11 +2,11 @@
 import { z } from "zod";
 
 export const lightConeBasicRawSchema = z.object({
-  rank: z.string(),
-  baseType: z.string(),
-  en: z.string(),
-  desc: z.string(),
-  kr: z.string(),
-  cn: z.string(),
-  jp: z.string(),
+    rank: z.string(),
+    baseType: z.string(),
+    en: z.string(),
+    desc: z.string(),
+    kr: z.string(),
+    cn: z.string(),
+    jp: z.string()
 });

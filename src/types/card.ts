@@ -20,6 +20,6 @@ export interface CharacterInfoCardType {
 export interface AvatarProfileCardType {
     key: number;
     profile_name: string,
-    lightcone: LightconeStore | null,
+    lightcone?: LightconeStore | null,
     relics: Record<string, RelicStore>
 }

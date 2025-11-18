@@ -441,7 +441,7 @@ export default function ActionBar() {
                 </motion.button>
               </div>
               <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
-                <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
+                <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-linear-to-r from-pink-400 to-cyan-400">
                   {title}
                 </h3>
               </div>

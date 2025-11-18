@@ -6,7 +6,7 @@ import useUserDataStore from "@/stores/userDataStore";
 import { CharacterInfoCardType } from "@/types";
 import { useState } from "react";
 import CharacterInfoCard from "../card/characterInfoCard";
-import { freeSRJsonSchema } from "@/zod";
+import { freeSrJsonSchema } from "@/zod";
 import { toast } from "react-toastify";
 import { converterOneFreeSRDataToAvatarStore } from "@/helper";
 import { useTranslations } from "next-intl";
@@ -80,7 +80,7 @@ export default function FreeSRImport() {
             reader.onload = (e) => {
                 try {
                     const data = JSON.parse(e.target?.result as string);
-                    const parsed = freeSRJsonSchema.parse(data)
+                    const parsed = freeSrJsonSchema.parse(data)
                     setFreeSRData(parsed)
                     setError("")
 

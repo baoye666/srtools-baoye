@@ -4,7 +4,7 @@ import { BuffDetail, OptionDetail } from "./pfDetail"
 export interface ASDetail {
     Id: number
     Name: string
-    Buff: BuffDetail
+    Buff?: BuffDetail
     BuffList1: OptionDetail[]
     BuffList2: OptionDetail[]
     BeginTime: string
@@ -43,7 +43,7 @@ export interface BossTag {
     Name: string
     Desc: string
     Param: number[]
-    SkillID: number | null
+    SkillID?: number | null
     ParamFix: number[]
     Child: BossChildTag[]
 }
@@ -57,7 +57,7 @@ export interface BossChildTag {
 export interface BossDifficultyGuide {
     Desc: string
     Param: number[]
-    SkillID: number | null
+    SkillID?: number | null
     ParamFix: number[]
 }
 

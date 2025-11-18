@@ -83,7 +83,7 @@ export default function AvatarInfo() {
                                     {/* Header */}
                                     <div className="flex items-center justify-between mb-6">
                                         <h2 className="card-title text-2xl font-bold flex items-center gap-2">
-                                            <div className="w-2 h-8 bg-gradient-to-b from-success to-success/50 rounded-full"></div>
+                                            <div className="w-2 h-8 bg-linear-to-b from-success to-success/50 rounded-full"></div>
                                             {transI18n("characterSettings")}
                                         </h2>
                                     </div>
@@ -92,7 +92,7 @@ export default function AvatarInfo() {
                                         {/* Level Control */}
                                         <div className="bg-base-100 rounded-xl p-6 border border-base-content/10">
                                             <h4 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                                                <div className="w-2 h-6 bg-gradient-to-b from-info to-info/50 rounded-full"></div>
+                                                <div className="w-2 h-6 bg-linear-to-b from-info to-info/50 rounded-full"></div>
                                                 {transI18n("levelConfiguration")}
                                             </h4>
 
@@ -142,7 +142,7 @@ export default function AvatarInfo() {
                                         {/* Energy Control */}
                                         <div className="bg-base-100 rounded-xl p-6 border border-base-content/10">
                                             <h4 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                                                <div className="w-2 h-6 bg-gradient-to-b from-warning to-warning/50 rounded-full"></div>
+                                                <div className="w-2 h-6 bg-linear-to-b from-warning to-warning/50 rounded-full"></div>
                                                 {transI18n("ultimateEnergy")}
                                             </h4>
 
@@ -189,7 +189,7 @@ export default function AvatarInfo() {
                                         {/* Technique Toggle */}
                                         <div className="bg-base-100 rounded-xl p-6 border border-base-content/10">
                                             <h4 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                                                <div className="w-2 h-6 bg-gradient-to-b from-accent to-accent/50 rounded-full"></div>
+                                                <div className="w-2 h-6 bg-linear-to-b from-accent to-accent/50 rounded-full"></div>
                                                 {transI18n("battleConfiguration")}
                                             </h4>
 
@@ -277,7 +277,7 @@ export default function AvatarInfo() {
                                     {/* Header */}
                                     <div className="flex items-center justify-between mb-6">
                                         <h2 className="card-title text-2xl font-bold flex items-center gap-2">
-                                            <div className="w-2 h-8 bg-gradient-to-b from-primary to-secondary rounded-full"></div>
+                                            <div className="w-2 h-8 bg-linear-to-b from-primary to-secondary rounded-full"></div>
                                             {transI18n("lightconeEquipment")}
                                         </h2>
                                     </div>
@@ -288,7 +288,7 @@ export default function AvatarInfo() {
                                                 {/* Level & Rank Controls */}
                                                 <div className="bg-base-100 rounded-xl p-6 border border-base-content/10">
                                                     <h4 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                                                        <div className="w-2 h-6 bg-gradient-to-b from-accent to-accent/50 rounded-full"></div>
+                                                        <div className="w-2 h-6 bg-linear-to-b from-accent to-accent/50 rounded-full"></div>
                                                         {transI18n("lightconeSettings")}
                                                     </h4>
 

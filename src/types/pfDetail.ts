@@ -12,8 +12,8 @@ export interface PFDetail {
 }
 
 export interface BuffDetail {
-    Name: string | null
-    Desc: string | null
+    Name?: string | null
+    Desc?: string | null
     Param: number[]
 }
 

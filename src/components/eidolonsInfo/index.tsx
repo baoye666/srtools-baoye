@@ -28,7 +28,7 @@ export default function EidolonsInfo() {
     return (
         <div className="bg-base-100 rounded-xl p-6 shadow-lg">
             <h2 className="flex items-center gap-2 text-2xl font-bold mb-6 text-base-content">
-                <div className="w-2 h-6 bg-gradient-to-b from-primary to-primary/50 rounded-full"></div>
+                <div className="w-2 h-6 bg-linear-to-b from-primary to-primary/50 rounded-full"></div>
                 {transI18n("eidolons")}
             </h2>
             <div className="grid grid-cols-1 m-4 p-4 font-bold gap-4 w-fit max-h-[77vh] min-h-[50vh] overflow-y-scroll overflow-x-hidden">

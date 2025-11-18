@@ -1,6 +1,6 @@
 export type AvatarDataStore = {
     rank: number,
-    skills: { [key: string]: number }
+    skills: Record<string, number>
 }
 export type LightconeStore = {
     level: number;
@@ -118,4 +118,5 @@ export interface Mics {
     pf_config: PFConfigStore;
     as_config: ASConfigStore;
     ce_config: CEConfigStore;
+    peak_config: PEAKConfigStore
 }

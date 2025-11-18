@@ -2,19 +2,23 @@
 import { z } from "zod";
 
 export const partDataSchema = z.object({
-  Name: z.string(),
-  Desc: z.string(),
-  Story: z.string(),
+    Name: z.string(),
+    Desc: z.string(),
+    Story: z.string()
 });
 
 export const requireBonusSchema = z.object({
-  Desc: z.string(),
-  ParamList: z.array(z.number()),
+    Desc: z.string(),
+    ParamList: z.array(z.number())
 });
 
 export const relicDetailSchema = z.object({
-  Name: z.string(),
-  Icon: z.string(),
-  Parts: z.record(partDataSchema),
-  RequireNum: z.record(requireBonusSchema),
+    Name: z.string(),
+    Icon: z.string(),
+    Parts: z.record(z.string(), partDataSchema),
+    RequireNum: z.record(z.string(), requireBonusSchema),
+    Bonus: z.record(z.string(), z.array(z.object({
+        type: z.string(),
+        value: z.number()
+    })))
 });

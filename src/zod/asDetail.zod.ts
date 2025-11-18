@@ -2,24 +2,24 @@
 import { z } from "zod";
 
 export const bossDifficultyGuideSchema = z.object({
-  Desc: z.string(),
-  Param: z.array(z.number()),
-  SkillID: z.number().nullable(),
-  ParamFix: z.array(z.number()),
+    Desc: z.string(),
+    Param: z.array(z.number()),
+    SkillID: z.number().optional().nullable(),
+    ParamFix: z.array(z.number())
 });
 
 export const bossPhaseSchema = z.object({
-  Name: z.string(),
-  Desc: z.string(),
-  Answer: z.string(),
-  Difficulty: z.number(),
-  SkillList: z.array(z.number()),
+    Name: z.string(),
+    Desc: z.string(),
+    Answer: z.string(),
+    Difficulty: z.number(),
+    SkillList: z.array(z.number())
 });
 
 export const bossChildTagSchema = z.object({
-  Name: z.string(),
-  Desc: z.string(),
-  Param: z.array(z.number()),
+    Name: z.string(),
+    Desc: z.string(),
+    Param: z.array(z.number())
 });
 
 const buffDetailSchema = z.any();
@@ -31,48 +31,48 @@ const challengeDetailSchema = z.any();
 const eventStageDetailSchema = z.any();
 
 export const bossTagSchema = z.object({
-  Name: z.string(),
-  Desc: z.string(),
-  Param: z.array(z.number()),
-  SkillID: z.number().nullable(),
-  ParamFix: z.array(z.number()),
-  Child: z.array(bossChildTagSchema),
+    Name: z.string(),
+    Desc: z.string(),
+    Param: z.array(z.number()),
+    SkillID: z.number().optional().nullable(),
+    ParamFix: z.array(z.number()),
+    Child: z.array(bossChildTagSchema)
 });
 
 export const bossMonsterConfigSchema = z.object({
-  Difficulty: z.number(),
-  DifficultyList: z.array(z.number()),
-  TagList: z.array(bossTagSchema),
-  DifficultyGuideList: z.array(bossDifficultyGuideSchema),
-  TextGuideList: z.array(z.string()),
-  PhaseList: z.array(bossPhaseSchema),
+    Difficulty: z.number(),
+    DifficultyList: z.array(z.number()),
+    TagList: z.array(bossTagSchema),
+    DifficultyGuideList: z.array(bossDifficultyGuideSchema),
+    TextGuideList: z.array(z.string()),
+    PhaseList: z.array(bossPhaseSchema)
 });
 
-export const aSLevelSchema = z.object({
-  Id: z.number(),
-  Name: z.string(),
-  Challenge: z.array(challengeDetailSchema),
-  DamageType1: z.array(z.string()),
-  DamageType2: z.array(z.string()),
-  MazeGroupID1: z.number(),
-  MazeGroupID2: z.number(),
-  BossMonsterID1: z.number(),
-  BossMonsterID2: z.number(),
-  BossMonsterID1SkillList: z.array(z.number()),
-  BossMonsterID2SkillList: z.array(z.number()),
-  BossMonsterConfig1: bossMonsterConfigSchema,
-  BossMonsterConfig2: bossMonsterConfigSchema,
-  EventIDList1: z.array(eventStageDetailSchema),
-  EventIDList2: z.array(eventStageDetailSchema),
+export const asLevelSchema = z.object({
+    Id: z.number(),
+    Name: z.string(),
+    Challenge: z.array(challengeDetailSchema),
+    DamageType1: z.array(z.string()),
+    DamageType2: z.array(z.string()),
+    MazeGroupID1: z.number(),
+    MazeGroupID2: z.number(),
+    BossMonsterID1: z.number(),
+    BossMonsterID2: z.number(),
+    BossMonsterID1SkillList: z.array(z.number()),
+    BossMonsterID2SkillList: z.array(z.number()),
+    BossMonsterConfig1: bossMonsterConfigSchema,
+    BossMonsterConfig2: bossMonsterConfigSchema,
+    EventIDList1: z.array(eventStageDetailSchema),
+    EventIDList2: z.array(eventStageDetailSchema)
 });
 
-export const aSDetailSchema = z.object({
-  Id: z.number(),
-  Name: z.string(),
-  Buff: buffDetailSchema,
-  BuffList1: z.array(optionDetailSchema),
-  BuffList2: z.array(optionDetailSchema),
-  BeginTime: z.string(),
-  EndTime: z.string(),
-  Level: z.array(aSLevelSchema),
+export const asDetailSchema = z.object({
+    Id: z.number(),
+    Name: z.string(),
+    Buff: buffDetailSchema.optional(),
+    BuffList1: z.array(optionDetailSchema),
+    BuffList2: z.array(optionDetailSchema),
+    BeginTime: z.string(),
+    EndTime: z.string(),
+    Level: z.array(asLevelSchema)
 });

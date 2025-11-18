@@ -16,11 +16,11 @@ export default function LightconeCard({ data }: LightconeCardProps) {
     const text = getLocaleName(locale, data)
     return (
         <li className="z-10 flex flex-col items-center rounded-md shadow-lg 
-            bg-gradient-to-b from-customStart to-customEnd transform transition-transform duration-300 
+            bg-linear-to-b from-customStart to-customEnd transform transition-transform duration-300 
             hover:scale-105 cursor-pointer min-h-[220px]"
         >
             <div
-                className={`w-full rounded-md bg-gradient-to-br ${data.rank === "CombatPowerLightconeRarity5"
+                className={`w-full rounded-md bg-linear-to-br ${data.rank === "CombatPowerLightconeRarity5"
                     ? "from-yellow-400 via-yellow-600/70 to-yellow-800/50"
                     : data.rank === "CombatPowerLightconeRarity4" ? "from-purple-400 via-purple-600/70 to-purple-800/50" :
                         "from-blue-400 via-blue-600/70 to-blue-800/50"

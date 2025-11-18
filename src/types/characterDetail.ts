@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+
 export interface CharacterDetail {
     Name: string;
     Desc: string;
@@ -21,8 +21,8 @@ export interface CharacterDetail {
 
 export interface EnhancedType {
     Descs: string[];
-    ChangeRankList: any;
-    ChangeSkillTreeList: any;
+    ChangeRankList: unknown;
+    ChangeSkillTreeList: unknown;
     Ranks: Record<string, RankType>;
     Skills: Record<string, SkillType>;
     SkillTrees: Record<string, Record<string, SkillTreePoint>>;
@@ -113,7 +113,7 @@ export interface Memosprite {
     SpeedSkill: number;
     Aggro: number;
     Skills: Record<string, SpriteSkill>;
-    Talent: Record<string, any>;
+    Talent: Record<string, unknown>;
 }
 
 export interface SpriteSkill {

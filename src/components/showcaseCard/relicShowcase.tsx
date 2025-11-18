@@ -14,7 +14,7 @@ export default function RelicShowcase({
     return (
         <>
             <div
-                className="relative w-full flex flex-row items-center rounded-s-lg border-l-2 p-1 border-yellow-600/60  bg-gradient-to-r from-yellow-600/20 to-transparent"
+                className="relative w-full flex flex-row items-center rounded-s-lg border-l-2 p-1 border-yellow-600/60  bg-linear-to-r from-yellow-600/20 to-transparent"
             >
                 {/* Subtle glow overlay */}
                 <div className="absolute inset-0 rounded-s-lg  pointer-events-none"></div>

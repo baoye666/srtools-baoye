@@ -2,9 +2,9 @@
 import { z } from "zod";
 
 export const relicBasicRawEffectSchema = z.object({
-  en: z.string(),
-  ParamList: z.array(z.number()),
-  kr: z.string(),
-  cn: z.string(),
-  jp: z.string(),
+    en: z.string(),
+    ParamList: z.array(z.number()),
+    kr: z.string(),
+    cn: z.string(),
+    jp: z.string()
 });

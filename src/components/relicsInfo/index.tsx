@@ -181,7 +181,7 @@ export default function RelicsInfo() {
           <div className="lg:col-span-2">
             <div className="bg-base-100 rounded-xl p-6 shadow-lg">
               <h2 className="flex items-center gap-2 text-2xl font-bold mb-6 text-base-content">
-                <div className="w-2 h-6 bg-gradient-to-b from-primary to-primary/50 rounded-full"></div>
+                <div className="w-2 h-6 bg-linear-to-b from-primary to-primary/50 rounded-full"></div>
                 {transI18n("relics")}
               </h2>
 
@@ -280,7 +280,7 @@ export default function RelicsInfo() {
             {/* Set Effects Panel */}
             <div className="bg-base-100 rounded-xl p-6 shadow-lg">
               <h3 className="flex items-center gap-2 text-xl font-bold mb-4 text-base-content">
-                <div className="w-2 h-6 bg-gradient-to-b from-primary to-primary/50 rounded-full"></div>
+                <div className="w-2 h-6 bg-linear-to-b from-primary to-primary/50 rounded-full"></div>
                 {transI18n("setEffects")}
               </h3>
 
@@ -353,7 +353,7 @@ export default function RelicsInfo() {
 
             {title && (
               <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
-                <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
+                <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-linear-to-r from-pink-400 to-cyan-400">
                   {title}
                 </h3>
               </div>

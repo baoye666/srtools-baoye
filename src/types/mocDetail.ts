@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface MocDetail {
     Id: number
     Name: string
@@ -21,7 +20,7 @@ export interface MocDetail {
 
 export interface ChallengeDetail {
     Name: string
-    Param?: number
+    Param?: number | null
 }
 
 export interface EventStageDetail {
@@ -32,17 +31,17 @@ export interface EventStageDetail {
     Level: number
     EliteGroup?: number
     LevelGraphPath: string
-    StageAbilityConfig: any[]
-    BattleScoringGroup?: number
-    SubLevelGraphs: any[]
+    StageAbilityConfig: unknown[]
+    BattleScoringGroup?: number | null
+    SubLevelGraphs: unknown[]
     StageConfigData: StageConfig[]
     MonsterList: Record<string, number>[]
     LevelLoseCondition: string[]
     LevelWinCondition: string[]
     Release: boolean
     ForbidExitBattle: boolean
-    MonsterWarningRatio?: number
-    TrialAvatarList: any[]
+    MonsterWarningRatio?: number | null
+    TrialAvatarList: unknown[]
 }
 export interface StageConfig {
     $type: string

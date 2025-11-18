@@ -11,10 +11,10 @@ interface RelicCardProps {
 }
 const getRarityColor = (rarity: string) => {
     switch (rarity) {
-        case '3': return 'border-green-500 shadow-green-500/50 bg-gradient-to-br from-green-700 via-green-400 to-green-500';
-        case '4': return 'border-blue-500 shadow-blue-500/50 bg-gradient-to-br from-blue-700 via-blue-400 to-blue-500';
-        case '5': return 'border-purple-500 shadow-purple-500/50 bg-gradient-to-br from-purple-700 via-purple-400 to-purple-500';
-        case '6': return 'border-yellow-500 shadow-yellow-500/50 bg-gradient-to-br from-yellow-700 via-yellow-400 to-yellow-500';
+        case '3': return 'border-green-500 shadow-green-500/50 bg-linear-to-br from-green-700 via-green-400 to-green-500';
+        case '4': return 'border-blue-500 shadow-blue-500/50 bg-linear-to-br from-blue-700 via-blue-400 to-blue-500';
+        case '5': return 'border-purple-500 shadow-purple-500/50 bg-linear-to-br from-purple-700 via-purple-400 to-purple-500';
+        case '6': return 'border-yellow-500 shadow-yellow-500/50 bg-linear-to-br from-yellow-700 via-yellow-400 to-yellow-500';
         default: return 'border-gray-500 shadow-gray-500/50';
     }
 };

@@ -6,10 +6,6 @@ interface PrivacySettingInfo {
     displayDiary: boolean
 }
 
-interface ChallengeInfo {
-    // Thêm các field cụ thể nếu có
-}
-
 interface RecordInfo {
     achievementCount: number
     bookCount: number
@@ -17,7 +13,7 @@ interface RecordInfo {
     equipmentCount: number
     musicCount: number
     relicCount: number
-    challengeInfo: ChallengeInfo
+    challengeInfo: unknown;
     maxRogueChallengeScore: number
 }
 

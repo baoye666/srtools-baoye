@@ -350,7 +350,7 @@ export default function Header() {
                         <div className="flex flex-col justify-center items-start">
                             <h1 className="text-xl font-bold">
                                 <span className="text-emerald-500">Firefly Sr</span>
-                                <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-orange-500 to-red-500">
+                                <span className="bg-clip-text text-transparent bg-linear-to-r from-emerald-400 via-orange-500 to-red-500">
                                     Tools
                                 </span>
                             </h1>
@@ -557,7 +557,7 @@ export default function Header() {
 
                 {/* GitHub Link */}
                 <Link
-                    className='hidden sm:flex btn btn-ghost btn-sm btn-circle bg-white/20 hover:bg-white/100 transition-all duration-200 items-center justify-center'
+                    className='hidden sm:flex btn btn-ghost btn-sm btn-circle bg-white/20 hover:bg-white transition-all duration-200 items-center justify-center'
                     href={"https://github.com/AzenKain/Firefly-Srtools"}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -583,7 +583,7 @@ export default function Header() {
                         </div>
 
                         <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
-                            <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
+                            <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-linear-to-r from-pink-400 to-cyan-400">
                                 {title}
                             </h3>
                         </div>

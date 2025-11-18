@@ -2,8 +2,8 @@
 import { z } from "zod";
 
 export const affixDetailSchema = z.object({
-  property: z.string(),
-  base: z.number(),
-  step: z.number(),
-  step_num: z.number(),
+    property: z.string(),
+    base: z.number(),
+    step: z.number(),
+    step_num: z.number()
 });

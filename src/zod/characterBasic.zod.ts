@@ -2,14 +2,14 @@
 import { z } from "zod";
 
 export const characterBasicRawSchema = z.object({
-  release: z.number(),
-  icon: z.string(),
-  rank: z.string(),
-  baseType: z.string(),
-  damageType: z.string(),
-  en: z.string(),
-  desc: z.string(),
-  kr: z.string(),
-  cn: z.string(),
-  jp: z.string(),
+    release: z.number(),
+    icon: z.string(),
+    rank: z.string(),
+    baseType: z.string(),
+    damageType: z.string(),
+    en: z.string(),
+    desc: z.string(),
+    kr: z.string(),
+    cn: z.string(),
+    jp: z.string()
 });

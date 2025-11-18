@@ -3,7 +3,7 @@ import { SendDataThroughProxy, SendDataToServer } from "@/lib/api/api"
 import useConnectStore from "@/stores/connectStore"
 import useUserDataStore from "@/stores/userDataStore"
 import { converterToFreeSRJson } from "./converterToFreeSRJson"
-import { pSResponseSchema } from "@/zod"
+import { psResponseSchema } from "@/zod"
 import useGlobalStore from "@/stores/globalStore"
 
 export const connectToPS = async (): Promise<{ success: boolean, message: string }> => {
@@ -29,7 +29,7 @@ export const connectToPS = async (): Promise<{ success: boolean, message: string
         } else if (response.error) {
             return { success: false, message: response.error }
         } else {
-            const parsed = pSResponseSchema.safeParse(response.data)
+            const parsed = psResponseSchema.safeParse(response.data)
             if (!parsed.success) {
                 return { success: false, message: "Invalid response schema" }
             }
@@ -78,7 +78,7 @@ export const syncDataToPS = async (): Promise<{ success: boolean, message: strin
         } else if (response.error) {
             return { success: false, message: response.error }
         } else {
-            const parsed = pSResponseSchema.safeParse(response.data)
+            const parsed = psResponseSchema.safeParse(response.data)
             if (!parsed.success) {
                 return { success: false, message: "Invalid response schema" }
             }

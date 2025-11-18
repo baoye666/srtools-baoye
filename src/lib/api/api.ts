@@ -2,7 +2,7 @@
 
 import { AffixDetail, ASDetail, CharacterDetail, ConfigMaze, FreeSRJson, LightConeDetail, MocDetail, MonsterDetail, PeakDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
 import axios from 'axios';
-import { pSResponseSchema } from "@/zod";
+import { psResponseSchema } from "@/zod";
 import { ExtraData } from "@/types";
 
 export async function getConfigMazeApi(): Promise<ConfigMaze> {
@@ -246,7 +246,7 @@ export async function SendDataToServer(
 ): Promise<PSResponse | string> {
     try {
         const response = await axios.post(`${serverUrl}`, { username, password, data, extra_data: extraData })
-        const parsed = pSResponseSchema.safeParse(response.data)
+        const parsed = psResponseSchema.safeParse(response.data)
         if (!parsed.success) {
             return "Invalid response schema";
         }
