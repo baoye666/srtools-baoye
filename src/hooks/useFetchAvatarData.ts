@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client"
 import { useQuery } from '@tanstack/react-query'
-import { fetchCharactersByIdsNative, getCharacterListApi } from '@/lib/api'
+import { fetchCharactersApi, getCharacterListApi } from '@/lib/api'
 import { useEffect } from 'react'
 import { toast } from 'react-toastify'
 import useAvatarStore from '@/stores/avatarStore'
@@ -36,14 +37,12 @@ export const useFetchAvatarData = () => {
         for (const avatar of Object.values(avatarStore)) {
             setAvatar(avatar)
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [mapAvatarInfo])
     
     const { data: dataAvatarInfo, error: errorAvatarInfo } = useQuery({
         queryKey: ['avatarInfoData', locale],
         queryFn: () =>
-            fetchCharactersByIdsNative(
-                dataAvatar!.map((item) => item.id),
+            fetchCharactersApi(
                 listCurrentLanguageApi[locale.toLowerCase()]
             ),
         staleTime: 1000 * 60 * 5,
@@ -60,7 +59,6 @@ export const useFetchAvatarData = () => {
         } else if (errorAvatar) {
             toast.error("Failed to load avatar data")
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [dataAvatar, errorAvatar])
 
     useEffect(() => {
@@ -69,6 +67,5 @@ export const useFetchAvatarData = () => {
         } else if (errorAvatarInfo) {
             toast.error("Failed to load avatar info data")
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [dataAvatarInfo, errorAvatarInfo])
 }

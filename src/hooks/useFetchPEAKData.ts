@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 import { useQuery } from '@tanstack/react-query'
-import { fetchPeakByIdsNative, getPEAKEventListApi } from '@/lib/api'
+import { fetchPeakEventApi, getPEAKEventListApi } from '@/lib/api'
 import { useEffect } from 'react'
 import { listCurrentLanguageApi } from '@/constant/constant'
 import useLocaleStore from '@/stores/localeStore'
@@ -21,8 +22,7 @@ export const useFetchPEAKData = () => {
     const { data: dataPEAKInfo, error: errorPEAKInfo } = useQuery({
         queryKey: ['peakInfoData', locale],
         queryFn: () =>
-            fetchPeakByIdsNative(
-                dataPEAK!.map((item) => item.id),
+            fetchPeakEventApi(
                 listCurrentLanguageApi[locale.toLowerCase()]
             ),
         staleTime: 1000 * 60 * 5,
@@ -32,18 +32,15 @@ export const useFetchPEAKData = () => {
                 for (const item of newData[key].PreLevel) {
                     item.EventIDList = item.EventIDList.map((event: EventStageDetail) => ({
                         ...event,
-                        // eslint-disable-next-line @typescript-eslint/no-unused-vars
                         MonsterList: event.MonsterList.map(({ $type, ...rest }) => rest)
                     }))
                 }
                 newData[key].BossLevel.EventIDList = newData[key].BossLevel.EventIDList.map((event: EventStageDetail) => ({
                     ...event,
-                    // eslint-disable-next-line @typescript-eslint/no-unused-vars
                     MonsterList: event.MonsterList.map(({ $type, ...rest }) => rest)
                 }))
                 newData[key].BossConfig.EventIDList = newData[key].BossConfig.EventIDList.map((event: EventStageDetail) => ({
                     ...event,
-                    // eslint-disable-next-line @typescript-eslint/no-unused-vars
                     MonsterList: event.MonsterList.map(({ $type, ...rest }) => rest)
                 }))
             }

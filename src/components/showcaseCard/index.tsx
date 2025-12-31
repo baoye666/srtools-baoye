@@ -1,6 +1,5 @@
 "use client";
-
-import React, { useEffect, useState, useRef, useMemo, useCallback } from 'react';
+import { useEffect, useState, useRef, useMemo, useCallback } from 'react';
 import useAvatarStore from "@/stores/avatarStore";
 import { FastAverageColor, FastAverageColorResult } from 'fast-average-color';
 import NextImage from 'next/image';
@@ -53,7 +52,8 @@ export default function ShowCaseInfo() {
         link.href = canvas.toDataURL("image/png");
         link.click();
       })
-      .catch(() => {
+      .catch((e) => {
+        console.log(e)
         toast.error("Error generating showcase card!");
       });
   }, [cardRef, avatarSelected, locale]);
@@ -567,7 +567,7 @@ export default function ShowCaseInfo() {
               <div className="absolute top-4 left-4">
                 {avatarSelected && avatarInfo && avatarData?.data && typeof avatarData?.data?.rank === "number" && (
                   <div className="flex flex-col">
-                    {avatarInfo?.RankIcon.map((src, index) => {
+                    {avatarInfo?.RankIcon?.map((src, index) => {
                       const isActive = avatarData?.data?.rank > index;
 
                       return (

@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 import { useQuery } from '@tanstack/react-query'
-import { fetchPFByIdsNative, getPFEventListApi } from '@/lib/api'
+import { fetchPFEventApi, getPFEventListApi } from '@/lib/api'
 import { useEffect } from 'react'
 import { listCurrentLanguageApi } from '@/constant/constant'
 import useLocaleStore from '@/stores/localeStore'
@@ -21,8 +22,7 @@ export const useFetchPFData = () => {
     const { data: dataPFInfo, error: errorPFInfo } = useQuery({
         queryKey: ['pfInfoData', locale],
         queryFn: () =>
-            fetchPFByIdsNative(
-                dataPF!.map((item) => item.id),
+            fetchPFEventApi(
                 listCurrentLanguageApi[locale.toLowerCase()]
             ),
         staleTime: 1000 * 60 * 5,
@@ -33,12 +33,10 @@ export const useFetchPFData = () => {
                 for (const item of newData[key].Level) {
                     item.EventIDList1 = item.EventIDList1.map((event: EventStageDetail) => ({
                         ...event,
-                        // eslint-disable-next-line @typescript-eslint/no-unused-vars
                         MonsterList: event.MonsterList.map(({ $type, ...rest }) => rest)
                     }))
                     item.EventIDList2 = item.EventIDList2.map((event: EventStageDetail) => ({
                         ...event,
-                        // eslint-disable-next-line @typescript-eslint/no-unused-vars
                         MonsterList: event.MonsterList.map(({ $type, ...rest }) => rest)
                     }))
                 }

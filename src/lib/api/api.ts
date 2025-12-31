@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-
 import { AffixDetail, ASDetail, CharacterDetail, ConfigMaze, FreeSRJson, LightConeDetail, MocDetail, MonsterDetail, PeakDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
 import axios from 'axios';
 import { psResponseSchema } from "@/zod";
@@ -7,15 +6,7 @@ import { ExtraData } from "@/types";
 
 export async function getConfigMazeApi(): Promise<ConfigMaze> {
     try {
-        const res = await axios.get<ConfigMaze>(
-            `/api/config-maze`,
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-        );
-
+        const res = await axios.get<ConfigMaze>(`/data/config_maze.json`);
         return res.data as ConfigMaze;
     } catch (error: unknown) {
         if (axios.isAxiosError(error)) {
@@ -35,15 +26,7 @@ export async function getConfigMazeApi(): Promise<ConfigMaze> {
 
 export async function getMainAffixApi(): Promise<Record<string, Record<string, AffixDetail>>> {
     try {
-        const res = await axios.get<Record<string, Record<string, AffixDetail>>>(
-            `/api/main-affixes`,
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-        );
-
+        const res = await axios.get<Record<string, Record<string, AffixDetail>>>(`/data/main_affixes.json`);
         return res.data as Record<string, Record<string, AffixDetail>>;
     } catch (error: unknown) {
         if (axios.isAxiosError(error)) {
@@ -57,14 +40,7 @@ export async function getMainAffixApi(): Promise<Record<string, Record<string, A
 
 export async function getSubAffixApi(): Promise<Record<string, Record<string, AffixDetail>>> {
     try {
-        const res = await axios.get<Record<string, Record<string, AffixDetail>>>(
-            `/api/sub-affixes`,
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-        );
+        const res = await axios.get<Record<string, Record<string, AffixDetail>>>(`/data/sub_affixes.json`);
 
         return res.data as Record<string, Record<string, AffixDetail>>;
     } catch (error: unknown) {
@@ -77,19 +53,15 @@ export async function getSubAffixApi(): Promise<Record<string, Record<string, Af
     }
 }
 
-export async function fetchCharacterByIdNative(id: string, locale: string): Promise<CharacterDetail | null> {
+export async function fetchCharactersApi(locale: string): Promise<Record<string, CharacterDetail>> {
     try {
-        const res = await axios.get<CharacterDetail>(`/api/${locale}/characters/${id}`);
-        return res.data;
-    } catch (error) {
-        console.error('Failed to fetch character:', error);
-        return null;
-    }
-}
-
-export async function fetchCharactersByIdsNative(ids: string[], locale: string): Promise<Record<string, CharacterDetail>> {
-    try {
-        const res = await axios.post<Record<string, CharacterDetail>>(`/api/${locale}/characters`, { charIds: ids });
+        const res = await axios.get<Record<string, CharacterDetail>>(`/data/characters.${locale}.json`);
+        const resIcon = await axios.get<Record<string, string[]>>(`/data/rank_icon.json`);
+        for (const [key, char] of Object.entries(res.data)) {
+            if (resIcon.data[key]) {
+                char.RankIcon = resIcon.data[key];
+            }
+        }
         return res.data;
     } catch (error) {
         console.error('Failed to fetch characters:', error);
@@ -97,19 +69,15 @@ export async function fetchCharactersByIdsNative(ids: string[], locale: string):
     }
 }
 
-export async function fetchLightconeByIdNative(id: string, locale: string): Promise<LightConeDetail | null> {
+export async function fetchLightconesApi(locale: string): Promise<Record<string, LightConeDetail>> {
     try {
-        const res = await axios.get<LightConeDetail>(`/api/${locale}/lightcones/${id}`);
-        return res.data;
-    } catch (error) {
-        console.error('Failed to fetch lightcone:', error);
-        return null;
-    }
-}
-
-export async function fetchLightconesByIdsNative(ids: string[], locale: string): Promise<Record<string, LightConeDetail>> {
-    try {
-        const res = await axios.post<Record<string, LightConeDetail>>(`/api/${locale}/lightcones`, { lightconeIds: ids });
+        const res = await axios.get<Record<string, LightConeDetail>>(`/data/lightcones.${locale}.json`);
+        const resBonus = await axios.get<Record<string, Record<string, { type: string, value: number }[]>>>('/data/lightcone_bonus.json');
+        for (const [key, relic] of Object.entries(res.data)) {
+            if (resBonus.data[key]) {
+                relic.Bonus = resBonus.data[key];
+            }
+        }
         return res.data;
     } catch (error) {
         console.error('Failed to fetch lightcones:', error);
@@ -117,19 +85,15 @@ export async function fetchLightconesByIdsNative(ids: string[], locale: string):
     }
 }
 
-export async function fetchRelicByIdNative(id: string, locale: string): Promise<RelicDetail | null> {
+export async function fetchRelicsApi(locale: string): Promise<Record<string, RelicDetail>> {
     try {
-        const res = await axios.get<RelicDetail>(`/api/${locale}/relics/${id}`);
-        return res.data;
-    } catch (error) {
-        console.error('Failed to fetch relic:', error);
-        return null;
-    }
-}
-
-export async function fetchRelicsByIdsNative(ids: string[], locale: string): Promise<Record<string, RelicDetail>> {
-    try {
-        const res = await axios.post<Record<string, RelicDetail>>(`/api/${locale}/relics`, { relicIds: ids });
+        const res = await axios.get<Record<string, RelicDetail>>(`/data/relics.${locale}.json`);
+        const resBonus = await axios.get<Record<string, Record<string, { type: string, value: number }[]>>>('/data/relic_bonus.json');
+        for (const [key, relic] of Object.entries(res.data)) {
+            if (resBonus.data[key]) {
+                relic.Bonus = resBonus.data[key];
+            }
+        }
         return res.data;
     } catch (error) {
         console.error('Failed to fetch relics:', error);
@@ -137,9 +101,9 @@ export async function fetchRelicsByIdsNative(ids: string[], locale: string): Pro
     }
 }
 
-export async function fetchASByIdsNative(ids: string[], locale: string): Promise<Record<string, ASDetail> | null> {
+export async function fetchASEventApi(locale: string): Promise<Record<string, ASDetail> | null> {
     try {
-        const res = await axios.post<Record<string, ASDetail>>(`/api/${locale}/as`, { asIds: ids });
+        const res = await axios.get<Record<string, ASDetail>>(`/data/as.${locale}.json`);
         return res.data;
     } catch (error) {
         console.error('Failed to fetch AS:', error);
@@ -147,19 +111,9 @@ export async function fetchASByIdsNative(ids: string[], locale: string): Promise
     }
 }
 
-export async function fetchASByIdNative(ids: string, locale: string): Promise<ASDetail | null> {
+export async function fetchPFEventApi(locale: string): Promise<Record<string, PFDetail> | null> {
     try {
-        const res = await axios.get<ASDetail>(`/api/${locale}/as/${ids}`);
-        return res.data;
-    } catch (error) {
-        console.error('Failed to fetch AS:', error);
-        return null;
-    }
-}
-
-export async function fetchPFByIdsNative(ids: string[], locale: string): Promise<Record<string, PFDetail> | null> {
-    try {
-        const res = await axios.post<Record<string, PFDetail>>(`/api/${locale}/pf`, { pfIds: ids });
+        const res = await axios.get<Record<string, PFDetail>>(`/data/pf.${locale}.json`);
         return res.data;
     } catch (error) {
         console.error('Failed to fetch PF:', error);
@@ -167,19 +121,9 @@ export async function fetchPFByIdsNative(ids: string[], locale: string): Promise
     }
 }
 
-export async function fetchPFByIdNative(ids: string, locale: string): Promise<PFDetail | null> {
+export async function fetchMOCEventApi(locale: string): Promise<Record<string, MocDetail[]> | null> {
     try {
-        const res = await axios.get<PFDetail>(`/api/${locale}/pf/${ids}`);
-        return res.data;
-    } catch (error) {
-        console.error('Failed to fetch PF:', error);
-        return null;
-    }
-}
-
-export async function fetchMOCByIdsNative(ids: string[], locale: string): Promise<Record<string, MocDetail[]> | null> {
-    try {
-        const res = await axios.post<Record<string, MocDetail[]>>(`/api/${locale}/moc`, { mocIds: ids });
+        const res = await axios.get<Record<string, MocDetail[]>>(`/data/moc.${locale}.json`);
         return res.data;
     } catch (error) {
         console.error('Failed to fetch MOC:', error);
@@ -187,19 +131,9 @@ export async function fetchMOCByIdsNative(ids: string[], locale: string): Promis
     }
 }
 
-export async function fetchMOCByIdNative(ids: string, locale: string): Promise<MocDetail[] | null> {
+export async function fetchPeakEventApi(locale: string): Promise<Record<string, PeakDetail> | null> {
     try {
-        const res = await axios.get<MocDetail[]>(`/api/${locale}/moc/${ids}`);
-        return res.data;
-    } catch (error) {
-        console.error('Failed to fetch MOC:', error);
-        return null;
-    }
-}
-
-export async function fetchPeakByIdsNative(ids: string[], locale: string): Promise<Record<string, PeakDetail> | null> {
-    try {
-        const res = await axios.post<Record<string, PeakDetail>>(`/api/${locale}/peak`, { peakIds: ids });
+        const res = await axios.get<Record<string, PeakDetail>>(`/data/peak.${locale}.json`);
         return res.data;
     } catch (error) {
         console.error('Failed to fetch peak:', error);
@@ -207,29 +141,9 @@ export async function fetchPeakByIdsNative(ids: string[], locale: string): Promi
     }
 }
 
-export async function fetchPeakByIdNative(ids: string, locale: string): Promise<PeakDetail | null> {
+export async function fetchMonstersApi(locale: string): Promise<Record<string, MonsterDetail> | null> {
     try {
-        const res = await axios.get<PeakDetail>(`/api/${locale}/peak/${ids}`);
-        return res.data;
-    } catch (error) {
-        console.error('Failed to fetch peak:', error);
-        return null;
-    }
-}
-
-export async function fetchMonsterByIdsNative(ids: string[], locale: string): Promise<Record<string, MonsterDetail> | null> {
-    try {
-        const res = await axios.post<Record<string, MonsterDetail>>(`/api/${locale}/monster`, { monsterIds: ids });
-        return res.data;
-    } catch (error) {
-        console.error('Failed to fetch monster:', error);
-        return null;
-    }
-}
-
-export async function fetchMonsterByIdNative(ids: string, locale: string): Promise<MonsterDetail | null> {
-    try {
-        const res = await axios.get<MonsterDetail>(`/api/${locale}/monster/${ids}`);
+        const res = await axios.get<Record<string, MonsterDetail>>(`/data/monsters.${locale}.json`);
         return res.data;
     } catch (error) {
         console.error('Failed to fetch monster:', error);

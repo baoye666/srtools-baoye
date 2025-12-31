@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 import { useQuery } from '@tanstack/react-query'
-import { fetchASByIdsNative, getASEventListApi } from '@/lib/api'
+import { fetchASEventApi, getASEventListApi } from '@/lib/api'
 import { useEffect } from 'react'
 import { listCurrentLanguageApi } from '@/constant/constant'
 import useLocaleStore from '@/stores/localeStore'
@@ -21,8 +22,7 @@ export const useFetchASData = () => {
     const { data: dataASInfo, error: errorASInfo } = useQuery({
         queryKey: ['asInfoData', locale],
         queryFn: () =>
-            fetchASByIdsNative(
-                dataAS!.map((item) => item.id),
+            fetchASEventApi(
                 listCurrentLanguageApi[locale.toLowerCase()]
             ),
         staleTime: 1000 * 60 * 5,
@@ -33,13 +33,19 @@ export const useFetchASData = () => {
                 for (const item of newData[key].Level) {
                     item.EventIDList1 = item.EventIDList1.map((event: EventStageDetail) => ({
                         ...event,
-                        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                        MonsterList: event.MonsterList.map(({ $type, ...rest }) => rest)
+
+                        MonsterList: event.MonsterList.map((monster) => {
+                            const { $type, ...rest } = monster;
+                            return rest;
+                        })
                     }))
                     item.EventIDList2 = item.EventIDList2.map((event: EventStageDetail) => ({
                         ...event,
-                        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                        MonsterList: event.MonsterList.map(({ $type, ...rest }) => rest)
+      
+                        MonsterList: event.MonsterList.map((monster) => {
+                            const { $type, ...rest } = monster;
+                            return rest;
+                        })
                     }))
                 }
             }

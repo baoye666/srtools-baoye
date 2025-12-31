@@ -234,7 +234,7 @@ export default function ActionBar() {
                   <Image
                     src={`/icon/${avatarSelected.damageType.toLowerCase()}.webp`}
                     alt={'fire'}
-                    className="h-[40px] w-[40px] object-contain"
+                    className="h-10 w-10 object-contain"
                     width={100}
                     height={100}
                   />

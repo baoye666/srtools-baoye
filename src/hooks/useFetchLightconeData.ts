@@ -1,6 +1,6 @@
 "use client"
 import { useQuery } from '@tanstack/react-query'
-import { fetchLightconesByIdsNative, getLightconeListApi } from '@/lib/api'
+import { fetchLightconesApi, getLightconeListApi } from '@/lib/api'
 import { useEffect } from 'react'
 import useLightconeStore from '@/stores/lightconeStore'
 import { listCurrentLanguageApi } from '@/constant/constant'
@@ -20,8 +20,7 @@ export const useFetchLightconeData = () => {
     const { data: dataLightconeInfo, error: errorLightconeInfo } = useQuery({
         queryKey: ['lightconeInfoData', locale],
         queryFn: () =>
-            fetchLightconesByIdsNative(
-                dataLightcone!.map((item) => item.id),
+            fetchLightconesApi(
                 listCurrentLanguageApi[locale.toLowerCase()]
             ),
         staleTime: 1000 * 60 * 5,

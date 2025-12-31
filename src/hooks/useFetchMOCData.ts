@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 import { useQuery } from '@tanstack/react-query'
-import { fetchMOCByIdsNative, getMOCEventListApi } from '@/lib/api'
+import { fetchMOCEventApi, getMOCEventListApi } from '@/lib/api'
 import { useEffect } from 'react'
 import { listCurrentLanguageApi } from '@/constant/constant'
 import useLocaleStore from '@/stores/localeStore'
@@ -21,8 +22,7 @@ export const useFetchMOCData = () => {
     const { data: dataMOCInfo, error: errorMOCInfo } = useQuery({
         queryKey: ['mocInfoData', locale],
         queryFn: async () => {
-            const result = await fetchMOCByIdsNative(
-                dataMOC!.map((item) => item.id),
+            const result = await fetchMOCEventApi(
                 listCurrentLanguageApi[locale.toLowerCase()]
             );
             return result;
@@ -34,12 +34,10 @@ export const useFetchMOCData = () => {
                 for (const item of newData[key]) {
                     item.EventIDList1 = item.EventIDList1.map((event: EventStageDetail) => ({
                         ...event,
-                        // eslint-disable-next-line @typescript-eslint/no-unused-vars
                         MonsterList: event.MonsterList.map(({ $type, ...rest }) => rest)
                     }))
                     item.EventIDList2 = item.EventIDList2.map((event: EventStageDetail) => ({
                         ...event,
-                        // eslint-disable-next-line @typescript-eslint/no-unused-vars
                         MonsterList: event.MonsterList.map(({ $type, ...rest }) => rest)
                     }))
                 }

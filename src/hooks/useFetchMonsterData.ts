@@ -1,6 +1,6 @@
 "use client"
 import { useQuery } from '@tanstack/react-query'
-import { getMonsterValueApi, getMonsterListApi, fetchMonsterByIdsNative } from '@/lib/api'
+import { getMonsterValueApi, getMonsterListApi, fetchMonstersApi } from '@/lib/api'
 import { useEffect } from 'react'
 import { toast } from 'react-toastify'
 import useMonsterStore from '@/stores/monsterStore'
@@ -25,8 +25,7 @@ export const useFetchMonsterData = () => {
     const { data: dataMonsterDetail, error: errorMonsterDetail } = useQuery({
         queryKey: ['monsterDetailData', locale],
         queryFn: () =>
-            fetchMonsterByIdsNative(
-                dataMonster!.list.map((item) => item.id),
+            fetchMonstersApi(
                 listCurrentLanguageApi[locale.toLowerCase()]
             ),
         staleTime: 1000 * 60 * 5,

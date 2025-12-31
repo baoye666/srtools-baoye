@@ -1,6 +1,6 @@
 "use client"
 import { useQuery } from '@tanstack/react-query'
-import { fetchRelicsByIdsNative, getRelicSetListApi } from '@/lib/api'
+import { fetchRelicsApi, getRelicSetListApi } from '@/lib/api'
 import { useEffect } from 'react'
 import useRelicStore from '@/stores/relicStore'
 import { listCurrentLanguageApi } from '@/constant/constant'
@@ -19,8 +19,7 @@ export const useFetchRelicData = () => {
     const { data: dataRelicInfo, error: errorRelicInfo } = useQuery({
         queryKey: ['relicInfoData', locale],
         queryFn: () =>
-            fetchRelicsByIdsNative(
-                dataRelic!.map((item) => item.id),
+            fetchRelicsApi(
                 listCurrentLanguageApi[locale.toLowerCase()]
             ),
         staleTime: 1000 * 60 * 5,

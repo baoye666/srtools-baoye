@@ -16,4 +16,4 @@ export interface RelicDetail {
     RequireNum: Record<string, RequireBonus>;
     Bonus: Record<string, { type: string, value: number }[]>
 }
-  
+
