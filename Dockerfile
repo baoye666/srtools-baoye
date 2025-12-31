@@ -1,11 +1,9 @@
 FROM oven/bun:canary-alpine AS base
 
-# Install dependencies only when needed
 FROM base AS deps
 
 WORKDIR /app
 
-# Install dependencies
 COPY package.json bun.lock ./
 RUN bun install --frozen-lockfile
 
@@ -34,8 +32,6 @@ ENV NEXT_TELEMETRY_DISABLED=1
 RUN adduser --system --uid 1001 nextjs
 
 COPY --from=builder /app/public ./public
-
-COPY --from=builder /app/data ./data
 COPY --from=builder /app/messages ./messages
 
 # Set the correct permission for prerender cache
