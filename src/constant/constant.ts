@@ -147,6 +147,12 @@ export const mappingStats = <Record<string, {name: string, icon: string, unit: s
         unit: "%",
         baseStat: "ImaginaryAdd"
     },
+    "ElationDamageAddedRatioBase": {
+        name:"Elation DMG Boost",
+        icon:"/icon/IconJoy.webp",
+        unit: "%",
+        baseStat: "ElationAdd"
+    },
     "SPRatioBase": {
         name:"Energy Regeneration Rate",
         icon:"/icon/energy-rate.webp",

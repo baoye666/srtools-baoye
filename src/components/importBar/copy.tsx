@@ -149,14 +149,14 @@ export default function CopyImport() {
                                                 onClick={() => {
                                                     setListPath({ ...listPath, [key]: !listPath[key] })
                                                 }}
-                                                className="w-[50px] h-[50px] hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-md cursor-pointer"
+                                                className="w-12.5 h-12.5 hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-md cursor-pointer"
                                                 style={{
                                                     backgroundColor: listPath[key] ? "#374151" : "#6B7280"
                                                 }}>
                                                 <Image
                                                     src={`/icon/${key}.webp`}
                                                     alt={key}
-                                                    className="h-[32px] w-[32px] object-contain rounded-md"
+                                                    className="h-8 w-8 object-contain rounded-md"
                                                     width={200}
                                                     height={200}
                                                 />
@@ -174,14 +174,14 @@ export default function CopyImport() {
                                                 onClick={() => {
                                                     setListElement({ ...listElement, [key]: !listElement[key] })
                                                 }}
-                                                className="w-[50px] h-[50px] hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-md cursor-pointer"
+                                                className="w-12.5 h-12.5 hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-md cursor-pointer"
                                                 style={{
                                                     backgroundColor: listElement[key] ? "#374151" : "#6B7280"
                                                 }}>
                                                 <Image
                                                     src={`/icon/${key}.webp`}
                                                     alt={key}
-                                                    className="h-[28px] w-[28px] 2xl:h-[40px] 2xl:w-[40px] object-contain rounded-md"
+                                                    className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md"
                                                     width={200}
                                                     height={200}
                                                 />
@@ -199,11 +199,11 @@ export default function CopyImport() {
                                                 onClick={() => {
                                                     setListRank({ ...listRank, [key]: !listRank[key] })
                                                 }}
-                                                className="w-[50px] h-[50px] hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-md cursor-pointer"
+                                                className="w-12.5 h-12.5 hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-md cursor-pointer"
                                                 style={{
                                                     backgroundColor: listRank[key] ? "#374151" : "#6B7280"
                                                 }}>
-                                                <div className="font-bold text-white h-[32px] w-[32px] text-center flex items-center justify-center">{key}*</div>
+                                                <div className="font-bold text-white h-8 w-8 text-center flex items-center justify-center">{key}*</div>
                                             </div>
                                         ))}
                                     </div>

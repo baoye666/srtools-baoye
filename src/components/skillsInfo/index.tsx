@@ -163,6 +163,9 @@ export default function SkillsInfo() {
                                         filter: (theme === "winter" || theme === "cupcake") ? "invert(1)" : "none"
                                     }}
                                     className={`w-full h-full object-cover rounded-xl`}
+                                    onError={(e) => {
+                                        e.currentTarget.style.display = "none"
+                                    }}
                                 />
                                 {traceButtons.map((btn, index) => {
                                     if (!avatarInfo?.SkillTrees?.[btn.id]) {
@@ -264,6 +267,12 @@ export default function SkillsInfo() {
 
                                     )
                                 })}
+                            </div>
+                        )}
+
+                        {!traceButtons && avatarInfo && (
+                            <div className="flex flex-col relative w-full aspect-square">
+
                             </div>
                         )}
                     </div>

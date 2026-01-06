@@ -30,7 +30,7 @@ const useLightconeStore = create<LightconeState>((set, get) => ({
         rarity: [],
     },
     defaultFilter: { path: [], rarity: [] },
-    listPath: { "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false },
+    listPath: { "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false, elation: false },
     listRank: { "3": false, "4": false, "5": false },
     setListPath: (newListPath: Record<string, boolean>) => set({ listPath: newListPath }),
     setListRank: (newListRank: Record<string, boolean>) => set({ listRank: newListRank }),

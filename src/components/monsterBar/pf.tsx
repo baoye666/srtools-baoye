@@ -247,7 +247,7 @@ export default function PfBar() {
                                             className="rounded-xl p-2 border border-white/10 shadow-md hover:border-white/20 hover:shadow-lg transition"
                                         >
                                             <div className="flex items-center space-x-3">
-                                                <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
+                                                <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
                                                     {listMonster.find((monster) => monster.child.includes(monsterId))?.icon && <Image
                                                         src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(monsterId))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
                                                         alt="Enemy Icon"
@@ -266,7 +266,7 @@ export default function PfBar() {
                                                                 <Image
                                                                     src={`/icon/${icon.toLowerCase()}.webp`}
                                                                     alt={icon}
-                                                                    className="h-[28px] w-[28px] 2xl:h-[40px] 2xl:w-[40px] object-contain rounded-md border border-white/20 shadow-sm"
+                                                                    className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
                                                                     width={200}
                                                                     height={200}
                                                                     key={iconIndex}
@@ -297,7 +297,7 @@ export default function PfBar() {
                                         >
 
                                             <div className="flex items-center space-x-3">
-                                                <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
+                                                <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
                                                     {listMonster.find((monster) => monster.child.includes(monsterId))?.icon && <Image
                                                         src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(monsterId))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
                                                         alt="Enemy Icon"
@@ -316,7 +316,7 @@ export default function PfBar() {
                                                                 <Image
                                                                     src={`/icon/${icon.toLowerCase()}.webp`}
                                                                     alt={icon}
-                                                                    className="h-[28px] w-[28px] 2xl:h-[40px] 2xl:w-[40px] object-contain rounded-md border border-white/20 shadow-sm"
+                                                                    className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
                                                                     width={200}
                                                                     height={200}
                                                                     key={iconIndex}

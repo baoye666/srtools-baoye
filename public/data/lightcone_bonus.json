@@ -3318,7 +3318,7 @@
     ]
   },
   "23050": {
-        "0": [
+    "0": [
       {
         "type": "BreakDamageAddedRatioBase",
         "value": 0.6000000238418579
@@ -3348,5 +3348,136 @@
         "value": 1.2
       }
     ]
+  },
+  "20023": {},
+  "20024": {},
+  "21064": {
+    "0": [
+      {
+        "type": "ElationDamageAddedRatioBase",
+        "value": 0.12
+      }
+    ],
+    "1": [
+      {
+        "type": "ElationDamageAddedRatioBase",
+        "value": 0.14
+      }
+    ],
+    "2": [
+      {
+        "type": "ElationDamageAddedRatioBase",
+        "value": 0.16
+      }
+    ],
+    "3": [
+      {
+        "type": "ElationDamageAddedRatioBase",
+        "value": 0.18
+      }
+    ],
+    "4": [
+      {
+        "type": "ElationDamageAddedRatioBase",
+        "value": 0.2
+      }
+    ]
+  },
+  "21065": {
+        "0": [
+      {
+        "type": "CriticalChanceBase",
+        "value": 0.12
+      }
+    ],
+    "1": [
+      {
+        "type": "CriticalChanceBase",
+        "value": 0.14
+      }
+    ],
+    "2": [
+      {
+        "type": "CriticalChanceBase",
+        "value": 0.16
+      }
+    ],
+    "3": [
+      {
+        "type": "CriticalChanceBase",
+        "value": 0.18
+      }
+    ],
+    "4": [
+      {
+        "type": "CriticalChanceBase",
+        "value": 0.2
+      }
+    ]
+  },
+  "23053": {
+        "0": [
+      {
+        "type": "CriticalDamageBase",
+        "value": 0.36000001430511475
+      }
+    ],
+    "1": [
+      {
+        "type": "CriticalDamageBase",
+        "value": 0.41999998688697815
+      }
+    ],
+    "2": [
+      {
+        "type": "CriticalDamageBase",
+        "value": 0.47999998927116394
+      }
+    ],
+    "3": [
+      {
+        "type": "CriticalDamageBase",
+        "value": 0.5400000214576721
+      }
+    ],
+    "4": [
+      {
+        "type": "CriticalDamageBase",
+        "value": 0.6000000238418579
+      }
+    ]
+  },
+  "23054": {
+        "0": [
+      {
+        "type": "SpeedAddedRatio",
+        "value": 0.18000000715255737
+      }
+    ],
+    "1": [
+      {
+        "type": "SpeedAddedRatio",
+        "value": 0.20999999344348907
+      }
+    ],
+    "2": [
+      {
+        "type": "SpeedAddedRatio",
+        "value": 0.23999999463558197
+      }
+    ],
+    "3": [
+      {
+        "type": "SpeedAddedRatio",
+        "value": 0.27000001072883606
+      }
+    ],
+    "4": [
+      {
+        "type": "SpeedAddedRatio",
+        "value": 0.30000001192092896
+      }
+    ]
   }
+
 }

@@ -35,7 +35,7 @@ const useAvatarStore = create<AvatarState>((set, get) => ({
     skillSelected: null,
     mapAvatarInfo: {},
     listElement: { "fire": false, "ice": false, "imaginary": false, "physical": false, "quantum": false, "thunder": false, "wind": false },
-    listPath: { "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false },
+    listPath: { "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false, elation: false },
     setListElement: (newListElement: Record<string, boolean>) => set({ listElement: newListElement }),
     setListPath: (newListPath: Record<string, boolean>) => set({ listPath: newListPath }),
     setSkillSelected: (newSkillSelected: string | null) => set({ skillSelected: newSkillSelected }),

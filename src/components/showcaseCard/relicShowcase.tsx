@@ -26,7 +26,7 @@ export default function RelicShowcase({
                         width={78}
                         height={78}
                         alt="Relic Icon"
-                        className="h-auto w-[78px] rounded-lg"
+                        className="h-auto w-19.5 rounded-lg"
                     />
 
                     <div
@@ -50,7 +50,7 @@ export default function RelicShowcase({
                             width={35}
                             height={35}
                             alt="Main Affix Icon"
-                            className="h-auto w-[35px]"
+                            className="h-auto w-8.75"
                         />
                     </div>
                     <span className="text-base text-yellow-400 font-semibold drop-shadow-[0_0_4px_rgba(251,191,36,0.5)]">
@@ -75,10 +75,10 @@ export default function RelicShowcase({
                                             width={32}
                                             height={32}
                                             alt="Sub Affix Icon"
-                                            className="h-auto w-6 flex-shrink-0"
+                                            className="h-auto w-6 shrink-0"
                                         />
                                     ) : (
-                                        <div className="h-6 w-6 bg-black/60 rounded flex items-center justify-center border border-white/10 flex-shrink-0">
+                                        <div className="h-6 w-6 bg-black/60 rounded flex items-center justify-center border border-white/10 shrink-0">
                                             <span className="text-xs text-white/50">?</span>
                                         </div>
                                     )}
@@ -87,7 +87,7 @@ export default function RelicShowcase({
                                     </span>
                                     {
                                     (avatarInfo?.Relics?.SubAffixPropertyList.findIndex((item) => item === subAffix?.property) !== -1) && (
-                                        <span className="ml-1 bg-yellow-600/20 text-yellow-400 rounded-full px-1 py-0.5 text-[10px] font-semibold border border-yellow-600/30 flex-shrink-0 leading-none">
+                                        <span className="ml-1 bg-yellow-600/20 text-yellow-400 rounded-full px-1 py-0.5 text-[10px] font-semibold border border-yellow-600/30 shrink-0 leading-none">
                                             {subAffix?.count}
                                         </span>
                                     )}

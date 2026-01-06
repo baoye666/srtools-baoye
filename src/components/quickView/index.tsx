@@ -403,7 +403,7 @@ export default function QuickView() {
                                     <NextImage src={stat?.icon || ""} alt="Stat Icon" width={40} height={40} className="h-auto w-10 p-1 mx-1 bg-black/20 rounded-full" />
                                     <div className="font-bold">{stat.name}</div>
                                 </div>
-                                <div className="ml-3 mr-3 flex-grow border rounded opacity-50" />
+                                <div className="ml-3 mr-3 grow border rounded opacity-50" />
                                 <div className="flex cursor-default flex-col text-right font-bold">{
                                     stat.value ? stat.unit === "%" ? (stat.value * 100).toFixed(stat.round) : stat.value.toFixed(stat.round) : 0
                                 }{stat.unit}</div>

@@ -367,6 +367,14 @@ export default function ShowCaseInfo() {
         unit: "%",
         round: 1
       },
+      ElationAdd: {
+        value: 0,
+        base: 0,
+        name: "Elation Boost",
+        icon: "/icon/IconJoy.webp",
+        unit: "%",
+        round: 1
+      }
     }
 
     if (avatarProfile?.lightcone && mapLightconeInfo[avatarProfile?.lightcone?.item_id]) {
@@ -499,10 +507,7 @@ export default function ShowCaseInfo() {
   const getImageSkill = useCallback((icon: string | undefined, status: StatusAddType | undefined) => {
     if (!icon) return
     if (icon.startsWith("SkillIcon")) {
-      if (Number(avatarSelected?.id) > 8000 && Number(avatarSelected?.id) % 2 === 0) {
-        return `https://homdgcat.wiki/images/skillicons/avatar/${Number(avatarSelected?.id) - 1}/${icon.replaceAll(avatarSelected?.id || "", (Number(avatarSelected?.id) - 1).toString())}`
-      }
-      return `https://homdgcat.wiki/images/skillicons/avatar/${avatarSelected?.id}/${icon}`
+      return `https://api.hakush.in/hsr/UI/skillicons/${icon.replace(".png", ".webp")}`
     } else if (status && mappingStats[status.PropertyType]) {
       return mappingStats[status.PropertyType].icon
     }
@@ -510,7 +515,7 @@ export default function ShowCaseInfo() {
       return `https://api.hakush.in/hsr/UI/trace/${icon.replace(".png", ".webp")}`
     }
     return ""
-  }, [avatarSelected])
+  }, [])
 
   return (
     <div className="flex flex-col justify-start m-1 text-white">
@@ -521,7 +526,7 @@ export default function ShowCaseInfo() {
       <div className="overflow-auto">
         <div
           ref={cardRef}
-          className=" relative min-h-[650px] w-[1600px] rounded-3xl transition-all duration-500 overflow-hidden"
+          className=" relative min-h-162.5 w-400 rounded-3xl transition-all duration-500 overflow-hidden"
           style={{
             backgroundColor: `${applyBrightness(avgColor, 0.3)}`,
             backdropFilter: "blur(50px)",
@@ -533,7 +538,7 @@ export default function ShowCaseInfo() {
           </div>
           <div className="flex flex-row items-center">
             <div
-              className="relative min-h-[650px] w-[24%]"
+              className="relative min-h-162.5 w-[24%]"
             >
               <div className="flex justify-center items-center w-full h-full overflow-hidden">
                 {avatarSelected && (
@@ -556,7 +561,7 @@ export default function ShowCaseInfo() {
             </div>
 
             <div
-              className="relative flex min-h-[650px] w-[76%] flex-row items-center gap-3.5 rounded-3xl pl-10 z-10 transition-all duration-500"
+              className="relative flex min-h-162.5 w-[76%] flex-row items-center gap-3.5 rounded-3xl pl-10 z-10 transition-all duration-500"
               style={{
                 backgroundColor: `${applyBrightness(avgColor, 0.5)}`,
                 backdropFilter: "blur(50px)",
@@ -577,7 +582,7 @@ export default function ShowCaseInfo() {
                             alt="Rank Icon"
                             width={50}
                             height={50}
-                            className="h-auto w-12 transition-all duration-300 ease-in-out p-[1px] rounded-full"
+                            className="h-auto w-12 transition-all duration-300 ease-in-out p-px rounded-full"
                             style={{
                               opacity: isActive ? 1 : 0.6,
                               filter: isActive
@@ -596,7 +601,7 @@ export default function ShowCaseInfo() {
 
               </div>
 
-              <div className="flex h-[650px] w-1/3 flex-col justify-between py-3 pl-8">
+              <div className="flex h-162.5 w-1/3 flex-col justify-between py-3 pl-8">
                 <div className="flex h-full flex-col justify-between">
                   <div>
                     <div className="flex flex-row items-center justify-between">
@@ -619,7 +624,7 @@ export default function ShowCaseInfo() {
                     </div>
                   </div>
 
-                  <div className="relative flex h-[225px] w-auto flex-row items-center">
+                  <div className="relative flex h-56.25 w-auto flex-row items-center">
                     {avatarSelected && (
                       <div className="absolute inset-0 flex items-center justify-center">
                         <NextImage src={`/icon/${avatarSelected?.baseType.toLowerCase()}.webp`} alt="Path Icon" width={160} height={160} className="h-40 w-40 opacity-20" />
@@ -695,7 +700,7 @@ export default function ShowCaseInfo() {
                                     </div>
 
                                     {btn.isLink && idx < item.length - 1 && (
-                                      <div className="w-3 h-[3px] bg-white opacity-80 mx-1" />
+                                      <div className="w-3 h-0.75 bg-white opacity-80 mx-1" />
                                     )}
                                   </div>
                                 );
@@ -855,8 +860,8 @@ export default function ShowCaseInfo() {
 
               </div>
 
-              <div className="flex h-[650px] w-1/3 flex-col justify-between py-3 z-10">
-                <div className="flex w-full flex-col justify-between gap-y-0.5 text-base h-[500px]">
+              <div className="flex h-162.5 w-1/3 flex-col justify-between py-3 z-10">
+                <div className="flex w-full flex-col justify-between gap-y-0.5 text-base h-125">
                   {Object.entries(characterStats || {})?.map(([key, stat], index) => {
                     if (!stat || (key.includes("Add") && stat.value === 0)) return null
                     return (
@@ -865,7 +870,7 @@ export default function ShowCaseInfo() {
                           <NextImage src={stat?.icon || ""} alt="Stat Icon" width={40} height={40} className="h-auto w-10 p-2" />
                           <span className="font-bold">{stat.name}</span>
                         </div>
-                        <div className="ml-3 mr-3 flex-grow border rounded opacity-50" />
+                        <div className="ml-3 mr-3 grow border rounded opacity-50" />
                         <div className="flex cursor-default flex-col text-right font-bold">{
                           stat.value ? stat.unit === "%" ? (stat.value * 100).toFixed(stat.round) : stat.value.toFixed(stat.round) : 0
                         }{stat.unit}</div>
@@ -903,7 +908,7 @@ export default function ShowCaseInfo() {
               </div>
 
               <div className="w-1/3 z-10">
-                <div className="flex h-[650px] flex-col justify-between py-3 mr-1 text-lg w-full" >
+                <div className="flex h-162.5 flex-col justify-between py-3 mr-1 text-lg w-full" >
 
                   {relicStats?.map((relic, index) => {
                     if (!relic || !avatarInfo) return null

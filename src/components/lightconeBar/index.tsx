@@ -28,7 +28,7 @@ export default function LightconeBar() {
     const transI18n = useTranslations("DataPage")
 
     useEffect(() => {
-        const newListPath: Record<string, boolean> = { "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false }
+        const newListPath: Record<string, boolean> = { "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false, "elation": false }
         const newListRank: Record<string, boolean> = { "3": false, "4": false, "5": false }
         for (const path of defaultFilter.path) {
             if (path in newListPath) {
@@ -73,7 +73,6 @@ export default function LightconeBar() {
                 <div className="flex items-start flex-col gap-2 mt-2 w-full">
                     <div>Filter</div>
                     <div className="flex flex-row flex-wrap justify-between mt-1 w-full">
-                        {/* Nhóm 1 - Path icons */}
                         <div className="flex flex-wrap mb-1 mx-1 gap-2">
                             {Object.keys(listPath).map((key, index) => (
                                 <div
@@ -81,7 +80,7 @@ export default function LightconeBar() {
                                     onClick={() => {
                                         setListPath({ ...listPath, [key]: !listPath[key] })
                                     }}
-                                    className="h-[38px] w-[38px] md:h-[50px] md:w-[50px] hover:bg-gray-600 grid place-items-center rounded-md shadow-lg cursor-pointer"
+                                    className="h-9.5 w-9.5 md:h-12.5 md:w-12.5 hover:bg-gray-600 grid place-items-center rounded-md shadow-lg cursor-pointer"
                                     style={{
                                         backgroundColor: listPath[key] ? "#374151" : "#6B7280"
                                     }}
@@ -89,7 +88,7 @@ export default function LightconeBar() {
                                     <Image
                                         src={`/icon/${key}.webp`}
                                         alt={key}
-                                        className="h-[28px] w-[28px] md:h-[32px] md:w-[32px] object-contain rounded-md"
+                                        className="h-7 w-7 md:h-8 md:w-8 object-contain rounded-md"
                                         width={200}
                                         height={200}
                                     />
@@ -97,7 +96,6 @@ export default function LightconeBar() {
                             ))}
                         </div>
 
-                        {/* Nhóm 2 - Rank icons */}
                         <div className="flex flex-wrap mb-1 mx-1 gap-2">
                             {Object.keys(listRank).map((key, index) => (
                                 <div
@@ -105,12 +103,12 @@ export default function LightconeBar() {
                                     onClick={() => {
                                         setListRank({ ...listRank, [key]: !listRank[key] })
                                     }}
-                                    className="h-[38px] w-[38px] md:h-[50px] md:w-[50px] hover:bg-gray-600 grid place-items-center rounded-md shadow-lg cursor-pointer"
+                                    className="h-9.5 w-9.5 md:h-12.5 md:w-12.5 hover:bg-gray-600 grid place-items-center rounded-md shadow-lg cursor-pointer"
                                     style={{
                                         backgroundColor: listRank[key] ? "#374151" : "#6B7280"
                                     }}
                                 >
-                                    <div className="font-bold text-white h-[32px] w-[32px] text-center flex items-center justify-center">
+                                    <div className="font-bold text-white h-8 w-8 text-center flex items-center justify-center">
                                         {key}*
                                     </div>
                                 </div>

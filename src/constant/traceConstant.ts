@@ -163,7 +163,27 @@ export const traceButtonsInfo: Record<string, { id: string, size: string, left: 
         { id: 'Point10', size: 'small', left: '13%', top: '40%' },
         { id: 'Point11', size: 'small', left: '13%', top: '63%' },
         { id: 'Point21', size: 'special', left: '70%', top: '34%'}
-    ]
+    ],
+    Elation: [
+        { id: 'Point03', size: 'big', left: '50%', top: '52%' },
+        { id: 'Point04', size: 'big', left: '50%', top: '35%' },
+        { id: 'Point02', size: 'big', left: '69%', top: '48%' },
+        { id: 'Point05', size: 'big', left: '50%', top: '69%' },
+        { id: 'Point01', size: 'big', left: '33%', top: '48%' },
+        { id: 'Point08', size: 'medium', left: '50%', top: '22%' },
+        { id: 'Point07', size: 'medium', left: '67%', top: '83%' },
+        { id: 'Point06', size: 'medium', left: '33%', top: '83%' },
+        { id: 'Point16', size: 'small', left: '50%', top: '9%' },
+        { id: 'Point18', size: 'small', left: '66%', top: '14%' },
+        { id: 'Point17', size: 'small', left: '34%', top: '14%' },
+        { id: 'Point09', size: 'small', left: '50%', top: '87%' },
+        { id: 'Point15', size: 'small', left: '81%', top: '43.5%' },
+        { id: 'Point12', size: 'small', left: '19%', top: '43.5%' },
+        { id: 'Point13', size: 'small', left: '81%', top: '70%' },
+        { id: 'Point10', size: 'small', left: '19%', top: '70%' },
+        { id: 'Point14', size: 'small', left: '93%', top: '56.5%' },
+        { id: 'Point11', size: 'small', left: '7%', top: '56.5%' }
+    ],
 }
 
 export const traceLink : Record<string, Record<string, string[]>> = {
@@ -236,7 +256,17 @@ export const traceLink : Record<string, Record<string, string[]>> = {
         Point09: ["Point10", "Point11"],
         Point07: ["Point14", "Point15"],
         Point06: ["Point12", "Point13"],
-    }
+    },
+    Elation: {
+        Point08: ["Point16", "Point17", "Point18"],
+        Point16: ["Point17", "Point18"],
+        Point07: ["Point13", "Point14", "Point15"],
+        Point13: ["Point14", "Point15"],
+        Point14: ["Point15"],
+        Point06: ["Point10", "Point11", "Point12"],
+        Point10: ["Point11", "Point12"],
+        Point11: ["Point12"],
+    },
 }
 
 export const traceShowCaseMap : Record<string, Record<string, { id: string, size: string, isLink: boolean }[]>> = {
@@ -1016,5 +1046,100 @@ export const traceShowCaseMap : Record<string, Record<string, { id: string, size
                 isLink: false
             }
         ],
-    }
+    },
+    Elation: {
+        "1": [
+            {
+                id: "Point01",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point09",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "2": [
+            {
+                id: "Point02",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point06",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point10",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point11",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point12",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "3": [
+            {
+                id: "Point03",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point07",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point13",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point14",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point15",
+                size: "small",
+                isLink: true
+            }
+        ],
+        "4": [
+            {
+                id: "Point04",
+                size: "big",
+                isLink: false
+            },
+            {
+                id: "Point08",
+                size: "medium",
+                isLink: true
+            },
+            {
+                id: "Point16",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point18",
+                size: "small",
+                isLink: true
+            },
+            {
+                id: "Point17",
+                size: "small",
+                isLink: true
+            }
+        ]
+    },
 }

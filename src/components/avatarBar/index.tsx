@@ -56,14 +56,14 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                                         }}>
                                         <Image src={ `/icon/${key}.webp`}
                                             alt={key}
-                                            className="h-[28px] w-[28px] 2xl:h-[40px] 2xl:w-[40px] object-contain rounded-md"
+                                            className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md"
                                             width={200}
                                             height={200} />
                                     </div>
                                 ))}
                             </div>
 
-                            <div className="grid grid-cols-8 sm:grid-cols-4 lg:grid-cols-8 mb-1 mx-1 gap-2 overflow-y-auto w-full max-h-[17vh] min-h-[5vh]">
+                            <div className="grid grid-cols-9 sm:grid-cols-5 lg:grid-cols-9 mb-1 mx-1 gap-2 overflow-y-auto w-full max-h-[17vh] min-h-[5vh]">
                                 {Object.keys(listPath).map((key, index) => (
                                     <div
                                         key={index}
@@ -78,7 +78,7 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
 
                                         <Image src={`/icon/${key}.webp`}
                                             alt={key}
-                                            className="h-[28px] w-[28px] 2xl:h-[40px] 2xl:w-[40px] object-contain rounded-md"
+                                            className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md"
                                             width={200}
                                             height={200} />
                                     </div>
