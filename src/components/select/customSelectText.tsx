@@ -2,6 +2,8 @@
 'use client'
 import Select, { SingleValue } from 'react-select'
 import { replaceByParam } from '@/helper'
+import useLocaleStore from '@/stores/localeStore'
+import { themeColors } from '@/constant/constant'
 
 export type SelectOption = {
   id: string
@@ -20,29 +22,52 @@ type SelectCustomProp = {
 
 export default function SelectCustomText({ customSet, excludeSet, selectedCustomSet, placeholder, setSelectedCustomSet }: SelectCustomProp) {
   const options: SelectOption[] = customSet
+  const { theme } = useLocaleStore()
+  const c = themeColors[theme] || themeColors.winter
+
   const customStyles = {
-    option: (provided: any) => ({
-      ...provided,
+    option: (p: any, s: any) => ({
+      ...p,
       display: 'flex',
       alignItems: 'center',
       gap: '8px',
-      padding: '8px',
-      backgroundColor: 'transparent',
+      padding: '8px 12px',
+      backgroundColor: s.isFocused ? c.bgHover : c.bg,
+      color: c.text,
+      cursor: 'pointer'
     }),
-    singleValue: (provided: any) => ({
-      ...provided,
+
+    singleValue: (p: any) => ({
+      ...p,
       display: 'flex',
       alignItems: 'center',
-      gap: '8px'
+      gap: '8px',
+      color: c.text
     }),
 
+    control: (p: any) => ({
+      ...p,
+      backgroundColor: c.bg,
+      borderColor: c.border,
+      boxShadow: 'none'
+    }),
 
-    menuPortal: (provided: any) => ({ ...provided, zIndex: 9999 }),
-    menu: (provided: any) => ({ ...provided, zIndex: 9999 })
+    menu: (p: any) => ({
+      ...p,
+      backgroundColor: c.bg,
+      color: c.text,
+      zIndex: 9999
+    }),
+
+    menuPortal: (p: any) => ({
+      ...p,
+      zIndex: 9999
+    })
   }
 
+
   const formatOptionLabel = (option: SelectOption) => (
-    <div className="flex flex-col gap-1 w-full h-full z-50 text-warning-content ">
+    <div className="flex flex-col gap-1 w-full h-full z-50">
       <div
         className="font-bold text-lg"
         dangerouslySetInnerHTML={{

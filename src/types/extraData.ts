@@ -1,21 +1,21 @@
 export interface ExtraData {
-    theory_craft: {
+    theory_craft?: {
         hp: Record<string, number[]>
         cycle_count: number
         mode: boolean
     }
-    setting: {
+    setting?: {
         censorship: boolean
         cm: boolean
         first_person: boolean
         hide_ui: boolean
     }
-    challenge: {
+    challenge?: {
         skip_node: number
         challenge_peak_group_id: number
         challenge_peak_group_id_list: number[]
     }
-    multi_path: {
+    multi_path?: {
         main: number
         march_7: number
         multi_path_main: number[]

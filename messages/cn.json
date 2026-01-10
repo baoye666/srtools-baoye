@@ -254,9 +254,25 @@
 		"extraSetting": "额外设置",
 		"disableCensorship": "禁用审查",
 		"hideUI": "隐藏界面",
-		"theoryCraftMode": "理论研究模式",
+		"theoryCraftMode": "Theory Craft 模式",
 		"cycleCount": "循环次数",
 		"pleaseSelectAllSubStats": "请选取所有副属性",
-		"subStatRollCountCannotBeZero": "副属性的行数不能为0"
+		"subStatRollCountCannotBeZero": "副属性的行数不能为0",
+		"theoryCraft": "Theory Craft",
+		"multipathCharacter": "多命途角色",
+		"mainPath": "主角命途",
+		"march7Path": "三月七命途",
+		"challenge": "挑战",
+		"skipNode": "跳过节点",
+		"disableSkip": "禁用跳过",
+		"skipNode1": "跳过节点1",
+		"skipNode2": "跳过节点2",
+		"extraFeatures": "附加功能",
+		"detailTheoryCraft": "开启后可自定义循环数，并在敌人设置中调整生命值。",
+		"detailSkipNode": "开启后可跳过混沌回忆或虚构叙事的（节点1/节点2）。",
+		"detailChallengePeak": "允许更改当前异相中的「巅峰」赛季。",
+		"detailHiddenUi": "开启后将隐藏游戏界面。",
+		"detailDisableCensorship": "开启后将关闭游戏内的审查。",
+		"detailMultipathCharacter": "允许更改部分角色的命途。"
 	}
 }

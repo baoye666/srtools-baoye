@@ -257,6 +257,22 @@
 		"theoryCraftMode": "シアリークラフトモード",
 		"cycleCount": "サイクル数",
 		"pleaseSelectAllSubStats": "すべてのサブステータスを選択してください",
-		"subStatRollCountCannotBeZero": "サブステータスの行数は0にできません"
+		"subStatRollCountCannotBeZero": "サブステータスの行数は0にできません",
+		"theoryCraft": "シアリークラフト",
+		"multipathCharacter": "複数運命キャラ",
+		"mainPath": "主人公の運命",
+		"march7Path": "三月なのかの運命",
+		"challenge": "挑戦",
+		"skipNode": "ノードをスキップ",
+		"disableSkip": "スキップ無効",
+		"skipNode1": "ノード1をスキップ",
+		"skipNode2": "ノード2をスキップ",
+		"extraFeatures": "追加機能",
+		"detailTheoryCraft": "この機能を有効にすると、サイクル数の調整や敵設定でHPの調整が可能になります。",
+		"detailSkipNode": "この機能を有効にすると、混沌の記憶または虚構叙事の（ノード1／ノード2）をスキップできます。",
+		"detailChallengePeak": "現在の異相における「頂」のシーズンを変更できます。",
+		"detailHiddenUi": "この機能を有効にすると、ゲームのUIを非表示にします。",
+		"detailDisableCensorship": "この機能を有効にすると、ゲーム内の検閲を無効にします。",
+		"detailMultipathCharacter": "一部キャラクターの運命を変更できます。"
 	}
 }

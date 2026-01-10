@@ -254,9 +254,25 @@
 		"extraSetting": "Cài đặt bổ sung",
 		"disableCensorship": "Tắt kiểm duyệt",
 		"hideUI": "Ẩn giao diện",
-		"theoryCraftMode": "Chế độ Theorycraft",
+		"theoryCraftMode": "Chế độ Theory Craft",
 		"cycleCount": "Số vòng",
 		"pleaseSelectAllSubStats": "Vui lòng chọn tất cả chỉ số phụ",
-		"subStatRollCountCannotBeZero": "Số dòng của chỉ số phụ không thể bằng 0"
+		"subStatRollCountCannotBeZero": "Số dòng của chỉ số phụ không thể bằng 0",
+		"theoryCraft": "Theory Craft",
+		"multipathCharacter": "Nhân vật đa Vận Mệnh",
+		"mainPath": "Vận Mệnh Nhân Vật Chính",
+		"march7Path": "Vận Mệnh March 7",
+		"challenge": "Thử thách",
+		"skipNode": "Bỏ qua node",
+		"disableSkip": "Tắt bỏ qua",
+		"skipNode1": "Bỏ qua node 1",
+		"skipNode2": "Bỏ qua node 2",
+		"extraFeatures": "Tính năng bổ sung",
+		"detailTheoryCraft": "Khi bật tính năng này sẽ cho phép tùy chỉnh số cycle và trong mục kẻ địch tủy chỉnh sẽ cho phép điều chỉnh số hp.",
+		"detailSkipNode": "Khi bật tính năng này sẽ cho phép bỏ qua (node 1/node 2) của Hồi ức hỗn độn hoặc Kể chuyện hư cấu.",
+		"detailChallengePeak": "Cho phép thay đổi mùa Trọng tại dị tướng hiện tại.",
+		"detailHiddenUi": "Khi bật tính năng này sẽ ẩn giao diện của game.",
+		"detailDisableCensorship": "Khi bật tính năng này sẽ tắt kiểm duyệt của game.",
+		"detailMultipathCharacter": "Cho phép thay đổi Vận Mệnh của một vài nhân vật."
 	}
 }

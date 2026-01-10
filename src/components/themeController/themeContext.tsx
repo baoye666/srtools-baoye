@@ -17,7 +17,7 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
             const storedTheme = localStorage.getItem("theme");
             if (storedTheme) setTheme(storedTheme);
         }
-    }, []);
+    }, [setTheme]);
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const changeTheme = (nextTheme: string | null) => {

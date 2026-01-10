@@ -413,19 +413,19 @@ export default function RelicMaker() {
                                     <div className="grid grid-cols-3 gap-1">
                                         <button
                                             onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 0)}
-                                            className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
+                                            className="btn btn-sm btn-info border-0"
                                         >
                                             {calcAffixBonus(subAffixOptions[v.affixId], 0, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
                                         </button>
                                         <button
                                             onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 1)}
-                                            className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
+                                            className="btn btn-sm btn-info border-0"
                                         >
                                             {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 1, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
                                         </button>
                                         <button
                                             onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 2)}
-                                            className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
+                                            className="btn btn-sm btn-info border-0"
                                         >
                                             {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 2, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
                                         </button>
@@ -441,19 +441,19 @@ export default function RelicMaker() {
                                     <div className="grid grid-cols-3 gap-1">
                                         <button
                                             onClick={() => handleSubStatChange(v.affixId, index, Math.max(v.rollCount - 1, 0), Math.max(v.stepCount, 0))}
-                                            className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
+                                            className="btn btn-sm btn-info border-0"
                                         >
                                             {calcAffixBonus(subAffixOptions[v.affixId], 0, Math.max(v.rollCount - 1, 0))}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
                                         </button>
                                         <button
                                             onClick={() => handleSubStatChange(v.affixId, index, Math.max(v.rollCount - 1, 0), Math.max(v.stepCount - 1, 0))}
-                                            className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
+                                            className="btn btn-sm btn-info border-0"
                                         >
                                             {calcAffixBonus(subAffixOptions[v.affixId], Math.max(v.stepCount - 1, 0), Math.max(v.rollCount - 1, 0))}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
                                         </button>
                                         <button
                                             onClick={() => handleSubStatChange(v.affixId, index, Math.max(v.rollCount - 1, 0), Math.max(v.stepCount - 2, 0))}
-                                            className="btn btn-sm bg-white text-slate-800 hover:bg-gray-200 border-0"
+                                            className="btn btn-sm btn-info border-0"
                                         >
                                             {calcAffixBonus(subAffixOptions[v.affixId], Math.max(v.stepCount - 2, 0), Math.max(v.rollCount - 1, 0))}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
                                         </button>

@@ -4,6 +4,7 @@ import Select, { SingleValue } from 'react-select'
 import Image from 'next/image'
 import useLocaleStore from '@/stores/localeStore'
 import ParseText from '../parseText'
+import { themeColors } from '@/constant/constant'
 
 export type SelectOption = {
   value: string
@@ -12,8 +13,8 @@ export type SelectOption = {
 }
 
 type SelectCustomProp = {
-  customSet:  SelectOption[]
-  excludeSet:  SelectOption[]
+  customSet: SelectOption[]
+  excludeSet: SelectOption[]
   selectedCustomSet: string
   placeholder: string
   setSelectedCustomSet: (value: string) => void
@@ -21,31 +22,54 @@ type SelectCustomProp = {
 
 export default function SelectCustomImage({ customSet, excludeSet, selectedCustomSet, placeholder, setSelectedCustomSet }: SelectCustomProp) {
   const options: SelectOption[] = customSet
-  const { locale } = useLocaleStore()
+  const { locale, theme } = useLocaleStore()
+
+  const c = themeColors[theme] || themeColors.winter
+
   const customStyles = {
-    option: (provided: any) => ({
-      ...provided,
+    option: (p: any, s: any) => ({
+      ...p,
       display: 'flex',
       alignItems: 'center',
       gap: '8px',
-      padding: '8px',
-      backgroundColor: 'transparent',
+      padding: '8px 12px',
+      backgroundColor: s.isFocused ? c.bgHover : c.bg,
+      color: c.text,
+      cursor: 'pointer'
     }),
-    singleValue: (provided: any) => ({
-      ...provided,
+
+    singleValue: (p: any) => ({
+      ...p,
       display: 'flex',
       alignItems: 'center',
       gap: '8px',
-      backgroundColor: 'transparent',
+      color: c.text
     }),
-    menuPortal: (provided: any) => ({ ...provided, zIndex: 9999 }),
-    menu: (provided: any) => ({ ...provided, zIndex: 9999 })
+
+    control: (p: any) => ({
+      ...p,
+      backgroundColor: c.bg,
+      borderColor: c.border,
+      boxShadow: 'none'
+    }),
+
+    menu: (p: any) => ({
+      ...p,
+      backgroundColor: c.bg,
+      color: c.text,
+      zIndex: 9999
+    }),
+
+    menuPortal: (p: any) => ({
+      ...p,
+      zIndex: 9999
+    })
   }
 
   const formatOptionLabel = (option: SelectOption) => (
     <div className="flex items-center gap-1 w-full h-full z-50">
       <Image src={option.imageUrl} alt="" width={125} height={125} className="w-8 h-8 object-contain bg-warning-content rounded-full" />
-      <ParseText className='font-bold text-warning-content' text={option.label} locale={locale} />
+      <ParseText className='font-bold' text={option.label} locale={locale} />
     </div>
   )
 
@@ -53,14 +77,15 @@ export default function SelectCustomImage({ customSet, excludeSet, selectedCusto
     <Select
       options={options.filter(opt => !excludeSet.some(ex => ex.value === opt.value))}
       value={options.find(opt => {
-        return opt.value === selectedCustomSet}) || null}
+        return opt.value === selectedCustomSet
+      }) || null}
       onChange={(selected: SingleValue<SelectOption>) => {
         setSelectedCustomSet(selected?.value || '')
       }}
       formatOptionLabel={formatOptionLabel}
       styles={customStyles}
       placeholder={placeholder}
-      className="my-react-select-container" 
+      className="my-react-select-container"
       classNamePrefix="my-react-select"
       isSearchable
       isClearable

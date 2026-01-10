@@ -108,7 +108,7 @@ export default function PeakBar() {
                     <SelectCustomText
                         customSet={PEAKEvent.map((peak) => ({
                             id: peak.id,
-                            name: `${getLocaleName(locale, peak)} (${peak.id}) `,
+                            name: `${getLocaleName(locale, peak)} (${peak.id})`,
                         }))}
                         excludeSet={[]}
                         selectedCustomSet={peak_config.event_id.toString()}

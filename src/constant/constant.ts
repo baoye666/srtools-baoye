@@ -169,3 +169,31 @@ export const ratioStats = [
     "SpeedAddedRatio",
 ]
 
+
+
+export const themeColors: Record<string, { bg: string; bgHover: string; text: string; border: string }> = {
+  winter: {
+    bg: '#ffffff',
+    bgHover: '#f1f5f9',
+    text: '#3a4f6b',
+    border: '#cbd5e1'
+  },
+  night: {
+    bg: '#1d232a',
+    bgHover: '#2a323c',
+    text: '#cbcdd1',
+    border: '#3f3f46'
+  },
+  cupcake: {
+    bg: '#faf7f5',
+    bgHover: '#f3eae6',
+    text: '#281333',
+    border: '#e5d3cb'
+  },
+  coffee: {
+    bg: '#20161f',
+    bgHover: '#2a1d29',
+    text: '#c4a051',
+    border: '#3a2a36'
+  }
+}
