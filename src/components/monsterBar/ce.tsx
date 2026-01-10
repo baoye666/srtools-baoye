@@ -117,18 +117,18 @@ export default function CeBar() {
         if (!extraData || !extraData.theory_craft?.mode) return
     
         const newExtraData = structuredClone(extraData)
-        if (!newExtraData.theory_craft.hp) {
-            newExtraData.theory_craft.hp = {}
+        if (!newExtraData?.theory_craft?.hp) {
+            newExtraData.theory_craft!.hp = {}
         }
     
         for (let i = 0; i < ce_config.monsters.length; i++) {
             const waveKey = (i + 1).toString()
-            if (!newExtraData.theory_craft.hp[waveKey]) {
-                newExtraData.theory_craft.hp[waveKey] = []
+            if (!newExtraData.theory_craft!.hp[waveKey]) {
+                newExtraData.theory_craft!.hp[waveKey] = []
             }
             for (let j = 0; j < ce_config.monsters[i].length; j++) {
-                if (newExtraData.theory_craft.hp[waveKey][j] === undefined) {
-                    newExtraData.theory_craft.hp[waveKey][j] = 0
+                if (newExtraData.theory_craft!.hp[waveKey][j] === undefined) {
+                    newExtraData.theory_craft!.hp[waveKey][j] = 0
                 }
             }
         }
@@ -399,10 +399,10 @@ export default function CeBar() {
                                                                     const newData = structuredClone(extraData)
 
                                                                     if (!newData?.theory_craft?.hp?.[(waveIndex + 1).toString()]) {
-                                                                      newData.theory_craft.hp[(waveIndex + 1).toString()] = []
+                                                                      newData.theory_craft!.hp![(waveIndex + 1).toString()] = []
                                                                     }
                                                                     
-                                                                    newData.theory_craft.hp[(waveIndex + 1).toString()][memberIndex] = val
+                                                                    newData.theory_craft!.hp![(waveIndex + 1).toString()][memberIndex] = val
                                                                     
                                                                     setExtraData(newData)
                                                                 }}
