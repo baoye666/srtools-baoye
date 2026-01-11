@@ -20,6 +20,7 @@ export async function getConfigMazeApi(): Promise<ConfigMaze> {
             AS: {},
             PF: {},
             Stage: {},
+            Skill: {}
         };
     }
 }
