@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { AffixDetail, ASDetail, CharacterDetail, ConfigMaze, FreeSRJson, LightConeDetail, MocDetail, MonsterDetail, PeakDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
+import { AffixDetail, ASDetail, ChangelogItemType, CharacterDetail, ConfigMaze, FreeSRJson, LightConeDetail, MocDetail, MonsterDetail, PeakDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
 import axios from 'axios';
 import { psResponseSchema } from "@/zod";
 import { ExtraData } from "@/types";
@@ -144,6 +144,16 @@ export async function fetchPeakEventApi(locale: string): Promise<Record<string, 
 export async function fetchMonstersApi(locale: string): Promise<Record<string, MonsterDetail> | null> {
     try {
         const res = await axios.get<Record<string, MonsterDetail>>(`/data/monsters.${locale}.json`);
+        return res.data;
+    } catch (error) {
+        console.error('Failed to fetch monster:', error);
+        return null;
+    }
+}
+
+export async function fetchChangelog(): Promise<ChangelogItemType[] | null> {
+    try {
+        const res = await axios.get<ChangelogItemType[]>(`/data/changelog.json`);
         return res.data;
     } catch (error) {
         console.error('Failed to fetch monster:', error);

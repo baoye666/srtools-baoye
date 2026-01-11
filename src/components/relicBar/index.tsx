@@ -238,7 +238,7 @@ export default function RelicMaker() {
     }
 
     return (
-        <div className="">
+        <div>
             <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
                 <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-linear-to-r from-pink-400 to-cyan-400">
                     {transI18n("relicMaker")}
@@ -357,7 +357,7 @@ export default function RelicMaker() {
                 {/* Right Panel - Sub Stats */}
                 <div className="space-y-4">
                     {/* Total Roll */}
-                    <div className="bg-base-100 rounded-xl p-4 border border-slate-700 z-[1]">
+                    <div className="bg-base-100 rounded-xl p-4 border border-slate-700 z-1">
                         <h3 className="text-lg font-bold mb-4">{transI18n("totalRoll")} {listSelectedSubStats.reduce((a, b) => a + b.rollCount, 0)}</h3>
 
                         <div className="grid grid-cols-2 gap-2">

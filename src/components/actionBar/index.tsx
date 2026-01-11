@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import useListAvatarStore from "@/stores/avatarStore";
@@ -11,7 +12,7 @@ import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import useModelStore from "@/stores/modelStore";
 import useUserDataStore from "@/stores/userDataStore";
-import { RelicStore } from "@/types";
+import { ModalConfig, RelicStore } from "@/types";
 import { toast } from "react-toastify";
 import useGlobalStore from "@/stores/globalStore";
 import { connectToPS, syncDataToPS } from "@/helper";
@@ -91,42 +92,8 @@ export default function ActionBar() {
     }
   };
 
-  // Handle ESC key to close modal
-  useEffect(() => {
 
-    if (!isOpenCreateProfile) {
-      handleCloseModal("update_profile_modal");
-      return;
-    }
-    if (!isOpenCopy) {
-      handleCloseModal("copy_profile_modal");
-      return;
-    }
-    console.log(isOpenAvatars)
-    if (!isOpenAvatars) {
-
-      handleCloseModal("avatars_modal");
-      return;
-    }
-
-    const handleEscKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && isOpenCreateProfile) {
-        handleCloseModal("update_profile_modal");
-      }
-      if (event.key === 'Escape' && isOpenCopy) {
-        handleCloseModal("copy_profile_modal");
-      }
-      if (event.key === 'Escape' && isOpenAvatars) {
-        handleCloseModal("avatars_modal");
-      }
-    };
-
-    window.addEventListener('keydown', handleEscKey);
-
-    return () => window.removeEventListener('keydown', handleEscKey);
-  }, [isOpenCopy, isOpenCreateProfile, isOpenAvatars]);
-
-  const actionMove = (path: string) => {
+    const actionMove = (path: string) => {
     router.push(`/${path}`)
   }
 
@@ -167,12 +134,12 @@ export default function ActionBar() {
       }
     }
   }
-
-
-  const modalConfigs = [
+  
+  const modalConfigs: ModalConfig[] = [
     {
       id: "update_profile_modal",
       title: formState === "CREATE" ? transI18n("createNewProfile") : transI18n("editProfile"),
+      isOpen: isOpenCreateProfile,
       onClose: () => {
         setIsOpenCreateProfile(false)
         handleCloseModal("update_profile_modal")
@@ -204,6 +171,7 @@ export default function ActionBar() {
     {
       id: "copy_profile_modal",
       title: transI18n("copyProfiles").toUpperCase(),
+      isOpen: isOpenCopy,
       onClose: () => {
         setIsOpenCopy(false)
         handleCloseModal("copy_profile_modal")
@@ -213,6 +181,7 @@ export default function ActionBar() {
     {
       id: "avatars_modal",
       title: transI18n("avatars").toUpperCase(),
+      isOpen: isOpenAvatars,
       onClose: () => {
         setIsOpenAvatars(false)
         handleCloseModal("avatars_modal")
@@ -220,6 +189,26 @@ export default function ActionBar() {
       content: <AvatarBar onClose={() => { setIsOpenAvatars(false); handleCloseModal("avatars_modal") }} />
     }
   ]
+
+  // Handle ESC key to close modal
+  useEffect(() => {
+    for (const item of modalConfigs) {
+        if (!item?.isOpen) {
+            handleCloseModal(item?.id || "")
+        }
+    }
+    const handleEscKey = (event: KeyboardEvent) => {
+        if (event.key === 'Escape') {
+            for (const item of modalConfigs) {
+                handleCloseModal(item?.id || "")
+            }
+        }
+    };
+
+    window.addEventListener('keydown', handleEscKey);
+    return () => window.removeEventListener('keydown', handleEscKey);
+  }, [isOpenCopy, isOpenCreateProfile, isOpenAvatars]);
+
 
 
   return (

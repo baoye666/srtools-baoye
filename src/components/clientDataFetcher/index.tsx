@@ -3,6 +3,7 @@
 import {
   useFetchASData,
   useFetchAvatarData,
+  useFetchChangelog,
   useFetchConfigData,
   useFetchLightconeData,
   useFetchMOCData,
@@ -10,7 +11,7 @@ import {
   useFetchPEAKData,
   useFetchPFData,
   useFetchRelicData
-} from "@/hooks";
+} from "@/lib/hooks";
 
 export default function ClientDataFetcher() {
   useFetchConfigData();
@@ -22,6 +23,7 @@ export default function ClientDataFetcher() {
   useFetchMOCData();
   useFetchASData();
   useFetchPEAKData();
+  useFetchChangelog();
 
   return null;
 }

@@ -1,0 +1,10 @@
+[
+    {
+        "version": "3.8.5",
+        "date": "11/1/2026",
+        "type": "improvement",
+        "items": [
+            "Support skills_by_anchor_type"
+        ]
+    }
+]

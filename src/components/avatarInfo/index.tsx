@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client"
 
 import useAvatarStore from "@/stores/avatarStore"
@@ -69,8 +70,7 @@ export default function AvatarInfo() {
         window.addEventListener('keydown', handleEscKey);
 
         return () => window.removeEventListener('keydown', handleEscKey);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [isOpenLightcone ]);
+    }, [isOpenLightcone]);
 
     return (
         <div className="bg-base-100 max-h-[77vh] min-h-[50vh] overflow-y-scroll overflow-x-hidden">

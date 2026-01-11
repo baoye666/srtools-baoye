@@ -270,6 +270,14 @@ export default function QuickView() {
                 unit: "%",
                 round: 1
             },
+            ElationAdd: {
+                value: 0,
+                base: 0,
+                name: "Elation Boost",
+                icon: "/icon/IconJoy.webp",
+                unit: "%",
+                round: 1
+            }
         }
 
         if (avatarProfile?.lightcone && mapLightconeInfo[avatarProfile?.lightcone?.item_id]) {

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { useCallback, useEffect, useMemo } from "react";
 import RelicMaker from "../relicBar";
@@ -12,6 +13,7 @@ import { replaceByParam } from '@/helper';
 import useRelicMakerStore from '@/stores/relicMakerStore';
 import useAffixStore from '@/stores/affixStore';
 import QuickView from "../quickView";
+import { ModalConfig } from "@/types";
 
 export default function RelicsInfo() {
   const { avatars, setAvatars } = useUserDataStore()
@@ -53,32 +55,8 @@ export default function RelicsInfo() {
     }
   };
 
-  // Handle ESC key to close modal
-  useEffect(() => {
-    if (!isOpenRelic) {
-      handleCloseModal("action_detail_modal");
-      return;
-    };
-    if (!isOpenQuickView) {
-      handleCloseModal("quick_view_modal");
-      return;
-    };
 
-    const handleEscKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && isOpenRelic) {
-        handleCloseModal("action_detail_modal");
-      }
-      if (event.key === 'Escape' && isOpenQuickView) {
-        handleCloseModal("quick_view_modal");
-      }
-    };
-
-    window.addEventListener('keydown', handleEscKey);
-    return () => window.removeEventListener('keydown', handleEscKey);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isOpenRelic]);
-
-  const getRelic = useCallback((slot: string) => {
+    const getRelic = useCallback((slot: string) => {
     const avatar = avatars[avatarSelected?.id || ""];
     if (avatar) {
       return avatar.profileList[avatar.profileSelect]?.relics[slot] || null;
@@ -150,10 +128,11 @@ export default function RelicsInfo() {
     return listEffects;
   }, [avatars, avatarSelected]);
 
-  const modalConfigs = [
+  const modalConfigs: ModalConfig[] = [
     {
       id: "action_detail_modal",
-      title: null, // không có title
+      title: "",
+      isOpen: isOpenRelic,
       onClose: () => {
         setIsOpenRelic(false)
         handleCloseModal("action_detail_modal")
@@ -163,6 +142,7 @@ export default function RelicsInfo() {
     {
       id: "quick_view_modal",
       title: transI18n("quickView").toUpperCase(),
+      isOpen: isOpenQuickView,
       onClose: () => {
         setIsOpenQuickView(false)
         handleCloseModal("quick_view_modal")
@@ -171,6 +151,24 @@ export default function RelicsInfo() {
     }
   ]
 
+  // Handle ESC key to close modal
+  useEffect(() => {
+    for (const item of modalConfigs) {
+        if (!item?.isOpen) {
+            handleCloseModal(item?.id || "")
+        }
+    }
+    const handleEscKey = (event: KeyboardEvent) => {
+        if (event.key === 'Escape') {
+            for (const item of modalConfigs) {
+                handleCloseModal(item?.id || "")
+            }
+        }
+    };
+
+    window.addEventListener('keydown', handleEscKey);
+    return () => window.removeEventListener('keydown', handleEscKey);
+  }, [isOpenRelic]);
 
   return (
     <div className="max-h-[77vh] min-h-[50vh] overflow-y-scroll overflow-x-hidden">

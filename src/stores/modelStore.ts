@@ -13,6 +13,7 @@ interface ModelState {
     isOpenAvatars: boolean;
     isOpenQuickView: boolean;
     isOpenExtra: boolean;
+    isChangelog: boolean;
     setIsOpenExtra: (newIsOpenExtra: boolean) => void;
     setIsOpenQuickView: (newIsOpenQuickView: boolean) => void;
     setIsOpenAvatars: (newIsOpenAvatars: boolean) => void;
@@ -24,6 +25,7 @@ interface ModelState {
     setIsOpenCreateProfile: (newIsOpenCreateProfile: boolean) => void;
     setIsOpenImport: (newIsOpenImport: boolean) => void;
     setIsOpenCopy: (newIsOpenCopy: boolean) => void;
+    setIsChangelog: (newChangelog: boolean) => void;
 }
 
 const useModelStore = create<ModelState>((set) => ({
@@ -38,6 +40,7 @@ const useModelStore = create<ModelState>((set) => ({
     isOpenAvatars: false,
     isOpenQuickView: false,
     isOpenExtra: false,
+    isChangelog: false,
     setIsOpenExtra: (newIsOpenExtra: boolean) => set({ isOpenExtra: newIsOpenExtra }),
     setIsOpenQuickView: (newIsOpenQuickView: boolean) => set({ isOpenQuickView: newIsOpenQuickView }),
     setIsOpenAvatars: (newIsOpenAvatars: boolean) => set({ isOpenAvatars: newIsOpenAvatars }),
@@ -49,6 +52,7 @@ const useModelStore = create<ModelState>((set) => ({
     setIsOpenCreateProfile: (newIsOpenCreateProfile: boolean) => set({ isOpenCreateProfile: newIsOpenCreateProfile }),
     setIsOpenImport: (newIsOpenImport: boolean) => set({ isOpenImport: newIsOpenImport }),
     setIsOpenCopy: (newIsOpenCopy: boolean) => set({ isOpenCopy: newIsOpenCopy }),
+    setIsChangelog: (newChangelog: boolean) => set({ isChangelog: newChangelog }),
 }));
 
 export default useModelStore;

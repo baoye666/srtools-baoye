@@ -22,7 +22,7 @@ export default function ExtraSettingBar() {
         <div className="space-y-4">
           <h3 className="text-lg font-bold flex items-center gap-2">
             {transI18n("theoryCraft")} 
-            <div className="tooltip tooltip-info" data-tip={transI18n("detailTheoryCraft")}>
+            <div className="tooltip tooltip-info tooltip-bottom" data-tip={transI18n("detailTheoryCraft")}>
               <Info className="text-primary" size={20} />
             </div>
           </h3>
@@ -78,13 +78,11 @@ export default function ExtraSettingBar() {
         </div>
       )}
 
-
-
       {/*MULTIPATH CHAR */}
       <div className="space-y-4">
         <h3 className="text-lg font-bold flex items-center gap-2">
           {transI18n("multipathCharacter")}
-          <div className="tooltip tooltip-info" data-tip={transI18n("detailMultipathCharacter")}>
+          <div className="tooltip tooltip-info tooltip-bottom" data-tip={transI18n("detailMultipathCharacter")}>
             <Info className="text-primary" size={20} />
           </div>
         </h3>
@@ -157,7 +155,7 @@ export default function ExtraSettingBar() {
           <label className="flex items-center gap-3">
             <Swords className="text-error" size={20} />
             <span className="label-text font-semibold">{transI18n("anomalyArbitration")}</span>
-            <div className="tooltip tooltip-info" data-tip={transI18n("detailChallengePeak")}>
+            <div className="tooltip tooltip-info tooltip-bottom" data-tip={transI18n("detailChallengePeak")}>
               <Info className="text-primary" size={20} />
             </div>
             <select
@@ -187,7 +185,7 @@ export default function ExtraSettingBar() {
           <label className="flex items-center gap-3">
             <SkipForward className="text-warning" size={20} />
             <span className="label-text font-semibold">{transI18n("skipNode")}</span>
-            <div className="tooltip tooltip-info" data-tip={transI18n("detailSkipNode")}>
+            <div className="tooltip tooltip-info tooltip-bottom" data-tip={transI18n("detailSkipNode")}>
               <Info className="text-primary" size={20} />
             </div>
             <select
@@ -241,7 +239,7 @@ export default function ExtraSettingBar() {
                 }
               />
               <span className="label-text font-semibold">{transI18n("hideUI")}</span>
-              <div className="tooltip tooltip-info" data-tip={transI18n("detailHiddenUi")}>
+              <div className="tooltip tooltip-info tooltip-bottom" data-tip={transI18n("detailHiddenUi")}>
                 <Info className="text-primary" size={20} />
               </div>
             </label>
@@ -269,15 +267,13 @@ export default function ExtraSettingBar() {
                 }
               />
               <span className="label-text font-semibold">{transI18n("disableCensorship")}</span>
-              <div className="tooltip tooltip-info" data-tip={transI18n("detailDisableCensorship")}>
+              <div className="tooltip tooltip-info tooltip-bottom" data-tip={transI18n("detailDisableCensorship")}>
                 <Info className="text-primary" size={20} />
               </div>
             </label>
           </motion.div>
         )}
       </div>
-
-
 
     </div>
   )

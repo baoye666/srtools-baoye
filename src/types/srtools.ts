@@ -27,6 +27,7 @@ export interface LightconeJson {
 export interface AvatarData {
     rank: number,
     skills: Record<string, number>
+    skills_by_anchor_type?: Record<string,number>
 }
 
 export interface AvatarJson {

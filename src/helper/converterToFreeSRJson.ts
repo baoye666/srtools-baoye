@@ -1,3 +1,4 @@
+import useMazeStore from "@/stores/mazeStore";
 import { ASConfigStore, AvatarJson, AvatarStore, BattleConfigJson, CEConfigStore, FreeSRJson, LightconeJson, MOCConfigStore, PEAKConfigStore, PFConfigStore, RelicJson } from "@/types";
 
 
@@ -10,6 +11,7 @@ export function converterToFreeSRJson(
     ce_config: CEConfigStore,
     peak_config: PEAKConfigStore,
 ): FreeSRJson {
+    const { SkillTree } = useMazeStore.getState()
     const lightcones: LightconeJson[] = []
     const relics: RelicJson[] = []
     let battleJson: BattleConfigJson
@@ -78,11 +80,22 @@ export function converterToFreeSRJson(
     const avatarsJson: { [key: string]: AvatarJson } = {}
     let internalUidLightcone = 0
     let internalUidRelic = 0
+
     Object.entries(avatars).forEach(([avatarId, avatar]) => {
+        const skillsByAnchorType: Record<string, number> = {}
+        for (const [skillId, level] of Object.entries(avatar.data.skills)) {
+            if (SkillTree[skillId]) {
+                skillsByAnchorType[SkillTree[skillId].index_slot] = level > SkillTree[skillId].max_level ? SkillTree[skillId].max_level : level
+            }
+        }
         avatarsJson[avatarId] = {
             owner_uid: Number(avatar.owner_uid || 0),
             avatar_id: Number(avatar.avatar_id || 0),
-            data: avatar.data,
+            data: {
+                rank: Number(avatar.data.rank || 0),
+                skills: avatar.data.skills,
+                skills_by_anchor_type: Object.keys(skillsByAnchorType).length > 0 ? skillsByAnchorType : undefined,
+            },
             level: Number(avatar.level || 0),
             promotion: Number(avatar.promotion || 0),
             techniques: avatar.techniques,

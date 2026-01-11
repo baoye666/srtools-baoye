@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client"
 import { downloadJson } from "@/helper";
 import { converterToFreeSRJson } from "@/helper/converterToFreeSRJson";
@@ -20,6 +21,9 @@ import MonsterBar from "../monsterBar";
 import Image from "next/image";
 import ConnectBar from "../connectBar";
 import ExtraSettingBar from "../extraSettingBar";
+import ChangelogBar from "../changelog";
+import { ModalConfig } from "@/types";
+import { ScrollText } from "lucide-react";
 
 const themes = [
     { label: "Winter" },
@@ -58,7 +62,9 @@ export default function Header() {
         setIsOpenConnect,
         isOpenConnect,
         setIsOpenExtra,
-        isOpenExtra
+        isOpenExtra,
+        setIsChangelog,
+        isChangelog
     } = useModelStore()
 
     const [importModal, setImportModal] = useState("enka");
@@ -111,76 +117,7 @@ export default function Header() {
         }
     };
 
-    // Handle ESC key to close modal
-    useEffect(() => {
-        if (!isOpenImport) {
-            handleCloseModal("import_modal");
-            return;
-        }
-        if (!isOpenMonster) {
-            handleCloseModal("monster_modal");
-            return;
-        }
-        if (!isOpenConnect) {
-            handleCloseModal("connect_modal");
-            return;
-        }
-        if (!isOpenExtra) {
-            handleCloseModal("extra_modal");
-            return;
-        }
-        const handleEscKey = (event: KeyboardEvent) => {
-            if (event.key === 'Escape') {
-                handleCloseModal("connect_modal");
-                handleCloseModal("import_modal");
-                handleCloseModal("monster_modal");
-                handleCloseModal("extra_modal");
-            }
-        };
-
-        window.addEventListener('keydown', handleEscKey);
-        return () => window.removeEventListener('keydown', handleEscKey);
-    }, [isOpenImport, isOpenMonster, isOpenConnect, isOpenExtra]);
-
-    const handleImportDatabase = (event: React.ChangeEvent<HTMLInputElement>) => {
-
-        const file = event.target.files?.[0];
-        if (!file) {
-            toast.error(transI18n("pleaseSelectAFile"))
-
-            return
-        }
-        if (!file.name.endsWith(".json") || file.type !== "application/json") {
-            toast.error(transI18n("fileMustBeAValidJsonFile"))
-            return
-        }
-
-        if (file) {
-
-            const reader = new FileReader();
-            reader.onload = (e) => {
-                try {
-                    const data = JSON.parse(e.target?.result as string);
-                    const parsed = micsSchema.parse(data)
-                    setAvatars(parsed.avatars)
-                    setBattleType(parsed.battle_type)
-                    setMocConfig(parsed.moc_config)
-                    setPfConfig(parsed.pf_config)
-                    setAsConfig(parsed.as_config)
-                    setCeConfig(parsed.ce_config)
-                    setPeakConfig(parsed.peak_config)
-                    toast.success(transI18n("importDatabaseSuccess"))
-                } catch {
-                    toast.error(transI18n("fileMustBeAValidJsonFile"))
-                }
-            };
-            reader.readAsText(file);
-        }
-
-    };
-
-
-    const modalConfigs = [
+    const modalConfigs: ModalConfig[] = [
         {
             id: "connect_modal",
             title: transI18n("psConnection"),
@@ -225,9 +162,75 @@ export default function Header() {
                 handleCloseModal("extra_modal")
             },
             content: <ExtraSettingBar />
+        },
+        {
+            id: "changelog_modal",
+            title: "Changelog",
+            isOpen: isChangelog,
+            onClose: () => {
+                setIsChangelog(false)
+                handleCloseModal("changelog_modal")
+            },
+            content: <ChangelogBar />
         }
     ]
 
+    // Handle ESC key to close modal
+    useEffect(() => {
+        for (const item of modalConfigs) {
+            if (!item?.isOpen) {
+                handleCloseModal(item?.id || "")
+            } else {
+                handleShow(item?.id || "")
+            }
+        }
+        const handleEscKey = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') {
+                for (const item of modalConfigs) {
+                    handleCloseModal(item?.id || "")
+                }
+            }
+        };
+
+        window.addEventListener('keydown', handleEscKey);
+        return () => window.removeEventListener('keydown', handleEscKey);
+    }, [isOpenImport, isOpenMonster, isOpenConnect, isOpenExtra, isChangelog]);
+
+    const handleImportDatabase = (event: React.ChangeEvent<HTMLInputElement>) => {
+
+        const file = event.target.files?.[0];
+        if (!file) {
+            toast.error(transI18n("pleaseSelectAFile"))
+            return
+        }
+        if (!file.name.endsWith(".json") || file.type !== "application/json") {
+            toast.error(transI18n("fileMustBeAValidJsonFile"))
+            return
+        }
+
+        if (file) {
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const data = JSON.parse(e.target?.result as string);
+                    const parsed = micsSchema.parse(data)
+                    setAvatars(parsed.avatars)
+                    setBattleType(parsed.battle_type)
+                    setMocConfig(parsed.moc_config)
+                    setPfConfig(parsed.pf_config)
+                    setAsConfig(parsed.as_config)
+                    setCeConfig(parsed.ce_config)
+                    setPeakConfig(parsed.peak_config)
+                    toast.success(transI18n("importDatabaseSuccess"))
+                } catch {
+                    toast.error(transI18n("fileMustBeAValidJsonFile"))
+                }
+            };
+            reader.readAsText(file);
+        }
+
+    };
 
     return (
         <div className="navbar bg-base-100 shadow-md sticky top-0 z-50 px-3 py-1">
@@ -250,7 +253,6 @@ export default function Header() {
                                     <li><a onClick={() => {
                                         setImportModal("freesr")
                                         setIsOpenImport(true)
-                                        handleShow("import_modal")
                                     }}>{transI18n("freeSr")}</a></li>
                                     <li>
                                         <>
@@ -271,7 +273,6 @@ export default function Header() {
                                     <li><a onClick={() => {
                                         setImportModal("enka")
                                         setIsOpenImport(true)
-                                        handleShow("import_modal")
                                     }}>{transI18n("enka")}</a></li>
                                 </ul>
                             </details>
@@ -308,7 +309,6 @@ export default function Header() {
                                 className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
                                 onClick={() => {
                                     setIsOpenConnect(true)
-                                    handleShow("connect_modal")
                                 }}
                             >
                                 {transI18n("connectSetting")}
@@ -318,7 +318,6 @@ export default function Header() {
                             <button
                                 onClick={() => {
                                     setIsOpenMonster(true)
-                                    handleShow("monster_modal")
                                 }}
                                 className="disabled px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
                             >
@@ -331,7 +330,6 @@ export default function Header() {
                                 <button
                                     onClick={() => {
                                         setIsOpenExtra(true)
-                                        handleShow("extra_modal")
                                     }}
                                     className="disabled px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
                                 >
@@ -346,9 +344,9 @@ export default function Header() {
 
                 <a className="hidden sm:grid sm:grid-cols-1 items-start justify-items-center text-left gap-0 hover:scale-105 px-2">
                     <div className="flex items-center justify-center gap-2">
-                        <Image src="/ff-srtool.png" alt="Logo" width={50} height={50} />
+                        <Image src="/ff-srtool.png" alt="Logo" width={250} height={250} className="w-10 h-10 xl:w-12 xl:h-12 object-contain" />
                         <div className="flex flex-col justify-center items-start">
-                            <h1 className="text-xl font-bold">
+                            <h1 className="text-lg xl:text-xl font-bold leading-tight">
                                 <span className="text-emerald-500">Firefly Sr</span>
                                 <span className="bg-clip-text text-transparent bg-linear-to-r from-emerald-400 via-orange-500 to-red-500">
                                     Tools
@@ -371,7 +369,6 @@ export default function Header() {
                                 <li><a onClick={() => {
                                     setImportModal("freesr")
                                     setIsOpenImport(true)
-                                    handleShow("import_modal")
                                 }}>{transI18n("freeSr")}</a></li>
                                 <li>
                                     <>
@@ -392,7 +389,6 @@ export default function Header() {
                                 <li><a onClick={() => {
                                     setImportModal("enka")
                                     setIsOpenImport(true)
-                                    handleShow("import_modal")
                                 }}>{transI18n("enka")}</a></li>
                             </ul>
                         </details>
@@ -429,7 +425,6 @@ export default function Header() {
                             className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
                             onClick={() => {
                                 setIsOpenConnect(true)
-                                handleShow("connect_modal")
                             }}
                         >
                             {transI18n("connectSetting")}
@@ -439,7 +434,6 @@ export default function Header() {
                         <button
                             onClick={() => {
                                 setIsOpenMonster(true)
-                                handleShow("monster_modal")
                             }}
                             className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
                         >
@@ -451,7 +445,6 @@ export default function Header() {
                             <button
                                 onClick={() => {
                                     setIsOpenExtra(true)
-                                    handleShow("extra_modal")
                                 }}
                                 className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
                             >
@@ -462,16 +455,25 @@ export default function Header() {
                 </ul>
             </div>
 
-
             {/* Right side items */}
-            <div className="navbar-end gap-2">
-                <div className="px-2">
+            <div className="navbar-end gap-2 pr-1 ">
+                <div data-tip="Connection Status" className="tooltip tooltip-bottom">
                     <div className="flex items-center space-x-2 p-1.5 rounded-full shadow-md">
-                        <div className={`hidden lg:block text-sm italic ${isConnectPS ? 'text-green-500' : 'text-red-500'}`}>
+                        <div className={`hidden xl:block text-sm italic ${isConnectPS ? 'text-green-500' : 'text-red-500'}`}>
                             {isConnectPS ? transI18n("connected") : transI18n("unconnected")}
                         </div>
                         <div className={`w-3 h-3 rounded-full ${isConnectPS ? 'bg-green-500' : 'bg-red-500'}`}></div>
                     </div>
+                </div>
+
+                <div
+                    data-tip="View Logs"
+                    className="btn btn-ghost btn-sm btn-circle items-center justify-center w-fit tooltip tooltip-bottom"
+                    onClick={() => {
+                        setIsChangelog(true)
+                    }}
+                >
+                    <ScrollText className="w-5 h-5 text-warning" />
                 </div>
 
                 {/* Language selector - REFINED */}
@@ -493,7 +495,7 @@ export default function Header() {
                     </div>
                 </div>
 
-                <div title="Change Theme" className="dropdown dropdown-end">
+                <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-sm hover:bg-base-200 transition-all duration-200 px-2">
                         <svg
                             width={16}
@@ -557,10 +559,11 @@ export default function Header() {
 
                 {/* GitHub Link */}
                 <Link
-                    className='hidden sm:flex btn btn-ghost btn-sm btn-circle bg-white/20 hover:bg-white transition-all duration-200 items-center justify-center'
+                    className='flex btn btn-ghost btn-sm btn-circle bg-white/20 hover:bg-white transition-all duration-200 items-center justify-center tooltip tooltip-bottom'
                     href={"https://github.com/AzenKain/Firefly-Srtools"}
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-tip="Github"
                 >
                     <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                         <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
@@ -568,7 +571,7 @@ export default function Header() {
                 </Link>
             </div>
 
-            {modalConfigs.map(({ id, title, onClose, content }) => (
+            {modalConfigs?.map(({ id, title, onClose, content }) => (
                 <dialog key={id} id={id} className="modal">
                     <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
                         <div className="sticky top-0 z-10">

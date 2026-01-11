@@ -27,10 +27,16 @@ export const stageConfigMazeSchema = z.object({
     monster_list: z.array(z.record(z.string(), z.number()))
 });
 
+export const skillConfigMazeSchema = z.object({
+    max_level: z.number(),
+    index_slot: z.number()
+});
+
 export const configMazeSchema = z.object({
     Avatar: z.record(z.string(), avatarConfigMazeSchema),
     MOC: z.record(z.string(), mocConfigMazeSchema),
     AS: z.record(z.string(), asConfigMazeSchema),
     PF: z.record(z.string(), pfConfigMazeSchema),
-    Stage: z.record(z.string(), stageConfigMazeSchema)
+    Stage: z.record(z.string(), stageConfigMazeSchema),
+    Skill: z.record(z.string(), skillConfigMazeSchema)
 });
