@@ -83,8 +83,8 @@ export function converterToFreeSRJson(
 
     Object.entries(avatars).forEach(([avatarId, avatar]) => {
         const skillsByAnchorType: Record<string, number> = {}
-        for (const [skillId, level] of Object.entries(avatar.data.skills)) {
-            if (SkillTree[skillId]) {
+        for (const [skillId, level] of Object.entries(avatar?.data?.skills || {})) {
+            if (SkillTree?.[skillId]) {
                 skillsByAnchorType[SkillTree[skillId].index_slot] = level > SkillTree[skillId].max_level ? SkillTree[skillId].max_level : level
             }
         }
