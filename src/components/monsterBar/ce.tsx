@@ -1,6 +1,5 @@
 "use client";
-
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
     Plus,
     Trash2,
@@ -88,7 +87,7 @@ export default function CeBar() {
     )
 
     useEffect(() => {
-        setMonsterPage(1) // reset về trang 1 khi searchTerm thay đổi
+        setMonsterPage(1)
     }, [searchTerm])
 
     const stageList = useMemo(() => Object.values(Stage).map((stage) => ({
@@ -146,12 +145,11 @@ export default function CeBar() {
 
             <div className="mb-4 w-full relative">
                 <div className="flex items-center justify-center gap-2">
-
                     <button
                         className="btn btn-outline w-full text-left flex items-center gap-2"
                         onClick={(e) => {
                             e.stopPropagation()
-                            setShowSearchStage(true)
+                            setShowSearchStage(!showSearchStage)
                         }}
                     >
                         <Search className="w-6 h-6" />

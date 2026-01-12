@@ -5,7 +5,8 @@ export const extraDataSchema = z.object({
     theory_craft: z.object({
         hp: z.record(z.string(), z.array(z.number())),
         cycle_count: z.number(),
-        mode: z.boolean()
+        mode: z.boolean(),
+        stage_id: z.number()
     }),
     setting: z.object({
         censorship: z.boolean(),

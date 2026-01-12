@@ -67,7 +67,7 @@ export default function SelectCustomImage({ customSet, excludeSet, selectedCusto
   }
 
   const formatOptionLabel = (option: SelectOption) => (
-    <div className="flex items-center gap-1 w-full h-full z-50">
+    <div className="flex items-center gap-1 w-full h-full">
       <Image src={option.imageUrl} alt="" width={125} height={125} className="w-8 h-8 object-contain bg-warning-content rounded-full" />
       <ParseText className='font-bold' text={option.label} locale={locale} />
     </div>

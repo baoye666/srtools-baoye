@@ -67,7 +67,7 @@ export default function SelectCustomText({ customSet, excludeSet, selectedCustom
 
 
   const formatOptionLabel = (option: SelectOption) => (
-    <div className="flex flex-col gap-1 w-full h-full z-50">
+    <div className="flex flex-col gap-1 w-full h-full">
       <div
         className="font-bold text-lg"
         dangerouslySetInnerHTML={{

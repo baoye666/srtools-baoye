@@ -3,6 +3,7 @@ export interface ExtraData {
         hp: Record<string, number[]>
         cycle_count: number
         mode: boolean
+        stage_id: number
     }
     setting?: {
         censorship: boolean
