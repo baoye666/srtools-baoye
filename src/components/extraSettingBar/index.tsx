@@ -240,7 +240,7 @@ export default function ExtraSettingBar() {
             <SelectCustomImage
               customSet={listAvatar.filter((it) => extraData?.multi_path?.multi_path_main?.includes(Number(it.id))).map((it) => ({
                 value: it.id,
-                label: getNameChar(locale, it),
+                label: getNameChar(locale, transI18n, it),
                 imageUrl: `/icon/${it.baseType.toLowerCase()}.webp`
               }))}
               excludeSet={[]}
@@ -270,7 +270,7 @@ export default function ExtraSettingBar() {
             <SelectCustomImage
               customSet={listAvatar.filter((it) => extraData?.multi_path?.multi_path_march_7?.includes(Number(it.id))).map((it) => ({
                 value: it.id,
-                label: getNameChar(locale, it),
+                label: getNameChar(locale, transI18n, it),
                 imageUrl: `/icon/${it.baseType.toLowerCase()}.webp`
               }))}
               excludeSet={[]}

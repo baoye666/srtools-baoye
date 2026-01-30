@@ -1,8 +1,10 @@
 import { listCurrentLanguage } from "@/constant/constant";
 import { CharacterBasic, EventBasic, LightConeBasic, MonsterBasic } from "@/types";
+import { useTranslations } from "next-intl"
 
+type TFunc = ReturnType<typeof useTranslations>
 
-export function getNameChar(locale: string, data: CharacterBasic | undefined): string {
+export function getNameChar(locale: string, t: TFunc, data: CharacterBasic | undefined): string {
     if (!data) {
         return ""
     }
@@ -14,10 +16,8 @@ export function getNameChar(locale: string, data: CharacterBasic | undefined): s
     if (!text) {
         text = data.lang.get("en") ?? "";
     }
-    if (Number(data.id) % 2 === 0 && Number(data.id) > 8000) {
-        text = `Female ${data.damageType} MC`
-    } else if (Number(data.id) > 8000) {
-        text = `Male ${data.damageType} MC`
+    if (Number(data.id) > 8000) {
+        text = `${t("trailblazer")} • ${t(data?.baseType?.toLowerCase() ?? "")}`;
     }
     return text
 }

@@ -273,6 +273,7 @@
 		"detailChallengePeak": "現在の異相における「頂」のシーズンを変更できます。",
 		"detailHiddenUi": "この機能を有効にすると、ゲームのUIを非表示にします。",
 		"detailDisableCensorship": "この機能を有効にすると、ゲーム内の検閲を無効にします。",
-		"detailMultipathCharacter": "一部キャラクターの運命を変更できます。"
+		"detailMultipathCharacter": "一部キャラクターの運命を変更できます。",
+		"trailblazer": "開拓者"
 	}
 }

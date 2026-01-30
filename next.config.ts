@@ -28,12 +28,7 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "api.hakush.in",
         pathname: "**",
-      },
-      {
-        protocol: "https",
-        hostname: "homdgcat.wiki",
-        pathname: "**",
-      },
+      }
     ],
   },
   compiler: {

@@ -116,8 +116,8 @@
 		"currentEnergy": "Năng lượng hiện tại",
 		"setTo50": "Đặt thành 50%",
 		"battleConfiguration": "Cấu hình trận đấu",
-		"useTechnique": "Dùng chiến pháp",
-		"techniqueNote": "Bật hiệu ứng chiến pháp trước trận",
+		"useTechnique": "Dùng bí kỹ",
+		"techniqueNote": "Bật hiệu ứng bí kỹ trước trận",
 		"enhancement": "Cường hóa",
 		"enhancementLevel": "Cấp độ cường hóa",
 		"origin": "Nguyên gốc",
@@ -273,6 +273,7 @@
 		"detailChallengePeak": "Cho phép thay đổi mùa Trọng tại dị tướng hiện tại.",
 		"detailHiddenUi": "Khi bật tính năng này sẽ ẩn giao diện của game.",
 		"detailDisableCensorship": "Khi bật tính năng này sẽ tắt kiểm duyệt của game.",
-		"detailMultipathCharacter": "Cho phép thay đổi Vận Mệnh của một vài nhân vật."
+		"detailMultipathCharacter": "Cho phép thay đổi Vận Mệnh của một vài nhân vật.",
+		"trailblazer": "Nhà khai phá"
 	}
 }

@@ -77,10 +77,10 @@ export default async function RootLayout({
                 <div className="min-h-screen w-full">
                   <Header />
                   <div className="grid grid-cols-12 w-full">
-                    <div className="hidden sm:block col-span-3 sticky top-0 self-start h-fit">
+                    <div className="hidden sm:block md:col-span-4 lg:col-span-3 sticky top-0 self-start h-fit">
                       <AvatarBar />
                     </div>
-                    <div className="col-span-12 sm:col-span-9 lg:col-span-9">
+                    <div className="col-span-12 sm:col-span-8 lg:col-span-9">
                       <ActionBar />
                       {children}
                     </div>

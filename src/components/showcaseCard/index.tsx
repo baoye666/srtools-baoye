@@ -41,14 +41,15 @@ export default function ShowCaseInfo() {
         html2canvas(cardRef.current!, {
           scale: 2,
           backgroundColor: "#000000",
-          logging: false,
-          proxy: '/api/proxy/',
+          logging: true,
+          useCORS: true,
+          allowTaint: false,
           imageTimeout: 30000,
         })
       )
       .then((canvas: HTMLCanvasElement) => {
         const link = document.createElement("a");
-        link.download = `${getNameChar(locale, avatarSelected)}_showcase.png`;
+        link.download = `${getNameChar(locale, transI18n, avatarSelected)}_showcase.png`;
         link.href = canvas.toDataURL("image/png");
         link.click();
       })
@@ -56,7 +57,7 @@ export default function ShowCaseInfo() {
         console.log(e)
         toast.error("Error generating showcase card!");
       });
-  }, [cardRef, avatarSelected, locale]);
+  }, [avatarSelected, locale, transI18n]);
 
 
   useEffect(() => {
@@ -605,7 +606,7 @@ export default function ShowCaseInfo() {
                 <div className="flex h-full flex-col justify-between">
                   <div>
                     <div className="flex flex-row items-center justify-between">
-                      <ParseText className="text-3xl" text={getNameChar(locale, avatarSelected || undefined)} locale={locale} />
+                      <ParseText className="text-3xl" text={getNameChar(locale, transI18n, avatarSelected || undefined)} locale={locale} />
                     </div>
                     <div className="flex flex-row items-center gap-4 mt-2">
                       <div className="text-2xl text-[#d8b46e]">Lv. <span className="text-white">{avatarData?.level}</span>/<span className="text-neutral-400">80</span></div>

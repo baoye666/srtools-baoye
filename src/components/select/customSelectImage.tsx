@@ -1,10 +1,20 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
-import Select, { SingleValue } from 'react-select'
-import Image from 'next/image'
-import useLocaleStore from '@/stores/localeStore'
-import ParseText from '../parseText'
-import { themeColors } from '@/constant/constant'
+import dynamic from "next/dynamic"
+import type { SingleValue } from "react-select"
+import Image from "next/image"
+import useLocaleStore from "@/stores/localeStore"
+import ParseText from "../parseText"
+import { themeColors } from "@/constant/constant"
+import type { Props as SelectProps } from "react-select"
+import { JSX } from "react"
+
+const Select = dynamic(
+  () => import("react-select").then(m => m.default),
+  { ssr: false }
+) as <Option, IsMulti extends boolean = false>(
+  props: SelectProps<Option, IsMulti>
+) => JSX.Element
 
 export type SelectOption = {
   value: string

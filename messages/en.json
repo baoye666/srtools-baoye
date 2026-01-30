@@ -19,14 +19,14 @@
 		"servant": "Servant",
 		"damage": "Damage",
 		"type": "Type",
-		"warrior": "Destruction",
-		"knight": "Preservation",
-		"mage": "Erudition",
-		"priest": "Abundance",
+		"warrior": "The Destruction",
+		"knight": "The Preservation",
+		"mage": "The Erudition",
+		"priest": "The Abundance",
 		"rogue": "The Hunt",
-		"shaman": "Harmony",
-		"warlock": "Nihility",
-		"memory": "Remembrance",
+		"shaman": "The Harmony",
+		"warlock": "The Nihility",
+		"memory": "The Remembrance",
 		"elation": "The Elation",
 		"fire": "Fire",
 		"ice": "Ice",
@@ -274,7 +274,7 @@
 		"detailChallengePeak": "Allows changing the Peak season in the current Anomaly.",
 		"detailHiddenUi": "Enabling this feature will hide the game UI.",
 		"detailDisableCensorship": "Enabling this feature will disable in-game censorship.",
-		"detailMultipathCharacter": "Allows changing the Path of certain characters."
-
+		"detailMultipathCharacter": "Allows changing the Path of certain characters.",
+		"trailblazer": "Trailblazer"
 	}
 }

@@ -233,7 +233,7 @@ export default function ActionBar() {
                   <div className="text-center font-bold text-xl">{" / "}</div>
                   <ParseText
                     locale={locale}
-                    text={getNameChar(locale, avatarSelected).toWellFormed()}
+                    text={getNameChar(locale, transI18n, avatarSelected).toWellFormed()}
                     className={"font-bold text-xl"}
                   />
                   {avatarSelected?.id && (

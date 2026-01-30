@@ -273,6 +273,7 @@
 		"detailChallengePeak": "允许更改当前异相中的「巅峰」赛季。",
 		"detailHiddenUi": "开启后将隐藏游戏界面。",
 		"detailDisableCensorship": "开启后将关闭游戏内的审查。",
-		"detailMultipathCharacter": "允许更改部分角色的命途。"
+		"detailMultipathCharacter": "允许更改部分角色的命途。",
+		"trailblazer": "开拓者"
 	}
 }

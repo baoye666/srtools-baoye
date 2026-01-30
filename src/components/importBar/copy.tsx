@@ -219,7 +219,7 @@ export default function CopyImport() {
                                     <SelectCustomImage
                                         customSet={listCopyAvatar.map((avatar) => ({
                                             value: avatar.id.toString(),
-                                            label: getNameChar(locale, avatar),
+                                            label: getNameChar(locale, transI18n, avatar),
                                             imageUrl: `https://api.hakush.in/hsr/UI/avatarshopicon/${avatar.id}.webp`
                                         }))}
                                         excludeSet={[]}

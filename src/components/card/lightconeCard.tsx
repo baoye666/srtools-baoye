@@ -17,7 +17,7 @@ export default function LightconeCard({ data }: LightconeCardProps) {
     return (
         <li className="z-10 flex flex-col items-center rounded-md shadow-lg 
             bg-linear-to-b from-customStart to-customEnd transform transition-transform duration-300 
-            hover:scale-105 cursor-pointer min-h-[220px]"
+            hover:scale-105 cursor-pointer min-h-55"
         >
             <div
                 className={`w-full rounded-md bg-linear-to-br ${data.rank === "CombatPowerLightconeRarity5"

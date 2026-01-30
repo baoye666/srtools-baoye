@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import useAvatarStore from "@/stores/avatarStore";
-import { useCallback, useMemo } from "react";
+import { useMemo } from "react";
 import { traceButtonsInfo, traceLink } from "@/constant/traceConstant";
 import useUserDataStore from "@/stores/userDataStore";
 import useLocaleStore from "@/stores/localeStore";
@@ -46,27 +46,20 @@ export default function SkillsInfo() {
         return avatarSkillTree?.[skillSelected || ""]?.["1"]
     }, [avatarSelected, avatarSkillTree, skillSelected])
 
-    const getImageSkill = useCallback((icon: string | undefined, status: StatusAddType | undefined, provider: string = "hakushin") => {
+    const getImageSkill = (icon: string | undefined, status: StatusAddType | undefined) => {
         if (!icon) return
-        let urlPrefix = "https://homdgcat.wiki/images/skillicons/avatar/";
-        if (provider === "hakushin") {
-            urlPrefix = "https://api.hakush.in/hsr/UI/skillicons/"
-        }
+        const urlPrefix = "https://api.hakush.in/hsr/UI/skillicons/";
         if (icon.startsWith("SkillIcon")) {
-            if (provider === "homdgcat") {
-                return `${urlPrefix}${avatarSelected?.id}/${icon}`
-            } else if (provider === "hakushin") {
-                return `${urlPrefix}${icon.replace(".png", ".webp")}`
-            }
+            return `${urlPrefix}${icon.replace(".png", ".webp")}`
         } else if (status && mappingStats[status.PropertyType]) {
             return mappingStats[status.PropertyType].icon
         }
         else if (icon.startsWith("Icon")) {
             return `https://api.hakush.in/hsr/UI/trace/${icon.replace(".png", ".webp")}`
         }
-    }, [avatarSelected])
+    }
 
-    const getTraceBuffDisplay = useCallback((status: StatusAddType) => {
+    const getTraceBuffDisplay = (status: StatusAddType) => {
         const dataDisplay = mappingStats[status.PropertyType]
         if (!dataDisplay) return ""
         if (dataDisplay.unit === "%") {
@@ -76,7 +69,7 @@ export default function SkillsInfo() {
             return `${status.Value.toFixed(1)}${dataDisplay.unit}`
         }
         return `${status.Value.toFixed(0)}${dataDisplay.unit}`
-    }, [])
+    }
 
     const dataLevelUpSkill = useMemo(() => {
         const skillIds: number[] = skillInfo?.LevelUpSkillID || []
@@ -163,9 +156,6 @@ export default function SkillsInfo() {
                                         filter: (theme === "winter" || theme === "cupcake") ? "invert(1)" : "none"
                                     }}
                                     className={`w-full h-full object-cover rounded-xl`}
-                                    // onError={(e) => {
-                                    //     e.currentTarget.style.display = "none"
-                                    // }}
                                 />
                                 {traceButtons.map((btn, index) => {
                                     if (!avatarInfo?.SkillTrees?.[btn.id]) {
@@ -209,10 +199,6 @@ export default function SkillsInfo() {
                                                 height={124}
                                                 style={{
                                                     filter: (btn.size !== "big" && btn.size !== "memory" && btn.size !== "elation") ? "brightness(0%)" : ""
-                                                }}
-                                                onError={(e) => {
-                                                    e.currentTarget.onerror = null;
-                                                    e.currentTarget.src = getImageSkill(avatarInfo?.SkillTrees?.[btn.id]?.["1"]?.Icon, avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0], "homdgcat") || "";
                                                 }}
                                             />
                                             {(btn.size === "big" || btn.size === "memory" || btn.size === "elation")  && (

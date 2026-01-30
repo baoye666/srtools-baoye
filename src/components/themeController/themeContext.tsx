@@ -19,7 +19,6 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
         }
     }, [setTheme]);
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const changeTheme = (nextTheme: string | null) => {
         if (nextTheme) {
             setTheme(nextTheme);

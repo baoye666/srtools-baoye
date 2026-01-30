@@ -5,6 +5,7 @@ import useLocaleStore from '@/stores/localeStore';
 import { CharacterBasic } from '@/types';
 import ParseText from '../parseText';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 interface CharacterCardProps {
   data: CharacterBasic
@@ -12,13 +13,14 @@ interface CharacterCardProps {
 
 export default function CharacterCard({ data }: CharacterCardProps) {
   const { locale } = useLocaleStore();
-  const text = getNameChar(locale, data)
+  const transI18n = useTranslations("DataPage");
+
   return (
-    <li 
-    className="z-10 flex flex-col items-center rounded-xl shadow-xl 
+    <li
+      className="z-10 flex flex-col items-center rounded-xl shadow-xl 
                bg-linear-to-br from-base-300 via-base-100 to-warning/70
                transform transition-transform duration-300 ease-in-out 
-               hover:scale-105 cursor-pointer min-h-42.5 sm:min-h-45 md:min-h-52.5 lg:min-h-55 xl:min-h-60 2xl:min-h-85"
+               hover:scale-105 cursor-pointer min-h-45 sm:min-h-45 md:min-h-52.5 lg:min-h-55 xl:min-h-60 2xl:min-h-85"
     >
       <div
         className={`w-full rounded-md bg-linear-to-br ${data.rank === "CombatPowerAvatarRarityType5"
@@ -39,7 +41,7 @@ export default function CharacterCard({ data }: CharacterCardProps) {
           <Image
             width={32}
             height={32}
-      
+
             src={`/icon/${data.damageType.toLowerCase()}.webp`}
             className="absolute top-0 left-0 w-6 h-6 rounded-full"
             alt={data.damageType.toLowerCase()}
@@ -59,8 +61,15 @@ export default function CharacterCard({ data }: CharacterCardProps) {
 
       <ParseText
         locale={locale}
-        text={text}
-        className="mt-2 px-1 text-center text-shadow-white font-bold leading-tight text-sm sm:text-base 2xl:text-lg"
+        text={getNameChar(locale, transI18n, data)}
+        className="
+          w-full px-0.5
+          my-1
+          text-center font-bold text-shadow-white
+          leading-tight
+          wrap-break-word
+          text-sm sm:text-base 2xl:text-lg
+        "
       />
     </li>
 
