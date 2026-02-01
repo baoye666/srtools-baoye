@@ -59,7 +59,6 @@ export default function ShowCaseInfo() {
       });
   }, [avatarSelected, locale, transI18n]);
 
-
   useEffect(() => {
     if (!avatarSelected?.id) return;
     const fac = new FastAverageColor();
@@ -570,30 +569,68 @@ export default function ShowCaseInfo() {
               }}
             >
 
-              <div className="absolute top-4 left-4">
+              <div className="absolute top-4 left-3">
                 {avatarSelected && avatarInfo && avatarData?.data && typeof avatarData?.data?.rank === "number" && (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col items-center gap-2 py-2">
                     {avatarInfo?.RankIcon?.map((src, index) => {
                       const isActive = avatarData?.data?.rank > index;
-
                       return (
-                        <div key={index} className="relative my-1 flex rounded-full">
-                          <NextImage
-                            src={src ?? null}
-                            alt="Rank Icon"
-                            width={50}
-                            height={50}
-                            className="h-auto w-12 transition-all duration-300 ease-in-out p-px rounded-full"
+                        <div
+                          key={index}
+                          className="relative flex items-center justify-center"
+                          style={{
+                            transition: "transform 0.3s ease, filter 0.3s ease",
+                          }}
+                        >
+                          
+                          {isActive && (
+                            <div
+                              className="absolute inset-0 rounded-full pointer-events-none"
+                              style={{
+                                background: "radial-gradient(circle, rgba(250,204,21,0.35) 0%, transparent 70%)",
+                                filter: "blur(6px)",
+                                zIndex: 0,
+                              }}
+                            />
+                          )}
+
+                          <div
+                            className="relative rounded-full p-[2.5px]"
                             style={{
-                              opacity: isActive ? 1 : 0.6,
-                              filter: isActive
-                                ? 'grayscale(0) drop-shadow(0 0 8px rgba(255,215,0,0.5))'
-                                : 'grayscale(1)',
-                              border: '2px solid',
-                              borderColor: isActive ? '#facc15' : '#ffffff', // tailwind yellow-400 = #facc15
-                              boxShadow: isActive ? '0 0 10px rgba(250,204,21,0.5)' : undefined, // mimic shadow-yellow-400/50
+                              background: isActive
+                                ? "linear-gradient(135deg, #facc15, #f59e0b, #facc15)"
+                                : "rgba(255,255,255,0.15)",
+                              boxShadow: isActive
+                                ? "0 0 10px rgba(250,204,21,0.5), 0 0 24px rgba(250,204,21,0.2)"
+                                : "0 2px 6px rgba(0,0,0,0.4)",
+                              transition: "background 0.3s ease, box-shadow 0.3s ease",
+                              zIndex: 1,
                             }}
-                          />
+                          >
+                            <div
+                              className="rounded-full overflow-hidden"
+                              style={{
+                                padding: "2px",
+                                background: "#1e2230",
+                              }}
+                            >
+                              <NextImage
+                                src={src ?? null}
+                                alt="Rank Icon"
+                                width={48}
+                                height={48}
+                                className="block rounded-full object-cover"
+                                style={{
+                                  width: "44px",
+                                  height: "44px",
+                                  filter: isActive
+                                    ? "grayscale(0) brightness(1.05) saturate(1.1)"
+                                    : "grayscale(0.7) brightness(0.55)",
+                                  transition: "filter 0.3s ease",
+                                }}
+                              />
+                            </div>
+                          </div>
                         </div>
                       );
                     })}
