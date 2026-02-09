@@ -3478,6 +3478,69 @@
         "value": 0.30000001192092896
       }
     ]
+  },
+  "24006": {
+    "0": [
+      {
+        "type": "AttackAddedRatio",
+        "value": 0.2
+      }
+    ],
+    "1": [
+      {
+        "type": "AttackAddedRatio",
+        "value": 0.25
+      }
+    ],
+    "2": [
+      {
+        "type": "AttackAddedRatio",
+        "value": 0.3
+      }
+    ],
+    "3": [
+      {
+        "type": "AttackAddedRatio",
+        "value": 0.35
+      }
+    ],
+    "4": [
+      {
+        "type": "AttackAddedRatio",
+        "value": 0.4
+      }
+    ]
+  },
+  "23056": {
+    "0": [
+      {
+        "type": "CriticalChanceBase",
+        "value": 0.18000000715255737
+      }
+    ],
+    "1": [
+      {
+        "type": "CriticalChanceBase",
+        "value": 0.20999999344348907
+      }
+    ],
+    "2": [
+      {
+        "type": "CriticalChanceBase",
+        "value": 0.23999999463558197
+      }
+    ],
+    "3": [
+      {
+        "type": "CriticalChanceBase",
+        "value": 0.27000001072883606
+      }
+    ],
+    "4": [
+      {
+        "type": "CriticalChanceBase",
+        "value": 0.30000001192092896
+      }
+    ]
   }
-
 }

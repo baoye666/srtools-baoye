@@ -686,5 +686,13 @@
     "https://starrail.honeyhunterworld.com/img/eidolon/dancer-of-the-muse-eidolon-2_icon_small.webp",
     "https://starrail.honeyhunterworld.com/img/eidolon/seamster-of-the-ode-eidolon-2_icon_small.webp",
     "https://starrail.honeyhunterworld.com/img/eidolon/bearer-of-the-revelation-eidolon-2_icon_small.webp"
+  ],
+  "1504": [
+    "https://api.hakush.in/hsr/UI/rank/_dependencies/textures/1504/1504_Rank_1.webp",
+    "https://api.hakush.in/hsr/UI/rank/_dependencies/textures/1504/1504_Rank_2.webp",
+    "https://api.hakush.in/hsr/UI/rank/_dependencies/textures/1504/1504_Rank_3.webp",
+    "https://api.hakush.in/hsr/UI/rank/_dependencies/textures/1504/1504_Rank_4.webp",
+    "https://api.hakush.in/hsr/UI/rank/_dependencies/textures/1504/1504_Rank_5.webp",
+    "https://api.hakush.in/hsr/UI/rank/_dependencies/textures/1504/1504_Rank_6.webp"
   ]
 }
