@@ -196,7 +196,8 @@ export default function SkillsInfo() {
                                                 src={getImageSkill(avatarInfo?.SkillTrees?.[btn.id]?.["1"]?.Icon, avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0]) || ""}
                                                 alt={btn.id.replaceAll("Point", "")}
                                                 priority={true}
-                                                unoptimized={true}
+                                                unoptimized
+                                                crossOrigin="anonymous"
                                                 width={124}
                                                 height={124}
                                                 style={{
