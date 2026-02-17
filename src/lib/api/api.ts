@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { AffixDetail, ASDetail, ChangelogItemType, CharacterDetail, ConfigMaze, FreeSRJson, LightConeDetail, MocDetail, MonsterDetail, PeakDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
+import { AffixDetail, ASDetail, ChangelogItemType, CharacterBasic, CharacterDetail, ConfigMaze, EventBasic, FreeSRJson, LightConeBasic, LightConeDetail, MocDetail, MonsterBasic, PeakDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
 import axios from 'axios';
 import { psResponseSchema } from "@/zod";
 import { ExtraData } from "@/types";
@@ -142,16 +142,6 @@ export async function fetchPeakEventApi(locale: string): Promise<Record<string, 
     }
 }
 
-export async function fetchMonstersApi(locale: string): Promise<Record<string, MonsterDetail> | null> {
-    try {
-        const res = await axios.get<Record<string, MonsterDetail>>(`/data/monsters.${locale}.json`);
-        return res.data;
-    } catch (error) {
-        console.error('Failed to fetch monster:', error);
-        return null;
-    }
-}
-
 export async function fetchChangelog(): Promise<ChangelogItemType[] | null> {
     try {
         const res = await axios.get<ChangelogItemType[]>(`/data/changelog.json`);
@@ -161,6 +151,80 @@ export async function fetchChangelog(): Promise<ChangelogItemType[] | null> {
         return null;
     }
 }
+
+export async function getCharacterListApi(): Promise<CharacterBasic[]> {
+    try {
+        const res = await axios.get<CharacterBasic[]>('/data/character.json');
+        return res.data;
+    } catch (error) {
+        console.error('Failed to fetch character list:', error);
+        return [];
+    }
+}
+
+
+export async function getLightconeListApi(): Promise<LightConeBasic[]> {
+    try {
+        const res = await axios.get<LightConeBasic[]>('/data/lightcone.json');
+        return res.data
+    } catch (error) {
+        console.error('Failed to fetch lightcone list:', error);
+        return [];
+    }
+}
+
+
+export async function getMOCEventListApi(): Promise<EventBasic[]> {
+    try {
+        const res = await axios.get<EventBasic[]>('/data/moc.json');
+        return res.data
+    } catch (error) {
+        console.error('Failed to fetch moc list:', error);
+        return [];
+    }
+}
+
+export async function getASEventListApi(): Promise<EventBasic[]> {
+    try {
+        const res = await axios.get<EventBasic[]>('/data/as.json');
+        return res.data
+    } catch (error: unknown) {
+        console.error('Failed to fetch as list:', error);
+        return [];
+    }
+}
+
+export async function getPFEventListApi(): Promise<EventBasic[]> {
+    try {
+        const res = await axios.get<EventBasic[]>('/data/pf.json');
+        return res.data
+    } catch (error: unknown) {
+        console.error('Failed to fetch pf list:', error);
+        return [];
+    }
+}
+
+export async function getPEAKEventListApi(): Promise<EventBasic[]> {
+    try {
+        const res = await axios.get<EventBasic[]>('/data/peak.json');
+        return res.data
+    } catch (error: unknown) {
+        console.error('Failed to fetch peak list:', error);
+        return [];
+    }
+}
+
+export async function getMonsterListApi(): Promise<MonsterBasic[]> {
+    try {
+        const res = await axios.get<MonsterBasic[]>('/data/monster.json');
+        return res.data
+    } catch (error: unknown) {
+        console.error('Failed to fetch peak list:', error);
+        return [];
+    }
+}
+
+
 
 export async function SendDataToServer(
     username: string,

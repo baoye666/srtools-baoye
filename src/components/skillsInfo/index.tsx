@@ -48,14 +48,13 @@ export default function SkillsInfo() {
 
     const getImageSkill = (icon: string | undefined, status: StatusAddType | undefined) => {
         if (!icon) return
-        const urlPrefix = "https://api.hakush.in/hsr/UI/skillicons/";
+        const urlPrefix = `${process.env.CDN_URL}/spriteoutput/skillicons/avatar/${avatarSelected?.id}/`;
         if (icon.startsWith("SkillIcon")) {
-            return `${urlPrefix}${icon.replace(".png", ".webp")}`
+            return `${urlPrefix}${icon}`
         } else if (status && mappingStats[status.PropertyType]) {
             return mappingStats[status.PropertyType].icon
-        }
-        else if (icon.startsWith("Icon")) {
-            return `https://api.hakush.in/hsr/UI/trace/${icon.replace(".png", ".webp")}`
+        } else if (icon.startsWith("Icon")) {
+            return `${process.env.CDN_URL}/spriteoutput/trace/${icon}`
         }
     }
 
@@ -147,6 +146,8 @@ export default function SkillsInfo() {
                         {traceButtons && avatarInfo && (
                             <div className="grid col-span-4 relative w-full aspect-square">
                                 <Image
+                                    unoptimized
+                                    crossOrigin="anonymous"
                                     src={`/skilltree/${avatarSelected?.baseType?.toUpperCase()}.webp`}
                                     alt=""
                                     width={312}
@@ -179,8 +180,8 @@ export default function SkillsInfo() {
                                             ${btn.size === "elation" ? "w-[9vw] h-[9vw] md:w-[3.5vw] md:h-[3.5vw] bg-black" : ""}
                                             ${skillSelected === btn.id ? "border-4 border-primary" : ""}
                                             ${!avatarData?.data.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID]
-                                                ? "opacity-50 cursor-not-allowed"
-                                                : ""}
+                                                    ? "opacity-50 cursor-not-allowed"
+                                                    : ""}
                                         `}
                                             onClick={() => {
                                                 setSkillSelected(btn.id === skillSelected ? null : btn.id)
@@ -195,13 +196,14 @@ export default function SkillsInfo() {
                                                 src={getImageSkill(avatarInfo?.SkillTrees?.[btn.id]?.["1"]?.Icon, avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0]) || ""}
                                                 alt={btn.id.replaceAll("Point", "")}
                                                 priority={true}
+                                                unoptimized={true}
                                                 width={124}
                                                 height={124}
                                                 style={{
                                                     filter: (btn.size !== "big" && btn.size !== "memory" && btn.size !== "elation") ? "brightness(0%)" : ""
                                                 }}
                                             />
-                                            {(btn.size === "big" || btn.size === "memory" || btn.size === "elation")  && (
+                                            {(btn.size === "big" || btn.size === "memory" || btn.size === "elation") && (
                                                 <p className="
                                                 z-12 text-sm sm:text-xs lg:text-sm xl:text-base 2xl:text-2xl
                                                 font-bold text-center rounded-full absolute
@@ -252,12 +254,12 @@ export default function SkillsInfo() {
                                             {btn.size === "big" && (
                                                 <div
                                                     style={{
-                                                    position: "absolute",
-                                                    inset: 0,
-                                                    backgroundColor: "#f5e4b0",
-                                                    mixBlendMode: "screen",
-                                                    opacity: 0.3,
-                                                    borderRadius: "50%"
+                                                        position: "absolute",
+                                                        inset: 0,
+                                                        backgroundColor: "#f5e4b0",
+                                                        mixBlendMode: "screen",
+                                                        opacity: 0.3,
+                                                        borderRadius: "50%"
                                                     }}
                                                 />
                                             )}

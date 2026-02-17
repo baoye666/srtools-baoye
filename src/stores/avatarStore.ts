@@ -49,7 +49,7 @@ const useAvatarStore = create<AvatarState>((set, get) => ({
         let filteredList = get().listRawAvatar;
         if (newFilter.name) {
             filteredList = filteredList.filter((avatar) => {
-                return avatar.lang?.get(newFilter.locale)?.toLowerCase().includes(newFilter.name.toLowerCase()) ?? false;
+                return avatar.lang?.[newFilter.locale]?.toLowerCase().includes(newFilter.name.toLowerCase()) ?? false;
             });
         }
         if (newFilter.path.length > 0) {

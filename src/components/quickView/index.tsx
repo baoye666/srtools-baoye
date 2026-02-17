@@ -70,7 +70,7 @@ export default function QuickView() {
             const subAffixMap = mapSubAffix["5"]
             if (!mainAffixMap || !subAffixMap) return
             return {
-                img: `https://api.hakush.in/hsr/UI/relicfigures/IconRelic_${value.relic_set_id}_${key}.webp`,
+                img: `${process.env.CDN_URL}/spriteoutput/relicfigures/IconRelic_${value.relic_set_id}_${key}.png`,
                 mainAffix: {
                     property: mainAffixMap?.[value?.main_affix_id]?.property,
                     level: value?.level,
@@ -408,7 +408,15 @@ export default function QuickView() {
                         return (
                             <div key={index} className="flex flex-row items-center justify-between">
                                 <div className="flex flex-row items-center">
-                                    <NextImage src={stat?.icon || ""} alt="Stat Icon" width={40} height={40} className="h-auto w-10 p-1 mx-1 bg-black/20 rounded-full" />
+                                    <NextImage 
+                                    src={stat?.icon || ""} 
+                                    unoptimized
+                                    crossOrigin="anonymous"
+                                    alt="Stat Icon" 
+                                    width={40} 
+                                    height={40} 
+                                    className="h-auto w-10 p-1 mx-1 bg-black/20 rounded-full" 
+                                    />
                                     <div className="font-bold">{stat.name}</div>
                                 </div>
                                 <div className="ml-3 mr-3 grow border rounded opacity-50" />

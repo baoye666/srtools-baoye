@@ -23,6 +23,8 @@ export default function RelicShowcase({
                     <div className="absolute inset-0 rounded-lg blur-lg -z-10"></div>
                     <NextImage
                         src={relic?.img || ""}
+                        unoptimized
+                        crossOrigin="anonymous"
                         width={78}
                         height={78}
                         alt="Relic Icon"
@@ -47,6 +49,8 @@ export default function RelicShowcase({
                         <div className="absolute inset-0 bg-yellow-500/15 rounded-full blur-md -z-10"></div>
                         <NextImage
                             src={relic?.mainAffix?.detail?.icon || ""}
+                            unoptimized
+                            crossOrigin="anonymous"
                             width={35}
                             height={35}
                             alt="Main Affix Icon"
@@ -72,6 +76,8 @@ export default function RelicShowcase({
                                     {subAffix?.detail?.icon ? (
                                         <NextImage
                                             src={subAffix?.detail?.icon || ""}
+                                            unoptimized
+                                            crossOrigin="anonymous"
                                             width={32}
                                             height={32}
                                             alt="Sub Affix Icon"
@@ -86,11 +92,11 @@ export default function RelicShowcase({
                                         +{subAffix?.valueAffix + subAffix?.detail?.unit}
                                     </span>
                                     {
-                                    (avatarInfo?.Relics?.SubAffixPropertyList.findIndex((item) => item === subAffix?.property) !== -1) && (
-                                        <span className="ml-1 bg-yellow-600/20 text-yellow-400 rounded-full px-1 py-0.5 text-[10px] font-semibold border border-yellow-600/30 shrink-0 leading-none">
-                                            {subAffix?.count}
-                                        </span>
-                                    )}
+                                        (avatarInfo?.Relics?.SubAffixPropertyList.findIndex((item) => item === subAffix?.property) !== -1) && (
+                                            <span className="ml-1 bg-yellow-600/20 text-yellow-400 rounded-full px-1 py-0.5 text-[10px] font-semibold border border-yellow-600/30 shrink-0 leading-none">
+                                                {subAffix?.count}
+                                            </span>
+                                        )}
                                 </div>
                             </div>
                         )

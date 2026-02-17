@@ -29,19 +29,22 @@ export default function CharacterCard({ data }: CharacterCardProps) {
           }`}
       >
 
-        <div className="relative w-full h-full">
+        <div className="relative w-full h-32 lg:h-26 xl:h-36">
           <Image
             width={376}
             height={512}
-            src={`https://api.hakush.in/hsr/UI/avatarshopicon/${data.id}.webp`}
+            unoptimized
+            crossOrigin="anonymous"
+            src={`${process.env.CDN_URL}/${data.icon}`}
             priority={true}
-            className="w-full h-full rounded-md object-cover"
+            className="rounded-md w-full h-full object-contain"
             alt="ALT"
           />
           <Image
             width={32}
             height={32}
-
+            unoptimized
+            crossOrigin="anonymous"
             src={`/icon/${data.damageType.toLowerCase()}.webp`}
             className="absolute top-0 left-0 w-6 h-6 rounded-full"
             alt={data.damageType.toLowerCase()}
@@ -49,6 +52,8 @@ export default function CharacterCard({ data }: CharacterCardProps) {
           <Image
             width={32}
             height={32}
+            unoptimized
+            crossOrigin="anonymous"
             src={`/icon/${data.baseType.toLowerCase()}.webp`}
             className="absolute top-0 right-0 w-6 h-6 rounded-full"
             alt={data.baseType.toLowerCase()}

@@ -93,7 +93,7 @@ export default function ActionBar() {
   };
 
 
-    const actionMove = (path: string) => {
+  const actionMove = (path: string) => {
     router.push(`/${path}`)
   }
 
@@ -134,7 +134,7 @@ export default function ActionBar() {
       }
     }
   }
-  
+
   const modalConfigs: ModalConfig[] = [
     {
       id: "update_profile_modal",
@@ -193,16 +193,16 @@ export default function ActionBar() {
   // Handle ESC key to close modal
   useEffect(() => {
     for (const item of modalConfigs) {
-        if (!item?.isOpen) {
-            handleCloseModal(item?.id || "")
-        }
+      if (!item?.isOpen) {
+        handleCloseModal(item?.id || "")
+      }
     }
     const handleEscKey = (event: KeyboardEvent) => {
-        if (event.key === 'Escape') {
-            for (const item of modalConfigs) {
-                handleCloseModal(item?.id || "")
-            }
+      if (event.key === 'Escape') {
+        for (const item of modalConfigs) {
+          handleCloseModal(item?.id || "")
         }
+      }
     };
 
     window.addEventListener('keydown', handleEscKey);
@@ -223,6 +223,8 @@ export default function ActionBar() {
                   <Image
                     src={`/icon/${avatarSelected.damageType.toLowerCase()}.webp`}
                     alt={'fire'}
+                    unoptimized
+                    crossOrigin="anonymous"
                     className="h-10 w-10 object-contain"
                     width={100}
                     height={100}

@@ -27,7 +27,7 @@ export default function ProfileCard({ profile, selectedProfile, onProfileToggle 
                 <div className="">
                     <div className="rounded-lg h-42 flex items-center justify-center">
                         <Image
-                            src={`https://api.hakush.in/hsr/UI/lightconemediumicon/${profile.lightcone.item_id}.webp`}
+                            src={`${process.env.CDN_URL}/spriteoutput/lightconemaxfigures/${profile.lightcone.item_id}.png`}
                             alt={mapLightconeInfo[profile.lightcone.item_id.toString()]?.Name}
                             width={348}
                             height={408}
@@ -55,7 +55,7 @@ export default function ProfileCard({ profile, selectedProfile, onProfileToggle 
                         <div key={index} className="relative">
                             <div className="w-9 h-9 rounded-lg flex items-center justify-center border border-amber-500/50">
                                 <Image
-                                    src={`https://api.hakush.in/hsr/UI/relicfigures/IconRelic_${relic.relic_set_id}_${relic.relic_id.toString()[relic.relic_id.toString().length - 1]}.webp`}
+                                    src={`${process.env.CDN_URL}/spriteoutput/relicfigures/IconRelic_${relic.relic_set_id}_${relic.relic_id.toString()[relic.relic_id.toString().length - 1]}.webp`}
                                     alt="Relic"
                                     width={124}
                                     height={124}

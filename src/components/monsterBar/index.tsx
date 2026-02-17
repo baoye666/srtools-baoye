@@ -64,6 +64,8 @@ export default function MonsterBar() {
                                     }
                                 >
                                     <Image
+                                        unoptimized
+                                        crossOrigin="anonymous"
                                         src={`/icon/${item.icon}.webp`}
                                         alt={item.name}
                                         width={24}

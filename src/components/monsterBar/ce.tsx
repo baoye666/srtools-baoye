@@ -17,7 +17,6 @@ import { getLocaleName } from "@/helper";
 import Image from "next/image";
 import { MonsterBasic } from "@/types";
 import { useTranslations } from "next-intl";
-import { listCurrentLanguageApi } from "@/constant/constant";
 import useGlobalStore from "@/stores/globalStore";
 
 
@@ -26,7 +25,7 @@ export default function CeBar() {
     const [showSearchWaveId, setShowSearchWaveId] = useState<number | null>(null);
     const { Stage } = useMazeStore()
     const { ce_config, setCeConfig } = useUserDataStore()
-    const { mapMonsterInfo } = useMonsterStore()
+    const { listMonster, mapMonster } = useMonsterStore()
     const { locale } = useLocaleStore()
     const transI18n = useTranslations("DataPage")
     const [showSearchStage, setShowSearchStage] = useState(false)
@@ -39,33 +38,9 @@ export default function CeBar() {
     const pageSizeMonsters = 30
     const [monsterPage, setMonsterPage] = useState(1)
 
-    const listMonsterDetail = useMemo(() => {
-        const result: MonsterBasic[] = []
-
-        for (const monster of Object.values(mapMonsterInfo)) {
-            for (const monsterChild of monster.Child) {
-                result.push({
-                    id: monsterChild.Id.toString(),
-                    rank: monster.Rank,
-                    camp: null,
-                    icon: monster.ImagePath,
-                    weak: monsterChild.StanceWeakList,
-                    desc: monster.Desc,
-                    child: [],
-                    lang: new Map<string, string>([
-                        [listCurrentLanguageApi[locale], monster.Name],
-                    ]),
-                })
-            }
-        }
-
-        return result
-    }, [mapMonsterInfo, locale])
-
-
     const filteredMonsters = useMemo(() => {
         const newlistMonster = new Set<MonsterBasic>()
-        for (const monster of listMonsterDetail) {
+        for (const monster of listMonster) {
             if (getLocaleName(locale, monster).toLowerCase().includes(searchTerm.toLowerCase())) {
                 newlistMonster.add(monster)
             }
@@ -74,7 +49,7 @@ export default function CeBar() {
             }
         }
         return Array.from(newlistMonster)
-    }, [listMonsterDetail, locale, searchTerm]);
+    }, [listMonster, locale, searchTerm]);
 
     const paginatedMonsters = useMemo(() =>
         filteredMonsters.slice((monsterPage - 1) * pageSizeMonsters, monsterPage * pageSizeMonsters),
@@ -114,12 +89,12 @@ export default function CeBar() {
     useEffect(() => {
         if (!ce_config) return
         if (!extraData || !extraData.theory_craft?.mode) return
-    
+
         const newExtraData = structuredClone(extraData)
         if (!newExtraData?.theory_craft?.hp) {
             newExtraData.theory_craft!.hp = {}
         }
-    
+
         for (let i = 0; i < ce_config.monsters.length; i++) {
             const waveKey = (i + 1).toString()
             if (!newExtraData.theory_craft!.hp[waveKey]) {
@@ -132,9 +107,9 @@ export default function CeBar() {
             }
         }
         setExtraData(newExtraData)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [ce_config])
-    
+
 
     return (
         <div className="z-4 py-8 h-full w-full" onClick={() => {
@@ -337,8 +312,10 @@ export default function CeBar() {
                                                 </button>
 
                                                 <div className="flex justify-center">
-                                                    {listMonsterDetail.find((monster2) => monster2.id === member.monster_id.toString())?.icon && <Image
-                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonsterDetail.find((monster2) => monster2.id === member.monster_id.toString())?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                    {mapMonster?.[member.monster_id.toString()]?.icon && <Image
+                                                        unoptimized
+                                                        crossOrigin="anonymous"
+                                                        src={`${process.env.CDN_URL}/${mapMonster?.[member.monster_id.toString()]?.icon}`}
                                                         alt="Enemy Icon"
                                                         width={376}
                                                         height={512}
@@ -347,22 +324,22 @@ export default function CeBar() {
                                                 </div>
 
                                                 <div className="flex flex-wrap justify-center gap-1 mb-2">
-                                                    {listMonsterDetail
-                                                        .find((monster) => monster.id === member.monster_id.toString())
-                                                        ?.weak?.map((icon, iconIndex) => (
-                                                            <Image
-                                                                src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                alt={icon}
-                                                                className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
-                                                                width={200}
-                                                                height={200}
-                                                                key={iconIndex}
-                                                            />
-                                                        ))}
+                                                    {mapMonster?.[member.monster_id.toString()]?.weak?.map((icon, iconIndex) => (
+                                                        <Image
+                                                            unoptimized
+                                                            crossOrigin="anonymous"
+                                                            src={`/icon/${icon.toLowerCase()}.webp`}
+                                                            alt={icon}
+                                                            className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
+                                                            width={200}
+                                                            height={200}
+                                                            key={iconIndex}
+                                                        />
+                                                    ))}
                                                 </div>
                                                 <div className="text-center flex flex-col items-center justify-center">
                                                     <div className="text-sm font-medium">
-                                                        {getLocaleName(locale, listMonsterDetail.find((monster) => monster.id === member.monster_id.toString()))}  {`(${member.monster_id})`}
+                                                        {getLocaleName(locale, mapMonster?.[member.monster_id.toString()])}  {`(${member.monster_id})`}
                                                     </div>
                                                     <div className="flex items-center gap-1 mt-1 mx-2">
                                                         <span className="text-sm">LV.</span>
@@ -393,15 +370,15 @@ export default function CeBar() {
                                                                 onChange={(e) => {
                                                                     const val = Number(e.target.value)
                                                                     if (isNaN(val) || val < 0) return
-                            
+
                                                                     const newData = structuredClone(extraData)
 
                                                                     if (!newData?.theory_craft?.hp?.[(waveIndex + 1).toString()]) {
-                                                                      newData.theory_craft!.hp![(waveIndex + 1).toString()] = []
+                                                                        newData.theory_craft!.hp![(waveIndex + 1).toString()] = []
                                                                     }
-                                                                    
+
                                                                     newData.theory_craft!.hp![(waveIndex + 1).toString()][memberIndex] = val
-                                                                    
+
                                                                     setExtraData(newData)
                                                                 }}
                                                             />
@@ -415,8 +392,8 @@ export default function CeBar() {
                                 ))}
 
                                 {/* Add Member Button + Search */}
-                                <div 
-                                    className="relative flex items-start justify-center w-full h-full" 
+                                <div
+                                    className="relative flex items-start justify-center w-full h-full"
                                     onClick={(e) => e.stopPropagation()}
                                 >
                                     <button
@@ -481,9 +458,11 @@ export default function CeBar() {
                                                             }}
                                                         >
                                                             <div className="relative w-8 h-8 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
-                                                                {listMonsterDetail.find((monster2) => monster2.id === monster.id)?.icon?.split("/")?.pop()?.replace(".png", "") && (
+                                                                {mapMonster?.[monster.id.toString()]?.icon && (
                                                                     <Image
-                                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonsterDetail.find((monster2) => monster2.id === monster.id)?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                                        unoptimized
+                                                                        crossOrigin="anonymous"
+                                                                        src={`${process.env.CDN_URL}/${mapMonster?.[monster.id.toString()]?.icon}`}
                                                                         alt="Enemy Icon"
                                                                         width={376}
                                                                         height={512}

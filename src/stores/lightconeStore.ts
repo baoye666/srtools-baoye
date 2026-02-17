@@ -45,7 +45,7 @@ const useLightconeStore = create<LightconeState>((set, get) => ({
         let filteredList = get().listRawLightcone;
         if (newFilter.name && newFilter.locale)  {
             filteredList = filteredList.filter((lightcone) => {
-                return lightcone.lang?.get(newFilter.locale)?.toLowerCase().includes(newFilter.name.toLowerCase()) ?? false;
+                return lightcone.lang?.[newFilter.locale]?.toLowerCase().includes(newFilter.name.toLowerCase()) ?? false;
             });
         }
         if (newFilter.path && newFilter.path.length > 0) {

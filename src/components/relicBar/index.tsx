@@ -276,7 +276,7 @@ export default function RelicMaker() {
                                     customSet={Object.entries(relicSets).map(([key, value]) => ({
                                         value: key,
                                         label: value.Name,
-                                        imageUrl: `https://api.hakush.in/hsr/UI/itemfigures/${value.Icon.match(/\d+/)?.[0]}.webp`
+                                        imageUrl: `${process.env.CDN_URL}/spriteoutput/itemfigures/${value.Icon.match(/\d+/)?.[0]}.png`
                                     }))}
                                     excludeSet={[]}
                                     selectedCustomSet={selectedRelicSet}

@@ -46,6 +46,7 @@ export interface RankType {
     Id: number;
     Name: string;
     Desc: string;
+    Icon: string;
     ParamList: number[];
 }
 

@@ -47,7 +47,7 @@ export default function EidolonsInfo() {
                             >
                                 <Image
                                     className={`w-60 object-contain mb-2 ${Number(key) <= avatars[avatarSelected?.id || ""]?.data?.rank ? "" : "grayscale"}`}
-                                    src={`https://api.hakush.in/hsr/UI/rank/_dependencies/textures/${avatarSelected?.id}/${avatarSelected?.id}_Rank_${key}.webp`}
+                                    src={`${process.env.CDN_URL}/ui/ui3d/rank/_dependencies/textures/${avatarSelected?.id}/${avatarSelected?.id}_Rank_${key}.png`}
                                     alt={`Rank ${key}`}
                                     priority
                                     width={240}

@@ -26,13 +26,21 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "api.hakush.in",
+        hostname: "cdn.kain.id.vn",
+        pathname: "**",
+      },
+      {
+        protocol: "http",
+        hostname: "cdn.kain.id.vn",
         pathname: "**",
       }
     ],
   },
   compiler: {
     styledComponents: true,
+  },
+  env: {
+    CDN_URL: "https://cdn.kain.id.vn/firefly/assets/asbres",
   },
 };
 

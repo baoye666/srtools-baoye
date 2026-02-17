@@ -29,15 +29,19 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
             <div className="relative mb-4">
                 <div className="w-full h-48 rounded-lg overflow-hidden relative">
                     <Image
-                        src={`https://api.hakush.in/hsr/UI/avatarshopicon/${character.avatar_id}.webp`}
+                        src={`${process.env.CDN_URL}/spriteoutput/avatarshopicon/avatar/${character.avatar_id}.png`}
                         alt={mapAvatarInfo[character.avatar_id.toString()]?.Name || ""}
                         width={376}
                         height={512}
+                        unoptimized
+                        crossOrigin="anonymous"
                         className="w-full h-full object-contain"
                     />
                     <Image
                         width={48}
                         height={48}
+                        unoptimized
+                        crossOrigin="anonymous"
                         src={`/icon/${mapAvatarInfo[character.avatar_id.toString()]?.DamageType.toLowerCase()}.webp`}
                         className="absolute top-0 left-0 w-10 h-10 rounded-full"
                         alt={mapAvatarInfo[character.avatar_id.toString()]?.DamageType.toLowerCase()}
@@ -45,6 +49,8 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
                     <Image
                         width={48}
                         height={48}
+                        unoptimized
+                        crossOrigin="anonymous"
                         src={`/icon/${mapAvatarInfo[character.avatar_id.toString()]?.BaseType.toLowerCase()}.webp`}
                         className="absolute top-0 right-0 w-10 h-10 rounded-full"
                         alt={mapAvatarInfo[character.avatar_id.toString()]?.BaseType.toLowerCase()}
@@ -71,8 +77,10 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
                         <div key={index} className="relative">
                             <div className="w-9 h-9 rounded-lg flex items-center justify-center border border-amber-500/50">
                                 <Image
-                                    src={`https://api.hakush.in/hsr/UI/relicfigures/IconRelic_${relic.relic_set_id}_${relic.relic_id.toString()[relic.relic_id.toString().length - 1]}.webp`}
+                                    src={`${process.env.CDN_URL}/spriteoutput/relicfigures/IconRelic_${relic.relic_set_id}_${relic.relic_id.toString()[relic.relic_id.toString().length - 1]}.png`}
                                     alt="Relic"
+                                    unoptimized
+                                    crossOrigin="anonymous"
                                     width={124}
                                     height={124}
                                     className="w-14 h-14 object-contain"
@@ -91,7 +99,9 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
                 <div className="">
                     <div className="rounded-lg h-42 flex items-center justify-center">
                         <Image
-                            src={`https://api.hakush.in/hsr/UI/lightconemediumicon/${character.lightcone.item_id}.webp`}
+                            unoptimized
+                            crossOrigin="anonymous"
+                            src={`${process.env.CDN_URL}/spriteoutput/lightconemaxfigures/${character.lightcone.item_id}.png`}
                             alt={mapLightconeInfo[character.lightcone.item_id.toString()]?.Name}
                             width={348}
                             height={408}

@@ -128,8 +128,9 @@ export default function RelicCard({ slot, avatarId }: RelicCardProps) {
                     >
                         <span>
                             <Image
-                                src={`https://api.hakush.in/hsr/UI/relicfigures/IconRelic_${relicDetail.relic_set_id}_${slot}.webp`}
+                                src={`${process.env.CDN_URL}/spriteoutput/relicfigures/IconRelic_${relicDetail.relic_set_id}_${slot}.png`}
                                 alt="Relic"
+                                unoptimized={true}
                                 width={124}
                                 height={124}
                                 className="w-14 h-14 object-contain"

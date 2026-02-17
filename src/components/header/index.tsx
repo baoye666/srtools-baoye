@@ -344,7 +344,15 @@ export default function Header() {
 
                 <a className="hidden sm:grid sm:grid-cols-1 items-start justify-items-center text-left gap-0 hover:scale-105 px-2">
                     <div className="flex items-center justify-center gap-2">
-                        <Image src="/ff-srtool.png" alt="Logo" width={250} height={250} className="w-10 h-10 xl:w-12 xl:h-12 object-contain" />
+                        <Image
+                            unoptimized
+                            crossOrigin="anonymous"
+                            src="/ff-srtool.png"
+                            alt="Logo"
+                            width={250}
+                            height={250}
+                            className="w-10 h-10 xl:w-12 xl:h-12 object-contain"
+                        />
                         <div className="flex flex-col justify-center items-start">
                             <h1 className="text-lg xl:text-xl font-bold leading-tight">
                                 <span className="text-emerald-500">Firefly Sr</span>

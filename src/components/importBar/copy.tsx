@@ -154,6 +154,8 @@ export default function CopyImport() {
                                                     backgroundColor: listPath[key] ? "#374151" : "#6B7280"
                                                 }}>
                                                 <Image
+                                                    unoptimized
+                                                    crossOrigin="anonymous"
                                                     src={`/icon/${key}.webp`}
                                                     alt={key}
                                                     className="h-8 w-8 object-contain rounded-md"
@@ -179,6 +181,8 @@ export default function CopyImport() {
                                                     backgroundColor: listElement[key] ? "#374151" : "#6B7280"
                                                 }}>
                                                 <Image
+                                                    unoptimized
+                                                    crossOrigin="anonymous"
                                                     src={`/icon/${key}.webp`}
                                                     alt={key}
                                                     className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md"
@@ -220,7 +224,7 @@ export default function CopyImport() {
                                         customSet={listCopyAvatar.map((avatar) => ({
                                             value: avatar.id.toString(),
                                             label: getNameChar(locale, transI18n, avatar),
-                                            imageUrl: `https://api.hakush.in/hsr/UI/avatarshopicon/${avatar.id}.webp`
+                                            imageUrl: `${process.env.CDN_URL}/spriteoutput/avatarshopicon/avatar/${avatar.id}.png`
                                         }))}
                                         excludeSet={[]}
                                         selectedCustomSet={avatarCopySelected?.id.toString() || ""}

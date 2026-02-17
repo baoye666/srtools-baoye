@@ -8,13 +8,13 @@ import { useTranslations } from "next-intl"
 
 
 export default function AvatarBar({ onClose }: { onClose?: () => void }) {
-    const { 
-        listAvatar, 
-        setAvatarSelected, 
-        setSkillSelected, 
-        setFilter, 
-        filter, 
-        listElement, 
+    const {
+        listAvatar,
+        setAvatarSelected,
+        setSkillSelected,
+        setFilter,
+        filter,
+        listElement,
         listPath,
         setListElement,
         setListPath
@@ -22,10 +22,10 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
     const transI18n = useTranslations("DataPage")
     const { locale } = useLocaleStore()
 
-    
+
     useEffect(() => {
         setFilter({ ...filter, locale: locale, element: Object.keys(listElement).filter((key) => listElement[key]), path: Object.keys(listPath).filter((key) => listPath[key]) })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [locale, listElement, listPath])
 
 
@@ -54,8 +54,11 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                                         style={{
                                             backgroundColor: listElement[key] ? "#374151" : "#6B7280"
                                         }}>
-                                        <Image src={ `/icon/${key}.webp`}
+                                        <Image
+                                            src={`/icon/${key}.webp`}
                                             alt={key}
+                                            unoptimized
+                                            crossOrigin="anonymous"
                                             className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md"
                                             width={200}
                                             height={200} />
@@ -76,7 +79,10 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                                         }}
                                     >
 
-                                        <Image src={`/icon/${key}.webp`}
+                                        <Image
+                                            src={`/icon/${key}.webp`}
+                                            unoptimized
+                                            crossOrigin="anonymous"
                                             alt={key}
                                             className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md"
                                             width={200}
@@ -91,7 +97,7 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                             <ul className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-2 w-full h-[65vh] overflow-y-scroll overflow-x-hidden">
                                 {listAvatar.map((item, index) => (
                                     <div key={index} onClick={() => {
-                                        setAvatarSelected(item); 
+                                        setAvatarSelected(item);
                                         setSkillSelected(null)
                                         if (onClose) onClose()
                                     }}>

@@ -13,7 +13,7 @@ import { useTranslations } from "next-intl";
 
 export default function PfBar() {
     const { PFEvent, mapPFInfo } = useEventStore()
-    const { listMonster } = useMonsterStore()
+    const { mapMonster } = useMonsterStore()
     const { locale } = useLocaleStore()
     const {
         pf_config,
@@ -248,8 +248,10 @@ export default function PfBar() {
                                         >
                                             <div className="flex items-center space-x-3">
                                                 <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
-                                                    {listMonster.find((monster) => monster.child.includes(monsterId))?.icon && <Image
-                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(monsterId))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                    {mapMonster?.[monsterId.toString()]?.icon && <Image
+                                                        unoptimized
+                                                        crossOrigin="anonymous"
+                                                        src={`${process.env.CDN_URL}/${mapMonster?.[monsterId.toString()]?.icon}`}
                                                         alt="Enemy Icon"
                                                         width={376}
                                                         height={512}
@@ -258,20 +260,20 @@ export default function PfBar() {
                                                 </div>
 
                                                 <div className="flex flex-col">
-                                                    <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList1[0].Level}</div>
+                                                    <div className="text-sm font-semibold">{mapMonster?.[monsterId.toString()]?.id}   | Lv. {challengeSelected?.EventIDList1[0].Level}</div>
                                                     <div className="flex items-center space-x-1 mt-1">
-                                                        {listMonster
-                                                            .find((monster) => monster.child.includes(monsterId))
-                                                            ?.weak?.map((icon, iconIndex) => (
-                                                                <Image
-                                                                    src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                    alt={icon}
-                                                                    className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
-                                                                    width={200}
-                                                                    height={200}
-                                                                    key={iconIndex}
-                                                                />
-                                                            ))}
+                                                        {mapMonster?.[monsterId.toString()]?.weak?.map((icon, iconIndex) => (
+                                                            <Image
+                                                                unoptimized
+                                                                crossOrigin="anonymous"
+                                                                src={`/icon/${icon.toLowerCase()}.webp`}
+                                                                alt={icon}
+                                                                className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
+                                                                width={200}
+                                                                height={200}
+                                                                key={iconIndex}
+                                                            />
+                                                        ))}
                                                     </div>
                                                 </div>
                                             </div>
@@ -298,11 +300,13 @@ export default function PfBar() {
 
                                             <div className="flex items-center space-x-3">
                                                 <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
-                                                    {listMonster.find((monster) => monster.child.includes(monsterId))?.icon && <Image
-                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(monsterId))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                    {mapMonster?.[monsterId.toString()]?.icon && <Image
+                                                        unoptimized
+                                                        crossOrigin="anonymous"
+                                                        src={`${process.env.CDN_URL}/${mapMonster?.[monsterId.toString()]?.icon}`}
                                                         alt="Enemy Icon"
-                                                        width={376}
-                                                        height={512}
+                                                        width={400}
+                                                        height={300}
                                                         className="w-full h-full object-cover"
                                                     />}
                                                 </div>
@@ -310,18 +314,18 @@ export default function PfBar() {
                                                 <div className="flex flex-col">
                                                     <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList1[0].Level}</div>
                                                     <div className="flex items-center space-x-1 mt-1">
-                                                        {listMonster
-                                                            .find((monster) => monster.child.includes(monsterId))
-                                                            ?.weak?.map((icon, iconIndex) => (
-                                                                <Image
-                                                                    src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                    alt={icon}
-                                                                    className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
-                                                                    width={200}
-                                                                    height={200}
-                                                                    key={iconIndex}
-                                                                />
-                                                            ))}
+                                                        {mapMonster?.[monsterId.toString()]?.weak?.map((icon, iconIndex) => (
+                                                            <Image
+                                                                unoptimized
+                                                                crossOrigin="anonymous"
+                                                                src={`/icon/${icon.toLowerCase()}.webp`}
+                                                                alt={icon}
+                                                                className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
+                                                                width={200}
+                                                                height={200}
+                                                                key={iconIndex}
+                                                            />
+                                                        ))}
                                                     </div>
                                                 </div>
                                             </div>

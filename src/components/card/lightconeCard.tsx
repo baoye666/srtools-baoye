@@ -30,7 +30,8 @@ export default function LightconeCard({ data }: LightconeCardProps) {
                 <div className="relative w-full h-full">
                     <Image
                         loading="lazy"
-                        src={`https://api.hakush.in/hsr/UI/lightconemediumicon/${data.id}.webp`}
+                        src={`${process.env.CDN_URL}/${data.thumbnail}`}
+                        unoptimized={true}
                         width={348}
                         height={408}
                         className="w-full h-full rounded-md object-cover"

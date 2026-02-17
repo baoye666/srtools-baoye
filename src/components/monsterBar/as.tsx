@@ -10,11 +10,10 @@ import Image from "next/image";
 import { MonsterStore } from "@/types";
 import useMazeStore from "@/stores/mazeStore";
 import { useTranslations } from "next-intl";
-import { listCurrentLanguageApi } from "@/constant/constant";
 
 export default function AsBar() {
     const { ASEvent, mapASInfo } = useEventStore()
-    const { listMonster } = useMonsterStore()
+    const { mapMonster } = useMonsterStore()
     const { locale } = useLocaleStore()
     const {
         as_config,
@@ -151,7 +150,7 @@ export default function AsBar() {
             <div className="rounded-xl p-4 mb-2 border border-warning">
                 <div className="mb-4 w-full">
                     <SelectCustomText
-                        customSet={ASEvent.filter(as => as.lang.get(listCurrentLanguageApi[locale])).map((as) => ({
+                        customSet={ASEvent.map((as) => ({
                             id: as.id,
                             name: getLocaleName(locale, as),
                             time: `${as.begin} - ${as.end}`,
@@ -259,8 +258,10 @@ export default function AsBar() {
                                         >
                                             <div className="flex items-center space-x-3">
                                                 <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
-                                                    {listMonster.find((monster) => monster.child.includes(waveValue))?.icon && <Image
-                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(waveValue))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                    {mapMonster?.[waveValue.toString()]?.icon && <Image
+                                                        unoptimized
+                                                        crossOrigin="anonymous"
+                                                        src={`${process.env.CDN_URL}/${mapMonster?.[waveValue.toString()]?.icon}`}
                                                         alt="Enemy Icon"
                                                         width={376}
                                                         height={512}
@@ -271,18 +272,18 @@ export default function AsBar() {
                                                 <div className="flex flex-col">
                                                     <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList1[0].Level}</div>
                                                     <div className="flex items-center space-x-1 mt-1">
-                                                        {listMonster
-                                                            .find((monster) => monster.child.includes(waveValue))
-                                                            ?.weak?.map((icon, iconIndex) => (
-                                                                <Image
-                                                                    src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                    alt={icon}
-                                                                    className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
-                                                                    width={200}
-                                                                    height={200}
-                                                                    key={iconIndex}
-                                                                />
-                                                            ))}
+                                                        {mapMonster?.[waveValue.toString()]?.weak?.map((icon, iconIndex) => (
+                                                            <Image
+                                                                unoptimized
+                                                                crossOrigin="anonymous"
+                                                                src={`/icon/${icon.toLowerCase()}.webp`}
+                                                                alt={icon}
+                                                                className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
+                                                                width={200}
+                                                                height={200}
+                                                                key={iconIndex}
+                                                            />
+                                                        ))}
                                                     </div>
                                                 </div>
                                             </div>
@@ -309,8 +310,10 @@ export default function AsBar() {
 
                                             <div className="flex items-center space-x-3">
                                                 <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
-                                                    {listMonster.find((monster) => monster.child.includes(waveValue))?.icon && <Image
-                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster) => monster.child.includes(waveValue))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                    {mapMonster?.[waveValue.toString()]?.icon && <Image
+                                                        unoptimized
+                                                        crossOrigin="anonymous"
+                                                        src={`${process.env.CDN_URL}/${mapMonster?.[waveValue.toString()]?.icon}`}
                                                         alt="Enemy Icon"
                                                         width={376}
                                                         height={512}
@@ -321,18 +324,18 @@ export default function AsBar() {
                                                 <div className="flex flex-col">
                                                     <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList1[0].Level}</div>
                                                     <div className="flex items-center space-x-1 mt-1">
-                                                        {listMonster
-                                                            .find((monster) => monster.child.includes(waveValue))
-                                                            ?.weak?.map((icon, iconIndex) => (
-                                                                <Image
-                                                                    src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                    alt={icon}
-                                                                    className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
-                                                                    width={200}
-                                                                    height={200}
-                                                                    key={iconIndex}
-                                                                />
-                                                            ))}
+                                                        {mapMonster?.[waveValue.toString()].weak?.map((icon, iconIndex) => (
+                                                            <Image
+                                                                unoptimized
+                                                                crossOrigin="anonymous"
+                                                                src={`/icon/${icon.toLowerCase()}.webp`}
+                                                                alt={icon}
+                                                                className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
+                                                                width={200}
+                                                                height={200}
+                                                                key={iconIndex}
+                                                            />
+                                                        ))}
                                                     </div>
                                                 </div>
                                             </div>

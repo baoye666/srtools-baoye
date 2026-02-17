@@ -4,35 +4,47 @@ import { useTranslations } from "next-intl"
 
 type TFunc = ReturnType<typeof useTranslations>
 
-export function getNameChar(locale: string, t: TFunc, data: CharacterBasic | undefined): string {
-    if (!data) {
-        return ""
-    }
-    if (!listCurrentLanguage.hasOwnProperty(locale)) {
-        return ""
-    }
+export function getNameChar(
+  locale: string,
+  t: TFunc,
+  data: CharacterBasic | undefined
+): string {
+  if (!data) return "";
 
-    let text = data.lang.get(listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase()) ?? "";
-    if (!text) {
-        text = data.lang.get("en") ?? "";
-    }
-    if (Number(data.id) > 8000) {
-        text = `${t("trailblazer")} • ${t(data?.baseType?.toLowerCase() ?? "")}`;
-    }
-    return text
+  if (!Object.prototype.hasOwnProperty.call(listCurrentLanguage, locale)) {
+    return "";
+  }
+
+  const langKey = listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase();
+
+  let text = data.lang[langKey] ?? "";
+
+  if (!text) {
+    text = data.lang["en"] ?? "";
+  }
+
+  if (Number(data.id) > 8000) {
+    text = `${t("trailblazer")} • ${t(data?.baseType?.toLowerCase() ?? "")}`;
+  }
+
+  return text;
 }
 
 export function getLocaleName(locale: string, data: LightConeBasic | EventBasic | MonsterBasic | undefined): string {
     if (!data) {
         return ""
     }
-    if (!listCurrentLanguage.hasOwnProperty(locale)) {
+    if (!Object.prototype.hasOwnProperty.call(listCurrentLanguage, locale)) {
         return ""
     }
 
-    let text = data.lang.get(listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase()) ?? "";
+    const langKey = listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase();
+
+
+    let text = data.lang[langKey] ?? "";
+
     if (!text) {
-        text = data.lang.get("en") ?? "";
+        text = data.lang["en"] ?? "";
     }
     return text
 }

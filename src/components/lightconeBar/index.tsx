@@ -12,15 +12,15 @@ import { useTranslations } from "next-intl";
 
 export default function LightconeBar() {
     const { locale } = useLocaleStore()
-    const { 
-        listLightcone, 
-        filter, 
-        setFilter, 
-        defaultFilter, 
-        listPath, 
-        listRank, 
-        setListPath, 
-        setListRank 
+    const {
+        listLightcone,
+        filter,
+        setFilter,
+        defaultFilter,
+        listPath,
+        listRank,
+        setListPath,
+        setListRank
     } = useLightconeStore()
     const { setAvatar, avatars } = useUserDataStore()
     const { avatarSelected } = useAvatarStore()
@@ -86,6 +86,8 @@ export default function LightconeBar() {
                                     }}
                                 >
                                     <Image
+                                        unoptimized
+                                        crossOrigin="anonymous"
                                         src={`/icon/${key}.webp`}
                                         alt={key}
                                         className="h-7 w-7 md:h-8 md:w-8 object-contain rounded-md"

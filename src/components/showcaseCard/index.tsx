@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState, useRef, useMemo, useCallback } from 'react';
 import useAvatarStore from "@/stores/avatarStore";
-import { FastAverageColor, FastAverageColorResult } from 'fast-average-color';
+import { FastAverageColor } from 'fast-average-color';
 import NextImage from 'next/image';
 import ParseText from '../parseText';
 import useLocaleStore from '@/stores/localeStore';
@@ -41,10 +41,8 @@ export default function ShowCaseInfo() {
         html2canvas(cardRef.current!, {
           scale: 2,
           backgroundColor: "#000000",
-          logging: true,
-          useCORS: true,
           allowTaint: false,
-          imageTimeout: 30000,
+          useCORS: true
         })
       )
       .then((canvas: HTMLCanvasElement) => {
@@ -63,13 +61,20 @@ export default function ShowCaseInfo() {
     if (!avatarSelected?.id) return;
     const fac = new FastAverageColor();
     const img = new Image();
+
     img.crossOrigin = 'anonymous';
-    img.src = `https://api.hakush.in/hsr/UI/avatardrawcard/${avatarSelected.id}.webp`;
+    img.src = `${process.env.CDN_URL}/spriteoutput/avatardrawcard/${avatarSelected?.id}.png`;
 
     img.onload = () => {
-      fac.getColorAsync(img).then((color: FastAverageColorResult) => {
-        setAvgColor(color.hex); // #RRGGBB
-      });
+      fac.getColorAsync(img)
+        .then((color) => {
+          setAvgColor(color.hex);
+        })
+        .catch(e => console.error("Vẫn lỗi CORS:", e));
+    };
+    return () => {
+      fac.destroy();
+      img.onload = null;
     };
   }, [avatarSelected]);
 
@@ -153,7 +158,7 @@ export default function ShowCaseInfo() {
       const subAffixMap = mapSubAffix["5"]
       if (!mainAffixMap || !subAffixMap) return
       return {
-        img: `https://api.hakush.in/hsr/UI/relicfigures/IconRelic_${value.relic_set_id}_${key}.webp`,
+        img: `${process.env.CDN_URL}/spriteoutput/relicfigures/IconRelic_${value.relic_set_id}_${key}.png`,
         mainAffix: {
           property: mainAffixMap?.[value?.main_affix_id]?.property,
           level: value?.level,
@@ -185,7 +190,6 @@ export default function ShowCaseInfo() {
       }, 0)
     }, 0)
   }, [relicStats, avatarInfo])
-  
 
   const characterStats = useMemo(() => {
     if (!avatarSelected || !avatarData) return
@@ -507,15 +511,15 @@ export default function ShowCaseInfo() {
   const getImageSkill = useCallback((icon: string | undefined, status: StatusAddType | undefined) => {
     if (!icon) return
     if (icon.startsWith("SkillIcon")) {
-      return `https://api.hakush.in/hsr/UI/skillicons/${icon.replace(".png", ".webp")}`
+      return `${process.env.CDN_URL}/spriteoutput/skillicons/avatar/${avatarSelected?.id}/${icon}`
     } else if (status && mappingStats[status.PropertyType]) {
       return mappingStats[status.PropertyType].icon
     }
     else if (icon.startsWith("Icon")) {
-      return `https://api.hakush.in/hsr/UI/trace/${icon.replace(".png", ".webp")}`
+      return `${process.env.CDN_URL}/spriteoutput/trace/${icon}`
     }
     return ""
-  }, [])
+  }, [avatarSelected?.id])
 
   return (
     <div className="flex flex-col justify-start m-1 text-white">
@@ -544,8 +548,10 @@ export default function ShowCaseInfo() {
                 {avatarSelected && (
                   <NextImage
                     ref={imgRef}
-                    src={`https://api.hakush.in/hsr/UI/avatardrawcard/${avatarSelected?.id}.webp`}
-                    className="object-cover scale-[2] overflow-hidden"
+                    unoptimized
+                    crossOrigin="anonymous"
+                    src={`${process.env.CDN_URL}/spriteoutput/avatardrawcard/${avatarSelected?.id}.png`}
+                    className="object-contain scale-[2] overflow-hidden"
                     alt="Character Preview"
                     width={1024}
                     height={1024}
@@ -582,7 +588,7 @@ export default function ShowCaseInfo() {
                             transition: "transform 0.3s ease, filter 0.3s ease",
                           }}
                         >
-                          
+
                           {isActive && (
                             <div
                               className="absolute inset-0 rounded-full pointer-events-none"
@@ -617,9 +623,11 @@ export default function ShowCaseInfo() {
                               <NextImage
                                 src={src ?? null}
                                 alt="Rank Icon"
-                                width={48}
-                                height={48}
-                                className="block rounded-full object-cover"
+                                width={125}
+                                height={125}
+                                unoptimized
+                                crossOrigin="anonymous"
+                                className="block rounded-full object-contain"
                                 style={{
                                   width: "44px",
                                   height: "44px",
@@ -653,8 +661,23 @@ export default function ShowCaseInfo() {
 
                       {avatarSelected && (
                         <div className="flex gap-1">
-                          <NextImage src={`/icon/${avatarSelected?.baseType.toLowerCase()}.webp`} alt="Path Icon" width={32} height={32} className="h-auto w-8" />
-                          <NextImage src={`/icon/${avatarSelected?.damageType.toLowerCase()}.webp`} alt="Element Icon" width={32} height={32} className="h-auto w-8" />
+                          <NextImage
+                            unoptimized
+                            crossOrigin="anonymous"
+                            src={`/icon/${avatarSelected?.baseType.toLowerCase()}.webp`}
+                            alt="Path Icon"
+                            width={32}
+                            height={32}
+                            className="h-auto w-8"
+                          />
+                          <NextImage
+                            unoptimized
+                            crossOrigin="anonymous"
+                            src={`/icon/${avatarSelected?.damageType.toLowerCase()}.webp`}
+                            alt="Element Icon"
+                            width={32}
+                            height={32}
+                            className="h-auto w-8" />
 
                         </div>
                       )}
@@ -665,7 +688,15 @@ export default function ShowCaseInfo() {
                   <div className="relative flex h-56.25 w-auto flex-row items-center">
                     {avatarSelected && (
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <NextImage src={`/icon/${avatarSelected?.baseType.toLowerCase()}.webp`} alt="Path Icon" width={160} height={160} className="h-40 w-40 opacity-20" />
+                        <NextImage
+                          unoptimized
+                          crossOrigin="anonymous"
+                          src={`/icon/${avatarSelected?.baseType.toLowerCase()}.webp`}
+                          alt="Path Icon"
+                          width={160}
+                          height={160}
+                          className="h-40 w-40 opacity-20"
+                        />
                       </div>
                     )}
 
@@ -721,10 +752,12 @@ export default function ShowCaseInfo() {
                                           return skillImg ? (
                                             <NextImage
                                               src={skillImg}
+                                              unoptimized
+                                              crossOrigin="anonymous"
                                               alt={btn.id}
-                                              width={32}
-                                              height={32}
-                                              className={`h-auto ${imageSize} ${filterClass}`}
+                                              width={125}
+                                              height={125}
+                                              className={`h-full ${imageSize} ${filterClass}`}
                                             />
                                           ) : null;
                                         })()
@@ -777,8 +810,10 @@ export default function ShowCaseInfo() {
 
                         {/* Card Image */}
                         <NextImage
-                          className="absolute object-cover rounded-xl z-9 w-[95%]"
-                          src={`https://api.hakush.in/hsr/UI/lightconemaxfigures/${avatarProfile?.lightcone.item_id}.webp`}
+                          className="absolute object-contain rounded-xl z-9 w-[95%]"
+                          unoptimized
+                          crossOrigin="anonymous"
+                          src={`${process.env.CDN_URL}/spriteoutput/lightconemaxfigures/${avatarProfile?.lightcone.item_id}.png`}
                           alt="Lightcone Image"
                           width={904}
                           height={1206}
@@ -872,19 +907,43 @@ export default function ShowCaseInfo() {
                         <div className="flex justify-center items-center flex-col gap-1 mt-1 ">
                           <div className="flex gap-1 text-sm ">
                             <div className="flex items-center gap-1 rounded bg-black/30 px-1 w-fit py-1">
-                              <NextImage src="/icon/hp.webp" alt="HP" width={16} height={16} className="w-4 h-4" />
+                              <NextImage
+                                unoptimized
+                                crossOrigin="anonymous"
+                                src="/icon/hp.webp"
+                                alt="HP"
+                                width={16}
+                                height={16}
+                                className="w-4 h-4"
+                              />
                               <span>{
                                 lightconeStats?.hp
                               }</span>
                             </div>
                             <div className="flex items-center gap-1 rounded bg-black/30 px-1 w-fit py-1">
-                              <NextImage src="/icon/attack.webp" alt="ATK" width={16} height={16} className="w-4 h-4" />
+                              <NextImage
+                                src="/icon/attack.webp"
+                                unoptimized
+                                crossOrigin="anonymous"
+                                alt="ATK"
+                                width={16}
+                                height={16}
+                                className="w-4 h-4"
+                              />
                               <span>{lightconeStats?.attack}</span>
                             </div>
 
                           </div>
                           <div className="flex items-center gap-1 rounded bg-black/30 px-1 w-fit py-1">
-                            <NextImage src="/icon/defence.webp" alt="DEF" width={16} height={16} className="w-4 h-4" />
+                            <NextImage
+                              unoptimized
+                              crossOrigin="anonymous"
+                              src="/icon/defence.webp"
+                              alt="DEF"
+                              width={16}
+                              height={16}
+                              className="w-4 h-4"
+                            />
                             <span>{lightconeStats?.def}</span>
                           </div>
                         </div>
@@ -905,7 +964,14 @@ export default function ShowCaseInfo() {
                     return (
                       <div key={index} className="flex flex-row items-center justify-between">
                         <div className="flex flex-row items-center">
-                          <NextImage src={stat?.icon || ""} alt="Stat Icon" width={40} height={40} className="h-auto w-10 p-2" />
+                          <NextImage src={stat?.icon || ""}
+                            unoptimized
+                            crossOrigin="anonymous"
+                            alt="Stat Icon"
+                            width={40}
+                            height={40}
+                            className="h-auto w-10 p-2"
+                          />
                           <span className="font-bold">{stat.name}</span>
                         </div>
                         <div className="ml-3 mr-3 grow border rounded opacity-50" />

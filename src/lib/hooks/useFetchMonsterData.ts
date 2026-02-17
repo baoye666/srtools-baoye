@@ -1,59 +1,29 @@
 "use client"
 import { useQuery } from '@tanstack/react-query'
-import { getMonsterValueApi, getMonsterListApi, fetchMonstersApi } from '@/lib/api'
+import { getMonsterListApi } from '@/lib/api'
 import { useEffect } from 'react'
 import { toast } from 'react-toastify'
 import useMonsterStore from '@/stores/monsterStore'
-import { listCurrentLanguageApi } from '@/constant/constant'
-import useLocaleStore from '@/stores/localeStore'
+import { MonsterBasic } from '@/types'
 
 export const useFetchMonsterData = () => {
-    const { setAllMapMonster, setListMonster, setAllMapMonsterValue, setAllMapMonsterInfo } = useMonsterStore()
-    const { locale } = useLocaleStore()
+    const { setAllMapMonster, setListMonster } = useMonsterStore()
     const { data: dataMonster, error: errorMonster } = useQuery({
         queryKey: ['monsterData'],
         queryFn: getMonsterListApi,
         staleTime: 1000 * 60 * 5,
     })
 
-    const { data: dataMonsterValue, error: errorMonsterValue } = useQuery({
-        queryKey: ['monsterValueData'],
-        queryFn: getMonsterValueApi,
-        staleTime: 1000 * 60 * 5,
-    })
-
-    const { data: dataMonsterDetail, error: errorMonsterDetail } = useQuery({
-        queryKey: ['monsterDetailData', locale],
-        queryFn: () =>
-            fetchMonstersApi(
-                listCurrentLanguageApi[locale.toLowerCase()]
-            ),
-        staleTime: 1000 * 60 * 5,
-        enabled: !!dataMonster,
-    });
-
     useEffect(() => {
         if (dataMonster && !errorMonster) {
-            setListMonster(dataMonster.list.sort((a, b) => Number(b.id) - Number(a.id)))
-            setAllMapMonster(dataMonster.map)
+            setListMonster(dataMonster.sort((a, b) => Number(b.id) - Number(a.id)))
+            const monsterMap = dataMonster.reduce<Record<string, MonsterBasic>>((acc, m) => {
+                acc[m.id] = m
+                return acc
+            }, {})
+            setAllMapMonster(monsterMap)
         } else if (errorMonster) {
             toast.error("Failed to load monster data")
         }
     }, [dataMonster, errorMonster, setAllMapMonster, setListMonster])
-
-    useEffect(() => {
-        if (dataMonsterValue && !errorMonsterValue) {
-            setAllMapMonsterValue(dataMonsterValue)
-        } else if (errorMonsterValue) {
-            toast.error("Failed to load monster value data")
-        }
-    }, [dataMonsterValue, errorMonsterValue, setAllMapMonsterValue])
-
-    useEffect(() => {
-        if (dataMonsterDetail && !errorMonsterDetail) {
-            setAllMapMonsterInfo(dataMonsterDetail)
-        } else if (errorMonsterDetail) {
-            toast.error("Failed to load monster detail data")
-        }
-    }, [dataMonsterDetail, errorMonsterDetail, setAllMapMonsterInfo])
 }

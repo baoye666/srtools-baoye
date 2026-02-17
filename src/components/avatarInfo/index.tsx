@@ -423,10 +423,12 @@ export default function AvatarInfo() {
                                             <div className="lg:col-span-1">
                                                 <div className="">
                                                     <Image
+                                                        unoptimized
+                                                        crossOrigin="anonymous"
                                                         width={904}
                                                         height={1260}
                                                         priority
-                                                        src={`https://api.hakush.in/hsr/UI/lightconemaxfigures/${lightconeDetail.id}.webp`}
+                                                        src={`${process.env.CDN_URL}/${lightconeDetail.image}`}
                                                         className="w-full h-full rounded-lg object-cover shadow-lg"
                                                         alt="Lightcone"
                                                     />

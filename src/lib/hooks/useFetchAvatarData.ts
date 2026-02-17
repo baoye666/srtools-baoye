@@ -17,14 +17,6 @@ export const useFetchAvatarData = () => {
     const { data: dataAvatar, error: errorAvatar } = useQuery({
         queryKey: ['avatarData'],
         queryFn: getCharacterListApi,
-        select: (data) => data.sort((a, b) => {
-            const aHasRelease = typeof a.release === 'number';
-            const bHasRelease = typeof b.release === 'number';
-            if (!aHasRelease && !bHasRelease) return 0;
-            if (!aHasRelease) return -1;
-            if (!bHasRelease) return 1;
-            return b.release! - a.release!;
-        }),
         staleTime: 1000 * 60 * 5,
     })
 

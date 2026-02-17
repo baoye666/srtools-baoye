@@ -1,6 +1,6 @@
 "use client"
 import { useQuery } from '@tanstack/react-query'
-import { fetchRelicsApi, getRelicSetListApi } from '@/lib/api'
+import { fetchRelicsApi } from '@/lib/api'
 import { useEffect } from 'react'
 import useRelicStore from '@/stores/relicStore'
 import { listCurrentLanguageApi } from '@/constant/constant'
@@ -8,13 +8,8 @@ import useLocaleStore from '@/stores/localeStore'
 import { toast } from 'react-toastify'
 
 export const useFetchRelicData = () => {
-    const { setListRelic, setAllMapRelicInfo } = useRelicStore()
+    const { setAllMapRelicInfo } = useRelicStore()
     const { locale } = useLocaleStore()
-    const { data: dataRelic, error: errorRelic } = useQuery({
-        queryKey: ['relicData'],
-        queryFn: getRelicSetListApi,
-        staleTime: 1000 * 60 * 5,
-    })
 
     const { data: dataRelicInfo, error: errorRelicInfo } = useQuery({
         queryKey: ['relicInfoData', locale],
@@ -23,16 +18,7 @@ export const useFetchRelicData = () => {
                 listCurrentLanguageApi[locale.toLowerCase()]
             ),
         staleTime: 1000 * 60 * 5,
-        enabled: !!dataRelic,
     });
-
-    useEffect(() => {
-        if (dataRelic && !errorRelic) {
-            setListRelic(dataRelic)
-        } else if (errorRelic) {
-            toast.error("Failed to load relic data")
-        }
-    }, [dataRelic, errorRelic, setListRelic])
 
     useEffect(() => {
         if (dataRelicInfo && !errorRelicInfo) {
