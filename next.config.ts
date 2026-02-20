@@ -40,7 +40,7 @@ const nextConfig: NextConfig = {
     styledComponents: true,
   },
   env: {
-    CDN_URL: "https:/r2.kain.id.vn/asbres",
+    CDN_URL: "https://r2.kain.id.vn/asbres",
   },
 };
 
