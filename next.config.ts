@@ -30,8 +30,8 @@ const nextConfig: NextConfig = {
         pathname: "**",
       },
       {
-        protocol: "http",
-        hostname: "cdn.kain.id.vn",
+        protocol: "https",
+        hostname: "r2.kain.id.vn",
         pathname: "**",
       }
     ],
@@ -40,7 +40,7 @@ const nextConfig: NextConfig = {
     styledComponents: true,
   },
   env: {
-    CDN_URL: "https://cdn.kain.id.vn/firefly/assets/asbres",
+    CDN_URL: "https:/r2.kain.id.vn/asbres",
   },
 };
 

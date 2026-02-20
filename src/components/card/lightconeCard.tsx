@@ -31,7 +31,8 @@ export default function LightconeCard({ data }: LightconeCardProps) {
                     <Image
                         loading="lazy"
                         src={`${process.env.CDN_URL}/${data.thumbnail}`}
-                        unoptimized={true}
+                        unoptimized
+                        crossOrigin="anonymous"
                         width={348}
                         height={408}
                         className="w-full h-full rounded-md object-cover"

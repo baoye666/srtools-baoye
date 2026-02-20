@@ -24,6 +24,8 @@ const getRarityName = (slot: string) => {
         case '1': return (
             <div className="flex items-center gap-1">
                 <Image
+                    unoptimized
+                    crossOrigin="anonymous"
                     src="/relics/HEAD.png"
                     alt="Head"
                     width={20}
@@ -36,6 +38,8 @@ const getRarityName = (slot: string) => {
         case '2': return (
             <div className="flex items-center gap-1">
                 <Image
+                    unoptimized
+                    crossOrigin="anonymous"
                     src="/relics/HAND.png"
                     alt="Hand"
                     width={20}
@@ -48,6 +52,8 @@ const getRarityName = (slot: string) => {
         case '3': return (
             <div className="flex items-center gap-1">
                 <Image
+                    unoptimized
+                    crossOrigin="anonymous"
                     src="/relics/BODY.png"
                     alt="Body"
                     width={20}
@@ -60,6 +66,8 @@ const getRarityName = (slot: string) => {
         case '4': return (
             <div className="flex items-center gap-1">
                 <Image
+                    unoptimized
+                    crossOrigin="anonymous"
                     src="/relics/FOOT.png"
                     alt="Foot"
                     width={20}
@@ -72,6 +80,8 @@ const getRarityName = (slot: string) => {
         case '5': return (
             <div className="flex items-center gap-1">
                 <Image
+                    unoptimized
+                    crossOrigin="anonymous"
                     src="/relics/NECK.png"
                     alt="Neck"
                     width={20}
@@ -84,6 +94,8 @@ const getRarityName = (slot: string) => {
         case '6': return (
             <div className="flex items-center gap-1">
                 <Image
+                    unoptimized
+                    crossOrigin="anonymous"
                     src="/relics/OBJECT.png"
                     alt="Object"
                     width={20}
@@ -128,9 +140,10 @@ export default function RelicCard({ slot, avatarId }: RelicCardProps) {
                     >
                         <span>
                             <Image
+                                unoptimized
+                                crossOrigin="anonymous"
                                 src={`${process.env.CDN_URL}/spriteoutput/relicfigures/IconRelic_${relicDetail.relic_set_id}_${slot}.png`}
                                 alt="Relic"
-                                unoptimized={true}
                                 width={124}
                                 height={124}
                                 className="w-14 h-14 object-contain"

@@ -50,6 +50,8 @@ export default function EidolonsInfo() {
                                     src={`${process.env.CDN_URL}/ui/ui3d/rank/_dependencies/textures/${avatarSelected?.id}/${avatarSelected?.id}_Rank_${key}.png`}
                                     alt={`Rank ${key}`}
                                     priority
+                                    unoptimized
+                                    crossOrigin="anonymous"
                                     width={240}
                                     height={240}
                                 />
