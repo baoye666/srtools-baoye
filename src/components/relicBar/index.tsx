@@ -1,26 +1,27 @@
 "use client";
-import useRelicStore from '@/stores/relicStore';
 import useUserDataStore from '@/stores/userDataStore';
-import { AffixDetail, RelicDetail } from '@/types';
-import React, { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import SelectCustomImage from '../select/customSelectImage';
-import { calcAffixBonus, calcMainAffixBonus, randomPartition, randomStep, replaceByParam } from '@/helper';
-import useAffixStore from '@/stores/affixStore';
+import { calcAffixBonus, calcMainAffixBonus, randomPartition, randomStep, replaceByParam, getLocaleName } from '@/helper';
 import { mappingStats } from '@/constant/constant';
-import useAvatarStore from '@/stores/avatarStore';
 import useModelStore from '@/stores/modelStore';
 import useRelicMakerStore from '@/stores/relicMakerStore';
 import { toast } from 'react-toastify';
 import { useTranslations } from 'next-intl'
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
+import useDetailDataStore from '@/stores/detailDataStore';
+import useCurrentDataStore from '@/stores/currentDataStore';
+import { RelicSetDetail, SubAffixData } from '@/types';
+import useLocaleStore from '@/stores/localeStore';
+import { mappingRelicSlot } from "@/constant/constant";
 
 export default function RelicMaker() {
     const { avatars, setAvatars } = useUserDataStore()
-    const { avatarSelected } = useAvatarStore()
+    const { avatarSelected } = useCurrentDataStore()
     const { setIsOpenRelic } = useModelStore()
-    const { mapRelicInfo } = useRelicStore()
-    const { mapMainAffix, mapSubAffix } = useAffixStore()
+    const { mainAffix, subAffix, mapRelicSet } = useDetailDataStore()
+    const { locale } = useLocaleStore()
     const transI18n = useTranslations("DataPage")
     const {
         selectedRelicSlot,
@@ -40,11 +41,11 @@ export default function RelicMaker() {
     const [error, setError] = useState<string>("");
 
     const relicSets = useMemo(() => {
-        const listSet: Record<string, RelicDetail> = {};
-        for (const [key, value] of Object.entries(mapRelicInfo || {})) {
+        const listSet: Record<string, RelicSetDetail> = {};
+        for (const [key, value] of Object.entries(mapRelicSet  || {})) {
             let isOk = false;
             for (const key2 of Object.keys(value.Parts)) {
-                if (key2.endsWith(selectedRelicSlot)) {
+                if (key2 == mappingRelicSlot?.[selectedRelicSlot]) {
                     isOk = true;
                     break;
                 }
@@ -54,30 +55,30 @@ export default function RelicMaker() {
             }
         }
         return listSet;
-    }, [mapRelicInfo, selectedRelicSlot]);
+    }, [mapRelicSet , selectedRelicSlot]);
 
     const subAffixOptions = useMemo(() => {
-        const listSet: Record<string, AffixDetail> = {};
-        const subAffixMap = mapSubAffix["5"];
-        const mainAffixMap = mapMainAffix["5" + selectedRelicSlot]
+        const listSet: Record<string, SubAffixData> = {};
+        const subAffixMap = subAffix["5"];
+        const mainAffixMap = mainAffix["5" + selectedRelicSlot]
 
         if (Object.keys(subAffixMap || {}).length === 0 || Object.keys(mainAffixMap || {}).length === 0) return listSet;
 
         for (const [key, value] of Object.entries(subAffixMap)) {
-            if (value.property !== mainAffixMap[selectedMainStat]?.property) {
+            if (value.Property !== mainAffixMap[selectedMainStat]?.Property) {
                 listSet[key] = value;
             }
         }
         return listSet;
-    }, [mapSubAffix, mapMainAffix, selectedRelicSlot, selectedMainStat]);
+    }, [subAffix, mainAffix, selectedRelicSlot, selectedMainStat]);
 
     useEffect(() => {
-        const subAffixMap = mapSubAffix["5"];
-        const mainAffixMap = mapMainAffix["5" + selectedRelicSlot];
+        const subAffixMap = subAffix["5"];
+        const mainAffixMap = mainAffix["5" + selectedRelicSlot];
 
         if (!subAffixMap || !mainAffixMap) return;
 
-        const mainProp = mainAffixMap[selectedMainStat]?.property;
+        const mainProp = mainAffixMap[selectedMainStat]?.Property;
         if (!mainProp) return;
 
         const newSubAffixes = structuredClone(listSelectedSubStats);
@@ -95,33 +96,33 @@ export default function RelicMaker() {
 
         if (updated) setListSelectedSubStats(newSubAffixes);
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [selectedMainStat, mapSubAffix, mapMainAffix, selectedRelicSlot]);
+    }, [selectedMainStat, subAffix, mainAffix, selectedRelicSlot]);
 
     const exSubAffixOptions = useMemo(() => {
-        const listSet: Record<string, AffixDetail> = {};
-        const subAffixMap = mapSubAffix["5"];
-        const mainAffixMap = mapMainAffix["5" + selectedRelicSlot];
+        const listSet: Record<string, SubAffixData> = {};
+        const subAffixMap = subAffix["5"];
+        const mainAffixMap = mainAffix["5" + selectedRelicSlot];
 
         if (!subAffixMap || !mainAffixMap) return listSet;
 
         for (const [key, value] of Object.entries(subAffixMap)) {
-            const subAffix = listSelectedSubStats.find((item) => item.property === value.property);
-            if (subAffix && value.property !== mainAffixMap[selectedMainStat]?.property) {
+            const subAffix = listSelectedSubStats.find((item) => item.property === value.Property);
+            if (subAffix && value.Property !== mainAffixMap[selectedMainStat]?.Property) {
                 listSet[key] = value;
             }
         }
         return listSet;
-    }, [mapSubAffix, listSelectedSubStats, mapMainAffix, selectedRelicSlot, selectedMainStat]);
+    }, [subAffix, listSelectedSubStats, mainAffix, selectedRelicSlot, selectedMainStat]);
 
     const effectBonus = useMemo(() => {
-        const affixSet = mapMainAffix?.["5" + selectedRelicSlot];
+        const affixSet = mainAffix?.["5" + selectedRelicSlot];
         if (!affixSet) return 0;
 
         const data = affixSet[selectedMainStat];
         if (!data) return 0;
 
         return calcMainAffixBonus(data, selectedRelicLevel);
-    }, [mapMainAffix, selectedRelicSlot, selectedMainStat, selectedRelicLevel]);
+    }, [mainAffix, selectedRelicSlot, selectedMainStat, selectedRelicLevel]);
 
     const handleSubStatChange = (key: string, index: number, rollCount: number, stepCount: number) => {
         setError("");
@@ -136,7 +137,7 @@ export default function RelicMaker() {
             return;
         }
         newSubAffixes[index].affixId = key;
-        newSubAffixes[index].property = subAffixOptions[key].property;
+        newSubAffixes[index].property = subAffixOptions[key].Property;
         newSubAffixes[index].rollCount = rollCount;
         newSubAffixes[index].stepCount = stepCount;
         setListSelectedSubStats(newSubAffixes);
@@ -179,7 +180,7 @@ export default function RelicMaker() {
             exKeys.push(randomKey);
             const randomValue = subAffixOptions[randomKey];
             newSubAffixes[i].affixId = randomKey;
-            newSubAffixes[i].property = randomValue.property;
+            newSubAffixes[i].property = randomValue.Property;
             newSubAffixes[i].rollCount = 0;
             newSubAffixes[i].stepCount = 0;
         }
@@ -205,7 +206,7 @@ export default function RelicMaker() {
 
     const handlerSaveRelic = () => {
         setError("");
-        const avatar = avatars[avatarSelected?.id || ""];
+        const avatar = avatars[avatarSelected?.ID?.toString() || ""];
         if (!selectedRelicSet || !selectedMainStat || !selectedRelicLevel || !selectedRelicSlot) {
             setError(transI18n("pleaseSelectAllOptions"));
             return;
@@ -258,10 +259,10 @@ export default function RelicMaker() {
                             <div>
                                 <label className="block text-lg font-medium mb-2">{transI18n("mainStat")}</label>
                                 <SelectCustomImage
-                                    customSet={Object.entries(mapMainAffix["5" + selectedRelicSlot] || {}).map(([key, value]) => ({
+                                    customSet={Object.entries(mainAffix["5" + selectedRelicSlot] || {}).map(([key, value]) => ({
                                         value: key,
-                                        label: mappingStats[value.property].name + " " + mappingStats[value.property].unit,
-                                        imageUrl: mappingStats[value.property].icon
+                                        label: mappingStats[value.Property].name + " " + mappingStats[value.Property].unit,
+                                        imageUrl: `${process.env.CDN_URL}/${mappingStats[value.Property].icon}`
                                     }))}
                                     excludeSet={[]}
                                     selectedCustomSet={selectedMainStat}
@@ -275,8 +276,8 @@ export default function RelicMaker() {
                                 <SelectCustomImage
                                     customSet={Object.entries(relicSets).map(([key, value]) => ({
                                         value: key,
-                                        label: value.Name,
-                                        imageUrl: `${process.env.CDN_URL}/spriteoutput/itemfigures/${value.Icon.match(/\d+/)?.[0]}.png`
+                                        label: getLocaleName(locale, value.Name),
+                                        imageUrl: `${process.env.CDN_URL}/${value.Image.SetIconPath}`
                                     }))}
                                     excludeSet={[]}
                                     selectedCustomSet={selectedRelicSet}
@@ -288,15 +289,15 @@ export default function RelicMaker() {
 
                         {/* Set Bonus Display */}
                         <div className="mb-6 py-4 bg-base-100 rounded-lg">
-                            {selectedRelicSet !== "" ? Object.entries(mapRelicInfo[selectedRelicSet].RequireNum).map(([key, value]) => (
+                            {selectedRelicSet !== "" ? Object.entries(mapRelicSet[selectedRelicSet].Skills).map(([key, value]) => (
                                 <div key={key} className="text-blue-300 text-sm mb-1">
                                     <span className="text-info font-bold">{key}-Pc:
                                         <div
                                             className="text-warning leading-relaxed font-bold"
                                             dangerouslySetInnerHTML={{
                                                 __html: replaceByParam(
-                                                    value.Desc,
-                                                    value.ParamList || []
+                                                    getLocaleName(locale, value.Desc),
+                                                    value.Param || []
                                                 )
                                             }}
                                         /> </span>
@@ -384,13 +385,13 @@ export default function RelicMaker() {
                                     <SelectCustomImage
                                         customSet={Object.entries(subAffixOptions).map(([key, value]) => ({
                                             value: key,
-                                            label: mappingStats[value.property].name + " " + mappingStats[value.property].unit,
-                                            imageUrl: mappingStats[value.property].icon
+                                            label: mappingStats[value.Property].name + " " + mappingStats[value.Property].unit,
+                                            imageUrl: `${process.env.CDN_URL}/${mappingStats[value.Property].icon}`
                                         }))}
                                         excludeSet={Object.entries(exSubAffixOptions).map(([key, value]) => ({
                                             value: key,
-                                            label: mappingStats[value.property].name + " " + mappingStats[value.property].unit,
-                                            imageUrl: mappingStats[value.property].icon
+                                            label: mappingStats[value.Property].name + " " + mappingStats[value.Property].unit,
+                                            imageUrl: `${process.env.CDN_URL}/${mappingStats[value.Property].icon}`
                                         }))}
                                         selectedCustomSet={v.affixId}
                                         placeholder={transI18n("selectASubStat")}
@@ -401,7 +402,7 @@ export default function RelicMaker() {
                                 {/* Current Value */}
                                 <div className="col-span-4 text-center flex items-center justify-center gap-2">
                                     <span className="text-2xl font-mono">+{ }</span>
-                                    <div className="text-xl font-bold text-info">{calcAffixBonus(subAffixOptions[v.affixId], v.stepCount, v.rollCount)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}</div>
+                                    <div className="text-xl font-bold text-info">{calcAffixBonus(subAffixOptions[v.affixId], v.stepCount, v.rollCount)}{mappingStats?.[subAffixOptions[v.affixId]?.Property]?.unit || ""}</div>
                                 </div>
 
                                 {/* Up Roll Values */}
@@ -415,19 +416,19 @@ export default function RelicMaker() {
                                             onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 0)}
                                             className="btn btn-sm btn-info border-0"
                                         >
-                                            {calcAffixBonus(subAffixOptions[v.affixId], 0, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                                            {calcAffixBonus(subAffixOptions[v.affixId], 0, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.Property]?.unit || ""}
                                         </button>
                                         <button
                                             onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 1)}
                                             className="btn btn-sm btn-info border-0"
                                         >
-                                            {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 1, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                                            {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 1, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.Property]?.unit || ""}
                                         </button>
                                         <button
                                             onClick={() => handleSubStatChange(v.affixId, index, v.rollCount + 1, v.stepCount + 2)}
                                             className="btn btn-sm btn-info border-0"
                                         >
-                                            {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 2, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                                            {calcAffixBonus(subAffixOptions[v.affixId], v.stepCount + 2, v.rollCount + 1)}{mappingStats?.[subAffixOptions[v.affixId]?.Property]?.unit || ""}
                                         </button>
                                     </div>
                                 </div>
@@ -443,19 +444,19 @@ export default function RelicMaker() {
                                             onClick={() => handleSubStatChange(v.affixId, index, Math.max(v.rollCount - 1, 0), Math.max(v.stepCount, 0))}
                                             className="btn btn-sm btn-info border-0"
                                         >
-                                            {calcAffixBonus(subAffixOptions[v.affixId], 0, Math.max(v.rollCount - 1, 0))}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                                            {calcAffixBonus(subAffixOptions[v.affixId], 0, Math.max(v.rollCount - 1, 0))}{mappingStats?.[subAffixOptions[v.affixId]?.Property]?.unit || ""}
                                         </button>
                                         <button
                                             onClick={() => handleSubStatChange(v.affixId, index, Math.max(v.rollCount - 1, 0), Math.max(v.stepCount - 1, 0))}
                                             className="btn btn-sm btn-info border-0"
                                         >
-                                            {calcAffixBonus(subAffixOptions[v.affixId], Math.max(v.stepCount - 1, 0), Math.max(v.rollCount - 1, 0))}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                                            {calcAffixBonus(subAffixOptions[v.affixId], Math.max(v.stepCount - 1, 0), Math.max(v.rollCount - 1, 0))}{mappingStats?.[subAffixOptions[v.affixId]?.Property]?.unit || ""}
                                         </button>
                                         <button
                                             onClick={() => handleSubStatChange(v.affixId, index, Math.max(v.rollCount - 1, 0), Math.max(v.stepCount - 2, 0))}
                                             className="btn btn-sm btn-info border-0"
                                         >
-                                            {calcAffixBonus(subAffixOptions[v.affixId], Math.max(v.stepCount - 2, 0), Math.max(v.rollCount - 1, 0))}{mappingStats?.[subAffixOptions[v.affixId]?.property]?.unit || ""}
+                                            {calcAffixBonus(subAffixOptions[v.affixId], Math.max(v.stepCount - 2, 0), Math.max(v.rollCount - 1, 0))}{mappingStats?.[subAffixOptions[v.affixId]?.Property]?.unit || ""}
                                         </button>
                                     </div>
                                 </div>

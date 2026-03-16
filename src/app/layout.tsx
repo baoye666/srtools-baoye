@@ -73,22 +73,22 @@ export default async function RootLayout({
           <QueryProviderWrapper>
             <ThemeProvider>
               <ClientThemeWrapper>
-                <ClientDataFetcher />
-                <div className="min-h-screen w-full">
-                  <Header />
-                  <div className="grid grid-cols-12 w-full">
-                    <div className="hidden sm:block md:col-span-4 lg:col-span-3 sticky top-0 self-start h-fit">
-                      <AvatarBar />
+                <ClientDataFetcher >
+                  <div className="min-h-screen w-full">
+                    <Header />
+                    <div className="grid grid-cols-12 w-full">
+                      <div className="hidden sm:block md:col-span-4 lg:col-span-3 sticky top-0 self-start h-fit">
+                        <AvatarBar />
+                      </div>
+                      <div className="col-span-12 sm:col-span-8 lg:col-span-9">
+                        <ActionBar />
+                        {children}
+                      </div>
                     </div>
-                    <div className="col-span-12 sm:col-span-8 lg:col-span-9">
-                      <ActionBar />
-                      {children}
-                    </div>
+
+                    <Footer />
                   </div>
-
-                  <Footer />
-                </div>
-
+                </ClientDataFetcher>
               </ClientThemeWrapper>
             </ThemeProvider>
           </QueryProviderWrapper>

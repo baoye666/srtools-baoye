@@ -3,16 +3,14 @@
 import React from 'react';
 import { CharacterInfoCardType } from '@/types';
 import useLocaleStore from '@/stores/localeStore';
-import useAvatarStore from '@/stores/avatarStore';
-import useLightconeStore from '@/stores/lightconeStore';
 import Image from 'next/image';
 import ParseText from '../parseText';
-
+import useDetailDataStore from '@/stores/detailDataStore';
+import { getLocaleName } from '@/helper/getName';
 
 export default function CharacterInfoCard({ character, selectedCharacters, onCharacterToggle }: { character: CharacterInfoCardType, selectedCharacters: CharacterInfoCardType[], onCharacterToggle: (characterId: CharacterInfoCardType) => void }) {
     const isSelected = selectedCharacters.some((selectedCharacter) => selectedCharacter.avatar_id === character.avatar_id);
-    const { mapAvatarInfo } = useAvatarStore();
-    const { mapLightconeInfo } = useLightconeStore();
+    const { mapAvatar, mapLightCone, baseType, damageType } = useDetailDataStore();
     const { locale } = useLocaleStore();
 
     return (
@@ -29,8 +27,8 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
             <div className="relative mb-4">
                 <div className="w-full h-48 rounded-lg overflow-hidden relative">
                     <Image
-                        src={`${process.env.CDN_URL}/spriteoutput/avatarshopicon/avatar/${character.avatar_id}.png`}
-                        alt={mapAvatarInfo[character.avatar_id.toString()]?.Name || ""}
+                        src={`${process.env.CDN_URL}/${mapAvatar?.[character.avatar_id.toString()]?.Image?.AvatarIconPath}`}
+                        alt={getLocaleName(locale, mapAvatar?.[character.avatar_id.toString()]?.Name)}
                         width={376}
                         height={512}
                         unoptimized
@@ -42,18 +40,18 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
                         height={48}
                         unoptimized
                         crossOrigin="anonymous"
-                        src={`/icon/${mapAvatarInfo[character.avatar_id.toString()]?.DamageType.toLowerCase()}.webp`}
+                        src={`${process.env.CDN_URL}/${damageType?.[mapAvatar?.[character.avatar_id.toString()]?.DamageType || ""].Icon}`}
                         className="absolute top-0 left-0 w-10 h-10 rounded-full"
-                        alt={mapAvatarInfo[character.avatar_id.toString()]?.DamageType.toLowerCase()}
+                        alt={mapAvatar[character.avatar_id.toString()]?.DamageType.toLowerCase()}
                     />
                     <Image
                         width={48}
                         height={48}
                         unoptimized
                         crossOrigin="anonymous"
-                        src={`/icon/${mapAvatarInfo[character.avatar_id.toString()]?.BaseType.toLowerCase()}.webp`}
+                        src={`${process.env.CDN_URL}/${baseType?.[mapAvatar?.[character.avatar_id.toString()]?.BaseType || ""].Icon}`}
                         className="absolute top-0 right-0 w-10 h-10 rounded-full"
-                        alt={mapAvatarInfo[character.avatar_id.toString()]?.BaseType.toLowerCase()}
+                        alt={mapAvatar[character.avatar_id.toString()]?.BaseType.toLowerCase()}
                         style={{
                             boxShadow: "inset 0 0 8px 4px #9CA3AF"
                         }}
@@ -65,7 +63,7 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
             <div className="w-full rounded-lg flex items-center justify-center mb-2">
                 <div className="text-center">
                     <ParseText className="text-lg font-bold"
-                        text={mapAvatarInfo[character.avatar_id.toString()]?.Name}
+                        text={getLocaleName(locale, mapAvatar[character.avatar_id.toString()]?.Name)}
                         locale={locale}
                     />
                     <div className="text-base mb-1">Lv.{character.level}  E{character.rank}</div>
@@ -101,8 +99,8 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
                         <Image
                             unoptimized
                             crossOrigin="anonymous"
-                            src={`${process.env.CDN_URL}/spriteoutput/lightconemaxfigures/${character.lightcone.item_id}.png`}
-                            alt={mapLightconeInfo[character.lightcone.item_id.toString()]?.Name}
+                            src={`${process.env.CDN_URL}/${mapLightCone?.[character.lightcone.item_id.toString()]?.Image?.ImagePath}`}
+                            alt={getLocaleName(locale, mapLightCone?.[character.lightcone.item_id.toString()]?.Name)}
                             width={348}
                             height={408}
                             className="w-full h-full object-contain rounded-lg"
@@ -113,7 +111,7 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
                         <div className="text-center">
                             <div className="text-lg font-bold">
                                 <ParseText
-                                    text={mapLightconeInfo[character.lightcone.item_id.toString()]?.Name}
+                                    text={getLocaleName(locale, mapLightCone[character.lightcone.item_id.toString()]?.Name)}
                                     locale={locale}
                                 />
                             </div>

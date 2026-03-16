@@ -1,18 +1,18 @@
-import useAvatarStore from "@/stores/avatarStore";
+import { AvatarDetail } from "@/types";
 
-export function getSkillTree(enhanced: string) {
-    const { avatarSelected, mapAvatarInfo } = useAvatarStore.getState()
-
+export function getSkillTree(avatarSelected: AvatarDetail | null, enhanced: string) {
     if (!avatarSelected) return null;
-    if (enhanced != "") return Object.values(mapAvatarInfo[avatarSelected.id || ""]?.Enhanced[enhanced].SkillTrees || {}).reduce((acc, dataPointEntry) => {
-        const firstEntry = Object.values(dataPointEntry)[0];
-        if (firstEntry) {
-            acc[firstEntry.PointID] = firstEntry.MaxLevel;
-        }
-        return acc;
-    }, {} as Record<string, number>)
+    if (enhanced != "" && !!avatarSelected?.Enhanced?.[enhanced]?.SkillTrees) {
+        return Object.values(avatarSelected?.Enhanced?.[enhanced]?.SkillTrees).reduce((acc, dataPointEntry) => {
+            const firstEntry = Object.values(dataPointEntry)[0];
+            if (firstEntry) {
+                acc[firstEntry.PointID] = firstEntry.MaxLevel;
+            }
+            return acc;
+        }, {} as Record<string, number>)
+    }
 
-    return Object.values(mapAvatarInfo[avatarSelected.id || ""]?.SkillTrees).reduce((acc, dataPointEntry) => {
+    return Object.values(avatarSelected?.SkillTrees).reduce((acc, dataPointEntry) => {
         const firstEntry = Object.values(dataPointEntry)[0];
         if (firstEntry) {
             acc[firstEntry.PointID] = firstEntry.MaxLevel;

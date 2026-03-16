@@ -1,27 +1,26 @@
 "use client"
 import useUserDataStore from "@/stores/userDataStore";
-import { useEffect, useState } from "react";
+import { useState, useMemo } from "react";
 import useCopyProfileStore from "@/stores/copyProfile";
 import ProfileCard from "../card/profileCard";
 import { AvatarProfileCardType, AvatarProfileStore } from "@/types";
 import Image from "next/image";
-import useListAvatarStore from "@/stores/avatarStore";
-import { getNameChar } from "@/helper";
+import { getNameChar, calcRarity } from "@/helper";
 import useLocaleStore from "@/stores/localeStore";
 import { useTranslations } from "next-intl";
 import SelectCustomImage from "../select/customSelectImage";
+import useCurrentDataStore from "@/stores/currentDataStore";
+import useDetailDataStore from "@/stores/detailDataStore";
 
 export default function CopyImport() {
     const { avatars, setAvatar } = useUserDataStore();
-    const { avatarSelected } = useListAvatarStore()
+    const { avatarSelected } = useCurrentDataStore()
+    const { mapAvatar, baseType, damageType } = useDetailDataStore()
     const { locale } = useLocaleStore()
     const {
         selectedProfiles,
-        listCopyAvatar,
         avatarCopySelected,
         setSelectedProfiles,
-        filterCopy,
-        setFilterCopy,
         setAvatarCopySelected,
         listElement,
         listPath,
@@ -37,6 +36,22 @@ export default function CopyImport() {
         text: ""
     })
 
+    const listAvatar = useMemo(() => {
+        if (!mapAvatar || !locale || !transI18n) return []
+        let list = Object.values(mapAvatar);
+        const allElementFalse = !Object.values(listElement).some(v => v)
+        const allPathFalse = !Object.values(listPath).some(v => v)
+        const allRarityFalse = !Object.values(listRank).some(v => v)
+        list = list.filter(item => (allElementFalse || listElement[item.DamageType]) && (allPathFalse || listPath[item.BaseType]) && (allRarityFalse || listRank[calcRarity(item.Rarity)]))
+        list.sort((a, b) => {
+            const r = calcRarity(b.Rarity) - calcRarity(a.Rarity)
+            if (r !== 0) return r
+            return a.ID - b.ID
+        })
+        return list
+    }, [mapAvatar, listElement, listPath, listRank, locale, transI18n])
+    
+
     const handleProfileToggle = (profile: AvatarProfileCardType) => {
         if (selectedProfiles.some((selectedProfile) => selectedProfile.key === profile.key)) {
             setSelectedProfiles(selectedProfiles.filter((selectedProfile) => selectedProfile.key !== profile.key));
@@ -45,17 +60,6 @@ export default function CopyImport() {
         setSelectedProfiles([...selectedProfiles, profile]);
     };
 
-    useEffect(() => {
-        setFilterCopy({
-            ...filterCopy,
-            locale: locale,
-            path: Object.keys(listPath).filter((key) => listPath[key]),
-            element: Object.keys(listElement).filter((key) => listElement[key]),
-            rarity: Object.keys(listRank).filter((key) => listRank[key])
-        })
-
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [listPath, listRank, listElement, locale, setFilterCopy])
 
     const clearSelection = () => {
         setSelectedProfiles([]);
@@ -67,7 +71,7 @@ export default function CopyImport() {
 
     const selectAll = () => {
         if (avatarCopySelected) {
-            setSelectedProfiles(avatars[avatarCopySelected?.id.toString()].profileList.map((profile, index) => {
+            setSelectedProfiles(avatars[avatarCopySelected?.ID.toString()].profileList.map((profile, index) => {
                 if (!profile.lightcone?.item_id && Object.keys(profile.relics).length == 0) {
                     return null;
                 }
@@ -106,20 +110,20 @@ export default function CopyImport() {
             return;
         }
 
-        const newListProfile = avatars[avatarCopySelected.id.toString()].profileList.map((profile) => {
+        const newListProfile = avatars[avatarCopySelected.ID.toString()].profileList.map((profile) => {
             if (!profile.lightcone?.item_id && Object.keys(profile.relics).length == 0) {
                 return null;
             }
             return {
                 ...profile,
-                profile_name: profile.profile_name + ` - Copy: ${avatarCopySelected?.id}`,
+                profile_name: profile.profile_name + ` - Copy: ${avatarCopySelected?.ID}`,
             } as AvatarProfileStore
         }).filter((profile) => profile !== null);
 
         const newAvatar = {
-            ...avatars[avatarSelected.id.toString()],
-            profileList: avatars[avatarSelected.id.toString()].profileList.concat(newListProfile),
-            profileSelect: avatars[avatarSelected.id.toString()].profileList.length - 1,
+            ...avatars[avatarSelected?.ID?.toString()],
+            profileList: avatars[avatarSelected?.ID?.toString()].profileList.concat(newListProfile),
+            profileSelect: avatars[avatarSelected?.ID?.toString()].profileList.length - 1,
         }
         setAvatar(newAvatar);
         setSelectedProfiles([]);
@@ -143,9 +147,9 @@ export default function CopyImport() {
                                 {/* Path */}
                                 <div>
                                     <div className="flex flex-wrap gap-2 justify-start items-center">
-                                        {Object.entries(listPath).map(([key], index) => (
+                                        {Object.entries(baseType).map(([key, value]) => (
                                             <div
-                                                key={index}
+                                                key={key}
                                                 onClick={() => {
                                                     setListPath({ ...listPath, [key]: !listPath[key] })
                                                 }}
@@ -156,7 +160,7 @@ export default function CopyImport() {
                                                 <Image
                                                     unoptimized
                                                     crossOrigin="anonymous"
-                                                    src={`/icon/${key}.webp`}
+                                                    src={`${process.env.CDN_URL}/${value.Icon}`}
                                                     alt={key}
                                                     className="h-8 w-8 object-contain rounded-md"
                                                     width={200}
@@ -170,9 +174,9 @@ export default function CopyImport() {
                                 {/* Element */}
                                 <div>
                                     <div className="flex flex-wrap gap-2 justify-start items-center">
-                                        {Object.entries(listElement).map(([key], index) => (
+                                        {Object.entries(damageType).map(([key, value]) => (
                                             <div
-                                                key={index}
+                                                key={key}
                                                 onClick={() => {
                                                     setListElement({ ...listElement, [key]: !listElement[key] })
                                                 }}
@@ -183,7 +187,7 @@ export default function CopyImport() {
                                                 <Image
                                                     unoptimized
                                                     crossOrigin="anonymous"
-                                                    src={`/icon/${key}.webp`}
+                                                    src={`${process.env.CDN_URL}/${value.Icon}`}
                                                     alt={key}
                                                     className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md"
                                                     width={200}
@@ -217,19 +221,19 @@ export default function CopyImport() {
                         </div>
                         <div className="grid grid-cols-1 gap-2">
 
-                            {listCopyAvatar.length > 0 && (
+                            {listAvatar.length > 0 && (
                                 <div>
                                     <div>{transI18n("characterName")}</div>
                                     <SelectCustomImage
-                                        customSet={listCopyAvatar.map((avatar) => ({
-                                            value: avatar.id.toString(),
+                                        customSet={listAvatar.map((avatar) => ({
+                                            value: avatar.ID.toString(),
                                             label: getNameChar(locale, transI18n, avatar),
-                                            imageUrl: `${process.env.CDN_URL}/spriteoutput/avatarshopicon/avatar/${avatar.id}.png`
+                                            imageUrl: `${process.env.CDN_URL}/${avatar.Image.AvatarIconPath}`
                                         }))}
                                         excludeSet={[]}
-                                        selectedCustomSet={avatarCopySelected?.id.toString() || ""}
+                                        selectedCustomSet={avatarCopySelected?.ID.toString() || ""}
                                         placeholder="Character Select"
-                                        setSelectedCustomSet={(value) => setAvatarCopySelected(listCopyAvatar.find((avatar) => avatar.id.toString() === value) || null)}
+                                        setSelectedCustomSet={(value) => setAvatarCopySelected(mapAvatar[value] || null)}
                                     />
                                 </div>
                             )}
@@ -270,7 +274,7 @@ export default function CopyImport() {
 
                 {/* Character Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {avatarCopySelected && avatars[avatarCopySelected?.id.toString()]?.profileList.map((profile, index) => {
+                    {avatarCopySelected && avatars[avatarCopySelected?.ID.toString()]?.profileList.map((profile, index) => {
                         if (!profile.lightcone?.item_id && Object.keys(profile.relics).length == 0) {
                             return null;
                         }

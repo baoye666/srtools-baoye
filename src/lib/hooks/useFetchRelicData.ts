@@ -1,31 +1,25 @@
 "use client"
 import { useQuery } from '@tanstack/react-query'
-import { fetchRelicsApi } from '@/lib/api'
+import { getRelicSetListApi } from '@/lib/api'
 import { useEffect } from 'react'
-import useRelicStore from '@/stores/relicStore'
-import { listCurrentLanguageApi } from '@/constant/constant'
-import useLocaleStore from '@/stores/localeStore'
+import useDetailDataStore from '@/stores/detailDataStore'
 import { toast } from 'react-toastify'
 
-export const useFetchRelicData = () => {
-    const { setAllMapRelicInfo } = useRelicStore()
-    const { locale } = useLocaleStore()
-
-    const { data: dataRelicInfo, error: errorRelicInfo } = useQuery({
-        queryKey: ['relicInfoData', locale],
-        queryFn: () =>
-            fetchRelicsApi(
-                listCurrentLanguageApi[locale.toLowerCase()]
-            ),
+export const useFetchRelicSetData = () => {
+    const { setMapRelicSet } = useDetailDataStore()
+    const query = useQuery({
+        queryKey: ['RelicSetData'],
+        queryFn: getRelicSetListApi,
         staleTime: 1000 * 60 * 5,
-    });
+    })
 
     useEffect(() => {
-        if (dataRelicInfo && !errorRelicInfo) {
-            setAllMapRelicInfo(dataRelicInfo)
-        } else if (errorRelicInfo) {
-            toast.error("Failed to load relic info data")
+        if (query.data && !query.error) {
+            setMapRelicSet(query.data)
+        } else if (query.error) {
+            toast.error("Failed to load RelicSet data")
         }
-
-    }, [dataRelicInfo, errorRelicInfo, setAllMapRelicInfo])
+    }, [query.data, query.error, setMapRelicSet])
+    
+    return query
 }

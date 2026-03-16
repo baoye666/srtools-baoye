@@ -1,32 +1,57 @@
 "use client"
 import Image from "next/image"
-import { useEffect } from "react"
+import { useMemo } from "react"
 import CharacterCard from "../card/characterCard"
 import useLocaleStore from "@/stores/localeStore"
-import useAvatarStore from "@/stores/avatarStore"
 import { useTranslations } from "next-intl"
-
+import useDetailDataStore from "@/stores/detailDataStore"
+import useCurrentDataStore from '@/stores/currentDataStore';
+import { calcRarity, getNameChar } from "@/helper"
 
 export default function AvatarBar({ onClose }: { onClose?: () => void }) {
-    const {
-        listAvatar,
+    const { 
+        avatarSearch, 
+        mapAvatarElementActive, 
+        mapAvatarPathActive, 
+        setAvatarSearch,
         setAvatarSelected,
-        setSkillSelected,
-        setFilter,
-        filter,
-        listElement,
-        listPath,
-        setListElement,
-        setListPath
-    } = useAvatarStore()
+        setMapAvatarElementActive, 
+        setMapAvatarPathActive,
+        setSkillIDSelected,
+    } = useCurrentDataStore()
+    const { mapAvatar, baseType, damageType } = useDetailDataStore()
     const transI18n = useTranslations("DataPage")
-    const { locale } = useLocaleStore()
+    const {locale} = useLocaleStore()
 
+    const listAvatar = useMemo(() => {
+        if (!mapAvatar || !locale || !transI18n) return []
 
-    useEffect(() => {
-        setFilter({ ...filter, locale: locale, element: Object.keys(listElement).filter((key) => listElement[key]), path: Object.keys(listPath).filter((key) => listPath[key]) })
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [locale, listElement, listPath])
+        let list = Object.values(mapAvatar)
+
+        if (avatarSearch) {
+            list = list.filter(item =>
+                getNameChar(locale, transI18n, item)
+                    .toLowerCase()
+                    .includes(avatarSearch.toLowerCase())
+            )
+        }
+
+        const allElementFalse = !Object.values(mapAvatarElementActive).some(v => v)
+        const allPathFalse = !Object.values(mapAvatarPathActive).some(v => v)
+
+        list = list.filter(item =>
+            (allElementFalse || mapAvatarElementActive[item.DamageType]) &&
+            (allPathFalse || mapAvatarPathActive[item.BaseType])
+        )
+
+        list.sort((a, b) => {
+            const r = calcRarity(b.Rarity) - calcRarity(a.Rarity)
+            if (r !== 0) return r
+            return a.ID - b.ID
+        })
+
+        return list
+    }, [mapAvatar, mapAvatarElementActive, mapAvatarPathActive, avatarSearch, locale, transI18n])
 
 
     return (
@@ -39,23 +64,23 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                                 <input type="text"
                                     placeholder={transI18n("placeholderCharacter")}
                                     className="input input-bordered input-primary w-full"
-                                    value={filter.name}
-                                    onChange={(e) => setFilter({ ...filter, name: e.target.value, locale: locale })}
+                                    value={avatarSearch}
+                                    onChange={(e) => setAvatarSearch(e.target.value)}
                                 />
                             </div>
                             <div className="grid grid-cols-7 sm:grid-cols-4  lg:grid-cols-7 mb-1 mx-1 gap-2 w-full max-h-[17vh] min-h-[5vh] overflow-y-auto">
-                                {Object.keys(listElement).map((key, index) => (
+                                {Object.entries(damageType).map(([key, value]) => (
                                     <div
-                                        key={index}
+                                        key={key}
                                         onClick={() => {
-                                            setListElement({ ...listElement, [key]: !listElement[key] })
+                                            setMapAvatarElementActive({ ...mapAvatarElementActive, [key]: !mapAvatarElementActive[key] })
                                         }}
                                         className="hover:bg-gray-600 grid items-center justify-items-center cursor-pointer rounded-md shadow-lg"
                                         style={{
-                                            backgroundColor: listElement[key] ? "#374151" : "#6B7280"
+                                            backgroundColor: mapAvatarElementActive[key] ? "#374151" : "#6B7280"
                                         }}>
                                         <Image
-                                            src={`/icon/${key}.webp`}
+                                            src={`${process.env.CDN_URL}/${value.Icon}`}
                                             alt={key}
                                             unoptimized
                                             crossOrigin="anonymous"
@@ -67,20 +92,20 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                             </div>
 
                             <div className="grid grid-cols-9 sm:grid-cols-5 lg:grid-cols-9 mb-1 mx-1 gap-2 overflow-y-auto w-full max-h-[17vh] min-h-[5vh]">
-                                {Object.keys(listPath).map((key, index) => (
+                                {Object.entries(baseType).map(([key, value]) => (
                                     <div
-                                        key={index}
+                                        key={key}
                                         onClick={() => {
-                                            setListPath({ ...listPath, [key]: !listPath[key] })
+                                            setMapAvatarPathActive({ ...mapAvatarPathActive, [key]: !mapAvatarPathActive[key] })
                                         }}
                                         className="hover:bg-gray-600 grid items-center justify-items-center rounded-md shadow-lg cursor-pointer"
                                         style={{
-                                            backgroundColor: listPath[key] ? "#374151" : "#6B7280"
+                                            backgroundColor: mapAvatarPathActive[key] ? "#374151" : "#6B7280"
                                         }}
                                     >
 
                                         <Image
-                                            src={`/icon/${key}.webp`}
+                                            src={`${process.env.CDN_URL}/${value.Icon}`}
                                             unoptimized
                                             crossOrigin="anonymous"
                                             alt={key}
@@ -98,7 +123,7 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                                 {listAvatar.map((item, index) => (
                                     <div key={index} onClick={() => {
                                         setAvatarSelected(item);
-                                        setSkillSelected(null)
+                                        setSkillIDSelected(null)
                                         if (onClose) onClose()
                                     }}>
                                         <CharacterCard data={item} />

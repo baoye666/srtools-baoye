@@ -1,64 +1,47 @@
 "use client"
 
 import { useTranslations } from "next-intl";
-import useAvatarStore from "@/stores/avatarStore";
 import { useMemo } from "react";
 import { traceButtonsInfo, traceLink } from "@/constant/traceConstant";
 import useUserDataStore from "@/stores/userDataStore";
 import useLocaleStore from "@/stores/localeStore";
 import Image from "next/image";
-import { replaceByParam } from "@/helper";
+import { replaceByParam, getLocaleName } from '@/helper';
 import { mappingStats } from "@/constant/constant";
-import { StatusAddType } from "@/types";
 import { toast } from "react-toastify";
+import useCurrentDataStore from "@/stores/currentDataStore";
+import { StatusAdd } from '@/types/avatarDetail';
 
 export default function SkillsInfo() {
     const transI18n = useTranslations("DataPage")
     const { theme } = useLocaleStore()
-    const { avatarSelected, mapAvatarInfo, skillSelected, setSkillSelected } = useAvatarStore()
+    const { avatarSelected, skillIDSelected, setSkillIDSelected } = useCurrentDataStore()
     const { avatars, setAvatar } = useUserDataStore()
-
+    const { locale } = useLocaleStore()
     const traceButtons = useMemo(() => {
         if (!avatarSelected) return
-        return traceButtonsInfo[avatarSelected.baseType]
+        return traceButtonsInfo[avatarSelected.BaseType]
     }, [avatarSelected])
-
-    const avatarInfo = useMemo(() => {
-        if (!avatarSelected) return
-        return mapAvatarInfo[avatarSelected.id]
-    }, [avatarSelected, mapAvatarInfo])
 
     const avatarData = useMemo(() => {
         if (!avatarSelected) return
-        return avatars[avatarSelected.id]
+        return avatars[avatarSelected?.ID?.toString()]
     }, [avatarSelected, avatars])
 
     const avatarSkillTree = useMemo(() => {
-        if (!avatarSelected || !avatars[avatarSelected.id]) return {}
-        if (avatars[avatarSelected.id].enhanced) {
-            return avatarInfo?.Enhanced[avatars[avatarSelected.id].enhanced.toString()].SkillTrees || {}
+        if (!avatarSelected || !avatars[avatarSelected?.ID?.toString()]) return {}
+        if (avatars[avatarSelected?.ID?.toString()].enhanced) {
+            return avatarSelected?.Enhanced?.[avatars[avatarSelected?.ID?.toString()].enhanced.toString()].SkillTrees || {}
         }
-        return avatarInfo?.SkillTrees || {}
-    }, [avatarSelected, avatarInfo, avatars])
+        return avatarSelected?.SkillTrees || {}
+    }, [avatarSelected, avatars])
 
     const skillInfo = useMemo(() => {
-        if (!avatarSelected || !skillSelected) return
-        return avatarSkillTree?.[skillSelected || ""]?.["1"]
-    }, [avatarSelected, avatarSkillTree, skillSelected])
+        if (!avatarSelected || !skillIDSelected) return
+        return avatarSkillTree?.[skillIDSelected || ""]?.["1"]
+    }, [avatarSelected, avatarSkillTree, skillIDSelected])
 
-    const getImageSkill = (icon: string | undefined, status: StatusAddType | undefined) => {
-        if (!icon) return
-        const urlPrefix = `${process.env.CDN_URL}/spriteoutput/skillicons/avatar/${avatarSelected?.id}/`;
-        if (icon.startsWith("SkillIcon")) {
-            return `${urlPrefix}${icon}`
-        } else if (status && mappingStats[status.PropertyType]) {
-            return mappingStats[status.PropertyType].icon
-        } else if (icon.startsWith("Icon")) {
-            return `${process.env.CDN_URL}/spriteoutput/trace/${icon}`
-        }
-    }
-
-    const getTraceBuffDisplay = (status: StatusAddType) => {
+    const getTraceBuffDisplay = (status: StatusAdd) => {
         const dataDisplay = mappingStats[status.PropertyType]
         if (!dataDisplay) return ""
         if (dataDisplay.unit === "%") {
@@ -72,11 +55,12 @@ export default function SkillsInfo() {
 
     const dataLevelUpSkill = useMemo(() => {
         const skillIds: number[] = skillInfo?.LevelUpSkillID || []
-        if (!avatarSelected || !avatarInfo || !avatarData) return
-        let result = Object.values(avatarInfo.Skills || {})?.filter((skill) => skillIds.includes(skill.Id))
+        if (!avatarSelected || !avatarData) return undefined
+        let result = Object.values(avatarSelected.Skills || {})?.filter((skill) => skillIds.includes(skill.ID))
         if (avatarData.enhanced) {
-            result = Object.values(avatarInfo.Enhanced[avatarData.enhanced.toString()].Skills || {})?.filter((skill) => skillIds.includes(skill.Id))
+            result = Object.values(avatarSelected?.Enhanced?.[avatarData.enhanced.toString()]?.Skills || {})?.filter((skill) => skillIds.includes(skill.ID))
         }
+
         if (result && result.length > 0) {
             return {
                 isServant: false,
@@ -84,25 +68,22 @@ export default function SkillsInfo() {
                 servantData: null,
             }
         }
-        const resultServant = Object.entries(avatarInfo.Memosprite?.Skills || {})
-            ?.filter(([skillId]) => skillIds.includes(Number(skillId)))
-            ?.map(([skillId, skillData]) => ({
-                Id: Number(skillId),
-                ...skillData,
-            }))
+        const resultServant = Object.values(avatarSelected?.Memosprite?.Skills || {})
+            ?.filter((skill) => skillIds.includes(skill.ID))
+
         if (resultServant && resultServant.length > 0) {
             return {
                 isServant: true,
                 data: resultServant,
-                servantData: avatarInfo.Memosprite,
+                servantData: avatarSelected.Memosprite,
             }
         }
         return undefined
-    }, [skillInfo?.LevelUpSkillID, avatarSelected, avatarInfo, avatarData])
+    }, [skillInfo?.LevelUpSkillID, avatarSelected, avatarData])
 
 
     const handlerMaxAll = () => {
-        if (!avatarInfo || !avatarData || !avatarSkillTree) {
+        if (!avatarData || !avatarSkillTree) {
             toast.error(transI18n("maxAllFailed"))
             return
         }
@@ -123,8 +104,8 @@ export default function SkillsInfo() {
         const newData = structuredClone(avatarData)
         newData.data.skills[skillInfo?.PointID] = status ? 1 : 0
 
-        if (!status && traceLink?.[avatarSelected?.baseType || ""]?.[skillSelected || ""]) {
-            traceLink[avatarSelected?.baseType || ""][skillSelected || ""].forEach((pointId) => {
+        if (!status && traceLink?.[avatarSelected?.BaseType || ""]?.[skillIDSelected || ""]) {
+            traceLink[avatarSelected?.BaseType || ""][skillIDSelected || ""].forEach((pointId) => {
                 if (avatarSkillTree?.[pointId]?.["1"]) {
                     newData.data.skills[avatarSkillTree?.[pointId]?.["1"].PointID] = 0
                 }
@@ -143,12 +124,12 @@ export default function SkillsInfo() {
                     </h2>
                     <div className="flex flex-col items-center">
                         <button className="btn btn-success" onClick={handlerMaxAll}>{transI18n("maxAll")}</button>
-                        {traceButtons && avatarInfo && (
+                        {traceButtons && avatarSelected && (
                             <div className="grid col-span-4 relative w-full aspect-square">
                                 <Image
                                     unoptimized
                                     crossOrigin="anonymous"
-                                    src={`/skilltree/${avatarSelected?.baseType?.toUpperCase()}.webp`}
+                                    src={`/skilltree/${avatarSelected?.BaseType?.toUpperCase()}.webp`}
                                     alt=""
                                     width={312}
                                     priority={true}
@@ -159,7 +140,7 @@ export default function SkillsInfo() {
                                     className={`w-full h-full object-cover rounded-xl`}
                                 />
                                 {traceButtons.map((btn, index) => {
-                                    if (!avatarInfo?.SkillTrees?.[btn.id]) {
+                                    if (!avatarSelected?.SkillTrees?.[btn.id]) {
                                         return null
                                     }
                                     return (
@@ -178,13 +159,13 @@ export default function SkillsInfo() {
                                             ${btn.size === "special" ? "w-[9vw] h-[9vw] md:w-[3.5vw] md:h-[3.5vw] bg-white" : ""}
                                             ${btn.size === "memory" ? "w-[9vw] h-[9vw] md:w-[3.5vw] md:h-[3.5vw] bg-black" : ""}
                                             ${btn.size === "elation" ? "w-[9vw] h-[9vw] md:w-[3.5vw] md:h-[3.5vw] bg-black" : ""}
-                                            ${skillSelected === btn.id ? "border-4 border-primary" : ""}
+                                            ${skillIDSelected === btn.id ? "border-4 border-primary" : ""}
                                             ${!avatarData?.data.skills?.[avatarSkillTree?.[btn.id]?.["1"]?.PointID]
                                                     ? "opacity-50 cursor-not-allowed"
                                                     : ""}
                                         `}
                                             onClick={() => {
-                                                setSkillSelected(btn.id === skillSelected ? null : btn.id)
+                                                setSkillIDSelected(btn.id === skillIDSelected ? null : btn.id)
                                             }}
                                             style={{
                                                 left: btn.left,
@@ -193,7 +174,7 @@ export default function SkillsInfo() {
                                             }}
                                         >
                                             <Image
-                                                src={getImageSkill(avatarInfo?.SkillTrees?.[btn.id]?.["1"]?.Icon, avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0]) || ""}
+                                                src={`${process.env.CDN_URL}/${avatarSelected?.SkillTrees?.[btn.id]?.["1"]?.Icon}`}
                                                 alt={btn.id.replaceAll("Point", "")}
                                                 priority={true}
                                                 unoptimized
@@ -201,6 +182,8 @@ export default function SkillsInfo() {
                                                 width={124}
                                                 height={124}
                                                 style={{
+                                                    objectFit: "contain",
+                                                    padding: "2px",
                                                     filter: (btn.size !== "big" && btn.size !== "memory" && btn.size !== "elation") ? "brightness(0%)" : ""
                                                 }}
                                             />
@@ -272,7 +255,7 @@ export default function SkillsInfo() {
                             </div>
                         )}
 
-                        {!traceButtons && avatarInfo && (
+                        {!traceButtons && avatarSelected && (
                             <div className="flex flex-col relative w-full aspect-square">
 
                             </div>
@@ -285,7 +268,7 @@ export default function SkillsInfo() {
                         <div className="w-2 h-6 bg-linear-to-b from-primary to-primary/50 rounded-full"></div>
                         {transI18n("details")}
                     </h2>
-                    {skillSelected && avatarInfo?.SkillTrees && avatarData && (
+                    {skillIDSelected && avatarSelected?.SkillTrees && avatarData && (
                         <div>
                             {skillInfo?.MaxLevel && skillInfo?.MaxLevel > 1 ? (
                                 <div>
@@ -309,14 +292,14 @@ export default function SkillsInfo() {
                                         </div>
                                     </div>
                                 </div>
-                            ) : skillInfo?.MaxLevel && skillInfo?.MaxLevel === 1 && traceButtons?.find((btn) => btn.id === skillSelected)?.size !== "big" ? (
+                            ) : skillInfo?.MaxLevel && skillInfo?.MaxLevel === 1 && traceButtons?.find((btn) => btn.id === skillIDSelected)?.size !== "big" ? (
                                 <div className="flex items-center gap-2">
                                     <input
                                         type="checkbox"
                                         checked={avatarData?.data.skills?.[skillInfo?.PointID] === 1}
                                         className="toggle toggle-success"
                                         onChange={(e) => {
-                                            if (traceButtons?.find((btn) => btn.id === skillSelected)?.size === "special") {
+                                            if (traceButtons?.find((btn) => btn.id === skillIDSelected)?.size === "special") {
                                                 if (e.target.checked) {
                                                     const newData = structuredClone(avatarData)
                                                     newData.data.skills[skillInfo?.PointID] = 1
@@ -343,7 +326,7 @@ export default function SkillsInfo() {
                                 (skillInfo?.PointName && skillInfo?.StatusAddList.length > 0))
                                 && (
                                     <div className="text-xl font-bold flex items-center gap-2 mt-2">
-                                        {skillInfo.PointName}
+                                        {getLocaleName(locale, skillInfo.PointName)}
                                         {skillInfo.StatusAddList.length > 0 && (
                                             <div>
                                                 {skillInfo.StatusAddList.map((status, index) => (
@@ -360,8 +343,8 @@ export default function SkillsInfo() {
                                 <div
                                     dangerouslySetInnerHTML={{
                                         __html: replaceByParam(
-                                            skillInfo?.PointDesc || "",
-                                            skillInfo?.ParamList || []
+                                            getLocaleName(locale, skillInfo?.PointDesc) || "",
+                                            skillInfo?.Param || []
                                         )
                                     }}
                                 />
@@ -377,19 +360,19 @@ export default function SkillsInfo() {
                                             <div key={index}>
 
                                                 <div className="text-xl font-bold text-primary">
-                                                    {transI18n(dataLevelUpSkill.isServant ? `${skill?.Type ? "severaltalent" : "servantskill"}` : `${skill?.Type ? skill?.Type.toLowerCase() : "talent"}`)}
-                                                    {` (${transI18n(skill.Tag.toLowerCase())})`}
+                                                    {transI18n(dataLevelUpSkill.isServant ? `${skill?.AttackType ? "severaltalent" : "servantskill"}` : `${skill?.AttackType ? skill?.AttackType.toLowerCase() : "talent"}`)}
+                                                    {` (${transI18n(skill?.SkillEffect?.toLowerCase())})`}
                                                 </div>
 
-                                                <div className="text-lg font-bold" dangerouslySetInnerHTML={{ __html: replaceByParam(skill.Name, []) }}>
+                                                <div className="text-lg font-bold" dangerouslySetInnerHTML={{ __html: replaceByParam(getLocaleName(locale, skill.Name), []) }}>
 
                                                 </div>
 
                                                 <div
                                                     dangerouslySetInnerHTML={{
                                                         __html: replaceByParam(
-                                                            skill.Desc || skill.SimpleDesc,
-                                                            skill.Level[avatarData?.data.skills?.[skillInfo?.PointID]?.toString() || ""]?.ParamList || []
+                                                            getLocaleName(locale, skill.Desc),
+                                                            skill.Level[avatarData?.data.skills?.[skillInfo?.PointID]?.toString() || ""]?.Param || []
                                                         )
                                                     }}
                                                 />

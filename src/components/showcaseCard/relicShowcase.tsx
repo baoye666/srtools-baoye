@@ -2,14 +2,14 @@
 "use client"
 
 import NextImage from "next/image"
-import { CharacterDetail, RelicShowcaseType } from "@/types";
+import { AvatarDetail, RelicShowcaseType } from "@/types";
 
 export default function RelicShowcase({
     relic,
     avatarInfo,
 }: {
     relic: RelicShowcaseType;
-    avatarInfo: CharacterDetail;
+    avatarInfo: AvatarDetail;
 }) {
     return (
         <>
@@ -28,7 +28,7 @@ export default function RelicShowcase({
                         width={78}
                         height={78}
                         alt="Relic Icon"
-                        className="h-auto w-19.5 rounded-lg"
+                        className="h-19.5 w-19.5 rounded-lg"
                     />
 
                     <div
@@ -48,13 +48,13 @@ export default function RelicShowcase({
                     <div className="relative">
                         <div className="absolute inset-0 bg-yellow-500/15 rounded-full blur-md -z-10"></div>
                         <NextImage
-                            src={relic?.mainAffix?.detail?.icon || ""}
+                            src={`${process.env.CDN_URL}/${relic?.mainAffix?.detail?.icon}` || ""}
                             unoptimized
                             crossOrigin="anonymous"
                             width={35}
                             height={35}
                             alt="Main Affix Icon"
-                            className="h-auto w-8.75"
+                            className="h-8.75 w-8.75"
                         />
                     </div>
                     <span className="text-base text-yellow-400 font-semibold drop-shadow-[0_0_4px_rgba(251,191,36,0.5)]">
@@ -75,13 +75,13 @@ export default function RelicShowcase({
                                 <div className="relative flex flex-row items-center bg-black/20 backdrop-blur-sm rounded-md p-1 border border-white/5 min-w-0">
                                     {subAffix?.detail?.icon ? (
                                         <NextImage
-                                            src={subAffix?.detail?.icon || ""}
+                                            src={`${process.env.CDN_URL}/${subAffix?.detail?.icon}` || ""}
                                             unoptimized
                                             crossOrigin="anonymous"
                                             width={32}
                                             height={32}
                                             alt="Sub Affix Icon"
-                                            className="h-auto w-6 shrink-0"
+                                            className="h-6 w-6 shrink-0"
                                         />
                                     ) : (
                                         <div className="h-6 w-6 bg-black/60 rounded flex items-center justify-center border border-white/10 shrink-0">

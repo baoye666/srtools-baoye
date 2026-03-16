@@ -1,27 +1,47 @@
 export interface LightConeDetail {
-    Name: string;
-    Desc: string;
+    ID: number;
+    Release: boolean;
+    Name: Record<string, string>;
+    Desc: Record<string, string>;
     Rarity: string;
     BaseType: string;
-    Refinements: RefinementDetail;
-    Stats: StatEntryDetail[];
-    Bonus: Record<string, { type: string, value: number }[]>
+    MaxPromotionLevel: number;
+    MaxRank: number;
+    Skills: LightconeSkill;
+    Image: LightconeImage;
+    Stats: Record<string, LightconeStatLevel>;
 }
 
-interface RefinementDetail {
-    Name: string;
-    Desc: string;
-    Level: Record<string, {
-        ParamList: number[];
-    }>;
+export interface LightconeSkill {
+    ID: number;
+    Name: Record<string, string>;
+    Desc: Record<string, string>;
+    AbilityName: string;
+    Level: Record<string, LightconeSkillLevel>;
 }
 
-interface StatEntryDetail {
-    EquipmentID: number;
-    Promotion?: number;
-    PromotionCostList: PromotionCost[];
-    PlayerLevelRequire?: number;
-    WorldLevelRequire?: number;
+export interface LightconeSkillLevel {
+    Level: number;
+    Param: number[];
+    Bonus: LightconeSkillBonus[];
+}
+
+export interface LightconeSkillBonus {
+    PropertyType: string;
+    Value: number;
+}
+
+export interface LightconeImage {
+    ThumbnailPath: string;
+    ImagePath: string;
+    IconPath: string;
+    FigureIconPath: string;
+}
+
+export interface LightconeStatLevel {
+    Promotion: number;
+    PlayerLevelRequire: number;
+    WorldLevelRequire: number;
     MaxLevel: number;
     BaseHP: number;
     BaseHPAdd: number;
@@ -29,11 +49,4 @@ interface StatEntryDetail {
     BaseAttackAdd: number;
     BaseDefence: number;
     BaseDefenceAdd: number;
-}
-
-interface PromotionCost {
-    $type: string;
-    ItemID: number;
-    ItemNum: number;
-    Rarity: string;
 }

@@ -1,39 +1,34 @@
 "use client"
 import NextImage from "next/image"
-import useLightconeStore from "@/stores/lightconeStore";
-import useAffixStore from "@/stores/affixStore";
 import useUserDataStore from "@/stores/userDataStore";
-import useRelicStore from "@/stores/relicStore";
 import { useTranslations } from "next-intl";
 import { useMemo } from "react";
-import useAvatarStore from "@/stores/avatarStore";
-import { calcAffixBonus, calcBaseStatRaw, calcBonusStatRaw, calcMainAffixBonus, calcMainAffixBonusRaw, calcPromotion, calcSubAffixBonusRaw, replaceByParam } from "@/helper";
+import { calcAffixBonus, calcBaseStatRaw, calcBonusStatRaw, calcMainAffixBonus, calcMainAffixBonusRaw, calcPromotion, calcSubAffixBonusRaw, getLocaleName, replaceByParam } from "@/helper";
 import { mappingStats } from "@/constant/constant";
 import RelicShowcase from "../showcaseCard/relicShowcase";
+import useLocaleStore from "@/stores/localeStore";
+import useDetailDataStore from "@/stores/detailDataStore";
+import useCurrentDataStore from "@/stores/currentDataStore";
+
 export default function QuickView() {
-    const { avatarSelected, mapAvatarInfo } = useAvatarStore()
-    const { mapLightconeInfo } = useLightconeStore()
-    const { mapMainAffix, mapSubAffix } = useAffixStore()
     const { avatars } = useUserDataStore()
     const transI18n = useTranslations("DataPage")
-    const { mapRelicInfo } = useRelicStore()
+    const { locale } = useLocaleStore()
+    const { avatarSelected,  } = useCurrentDataStore()
+    const { mainAffix, subAffix, mapRelicSet, mapLightCone, mapAvatar  } = useDetailDataStore()
 
-    const avatarInfo = useMemo(() => {
-        if (!avatarSelected) return
-        return mapAvatarInfo[avatarSelected.id]
-    }, [avatarSelected, mapAvatarInfo])
-
+ 
     const avatarSkillTree = useMemo(() => {
-        if (!avatarSelected || !avatars[avatarSelected.id]) return {}
-        if (avatars[avatarSelected.id].enhanced) {
-            return avatarInfo?.Enhanced[avatars[avatarSelected.id].enhanced.toString()].SkillTrees || {}
+        if (!avatarSelected || !avatars[avatarSelected?.ID?.toString()]) return {}
+        if (avatars[avatarSelected?.ID?.toString()].enhanced) {
+            return avatarSelected?.Enhanced?.[avatars[avatarSelected?.ID?.toString()].enhanced.toString()].SkillTrees || {}
         }
-        return avatarInfo?.SkillTrees || {}
-    }, [avatarSelected, avatarInfo, avatars])
+        return avatarSelected?.SkillTrees || {}
+    }, [avatarSelected, avatars])
 
     const avatarData = useMemo(() => {
         if (!avatarSelected) return
-        return avatars[avatarSelected.id]
+        return avatars[avatarSelected?.ID?.toString()]
     }, [avatarSelected, avatars])
 
     const avatarProfile = useMemo(() => {
@@ -42,7 +37,7 @@ export default function QuickView() {
     }, [avatarSelected, avatarData])
 
     const relicEffects = useMemo(() => {
-        const avatar = avatars[avatarSelected?.id || ""];
+        const avatar = avatars[avatarSelected?.ID?.toString() || ""];
         const relicCount: { [key: string]: number } = {};
         if (avatar) {
             for (const relic of Object.values(avatar.profileList[avatar.profileSelect].relics)) {
@@ -63,32 +58,32 @@ export default function QuickView() {
     }, [avatars, avatarSelected]);
 
     const relicStats = useMemo(() => {
-        if (!avatarSelected || !avatarProfile?.relics || !mapMainAffix || !mapSubAffix) return
+        if (!avatarSelected || !avatarProfile?.relics || !mainAffix || !subAffix) return
 
         return Object.entries(avatarProfile?.relics).map(([key, value]) => {
-            const mainAffixMap = mapMainAffix["5" + key]
-            const subAffixMap = mapSubAffix["5"]
+            const mainAffixMap = mainAffix["5" + key]
+            const subAffixMap = subAffix["5"]
             if (!mainAffixMap || !subAffixMap) return
             return {
                 img: `${process.env.CDN_URL}/spriteoutput/relicfigures/IconRelic_${value.relic_set_id}_${key}.png`,
                 mainAffix: {
-                    property: mainAffixMap?.[value?.main_affix_id]?.property,
+                    property: mainAffixMap?.[value?.main_affix_id]?.Property,
                     level: value?.level,
                     valueAffix: calcMainAffixBonus(mainAffixMap?.[value?.main_affix_id], value?.level),
-                    detail: mappingStats?.[mainAffixMap?.[value?.main_affix_id]?.property]
+                    detail: mappingStats?.[mainAffixMap?.[value?.main_affix_id]?.Property]
                 },
                 subAffix: value?.sub_affixes?.map((subValue) => {
                     return {
-                        property: subAffixMap?.[subValue?.sub_affix_id]?.property,
+                        property: subAffixMap?.[subValue?.sub_affix_id]?.Property,
                         valueAffix: calcAffixBonus(subAffixMap?.[subValue?.sub_affix_id], subValue?.step, subValue?.count),
-                        detail: mappingStats?.[subAffixMap?.[subValue?.sub_affix_id]?.property],
+                        detail: mappingStats?.[subAffixMap?.[subValue?.sub_affix_id]?.Property],
                         step: subValue?.step,
                         count: subValue?.count
                     }
                 })
             }
         })
-    }, [avatarSelected, avatarProfile, mapMainAffix, mapSubAffix])
+    }, [avatarSelected, avatarProfile, mainAffix, subAffix])
 
     const characterStats = useMemo(() => {
         if (!avatarSelected || !avatarData) return
@@ -104,73 +99,73 @@ export default function QuickView() {
         }> = {
             HP: {
                 value: calcBaseStatRaw(
-                    mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.HPBase,
-                    mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.HPAdd,
+                    mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.HPBase,
+                    mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.HPAdd,
                     avatarData.level
                 ),
                 base: calcBaseStatRaw(
-                    mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.HPBase,
-                    mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.HPAdd,
+                    mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.HPBase,
+                    mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.HPAdd,
                     avatarData.level
                 ),
                 name: "HP",
-                icon: "/icon/hp.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconMaxHP.png",
                 unit: "",
                 round: 0
             },
             ATK: {
                 value: calcBaseStatRaw(
-                    mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.AttackBase,
-                    mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.AttackAdd,
+                    mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.AttackBase,
+                    mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.AttackAdd,
                     avatarData.level
                 ),
                 base: calcBaseStatRaw(
-                    mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.AttackBase,
-                    mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.AttackAdd,
+                    mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.AttackBase,
+                    mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.AttackAdd,
                     avatarData.level
                 ),
                 name: "ATK",
-                icon: "/icon/attack.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconAttack.png",
                 unit: "",
                 round: 0
             },
             DEF: {
                 value: calcBaseStatRaw(
-                    mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.DefenceBase,
-                    mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.DefenceAdd,
+                    mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.DefenceBase,
+                    mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.DefenceAdd,
                     avatarData.level
                 ),
                 base: calcBaseStatRaw(
-                    mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.DefenceBase,
-                    mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.DefenceAdd,
+                    mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.DefenceBase,
+                    mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.DefenceAdd,
                     avatarData.level
                 ),
                 name: "DEF",
-                icon: "/icon/defence.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconDefence.png",
                 unit: "",
                 round: 0
             },
             SPD: {
-                value: mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.SpeedBase || 0,
-                base: mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.SpeedBase || 0,
+                value: mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.SpeedBase || 0,
+                base: mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.SpeedBase || 0,
                 name: "SPD",
-                icon: "/icon/speed.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconSpeed.png",
                 unit: "",
                 round: 1
             },
             CRITRate: {
-                value: mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.CriticalChance || 0,
-                base: mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.CriticalChance || 0,
+                value: mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.CriticalChance || 0,
+                base: mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.CriticalChance || 0,
                 name: "CRIT Rate",
-                icon: "/icon/crit-rate.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
                 unit: "%",
                 round: 1
             },
             CRITDmg: {
-                value: mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.CriticalDamage || 0,
-                base: mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.CriticalDamage || 0,
+                value: mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.CriticalDamage || 0,
+                base: mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.CriticalDamage || 0,
                 name: "CRIT DMG",
-                icon: "/icon/crit-damage.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
                 unit: "%",
                 round: 1
             },
@@ -178,7 +173,7 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Break Effect",
-                icon: "/icon/break-effect.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconBreakUp.png",
                 unit: "%",
                 round: 1
             },
@@ -186,7 +181,7 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Effect RES",
-                icon: "/icon/effect-res.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
                 unit: "%",
                 round: 1
             },
@@ -194,7 +189,7 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Energy Rate",
-                icon: "/icon/energy-rate.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconEnergyRecovery.png",
                 unit: "%",
                 round: 1
             },
@@ -202,7 +197,7 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Effect Hit Rate",
-                icon: "/icon/effect-hit-rate.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
                 unit: "%",
                 round: 1
             },
@@ -210,7 +205,7 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Healing Boost",
-                icon: "/icon/healing-boost.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconHealRatio.png",
                 unit: "%",
                 round: 1
             },
@@ -218,7 +213,7 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Physical Boost",
-                icon: "/icon/physical-add.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconPhysicalAddedRatio.png",
                 unit: "%",
                 round: 1
             },
@@ -226,7 +221,7 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Fire Boost",
-                icon: "/icon/fire-add.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconFireAddedRatio.png",
                 unit: "%",
                 round: 1
             },
@@ -234,7 +229,7 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Ice Boost",
-                icon: "/icon/ice-add.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
                 unit: "%",
                 round: 1
             },
@@ -242,7 +237,7 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Thunder Boost",
-                icon: "/icon/thunder-add.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
                 unit: "%",
                 round: 1
             },
@@ -250,7 +245,7 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Wind Boost",
-                icon: "/icon/wind-add.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconWindAddedRatio.png",
                 unit: "%",
                 round: 1
             },
@@ -258,7 +253,7 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Quantum Boost",
-                icon: "/icon/quantum-add.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconQuantumAddedRatio.png",
                 unit: "%",
                 round: 1
             },
@@ -266,7 +261,7 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Imaginary Boost",
-                icon: "/icon/imaginary-add.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconImaginaryAddedRatio.png",
                 unit: "%",
                 round: 1
             },
@@ -274,57 +269,57 @@ export default function QuickView() {
                 value: 0,
                 base: 0,
                 name: "Elation Boost",
-                icon: "/icon/IconJoy.webp",
+                icon: "spriteoutput/ui/avatar/icon/IconJoy.png",
                 unit: "%",
                 round: 1
             }
         }
 
-        if (avatarProfile?.lightcone && mapLightconeInfo[avatarProfile?.lightcone?.item_id]) {
+        if (avatarProfile?.lightcone && mapLightCone[avatarProfile?.lightcone?.item_id]) {
             const lightconePromotion = calcPromotion(avatarProfile?.lightcone?.level)
             statsData.HP.value += calcBaseStatRaw(
-                mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHP,
-                mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHPAdd,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHP,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHPAdd,
                 avatarProfile?.lightcone?.level
             )
             statsData.HP.base += calcBaseStatRaw(
-                mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHP,
-                mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHPAdd,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHP,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHPAdd,
                 avatarProfile?.lightcone?.level
             )
             statsData.ATK.value += calcBaseStatRaw(
-                mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttack,
-                mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttackAdd,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttack,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttackAdd,
                 avatarProfile?.lightcone?.level
             )
             statsData.ATK.base += calcBaseStatRaw(
-                mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttack,
-                mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttackAdd,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttack,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttackAdd,
                 avatarProfile?.lightcone?.level
             )
             statsData.DEF.value += calcBaseStatRaw(
-                mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefence,
-                mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefenceAdd,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefence,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefenceAdd,
                 avatarProfile?.lightcone?.level
             )
             statsData.DEF.base += calcBaseStatRaw(
-                mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefence,
-                mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefenceAdd,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefence,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefenceAdd,
                 avatarProfile?.lightcone?.level
             )
 
-            const bonusData = mapLightconeInfo[avatarProfile?.lightcone?.item_id].Bonus?.[avatarProfile?.lightcone.rank - 1]
+            const bonusData = mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Skills?.Level?.[avatarProfile?.lightcone.rank]?.Bonus
             if (bonusData && bonusData.length > 0) {
-                const bonusSpd = bonusData.filter((bonus) => bonus.type === "BaseSpeed")
-                const bonusOther = bonusData.filter((bonus) => bonus.type !== "BaseSpeed")
+                const bonusSpd = bonusData.filter((bonus) => bonus.PropertyType === "BaseSpeed")
+                const bonusOther = bonusData.filter((bonus) => bonus.PropertyType !== "BaseSpeed")
                 bonusSpd.forEach((bonus) => {
-                    statsData.SPD.value += bonus.value
-                    statsData.SPD.base += bonus.value
+                    statsData.SPD.value += bonus.Value
+                    statsData.SPD.base += bonus.Value
                 })
                 bonusOther.forEach((bonus) => {
-                    const statsBase = mappingStats?.[bonus.type]?.baseStat
+                    const statsBase = mappingStats?.[bonus.PropertyType]?.baseStat
                     if (statsBase && statsData[statsBase]) {
-                        statsData[statsBase].value += calcBonusStatRaw(bonus.type, statsData[statsBase].base, bonus.value)
+                        statsData[statsBase].value += calcBonusStatRaw(bonus.PropertyType, statsData[statsBase].base, bonus.Value)
                     }
                 })
             }
@@ -349,17 +344,17 @@ export default function QuickView() {
 
 
 
-        if (avatarProfile?.relics && mapMainAffix && mapSubAffix) {
+        if (avatarProfile?.relics && mainAffix && subAffix) {
             Object.entries(avatarProfile?.relics).forEach(([key, value]) => {
-                const mainAffixMap = mapMainAffix["5" + key]
-                const subAffixMap = mapSubAffix["5"]
+                const mainAffixMap = mainAffix["5" + key]
+                const subAffixMap = subAffix["5"]
                 if (!mainAffixMap || !subAffixMap) return
-                const mainStats = mappingStats?.[mainAffixMap?.[value.main_affix_id]?.property]?.baseStat
+                const mainStats = mappingStats?.[mainAffixMap?.[value.main_affix_id]?.Property]?.baseStat
                 if (mainStats && statsData[mainStats]) {
                     statsData[mainStats].value += calcMainAffixBonusRaw(mainAffixMap?.[value.main_affix_id], value.level, statsData[mainStats].base)
                 }
                 value?.sub_affixes.forEach((subValue) => {
-                    const subStats = mappingStats?.[subAffixMap?.[subValue.sub_affix_id]?.property]?.baseStat
+                    const subStats = mappingStats?.[subAffixMap?.[subValue.sub_affix_id]?.Property]?.baseStat
                     if (subStats && statsData[subStats]) {
                         statsData[subStats].value += calcSubAffixBonusRaw(subAffixMap?.[subValue.sub_affix_id], subValue.step, subValue.count, statsData[subStats].base)
                     }
@@ -369,14 +364,14 @@ export default function QuickView() {
 
         if (relicEffects && relicEffects.length > 0) {
             relicEffects.forEach((relic) => {
-                const dataBonus = mapRelicInfo?.[relic.key]?.Bonus
+                const dataBonus = mapRelicSet?.[relic.key]?.Skills
                 if (!dataBonus || Object.keys(dataBonus).length === 0) return
                 Object.entries(dataBonus || {}).forEach(([key, value]) => {
                     if (relic.count < Number(key)) return
-                    value.forEach((bonus) => {
-                        const statsBase = mappingStats?.[bonus.type]?.baseStat
+                    value.Bonus.forEach((bonus) => {
+                        const statsBase = mappingStats?.[bonus.PropertyType]?.baseStat
                         if (statsBase && statsData[statsBase]) {
-                            statsData[statsBase].value += calcBonusStatRaw(bonus.type, statsData[statsBase].base, bonus.value)
+                            statsData[statsBase].value += calcBonusStatRaw(bonus.PropertyType, statsData[statsBase].base, bonus.Value)
                         }
                     })
                 })
@@ -388,14 +383,14 @@ export default function QuickView() {
     }, [
         avatarSelected,
         avatarData,
-        mapAvatarInfo,
+        mapAvatar,
         avatarProfile?.lightcone,
         avatarProfile?.relics,
-        mapLightconeInfo,
-        mapMainAffix,
-        mapSubAffix,
+        mapLightCone,
+        mainAffix,
+        subAffix,
         relicEffects,
-        mapRelicInfo,
+        mapRelicSet,
         avatarSkillTree
     ])
 
@@ -409,13 +404,13 @@ export default function QuickView() {
                             <div key={index} className="flex flex-row items-center justify-between">
                                 <div className="flex flex-row items-center">
                                     <NextImage 
-                                    src={stat?.icon || ""} 
-                                    unoptimized
-                                    crossOrigin="anonymous"
-                                    alt="Stat Icon" 
-                                    width={40} 
-                                    height={40} 
-                                    className="h-auto w-10 p-1 mx-1 bg-black/20 rounded-full" 
+                                        src={stat?.icon || ""} 
+                                        unoptimized
+                                        crossOrigin="anonymous"
+                                        alt="Stat Icon" 
+                                        width={40} 
+                                        height={40} 
+                                        className="h-10 w-10 p-1 mx-1 bg-black/20 rounded-full" 
                                     />
                                     <div className="font-bold">{stat.name}</div>
                                 </div>
@@ -431,7 +426,7 @@ export default function QuickView() {
 
                 <div className="flex flex-col items-center gap-1 w-full my-2">
                     {relicEffects.map((setEffect, index) => {
-                        const relicInfo = mapRelicInfo[setEffect.key];
+                        const relicInfo = mapRelicSet[setEffect.key];
                         if (!relicInfo) return null;
                         return (
                             <div key={index} className="flex w-full flex-row justify-between text-left">
@@ -442,7 +437,7 @@ export default function QuickView() {
                                     }}
                                     dangerouslySetInnerHTML={{
                                         __html: replaceByParam(
-                                            relicInfo.Name,
+                                            getLocaleName(locale, relicInfo.Name),
                                             []
                                         )
                                     }}
@@ -459,9 +454,9 @@ export default function QuickView() {
             <div className="grid grid-cols-1 gap-2 justify-between py-3 text-lg">
 
                 {relicStats?.map((relic, index) => {
-                    if (!relic || !avatarInfo) return null
+                    if (!relic || !avatarSelected) return null
                     return (
-                        <RelicShowcase key={index} relic={relic} avatarInfo={avatarInfo} />
+                        <RelicShowcase key={index} relic={relic} avatarInfo={avatarSelected} />
                     )
                 })}
 

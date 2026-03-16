@@ -1,41 +1,38 @@
 "use client"
 import { useEffect, useMemo } from "react";
 import SelectCustomText from "../select/customSelectText";
-import useEventStore from "@/stores/eventStore";
-import { getLocaleName, replaceByParam } from "@/helper";
+import { calcMonsterStats, getLocaleName, replaceByParam } from "@/helper";
 import useLocaleStore from "@/stores/localeStore";
 import useUserDataStore from "@/stores/userDataStore";
-import useMonsterStore from "@/stores/monsterStore";
 import Image from "next/image";
 import { MonsterStore } from "@/types";
-import useMazeStore from "@/stores/mazeStore";
 import { useTranslations } from "next-intl";
+import useDetailDataStore from "@/stores/detailDataStore";
 
 export default function PfBar() {
-    const { PFEvent, mapPFInfo } = useEventStore()
-    const { mapMonster } = useMonsterStore()
     const { locale } = useLocaleStore()
     const {
         pf_config,
         setPfConfig
     } = useUserDataStore()
-    const { PF } = useMazeStore()
+    const { mapMonster, mapPF, damageType, hardLevelConfig, eliteConfig } = useDetailDataStore()
 
     const transI18n = useTranslations("DataPage")
     const challengeSelected = useMemo(() => {
-        return mapPFInfo[pf_config.event_id.toString()]?.Level.find((pf) => pf.Id === pf_config.challenge_id)
-    }, [pf_config, mapPFInfo])
+        return mapPF[pf_config.event_id.toString()]?.Level.find((pf) => pf.ID === pf_config.challenge_id)
+    }, [pf_config, mapPF])
 
     const eventSelected = useMemo(() => {
-        return mapPFInfo[pf_config.event_id.toString()]
-    }, [pf_config, mapPFInfo])
+        return mapPF[pf_config.event_id.toString()]
+    }, [pf_config, mapPF])
+
 
     useEffect(() => {
         if (!challengeSelected || pf_config.event_id === 0 || pf_config.challenge_id === 0) {
             return
         }
         const newBattleConfig = structuredClone(pf_config)
-        newBattleConfig.cycle_count = 4
+        newBattleConfig.cycle_count = challengeSelected.TurnLimit
         newBattleConfig.blessings = []
         if (pf_config.buff_id !== 0) {
             newBattleConfig.blessings.push({
@@ -43,62 +40,63 @@ export default function PfBar() {
                 level: 1
             })
         }
-        if (PF[pf_config.challenge_id.toString()]) {
-            newBattleConfig.blessings.push({
-                id: Number(PF[pf_config.challenge_id.toString()].maze_buff),
-                level: 1
+        if (challengeSelected) {
+            challengeSelected.MazeBuff.map((item) => {
+                newBattleConfig.blessings.push({
+                    id: item.ID,
+                    level: 1
+                })
             })
         }
-
         newBattleConfig.monsters = []
         newBattleConfig.stage_id = 0
-        if ((pf_config.floor_side === "Upper" || pf_config.floor_side === "Upper -> Lower") && challengeSelected.EventIDList1.length > 0) {
-            newBattleConfig.stage_id = challengeSelected.EventIDList1[0].StageID
-            for (const wave of challengeSelected.EventIDList1[0].MonsterList) {
+        if ((pf_config.floor_side === "Upper" || pf_config.floor_side === "Upper -> Lower") && challengeSelected.EventList1.length > 0) {
+            newBattleConfig.stage_id = challengeSelected.EventList1[0].ID
+            for (const wave of challengeSelected.EventList1[0].MonsterList) {
                 const newWave: MonsterStore[] = []
                 for (const value of Object.values(wave)) {
                     newWave.push({
-                        monster_id: Number(value),
-                        level: challengeSelected.EventIDList1[0].Level,
+                        monster_id: value,
+                        level: challengeSelected.EventList1[0].Level,
                         amount: 1,
                     })
                 }
                 newBattleConfig.monsters.push(newWave)
             }
         }
-        if ((pf_config.floor_side === "Lower" || pf_config.floor_side === "Lower -> Upper") && challengeSelected.EventIDList2.length > 0) {
-            newBattleConfig.stage_id = challengeSelected.EventIDList2[0].StageID
-            for (const wave of challengeSelected.EventIDList2[0].MonsterList) {
+        if ((pf_config.floor_side === "Lower" || pf_config.floor_side === "Lower -> Upper") && challengeSelected.EventList2.length > 0) {
+            newBattleConfig.stage_id = challengeSelected.EventList2[0].ID
+            for (const wave of challengeSelected.EventList2[0].MonsterList) {
                 const newWave: MonsterStore[] = []
                 for (const value of Object.values(wave)) {
                     newWave.push({
-                        monster_id: Number(value),
-                        level: challengeSelected.EventIDList2[0].Level,
+                        monster_id: value,
+                        level: challengeSelected.EventList2[0].Level,
                         amount: 1,
                     })
                 }
                 newBattleConfig.monsters.push(newWave)
             }
         }
-        if (pf_config.floor_side === "Lower -> Upper" && challengeSelected.EventIDList1.length > 0) {
-            for (const wave of challengeSelected.EventIDList1[0].MonsterList) {
+        if (pf_config.floor_side === "Lower -> Upper" && challengeSelected.EventList1.length > 0) {
+            for (const wave of challengeSelected.EventList1[0].MonsterList) {
                 const newWave: MonsterStore[] = []
                 for (const value of Object.values(wave)) {
                     newWave.push({
-                        monster_id: Number(value),
-                        level: challengeSelected.EventIDList1[0].Level,
+                        monster_id: value,
+                        level: challengeSelected.EventList1[0].Level,
                         amount: 1,
                     })
                 }
                 newBattleConfig.monsters.push(newWave)
             }
-        } else if (pf_config.floor_side === "Upper -> Lower" && challengeSelected.EventIDList2.length > 0) {
-            for (const wave of challengeSelected.EventIDList2[0].MonsterList) {
+        } else if (pf_config.floor_side === "Upper -> Lower" && challengeSelected.EventList2.length > 0) {
+            for (const wave of challengeSelected.EventList2[0].MonsterList) {
                 const newWave: MonsterStore[] = []
                 for (const value of Object.values(wave)) {
                     newWave.push({
-                        monster_id: Number(value),
-                        level: challengeSelected.EventIDList2[0].Level,
+                        monster_id: value,
+                        level: challengeSelected.EventList2[0].Level,
                         amount: 1,
                     })
                 }
@@ -113,10 +111,9 @@ export default function PfBar() {
         pf_config.challenge_id,
         pf_config.floor_side,
         pf_config.buff_id,
-        mapPFInfo,
-        PF,
+        mapPF,
     ])
-    if (!PFEvent) return null
+    if (!mapPF) return null
 
     return (
         <div className="py-8 relative">
@@ -125,10 +122,10 @@ export default function PfBar() {
             <div className="rounded-xl p-4 mb-2 border border-warning">
                 <div className="mb-4 w-full">
                     <SelectCustomText
-                        customSet={PFEvent.map((pf) => ({
-                            id: pf.id,
-                            name: getLocaleName(locale, pf),
-                            time: `${pf.begin} - ${pf.end}`,
+                        customSet={Object.values(mapPF).sort((a, b) => b.ID - a.ID).map((pf) => ({
+                            id: pf.ID.toString(),
+                            name: getLocaleName(locale, pf.Name),
+                            time: `${pf.BeginTime} - ${pf.EndTime}`,
                         }))}
                         excludeSet={[]}
                         selectedCustomSet={pf_config.event_id.toString()}
@@ -136,7 +133,7 @@ export default function PfBar() {
                         setSelectedCustomSet={(id) => setPfConfig({
                             ...pf_config,
                             event_id: Number(id),
-                            challenge_id: mapPFInfo[Number(id)]?.Level.slice(-1)[0]?.Id || 0,
+                            challenge_id: mapPF[Number(id)]?.Level.slice(-1)[0]?.ID || 0,
                             buff_id: 0
                         })}
                     />
@@ -154,8 +151,8 @@ export default function PfBar() {
                             onChange={(e) => setPfConfig({ ...pf_config, challenge_id: Number(e.target.value) })}
                         >
                             <option value={0} disabled={true}>{transI18n("selectFloor")}</option>
-                            {mapPFInfo[pf_config.event_id.toString()]?.Level.map((pf) => (
-                                <option key={pf.Id} value={pf.Id}>{pf.Id % 10}</option>
+                            {eventSelected?.Level.map((pf) => (
+                                <option key={pf.ID} value={pf.ID}>{getLocaleName(locale, pf.Name)}</option>
                             ))}
                         </select>
                     </div>
@@ -180,10 +177,10 @@ export default function PfBar() {
                 {eventSelected && (
                     <div className="mb-4 w-full">
                         <SelectCustomText
-                            customSet={eventSelected.Option.map((buff, index) => ({
-                                id: PF[eventSelected.Id.toString()]?.buff[index]?.toString(),
-                                name: buff.Name,
-                                description: replaceByParam(buff.Desc, buff.Param || []),
+                            customSet={eventSelected.Option.map((buff) => ({
+                                id: buff.ID?.toString() || "",
+                                name: getLocaleName(locale, buff?.Name) || "",
+                                description: replaceByParam(getLocaleName(locale, buff?.Desc) || "", buff?.Param || []),
                             }))}
                             excludeSet={[]}
                             selectedCustomSet={pf_config?.buff_id?.toString()}
@@ -199,29 +196,32 @@ export default function PfBar() {
                         eventSelected.SubOption.map((subOption, index) => (
                             <div key={index}>
                                 <label className="label">
-                                    <span className="label-text font-bold text-success">{index + 1}. {subOption.Name}</span>
+                                    <span className="label-text font-bold text-success">{index + 1}. {getLocaleName(locale, subOption.Name)}</span>
                                 </label>
                                 <div
                                     className="text-base"
                                     dangerouslySetInnerHTML={{
                                         __html: replaceByParam(
-                                            subOption.Desc,
+                                            getLocaleName(locale, subOption.Desc) || "",
                                             subOption.Param || []
                                         )
                                     }}
                                 />
                             </div>
                         ))
-                    ) : eventSelected && eventSelected.SubOption.length === 0 ? (
-                        <div
-                            className="text-base"
-                            dangerouslySetInnerHTML={{
-                                __html: replaceByParam(
-                                    eventSelected.Buff?.Desc || "",
-                                    eventSelected.Buff?.Param || []
-                                )
-                            }}
-                        />
+                    ) : eventSelected && challengeSelected && eventSelected.SubOption.length === 0 ? (
+                        challengeSelected?.MazeBuff?.map((buff, i) => (
+                            <div
+                                key={i}
+                                className="text-base"
+                                dangerouslySetInnerHTML={{
+                                    __html: replaceByParam(
+                                        getLocaleName(locale, buff?.Desc) || "",
+                                        buff?.Param || []
+                                    )
+                                }}
+                            />
+                        ))
                     ) : (
                         <div className="text-base">{transI18n("noTurbulenceBuff")}</div>
                     )}
@@ -236,49 +236,85 @@ export default function PfBar() {
                     <div className="rounded-xl p-4 mt-2 border border-warning">
                         <h2 className="text-2xl font-bold mb-6 text-info">{transI18n("firstHalfEnemies")}</h2>
 
-                        {challengeSelected && Object.values(challengeSelected.InfiniteList1).map((waveValue, waveIndex) => (
+                        {challengeSelected && Object.values(challengeSelected.EventList1?.[0]?.Infinite || []).map((waveValue, waveIndex) => (
                             <div key={waveIndex} className="mb-6">
-                                <h3 className="text-lg font-semibold mb-t">{transI18n("wave")} {waveIndex + 1}</h3>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    {Array.from(new Set(waveValue.MonsterGroupIDList)).map((monsterId, enemyIndex) => (
-
-                                        <div
-                                            key={enemyIndex}
-                                            className="rounded-xl p-2 border border-white/10 shadow-md hover:border-white/20 hover:shadow-lg transition"
-                                        >
-                                            <div className="flex items-center space-x-3">
-                                                <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
-                                                    {mapMonster?.[monsterId.toString()]?.icon && <Image
-                                                        unoptimized
-                                                        crossOrigin="anonymous"
-                                                        src={`${process.env.CDN_URL}/${mapMonster?.[monsterId.toString()]?.icon}`}
-                                                        alt="Enemy Icon"
-                                                        width={376}
-                                                        height={512}
-                                                        className="w-full h-full object-cover"
-                                                    />}
+                                <h3 className="text-lg font-semibold">{transI18n("wave")} {waveIndex + 1}</h3>
+                                <div className="flex flex-wrap gap-2 mt-2">
+                                    {Array.from(new Set(waveValue.MonsterList)).map((monsterId, enemyIndex) => {
+                                        const monsterStats = calcMonsterStats(
+                                            mapMonster?.[monsterId.toString()],
+                                            waveValue.EliteGroup,
+                                            challengeSelected?.EventList1?.[0]?.HardLevelGroup,
+                                            challengeSelected?.EventList1?.[0]?.Level,
+                                            hardLevelConfig,
+                                            eliteConfig
+                                        );
+                                        return (
+                                            <div
+                                                key={enemyIndex}
+                                                className="group relative flex flex-col w-40 bg-base-100 rounded-2xl border border-base-300 shadow-md"
+                                            >
+                                                <div className="badge badge-warning badge-sm font-bold absolute top-2 right-2 z-10 shadow-sm">
+                                                    Lv. {challengeSelected?.EventList1[0].Level}
                                                 </div>
 
-                                                <div className="flex flex-col">
-                                                    <div className="text-sm font-semibold">{mapMonster?.[monsterId.toString()]?.id}   | Lv. {challengeSelected?.EventIDList1[0].Level}</div>
-                                                    <div className="flex items-center space-x-1 mt-1">
-                                                        {mapMonster?.[monsterId.toString()]?.weak?.map((icon, iconIndex) => (
+                                                <div className="relative w-full h-20 bg-base-200 flex items-center justify-center p-4 rounded-t-2xl">
+                                                    {mapMonster?.[monsterId.toString()]?.Image?.IconPath && (
+                                                        <div className="relative w-16 h-16 rounded-full border-2 border-base-300 shadow-md overflow-hidden group-hover:scale-110 transition-transform duration-300 bg-base-100">
                                                             <Image
                                                                 unoptimized
                                                                 crossOrigin="anonymous"
-                                                                src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                alt={icon}
-                                                                className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
-                                                                width={200}
-                                                                height={200}
-                                                                key={iconIndex}
+                                                                src={`${process.env.CDN_URL}/${mapMonster?.[monsterId.toString()]?.Image?.IconPath}`}
+                                                                alt="Enemy Icon"
+                                                                width={150}
+                                                                height={150}
+                                                                className="w-full h-full object-cover"
                                                             />
-                                                        ))}
+                                                        </div>
+                                                    )}
+                                                </div>
+
+                                                <div className="flex flex-col px-1 pb-2 pt-2">
+                                                    <div className="flex flex-col space-y-1.5">
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-error">HP</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.hp.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-info">Speed</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.spd.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-base-content/70">Toughness</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.stance.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="mt-2 pt-2 border-t border-base-300 flex flex-col items-center">
+                                                        <span className="text-[10px] text-base-content/60 font-bold uppercase tracking-widest mb-1.5">
+                                                            Weakness
+                                                        </span>
+                                                        <div className="flex items-center justify-center gap-1.5 flex-wrap">
+                                                            {mapMonster?.[monsterId.toString()]?.StanceWeakList?.map((icon, iconIndex) => (
+                                                                <Image
+                                                                    key={iconIndex}
+                                                                    unoptimized
+                                                                    crossOrigin="anonymous"
+                                                                    src={`${process.env.CDN_URL}/${damageType[icon]?.Icon}`}
+                                                                    alt={icon}
+                                                                    width={40}
+                                                                    height={40}
+                                                                    className="h-6 w-6 object-contain rounded-full bg-base-300 border border-base-content/10 p-0.5 shadow-sm hover:scale-110 transition-transform"
+                                                                />
+                                                            ))}
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    ))}
+                                        )
+                                    })}
                                 </div>
                             </div>
                         ))}
@@ -288,49 +324,85 @@ export default function PfBar() {
                     <div className="rounded-xl p-4 mt-2 border border-warning">
                         <h2 className="text-2xl font-bold mb-6 text-info">{transI18n("secondHalfEnemies")}</h2>
 
-                        {challengeSelected && Object.values(challengeSelected?.InfiniteList2).map((waveValue, waveIndex) => (
+                        {challengeSelected && Object.values(challengeSelected?.EventList2[0]?.Infinite || []).map((waveValue, waveIndex) => (
                             <div key={waveIndex} className="mb-6">
-                                <h3 className="text-lg font-semibold mb-t">{transI18n("wave")} {waveIndex + 1}</h3>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    {Array.from(new Set(waveValue.MonsterGroupIDList)).map((monsterId, enemyIndex) => (
-                                        <div
-                                            key={enemyIndex}
-                                            className="rounded-xl p-2 border border-white/10 shadow-md hover:border-white/20 hover:shadow-lg transition"
-                                        >
-
-                                            <div className="flex items-center space-x-3">
-                                                <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
-                                                    {mapMonster?.[monsterId.toString()]?.icon && <Image
-                                                        unoptimized
-                                                        crossOrigin="anonymous"
-                                                        src={`${process.env.CDN_URL}/${mapMonster?.[monsterId.toString()]?.icon}`}
-                                                        alt="Enemy Icon"
-                                                        width={400}
-                                                        height={300}
-                                                        className="w-full h-full object-cover"
-                                                    />}
+                                <h3 className="text-lg font-semibold">{transI18n("wave")} {waveIndex + 1}</h3>
+                                <div className="flex flex-wrap gap-2 mt-2">
+                                    {Array.from(new Set(waveValue.MonsterList)).map((monsterId, enemyIndex) => {
+                                        const monsterStats = calcMonsterStats(
+                                            mapMonster?.[monsterId.toString()],
+                                            waveValue.EliteGroup,
+                                            challengeSelected?.EventList2?.[0]?.HardLevelGroup,
+                                            challengeSelected?.EventList2?.[0]?.Level,
+                                            hardLevelConfig,
+                                            eliteConfig
+                                        );
+                                        return (
+                                            <div
+                                                key={enemyIndex}
+                                                className="group relative flex flex-col w-40 bg-base-100 rounded-2xl border border-base-300 shadow-md"
+                                            >
+                                                <div className="badge badge-warning badge-sm font-bold absolute top-2 right-2 z-10 shadow-sm">
+                                                    Lv. {challengeSelected?.EventList2[0].Level}
                                                 </div>
 
-                                                <div className="flex flex-col">
-                                                    <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList1[0].Level}</div>
-                                                    <div className="flex items-center space-x-1 mt-1">
-                                                        {mapMonster?.[monsterId.toString()]?.weak?.map((icon, iconIndex) => (
+                                                <div className="relative w-full h-20 bg-base-200 flex items-center justify-center p-4 rounded-t-2xl">
+                                                    {mapMonster?.[monsterId.toString()]?.Image?.IconPath && (
+                                                        <div className="relative w-16 h-16 rounded-full border-2 border-base-300 shadow-md overflow-hidden group-hover:scale-110 transition-transform duration-300 bg-base-100">
                                                             <Image
                                                                 unoptimized
                                                                 crossOrigin="anonymous"
-                                                                src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                alt={icon}
-                                                                className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
-                                                                width={200}
-                                                                height={200}
-                                                                key={iconIndex}
+                                                                src={`${process.env.CDN_URL}/${mapMonster?.[monsterId.toString()]?.Image?.IconPath}`}
+                                                                alt="Enemy Icon"
+                                                                width={150}
+                                                                height={150}
+                                                                className="w-full h-full object-cover"
                                                             />
-                                                        ))}
+                                                        </div>
+                                                    )}
+                                                </div>
+
+                                                <div className="flex flex-col px-1 pb-2 pt-2">
+                                                    <div className="flex flex-col space-y-1.5">
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-error">HP</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.hp.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-info">Speed</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.spd.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-base-content/70">Toughness</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.stance.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="mt-2 pt-2 border-t border-base-300 flex flex-col items-center">
+                                                        <span className="text-[10px] text-base-content/60 font-bold uppercase tracking-widest mb-1.5">
+                                                            Weakness
+                                                        </span>
+                                                        <div className="flex items-center justify-center gap-1.5 flex-wrap">
+                                                            {mapMonster?.[monsterId.toString()]?.StanceWeakList?.map((icon, iconIndex) => (
+                                                                <Image
+                                                                    key={iconIndex}
+                                                                    unoptimized
+                                                                    crossOrigin="anonymous"
+                                                                    src={`${process.env.CDN_URL}/${damageType[icon]?.Icon}`}
+                                                                    alt={icon}
+                                                                    width={40}
+                                                                    height={40}
+                                                                    className="h-6 w-6 object-contain rounded-full bg-base-300 border border-base-content/10 p-0.5 shadow-sm hover:scale-110 transition-transform"
+                                                                />
+                                                            ))}
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    ))}
+                                        )
+                                    })}
                                 </div>
                             </div>
                         ))}

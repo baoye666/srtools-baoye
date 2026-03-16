@@ -1,57 +1,49 @@
 "use client"
 import { useEffect, useMemo } from "react";
 import SelectCustomText from "../select/customSelectText";
-import useEventStore from "@/stores/eventStore";
-import { getLocaleName, replaceByParam } from "@/helper";
+import { calcMonsterStats, getLocaleName, replaceByParam } from "@/helper";
 import useLocaleStore from "@/stores/localeStore";
-import useUserDataStore from "@/stores/userDataStore";
-import useMonsterStore from "@/stores/monsterStore";
+import useUserDataStore from "@/stores/userDataStore";;
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { MonsterStore } from "@/types";
+import useDetailDataStore from "@/stores/detailDataStore";
 
 export default function PeakBar() {
-    const { PEAKEvent, mapPEAKInfo } = useEventStore()
-    const { mapMonster } = useMonsterStore()
     const { locale } = useLocaleStore()
     const {
         peak_config,
         setPeakConfig
     } = useUserDataStore()
-
+    const { mapMonster, mapPeak, damageType, eliteConfig, hardLevelConfig } = useDetailDataStore()
     const transI18n = useTranslations("DataPage")
 
     const listFloor = useMemo(() => {
-        if (!mapPEAKInfo?.[peak_config?.event_id?.toString()]) return []
-        return [
-            ...mapPEAKInfo[peak_config?.event_id?.toString()]?.PreLevel,
-            mapPEAKInfo[peak_config?.event_id?.toString()]?.BossLevel,
-        ]
-    }, [peak_config, mapPEAKInfo])
+        const peak = mapPeak?.[peak_config?.event_id?.toString()]
+        if (!peak) return []
 
+        return [...peak.PreLevel, peak.BossLevel].filter(it => it != null)
+    }, [peak_config, mapPeak])
     const eventSelected = useMemo(() => {
-        return mapPEAKInfo?.[peak_config?.event_id?.toString()]
-    }, [peak_config, mapPEAKInfo])
+        return mapPeak?.[peak_config?.event_id?.toString()]
+    }, [peak_config, mapPeak])
 
     const bossConfig = useMemo(() => {
-        return mapPEAKInfo?.[peak_config?.event_id?.toString()]?.BossConfig;
-    }, [peak_config, mapPEAKInfo])
+        return mapPeak?.[peak_config?.event_id?.toString()]?.BossConfig;
+    }, [peak_config, mapPeak])
 
     const challengeSelected = useMemo(() => {
-        const challenge = structuredClone(listFloor.find((peak) => peak.Id === peak_config.challenge_id))
+        const challenge = structuredClone(listFloor?.find((peak) => peak?.ID === peak_config.challenge_id))
         if (
             challenge
-            && challenge.Id === mapPEAKInfo?.[peak_config?.event_id?.toString()]?.BossLevel?.Id
+            && challenge.ID === mapPeak?.[peak_config?.event_id?.toString()]?.BossLevel?.ID
             && bossConfig
             && peak_config?.boss_mode === "Hard"
         ) {
-            challenge.Name = bossConfig.HardName
-            challenge.EventIDList = bossConfig.EventIDList
-            challenge.InfiniteList = bossConfig.InfiniteList
-            challenge.TagList = bossConfig.TagList
+            return bossConfig
         }
         return challenge
-    }, [peak_config, listFloor, mapPEAKInfo, bossConfig])
+    }, [peak_config, listFloor, mapPeak, bossConfig])
 
     useEffect(() => {
         if (!challengeSelected) return
@@ -59,9 +51,9 @@ export default function PeakBar() {
             const newBattleConfig = structuredClone(peak_config)
             newBattleConfig.cycle_count = 6
             newBattleConfig.blessings = []
-            for (const value of challengeSelected.TagList) {
+            for (const value of challengeSelected.MazeBuff) {
                 newBattleConfig.blessings.push({
-                    id: Number(value.Id),
+                    id: value.ID,
                     level: 1
                 })
             }
@@ -72,15 +64,15 @@ export default function PeakBar() {
                 })
             }
             newBattleConfig.monsters = []
-            newBattleConfig.stage_id = challengeSelected.EventIDList[0].StageID
-            for (const wave of challengeSelected.EventIDList[0].MonsterList) {
+            newBattleConfig.stage_id = challengeSelected.EventList[0].ID
+            for (const wave of challengeSelected.EventList[0].MonsterList) {
                 if (!wave) continue
                 const newWave: MonsterStore[] = []
                 for (const value of Object.values(wave)) {
                     if (!value) continue
                     newWave.push({
-                        monster_id: Number(value),
-                        level: challengeSelected.EventIDList[0].Level,
+                        monster_id: value,
+                        level: challengeSelected.EventList[0].Level,
                         amount: 1,
                     })
                 }
@@ -94,10 +86,11 @@ export default function PeakBar() {
         peak_config.event_id,
         peak_config.challenge_id,
         peak_config.buff_id,
-        mapPEAKInfo,
+        peak_config.boss_mode,
+        mapPeak,
     ])
 
-    if (!PEAKEvent) return null
+    if (!mapPeak) return null
 
     return (
         <div className="py-8 relative">
@@ -106,9 +99,9 @@ export default function PeakBar() {
             <div className="rounded-xl p-4 mb-2 border border-warning">
                 <div className="mb-4 w-full">
                     <SelectCustomText
-                        customSet={PEAKEvent.map((peak) => ({
-                            id: peak.id,
-                            name: `${getLocaleName(locale, peak)} (${peak.id})`,
+                        customSet={Object.values(mapPeak).sort((a, b) => b.ID - a.ID).map((peak) => ({
+                            id: peak.ID.toString(),
+                            name: `${getLocaleName(locale, peak.Name)} (${peak.ID})`,
                         }))}
                         excludeSet={[]}
                         selectedCustomSet={peak_config.event_id.toString()}
@@ -119,7 +112,7 @@ export default function PeakBar() {
                 {/* Settings */}
                 <div className={
                     `grid grid-cols-1 
-                    ${eventSelected && eventSelected.BossLevel.Id === peak_config.challenge_id ? "md:grid-cols-2" : ""}
+                    ${eventSelected && eventSelected.BossLevel?.ID === peak_config.challenge_id ? "md:grid-cols-2" : ""}
                     gap-4 mb-4 justify-items-center items-center w-full`}
                 >
 
@@ -134,11 +127,11 @@ export default function PeakBar() {
                         >
                             <option value={0} disabled={true}>{transI18n("selectFloor")}</option>
                             {listFloor.map((peak) => (
-                                <option key={peak.Id} value={peak.Id}>{peak.Name}</option>
+                                <option key={peak.ID} value={peak.ID}>{getLocaleName(locale, peak.Name)}</option>
                             ))}
                         </select>
                     </div>
-                    {eventSelected && eventSelected.BossLevel.Id === peak_config.challenge_id && (
+                    {eventSelected && eventSelected.BossLevel?.ID === peak_config.challenge_id && (
                         <div className="flex items-center gap-2 w-full">
                             <label className="label">
                                 <span className="label-text font-bold text-success">{transI18n("mode")}:{" "}</span>
@@ -158,20 +151,17 @@ export default function PeakBar() {
                 </div>
                 {
                     eventSelected
-                    && eventSelected.BossLevel.Id === peak_config.challenge_id
+                    && eventSelected.BossLevel?.ID === peak_config.challenge_id
                     && bossConfig
-                    && bossConfig.BuffList
                     && (
                         <div className="mb-4 w-full">
                             <SelectCustomText
                                 customSet={
-                                    Array.isArray(bossConfig.BuffList)
-                                        ? bossConfig.BuffList.map((buff) => ({
-                                            id: buff.Id.toString(),
-                                            name: buff?.Name || "",
-                                            description: replaceByParam(buff?.Desc || "", buff?.Param || []),
-                                        }))
-                                        : []
+                                    bossConfig.BuffList.map((buff) => ({
+                                        id: buff.ID.toString(),
+                                        name: getLocaleName(locale, buff?.Name || ""),
+                                        description: replaceByParam(getLocaleName(locale, buff?.Desc || ""), buff?.Param || []),
+                                    }))
                                 }
                                 excludeSet={[]}
                                 selectedCustomSet={peak_config?.buff_id?.toString()}
@@ -189,19 +179,19 @@ export default function PeakBar() {
                         {transI18n("turbulenceBuff")}
                     </h2>
 
-                    {challengeSelected && challengeSelected?.TagList?.length > 0 ? (
-                        challengeSelected.TagList.map((subOption, index) => (
+                    {challengeSelected && challengeSelected?.MazeBuff?.length > 0 ? (
+                        challengeSelected.MazeBuff.map((subOption, index) => (
                             <div key={index}>
                                 <label className="label">
                                     <span className="label-text font-bold text-success">
-                                        {index + 1}. {subOption.Name}
+                                        {index + 1}. {getLocaleName(locale, subOption.Name)}
                                     </span>
                                 </label>
                                 <div
                                     className="text-base"
                                     dangerouslySetInnerHTML={{
                                         __html: replaceByParam(
-                                            subOption.Desc,
+                                            getLocaleName(locale, subOption.Desc),
                                             subOption.Param || []
                                         )
                                     }}
@@ -220,51 +210,87 @@ export default function PeakBar() {
                 <div className="grid grid-cols-1 gap-4">
 
                     <div className="rounded-xl p-4 mt-2 border border-warning">
-                        <h2 className="text-2xl font-bold mb-6 text-info">{challengeSelected?.Name}</h2>
+                        <h2 className="text-2xl font-bold mb-6 text-info">{getLocaleName(locale, challengeSelected?.Name)}</h2>
 
-                        {challengeSelected && Object.values(challengeSelected.InfiniteList).map((waveValue, waveIndex) => (
+                        {challengeSelected && Object.values(challengeSelected?.EventList?.[0]?.Infinite || []).map((waveValue, waveIndex) => (
                             <div key={waveIndex} className="mb-6">
-                                <h3 className="text-lg font-semibold mb-t">{transI18n("wave")} {waveIndex + 1}</h3>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    {Array.from(new Set(waveValue.MonsterGroupIDList)).map((monsterId, enemyIndex) => (
-                                        <div
-                                            key={enemyIndex}
-                                            className="rounded-xl p-2 border border-white/10 shadow-md hover:border-white/20 hover:shadow-lg transition"
-                                        >
-
-                                            <div className="flex items-center space-x-3">
-                                                <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
-                                                    {mapMonster?.[monsterId.toString()]?.icon && <Image
-                                                        unoptimized
-                                                        crossOrigin="anonymous"
-                                                        src={`${process.env.CDN_URL}/${mapMonster?.[monsterId.toString()]?.icon}`}
-                                                        alt="Enemy Icon"
-                                                        width={376}
-                                                        height={512}
-                                                        className="w-full h-full object-cover"
-                                                    />}
+                                <h3 className="text-lg font-semibold">{transI18n("wave")} {waveIndex + 1}</h3>
+                                <div className="flex flex-wrap gap-2 mt-2">
+                                    {Array.from(new Set(waveValue.MonsterList)).map((monsterId, enemyIndex) => {
+                                        const monsterStats = calcMonsterStats(
+                                            mapMonster?.[monsterId.toString()],
+                                            waveValue.EliteGroup,
+                                            challengeSelected?.EventList?.[0]?.HardLevelGroup,
+                                            challengeSelected?.EventList?.[0]?.Level,
+                                            hardLevelConfig,
+                                            eliteConfig
+                                        );
+                                        return (
+                                            <div
+                                                key={enemyIndex}
+                                                className="group relative flex flex-col w-40 bg-base-100 rounded-2xl border border-base-300 shadow-md"
+                                            >
+                                                <div className="badge badge-warning badge-sm font-bold absolute top-2 right-2 z-10 shadow-sm">
+                                                    Lv. {challengeSelected?.EventList[0].Level}
                                                 </div>
 
-                                                <div className="flex flex-col">
-                                                    <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList[0].Level}</div>
-                                                    <div className="flex items-center space-x-1 mt-1">
-                                                        {mapMonster?.[monsterId.toString()]?.weak?.map((icon, iconIndex) => (
+                                                <div className="relative w-full h-20 bg-base-200 flex items-center justify-center p-4 rounded-t-2xl">
+                                                    {mapMonster?.[monsterId.toString()]?.Image?.IconPath && (
+                                                        <div className="relative w-16 h-16 rounded-full border-2 border-base-300 shadow-md overflow-hidden group-hover:scale-110 transition-transform duration-300 bg-base-100">
                                                             <Image
                                                                 unoptimized
                                                                 crossOrigin="anonymous"
-                                                                src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                alt={icon}
-                                                                className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
-                                                                width={200}
-                                                                height={200}
-                                                                key={iconIndex}
+                                                                src={`${process.env.CDN_URL}/${mapMonster?.[monsterId.toString()]?.Image?.IconPath}`}
+                                                                alt="Enemy Icon"
+                                                                width={150}
+                                                                height={150}
+                                                                className="w-full h-full object-cover"
                                                             />
-                                                        ))}
+                                                        </div>
+                                                    )}
+                                                </div>
+
+                                                <div className="flex flex-col px-1 pb-2 pt-2">
+                                                    <div className="flex flex-col space-y-1.5">
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-error">HP</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.hp.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-info">Speed</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.spd.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-base-content/70">Toughness</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.stance.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="mt-2 pt-2 border-t border-base-300 flex flex-col items-center">
+                                                        <span className="text-[10px] text-base-content/60 font-bold uppercase tracking-widest mb-1.5">
+                                                            Weakness
+                                                        </span>
+                                                        <div className="flex items-center justify-center gap-1.5 flex-wrap">
+                                                            {mapMonster?.[monsterId.toString()]?.StanceWeakList?.map((icon, iconIndex) => (
+                                                                <Image
+                                                                    key={iconIndex}
+                                                                    unoptimized
+                                                                    crossOrigin="anonymous"
+                                                                    src={`${process.env.CDN_URL}/${damageType[icon]?.Icon}`}
+                                                                    alt={icon}
+                                                                    width={40}
+                                                                    height={40}
+                                                                    className="h-6 w-6 object-contain rounded-full bg-base-300 border border-base-content/10 p-0.5 shadow-sm hover:scale-110 transition-transform"
+                                                                />
+                                                            ))}
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    ))}
+                                        )
+                                    })}
                                 </div>
                             </div>
                         ))}

@@ -1,37 +1,49 @@
-import { EventStageDetail } from "./mocDetail";
-import { InfiniteWave } from "./pfDetail";
+import { BattleTarget, InfiniteWave, MazeBuff } from "./pfDetail";
 
-export interface PeakDetail {
-    Id: number;
-    Name: string;
-    PreLevel: PeakLevel[];
-    BossLevel: PeakLevel;
-    BossConfig: BossConfig;
+export interface PeakGroupDetail {
+    ID: number;
+    ChallengeGroupType: string;
+    Name: Record<string, string>;
+    Image: PeakGroupImage;
+    PreLevel: PeakMazeConfig[];
+    BossLevel: PeakMazeConfig | null;
+    BossConfig: PeakBossConfig | null;
 }
 
-export interface PeakLevel {
-    Id: number;
-    Name: string;
+export interface PeakGroupImage {
+    ThemePosterTabPicPath: string;
+    ThemeIconPicPath: string;
+    HandBookPanelBannerPath: string;
+    RankIconPathList: string[];
+}
+
+export interface PeakMazeConfig {
+    ID: number;
+    Name: Record<string, string>;
+    BattleTarget: BattleTarget[];
     DamageType: string[];
-    MazeGroupID: number;
-    NpcMonsterIDList: number[];
-    EventIDList: EventStageDetail[];
-    TagList: ChallengeTag[];
-    InfiniteList: Record<string, InfiniteWave>;
+    MazeBuff: MazeBuff[];
+    TurnLimit: number;
+    EventList: PeakEvent[];
 }
 
-export interface BossConfig {
-    HardName: string;
-    BuffList: ChallengeTag[];
-    EventIDList: EventStageDetail[];
-    TagList: ChallengeTag[];
-    InfiniteList: Record<string, InfiniteWave>;
+export interface PeakBossConfig {
+    ID: number;
+    Name: Record<string, string>;
+    BuffList: MazeBuff[];
+    BattleTarget: BattleTarget[];
+    MazeBuff: MazeBuff[];
+    TurnLimit: number;
+    EventList: PeakEvent[];
 }
 
-export interface ChallengeTag {
-    Id: number;
-    Name: string;
-    Desc: string;
-    Param: number[];
+export interface PeakEvent {
+    ID: number;
+    Name: Record<string, string>;
+    HardLevelGroup: number;
+    EliteGroup: number;
+    Level: number;
+    Release: boolean;
+    MonsterList: number[][];
+    Infinite: InfiniteWave[] | null;
 }
-

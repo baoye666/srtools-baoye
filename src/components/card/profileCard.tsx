@@ -3,14 +3,15 @@
 import React from 'react';
 import { AvatarProfileCardType } from '@/types';
 import useLocaleStore from '@/stores/localeStore';
-import useLightconeStore from '@/stores/lightconeStore';
 import Image from 'next/image';
 import ParseText from '../parseText';
+import useDetailDataStore from '@/stores/detailDataStore';
+import { getLocaleName } from '@/helper/getName';
 
 
 export default function ProfileCard({ profile, selectedProfile, onProfileToggle }: { profile: AvatarProfileCardType, selectedProfile: AvatarProfileCardType[], onProfileToggle: (profileId: AvatarProfileCardType) => void }) {
     const isSelected = selectedProfile.some((selectedProfile) => selectedProfile.key === profile.key);
-    const { mapLightconeInfo } = useLightconeStore();
+    const { mapLightCone } = useDetailDataStore();
     const { locale } = useLocaleStore();
 
     return (
@@ -30,7 +31,7 @@ export default function ProfileCard({ profile, selectedProfile, onProfileToggle 
                             unoptimized
                             crossOrigin="anonymous"
                             src={`${process.env.CDN_URL}/spriteoutput/lightconemaxfigures/${profile.lightcone.item_id}.png`}
-                            alt={mapLightconeInfo[profile.lightcone.item_id.toString()]?.Name}
+                            alt={getLocaleName(locale, mapLightCone[profile.lightcone.item_id.toString()]?.Name)}
                             width={348}
                             height={408}
                             className="w-full h-full object-contain rounded-lg"
@@ -41,7 +42,7 @@ export default function ProfileCard({ profile, selectedProfile, onProfileToggle 
                         <div className="text-center">
                             <div className="text-lg font-bold">
                                 <ParseText
-                                    text={mapLightconeInfo[profile.lightcone.item_id.toString()]?.Name}
+                                    text={getLocaleName(locale, mapLightCone[profile.lightcone.item_id.toString()]?.Name)}
                                     locale={locale}
                                 />
                             </div>
@@ -59,7 +60,7 @@ export default function ProfileCard({ profile, selectedProfile, onProfileToggle 
                                 <Image
                                     unoptimized
                                     crossOrigin="anonymous"
-                                    src={`${process.env.CDN_URL}/spriteoutput/relicfigures/IconRelic_${relic.relic_set_id}_${relic.relic_id.toString()[relic.relic_id.toString().length - 1]}.webp`}
+                                    src={`${process.env.CDN_URL}/spriteoutput/relicfigures/IconRelic_${relic.relic_set_id}_${relic.relic_id.toString()[relic.relic_id.toString().length - 1]}.png`}
                                     alt="Relic"
                                     width={124}
                                     height={124}

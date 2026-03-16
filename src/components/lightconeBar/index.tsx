@@ -1,58 +1,59 @@
 "use client"
 
-import { useEffect } from "react"
+import { useMemo } from "react"
 import Image from "next/image";
 import useLocaleStore from "@/stores/localeStore"
-import useLightconeStore from "@/stores/lightconeStore";
 import LightconeCard from "../card/lightconeCard";
 import useUserDataStore from "@/stores/userDataStore";
-import useAvatarStore from "@/stores/avatarStore";
 import useModelStore from "@/stores/modelStore";
 import { useTranslations } from "next-intl";
+import useCurrentDataStore from "@/stores/currentDataStore";
+import useDetailDataStore from "@/stores/detailDataStore";
+import { calcRarity, getLocaleName } from "@/helper";
 
 export default function LightconeBar() {
     const { locale } = useLocaleStore()
     const {
-        listLightcone,
-        filter,
-        setFilter,
-        defaultFilter,
-        listPath,
-        listRank,
-        setListPath,
-        setListRank
-    } = useLightconeStore()
+        avatarSelected,
+        mapLightconePathActive,
+        mapLightconeRankActive,
+        setMapLightconePathActive,
+        setMapLightconeRankActive,
+        lightconeSearch,
+        setLightconeSearch
+    } = useCurrentDataStore()
     const { setAvatar, avatars } = useUserDataStore()
-    const { avatarSelected } = useAvatarStore()
     const { setIsOpenLightcone } = useModelStore()
+    const { mapLightCone, baseType } = useDetailDataStore()
     const transI18n = useTranslations("DataPage")
 
-    useEffect(() => {
-        const newListPath: Record<string, boolean> = { "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false, "elation": false }
-        const newListRank: Record<string, boolean> = { "3": false, "4": false, "5": false }
-        for (const path of defaultFilter.path) {
-            if (path in newListPath) {
-                newListPath[path] = true
-            }
-        }
-        for (const rarity of defaultFilter.rarity) {
-            if (rarity in newListRank) {
-                newListRank[rarity] = true
-            }
-        }
-        setListPath(newListPath)
-        setListRank(newListRank)
-    }, [defaultFilter, setListPath, setListRank])
+    const listLightcone = useMemo(() => {
+        if (!mapLightCone || !locale) return []
 
-    useEffect(() => {
-        setFilter({
-            ...filter,
-            locale: locale,
-            path: Object.keys(listPath).filter((key) => listPath[key]),
-            rarity: Object.keys(listRank).filter((key) => listRank[key])
+        let list = Object.values(mapLightCone)
+
+        if (lightconeSearch) {
+            list = list.filter(item => getLocaleName(locale, item.Name).toLowerCase().includes(lightconeSearch.toLowerCase()))
+        }
+
+        const allRankFalse = !Object.values(mapLightconeRankActive).some(v => v)
+        const allPathFalse = !Object.values(mapLightconePathActive).some(v => v)
+
+        list = list.filter(item =>
+            (allRankFalse || mapLightconeRankActive[item.Rarity]) &&
+            (allPathFalse || mapLightconePathActive[item.BaseType])
+        )
+        
+        list.sort((a, b) => {
+            const r = calcRarity(b.Rarity) - calcRarity(a.Rarity)
+            if (r !== 0) return r
+            return a.ID - b.ID
         })
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [listPath, listRank, locale])
+
+        return list
+    }, [mapLightCone, mapLightconePathActive, mapLightconeRankActive, lightconeSearch, locale])
+
+  
 
     return (
         <div>
@@ -65,8 +66,8 @@ export default function LightconeBar() {
                 <div className="flex items-start flex-col gap-2">
                     <div>Search</div>
                     <input
-                        value={filter.name}
-                        onChange={(e) => setFilter({ ...filter, name: e.target.value, locale: locale })}
+                        value={lightconeSearch}
+                        onChange={(e) => setLightconeSearch(e.target.value)}
                         type="text" placeholder="LightCone Name" className="input input-accent mt-1 w-full"
                     />
                 </div>
@@ -74,21 +75,21 @@ export default function LightconeBar() {
                     <div>Filter</div>
                     <div className="flex flex-row flex-wrap justify-between mt-1 w-full">
                         <div className="flex flex-wrap mb-1 mx-1 gap-2">
-                            {Object.keys(listPath).map((key, index) => (
+                            {Object.entries(baseType).map(([key, value]) => (
                                 <div
-                                    key={index}
+                                    key={key}
                                     onClick={() => {
-                                        setListPath({ ...listPath, [key]: !listPath[key] })
+                                        setMapLightconePathActive({ ...mapLightconePathActive, [key]: !mapLightconePathActive[key] })
                                     }}
                                     className="h-9.5 w-9.5 md:h-12.5 md:w-12.5 hover:bg-gray-600 grid place-items-center rounded-md shadow-lg cursor-pointer"
                                     style={{
-                                        backgroundColor: listPath[key] ? "#374151" : "#6B7280"
+                                        backgroundColor: mapLightconePathActive[key] ? "#374151" : "#6B7280"
                                     }}
                                 >
                                     <Image
                                         unoptimized
                                         crossOrigin="anonymous"
-                                        src={`/icon/${key}.webp`}
+                                        src={`${process.env.CDN_URL}/${value.Icon}`}
                                         alt={key}
                                         className="h-7 w-7 md:h-8 md:w-8 object-contain rounded-md"
                                         width={200}
@@ -99,15 +100,15 @@ export default function LightconeBar() {
                         </div>
 
                         <div className="flex flex-wrap mb-1 mx-1 gap-2">
-                            {Object.keys(listRank).map((key, index) => (
+                            {Object.keys(mapLightconeRankActive).map((key, index) => (
                                 <div
                                     key={index}
                                     onClick={() => {
-                                        setListRank({ ...listRank, [key]: !listRank[key] })
+                                        setMapLightconeRankActive({ ...mapLightconeRankActive, [key]: !mapLightconeRankActive[key] })
                                     }}
                                     className="h-9.5 w-9.5 md:h-12.5 md:w-12.5 hover:bg-gray-600 grid place-items-center rounded-md shadow-lg cursor-pointer"
                                     style={{
-                                        backgroundColor: listRank[key] ? "#374151" : "#6B7280"
+                                        backgroundColor: mapLightconeRankActive[key] ? "#374151" : "#6B7280"
                                     }}
                                 >
                                     <div className="font-bold text-white h-8 w-8 text-center flex items-center justify-center">
@@ -124,10 +125,10 @@ export default function LightconeBar() {
                 {listLightcone.map((item, index) => (
                     <div key={index} onClick={() => {
                         if (avatarSelected) {
-                            const avatar = avatars[avatarSelected.id]
+                            const avatar = avatars[avatarSelected?.ID?.toString()]
                             avatar.profileList[avatar.profileSelect].lightcone = {
                                 level: 80,
-                                item_id: Number(item.id),
+                                item_id: item.ID,
                                 rank: 1,
                                 promotion: 6
                             }

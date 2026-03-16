@@ -1,12 +1,9 @@
-import { AvatarProfileCardType, CharacterBasic, FilterAvatarType } from '@/types';
+import { AvatarDetail, AvatarProfileCardType, BaseTypeData, DamageTypeData } from '@/types';
 import { create } from 'zustand'
 
 interface CopyProfileState {
     selectedProfiles: AvatarProfileCardType[];
-    listCopyAvatar: CharacterBasic[];
-    listRawCopyAvatar: CharacterBasic[];
-    filterCopy: FilterAvatarType;
-    avatarCopySelected: CharacterBasic | null;
+    avatarCopySelected: AvatarDetail | null;
     listElement: Record<string, boolean>;
     listPath: Record<string, boolean>;
     listRank: Record<string, boolean>;
@@ -14,60 +11,31 @@ interface CopyProfileState {
     setListPath: (newListPath: Record<string, boolean>) => void;
     setListRank: (newListRank: Record<string, boolean>) => void;
     setSelectedProfiles: (newListAvatar: AvatarProfileCardType[]) => void;
-    setAvatarCopySelected: (newAvatarSelected: CharacterBasic | null) => void;
-    setFilterCopy: (newFilter: FilterAvatarType) => void;
-    setListCopyAvatar: (newListAvatar: CharacterBasic[]) => void;
+    setAvatarCopySelected: (newAvatarSelected: AvatarDetail | null) => void;
+    setResetData: (baseType: Record<string, BaseTypeData>, damageType: Record<string, DamageTypeData>) => void;
 }
 
-const useCopyProfileStore = create<CopyProfileState>((set, get) => ({
+const useCopyProfileStore = create<CopyProfileState>((set) => ({
     selectedProfiles: [],
+    avatarCopySelected: null,
+    listElement: {},
+    listPath: {},
+    listRank: { "4": false, "5": false },
     listCopyAvatar: [],
     listRawCopyAvatar: [],
-    filterCopy: {
-        name: "",
-        path: [],
-        element: [],
-        rarity: [],
-        locale: "",
-    },
-    avatarCopySelected: null,
-    listElement: { "fire": false, "ice": false, "imaginary": false, "physical": false, "quantum": false, "thunder": false, "wind": false },
-    listPath: { "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false },
-    listRank: { "4": false, "5": false },
+    
     setListElement: (newListElement: Record<string, boolean>) => set({ listElement: newListElement }),
     setListPath: (newListPath: Record<string, boolean>) => set({ listPath: newListPath }),
     setListRank: (newListRank: Record<string, boolean>) => set({ listRank: newListRank }),
-    setListCopyAvatar: (newListAvatar: CharacterBasic[]) => set({ listCopyAvatar: newListAvatar, listRawCopyAvatar: newListAvatar }),
-    setAvatarCopySelected: (newAvatarSelected: CharacterBasic | null) => set({ avatarCopySelected: newAvatarSelected }),
-    setFilterCopy: (newFilter: FilterAvatarType) => {
-        set({ filterCopy: newFilter })
-        if (newFilter.locale === "") {
-            return
-        }
-        let filteredList = get().listRawCopyAvatar;
-        if (newFilter.name) {
-            filteredList = filteredList.filter((avatar) => {
-                return avatar.lang?.[newFilter.locale]?.toLowerCase().includes(newFilter.name.toLowerCase()) ?? false;
-            });
-        }
-        if (newFilter.path.length > 0) {
-            filteredList = filteredList.filter((avatar) => {
-                return newFilter.path.some((path) => avatar.baseType?.toLowerCase().includes(path.toLowerCase())) ?? false;
-            });
-        }
-        if (newFilter.element.length > 0) {
-            filteredList = filteredList.filter((avatar) => {
-                return newFilter.element.some((element) => avatar.damageType?.toLowerCase().includes(element.toLowerCase())) ?? false;
-            });
-        }
-        if (newFilter.rarity.length > 0) {
-            filteredList = filteredList.filter((avatar) => {
-                return newFilter.rarity.some((rarity) => avatar.rank?.toLowerCase().includes(rarity.toLowerCase())) ?? false;
-            });
-        }
-        set({ listCopyAvatar: filteredList });
-    },
+    setAvatarCopySelected: (newAvatarSelected: AvatarDetail | null) => set({ avatarCopySelected: newAvatarSelected }),
     setSelectedProfiles: (newListAvatar: AvatarProfileCardType[]) => set({ selectedProfiles: newListAvatar }),
+    setResetData: (baseType: Record<string, BaseTypeData>, damageType: Record<string, DamageTypeData>) => {
+        set({ 
+            listElement: Object.fromEntries(Object.keys(damageType).map(key => [key, false])) as Record<string, boolean>,
+            listPath: Object.fromEntries(Object.keys(baseType).map(key => [key, false])) as Record<string, boolean>,
+            listRank: { "4": false, "5": false }
+        })
+    }
 }));
 
 export default useCopyProfileStore;

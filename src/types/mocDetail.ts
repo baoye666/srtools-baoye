@@ -1,50 +1,49 @@
-export interface MocDetail {
-    Id: number
-    Name: string
-    GroupName: string
-    Desc: string
-    Param: number[]
-    Challenge: ChallengeDetail[]
-    Countdown: number
-    DamageType1: string[]
-    DamageType2: string[]
-    MazeGroupID1: number
-    MazeGroupID2: number
-    NpcMonsterIDList1: number[]
-    NpcMonsterIDList2: number[]
-    EventIDList1: EventStageDetail[]
-    EventIDList2: EventStageDetail[]
-    BeginTime: string
-    EndTime: string
+import { InfiniteWave, MazeBuff } from "./pfDetail";
+
+export interface MOCGroupDetail {
+    ID: number;
+    ChallengeGroupType: string;
+    Name: Record<string, string>;
+    Image: MoCImage;
+    BeginTime: string;
+    EndTime: string;
+    Level: MoCLevel[];
 }
 
-export interface ChallengeDetail {
-    Name: string
-    Param?: number | null
+export interface MoCImage {
+    BackGroundPath: string;
+    TabPicPath: string;
+    TabPicSelectPath: string;
+    ThemePicPath: string;
 }
 
-export interface EventStageDetail {
-    StageID: number
-    StageType: string
-    StageName: number
-    HardLevelGroup: number
-    Level: number
-    EliteGroup?: number
-    LevelGraphPath: string
-    StageAbilityConfig: unknown[]
-    BattleScoringGroup?: number | null
-    SubLevelGraphs: unknown[]
-    StageConfigData: StageConfig[]
-    MonsterList: Record<string, number>[]
-    LevelLoseCondition: string[]
-    LevelWinCondition: string[]
-    Release: boolean
-    ForbidExitBattle: boolean
-    MonsterWarningRatio?: number | null
-    TrialAvatarList: unknown[]
-}
-export interface StageConfig {
-    $type: string
-    [key: string]: string
+export interface MoCLevel {
+    Floor: number;
+    ID: number;
+    StageNum: number;
+    Name: Record<string, string>;
+    Target: MoCTarget[];
+    TurnLimit: number;
+    DamageType1: string[];
+    DamageType2: string[];
+    MazeBuff: MazeBuff[];
+    EventList1: MoCEvent[];
+    EventList2: MoCEvent[];
 }
 
+export interface MoCTarget {
+    ID: number;
+    Name: Record<string, string>;
+    Param: number[];
+}
+
+export interface MoCEvent {
+    ID: number;
+    Name: Record<string, string>;
+    HardLevelGroup: number;
+    EliteGroup: number;
+    Level: number;
+    Release: boolean;
+    MonsterList: number[][];
+    Infinite: InfiniteWave[] | null;
+}

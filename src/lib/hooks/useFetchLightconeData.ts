@@ -1,46 +1,25 @@
 "use client"
 import { useQuery } from '@tanstack/react-query'
-import { fetchLightconesApi, getLightconeListApi } from '@/lib/api'
+import { getLightconeListApi } from '@/lib/api';
 import { useEffect } from 'react'
-import useLightconeStore from '@/stores/lightconeStore'
-import { listCurrentLanguageApi } from '@/constant/constant'
-import useLocaleStore from '@/stores/localeStore'
 import { toast } from 'react-toastify'
+import useDetailDataStore from '@/stores/detailDataStore';
 
 export const useFetchLightconeData = () => {
-    const { setListLightcone, setAllMapLightconeInfo } = useLightconeStore()
-    const { locale } = useLocaleStore()
-    const { data: dataLightcone, error: errorLightcone } = useQuery({
+    const { setMapLightCone } = useDetailDataStore()
+    const query = useQuery({
         queryKey: ['lightconeData'],
         queryFn: getLightconeListApi,
-        select: (data) => data.sort((a, b) => Number(b.id) - Number(a.id)),
         staleTime: 1000 * 60 * 5,
     })
 
-    const { data: dataLightconeInfo, error: errorLightconeInfo } = useQuery({
-        queryKey: ['lightconeInfoData', locale],
-        queryFn: () =>
-            fetchLightconesApi(
-                listCurrentLanguageApi[locale.toLowerCase()]
-            ),
-        staleTime: 1000 * 60 * 5,
-        enabled: !!dataLightcone,
-    });
-
     useEffect(() => {
-        if (dataLightcone && !errorLightcone) {
-            setListLightcone(dataLightcone)
-        } else if (errorLightcone) {
+        if (query.data && !query.error) {
+            setMapLightCone(query.data)
+        } else if (query.error) {
             toast.error("Failed to load lightcone data")
         }
-    }, [dataLightcone, errorLightcone, setListLightcone])
+    }, [query.data, query.error, setMapLightCone])
 
-    useEffect(() => {
-        if (dataLightconeInfo && !errorLightconeInfo) {
-            setAllMapLightconeInfo(dataLightconeInfo)
-        } else if (errorLightconeInfo) {
-            toast.error("Failed to load lightcone info data")
-        }
-
-    }, [dataLightconeInfo, errorLightconeInfo, setAllMapLightconeInfo])
+    return query
 }

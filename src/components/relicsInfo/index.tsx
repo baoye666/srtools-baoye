@@ -6,18 +6,18 @@ import { motion } from "framer-motion";
 import useUserDataStore from "@/stores/userDataStore";
 import { useTranslations } from "next-intl";
 import RelicCard from "../card/relicCard";
-import useAvatarStore from "@/stores/avatarStore";
-import useRelicStore from "@/stores/relicStore";
 import useModelStore from '@/stores/modelStore';
 import { replaceByParam } from '@/helper';
 import useRelicMakerStore from '@/stores/relicMakerStore';
-import useAffixStore from '@/stores/affixStore';
 import QuickView from "../quickView";
 import { ModalConfig } from "@/types";
+import useCurrentDataStore from "@/stores/currentDataStore";
+import useDetailDataStore from "@/stores/detailDataStore";
+import { getLocaleName } from '@/helper';
+import useLocaleStore from "@/stores/localeStore";
 
 export default function RelicsInfo() {
   const { avatars, setAvatars } = useUserDataStore()
-  const { avatarSelected } = useAvatarStore()
   const {
     setSelectedRelicSlot,
     selectedRelicSlot,
@@ -29,7 +29,7 @@ export default function RelicsInfo() {
     resetSubStat,
     listSelectedSubStats,
   } = useRelicMakerStore()
-  const { mapSubAffix } = useAffixStore()
+
   const {
     isOpenRelic,
     setIsOpenRelic,
@@ -37,9 +37,10 @@ export default function RelicsInfo() {
     setIsOpenQuickView
   } = useModelStore()
   const transI18n = useTranslations("DataPage")
-
-  const { mapRelicInfo } = useRelicStore()
-
+  const { avatarSelected } = useCurrentDataStore()
+  const { mapRelicSet, subAffix } = useDetailDataStore()
+  const { locale } = useLocaleStore()
+  
   const handleShow = (modalId: string) => {
     const modal = document.getElementById(modalId) as HTMLDialogElement | null;
     if (modal) {
@@ -56,8 +57,8 @@ export default function RelicsInfo() {
   };
 
 
-    const getRelic = useCallback((slot: string) => {
-    const avatar = avatars[avatarSelected?.id || ""];
+  const getRelic = useCallback((slot: string) => {
+    const avatar = avatars[avatarSelected?.ID.toString() || ""];
     if (avatar) {
       return avatar.profileList[avatar.profileSelect]?.relics[slot] || null;
     }
@@ -65,7 +66,7 @@ export default function RelicsInfo() {
   }, [avatars, avatarSelected]);
 
   const handlerDeleteRelic = (slot: string) => {
-    const avatar = avatars[avatarSelected?.id || ""];
+    const avatar = avatars[avatarSelected?.ID.toString() || ""];
     if (avatar) {
       delete avatar.profileList[avatar.profileSelect].relics[slot]
       setAvatars({ ...avatars });
@@ -84,7 +85,7 @@ export default function RelicsInfo() {
       const newSubAffixes: { affixId: string, property: string, rollCount: number, stepCount: number }[] = [...listSelectedSubStats];
       relic.sub_affixes.forEach((item, index) => {
         newSubAffixes[index].affixId = item.sub_affix_id.toString();
-        newSubAffixes[index].property = mapSubAffix["5"][item.sub_affix_id.toString()]?.property || "";
+        newSubAffixes[index].property = subAffix["5"][item.sub_affix_id.toString()]?.Property || "";
         newSubAffixes[index].rollCount = item.count || 0;
         newSubAffixes[index].stepCount = item.step || 0;
       })
@@ -108,7 +109,7 @@ export default function RelicsInfo() {
   }
 
   const relicEffects = useMemo(() => {
-    const avatar = avatars[avatarSelected?.id || ""];
+    const avatar = avatars[avatarSelected?.ID.toString() || ""];
     const relicCount: { [key: string]: number } = {};
     if (avatar) {
       for (const relic of Object.values(avatar.profileList[avatar.profileSelect].relics)) {
@@ -199,7 +200,7 @@ export default function RelicsInfo() {
                     >
                       <RelicCard
                         slot={item}
-                        avatarId={avatarSelected?.id || ""}
+                        avatarId={avatarSelected?.ID.toString() || ""}
                       />
                     </div>
 
@@ -284,7 +285,7 @@ export default function RelicsInfo() {
 
               <div className="space-y-6">
                 {relicEffects.map((setEffect, index) => {
-                  const relicInfo = mapRelicInfo[setEffect.key];
+                  const relicInfo = mapRelicSet[setEffect.key];
                   if (!relicInfo) return null;
                   return (
                     <div key={index} className="space-y-3">
@@ -293,7 +294,7 @@ export default function RelicsInfo() {
                           className="font-bold text-warning"
                           dangerouslySetInnerHTML={{
                             __html: replaceByParam(
-                              relicInfo.Name,
+                              getLocaleName(locale, relicInfo.Name),
                               []
                             )
                           }}
@@ -306,7 +307,7 @@ export default function RelicsInfo() {
                       </div>
 
                       <div className="space-y-2 pl-4">
-                        {Object.entries(relicInfo.RequireNum).map(([requireNum, value]) => {
+                        {Object.entries(relicInfo.Skills).map(([requireNum, value]) => {
                           if (Number(requireNum) > Number(setEffect.count)) return null;
                           return (
                             <div key={requireNum} className="space-y-1">
@@ -317,8 +318,8 @@ export default function RelicsInfo() {
                                 className="text-sm text-base-content/80 leading-relaxed pl-4"
                                 dangerouslySetInnerHTML={{
                                   __html: replaceByParam(
-                                    value.Desc,
-                                    value.ParamList || []
+                                    getLocaleName(locale, value.Desc),
+                                    value.Param || []
                                   )
                                 }}
                               />

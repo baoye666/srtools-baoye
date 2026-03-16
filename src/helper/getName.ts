@@ -1,5 +1,5 @@
 import { listCurrentLanguage } from "@/constant/constant";
-import { CharacterBasic, EventBasic, LightConeBasic, MonsterBasic } from "@/types";
+import { AvatarDetail } from "@/types";
 import { useTranslations } from "next-intl"
 
 type TFunc = ReturnType<typeof useTranslations>
@@ -7,7 +7,7 @@ type TFunc = ReturnType<typeof useTranslations>
 export function getNameChar(
   locale: string,
   t: TFunc,
-  data: CharacterBasic | undefined
+  data: AvatarDetail | undefined
 ): string {
   if (!data) return "";
 
@@ -17,20 +17,20 @@ export function getNameChar(
 
   const langKey = listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase();
 
-  let text = data.lang[langKey] ?? "";
+  let text = data.Name[langKey] ?? "";
 
   if (!text) {
-    text = data.lang["en"] ?? "";
+    text = data.Name["en"] ?? "";
   }
 
-  if (Number(data.id) > 8000) {
-    text = `${t("trailblazer")} • ${t(data?.baseType?.toLowerCase() ?? "")}`;
+  if (data.ID > 8000) {
+    text = `${t("trailblazer")} • ${t(data?.BaseType?.toLowerCase() ?? "")}`;
   }
 
   return text;
 }
 
-export function getLocaleName(locale: string, data: LightConeBasic | EventBasic | MonsterBasic | undefined): string {
+export function getLocaleName(locale: string, data: Record<string, string> | undefined | null): string {
     if (!data) {
         return ""
     }
@@ -41,10 +41,10 @@ export function getLocaleName(locale: string, data: LightConeBasic | EventBasic 
     const langKey = listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase();
 
 
-    let text = data.lang[langKey] ?? "";
+    let text = data[langKey] ?? "";
 
     if (!text) {
-        text = data.lang["en"] ?? "";
+        text = data["en"] ?? "";
     }
     return text
 }

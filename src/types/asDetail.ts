@@ -1,70 +1,124 @@
-import { ChallengeDetail, EventStageDetail } from "./mocDetail"
-import { BuffDetail, OptionDetail } from "./pfDetail"
+import { ExtraEffect } from "./avatarDetail";
+import { InfiniteWave, MazeBuff } from "./pfDetail";
 
-export interface ASDetail {
-    Id: number
-    Name: string
-    Buff?: BuffDetail
-    BuffList1: OptionDetail[]
-    BuffList2: OptionDetail[]
-    BeginTime: string
-    EndTime: string
-    Level: ASLevel[]
+export interface ASGroupDetail {
+    ID: number;
+    ChallengeGroupType: string;
+    Name: Record<string, string>;
+    Image: ASGroupImage;
+    BeginTime: string;
+    EndTime: string;
+    BuffList1: ASBuff[];
+    BuffList2: ASBuff[];
+    Level: ASLevel[];
+}
+
+export interface ASGroupImage {
+    BackGroundPath: string;
+    TabPicPath: string;
+    TabPicSelectPath: string;
+    ThemePicPath: string;
+}
+
+export interface ASBuff {
+    ID: number;
+    Param: number[];
+    Icon: string;
+    Name: Record<string, string>;
+    Desc: Record<string, string>;
+    ExtraList?: ExtraEffect[];
 }
 
 export interface ASLevel {
-    Id: number
-    Name: string
-    Challenge: ChallengeDetail[]
-    DamageType1: string[]
-    DamageType2: string[]
-    MazeGroupID1: number
-    MazeGroupID2: number
-    BossMonsterID1: number
-    BossMonsterID2: number
-    BossMonsterID1SkillList: number[]
-    BossMonsterID2SkillList: number[]
-    BossMonsterConfig1: BossMonsterConfig
-    BossMonsterConfig2: BossMonsterConfig
-    EventIDList1: EventStageDetail[]
-    EventIDList2: EventStageDetail[]
+    Floor: number;
+    ID: number;
+    StageNum: number;
+    Name: Record<string, string>;
+    Target: ASTarget[];
+    DamageType1: string[];
+    DamageType2: string[];
+    MazeBuff: MazeBuff[];
+    TurnLimit: number;
+    EventList1: ASEvent[];
+    EventList2: ASEvent[];
+    Monster1: ASMonster;
+    Monster2: ASMonster;
 }
 
-export interface BossMonsterConfig {
-    Difficulty: number
-    DifficultyList: number[]
-    TagList: BossTag[]
-    DifficultyGuideList: BossDifficultyGuide[]
-    TextGuideList: string[]
-    PhaseList: BossPhase[]
+export interface ASTarget {
+    ID: number;
+    Name: Record<string, string>;
+    Param: number[];
 }
 
-export interface BossTag {
-    Name: string
-    Desc: string
-    Param: number[]
-    SkillID?: number | null
-    ParamFix: number[]
-    Child: BossChildTag[]
+export interface ASEvent {
+    ID: number;
+    Name: Record<string, string>;
+    HardLevelGroup: number;
+    EliteGroup: number;
+    Level: number;
+    Release: boolean;
+    MonsterList: number[][];
+    Infinite: InfiniteWave[] | null;
 }
 
-export interface BossChildTag {
-    Name: string
-    Desc: string
-    Param: number[]
+export interface ASMonster {
+    ID: number;
+    Tag: ASTag[];
+    Phase: ASPhase[];
+    DifficultyGuide: ASDifficultyGuide[];
+    TextGuide: ASTextGuide[];
 }
 
-export interface BossDifficultyGuide {
-    Desc: string
-    Param: number[]
-    SkillID?: number | null
-    ParamFix: number[]
+export interface ASTag {
+    ID: number;
+    Name: Record<string, string>;
+    BriefDescription: Record<string, string>;
+    Param: number[];
+    SkillID: number | null;
+    Effect: ASEffect[];
 }
 
-export interface BossPhase {
-    Name: string
-    Desc: string
-    Answer: string
-    Difficulty: number
-    SkillList: number[]
+export interface ASEffect {
+    ID: number;
+    Desc: Record<string, string>;
+    Name: Record<string, string>;
+    Icon: string;
+    Param: number[];
+    EffectType: number;
+}
+
+export interface ASPhase {
+    ID: number;
+    Name: Record<string, string>;
+    Answer: Record<string, string>;
+    Description: Record<string, string>;
+    SkillList: ASSkillList[];
+}
+
+export interface ASSkillList {
+    ID: number;
+    SkillType: string;
+    Name: Record<string, string>;
+    TextList: ASTextList[];
+}
+
+export interface ASTextList {
+    ID: number;
+    Description: Record<string, string>;
+    Param: number[];
+    Effect: ASEffect[];
+}
+
+export interface ASDifficultyGuide {
+    ID: number;
+    Description: Record<string, string>;
+    Param: number[];
+    SkillID: number | null;
+}
+
+export interface ASTextGuide {
+    ID: number;
+    Description: Record<string, string>;
+    Param: number[];
 }

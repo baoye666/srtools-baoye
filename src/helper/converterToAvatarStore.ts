@@ -1,4 +1,4 @@
-import { AvatarEnkaDetail, AvatarProfileStore, AvatarStore, CharacterDetail, FreeSRJson, RelicStore } from "@/types";
+import { AvatarEnkaDetail, AvatarProfileStore, AvatarStore, AvatarDetail, FreeSRJson, RelicStore } from "@/types";
 
 function safeNumber(val: string | number | null, fallback = 0): number {
     if (!val) return fallback;
@@ -6,7 +6,7 @@ function safeNumber(val: string | number | null, fallback = 0): number {
     return Number.isFinite(num) && num !== 0 ? num : fallback;
 }
 
-export function converterToAvatarStore(data: Record<string, CharacterDetail>): { [key: string]: AvatarStore } {
+export function converterToAvatarStore(data: Record<string, AvatarDetail>): { [key: string]: AvatarStore } {
     return Object.fromEntries(
         Object.entries(data).map(([key, value]) => [
             key,

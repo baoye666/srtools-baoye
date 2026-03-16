@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState, useRef, useMemo, useCallback } from 'react';
-import useAvatarStore from "@/stores/avatarStore";
 import { FastAverageColor } from 'fast-average-color';
 import NextImage from 'next/image';
 import ParseText from '../parseText';
@@ -8,27 +7,24 @@ import useLocaleStore from '@/stores/localeStore';
 import { calcAffixBonus, calcBaseStat, calcBaseStatRaw, calcBonusStatRaw, calcMainAffixBonus, calcMainAffixBonusRaw, calcPromotion, calcSubAffixBonusRaw, convertToRoman, getNameChar, replaceByParam } from '@/helper';
 import useUserDataStore from '@/stores/userDataStore';
 import { traceShowCaseMap } from '@/constant/traceConstant';
-import { StatusAddType } from '@/types';
 import { mappingStats } from '@/constant/constant';
-import useLightconeStore from '@/stores/lightconeStore';
 import { useTranslations } from 'next-intl';
-import useAffixStore from '@/stores/affixStore';
-import useRelicStore from '@/stores/relicStore';
 import { toast } from 'react-toastify';
 import RelicShowcase from './relicShowcase';
+import useDetailDataStore from '@/stores/detailDataStore';
+import useCurrentDataStore from '@/stores/currentDataStore';
+import { getLocaleName } from '@/helper';
 
 
 export default function ShowCaseInfo() {
-  const { avatarSelected, mapAvatarInfo } = useAvatarStore()
-  const { mapLightconeInfo } = useLightconeStore()
-  const { mapMainAffix, mapSubAffix } = useAffixStore()
+  const { avatarSelected } = useCurrentDataStore()
+  const { mainAffix, subAffix, mapRelicSet, mapAvatar, mapLightCone, baseType, damageType } = useDetailDataStore()
   const { avatars } = useUserDataStore()
   const [avgColor, setAvgColor] = useState('#222');
   const imgRef = useRef(null);
   const cardRef = useRef(null)
   const { locale } = useLocaleStore()
   const transI18n = useTranslations("DataPage")
-  const { mapRelicInfo } = useRelicStore()
 
   const handleSaveImage = useCallback(() => {
     if (cardRef.current === null || !avatarSelected) {
@@ -52,25 +48,24 @@ export default function ShowCaseInfo() {
         link.click();
       })
       .catch((e) => {
-        console.log(e)
         toast.error("Error generating showcase card!");
       });
   }, [avatarSelected, locale, transI18n]);
 
   useEffect(() => {
-    if (!avatarSelected?.id) return;
+    if (!avatarSelected) return;
     const fac = new FastAverageColor();
     const img = new Image();
 
     img.crossOrigin = 'anonymous';
-    img.src = `${process.env.CDN_URL}/spriteoutput/avatardrawcard/${avatarSelected?.id}.png`;
+    img.src = `${process.env.CDN_URL}/${avatarSelected?.Image?.AvatarCutinFrontImgPath}`;
 
     img.onload = () => {
       fac.getColorAsync(img)
         .then((color) => {
           setAvgColor(color.hex);
         })
-        .catch(e => console.error("Vẫn lỗi CORS:", e));
+        .catch(e => console.error("Error:", e));
     };
     return () => {
       fac.destroy();
@@ -78,22 +73,17 @@ export default function ShowCaseInfo() {
     };
   }, [avatarSelected]);
 
-  const avatarInfo = useMemo(() => {
-    if (!avatarSelected) return
-    return mapAvatarInfo[avatarSelected.id]
-  }, [avatarSelected, mapAvatarInfo])
-
   const avatarSkillTree = useMemo(() => {
-    if (!avatarSelected || !avatars[avatarSelected.id]) return {}
-    if (avatars[avatarSelected.id].enhanced) {
-      return avatarInfo?.Enhanced[avatars[avatarSelected.id].enhanced.toString()].SkillTrees || {}
+    if (!avatarSelected || !avatars[avatarSelected?.ID?.toString()]) return {}
+    if (avatars[avatarSelected?.ID?.toString()].enhanced) {
+      return avatarSelected?.Enhanced?.[avatars[avatarSelected?.ID?.toString()].enhanced.toString()].SkillTrees || {}
     }
-    return avatarInfo?.SkillTrees || {}
-  }, [avatarSelected, avatarInfo, avatars])
+    return avatarSelected?.SkillTrees || {}
+  }, [avatarSelected, avatars])
 
   const avatarData = useMemo(() => {
     if (!avatarSelected) return
-    return avatars[avatarSelected.id]
+    return avatars[avatarSelected?.ID?.toString()]
   }, [avatarSelected, avatars])
 
   const avatarProfile = useMemo(() => {
@@ -102,23 +92,23 @@ export default function ShowCaseInfo() {
   }, [avatarSelected, avatarData])
 
   const lightconeStats = useMemo(() => {
-    if (!avatarSelected || !avatarProfile?.lightcone || !mapLightconeInfo[avatarProfile?.lightcone?.item_id]) return
+    if (!avatarSelected || !avatarProfile?.lightcone || !mapLightCone[avatarProfile?.lightcone?.item_id]) return
     const promotion = calcPromotion(avatarProfile?.lightcone?.level)
     const atkStat = calcBaseStat(
-      mapLightconeInfo[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseAttack,
-      mapLightconeInfo[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseAttackAdd,
+      mapLightCone[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseAttack,
+      mapLightCone[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseAttackAdd,
       0,
       avatarProfile?.lightcone?.level
     )
     const hpStat = calcBaseStat(
-      mapLightconeInfo[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseHP,
-      mapLightconeInfo[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseHPAdd,
+      mapLightCone[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseHP,
+      mapLightCone[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseHPAdd,
       0,
       avatarProfile?.lightcone?.level
     )
     const defStat = calcBaseStat(
-      mapLightconeInfo[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseDefence,
-      mapLightconeInfo[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseDefenceAdd,
+      mapLightCone[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseDefence,
+      mapLightCone[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseDefenceAdd,
       0,
       avatarProfile?.lightcone?.level
     )
@@ -127,10 +117,10 @@ export default function ShowCaseInfo() {
       hp: hpStat,
       def: defStat,
     }
-  }, [avatarSelected, mapLightconeInfo, avatarProfile])
+  }, [avatarSelected, mapLightCone, avatarProfile])
 
   const relicEffects = useMemo(() => {
-    const avatar = avatars[avatarSelected?.id || ""];
+    const avatar = avatars[avatarSelected?.ID?.toString() || ""];
     const relicCount: { [key: string]: number } = {};
     if (avatar) {
       for (const relic of Object.values(avatar.profileList[avatar.profileSelect].relics)) {
@@ -151,45 +141,45 @@ export default function ShowCaseInfo() {
   }, [avatars, avatarSelected]);
 
   const relicStats = useMemo(() => {
-    if (!avatarSelected || !avatarProfile?.relics || !mapMainAffix || !mapSubAffix) return
+    if (!avatarSelected || !avatarProfile?.relics || !mainAffix || !subAffix) return
 
     return Object.entries(avatarProfile?.relics).map(([key, value]) => {
-      const mainAffixMap = mapMainAffix["5" + key]
-      const subAffixMap = mapSubAffix["5"]
+      const mainAffixMap = mainAffix["5" + key]
+      const subAffixMap = subAffix["5"]
       if (!mainAffixMap || !subAffixMap) return
       return {
         img: `${process.env.CDN_URL}/spriteoutput/relicfigures/IconRelic_${value.relic_set_id}_${key}.png`,
         mainAffix: {
-          property: mainAffixMap?.[value?.main_affix_id]?.property,
+          property: mainAffixMap?.[value?.main_affix_id]?.Property,
           level: value?.level,
           valueAffix: calcMainAffixBonus(mainAffixMap?.[value?.main_affix_id], value?.level),
-          detail: mappingStats?.[mainAffixMap?.[value?.main_affix_id]?.property]
+          detail: mappingStats?.[mainAffixMap?.[value?.main_affix_id]?.Property]
         },
         subAffix: value?.sub_affixes?.map((subValue) => {
           return {
-            property: subAffixMap?.[subValue?.sub_affix_id]?.property,
+            property: subAffixMap?.[subValue?.sub_affix_id]?.Property,
             valueAffix: calcAffixBonus(subAffixMap?.[subValue?.sub_affix_id], subValue?.step, subValue?.count),
-            detail: mappingStats?.[subAffixMap?.[subValue?.sub_affix_id]?.property],
+            detail: mappingStats?.[subAffixMap?.[subValue?.sub_affix_id]?.Property],
             step: subValue?.step,
             count: subValue?.count
           }
         })
       }
     })
-  }, [avatarSelected, avatarProfile, mapMainAffix, mapSubAffix])
+  }, [avatarSelected, avatarProfile, mainAffix, subAffix])
 
   const totalSubStats = useMemo(() => {
     if (!relicStats?.length) return 0
     return (relicStats ?? []).reduce((acc, relic) => {
       const subAffixList = relic?.subAffix ?? []
       return acc + subAffixList.reduce((subAcc, subAffix) => {
-        if (avatarInfo?.Relics?.SubAffixPropertyList.findIndex(it => it === subAffix.property) !== -1) {
+        if (avatarSelected?.Relics?.SubAffixPropertyList.findIndex(it => it === subAffix.property) !== -1) {
           return subAcc + (subAffix?.count ?? 0)
         }
         return subAcc
       }, 0)
     }, 0)
-  }, [relicStats, avatarInfo])
+  }, [relicStats, avatarSelected])
 
   const characterStats = useMemo(() => {
     if (!avatarSelected || !avatarData) return
@@ -205,73 +195,73 @@ export default function ShowCaseInfo() {
     }> = {
       HP: {
         value: calcBaseStatRaw(
-          mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.HPBase,
-          mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.HPAdd,
+          mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.HPBase,
+          mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.HPAdd,
           avatarData.level
         ),
         base: calcBaseStatRaw(
-          mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.HPBase,
-          mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.HPAdd,
+          mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.HPBase,
+          mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.HPAdd,
           avatarData.level
         ),
         name: "HP",
-        icon: "/icon/hp.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconMaxHP.png",
         unit: "",
         round: 0
       },
       ATK: {
         value: calcBaseStatRaw(
-          mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.AttackBase,
-          mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.AttackAdd,
+          mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.AttackBase,
+          mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.AttackAdd,
           avatarData.level
         ),
         base: calcBaseStatRaw(
-          mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.AttackBase,
-          mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.AttackAdd,
+          mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.AttackBase,
+          mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.AttackAdd,
           avatarData.level
         ),
         name: "ATK",
-        icon: "/icon/attack.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconAttack.png",
         unit: "",
         round: 0
       },
       DEF: {
         value: calcBaseStatRaw(
-          mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.DefenceBase,
-          mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.DefenceAdd,
+          mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.DefenceBase,
+          mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.DefenceAdd,
           avatarData.level
         ),
         base: calcBaseStatRaw(
-          mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.DefenceBase,
-          mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.DefenceAdd,
+          mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.DefenceBase,
+          mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.DefenceAdd,
           avatarData.level
         ),
         name: "DEF",
-        icon: "/icon/defence.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconDefence.png",
         unit: "",
         round: 0
       },
       SPD: {
-        value: mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.SpeedBase || 0,
-        base: mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.SpeedBase || 0,
+        value: mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.SpeedBase || 0,
+        base: mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.SpeedBase || 0,
         name: "SPD",
-        icon: "/icon/speed.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconSpeed.png",
         unit: "",
         round: 1
       },
       CRITRate: {
-        value: mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.CriticalChance || 0,
-        base: mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.CriticalChance || 0,
+        value: mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.CriticalChance || 0,
+        base: mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.CriticalChance || 0,
         name: "CRIT Rate",
-        icon: "/icon/crit-rate.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
         unit: "%",
         round: 1
       },
       CRITDmg: {
-        value: mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.CriticalDamage || 0,
-        base: mapAvatarInfo?.[avatarSelected.id]?.Stats[charPromotion]?.CriticalDamage || 0,
+        value: mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.CriticalDamage || 0,
+        base: mapAvatar?.[avatarSelected?.ID?.toString()]?.Stats[charPromotion]?.CriticalDamage || 0,
         name: "CRIT DMG",
-        icon: "/icon/crit-damage.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
         unit: "%",
         round: 1
       },
@@ -279,7 +269,7 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Break Effect",
-        icon: "/icon/break-effect.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconBreakUp.png",
         unit: "%",
         round: 1
       },
@@ -287,7 +277,7 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Effect RES",
-        icon: "/icon/effect-res.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
         unit: "%",
         round: 1
       },
@@ -295,7 +285,7 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Energy Rate",
-        icon: "/icon/energy-rate.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconEnergyRecovery.png",
         unit: "%",
         round: 1
       },
@@ -303,7 +293,7 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Effect Hit Rate",
-        icon: "/icon/effect-hit-rate.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
         unit: "%",
         round: 1
       },
@@ -311,7 +301,7 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Healing Boost",
-        icon: "/icon/healing-boost.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconHealRatio.png",
         unit: "%",
         round: 1
       },
@@ -319,7 +309,7 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Physical Boost",
-        icon: "/icon/physical-add.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconPhysicalAddedRatio.png",
         unit: "%",
         round: 1
       },
@@ -327,7 +317,7 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Fire Boost",
-        icon: "/icon/fire-add.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconFireAddedRatio.png",
         unit: "%",
         round: 1
       },
@@ -335,7 +325,7 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Ice Boost",
-        icon: "/icon/ice-add.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
         unit: "%",
         round: 1
       },
@@ -343,7 +333,7 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Thunder Boost",
-        icon: "/icon/thunder-add.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
         unit: "%",
         round: 1
       },
@@ -351,7 +341,7 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Wind Boost",
-        icon: "/icon/wind-add.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconWindAddedRatio.png",
         unit: "%",
         round: 1
       },
@@ -359,7 +349,7 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Quantum Boost",
-        icon: "/icon/quantum-add.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconQuantumAddedRatio.png",
         unit: "%",
         round: 1
       },
@@ -367,7 +357,7 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Imaginary Boost",
-        icon: "/icon/imaginary-add.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconImaginaryAddedRatio.png",
         unit: "%",
         round: 1
       },
@@ -375,57 +365,57 @@ export default function ShowCaseInfo() {
         value: 0,
         base: 0,
         name: "Elation Boost",
-        icon: "/icon/IconJoy.webp",
+        icon: "spriteoutput/ui/avatar/icon/IconJoy.png",
         unit: "%",
         round: 1
       }
     }
 
-    if (avatarProfile?.lightcone && mapLightconeInfo[avatarProfile?.lightcone?.item_id]) {
+    if (avatarProfile?.lightcone && mapLightCone[avatarProfile?.lightcone?.item_id]) {
       const lightconePromotion = calcPromotion(avatarProfile?.lightcone?.level)
       statsData.HP.value += calcBaseStatRaw(
-        mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHP,
-        mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHPAdd,
+        mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHP,
+        mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHPAdd,
         avatarProfile?.lightcone?.level
       )
       statsData.HP.base += calcBaseStatRaw(
-        mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHP,
-        mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHPAdd,
+        mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHP,
+        mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHPAdd,
         avatarProfile?.lightcone?.level
       )
       statsData.ATK.value += calcBaseStatRaw(
-        mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttack,
-        mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttackAdd,
+        mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttack,
+        mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttackAdd,
         avatarProfile?.lightcone?.level
       )
       statsData.ATK.base += calcBaseStatRaw(
-        mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttack,
-        mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttackAdd,
+        mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttack,
+        mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttackAdd,
         avatarProfile?.lightcone?.level
       )
       statsData.DEF.value += calcBaseStatRaw(
-        mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefence,
-        mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefenceAdd,
+        mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefence,
+        mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefenceAdd,
         avatarProfile?.lightcone?.level
       )
       statsData.DEF.base += calcBaseStatRaw(
-        mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefence,
-        mapLightconeInfo?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefenceAdd,
+        mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefence,
+        mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefenceAdd,
         avatarProfile?.lightcone?.level
       )
 
-      const bonusData = mapLightconeInfo[avatarProfile?.lightcone?.item_id].Bonus?.[avatarProfile?.lightcone.rank - 1]
+      const bonusData = mapLightCone[avatarProfile?.lightcone?.item_id]?.Skills?.Level?.[avatarProfile?.lightcone.rank]?.Bonus
       if (bonusData && bonusData.length > 0) {
-        const bonusSpd = bonusData.filter((bonus) => bonus.type === "BaseSpeed")
-        const bonusOther = bonusData.filter((bonus) => bonus.type !== "BaseSpeed")
+        const bonusSpd = bonusData.filter((bonus) => bonus.PropertyType === "BaseSpeed")
+        const bonusOther = bonusData.filter((bonus) => bonus.PropertyType !== "BaseSpeed")
         bonusSpd.forEach((bonus) => {
-          statsData.SPD.value += bonus.value
-          statsData.SPD.base += bonus.value
+          statsData.SPD.value += bonus.Value
+          statsData.SPD.base += bonus.Value
         })
         bonusOther.forEach((bonus) => {
-          const statsBase = mappingStats?.[bonus.type]?.baseStat
+          const statsBase = mappingStats?.[bonus.PropertyType]?.baseStat
           if (statsBase && statsData[statsBase]) {
-            statsData[statsBase].value += calcBonusStatRaw(bonus.type, statsData[statsBase].base, bonus.value)
+            statsData[statsBase].value += calcBonusStatRaw(bonus.PropertyType, statsData[statsBase].base, bonus.Value)
           }
         })
       }
@@ -448,19 +438,17 @@ export default function ShowCaseInfo() {
       })
     }
 
-
-
-    if (avatarProfile?.relics && mapMainAffix && mapSubAffix) {
+    if (avatarProfile?.relics && mainAffix && subAffix) {
       Object.entries(avatarProfile?.relics).forEach(([key, value]) => {
-        const mainAffixMap = mapMainAffix["5" + key]
-        const subAffixMap = mapSubAffix["5"]
+        const mainAffixMap = mainAffix["5" + key]
+        const subAffixMap = subAffix["5"]
         if (!mainAffixMap || !subAffixMap) return
-        const mainStats = mappingStats?.[mainAffixMap?.[value.main_affix_id]?.property]?.baseStat
+        const mainStats = mappingStats?.[mainAffixMap?.[value.main_affix_id]?.Property]?.baseStat
         if (mainStats && statsData[mainStats]) {
           statsData[mainStats].value += calcMainAffixBonusRaw(mainAffixMap?.[value.main_affix_id], value.level, statsData[mainStats].base)
         }
         value?.sub_affixes.forEach((subValue) => {
-          const subStats = mappingStats?.[subAffixMap?.[subValue.sub_affix_id]?.property]?.baseStat
+          const subStats = mappingStats?.[subAffixMap?.[subValue.sub_affix_id]?.Property]?.baseStat
           if (subStats && statsData[subStats]) {
             statsData[subStats].value += calcSubAffixBonusRaw(subAffixMap?.[subValue.sub_affix_id], subValue.step, subValue.count, statsData[subStats].base)
           }
@@ -470,14 +458,14 @@ export default function ShowCaseInfo() {
 
     if (relicEffects && relicEffects.length > 0) {
       relicEffects.forEach((relic) => {
-        const dataBonus = mapRelicInfo?.[relic.key]?.Bonus
+        const dataBonus = mapRelicSet?.[relic.key]?.Skills
         if (!dataBonus || Object.keys(dataBonus).length === 0) return
         Object.entries(dataBonus || {}).forEach(([key, value]) => {
           if (relic.count < Number(key)) return
-          value.forEach((bonus) => {
-            const statsBase = mappingStats?.[bonus.type]?.baseStat
+          value.Bonus.forEach((bonus) => {
+            const statsBase = mappingStats?.[bonus.PropertyType]?.baseStat
             if (statsBase && statsData[statsBase]) {
-              statsData[statsBase].value += calcBonusStatRaw(bonus.type, statsData[statsBase].base, bonus.value)
+              statsData[statsBase].value += calcBonusStatRaw(bonus.PropertyType, statsData[statsBase].base, bonus.Value)
             }
           })
         })
@@ -489,14 +477,14 @@ export default function ShowCaseInfo() {
   }, [
     avatarSelected,
     avatarData,
-    mapAvatarInfo,
+    mapAvatar,
     avatarProfile?.lightcone,
     avatarProfile?.relics,
-    mapLightconeInfo,
-    mapMainAffix,
-    mapSubAffix,
+    mapLightCone,
+    mainAffix,
+    subAffix,
     relicEffects,
-    mapRelicInfo,
+    mapRelicSet,
     avatarSkillTree
   ])
 
@@ -507,19 +495,6 @@ export default function ShowCaseInfo() {
 
     return `#${r.toString(16).padStart(2, "0")}${g.toString(16).padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
   }, [])
-
-  const getImageSkill = useCallback((icon: string | undefined, status: StatusAddType | undefined) => {
-    if (!icon) return
-    if (icon.startsWith("SkillIcon")) {
-      return `${process.env.CDN_URL}/spriteoutput/skillicons/avatar/${avatarSelected?.id}/${icon}`
-    } else if (status && mappingStats[status.PropertyType]) {
-      return mappingStats[status.PropertyType].icon
-    }
-    else if (icon.startsWith("Icon")) {
-      return `${process.env.CDN_URL}/spriteoutput/trace/${icon}`
-    }
-    return ""
-  }, [avatarSelected?.id])
 
   return (
     <div className="flex flex-col justify-start m-1 text-white">
@@ -550,7 +525,7 @@ export default function ShowCaseInfo() {
                     ref={imgRef}
                     unoptimized
                     crossOrigin="anonymous"
-                    src={`${process.env.CDN_URL}/spriteoutput/avatardrawcard/${avatarSelected?.id}.png`}
+                    src={`${process.env.CDN_URL}/${avatarSelected?.Image?.AvatarCutinFrontImgPath}`}
                     className="object-contain scale-[2] overflow-hidden"
                     alt="Character Preview"
                     width={1024}
@@ -576,9 +551,9 @@ export default function ShowCaseInfo() {
             >
 
               <div className="absolute top-4 left-3">
-                {avatarSelected && avatarInfo && avatarData?.data && typeof avatarData?.data?.rank === "number" && (
+                {avatarSelected && avatarSelected && avatarData?.data && typeof avatarData?.data?.rank === "number" && (
                   <div className="flex flex-col items-center gap-2 py-2">
-                    {avatarInfo?.RankIcon?.map((src, index) => {
+                    {Object.values(avatarSelected?.Ranks || {})?.map((rank, index) => {
                       const isActive = avatarData?.data?.rank > index;
                       return (
                         <div
@@ -621,7 +596,7 @@ export default function ShowCaseInfo() {
                               }}
                             >
                               <NextImage
-                                src={src ?? null}
+                                src={`${process.env.CDN_URL}/${rank.Icon}`}
                                 alt="Rank Icon"
                                 width={125}
                                 height={125}
@@ -664,20 +639,20 @@ export default function ShowCaseInfo() {
                           <NextImage
                             unoptimized
                             crossOrigin="anonymous"
-                            src={`/icon/${avatarSelected?.baseType.toLowerCase()}.webp`}
+                            src={`${process.env.CDN_URL}/${baseType[avatarSelected?.BaseType]?.Icon}`}
                             alt="Path Icon"
                             width={32}
                             height={32}
-                            className="h-auto w-8"
+                            className="h-8 w-8"
                           />
                           <NextImage
                             unoptimized
                             crossOrigin="anonymous"
-                            src={`/icon/${avatarSelected?.damageType.toLowerCase()}.webp`}
+                            src={`${process.env.CDN_URL}/${damageType[avatarSelected?.DamageType]?.Icon}`}
                             alt="Element Icon"
                             width={32}
                             height={32}
-                            className="h-auto w-8" />
+                            className="h-8 w-8" />
 
                         </div>
                       )}
@@ -691,7 +666,7 @@ export default function ShowCaseInfo() {
                         <NextImage
                           unoptimized
                           crossOrigin="anonymous"
-                          src={`/icon/${avatarSelected?.baseType.toLowerCase()}.webp`}
+                          src={`${process.env.CDN_URL}/${baseType[avatarSelected?.BaseType]?.Icon}`}
                           alt="Path Icon"
                           width={160}
                           height={160}
@@ -701,8 +676,8 @@ export default function ShowCaseInfo() {
                     )}
 
                     <div className="flex flex-col gap-4">
-                      {avatarData && avatarInfo && avatarSkillTree && traceShowCaseMap[avatarSelected?.baseType || ""]
-                        && Object.values(traceShowCaseMap[avatarSelected?.baseType || ""] || []).map((item, index) => {
+                      {avatarData && avatarSelected && avatarSkillTree && traceShowCaseMap[avatarSelected?.BaseType || ""]
+                        && Object.values(traceShowCaseMap[avatarSelected?.BaseType || ""] || []).map((item, index) => {
 
                           return (
                             <div key={`row-${index}`} className="flex flex-row items-center">
@@ -742,26 +717,15 @@ export default function ShowCaseInfo() {
                                         ${avatarData.data.skills[avatarSkillTree?.[btn.id]?.["1"]?.PointID] ? "" : "opacity-50"}
                                       `}
                                     >
-                                      {
-                                        (() => {
-                                          const skillImg = getImageSkill(
-                                            avatarInfo.SkillTrees?.[btn.id]?.["1"]?.Icon,
-                                            avatarSkillTree?.[btn.id]?.["1"]?.StatusAddList[0]
-                                          );
-
-                                          return skillImg ? (
-                                            <NextImage
-                                              src={skillImg}
-                                              unoptimized
-                                              crossOrigin="anonymous"
-                                              alt={btn.id}
-                                              width={125}
-                                              height={125}
-                                              className={`h-full ${imageSize} ${filterClass}`}
-                                            />
-                                          ) : null;
-                                        })()
-                                      }
+                                        <NextImage
+                                          src={`${process.env.CDN_URL}/${avatarSelected?.SkillTrees?.[btn.id]?.["1"]?.Icon}`}
+                                          unoptimized
+                                          crossOrigin="anonymous"
+                                          alt={btn.id}
+                                          width={125}
+                                          height={125}
+                                          className={`h-full ${imageSize} ${filterClass}`}
+                                        />
 
                                       {(isBig || isBigMemory) && (
                                         <span className="absolute bottom-0 left-0 text-[12px] text-white bg-black/70 px-1 rounded-sm">
@@ -872,8 +836,8 @@ export default function ShowCaseInfo() {
                         >
                           {[...Array(
                             Number(
-                              mapLightconeInfo[avatarProfile?.lightcone?.item_id]?.Rarity?.[
-                              mapLightconeInfo[avatarProfile?.lightcone?.item_id]?.Rarity.length - 1
+                              mapLightCone[avatarProfile?.lightcone?.item_id]?.Rarity?.[
+                              mapLightCone[avatarProfile?.lightcone?.item_id]?.Rarity.length - 1
                               ] || 0
                             )
                           )].map((_, i) => (
@@ -890,7 +854,7 @@ export default function ShowCaseInfo() {
                             <ParseText
                               className="text-lg font-semibold"
                               locale={locale}
-                              text={mapLightconeInfo[avatarProfile?.lightcone?.item_id].Name}
+                              text={getLocaleName(locale, mapLightCone[avatarProfile?.lightcone?.item_id].Name)}
                             />
 
                           </div>
@@ -910,7 +874,7 @@ export default function ShowCaseInfo() {
                               <NextImage
                                 unoptimized
                                 crossOrigin="anonymous"
-                                src="/icon/hp.webp"
+                                src={`${process.env.CDN_URL}/spriteoutput/ui/avatar/icon/IconMaxHP.png`}
                                 alt="HP"
                                 width={16}
                                 height={16}
@@ -922,7 +886,7 @@ export default function ShowCaseInfo() {
                             </div>
                             <div className="flex items-center gap-1 rounded bg-black/30 px-1 w-fit py-1">
                               <NextImage
-                                src="/icon/attack.webp"
+                                src={`${process.env.CDN_URL}/spriteoutput/ui/avatar/icon/IconAttack.png`}
                                 unoptimized
                                 crossOrigin="anonymous"
                                 alt="ATK"
@@ -938,7 +902,7 @@ export default function ShowCaseInfo() {
                             <NextImage
                               unoptimized
                               crossOrigin="anonymous"
-                              src="/icon/defence.webp"
+                              src={`${process.env.CDN_URL}/spriteoutput/ui/avatar/icon/IconDefence.png`}
                               alt="DEF"
                               width={16}
                               height={16}
@@ -964,13 +928,13 @@ export default function ShowCaseInfo() {
                     return (
                       <div key={index} className="flex flex-row items-center justify-between">
                         <div className="flex flex-row items-center">
-                          <NextImage src={stat?.icon || ""}
+                          <NextImage src={`${process.env.CDN_URL}/${stat?.icon}`}
                             unoptimized
                             crossOrigin="anonymous"
                             alt="Stat Icon"
                             width={40}
                             height={40}
-                            className="h-auto w-10 p-2"
+                            className="h-10 w-10 p-2"
                           />
                           <span className="font-bold">{stat.name}</span>
                         </div>
@@ -986,7 +950,7 @@ export default function ShowCaseInfo() {
 
                 <div className="flex flex-col items-center gap-1 w-full my-2">
                   {relicEffects.map((setEffect, index) => {
-                    const relicInfo = mapRelicInfo[setEffect.key];
+                    const relicInfo = mapRelicSet[setEffect.key];
                     if (!relicInfo) return null;
                     return (
                       <div key={index} className="flex w-full flex-row justify-between text-left">
@@ -997,7 +961,7 @@ export default function ShowCaseInfo() {
                           }}
                           dangerouslySetInnerHTML={{
                             __html: replaceByParam(
-                              relicInfo.Name,
+                              getLocaleName(locale, relicInfo.Name),
                               []
                             )
                           }}
@@ -1015,9 +979,9 @@ export default function ShowCaseInfo() {
                 <div className="flex h-162.5 flex-col justify-between py-3 mr-1 text-lg w-full" >
 
                   {relicStats?.map((relic, index) => {
-                    if (!relic || !avatarInfo) return null
+                    if (!relic || !avatarSelected) return null
                     return (
-                      <RelicShowcase key={index} relic={relic} avatarInfo={avatarInfo} />
+                      <RelicShowcase key={index} relic={relic} avatarInfo={avatarSelected} />
                     )
                   })}
 

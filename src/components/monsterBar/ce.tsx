@@ -9,23 +9,21 @@ import {
     CopyPlus,
 } from "lucide-react";
 
-import useMazeStore from "@/stores/mazeStore";
 import useUserDataStore from "@/stores/userDataStore";
-import useMonsterStore from "@/stores/monsterStore";
 import useLocaleStore from "@/stores/localeStore";
 import { getLocaleName } from "@/helper";
 import Image from "next/image";
-import { MonsterBasic } from "@/types";
 import { useTranslations } from "next-intl";
 import useGlobalStore from "@/stores/globalStore";
+import useDetailDataStore from "@/stores/detailDataStore";
+import { MonsterDetail } from "@/types";
 
 
 export default function CeBar() {
     const [searchTerm, setSearchTerm] = useState("");
     const [showSearchWaveId, setShowSearchWaveId] = useState<number | null>(null);
-    const { Stage } = useMazeStore()
     const { ce_config, setCeConfig } = useUserDataStore()
-    const { listMonster, mapMonster } = useMonsterStore()
+    const { mapMonster, stage, damageType } = useDetailDataStore()
     const { locale } = useLocaleStore()
     const transI18n = useTranslations("DataPage")
     const [showSearchStage, setShowSearchStage] = useState(false)
@@ -39,17 +37,17 @@ export default function CeBar() {
     const [monsterPage, setMonsterPage] = useState(1)
 
     const filteredMonsters = useMemo(() => {
-        const newlistMonster = new Set<MonsterBasic>()
-        for (const monster of listMonster) {
-            if (getLocaleName(locale, monster).toLowerCase().includes(searchTerm.toLowerCase())) {
+        const newlistMonster = new Set<MonsterDetail>()
+        for (const monster of Object.values(mapMonster)) {
+            if (getLocaleName(locale, monster.Name).toLowerCase().includes(searchTerm.toLowerCase())) {
                 newlistMonster.add(monster)
             }
-            if (monster.id.toLowerCase().includes(searchTerm.toLowerCase())) {
+            if (monster.ID.toString().includes(searchTerm.toLowerCase())) {
                 newlistMonster.add(monster)
             }
         }
         return Array.from(newlistMonster)
-    }, [listMonster, locale, searchTerm]);
+    }, [locale, searchTerm, mapMonster]);
 
     const paginatedMonsters = useMemo(() =>
         filteredMonsters.slice((monsterPage - 1) * pageSizeMonsters, monsterPage * pageSizeMonsters),
@@ -65,10 +63,10 @@ export default function CeBar() {
         setMonsterPage(1)
     }, [searchTerm])
 
-    const stageList = useMemo(() => Object.values(Stage).map((stage) => ({
-        id: stage.stage_id.toString(),
-        name: `${stage.stage_type} (${stage.stage_id})`,
-    })), [Stage])
+    const stageList = useMemo(() => Object.values(stage).map((item) => ({
+        id: item.ID.toString(),
+        name: `${getLocaleName(locale, item.Name)} (${item.ID})`,
+    })), [stage, locale])
 
     const filteredStages = useMemo(() => stageList.filter((s) =>
         s.name.toLowerCase().includes(stageSearchTerm.toLowerCase())
@@ -312,10 +310,10 @@ export default function CeBar() {
                                                 </button>
 
                                                 <div className="flex justify-center">
-                                                    {mapMonster?.[member.monster_id.toString()]?.icon && <Image
+                                                    {mapMonster?.[member.monster_id.toString()]?.Image?.IconPath && <Image
                                                         unoptimized
                                                         crossOrigin="anonymous"
-                                                        src={`${process.env.CDN_URL}/${mapMonster?.[member.monster_id.toString()]?.icon}`}
+                                                        src={`${process.env.CDN_URL}/${mapMonster?.[member.monster_id.toString()]?.Image?.IconPath}`}
                                                         alt="Enemy Icon"
                                                         width={376}
                                                         height={512}
@@ -324,11 +322,11 @@ export default function CeBar() {
                                                 </div>
 
                                                 <div className="flex flex-wrap justify-center gap-1 mb-2">
-                                                    {mapMonster?.[member.monster_id.toString()]?.weak?.map((icon, iconIndex) => (
+                                                    {mapMonster?.[member.monster_id.toString()]?.StanceWeakList?.map((icon, iconIndex) => (
                                                         <Image
                                                             unoptimized
                                                             crossOrigin="anonymous"
-                                                            src={`/icon/${icon.toLowerCase()}.webp`}
+                                                            src={`${process.env.CDN_URL}/${damageType[icon]?.Icon}`}
                                                             alt={icon}
                                                             className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
                                                             width={200}
@@ -339,7 +337,7 @@ export default function CeBar() {
                                                 </div>
                                                 <div className="text-center flex flex-col items-center justify-center">
                                                     <div className="text-sm font-medium">
-                                                        {getLocaleName(locale, mapMonster?.[member.monster_id.toString()])}  {`(${member.monster_id})`}
+                                                        {getLocaleName(locale, mapMonster?.[member.monster_id.toString()]?.Name)}  {`(${member.monster_id})`}
                                                     </div>
                                                     <div className="flex items-center gap-1 mt-1 mx-2">
                                                         <span className="text-sm">LV.</span>
@@ -444,12 +442,12 @@ export default function CeBar() {
                                                 {paginatedMonsters.length > 0 ? (
                                                     paginatedMonsters.map((monster) => (
                                                         <div
-                                                            key={monster.id}
+                                                            key={monster.ID}
                                                             className="flex items-center gap-2 p-2 hover:bg-success/40 rounded cursor-pointer"
                                                             onClick={() => {
                                                                 const newCeConfig = structuredClone(ce_config)
                                                                 newCeConfig.monsters[waveIndex].push({
-                                                                    monster_id: Number(monster.id),
+                                                                    monster_id: monster.ID,
                                                                     level: 95,
                                                                     amount: 1,
                                                                 })
@@ -458,11 +456,11 @@ export default function CeBar() {
                                                             }}
                                                         >
                                                             <div className="relative w-8 h-8 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
-                                                                {mapMonster?.[monster.id.toString()]?.icon && (
+                                                                {mapMonster?.[monster.ID.toString()]?.Image?.IconPath && (
                                                                     <Image
                                                                         unoptimized
                                                                         crossOrigin="anonymous"
-                                                                        src={`${process.env.CDN_URL}/${mapMonster?.[monster.id.toString()]?.icon}`}
+                                                                        src={`${process.env.CDN_URL}/${mapMonster?.[monster.ID.toString()]?.Image?.IconPath}`}
                                                                         alt="Enemy Icon"
                                                                         width={376}
                                                                         height={512}
@@ -470,7 +468,7 @@ export default function CeBar() {
                                                                     />
                                                                 )}
                                                             </div>
-                                                            <span>{getLocaleName(locale, monster)} {`(${monster.id})`}</span>
+                                                            <span>{getLocaleName(locale, monster.Name)} {`(${monster.ID})`}</span>
                                                         </div>
                                                     ))
                                                 ) : (

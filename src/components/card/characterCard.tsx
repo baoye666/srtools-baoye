@@ -2,18 +2,20 @@
 
 import { getNameChar } from '@/helper';
 import useLocaleStore from '@/stores/localeStore';
-import { CharacterBasic } from '@/types';
+import { AvatarDetail } from '@/types';
 import ParseText from '../parseText';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import useDetailDataStore from '@/stores/detailDataStore';
 
 interface CharacterCardProps {
-  data: CharacterBasic
+  data: AvatarDetail
 }
 
 export default function CharacterCard({ data }: CharacterCardProps) {
   const { locale } = useLocaleStore();
   const transI18n = useTranslations("DataPage");
+  const { baseType, damageType } = useDetailDataStore()
 
   return (
     <li
@@ -23,7 +25,7 @@ export default function CharacterCard({ data }: CharacterCardProps) {
                hover:scale-105 cursor-pointer min-h-45 sm:min-h-45 md:min-h-52.5 lg:min-h-55 xl:min-h-60 2xl:min-h-85"
     >
       <div
-        className={`w-full rounded-md bg-linear-to-br ${data.rank === "CombatPowerAvatarRarityType5"
+        className={`w-full rounded-md bg-linear-to-br ${data.Rarity === "CombatPowerAvatarRarityType5"
           ? "from-yellow-400 via-yellow-600/70 to-yellow-800/50"
           : "from-purple-400 via-purple-600/70 to-purple-800/50"
           }`}
@@ -35,7 +37,7 @@ export default function CharacterCard({ data }: CharacterCardProps) {
             height={512}
             unoptimized
             crossOrigin="anonymous"
-            src={`${process.env.CDN_URL}/${data.icon}`}
+            src={`${process.env.CDN_URL}/${data.Image.AvatarIconPath}`}
             priority={true}
             className="rounded-md w-full h-full object-contain"
             alt="ALT"
@@ -45,18 +47,18 @@ export default function CharacterCard({ data }: CharacterCardProps) {
             height={32}
             unoptimized
             crossOrigin="anonymous"
-            src={`/icon/${data.damageType.toLowerCase()}.webp`}
+            src={`${process.env.CDN_URL}/${damageType?.[data.DamageType].Icon}`}
             className="absolute top-0 left-0 w-6 h-6 rounded-full"
-            alt={data.damageType.toLowerCase()}
+            alt={data.DamageType.toLowerCase()}
           />
           <Image
             width={32}
             height={32}
             unoptimized
             crossOrigin="anonymous"
-            src={`/icon/${data.baseType.toLowerCase()}.webp`}
+            src={`${process.env.CDN_URL}/${baseType?.[data.BaseType].Icon}`}
             className="absolute top-0 right-0 w-6 h-6 rounded-full"
-            alt={data.baseType.toLowerCase()}
+            alt={data.BaseType.toLowerCase()}
             style={{
               boxShadow: "inset 0 0 8px 4px #9CA3AF"
             }}

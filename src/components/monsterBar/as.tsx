@@ -1,60 +1,50 @@
 "use client"
 import { useEffect, useMemo } from "react";
 import SelectCustomText from "../select/customSelectText";
-import useEventStore from "@/stores/eventStore";
-import { getLocaleName, replaceByParam } from "@/helper";
+import { calcMonsterStats, getLocaleName, replaceByParam } from "@/helper";
 import useLocaleStore from "@/stores/localeStore";
 import useUserDataStore from "@/stores/userDataStore";
-import useMonsterStore from "@/stores/monsterStore";
 import Image from "next/image";
 import { MonsterStore } from "@/types";
-import useMazeStore from "@/stores/mazeStore";
 import { useTranslations } from "next-intl";
+import useDetailDataStore from "@/stores/detailDataStore";
 
 export default function AsBar() {
-    const { ASEvent, mapASInfo } = useEventStore()
-    const { mapMonster } = useMonsterStore()
     const { locale } = useLocaleStore()
     const {
         as_config,
         setAsConfig
     } = useUserDataStore()
-    const { AS } = useMazeStore()
+    const { mapMonster, mapAS, damageType, hardLevelConfig, eliteConfig } = useDetailDataStore()
 
     const transI18n = useTranslations("DataPage")
+
     const challengeSelected = useMemo(() => {
-        return mapASInfo[as_config.event_id.toString()]?.Level.find((as) => as.Id === as_config.challenge_id)
-    }, [as_config, mapASInfo])
+        return mapAS[as_config.event_id.toString()]?.Level.find((as) => as.ID === as_config.challenge_id)
+    }, [as_config, mapAS])
 
     const eventSelected = useMemo(() => {
-        return mapASInfo[as_config.event_id.toString()]
-    }, [as_config, mapASInfo])
+        return mapAS[as_config.event_id.toString()]
+    }, [as_config, mapAS])
 
     const buffList = useMemo(() => {
-        const challenge = AS[as_config.event_id.toString()];
-        if (!challenge) return { buffList: [], buffId: [] };
+        if (!eventSelected) return [];
 
         if (as_config.floor_side === "Upper" || as_config.floor_side === "Upper -> Lower") {
-            return {
-                buffList: eventSelected?.BuffList1 ?? [],
-                buffId: challenge.buff_1 ?? [],
-            };
+            return eventSelected?.BuffList1 ?? [];
         }
 
         if (as_config.floor_side === "Lower" || as_config.floor_side === "Lower -> Upper") {
-            return {
-                buffList: eventSelected?.BuffList2 ?? [],
-                buffId: challenge.buff_2 ?? [],
-            };
+            return eventSelected?.BuffList2 ?? [];
         }
-        return { buffList: [], buffId: [] };
-    }, [AS, as_config.event_id, as_config.floor_side, eventSelected?.BuffList1, eventSelected?.BuffList2]);
+        return [];
+    }, [as_config.floor_side, eventSelected]);
 
 
     useEffect(() => {
         if (!challengeSelected || as_config.event_id === 0 || as_config.challenge_id === 0) return
         const newBattleConfig = structuredClone(as_config)
-        newBattleConfig.cycle_count = 0
+        newBattleConfig.cycle_count = challengeSelected.TurnLimit
 
         newBattleConfig.blessings = []
         if (as_config.buff_id !== 0) {
@@ -63,24 +53,27 @@ export default function AsBar() {
                 level: 1
             })
         }
-        if (AS[as_config.challenge_id.toString()]) {
-            newBattleConfig.blessings.push({
-                id: Number(AS[as_config.challenge_id.toString()].maze_buff),
-                level: 1
+
+        if (challengeSelected) {
+            challengeSelected.MazeBuff.map((item) => {
+                newBattleConfig.blessings.push({
+                    id: item.ID,
+                    level: 1
+                })
             })
         }
 
         newBattleConfig.monsters = []
         newBattleConfig.stage_id = 0
         if ((as_config.floor_side === "Upper" || as_config.floor_side === "Upper -> Lower")
-            && challengeSelected.EventIDList1.length > 0) {
-            newBattleConfig.stage_id = challengeSelected.EventIDList1[0].StageID
-            for (const wave of challengeSelected.EventIDList1[0].MonsterList) {
+            && challengeSelected.EventList1.length > 0) {
+            newBattleConfig.stage_id = challengeSelected.EventList1[0].ID
+            for (const wave of challengeSelected.EventList1[0].MonsterList) {
                 const newWave: MonsterStore[] = []
                 for (const value of Object.values(wave)) {
                     newWave.push({
-                        monster_id: Number(value),
-                        level: challengeSelected.EventIDList1[0].Level,
+                        monster_id: value,
+                        level: challengeSelected.EventList1[0].Level,
                         amount: 1,
                     })
                 }
@@ -88,14 +81,14 @@ export default function AsBar() {
             }
         }
         if ((as_config.floor_side === "Lower" || as_config.floor_side === "Lower -> Upper")
-            && challengeSelected.EventIDList2.length > 0) {
-            newBattleConfig.stage_id = challengeSelected.EventIDList2[0].StageID
-            for (const wave of challengeSelected.EventIDList2[0].MonsterList) {
+            && challengeSelected.EventList2.length > 0) {
+            newBattleConfig.stage_id = challengeSelected.EventList2[0].ID
+            for (const wave of challengeSelected.EventList2[0].MonsterList) {
                 const newWave: MonsterStore[] = []
                 for (const value of Object.values(wave)) {
                     newWave.push({
-                        monster_id: Number(value),
-                        level: challengeSelected.EventIDList2[0].Level,
+                        monster_id: value,
+                        level: challengeSelected.EventList2[0].Level,
                         amount: 1,
                     })
                 }
@@ -103,26 +96,26 @@ export default function AsBar() {
             }
         }
         if (as_config.floor_side === "Lower -> Upper"
-            && challengeSelected.EventIDList1.length > 0) {
-            for (const wave of challengeSelected.EventIDList1[0].MonsterList) {
+            && challengeSelected.EventList1.length > 0) {
+            for (const wave of challengeSelected.EventList1[0].MonsterList) {
                 const newWave: MonsterStore[] = []
                 for (const value of Object.values(wave)) {
                     newWave.push({
-                        monster_id: Number(value),
-                        level: challengeSelected.EventIDList1[0].Level,
+                        monster_id: value,
+                        level: challengeSelected.EventList1[0].Level,
                         amount: 1,
                     })
                 }
                 newBattleConfig.monsters.push(newWave)
             }
         } else if (as_config.floor_side === "Upper -> Lower"
-            && challengeSelected.EventIDList2.length > 0) {
-            for (const wave of challengeSelected.EventIDList2[0].MonsterList) {
+            && challengeSelected.EventList2.length > 0) {
+            for (const wave of challengeSelected.EventList2[0].MonsterList) {
                 const newWave: MonsterStore[] = []
                 for (const value of Object.values(wave)) {
                     newWave.push({
-                        monster_id: Number(value),
-                        level: challengeSelected.EventIDList2[0].Level,
+                        monster_id: value,
+                        level: challengeSelected.EventList2[0].Level,
                         amount: 1,
                     })
                 }
@@ -130,19 +123,17 @@ export default function AsBar() {
             }
         }
         setAsConfig(newBattleConfig)
-
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [
         challengeSelected,
+        mapAS,
         as_config.event_id,
         as_config.challenge_id,
         as_config.floor_side,
         as_config.buff_id,
-        mapASInfo,
-        AS,
     ])
 
-    if (!ASEvent) return null
+    if (!mapAS) return null
     return (
         <div className="py-8 relative">
 
@@ -150,10 +141,10 @@ export default function AsBar() {
             <div className="rounded-xl p-4 mb-2 border border-warning">
                 <div className="mb-4 w-full">
                     <SelectCustomText
-                        customSet={ASEvent.map((as) => ({
-                            id: as.id,
-                            name: getLocaleName(locale, as),
-                            time: `${as.begin} - ${as.end}`,
+                        customSet={Object.values(mapAS).sort((a, b) => b.ID - a.ID).map((as) => ({
+                            id: as.ID.toString(),
+                            name: getLocaleName(locale, as.Name),
+                            time: `${as.BeginTime} - ${as.EndTime}`,
                         }))}
                         excludeSet={[]}
                         selectedCustomSet={as_config.event_id.toString()}
@@ -161,7 +152,7 @@ export default function AsBar() {
                         setSelectedCustomSet={(id) => setAsConfig({
                             ...as_config,
                             event_id: Number(id),
-                            challenge_id: mapASInfo[Number(id)]?.Level.slice(-1)[0]?.Id || 0,
+                            challenge_id: mapAS[Number(id)]?.Level.at(-1)?.ID || 0,
                             buff_id: 0
                         })}
                     />
@@ -179,8 +170,8 @@ export default function AsBar() {
                             onChange={(e) => setAsConfig({ ...as_config, challenge_id: Number(e.target.value) })}
                         >
                             <option value={0} disabled={true}>{transI18n("selectFloor")}</option>
-                            {mapASInfo[as_config.event_id.toString()]?.Level.map((as) => (
-                                <option key={as.Id} value={as.Id}>{as.Id % 10}</option>
+                            {eventSelected?.Level.map((as) => (
+                                <option key={as.ID} value={as.ID}>{getLocaleName(locale, as.Name)}</option>
                             ))}
                         </select>
                     </div>
@@ -205,15 +196,11 @@ export default function AsBar() {
                 {eventSelected && (
                     <div className="mb-4 w-full">
                         <SelectCustomText
-                            customSet={
-                                Array.isArray(buffList?.buffList) && Array.isArray(buffList?.buffId)
-                                    ? buffList.buffList.map((buff, index) => ({
-                                        id: buffList.buffId?.[index]?.toString() || "",
-                                        name: buff?.Name || "",
-                                        description: replaceByParam(buff?.Desc || "", buff?.Param || []),
-                                    }))
-                                    : []
-                            }
+                            customSet={buffList.map((buff) => ({
+                                id: buff.ID?.toString() || "",
+                                name: getLocaleName(locale, buff?.Name) || "",
+                                description: replaceByParam(getLocaleName(locale, buff?.Desc) || "", buff?.Param || []),
+                            }))}
                             excludeSet={[]}
                             selectedCustomSet={as_config?.buff_id?.toString()}
                             placeholder={transI18n("selectBuff")}
@@ -224,16 +211,19 @@ export default function AsBar() {
                 {/* Turbulence Buff */}
                 <div className="bg-base-200/20 rounded-lg p-4 border border-purple-500/20">
                     <h2 className="text-2xl font-bold mb-2 text-info">{transI18n("turbulenceBuff")}</h2>
-                    {eventSelected && eventSelected.Buff?.Name ? (
-                        <div
-                            className="text-base"
-                            dangerouslySetInnerHTML={{
-                                __html: replaceByParam(
-                                    eventSelected.Buff?.Desc || "",
-                                    eventSelected.Buff?.Param || []
-                                )
-                            }}
-                        />
+                    {challengeSelected ? (
+                        challengeSelected.MazeBuff.map((buff, i) => (
+                            <div
+                                key={i}
+                                className="text-base"
+                                dangerouslySetInnerHTML={{
+                                    __html: replaceByParam(
+                                        getLocaleName(locale, buff?.Desc) || "",
+                                        buff?.Param || []
+                                    )
+                                }}
+                            />
+                        ))
                     ) : (
                         <div className="text-base">{transI18n("noTurbulenceBuff")}</div>
                     )}
@@ -247,48 +237,85 @@ export default function AsBar() {
                     <div className="rounded-xl p-4 mt-2 border border-warning">
                         <h2 className="text-2xl font-bold mb-6 text-info">{transI18n("firstHalfEnemies")}</h2>
 
-                        {challengeSelected && challengeSelected?.EventIDList1?.length > 0 && challengeSelected?.EventIDList1[0].MonsterList.map((wave, waveIndex) => (
+                        {challengeSelected && challengeSelected?.EventList1?.length > 0 && challengeSelected?.EventList1?.[0]?.MonsterList?.map((wave, waveIndex) => (
                             <div key={waveIndex} className="mb-6">
-                                <h3 className="text-lg font-semibold mb-t">{transI18n("wave")} {waveIndex + 1}</h3>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    {Object.values(wave).map((waveValue, enemyIndex) => (
-                                        <div
-                                            key={enemyIndex}
-                                            className="rounded-xl p-2 border border-white/10 shadow-md hover:border-white/20 hover:shadow-lg transition"
-                                        >
-                                            <div className="flex items-center space-x-3">
-                                                <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
-                                                    {mapMonster?.[waveValue.toString()]?.icon && <Image
-                                                        unoptimized
-                                                        crossOrigin="anonymous"
-                                                        src={`${process.env.CDN_URL}/${mapMonster?.[waveValue.toString()]?.icon}`}
-                                                        alt="Enemy Icon"
-                                                        width={376}
-                                                        height={512}
-                                                        className="w-full h-full object-cover"
-                                                    />}
+                                <h3 className="text-lg font-semibold">{transI18n("wave")} {waveIndex + 1}</h3>
+                                <div className="flex flex-wrap gap-2 mt-2">
+                                    {Object.values(wave).map((waveValue, enemyIndex) => {
+                                        const monsterStats = calcMonsterStats(
+                                            mapMonster?.[waveValue.toString()],
+                                            challengeSelected?.EventList1?.[0]?.EliteGroup,
+                                            challengeSelected?.EventList1?.[0]?.HardLevelGroup,
+                                            challengeSelected?.EventList1?.[0]?.Level,
+                                            hardLevelConfig,
+                                            eliteConfig
+                                        );
+                                        return (
+                                            <div
+                                                key={enemyIndex}
+                                                className="group relative flex flex-col w-40 bg-base-100 rounded-2xl border border-base-300 shadow-md"
+                                            >
+                                                <div className="badge badge-warning badge-sm font-bold absolute top-2 right-2 z-10 shadow-sm">
+                                                    Lv. {challengeSelected?.EventList1[0].Level}
                                                 </div>
 
-                                                <div className="flex flex-col">
-                                                    <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList1[0].Level}</div>
-                                                    <div className="flex items-center space-x-1 mt-1">
-                                                        {mapMonster?.[waveValue.toString()]?.weak?.map((icon, iconIndex) => (
+                                                <div className="relative w-full h-20 bg-base-200 flex items-center justify-center p-4 rounded-t-2xl">
+                                                    {mapMonster?.[waveValue.toString()]?.Image?.IconPath && (
+                                                        <div className="relative w-16 h-16 rounded-full border-2 border-base-300 shadow-md overflow-hidden group-hover:scale-110 transition-transform duration-300 bg-base-100">
                                                             <Image
                                                                 unoptimized
                                                                 crossOrigin="anonymous"
-                                                                src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                alt={icon}
-                                                                className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
-                                                                width={200}
-                                                                height={200}
-                                                                key={iconIndex}
+                                                                src={`${process.env.CDN_URL}/${mapMonster?.[waveValue.toString()]?.Image?.IconPath}`}
+                                                                alt="Enemy Icon"
+                                                                width={150}
+                                                                height={150}
+                                                                className="w-full h-full object-cover"
                                                             />
-                                                        ))}
+                                                        </div>
+                                                    )}
+                                                </div>
+
+                                                <div className="flex flex-col px-1 pb-2 pt-2">
+                                                    <div className="flex flex-col space-y-1.5">
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-error">HP</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.hp.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+                                                        
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-info">Speed</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.spd.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+                                                        
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-base-content/70">Toughness</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.stance.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="mt-3 pt-2 border-t border-base-300 flex flex-col items-center">
+                                                        <span className="text-[10px] text-base-content/60 font-bold uppercase tracking-widest mb-1.5">
+                                                            Weakness
+                                                        </span>
+                                                        <div className="flex items-center justify-center gap-1.5 flex-wrap">
+                                                            {mapMonster?.[waveValue.toString()]?.StanceWeakList?.map((icon, iconIndex) => (
+                                                                <Image
+                                                                    key={iconIndex}
+                                                                    unoptimized
+                                                                    crossOrigin="anonymous"
+                                                                    src={`${process.env.CDN_URL}/${damageType[icon]?.Icon}`}
+                                                                    alt={icon}
+                                                                    width={40}
+                                                                    height={40}
+                                                                    className="h-6 w-6 object-contain rounded-full bg-base-300 border border-base-content/10 p-0.5 shadow-sm hover:scale-110 transition-transform"
+                                                                />
+                                                            ))}
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    ))}
+                                        )
+                                    })}
                                 </div>
                             </div>
                         ))}
@@ -298,49 +325,85 @@ export default function AsBar() {
                     <div className="rounded-xl p-4 mt-2 border border-warning">
                         <h2 className="text-2xl font-bold mb-6 text-info">{transI18n("secondHalfEnemies")}</h2>
 
-                        {challengeSelected && challengeSelected?.EventIDList2?.length > 0 && challengeSelected?.EventIDList2[0].MonsterList.map((wave, waveIndex) => (
+                        {challengeSelected && challengeSelected?.EventList2?.length > 0 && challengeSelected?.EventList2?.[0]?.MonsterList?.map((wave, waveIndex) => (
                             <div key={waveIndex} className="mb-6">
                                 <h3 className="text-lg font-semibold mb-t">{transI18n("wave")} {waveIndex + 1}</h3>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    {Object.values(wave).map((waveValue, enemyIndex) => (
-                                        <div
-                                            key={enemyIndex}
-                                            className="rounded-xl p-2 border border-white/10 shadow-md hover:border-white/20 hover:shadow-lg transition"
-                                        >
-
-                                            <div className="flex items-center space-x-3">
-                                                <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 border border-white/10 shadow-sm">
-                                                    {mapMonster?.[waveValue.toString()]?.icon && <Image
-                                                        unoptimized
-                                                        crossOrigin="anonymous"
-                                                        src={`${process.env.CDN_URL}/${mapMonster?.[waveValue.toString()]?.icon}`}
-                                                        alt="Enemy Icon"
-                                                        width={376}
-                                                        height={512}
-                                                        className="w-full h-full object-cover"
-                                                    />}
+                                <div className="flex flex-wrap gap-2 mt-2">
+                                    {Object.values(wave).map((waveValue, enemyIndex) => {
+                                        const monsterStats = calcMonsterStats(
+                                            mapMonster?.[waveValue.toString()],
+                                            challengeSelected?.EventList2?.[0]?.EliteGroup,
+                                            challengeSelected?.EventList2?.[0]?.HardLevelGroup,
+                                            challengeSelected?.EventList2?.[0]?.Level,
+                                            hardLevelConfig,
+                                            eliteConfig
+                                        );
+                                        return (
+                                            <div
+                                                key={enemyIndex}
+                                                className="group relative flex flex-col w-40 bg-base-100 rounded-2xl border border-base-300 shadow-md"
+                                            >
+                                                <div className="badge badge-warning badge-sm font-bold absolute top-2 right-2 z-10 shadow-sm">
+                                                    Lv. {challengeSelected?.EventList2[0].Level}
                                                 </div>
 
-                                                <div className="flex flex-col">
-                                                    <div className="text-sm font-semibold">Lv. {challengeSelected?.EventIDList1[0].Level}</div>
-                                                    <div className="flex items-center space-x-1 mt-1">
-                                                        {mapMonster?.[waveValue.toString()].weak?.map((icon, iconIndex) => (
+                                                <div className="relative w-full h-20 bg-base-200 flex items-center justify-center p-4 rounded-t-2xl">
+                                                    {mapMonster?.[waveValue.toString()]?.Image?.IconPath && (
+                                                        <div className="relative w-16 h-16 rounded-full border-2 border-base-300 shadow-md overflow-hidden group-hover:scale-110 transition-transform duration-300 bg-base-100">
                                                             <Image
                                                                 unoptimized
                                                                 crossOrigin="anonymous"
-                                                                src={`/icon/${icon.toLowerCase()}.webp`}
-                                                                alt={icon}
-                                                                className="h-7 w-7 2xl:h-10 2xl:w-10 object-contain rounded-md border border-white/20 shadow-sm"
-                                                                width={200}
-                                                                height={200}
-                                                                key={iconIndex}
+                                                                src={`${process.env.CDN_URL}/${mapMonster?.[waveValue.toString()]?.Image?.IconPath}`}
+                                                                alt="Enemy Icon"
+                                                                width={150}
+                                                                height={150}
+                                                                className="w-full h-full object-cover"
                                                             />
-                                                        ))}
+                                                        </div>
+                                                    )}
+                                                </div>
+
+                                                <div className="flex flex-col px-1 pb-2 pt-2">
+                                                    <div className="flex flex-col space-y-1.5">
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-error">HP</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.hp.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+                                                        
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-info">Speed</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.spd.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+                                                        
+                                                        <div className="flex justify-between items-center bg-base-200 px-2.5 py-1.5 rounded-lg">
+                                                            <span className="text-xs font-semibold text-base-content/70">Toughness</span>
+                                                            <span className="text-sm font-bold text-base-content">{monsterStats.stance.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="mt-2 pt-2 border-t border-base-300 flex flex-col items-center">
+                                                        <span className="text-[10px] text-base-content/60 font-bold uppercase tracking-widest mb-1.5">
+                                                            Weakness
+                                                        </span>
+                                                        <div className="flex items-center justify-center gap-1.5 flex-wrap">
+                                                            {mapMonster?.[waveValue.toString()]?.StanceWeakList?.map((icon, iconIndex) => (
+                                                                <Image
+                                                                    key={iconIndex}
+                                                                    unoptimized
+                                                                    crossOrigin="anonymous"
+                                                                    src={`${process.env.CDN_URL}/${damageType[icon]?.Icon}`}
+                                                                    alt={icon}
+                                                                    width={40}
+                                                                    height={40}
+                                                                    className="h-6 w-6 object-contain rounded-full bg-base-300 border border-base-content/10 p-0.5 shadow-sm hover:scale-110 transition-transform"
+                                                                />
+                                                            ))}
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    ))}
+                                        )
+                                    })}
                                 </div>
                             </div>
                         ))}

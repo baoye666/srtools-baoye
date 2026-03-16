@@ -1,4 +1,4 @@
-export * from "./useFetchConfigData";
+export * from "./useFetchMetaData";
 export * from "./useFetchAvatarData";
 export * from "./useFetchLightconeData";
 export * from "./useFetchRelicData";

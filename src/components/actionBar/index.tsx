@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
-import useListAvatarStore from "@/stores/avatarStore";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRouter } from 'next/navigation'
@@ -19,12 +18,14 @@ import { connectToPS, syncDataToPS } from "@/helper";
 import CopyImport from "../importBar/copy";
 import useCopyProfileStore from "@/stores/copyProfile";
 import AvatarBar from "../avatarBar";
-
+import useCurrentDataStore from "@/stores/currentDataStore";
+import useDetailDataStore from "@/stores/detailDataStore";
 
 export default function ActionBar() {
   const router = useRouter()
-  const { avatarSelected, listRawAvatar } = useListAvatarStore()
-  const { setListCopyAvatar } = useCopyProfileStore()
+  const { avatarSelected } = useCurrentDataStore()
+  const { damageType, baseType } = useDetailDataStore()
+  const { setResetData } = useCopyProfileStore()
   const transI18n = useTranslations("DataPage")
   const { locale } = useLocaleStore()
   const {
@@ -43,21 +44,20 @@ export default function ActionBar() {
 
   const profileCurrent = useMemo(() => {
     if (!avatarSelected) return null;
-    const avatar = avatars[avatarSelected.id];
+    const avatar = avatars[avatarSelected.ID];
     return avatar?.profileList[avatar.profileSelect] || null;
   }, [avatarSelected, avatars]);
 
   const listProfile = useMemo(() => {
     if (!avatarSelected) return [];
-    const avatar = avatars[avatarSelected.id];
+    const avatar = avatars[avatarSelected.ID];
     return avatar?.profileList || [];
   }, [avatarSelected, avatars]);
 
 
-
   const handleUpdateProfile = () => {
     if (!profileName.trim()) return;
-    if (formState === "CREATE" && avatarSelected && avatars[avatarSelected.id]) {
+    if (formState === "CREATE" && avatarSelected && avatars[avatarSelected.ID]) {
       const newListProfile = [...listProfile]
       const newProfile = {
         profile_name: profileName,
@@ -65,12 +65,12 @@ export default function ActionBar() {
         relics: {} as Record<string, RelicStore>
       }
       newListProfile.push(newProfile)
-      setAvatar({ ...avatars[avatarSelected.id], profileList: newListProfile, profileSelect: newListProfile.length - 1 })
+      setAvatar({ ...avatars[avatarSelected.ID], profileList: newListProfile, profileSelect: newListProfile.length - 1 })
       toast.success("Profile created successfully")
     } else if (formState === "EDIT" && profileCurrent && avatarSelected && profileEdit !== -1) {
       const newListProfile = [...listProfile]
       newListProfile[profileEdit].profile_name = profileName;
-      setAvatar({ ...avatars[avatarSelected.id], profileList: newListProfile })
+      setAvatar({ ...avatars[avatarSelected.ID], profileList: newListProfile })
       toast.success("Profile updated successfully")
     }
     handleCloseModal("update_profile_modal");
@@ -99,20 +99,19 @@ export default function ActionBar() {
 
   const handleProfileSelect = (profileId: number) => {
     if (!avatarSelected) return;
-    if (avatars[avatarSelected.id].profileSelect === profileId) return;
-    setAvatar({ ...avatars[avatarSelected.id], profileSelect: profileId })
-    toast.success(`Profile changed to Profile: ${avatars[avatarSelected.id].profileList[profileId].profile_name}`)
+    if (avatars[avatarSelected.ID].profileSelect === profileId) return;
+    setAvatar({ ...avatars[avatarSelected.ID], profileSelect: profileId })
+    toast.success(`Profile changed to Profile: ${avatars[avatarSelected.ID].profileList[profileId].profile_name}`)
   }
-
 
   const handleDeleteProfile = (profileId: number, e: React.MouseEvent) => {
     e.stopPropagation()
     if (!avatarSelected || profileId == 0) return;
-    if (window.confirm(`Are you sure you want to delete profile: ${avatars[avatarSelected.id].profileList[profileId].profile_name}?`)) {
+    if (window.confirm(`Are you sure you want to delete profile: ${avatars[avatarSelected.ID].profileList[profileId].profile_name}?`)) {
       const newListProfile = [...listProfile]
       newListProfile.splice(profileId, 1)
-      setAvatar({ ...avatars[avatarSelected.id], profileList: newListProfile, profileSelect: profileId - 1 })
-      toast.success(`Profile ${avatars[avatarSelected.id].profileList[profileId].profile_name} deleted successfully`)
+      setAvatar({ ...avatars[avatarSelected.ID], profileList: newListProfile, profileSelect: profileId - 1 })
+      toast.success(`Profile ${avatars[avatarSelected.ID].profileList[profileId].profile_name} deleted successfully`)
     }
 
   }
@@ -219,28 +218,26 @@ export default function ActionBar() {
           <div className="flex flex-wrap items-center gap-2 ">
             <div className="flex flex-wrap items-center h-full opacity-80 lg:hover:opacity-100 cursor-pointer text-base md:text-lg lg:text-xl">
               {avatarSelected && (
-                <div className="flex items-center justify-start h-full w-full">
+                <div className="flex flex-wrap items-center justify-start h-full w-full">
                   <Image
-                    src={`/icon/${avatarSelected.damageType.toLowerCase()}.webp`}
-                    alt={'fire'}
+                    src={`${process.env.CDN_URL}/${damageType?.[avatarSelected?.DamageType]?.Icon}`}
+                    alt={'damage type'}
                     unoptimized
                     crossOrigin="anonymous"
                     className="h-10 w-10 object-contain"
                     width={100}
                     height={100}
                   />
-                  <p className="text-center font-bold text-xl">
-                    {transI18n(avatarSelected.baseType.toLowerCase())}
+                  <p className="text-center font-bold text-lg">
+                    {transI18n(avatarSelected.BaseType.toLowerCase())}
                   </p>
-                  <div className="text-center font-bold text-xl">{" / "}</div>
+                  <div className="text-center font-bold text-lg">{" / "}</div>
                   <ParseText
                     locale={locale}
                     text={getNameChar(locale, transI18n, avatarSelected).toWellFormed()}
-                    className={"font-bold text-xl"}
+                    className={"font-bold text-lg"}
                   />
-                  {avatarSelected?.id && (
-                    <div className="text-center italic text-sm ml-2"> {`(${avatarSelected.id})`}</div>
-                  )}
+                  <div className="text-center italic text-sm ml-2"> {`(${avatarSelected.ID})`}</div>
                 </div>
               )}
             </div>
@@ -315,7 +312,7 @@ export default function ActionBar() {
                   <button
                     onClick={() => {
                       setIsOpenCopy(true)
-                      setListCopyAvatar(listRawAvatar)
+                      setResetData(baseType, damageType)
                       handleShow("copy_profile_modal")
                     }}
                     className="btn btn-ghost flex justify-start px-3 py-2 h-full w-full hover:bg-base-200 cursor-pointer text-primary z-20"

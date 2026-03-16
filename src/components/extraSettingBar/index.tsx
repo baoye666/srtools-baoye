@@ -3,34 +3,28 @@ import { motion } from "framer-motion"
 import { EyeOff, Eye, Hammer, RefreshCw, ShieldBan, User, Swords, SkipForward, BowArrow, Info, RouteIcon, Search } from "lucide-react"
 import useGlobalStore from '@/stores/globalStore'
 import { useTranslations } from "next-intl"
-import useEventStore from "@/stores/eventStore"
 import { getLocaleName, getNameChar } from "@/helper"
 import useLocaleStore from "@/stores/localeStore"
-import useAvatarStore from "@/stores/avatarStore"
 import SelectCustomImage from "../select/customSelectImage"
 import { useMemo, useState } from "react"
-import useMazeStore from "@/stores/mazeStore"
+import useDetailDataStore from "@/stores/detailDataStore"
 
 export default function ExtraSettingBar() {
   const { extraData, setExtraData } = useGlobalStore()
   const transI18n = useTranslations("DataPage")
-  const { PEAKEvent } = useEventStore()
-  const { listAvatar } = useAvatarStore()
+  const { mapAvatar, mapPeak, stage, baseType } = useDetailDataStore()
   const { locale } = useLocaleStore()
   const [showSearchStage, setShowSearchStage] = useState(false)
   const [isChildClick, setIsChildClick] = useState(false)
   const [stageSearchTerm, setStageSearchTerm] = useState("")
   const [stagePage, setStagePage] = useState(1)
-  const { Stage } = useMazeStore()
+
   const pageSize = 30
-  const stageList = useMemo(() => Object.values(Stage).map((stage) => ({
-    id: stage.stage_id.toString(),
-    name: `${stage.stage_type} (${stage.stage_id})`,
-  })), [Stage])
+  const stageList = useMemo(() => Object.values(stage), [stage])
 
   const filteredStages = useMemo(() => stageList.filter((s) =>
-    s.name.toLowerCase().includes(stageSearchTerm.toLowerCase())
-  ), [stageList, stageSearchTerm])
+    getLocaleName(locale, s.Name).toLowerCase().includes(stageSearchTerm.toLowerCase())
+  ), [stageList, stageSearchTerm, locale])
 
   const paginatedStages = useMemo(() => filteredStages.slice(
     (stagePage - 1) * pageSize,
@@ -122,7 +116,7 @@ export default function ExtraSettingBar() {
                         }}
                       >
                         <Search className="w-6 h-6" />
-                        <span className="text-left"> {transI18n("stage")}: {stageList.find((s) => s.id === extraData?.theory_craft?.stage_id?.toString())?.name || transI18n("selectStage")}</span>
+                        <span className="text-left"> {transI18n("stage")}: {getLocaleName(locale, stageList.find((s) => s.ID.toString() === extraData?.theory_craft?.stage_id?.toString())?.Name) || transI18n("selectStage")}</span>
                       </button>
                     </div>
                     {showSearchStage && (
@@ -158,17 +152,17 @@ export default function ExtraSettingBar() {
                             <>
                               {paginatedStages.map((stage) => (
                                 <div
-                                  key={stage.id}
+                                  key={stage.ID}
                                   className="p-2 hover:bg-primary/20 rounded cursor-pointer"
                                   onClick={(e) => {
                                     e.stopPropagation()
                                     setIsChildClick(true)
     
-                                    if (extraData?.theory_craft?.stage_id !== Number(stage.id)) {
+                                    if (extraData?.theory_craft?.stage_id !== Number(stage.ID)) {
                                       setExtraData({
                                         ...extraData,
                                         theory_craft: {
-                                          stage_id: Number(stage.id),
+                                          stage_id: Number(stage.ID),
                                           cycle_count: extraData?.theory_craft?.cycle_count || 1,
                                           mode: extraData?.theory_craft?.mode || false,
                                           hp: extraData?.theory_craft?.hp || {}
@@ -179,7 +173,7 @@ export default function ExtraSettingBar() {
                                     onChangeSearch("")
                                   }}
                                 >
-                                  {stage.name}
+                                  {getLocaleName(locale, stage.Name)}
                                 </div>
                               ))}
 
@@ -238,10 +232,10 @@ export default function ExtraSettingBar() {
             <User className="text-warning" size={20} />
             <span className="label-text font-semibold">{transI18n("mainPath")}</span>
             <SelectCustomImage
-              customSet={listAvatar.filter((it) => extraData?.multi_path?.multi_path_main?.includes(Number(it.id))).map((it) => ({
-                value: it.id,
+              customSet={Object.values(mapAvatar).filter((it) => extraData?.multi_path?.multi_path_main?.includes(Number(it.ID))).map((it) => ({
+                value: it.ID.toString(),
                 label: getNameChar(locale, transI18n, it),
-                imageUrl: `/icon/${it.baseType.toLowerCase()}.webp`
+                imageUrl: `${process.env.CDN_URL}/${baseType?.[it.BaseType].Icon}`
               }))}
               excludeSet={[]}
               selectedCustomSet={extraData?.multi_path?.main?.toString() || ""}
@@ -268,10 +262,10 @@ export default function ExtraSettingBar() {
             <BowArrow className="text-info" size={20} />
             <span className="label-text font-semibold">{transI18n("march7Path")}</span>
             <SelectCustomImage
-              customSet={listAvatar.filter((it) => extraData?.multi_path?.multi_path_march_7?.includes(Number(it.id))).map((it) => ({
-                value: it.id,
+              customSet={Object.values(mapAvatar).filter((it) => extraData?.multi_path?.multi_path_march_7?.includes(Number(it.ID))).map((it) => ({
+                value: it.ID.toString(),
                 label: getNameChar(locale, transI18n, it),
-                imageUrl: `/icon/${it.baseType.toLowerCase()}.webp`
+                imageUrl: `${process.env.CDN_URL}/${baseType?.[it.BaseType].Icon}`
               }))}
               excludeSet={[]}
               selectedCustomSet={extraData?.multi_path?.march_7?.toString() || ""}
@@ -318,9 +312,9 @@ export default function ExtraSettingBar() {
                 })
               }
             >
-              {PEAKEvent.filter(event => extraData?.challenge?.challenge_peak_group_id_list?.includes(Number(event.id))).map(event => (
-                <option key={event.id} value={event.id}>
-                  {getLocaleName(locale, event)} ({event.id})
+              {Object.values(mapPeak).filter(event => extraData?.challenge?.challenge_peak_group_id_list?.includes(Number(event.ID))).map(event => (
+                <option key={event.ID} value={event.ID}>
+                  {getLocaleName(locale, event.Name)} ({event.ID})
                 </option>
               ))}
             </select>

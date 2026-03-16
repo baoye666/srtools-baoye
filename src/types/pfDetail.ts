@@ -1,51 +1,72 @@
-import { ChallengeDetail, EventStageDetail } from "./mocDetail"
-
-export interface PFDetail {
-    Id: number
-    Name: string
-    Buff: BuffDetail
-    Option: OptionDetail[]
-    SubOption: OptionDetail[]
-    BeginTime: string
-    EndTime: string
-    Level: PFLevel[]
+export interface PFGroupDetail {
+    ID: number;
+    ChallengeGroupType: string;
+    Name: Record<string, string>;
+    Image: PFGroupImage;
+    BeginTime: string;
+    EndTime: string;
+    SubOption: MazeBuff[];
+    Option: MazeBuff[];
+    Level: LevelData[];
 }
 
-export interface BuffDetail {
-    Name?: string | null
-    Desc?: string | null
-    Param: number[]
+export interface PFGroupImage {
+    BackGroundPath: string;
+    TabPicPath: string;
+    TabPicSelectPath: string;
+    ThemePicPath: string;
 }
 
-export interface OptionDetail {
-    Name: string
-    Desc: string
-    Param: number[]
+export interface MazeBuff {
+    ID: number;
+    Param: number[];
+    Icon: string;
+    Name: Record<string, string>;
+    Desc: Record<string, string>;
 }
 
-export interface PFLevel {
-    Id: number
-    Name: string
-    Challenge: ChallengeDetail[]
-    DamageType1: string[]
-    DamageType2: string[]
-    MazeGroupID1: number
-    MazeGroupID2: number
-    NpcMonsterIDList1: number[]
-    NpcMonsterIDList2: number[]
-    EventIDList1: EventStageDetail[]
-    EventIDList2: EventStageDetail[]
-    InfiniteList1: Record<string, InfiniteWave>
-    InfiniteList2: Record<string, InfiniteWave>
+export interface LevelData {
+    Floor: number;
+    ID: number;
+    StageNum: number;
+    Name: Record<string, string>;
+    Target: StoryTarget[];
+    DamageType1: string[];
+    DamageType2: string[];
+    MazeBuff: MazeBuff[];
+    EventList1: StageConfig[];
+    EventList2: StageConfig[];
+    TurnLimit: number;
+    BattleTarget: BattleTarget[];
+    ClearScore: number;
+}
+
+export interface StoryTarget {
+    ID: number;
+    Name: Record<string, string>;
+    Param: number[];
+}
+
+export interface BattleTarget {
+    ID: number;
+    Param: number[];
+    Name: Record<string, string>;
+}
+
+export interface StageConfig {
+    ID: number;
+    Name: Record<string, string>;
+    HardLevelGroup: number;
+    EliteGroup: number;
+    Level: number;
+    Release: boolean;
+    MonsterList: number[][];
+    Infinite?: InfiniteWave[] | null;
 }
 
 export interface InfiniteWave {
-    InfiniteWaveID: number
-    MonsterGroupIDList: number[]
-    MaxMonsterCount: number
-    MaxTeammateCount: number
-    Ability: string
-    ParamList: number[]
-    ClearPreviousAbility: boolean
-    EliteGroup: number
+    ID: number;
+    MaxMonsterCount: number;
+    MonsterList: number[];
+    EliteGroup: number;
 }

@@ -2,27 +2,27 @@
 
 import { getLocaleName } from '@/helper';
 import useLocaleStore from '@/stores/localeStore';
-import { LightConeBasic } from '@/types';
 import ParseText from '../parseText';
 import Image from 'next/image';
+import { LightConeDetail } from '@/types';
 
 interface LightconeCardProps {
-    data: LightConeBasic
+    data: LightConeDetail
 }
 
 export default function LightconeCard({ data }: LightconeCardProps) {
 
     const { locale } = useLocaleStore();
-    const text = getLocaleName(locale, data)
+    const text = getLocaleName(locale, data.Name)
     return (
         <li className="z-10 flex flex-col items-center rounded-md shadow-lg 
             bg-linear-to-b from-customStart to-customEnd transform transition-transform duration-300 
             hover:scale-105 cursor-pointer min-h-55"
         >
             <div
-                className={`w-full rounded-md bg-linear-to-br ${data.rank === "CombatPowerLightconeRarity5"
+                className={`w-full rounded-md bg-linear-to-br ${data.Rarity === "CombatPowerLightconeRarity5"
                     ? "from-yellow-400 via-yellow-600/70 to-yellow-800/50"
-                    : data.rank === "CombatPowerLightconeRarity4" ? "from-purple-400 via-purple-600/70 to-purple-800/50" :
+                    : data.Rarity === "CombatPowerLightconeRarity4" ? "from-purple-400 via-purple-600/70 to-purple-800/50" :
                         "from-blue-400 via-blue-600/70 to-blue-800/50"
                     }`}
             >
@@ -30,7 +30,7 @@ export default function LightconeCard({ data }: LightconeCardProps) {
                 <div className="relative w-full h-full">
                     <Image
                         loading="lazy"
-                        src={`${process.env.CDN_URL}/${data.thumbnail}`}
+                        src={`${process.env.CDN_URL}/${data?.Image?.ThumbnailPath}`}
                         unoptimized
                         crossOrigin="anonymous"
                         width={348}
