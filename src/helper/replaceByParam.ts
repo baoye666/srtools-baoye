@@ -1,52 +1,38 @@
-export function replaceByParam(desc: string, params: number[]): string {
-    function formatParam(
-        indexStr: string,
-        format: string,
-        floatDigits: string | undefined,
-        percent: string | undefined
-    ): string {
-        const i: number = parseInt(indexStr, 10) - 1;
-        const value: number | undefined = params[i];
-        if (value === undefined) return "";
-
-        if (format.startsWith("f")) {
-            const digits: number = parseInt(floatDigits || "1", 10);
-            const num: number = percent ? value * 100 : value;
-            return `${num.toFixed(digits)}${percent ? "%" : ""}`;
-        }
-
-        if (format === "i") {
-            return percent ? `${(value * 100).toFixed(0)}%` : `${Math.round(value)}`;
-        }
-
-        return `${value}`;
+const formatValue = (value: number, format: string, floatDigits?: string, hasPercent?: boolean): string => {
+    if (format.startsWith('f')) {
+        const digits = parseInt(floatDigits || "1", 10);
+        const num = hasPercent ? value * 100 : value;
+        return `${num.toFixed(digits)}${hasPercent ? "%" : ""}`;
     }
 
-    const desc1 = desc.replace(/<color=#[0-9a-fA-F]{8}>(.*?)<\/color>/g, (match: string, inner: string): string => {
-        const colorCode: string = match.match(/#[0-9a-fA-F]{8}/)?.[0] ?? "#ffffff";
-        const processed: string = inner
-            .replace(/#(\d+)\[(f(\d+)|i)\](%)?/g, (
-                _: string,
-                index: string,
-                format: string,
-                floatDigits: string | undefined,
-                percent: string | undefined
-            ): string => formatParam(index, format, floatDigits, percent))
-            .replace(/<unbreak>(.*?)<\/unbreak>/g, "$1");
+    if (format === 'i') {
+        const num = hasPercent ? value * 100 : value;
+        return `${Math.round(num)}${hasPercent ? "%" : ""}`;
+    }
 
-        return `<span style="color:${colorCode}">${processed}</span>`;
+    return String(value);
+};
+
+export function replaceByParam(desc: string, params: number[]): string {
+
+    const PARAM_REGEX = /#(\d+)\[(f(\d+)|i)\](%)?/g;
+
+    const processor = (_match: string, index: string, format: string, digits?: string, percent?: string): string => {
+        const i = parseInt(index, 10) - 1;
+        const val = params[i];
+        return val !== undefined ? formatValue(val, format, digits, !!percent) : "";
+    };
+
+    let result = desc.replace(/<color=(#[0-9a-fA-F]{8})>(.*?)<\/color>/g, (_, color, inner) => {
+        const processedInner = inner.replace(PARAM_REGEX, processor);
+        return `<span style="color: ${color}">${processedInner}</span>`;
     });
 
-    const desc2 = desc1.replace(/<unbreak>#(\d+)\[(f(\d+)|i)\](%)?<\/unbreak>/g, (
-        _: string,
-        index: string,
-        format: string,
-        floatDigits: string | undefined,
-        percent: string | undefined
-    ): string => formatParam(index, format, floatDigits, percent));
+    result = result.replace(/<unbreak>(.*?)<\/unbreak>/g, (_, inner) => {
+        return inner.replace(PARAM_REGEX, processor);
+    });
 
-    const desc3 = desc2.replace(/<unbreak>(\d+)<\/unbreak>/g, (_: string, number: string): string => number);
+    result = result.replace(PARAM_REGEX, processor);
 
-    const desc4 = desc3.replaceAll("\\n", "<br></br>");
-    return desc4;
+    return result.split("\\n").join("<br/>");
 }

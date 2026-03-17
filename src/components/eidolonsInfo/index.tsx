@@ -65,6 +65,28 @@ export default function EidolonsInfo() {
                                 </div>
                                 <div className="text-sm font-normal">
                                     <div dangerouslySetInnerHTML={{ __html: replaceByParam(getLocaleName(locale, rank.Desc), rank.Param) }} />
+                                    {Object.values(rank?.Extra || {}).map((extra) => (
+                                        <div
+                                            key={extra.ID}
+                                            className="mt-3 pl-3 border-l-2 border-primary/30 bg-primary/5 py-2 rounded-r-sm"
+                                        >
+                                            <div className="flex items-center gap-2 mb-1">
+                                                <span className="text-[10px] uppercase font-bold bg-primary/50 px-1.5 py-0.5 rounded">
+                                                    Extra Effect
+                                                </span>
+                                                <span className="text-sm font-semibold text-primary/80">
+                                                    {getLocaleName(locale, extra.Name)}
+                                                </span>
+                                            </div>
+
+                                            <div
+                                                className="text-sm leading-relaxed opacity-90"
+                                                dangerouslySetInnerHTML={{
+                                                    __html: replaceByParam(getLocaleName(locale, extra.Desc), extra.Param)
+                                                }}
+                                            />
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         ))}

@@ -173,7 +173,7 @@ export default function RelicsInfo() {
 
   return (
     <div className="max-h-[77vh] min-h-[50vh] overflow-y-scroll overflow-x-hidden">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
           {/* Left Section - Items Grid */}
@@ -184,7 +184,7 @@ export default function RelicsInfo() {
                 {transI18n("relics")}
               </h2>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl">
                 {["1", "2", "3", "4", "5", "6"].map((item, index) => (
                   <div key={index} className="relative group">
                     <div

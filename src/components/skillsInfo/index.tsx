@@ -11,6 +11,7 @@ import { mappingStats } from "@/constant/constant";
 import { toast } from "react-toastify";
 import useCurrentDataStore from "@/stores/currentDataStore";
 import { StatusAdd } from '@/types/avatarDetail';
+import { SkillDescription } from "./skillDescription";
 
 export default function SkillsInfo() {
     const transI18n = useTranslations("DataPage")
@@ -364,17 +365,11 @@ export default function SkillsInfo() {
                                                     {` (${transI18n(skill?.SkillEffect?.toLowerCase())})`}
                                                 </div>
 
-                                                <div className="text-lg font-bold" dangerouslySetInnerHTML={{ __html: replaceByParam(getLocaleName(locale, skill.Name), []) }}>
-
-                                                </div>
-
-                                                <div
-                                                    dangerouslySetInnerHTML={{
-                                                        __html: replaceByParam(
-                                                            getLocaleName(locale, skill.Desc),
-                                                            skill.Level[avatarData?.data.skills?.[skillInfo?.PointID]?.toString() || ""]?.Param || []
-                                                        )
-                                                    }}
+                                                <SkillDescription
+                                                    skill={skill}
+                                                    locale={locale}
+                                                    avatarData={avatarData}
+                                                    skillInfo={skillInfo}
                                                 />
                                             </div>
                                         ))}

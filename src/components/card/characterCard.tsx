@@ -22,7 +22,7 @@ export default function CharacterCard({ data }: CharacterCardProps) {
       className="z-10 flex flex-col items-center rounded-xl shadow-xl 
                bg-linear-to-br from-base-300 via-base-100 to-warning/70
                transform transition-transform duration-300 ease-in-out 
-               hover:scale-105 cursor-pointer min-h-45 sm:min-h-45 md:min-h-52.5 lg:min-h-55 xl:min-h-60 2xl:min-h-85"
+               hover:scale-105 cursor-pointer min-h-45 sm:min-h-45 md:min-h-52.5 lg:min-h-55 xl:min-h-60 2xl:min-h-65"
     >
       <div
         className={`w-full rounded-md bg-linear-to-br ${data.Rarity === "CombatPowerAvatarRarityType5"

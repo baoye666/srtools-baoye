@@ -660,7 +660,7 @@ export default function ShowCaseInfo() {
                     </div>
                   </div>
 
-                  <div className="relative flex h-56.25 w-auto flex-row items-center">
+                  <div className="relative flex h-56.25 flex-row items-center">
                     {avatarSelected && (
                       <div className="absolute inset-0 flex items-center justify-center">
                         <NextImage

@@ -112,9 +112,11 @@ export interface SkillDetail {
     Level: Record<string, SkillLevel>;
     Icon: string;
     Desc: Record<string, string>;
+    SimpleDesc: Record<string, string>;
     RatedSkillTreeID: number[];
     RatedRankID: number[];
     Extra: Record<string, ExtraEffect>;
+    SimpleExtra: Record<string, ExtraEffect>;
     SPBase: number | null;
     StanceDamageDisplay: number;
     SPMultipleRatio: number | null;

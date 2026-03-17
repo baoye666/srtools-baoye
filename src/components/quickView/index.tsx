@@ -404,7 +404,7 @@ export default function QuickView() {
                             <div key={index} className="flex flex-row items-center justify-between">
                                 <div className="flex flex-row items-center">
                                     <NextImage 
-                                        src={stat?.icon || ""} 
+                                        src={`${process.env.CDN_URL}/${stat?.icon}`} 
                                         unoptimized
                                         crossOrigin="anonymous"
                                         alt="Stat Icon" 
