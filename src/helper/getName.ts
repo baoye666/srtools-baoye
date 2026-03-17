@@ -3,6 +3,10 @@ import { AvatarDetail } from "@/types";
 import { useTranslations } from "next-intl"
 
 type TFunc = ReturnType<typeof useTranslations>
+function cleanText(text: string): string {
+  if (!text) return ""
+  return text.replace(/<unbreak>(.*?)<\/unbreak>/g, "$1")
+}
 
 export function getNameChar(
   locale: string,
@@ -27,7 +31,7 @@ export function getNameChar(
     text = `${t("trailblazer")} • ${t(data?.BaseType?.toLowerCase() ?? "")}`;
   }
 
-  return text;
+  return cleanText(text)
 }
 
 export function getLocaleName(locale: string, data: Record<string, string> | undefined | null): string {
@@ -46,7 +50,8 @@ export function getLocaleName(locale: string, data: Record<string, string> | und
     if (!text) {
         text = data["en"] ?? "";
     }
-    return text
+    
+    return cleanText(text)
 }
 
 export function parseRuby(text: string): string {

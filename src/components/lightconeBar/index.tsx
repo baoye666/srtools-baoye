@@ -47,7 +47,7 @@ export default function LightconeBar() {
         list.sort((a, b) => {
             const r = calcRarity(b.Rarity) - calcRarity(a.Rarity)
             if (r !== 0) return r
-            return a.ID - b.ID
+            return b.ID - a.ID
         })
 
         return list
