@@ -5,19 +5,11 @@ export interface ASGroupDetail {
     ID: number;
     ChallengeGroupType: string;
     Name: Record<string, string>;
-    Image: ASGroupImage;
     BeginTime: string;
     EndTime: string;
     BuffList1: ASBuff[];
     BuffList2: ASBuff[];
     Level: ASLevel[];
-}
-
-export interface ASGroupImage {
-    BackGroundPath: string;
-    TabPicPath: string;
-    TabPicSelectPath: string;
-    ThemePicPath: string;
 }
 
 export interface ASBuff {

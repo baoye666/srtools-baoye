@@ -4,17 +4,9 @@ export interface PeakGroupDetail {
     ID: number;
     ChallengeGroupType: string;
     Name: Record<string, string>;
-    Image: PeakGroupImage;
     PreLevel: PeakMazeConfig[];
     BossLevel: PeakMazeConfig | null;
     BossConfig: PeakBossConfig | null;
-}
-
-export interface PeakGroupImage {
-    ThemePosterTabPicPath: string;
-    ThemeIconPicPath: string;
-    HandBookPanelBannerPath: string;
-    RankIconPathList: string[];
 }
 
 export interface PeakMazeConfig {

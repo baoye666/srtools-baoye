@@ -4,17 +4,9 @@ export interface MOCGroupDetail {
     ID: number;
     ChallengeGroupType: string;
     Name: Record<string, string>;
-    Image: MoCImage;
     BeginTime: string;
     EndTime: string;
     Level: MoCLevel[];
-}
-
-export interface MoCImage {
-    BackGroundPath: string;
-    TabPicPath: string;
-    TabPicSelectPath: string;
-    ThemePicPath: string;
 }
 
 export interface MoCLevel {

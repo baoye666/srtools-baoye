@@ -2,19 +2,11 @@ export interface PFGroupDetail {
     ID: number;
     ChallengeGroupType: string;
     Name: Record<string, string>;
-    Image: PFGroupImage;
     BeginTime: string;
     EndTime: string;
     SubOption: MazeBuff[];
     Option: MazeBuff[];
     Level: LevelData[];
-}
-
-export interface PFGroupImage {
-    BackGroundPath: string;
-    TabPicPath: string;
-    TabPicSelectPath: string;
-    ThemePicPath: string;
 }
 
 export interface MazeBuff {
