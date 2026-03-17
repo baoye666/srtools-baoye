@@ -26,12 +26,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "cdn.kain.id.vn",
-        pathname: "**",
-      },
-      {
-        protocol: "https",
-        hostname: "r2.kain.id.vn",
+        hostname: "cdn.punklorde.org",
         pathname: "**",
       }
     ],
@@ -40,7 +35,7 @@ const nextConfig: NextConfig = {
     styledComponents: true,
   },
   env: {
-    CDN_URL: "https://r2.kain.id.vn/asbres",
+    CDN_URL: "https://cdn.punklorde.org/asbres",
   },
 };
 
