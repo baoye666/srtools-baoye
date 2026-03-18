@@ -47,7 +47,7 @@ export default function ShowCaseInfo() {
         link.href = canvas.toDataURL("image/png");
         link.click();
       })
-      .catch((e) => {
+      .catch(() => {
         toast.error("Error generating showcase card!");
       });
   }, [avatarSelected, locale, transI18n]);

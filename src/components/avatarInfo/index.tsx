@@ -200,9 +200,9 @@ export default function AvatarInfo() {
                                                     </div>
                                                     <input
                                                         type="checkbox"
-                                                        checked={(!avatarSelected || avatarSelected?.MazeBuff?.length > 0)}
+                                                        checked={avatars[avatarSelected?.ID.toString() || ""]?.techniques.length > 0 }
                                                         onChange={(e) => {
-                                                            if (!avatarSelected || avatarSelected?.MazeBuff?.length > 0) return
+                                                            if (!avatarSelected || avatarSelected?.MazeBuff?.length == 0) return
                                                             const techniques = e.target.checked ? avatarSelected?.MazeBuff : [];
                                                             const newAvatar = { ...avatars[avatarSelected?.ID.toString() || ""], techniques: techniques };
                                                             setAvatar(newAvatar);
