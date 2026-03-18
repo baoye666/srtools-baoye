@@ -22,9 +22,12 @@ export default function ExtraSettingBar() {
   const pageSize = 30
   const stageList = useMemo(() => Object.values(stage), [stage])
 
+  const term = stageSearchTerm.toLowerCase()
+
   const filteredStages = useMemo(() => stageList.filter((s) =>
-    getLocaleName(locale, s.Name).toLowerCase().includes(stageSearchTerm.toLowerCase())
-  ), [stageList, stageSearchTerm, locale])
+    getLocaleName(locale, s.Name).toLowerCase().includes(term) ||
+    String(s.ID).toLowerCase().includes(term)
+  ), [stageList, term, locale])
 
   const paginatedStages = useMemo(() => filteredStages.slice(
     (stagePage - 1) * pageSize,
