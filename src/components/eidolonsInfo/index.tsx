@@ -7,6 +7,7 @@ import useUserDataStore from "@/stores/userDataStore";
 import { useMemo } from "react";
 import { useTranslations } from "next-intl";
 import useCurrentDataStore from "@/stores/currentDataStore";
+import ExtraEffectList from '../extraInfo';
 
 
 export default function EidolonsInfo() {
@@ -35,58 +36,43 @@ export default function EidolonsInfo() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {Object.entries(charRank || {}).map(([key, rank]) => (
                             <div key={key}
-                                className="flex flex-col items-center cursor-pointer hover:scale-105"
-                                onClick={() => {
-                                    let newRank = Number(key)
-                                    if (avatars[avatarSelected?.ID || ""]?.data?.rank == Number(key)) {
-                                        newRank = Number(key) - 1
-                                    }
-                                    setAvatars({ ...avatars, [avatarSelected?.ID || ""]: { ...avatars[avatarSelected?.ID || ""], data: { ...avatars[avatarSelected?.ID || ""].data, rank: newRank } } })
-                                }}
-                            >
-                                <Image
-                                    className={`w-60 object-contain mb-2 ${Number(key) <= avatars[avatarSelected?.ID.toString() || ""]?.data?.rank ? "" : "grayscale"}`}
-                                    src={`${process.env.CDN_URL}/ui/ui3d/rank/_dependencies/textures/${avatarSelected?.ID}/${avatarSelected?.ID}_Rank_${key}.png`}
-                                    alt={`Rank ${key}`}
-                                    priority
-                                    unoptimized
-                                    crossOrigin="anonymous"
-                                    width={240}
-                                    height={240}
-                                />
+                                className="flex flex-col items-center"
 
-                                <div className="text-lg pb-1 flex items-center justify-items-center gap-2">
-                                    <span className="inline-block text-indigo-500">{key}.</span>
-                                    <ParseText
-                                        locale={locale}
-                                        text={getLocaleName(locale, rank.Name)}
-                                        className="text-center text-base font-normal leading-tight"
+                            >
+                                <div
+                                    className="cursor-pointer"
+                                    onClick={() => {
+                                        let newRank = Number(key)
+                                        if (avatars[avatarSelected?.ID || ""]?.data?.rank == Number(key)) {
+                                            newRank = Number(key) - 1
+                                        }
+                                        setAvatars({ ...avatars, [avatarSelected?.ID || ""]: { ...avatars[avatarSelected?.ID || ""], data: { ...avatars[avatarSelected?.ID || ""].data, rank: newRank } } })
+                                    }}
+                                >
+                                    <Image
+                                        className={`w-60 object-contain mb-2 ${Number(key) <= avatars[avatarSelected?.ID.toString() || ""]?.data?.rank ? "" : "grayscale"}`}
+                                        src={`${process.env.CDN_URL}/ui/ui3d/rank/_dependencies/textures/${avatarSelected?.ID}/${avatarSelected?.ID}_Rank_${key}.png`}
+                                        alt={`Rank ${key}`}
+                                        priority
+                                        unoptimized
+                                        crossOrigin="anonymous"
+                                        width={240}
+                                        height={240}
                                     />
+
+                                    <div className="text-lg pb-1 flex items-center justify-items-center gap-2">
+                                        <span className="inline-block text-indigo-500">{key}.</span>
+                                        <ParseText
+                                            locale={locale}
+                                            text={getLocaleName(locale, rank.Name)}
+                                            className="text-center text-base font-normal leading-tight"
+                                        />
+                                    </div>
                                 </div>
+
                                 <div className="text-sm font-normal">
                                     <div dangerouslySetInnerHTML={{ __html: replaceByParam(getLocaleName(locale, rank.Desc), rank.Param) }} />
-                                    {Object.values(rank?.Extra || {}).map((extra) => (
-                                        <div
-                                            key={extra.ID}
-                                            className="mt-3 pl-3 border-l-2 border-primary/30 bg-primary/5 py-2 rounded-r-sm"
-                                        >
-                                            <div className="flex items-center gap-2 mb-1">
-                                                <span className="text-[10px] uppercase font-bold bg-primary/50 px-1.5 py-0.5 rounded">
-                                                    Extra Effect
-                                                </span>
-                                                <span className="text-sm font-semibold text-primary/80">
-                                                    {getLocaleName(locale, extra.Name)}
-                                                </span>
-                                            </div>
-
-                                            <div
-                                                className="text-sm leading-relaxed opacity-90"
-                                                dangerouslySetInnerHTML={{
-                                                    __html: replaceByParam(getLocaleName(locale, extra.Desc), extra.Param)
-                                                }}
-                                            />
-                                        </div>
-                                    ))}
+                                    <ExtraEffectList extras={rank?.Extra} locale={locale} />
                                 </div>
                             </div>
                         ))}
