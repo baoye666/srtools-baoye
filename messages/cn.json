@@ -274,6 +274,8 @@
 		"detailHiddenUi": "开启后将隐藏游戏界面。",
 		"detailDisableCensorship": "开启后将关闭游戏内的审查。",
 		"detailMultipathCharacter": "允许更改部分角色的命途。",
-		"trailblazer": "开拓者"
+		"trailblazer": "开拓者",
+		"listExtraEffect": "额外效果列表",
+		"extra": "额外"
 	}
 }

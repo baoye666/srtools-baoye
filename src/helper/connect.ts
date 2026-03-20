@@ -14,7 +14,7 @@ export const connectToPS = async (): Promise<{ success: boolean, message: string
         username,
         password
     } = useConnectStore.getState()
-    const {setExtraData, setIsConnectPS} = useGlobalStore.getState()
+    const { setExtraData, setIsConnectPS } = useGlobalStore.getState()
 
     let urlQuery = serverUrl
     if (!urlQuery.startsWith("http://") && !urlQuery.startsWith("https://")) {
@@ -59,7 +59,7 @@ export const syncDataToPS = async (): Promise<{ success: boolean, message: strin
         password
     } = useConnectStore.getState()
 
-    const {extraData, setIsConnectPS, setExtraData} = useGlobalStore.getState()
+    const {extraData, setIsConnectPS, setExtraData, isEnableChangePath} = useGlobalStore.getState()
 
 
     const {avatars, battle_type, moc_config, pf_config, as_config, ce_config, peak_config} = useUserDataStore.getState()
@@ -85,7 +85,13 @@ export const syncDataToPS = async (): Promise<{ success: boolean, message: strin
             return { success: true, message: "" }
         }
     } 
-    const response = await SendDataToServer(username, password, urlQuery, data, extraData)
+    const newExtra = structuredClone(extraData)
+
+    if (newExtra && !isEnableChangePath) {
+        newExtra.multi_path = undefined
+    }
+
+    const response = await SendDataToServer(username, password, urlQuery, data, newExtra)
     if (typeof response === "string") {
         setIsConnectPS(false)
         return { success: false, message: response }

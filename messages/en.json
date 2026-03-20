@@ -275,6 +275,8 @@
 		"detailHiddenUi": "Enabling this feature will hide the game UI.",
 		"detailDisableCensorship": "Enabling this feature will disable in-game censorship.",
 		"detailMultipathCharacter": "Allows changing the Path of certain characters.",
-		"trailblazer": "Trailblazer"
+		"trailblazer": "Trailblazer",
+		"listExtraEffect": "List Extra Effect",
+		"extra": "Extra"
 	}
 }

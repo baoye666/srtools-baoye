@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { replaceByParam, getLocaleName } from "@/helper"
 import { ExtraEffect } from "@/types"
+import { useTranslations } from "next-intl"
 
 type Props = {
     extras: Record<string, ExtraEffect> | undefined
@@ -12,7 +13,7 @@ type Props = {
 export default function ExtraEffectList({ extras, locale }: Props) {
     const [openList, setOpenList] = useState(false)
     const [openId, setOpenId] = useState<number | null>(null)
-
+    const transI18n = useTranslations("DataPage")
     if (!extras || Object.keys(extras).length === 0) return null
 
     return (
@@ -22,7 +23,7 @@ export default function ExtraEffectList({ extras, locale }: Props) {
                 onClick={() => setOpenList(!openList)}
             >
                 <span className="text-sm font-semibold text-primary">
-                    List Extra Effect ({Object.keys(extras).length})
+                    {transI18n("listExtraEffect")} ({Object.keys(extras).length})
                 </span>
 
                 <span
@@ -36,7 +37,7 @@ export default function ExtraEffectList({ extras, locale }: Props) {
 
             <div
                 className={`overflow-hidden transition-all duration-300 ${
-                    openList ? "max-h-[500px] mt-2" : "max-h-0"
+                    openList ? "max-h-125 mt-2" : "max-h-0"
                 }`}
             >
                 <div className="flex flex-col gap-2">
@@ -56,7 +57,7 @@ export default function ExtraEffectList({ extras, locale }: Props) {
                                 >
                                     <div className="flex items-center gap-2">
                                         <span className="text-[10px] uppercase font-bold bg-primary/50 px-1.5 py-0.5 rounded">
-                                            Extra
+                                            {transI18n("extra")}
                                         </span>
 
                                         <span className="text-sm font-medium text-primary/80">

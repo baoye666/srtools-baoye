@@ -274,6 +274,8 @@
 		"detailHiddenUi": "이 기능을 활성화하면 게임 UI가 숨겨집니다.",
 		"detailDisableCensorship": "이 기능을 활성화하면 게임 내 검열이 비활성화됩니다.",
 		"detailMultipathCharacter": "일부 캐릭터의 운명을 변경할 수 있습니다.",
-		"trailblazer": "개척자"
+		"trailblazer": "개척자",
+		"listExtraEffect": "추가 효과 목록",
+		"extra": "추가"
 	}
 }

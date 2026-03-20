@@ -274,6 +274,8 @@
 		"detailHiddenUi": "Khi bật tính năng này sẽ ẩn giao diện của game.",
 		"detailDisableCensorship": "Khi bật tính năng này sẽ tắt kiểm duyệt của game.",
 		"detailMultipathCharacter": "Cho phép thay đổi Vận Mệnh của một vài nhân vật.",
-		"trailblazer": "Nhà khai phá"
+		"trailblazer": "Nhà khai phá",
+		"listExtraEffect": "Danh sách hiệu ứng bổ sung",
+		"extra": "Bổ sung"
 	}
 }

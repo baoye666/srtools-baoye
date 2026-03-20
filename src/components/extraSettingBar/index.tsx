@@ -10,7 +10,7 @@ import { useMemo, useState } from "react"
 import useDetailDataStore from "@/stores/detailDataStore"
 
 export default function ExtraSettingBar() {
-  const { extraData, setExtraData } = useGlobalStore()
+  const { extraData, setExtraData, isEnableChangePath, setIsEnableChangePath } = useGlobalStore()
   const transI18n = useTranslations("DataPage")
   const { mapAvatar, mapPeak, stage, baseType } = useDetailDataStore()
   const { locale } = useLocaleStore()
@@ -160,7 +160,7 @@ export default function ExtraSettingBar() {
                                   onClick={(e) => {
                                     e.stopPropagation()
                                     setIsChildClick(true)
-    
+
                                     if (extraData?.theory_craft?.stage_id !== Number(stage.ID)) {
                                       setExtraData({
                                         ...extraData,
@@ -228,66 +228,75 @@ export default function ExtraSettingBar() {
           <div className="tooltip tooltip-info tooltip-bottom" data-tip={transI18n("detailMultipathCharacter")}>
             <Info className="text-primary" size={20} />
           </div>
+          <input
+            type="checkbox"
+            className="toggle toggle-primary"
+            checked={isEnableChangePath}
+            onChange={(e) => setIsEnableChangePath(e.target.checked)}
+          />
         </h3>
+        {isEnableChangePath && (
+          <>
+            <motion.div className="form-control bg-base-200 p-4 rounded-xl shadow">
+              <label className="flex items-center gap-3">
+                <User className="text-warning" size={20} />
+                <span className="label-text font-semibold">{transI18n("mainPath")}</span>
+                <SelectCustomImage
+                  customSet={Object.values(mapAvatar).filter((it) => extraData?.multi_path?.multi_path_main?.includes(Number(it.ID))).map((it) => ({
+                    value: it.ID.toString(),
+                    label: getNameChar(locale, transI18n, it),
+                    imageUrl: `${process.env.CDN_URL}/${baseType?.[it.BaseType].Icon}`
+                  }))}
+                  excludeSet={[]}
+                  selectedCustomSet={extraData?.multi_path?.main?.toString() || ""}
+                  placeholder={transI18n("selectAMainStat")}
+                  setSelectedCustomSet={(it) => {
+                    if (!it) return
+                    setExtraData({
+                      ...extraData,
+                      multi_path: {
+                        march_7: extraData?.multi_path?.march_7 || 1001,
+                        main: Number(it) || 8001,
+                        multi_path_main: extraData?.multi_path?.multi_path_main || [],
+                        multi_path_march_7: extraData?.multi_path?.multi_path_march_7 || []
+                      }
+                    })
+                  }}
+                />
 
-        <motion.div className="form-control bg-base-200 p-4 rounded-xl shadow">
-          <label className="flex items-center gap-3">
-            <User className="text-warning" size={20} />
-            <span className="label-text font-semibold">{transI18n("mainPath")}</span>
-            <SelectCustomImage
-              customSet={Object.values(mapAvatar).filter((it) => extraData?.multi_path?.multi_path_main?.includes(Number(it.ID))).map((it) => ({
-                value: it.ID.toString(),
-                label: getNameChar(locale, transI18n, it),
-                imageUrl: `${process.env.CDN_URL}/${baseType?.[it.BaseType].Icon}`
-              }))}
-              excludeSet={[]}
-              selectedCustomSet={extraData?.multi_path?.main?.toString() || ""}
-              placeholder={transI18n("selectAMainStat")}
-              setSelectedCustomSet={(it) => {
-                if (!it) return
-                setExtraData({
-                  ...extraData,
-                  multi_path: {
-                    march_7: extraData?.multi_path?.march_7 || 1001,
-                    main: Number(it) || 8001,
-                    multi_path_main: extraData?.multi_path?.multi_path_main || [],
-                    multi_path_march_7: extraData?.multi_path?.multi_path_march_7 || []
-                  }
-                })
-              }}
-            />
+              </label>
+            </motion.div>
 
-          </label>
-        </motion.div>
-
-        <motion.div className="form-control bg-base-200 p-4 rounded-xl shadow">
-          <label className="flex items-center gap-3">
-            <BowArrow className="text-info" size={20} />
-            <span className="label-text font-semibold">{transI18n("march7Path")}</span>
-            <SelectCustomImage
-              customSet={Object.values(mapAvatar).filter((it) => extraData?.multi_path?.multi_path_march_7?.includes(Number(it.ID))).map((it) => ({
-                value: it.ID.toString(),
-                label: getNameChar(locale, transI18n, it),
-                imageUrl: `${process.env.CDN_URL}/${baseType?.[it.BaseType].Icon}`
-              }))}
-              excludeSet={[]}
-              selectedCustomSet={extraData?.multi_path?.march_7?.toString() || ""}
-              placeholder={transI18n("selectAMainStat")}
-              setSelectedCustomSet={(it) => {
-                if (!it) return
-                setExtraData({
-                  ...extraData,
-                  multi_path: {
-                    march_7: Number(it) || 1001,
-                    main: extraData?.multi_path?.main || 8001,
-                    multi_path_main: extraData?.multi_path?.multi_path_main || [],
-                    multi_path_march_7: extraData?.multi_path?.multi_path_march_7 || []
-                  }
-                })
-              }}
-            />
-          </label>
-        </motion.div>
+            <motion.div className="form-control bg-base-200 p-4 rounded-xl shadow">
+              <label className="flex items-center gap-3">
+                <BowArrow className="text-info" size={20} />
+                <span className="label-text font-semibold">{transI18n("march7Path")}</span>
+                <SelectCustomImage
+                  customSet={Object.values(mapAvatar).filter((it) => extraData?.multi_path?.multi_path_march_7?.includes(Number(it.ID))).map((it) => ({
+                    value: it.ID.toString(),
+                    label: getNameChar(locale, transI18n, it),
+                    imageUrl: `${process.env.CDN_URL}/${baseType?.[it.BaseType].Icon}`
+                  }))}
+                  excludeSet={[]}
+                  selectedCustomSet={extraData?.multi_path?.march_7?.toString() || ""}
+                  placeholder={transI18n("selectAMainStat")}
+                  setSelectedCustomSet={(it) => {
+                    if (!it) return
+                    setExtraData({
+                      ...extraData,
+                      multi_path: {
+                        march_7: Number(it) || 1001,
+                        main: extraData?.multi_path?.main || 8001,
+                        multi_path_main: extraData?.multi_path?.multi_path_main || [],
+                        multi_path_march_7: extraData?.multi_path?.multi_path_march_7 || []
+                      }
+                    })
+                  }}
+                />
+              </label>
+            </motion.div>
+          </>
+        )}
       </div>
 
       {/* CHALLENGE */}

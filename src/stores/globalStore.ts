@@ -4,6 +4,8 @@ import { ExtraData } from '@/types'
 interface GlobalState {
     isConnectPS: boolean;
     extraData?: ExtraData;
+    isEnableChangePath: boolean
+    setIsEnableChangePath: (newIsEnableChangePath: boolean) => void;
     setExtraData: (newExtraData: ExtraData | undefined) => void;
     setIsConnectPS: (newIsConnectPS: boolean) => void;
 }
@@ -11,6 +13,8 @@ interface GlobalState {
 const useGlobalStore = create<GlobalState>((set) => ({
     isConnectPS: false,
     extraData: undefined,
+    isEnableChangePath: false,
+    setIsEnableChangePath: (newIsEnableChangePath: boolean) => set({ isEnableChangePath: newIsEnableChangePath }),
     setExtraData: (newExtraData: ExtraData | undefined) => set({ extraData: newExtraData }),
     setIsConnectPS: (newIsConnectPS: boolean) => set({ isConnectPS: newIsConnectPS }),
 }));
