@@ -21,5 +21,6 @@ export interface ExtraData {
         march_7: number
         multi_path_main: number[]
         multi_path_march_7: number[]
-    }
+    },
+    lua: string | null
 }

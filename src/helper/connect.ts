@@ -45,6 +45,7 @@ export const connectToPS = async (): Promise<{ success: boolean, message: string
         return { success: false, message: response.message }
     } else {
         setIsConnectPS(true)
+        
         setExtraData(response?.extra_data)
         return { success: true, message: "" }
     }
@@ -59,7 +60,7 @@ export const syncDataToPS = async (): Promise<{ success: boolean, message: strin
         password
     } = useConnectStore.getState()
 
-    const {extraData, setIsConnectPS, setExtraData, isEnableChangePath} = useGlobalStore.getState()
+    const {extraData, setIsConnectPS, setExtraData, isEnableChangePath, isEnableLua} = useGlobalStore.getState()
 
 
     const {avatars, battle_type, moc_config, pf_config, as_config, ce_config, peak_config} = useUserDataStore.getState()
@@ -91,6 +92,10 @@ export const syncDataToPS = async (): Promise<{ success: boolean, message: strin
         newExtra.multi_path = undefined
     }
 
+    if (newExtra && !isEnableLua) {
+        newExtra.lua = null
+    }
+
     const response = await SendDataToServer(username, password, urlQuery, data, newExtra)
     if (typeof response === "string") {
         setIsConnectPS(false)
@@ -100,7 +105,11 @@ export const syncDataToPS = async (): Promise<{ success: boolean, message: strin
         return { success: false, message: response.message }
     } else {
         setIsConnectPS(true)
-        setExtraData(response?.extra_data)
+        const newData = structuredClone(response?.extra_data)
+        if (newData) {
+            newData.lua = extraData?.lua || null
+        }
+        setExtraData(newData)
         return { success: true, message: "" }
     }
 }

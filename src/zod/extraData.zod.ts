@@ -24,5 +24,6 @@ export const extraDataSchema = z.object({
         march_7: z.number(),
         multi_path_main: z.array(z.number()),
         multi_path_march_7: z.array(z.number())
-    })
+    }),
+    lua: z.string().optional()
 });

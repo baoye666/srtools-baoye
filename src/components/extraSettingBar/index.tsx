@@ -1,6 +1,6 @@
 'use client'
 import { motion } from "framer-motion"
-import { EyeOff, Eye, Hammer, RefreshCw, ShieldBan, User, Swords, SkipForward, BowArrow, Info, RouteIcon, Search } from "lucide-react"
+import { EyeOff, Eye, Hammer, RefreshCw, ShieldBan, User, Swords, SkipForward, BowArrow, Info, RouteIcon, Search, CupSoda } from "lucide-react"
 import useGlobalStore from '@/stores/globalStore'
 import { useTranslations } from "next-intl"
 import { getLocaleName, getNameChar } from "@/helper"
@@ -8,9 +8,13 @@ import useLocaleStore from "@/stores/localeStore"
 import SelectCustomImage from "../select/customSelectImage"
 import { useMemo, useState } from "react"
 import useDetailDataStore from "@/stores/detailDataStore"
+import Editor from "react-simple-code-editor"
+import Prism from "prismjs"
+import "prismjs/components/prism-lua"
+import "prismjs/themes/prism-tomorrow.css"
 
 export default function ExtraSettingBar() {
-  const { extraData, setExtraData, isEnableChangePath, setIsEnableChangePath } = useGlobalStore()
+  const { extraData, setExtraData, isEnableChangePath, setIsEnableChangePath, isEnableLua, setIsEnableLua } = useGlobalStore()
   const transI18n = useTranslations("DataPage")
   const { mapAvatar, mapPeak, stage, baseType } = useDetailDataStore()
   const { locale } = useLocaleStore()
@@ -259,7 +263,8 @@ export default function ExtraSettingBar() {
                         main: Number(it) || 8001,
                         multi_path_main: extraData?.multi_path?.multi_path_main || [],
                         multi_path_march_7: extraData?.multi_path?.multi_path_march_7 || []
-                      }
+                      },
+                      lua: extraData?.lua || null
                     })
                   }}
                 />
@@ -289,7 +294,8 @@ export default function ExtraSettingBar() {
                         main: extraData?.multi_path?.main || 8001,
                         multi_path_main: extraData?.multi_path?.multi_path_main || [],
                         multi_path_march_7: extraData?.multi_path?.multi_path_march_7 || []
-                      }
+                      },
+                      lua: extraData?.lua || null
                     })
                   }}
                 />
@@ -320,7 +326,8 @@ export default function ExtraSettingBar() {
                     skip_node: extraData?.challenge?.skip_node || 0,
                     challenge_peak_group_id: parseInt(e.target.value) || 0,
                     challenge_peak_group_id_list: extraData?.challenge?.challenge_peak_group_id_list || []
-                  }
+                  },
+                  lua: extraData?.lua || null
                 })
               }
             >
@@ -350,7 +357,8 @@ export default function ExtraSettingBar() {
                     challenge_peak_group_id: extraData?.challenge?.challenge_peak_group_id || 0,
                     challenge_peak_group_id_list: extraData?.challenge?.challenge_peak_group_id_list || [],
                     skip_node: parseInt(e.target.value) || 0
-                  }
+                  },
+                  lua: extraData?.lua || null
                 })
               }
             >
@@ -424,6 +432,52 @@ export default function ExtraSettingBar() {
               </div>
             </label>
           </motion.div>
+        )}
+      </div>
+
+      <div className="space-y-4">
+        <h3 className="text-lg font-bold flex items-center gap-2">
+          {"Lua"}
+          <div className="tooltip tooltip-info tooltip-bottom">
+            <CupSoda className="text-primary" size={20} />
+          </div>
+          <input
+            type="checkbox"
+            className="toggle toggle-primary"
+            checked={isEnableLua}
+            onChange={(e) => setIsEnableLua(e.target.checked)}
+          />
+        </h3>
+        {isEnableLua && (
+          <>
+            <div className="form-control bg-base-200 p-4 rounded-xl shadow">
+              <label className="label">
+                <span className="label-text">Lua Script</span>
+              </label>
+
+              <div className="rounded-xl overflow-hidden border border-base-300">
+                <Editor
+                  value={extraData?.lua || ""}
+                  onValueChange={(code) =>
+                    setExtraData(
+                      {
+                        ...extraData,
+                        lua: code
+                      }
+                    )
+                  }
+                  highlight={(code) => Prism.highlight(code, Prism.languages.lua, "lua")}
+                  padding={16}
+                  textareaClassName="outline-none"
+                  className="text-sm font-mono min-h-[300px]"
+                  style={{
+                    background: "#1e1e1e",
+                    color: "#fff",
+                  }}
+                />
+              </div>
+            </div>
+          </>
         )}
       </div>
 
