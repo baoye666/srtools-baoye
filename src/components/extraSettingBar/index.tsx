@@ -469,7 +469,7 @@ export default function ExtraSettingBar() {
                   highlight={(code) => Prism.highlight(code, Prism.languages.lua, "lua")}
                   padding={16}
                   textareaClassName="outline-none"
-                  className="text-sm font-mono min-h-[300px]"
+                  className="text-sm font-mono min-h-75"
                   style={{
                     background: "#1e1e1e",
                     color: "#fff",
