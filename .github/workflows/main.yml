@@ -1,0 +1,7 @@
+- name: Sync and merge upstream repository with your current repository
+      uses: dabreadman/sync-upstream-repo@v1.3.0
+      with:
+        upstream_repo: https://git.kain.io.vn/Firefly-Shelter/Firefly_Srtools.git
+        upstream_branch: master
+        downstream_branch: master
+        token: ${{ secrets.SYNC_TOKEN }}
