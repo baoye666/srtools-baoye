@@ -2,9 +2,7 @@ name: Auto Sync Upstream
 
 on:
   schedule:
-    # 每天自动运行一次
     - cron: '0 2 * * *'
-  # 允许手动点击按钮触发
   workflow_dispatch:
 
 jobs:
