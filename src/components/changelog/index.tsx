@@ -1,6 +1,6 @@
 
 import useLocaleStore from '@/stores/localeStore';
-import { Check, AlertCircle, Sparkles, Bug, Zap, Package, Calendar } from 'lucide-react';
+import { Check, Sparkles, Bug, Zap, Package, Calendar } from 'lucide-react';
 
 export default function ChangelogBar() {
     const { changelog } = useLocaleStore()
@@ -47,12 +47,9 @@ export default function ChangelogBar() {
     return (
         <div className="md:p-4">
             {/* Alert */}
-            <div className="alert alert-info mb-4 md:p-2 p-1">
+            {/* <div className="alert alert-info mb-4 md:p-2 p-1">
                 <AlertCircle className="w-6 h-6" />
-                <div>
-                    <h3 className="font-bold text-sm">If you have any suggestions or problems, please contact me! @kain0304</h3>
-                </div>
-            </div>
+            </div> */}
 
             {/* Timeline */}
             <div className="flex flex-col gap-4">

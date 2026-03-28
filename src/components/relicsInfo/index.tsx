@@ -40,7 +40,7 @@ export default function RelicsInfo() {
   const { avatarSelected } = useCurrentDataStore()
   const { mapRelicSet, subAffix } = useDetailDataStore()
   const { locale } = useLocaleStore()
-  
+
   const handleShow = (modalId: string) => {
     const modal = document.getElementById(modalId) as HTMLDialogElement | null;
     if (modal) {
@@ -155,16 +155,16 @@ export default function RelicsInfo() {
   // Handle ESC key to close modal
   useEffect(() => {
     for (const item of modalConfigs) {
-        if (!item?.isOpen) {
-            handleCloseModal(item?.id || "")
-        }
+      if (!item?.isOpen) {
+        handleCloseModal(item?.id || "")
+      }
     }
     const handleEscKey = (event: KeyboardEvent) => {
-        if (event.key === 'Escape') {
-            for (const item of modalConfigs) {
-                handleCloseModal(item?.id || "")
-            }
+      if (event.key === 'Escape') {
+        for (const item of modalConfigs) {
+          handleCloseModal(item?.id || "")
         }
+      }
     };
 
     window.addEventListener('keydown', handleEscKey);
@@ -173,164 +173,162 @@ export default function RelicsInfo() {
 
   return (
     <div className="max-h-[77vh] min-h-[50vh] overflow-y-scroll overflow-x-hidden">
-      <div className="max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-          {/* Left Section - Items Grid */}
-          <div className="lg:col-span-2">
-            <div className="bg-base-100 rounded-xl p-6 shadow-lg">
-              <h2 className="flex items-center gap-2 text-2xl font-bold mb-6 text-base-content">
-                <div className="w-2 h-6 bg-linear-to-b from-primary to-primary/50 rounded-full"></div>
-                {transI18n("relics")}
-              </h2>
+        {/* Left Section - Items Grid */}
+        <div className="lg:col-span-2">
+          <div className="bg-base-100 rounded-xl p-6 shadow-lg">
+            <h2 className="flex items-center gap-2 text-2xl font-bold mb-6 text-base-content">
+              <div className="w-2 h-6 bg-linear-to-b from-primary to-primary/50 rounded-full"></div>
+              {transI18n("relics")}
+            </h2>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl">
-                {["1", "2", "3", "4", "5", "6"].map((item, index) => (
-                  <div key={index} className="relative group">
-                    <div
-                      onClick={() => {
-                        if (item === selectedRelicSlot) {
-                          setSelectedRelicSlot("")
-                        } else {
-                          setSelectedRelicSlot(item)
-                        }
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+              {["1", "2", "3", "4", "5", "6"].map((item, index) => (
+                <div key={index} className="relative group">
+                  <div
+                    onClick={() => {
+                      if (item === selectedRelicSlot) {
+                        setSelectedRelicSlot("")
+                      } else {
+                        setSelectedRelicSlot(item)
+                      }
+                      handlerChangeRelic(item)
+                    }}
+                    className="cursor-pointer"
+                  >
+                    <RelicCard
+                      slot={item}
+                      avatarId={avatarSelected?.ID.toString() || ""}
+                    />
+                  </div>
+
+                  <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex gap-1">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation()
                         handlerChangeRelic(item)
                       }}
-                      className="cursor-pointer"
+                      className="btn btn-info p-1.5 rounded-full shadow-lg transition-colors duration-200"
+                      title={transI18n("changeRelic")}
                     >
-                      <RelicCard
-                        slot={item}
-                        avatarId={avatarSelected?.ID.toString() || ""}
-                      />
-                    </div>
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                      </svg>
+                    </button>
 
-                    <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex gap-1">
+                    {getRelic(item) && (
                       <button
                         onClick={(e) => {
                           e.stopPropagation()
-                          handlerChangeRelic(item)
+                          if (window.confirm(`${transI18n("deleteRelicConfirm")} ${item}?`)) {
+                            handlerDeleteRelic(item)
+                          }
                         }}
-                        className="btn btn-info p-1.5 rounded-full shadow-lg transition-colors duration-200"
-                        title={transI18n("changeRelic")}
+                        className="btn btn-error p-1.5 rounded-full shadow-lg transition-colors duration-200"
+                        title={transI18n("deleteRelic")}
                       >
                         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                         </svg>
                       </button>
-
-                      {getRelic(item) && (
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation()
-                            if (window.confirm(`${transI18n("deleteRelicConfirm")} ${item}?`)) {
-                              handlerDeleteRelic(item)
-                            }
-                          }}
-                          className="btn btn-error p-1.5 rounded-full shadow-lg transition-colors duration-200"
-                          title={transI18n("deleteRelic")}
-                        >
-                          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                          </svg>
-                        </button>
-                      )}
-                    </div>
+                    )}
                   </div>
-                ))}
-              </div>
-              <div className="grid grid-cols-2 gap-2 mt-10">
-                <button
-                  disabled={!selectedRelicSlot}
-                  onClick={() => {
-                    handlerChangeRelic(selectedRelicSlot)
-                  }}
-                  className="btn btn-info"
-                >
-                  {transI18n("changeRelic")}
-                </button>
-                <button
-                  disabled={!selectedRelicSlot}
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    if (window.confirm(`${transI18n("deleteRelicConfirm")} ${selectedRelicSlot}?`)) {
-                      handlerDeleteRelic(selectedRelicSlot)
-                    }
-                  }}
-                  className="btn btn-error"
-                >
-                  {transI18n("deleteRelic")}
-                </button>
-              </div>
+                </div>
+              ))}
+            </div>
+            <div className="grid grid-cols-2 gap-2 mt-10">
               <button
+                disabled={!selectedRelicSlot}
                 onClick={() => {
-                  setIsOpenQuickView(true)
-                  handleShow("quick_view_modal")
+                  handlerChangeRelic(selectedRelicSlot)
                 }}
-                className="btn btn-info w-full mt-2"
+                className="btn btn-info"
               >
-                {transI18n("quickView")}
+                {transI18n("changeRelic")}
+              </button>
+              <button
+                disabled={!selectedRelicSlot}
+                onClick={(e) => {
+                  e.stopPropagation()
+                  if (window.confirm(`${transI18n("deleteRelicConfirm")} ${selectedRelicSlot}?`)) {
+                    handlerDeleteRelic(selectedRelicSlot)
+                  }
+                }}
+                className="btn btn-error"
+              >
+                {transI18n("deleteRelic")}
               </button>
             </div>
+            <button
+              onClick={() => {
+                setIsOpenQuickView(true)
+                handleShow("quick_view_modal")
+              }}
+              className="btn btn-info w-full mt-2"
+            >
+              {transI18n("quickView")}
+            </button>
           </div>
+        </div>
 
-          {/* Right Section - Stats and Set Effects */}
-          <div className="space-y-6">
+        {/* Right Section - Stats and Set Effects */}
+        <div className="space-y-6">
 
-            {/* Set Effects Panel */}
-            <div className="bg-base-100 rounded-xl p-6 shadow-lg">
-              <h3 className="flex items-center gap-2 text-xl font-bold mb-4 text-base-content">
-                <div className="w-2 h-6 bg-linear-to-b from-primary to-primary/50 rounded-full"></div>
-                {transI18n("setEffects")}
-              </h3>
+          {/* Set Effects Panel */}
+          <div className="bg-base-100 rounded-xl p-6 shadow-lg">
+            <h3 className="flex items-center gap-2 text-xl font-bold mb-4 text-base-content">
+              <div className="w-2 h-6 bg-linear-to-b from-primary to-primary/50 rounded-full"></div>
+              {transI18n("setEffects")}
+            </h3>
 
-              <div className="space-y-6">
-                {relicEffects.map((setEffect, index) => {
-                  const relicInfo = mapRelicSet[setEffect.key];
-                  if (!relicInfo) return null;
-                  return (
-                    <div key={index} className="space-y-3">
-                      <div className="flex items-center gap-2">
-                        <div
-                          className="font-bold text-warning"
-                          dangerouslySetInnerHTML={{
-                            __html: replaceByParam(
-                              getLocaleName(locale, relicInfo.Name),
-                              []
-                            )
-                          }}
-                        />
-                        {setEffect.count && (
-                          <span className={`text-sm text-info`}>
-                            ({setEffect.count})
-                          </span>
-                        )}
-                      </div>
-
-                      <div className="space-y-2 pl-4">
-                        {Object.entries(relicInfo.Skills).map(([requireNum, value]) => {
-                          if (Number(requireNum) > Number(setEffect.count)) return null;
-                          return (
-                            <div key={requireNum} className="space-y-1">
-                              <div className={`font-medium text-success`}>
-                                {requireNum}-PC:
-                              </div>
-                              <div
-                                className="text-sm text-base-content/80 leading-relaxed pl-4"
-                                dangerouslySetInnerHTML={{
-                                  __html: replaceByParam(
-                                    getLocaleName(locale, value.Desc),
-                                    value.Param || []
-                                  )
-                                }}
-                              />
-                            </div>
+            <div className="space-y-6">
+              {relicEffects.map((setEffect, index) => {
+                const relicInfo = mapRelicSet[setEffect.key];
+                if (!relicInfo) return null;
+                return (
+                  <div key={index} className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="font-bold text-warning"
+                        dangerouslySetInnerHTML={{
+                          __html: replaceByParam(
+                            getLocaleName(locale, relicInfo.Name),
+                            []
                           )
-                        })}
-                      </div>
+                        }}
+                      />
+                      {setEffect.count && (
+                        <span className={`text-sm text-info`}>
+                          ({setEffect.count})
+                        </span>
+                      )}
                     </div>
-                  )
-                })}
-              </div>
+
+                    <div className="space-y-2 pl-4">
+                      {Object.entries(relicInfo.Skills).map(([requireNum, value]) => {
+                        if (Number(requireNum) > Number(setEffect.count)) return null;
+                        return (
+                          <div key={requireNum} className="space-y-1">
+                            <div className={`font-medium text-success`}>
+                              {requireNum}-PC:
+                            </div>
+                            <div
+                              className="text-sm text-base-content/80 leading-relaxed pl-4"
+                              dangerouslySetInnerHTML={{
+                                __html: replaceByParam(
+                                  getLocaleName(locale, value.Desc),
+                                  value.Param || []
+                                )
+                              }}
+                            />
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
@@ -338,7 +336,7 @@ export default function RelicsInfo() {
 
       {modalConfigs.map(({ id, title, onClose, content }) => (
         <dialog key={id} id={id} className="modal">
-          <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+          <div className="modal-box w-11/12 max-w-[90%] max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
             <div className="sticky top-0 z-10">
               <motion.button
                 whileHover={{ scale: 1.1, rotate: 90 }}
