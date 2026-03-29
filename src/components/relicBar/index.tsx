@@ -245,7 +245,7 @@ export default function RelicMaker() {
                     {transI18n("relicMaker")}
                 </h3>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
 
                 {/* Left Panel */}
                 <div className="space-y-6">

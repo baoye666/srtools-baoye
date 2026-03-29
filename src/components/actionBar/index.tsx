@@ -417,7 +417,7 @@ export default function ActionBar() {
 
         {modalConfigs.map(({ id, title, onClose, content }) => (
           <dialog key={id} id={id} className="modal">
-            <div className="modal-box w-11/12 max-w-7xl max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+            <div className="modal-box w-11/12 max-w-[90%] max-h-[85vh] bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
               <div className="sticky top-0 z-10">
                 <motion.button
                   whileHover={{ scale: 1.1, rotate: 90 }}

@@ -25,7 +25,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Firefly SrTools",
-  description: "SrTools by Kain",
+  description: "SrTools by Firefly Shelter",
   icons: {
     icon: "/ff-srtool.png",
     shortcut: "/ff-srtool.ico",
@@ -33,12 +33,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Firefly SrTools",
-    description: "SrTools by Kain",
-    url: "https://srtools.kain.id.vn",
+    description: "SrTools by Firefly Shelter",
+    url: "https://srtools.punklorde.org",
     siteName: "Firefly SrTools",
     images: [
       {
-        url: "https://srtools.kain.id.vn/ff-srtool.png",
+        url: "https://srtools.punklorde.org/ff-srtool.png",
         width: 312,
         height: 312,
         alt: "Firefly SrTools Logo",
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Firefly SrTools",
-    description: "SrTools by Kain",
-    images: ["https://srtools.kain.id.vn/ff-srtool.png"],
+    description: "SrTools by Firefly Shelter",
+    images: ["https://srtools.punklorde.org/ff-srtool.png"],
   },
 };
 

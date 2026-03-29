@@ -15,8 +15,7 @@ The application is deployed and available at the following URLs:
 
 | Role | URL |
 | :--- | :--- |
-| **Main Site** | [srtools.kain.id.vn](https://srtools.kain.id.vn) |
-| **Backup / Vercel Mirror** | [firefly-srtools.vercel.app](https://firefly-srtools.vercel.app) |
+| **Main Site** | [srtools.punklorde.org](https://srtools.punklorde.org) |
 
 ---
 
