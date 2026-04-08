@@ -136,7 +136,8 @@ export default function MocBar() {
                     />
                 </div>
                 {/* Settings */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-2">
 
                     <div className="flex items-center gap-2">
                         <label className="label">
@@ -173,6 +174,8 @@ export default function MocBar() {
                             <option value="Lower -> Upper">{transI18n("lowerToUpper")}</option>
                         </select>
                     </div>
+                    
+                    
 
                     <div className="flex items-center gap-2">
                         <label className="label cursor-pointer">
@@ -191,6 +194,7 @@ export default function MocBar() {
                         </label>
                     </div>
                 </div>
+                <div className="label-text font-bold text-success mb-2">StageId: {moc_config?.stage_id}</div>
 
                 {/* Turbulence Buff */}
                 <div className="bg-base-200/20 rounded-lg p-4 border border-purple-500/20">

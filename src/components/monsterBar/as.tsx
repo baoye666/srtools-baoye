@@ -158,7 +158,7 @@ export default function AsBar() {
                     />
                 </div>
                 {/* Settings */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-2">
 
                     <div className="flex items-center gap-2">
                         <label className="label">
@@ -193,6 +193,7 @@ export default function AsBar() {
                         </select>
                     </div>
                 </div>
+                <div className="label-text font-bold text-success mb-2">StageId: {as_config?.stage_id}</div>
                 {eventSelected && (
                     <div className="mb-4 w-full">
                         <SelectCustomText
