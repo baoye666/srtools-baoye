@@ -113,7 +113,7 @@ export default function PeakBar() {
                 <div className={
                     `grid grid-cols-1 
                     ${eventSelected && eventSelected.BossLevel?.ID === peak_config.challenge_id ? "md:grid-cols-2" : ""}
-                    gap-4 mb-4 justify-items-center items-center w-full`}
+                    gap-4 mb-2 justify-items-center items-center w-full`}
                 >
 
                     <div className="flex items-center gap-2 w-full">
@@ -149,6 +149,7 @@ export default function PeakBar() {
                     )}
 
                 </div>
+                <div className="label-text font-bold text-success mb-2">StageId: {peak_config?.stage_id}</div>
                 {
                     eventSelected
                     && eventSelected.BossLevel?.ID === peak_config.challenge_id
@@ -210,7 +211,8 @@ export default function PeakBar() {
                 <div className="grid grid-cols-1 gap-4">
 
                     <div className="rounded-xl p-4 mt-2 border border-warning">
-                        <h2 className="text-2xl font-bold mb-6 text-info">{getLocaleName(locale, challengeSelected?.Name)}</h2>
+                        <h2 className="text-2xl font-bold mb-2 text-info">{getLocaleName(locale, challengeSelected?.Name)}</h2>
+                        
 
                         {challengeSelected && Object.values(challengeSelected?.EventList?.[0]?.Infinite || []).map((waveValue, waveIndex) => (
                             <div key={waveIndex} className="mb-6">

@@ -139,7 +139,7 @@ export default function PfBar() {
                     />
                 </div>
                 {/* Settings */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-2">
 
                     <div className="flex items-center gap-2">
                         <label className="label">
@@ -174,6 +174,7 @@ export default function PfBar() {
                         </select>
                     </div>
                 </div>
+                <div className="label-text font-bold text-success mb-2">StageId: {pf_config?.stage_id}</div>
                 {eventSelected && (
                     <div className="mb-4 w-full">
                         <SelectCustomText
@@ -234,8 +235,8 @@ export default function PfBar() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     {/* First Half */}
                     <div className="rounded-xl p-4 mt-2 border border-warning">
-                        <h2 className="text-2xl font-bold mb-6 text-info">{transI18n("firstHalfEnemies")}</h2>
-
+                        <h2 className="text-2xl font-bold mb-2 text-info">{transI18n("firstHalfEnemies")}</h2>
+                    
                         {challengeSelected && Object.values(challengeSelected.EventList1?.[0]?.Infinite || []).map((waveValue, waveIndex) => (
                             <div key={waveIndex} className="mb-6">
                                 <h3 className="text-lg font-semibold">{transI18n("wave")} {waveIndex + 1}</h3>
