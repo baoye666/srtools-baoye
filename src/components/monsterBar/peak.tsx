@@ -40,39 +40,42 @@ export default function PeakBar() {
             && bossConfig
             && peak_config?.boss_mode === "Hard"
         ) {
-            return bossConfig
+            return { challenge: bossConfig, isBoss: true }
         }
-        return challenge
+        return {
+            challenge: challenge,
+            isBoss: challenge?.ID === mapPeak?.[peak_config?.event_id?.toString()]?.BossLevel?.ID, 
+        }
     }, [peak_config, listFloor, mapPeak, bossConfig])
 
     useEffect(() => {
-        if (!challengeSelected) return
+        if (!challengeSelected.challenge) return
         if (peak_config.event_id !== 0 && peak_config.challenge_id !== 0 && challengeSelected) {
             const newBattleConfig = structuredClone(peak_config)
             newBattleConfig.cycle_count = 6
             newBattleConfig.blessings = []
-            for (const value of challengeSelected.MazeBuff) {
+            for (const value of challengeSelected?.challenge?.MazeBuff) {
                 newBattleConfig.blessings.push({
                     id: value.ID,
                     level: 1
                 })
             }
-            if (peak_config.buff_id !== 0) {
+            if (peak_config.buff_id !== 0 && challengeSelected.isBoss) {
                 newBattleConfig.blessings.push({
                     id: peak_config.buff_id,
                     level: 1
                 })
             }
             newBattleConfig.monsters = []
-            newBattleConfig.stage_id = challengeSelected.EventList[0].ID
-            for (const wave of challengeSelected.EventList[0].MonsterList) {
+            newBattleConfig.stage_id = challengeSelected.challenge.EventList[0].ID
+            for (const wave of challengeSelected.challenge.EventList[0].MonsterList) {
                 if (!wave) continue
                 const newWave: MonsterStore[] = []
                 for (const value of Object.values(wave)) {
                     if (!value) continue
                     newWave.push({
                         monster_id: value,
-                        level: challengeSelected.EventList[0].Level,
+                        level: challengeSelected.challenge.EventList[0].Level,
                         amount: 1,
                     })
                 }
@@ -180,8 +183,8 @@ export default function PeakBar() {
                         {transI18n("turbulenceBuff")}
                     </h2>
 
-                    {challengeSelected && challengeSelected?.MazeBuff?.length > 0 ? (
-                        challengeSelected.MazeBuff.map((subOption, index) => (
+                    {challengeSelected?.challenge && challengeSelected?.challenge?.MazeBuff?.length > 0 ? (
+                        challengeSelected.challenge.MazeBuff.map((subOption, index) => (
                             <div key={index}>
                                 <label className="label">
                                     <span className="label-text font-bold text-success">
@@ -211,10 +214,10 @@ export default function PeakBar() {
                 <div className="grid grid-cols-1 gap-4">
 
                     <div className="rounded-xl p-4 mt-2 border border-warning">
-                        <h2 className="text-2xl font-bold mb-2 text-info">{getLocaleName(locale, challengeSelected?.Name)}</h2>
+                        <h2 className="text-2xl font-bold mb-2 text-info">{getLocaleName(locale, challengeSelected?.challenge?.Name)}</h2>
                         
 
-                        {challengeSelected && Object.values(challengeSelected?.EventList?.[0]?.Infinite || []).map((waveValue, waveIndex) => (
+                        {challengeSelected?.challenge && Object.values(challengeSelected?.challenge?.EventList?.[0]?.Infinite || []).map((waveValue, waveIndex) => (
                             <div key={waveIndex} className="mb-6">
                                 <h3 className="text-lg font-semibold">{transI18n("wave")} {waveIndex + 1}</h3>
                                 <div className="flex flex-wrap gap-2 mt-2">
@@ -222,8 +225,8 @@ export default function PeakBar() {
                                         const monsterStats = calcMonsterStats(
                                             mapMonster?.[monsterId.toString()],
                                             waveValue.EliteGroup,
-                                            challengeSelected?.EventList?.[0]?.HardLevelGroup,
-                                            challengeSelected?.EventList?.[0]?.Level,
+                                            challengeSelected?.challenge?.EventList?.[0]?.HardLevelGroup || 0,
+                                            challengeSelected?.challenge?.EventList?.[0]?.Level || 0,
                                             hardLevelConfig,
                                             eliteConfig
                                         );
@@ -233,7 +236,7 @@ export default function PeakBar() {
                                                 className="group relative flex flex-col w-40 bg-base-100 rounded-2xl border border-base-300 shadow-md"
                                             >
                                                 <div className="badge badge-warning badge-sm font-bold absolute top-2 right-2 z-10 shadow-sm">
-                                                    Lv. {challengeSelected?.EventList[0].Level}
+                                                    Lv. {challengeSelected?.challenge?.EventList?.[0]?.Level}
                                                 </div>
 
                                                 <div className="relative w-full h-20 bg-base-200 flex items-center justify-center p-4 rounded-t-2xl">

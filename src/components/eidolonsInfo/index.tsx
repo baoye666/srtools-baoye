@@ -42,17 +42,17 @@ export default function EidolonsInfo() {
                                 <div
                                     className="cursor-pointer"
                                     onClick={() => {
-                                        let newRank = Number(key)
-                                        if (avatars[avatarSelected?.ID || ""]?.data?.rank == Number(key)) {
-                                            newRank = Number(key) - 1
+                                        let newRank = Number(rank.Rank)
+                                        if (avatars[avatarSelected?.ID || ""]?.data?.rank == Number(rank.Rank)) {
+                                            newRank = Number(rank.Rank) - 1
                                         }
                                         setAvatars({ ...avatars, [avatarSelected?.ID || ""]: { ...avatars[avatarSelected?.ID || ""], data: { ...avatars[avatarSelected?.ID || ""].data, rank: newRank } } })
                                     }}
                                 >
                                     <Image
-                                        className={`w-60 object-contain mb-2 ${Number(key) <= avatars[avatarSelected?.ID.toString() || ""]?.data?.rank ? "" : "grayscale"}`}
-                                        src={`${process.env.CDN_URL}/ui/ui3d/rank/_dependencies/textures/${avatarSelected?.ID}/${avatarSelected?.ID}_Rank_${key}.png`}
-                                        alt={`Rank ${key}`}
+                                        className={`w-60 object-contain mb-2 ${Number(rank.Rank) <= avatars[avatarSelected?.ID.toString() || ""]?.data?.rank ? "" : "grayscale"}`}
+                                        src={`${process.env.CDN_URL}/ui/ui3d/rank/_dependencies/textures/${avatarSelected?.ID}/${avatarSelected?.ID}_Rank_${rank.Rank}.png`}
+                                        alt={`Rank ${rank.Rank} Image`}
                                         priority
                                         unoptimized
                                         crossOrigin="anonymous"
@@ -61,7 +61,7 @@ export default function EidolonsInfo() {
                                     />
 
                                     <div className="text-lg pb-1 flex items-center justify-items-center gap-2">
-                                        <span className="inline-block text-indigo-500">{key}.</span>
+                                        <span className="inline-block text-indigo-500">{rank.Rank}.</span>
                                         <ParseText
                                             locale={locale}
                                             text={getLocaleName(locale, rank.Name)}
