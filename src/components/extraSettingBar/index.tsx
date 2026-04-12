@@ -272,11 +272,11 @@ export default function ExtraSettingBar() {
                   {showSearchLineup && (
                     <div
                       onClick={(e) => e.stopPropagation()}
-                      className="absolute top-full left-0 mt-2 w-full z-50 border bg-base-200 border-slate-600 rounded-lg p-4 shadow-2xl"
+                      className="mt-2 w-full z-50 border bg-base-200 border-slate-600 rounded-lg p-4 shadow-2xl"
                     >
                       <div className="flex justify-between items-center mb-3">
                         <span className="font-semibold text-sm">{transI18n("selectedCharacters")}</span>
-                        <button className="btn btn-sm btn-error" onClick={() => setShowSearchLineup(false)}>Đóng</button>
+                        <button className="btn btn-sm btn-circle btn-error" onClick={() => setShowSearchLineup(false)}>X</button>
                       </div>
 
                       <div className="flex flex-wrap gap-2 max-h-72 overflow-y-auto p-1">
