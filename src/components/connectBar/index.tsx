@@ -116,15 +116,6 @@ export default function ConnectBar() {
                     >
                         {isConnectPS ? transI18n("connected") : transI18n("unconnected")}
                     </span>
-
-                    {isConnectPS && (
-                    <span
-                        className={`badge ${isConnectPS ? "badge-success" : "badge-error"
-                            } badge-lg`}
-                    >
-                        {isConnectPS ? transI18n("connected") : transI18n("unconnected")}
-                    </span>
-                    )}
                 </div>
 
                 {/* Buttons */}
