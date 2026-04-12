@@ -72,6 +72,7 @@
 		"connectionType": "连接类型",
 		"status": "状态",
 		"connectPs": "连接 PS",
+		"disconnect": "断开连接",
 		"other": "其他",
 		"freeSr": "FreeSR",
 		"database": "数据库",
@@ -276,6 +277,7 @@
 		"detailMultipathCharacter": "允许更改部分角色的命途。",
 		"trailblazer": "开拓者",
 		"listExtraEffect": "额外效果列表",
-		"extra": "额外"
+		"extra": "额外",
+		"customLineup": "自定义阵容"
 	}
 }

@@ -72,6 +72,7 @@
 		"connectionType": "연결 타입",
 		"status": "상태",
 		"connectPs": "PS 연결",
+		"disconnect": "연결 끊기",
 		"other": "기타",
 		"freeSr": "FreeSR",
 		"database": "데이터베이스",
@@ -276,6 +277,7 @@
 		"detailMultipathCharacter": "일부 캐릭터의 운명을 변경할 수 있습니다.",
 		"trailblazer": "개척자",
 		"listExtraEffect": "추가 효과 목록",
-		"extra": "추가"
+		"extra": "추가",
+		"customLineup": "커스텀 편성"
 	}
 }

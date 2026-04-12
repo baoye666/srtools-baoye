@@ -72,6 +72,7 @@
 		"connectionType": "接続タイプ",
 		"status": "ステータス",
 		"connectPs": "PS接続",
+		"disconnect": "切断",
 		"other": "その他",
 		"freeSr": "FreeSR",
 		"database": "データベース",
@@ -276,6 +277,7 @@
 		"detailMultipathCharacter": "一部キャラクターの運命を変更できます。",
 		"trailblazer": "開拓者",
 		"listExtraEffect": "追加効果一覧",
-		"extra": "追加"
+		"extra": "追加",
+		"customLineup": "カスタム編成"
 	}
 }

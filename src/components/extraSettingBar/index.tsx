@@ -1,6 +1,6 @@
 'use client'
 import { motion } from "framer-motion"
-import { EyeOff, Eye, Hammer, RefreshCw, ShieldBan, User, Swords, SkipForward, BowArrow, Info, RouteIcon, Search, CupSoda } from "lucide-react"
+import { EyeOff, Eye, Hammer, RefreshCw, ShieldBan, User, Swords, SkipForward, BowArrow, Info, RouteIcon, Search, CupSoda, UsersIcon } from "lucide-react"
 import useGlobalStore from '@/stores/globalStore'
 import { useTranslations } from "next-intl"
 import { getLocaleName, getNameChar } from "@/helper"
@@ -12,6 +12,7 @@ import Editor from "react-simple-code-editor"
 import Prism from "prismjs"
 import "prismjs/components/prism-lua"
 import "prismjs/themes/prism-tomorrow.css"
+import { SimpleAvatarCard } from "../card/simpleCharacterCard"
 
 export default function ExtraSettingBar() {
   const { extraData, setExtraData, isEnableChangePath, setIsEnableChangePath, isEnableLua, setIsEnableLua } = useGlobalStore()
@@ -19,6 +20,7 @@ export default function ExtraSettingBar() {
   const { mapAvatar, mapPeak, stage, baseType } = useDetailDataStore()
   const { locale } = useLocaleStore()
   const [showSearchStage, setShowSearchStage] = useState(false)
+  const [showSearchLineup, setShowSearchLineup] = useState(false)
   const [isChildClick, setIsChildClick] = useState(false)
   const [stageSearchTerm, setStageSearchTerm] = useState("")
   const [stagePage, setStagePage] = useState(1)
@@ -106,6 +108,7 @@ export default function ExtraSettingBar() {
                   />
                 </label>
               </motion.div>
+
               <motion.div className="form-control bg-base-200 p-4 rounded-xl shadow">
                 <label className="flex flex-wrap items-center justify-start gap-3">
                   <RouteIcon className="text-info" size={20} />
@@ -170,9 +173,10 @@ export default function ExtraSettingBar() {
                                         ...extraData,
                                         theory_craft: {
                                           stage_id: Number(stage.ID),
-                                          cycle_count: extraData?.theory_craft?.cycle_count || 1,
-                                          mode: extraData?.theory_craft?.mode || false,
-                                          hp: extraData?.theory_craft?.hp || {}
+                                          cycle_count: extraData?.theory_craft?.cycle_count ?? 1,
+                                          mode: extraData?.theory_craft?.mode ?? false,
+                                          hp: extraData?.theory_craft?.hp ?? {},
+                                          custom_lineup: extraData?.theory_craft?.custom_lineup ?? []
                                         }
                                       })
                                     }
@@ -219,6 +223,100 @@ export default function ExtraSettingBar() {
                     )}
                   </div>
                 </label>
+              </motion.div>
+              <motion.div className="form-control bg-base-200 p-4 rounded-xl shadow relative">
+                <div className="flex flex-col gap-3">
+                  <label className="flex flex-wrap items-center justify-start gap-3">
+                    <UsersIcon className="text-info" size={20} />
+                    <span className="label-text font-semibold">{transI18n("customLineup")}</span>
+                  </label>
+                  <div className="flex flex-wrap items-center gap-2 min-h-20 p-2 bg-base-300 rounded-lg border border-base-content/10">
+                    {(extraData?.theory_craft?.custom_lineup || []).length > 0 && (
+                      (extraData?.theory_craft?.custom_lineup || []).map((avatarId) => {
+                        const avatarData = mapAvatar[avatarId];
+                        if (!avatarData) return null;
+                        return (
+                          <SimpleAvatarCard
+                            key={`selected-${avatarId}`}
+                            data={avatarData}
+                            showRemoveHover={true}
+                            onClick={() => {
+                              const newLineup = (extraData?.theory_craft?.custom_lineup || []).filter(id => id !== avatarId);
+                              setExtraData({
+                                ...extraData,
+                                theory_craft: {
+                                  stage_id: extraData?.theory_craft?.stage_id ?? 30118121,
+                                  cycle_count: extraData?.theory_craft?.cycle_count ?? 1,
+                                  mode: extraData?.theory_craft?.mode ?? false,
+                                  hp: extraData?.theory_craft?.hp ?? {},
+                                  custom_lineup: newLineup
+                                }
+                              });
+                            }}
+                          />
+                        );
+                      })
+                    )}
+
+                    <button
+                      className="btn btn-outline btn-square border-dashed w-16 h-16 sm:w-20 sm:h-20"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setShowSearchLineup(pre => !pre);
+                      }}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" /></svg>
+                    </button>
+                  </div>
+
+                  {showSearchLineup && (
+                    <div
+                      onClick={(e) => e.stopPropagation()}
+                      className="absolute top-full left-0 mt-2 w-full z-50 border bg-base-200 border-slate-600 rounded-lg p-4 shadow-2xl"
+                    >
+                      <div className="flex justify-between items-center mb-3">
+                        <span className="font-semibold text-sm">{transI18n("selectedCharacters")}</span>
+                        <button className="btn btn-sm btn-error" onClick={() => setShowSearchLineup(false)}>Đóng</button>
+                      </div>
+
+                      <div className="flex flex-wrap gap-2 max-h-72 overflow-y-auto p-1">
+                        {Object.values(mapAvatar).map((avatar) => {
+                          const currentLineup = extraData?.theory_craft?.custom_lineup || [];
+                          const isSelected = currentLineup.includes(avatar.ID.toString());
+
+                          return (
+                            <SimpleAvatarCard
+                              key={avatar.ID}
+                              data={avatar}
+                              isSelected={isSelected}
+                              onClick={() => {
+                                const idStr = avatar.ID.toString();
+                                let newLineup = [...currentLineup];
+
+                                if (isSelected) {
+                                  newLineup = newLineup.filter(id => id !== idStr);
+                                } else {
+                                  newLineup.push(idStr);
+                                }
+
+                                setExtraData({
+                                  ...extraData,
+                                  theory_craft: {
+                                    stage_id: extraData?.theory_craft?.stage_id ?? 30118121,
+                                    cycle_count: extraData?.theory_craft?.cycle_count ?? 1,
+                                    mode: extraData?.theory_craft?.mode ?? false,
+                                    hp: extraData?.theory_craft?.hp ?? {},
+                                    custom_lineup: newLineup
+                                  }
+                                });
+                              }}
+                            />
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </div>
               </motion.div>
             </>
           )}

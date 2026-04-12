@@ -1,5 +1,3 @@
-import { ExtraData } from "./extraData";
-
 export interface SubAffix {
     sub_affix_id: number;
     count: number;
@@ -81,9 +79,4 @@ export interface FreeSRJson {
     loadout?: LoadoutJson[];
 }
 
-export interface PSResponse {
-    status: number;
-    message: string;
-    extra_data?: ExtraData
-}
 

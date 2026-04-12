@@ -72,6 +72,7 @@
 		"connectionType": "Connection Type",
 		"status": "Status",
 		"connectPs": "Connect PS",
+		"disconnect": "Disconnect",
 		"other": "Other",
 		"freeSr": "FreeSR",
 		"database": "Database",
@@ -277,6 +278,7 @@
 		"detailMultipathCharacter": "Allows changing the Path of certain characters.",
 		"trailblazer": "Trailblazer",
 		"listExtraEffect": "List Extra Effect",
-		"extra": "Extra"
+		"extra": "Extra",
+		"customLineup": "Custom Lineup"
 	}
 }

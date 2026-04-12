@@ -1,6 +1,7 @@
 
+import useConnectStore from "@/stores/connectStore";
 import useDetailDataStore from "@/stores/detailDataStore";
-import { ASConfigStore, AvatarJson, AvatarStore, BattleConfigJson, CEConfigStore, FreeSRJson, LightconeJson, MOCConfigStore, PEAKConfigStore, PFConfigStore, RelicJson } from "@/types";
+import { ASConfigStore, AvatarJson, AvatarStore, BattleConfigJson, CEConfigStore, FreeSRJson, LightconeJson, MOCConfigStore, PEAKConfigStore, PFConfigStore, PSConnectType, RelicJson } from "@/types";
 
 
 export function converterToFreeSRJson(
@@ -13,6 +14,7 @@ export function converterToFreeSRJson(
     peak_config: PEAKConfigStore,
 ): FreeSRJson {
     const { skillConfig } = useDetailDataStore.getState()
+    const { connectionType } = useConnectStore.getState()
     const lightcones: LightconeJson[] = []
     const relics: RelicJson[] = []
     let battleJson: BattleConfigJson
@@ -48,7 +50,7 @@ export function converterToFreeSRJson(
         }
     } else if (battle_type === "CE") {
         battleJson = {
-            battle_type: battle_type,
+            battle_type: connectionType === PSConnectType.FireflyGo ? battle_type : "DEFAULT",
             blessings: ce_config.blessings,
             custom_stats: [],
             cycle_count: ce_config.cycle_count,
@@ -58,7 +60,7 @@ export function converterToFreeSRJson(
         }
     } else if (battle_type === "PEAK") {
         battleJson = {
-            battle_type: battle_type,
+            battle_type: connectionType === PSConnectType.FireflyGo ? battle_type : "DEFAULT",
             blessings: peak_config.blessings,
             custom_stats: [],
             cycle_count: peak_config.cycle_count,
