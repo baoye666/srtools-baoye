@@ -1,5 +1,4 @@
 "use client";
-
 import { getNameChar } from '@/helper';
 import useLocaleStore from '@/stores/localeStore';
 import { AvatarDetail } from '@/types';

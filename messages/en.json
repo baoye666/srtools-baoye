@@ -278,6 +278,7 @@
 		"detailMultipathCharacter": "Allows changing the Path of certain characters.",
 		"trailblazer": "Trailblazer",
 		"listExtraEffect": "List Extra Effect",
-		"extra": "Extra"
+		"extra": "Extra",
+		"customLineup": "Custom Lineup"
 	}
 }

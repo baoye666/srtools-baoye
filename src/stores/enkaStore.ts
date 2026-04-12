@@ -10,7 +10,7 @@ interface EnkaState {
     setUidInput: (newUidInput: string) => void;
 }
 
-const useEnkaStore = create<EnkaState>((set, get) => ({
+const useEnkaStore = create<EnkaState>((set) => ({
     selectedCharacters: [],
     enkaData: null,
     uidInput: "",

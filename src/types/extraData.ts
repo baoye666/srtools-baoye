@@ -4,6 +4,7 @@ export interface ExtraData {
         cycle_count: number
         mode: boolean
         stage_id: number
+        custom_lineup?: string[]
     }
     setting?: {
         censorship: boolean
@@ -22,5 +23,5 @@ export interface ExtraData {
         multi_path_main: number[]
         multi_path_march_7: number[]
     },
-    lua: string | null
+    lua?: string | null
 }
