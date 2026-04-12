@@ -147,7 +147,7 @@ export default function CopyImport() {
                                 {/* Path */}
                                 <div>
                                     <div className="flex flex-wrap gap-2 justify-start items-center">
-                                        {Object.entries(baseType).map(([key, value]) => (
+                                        {Object.entries(baseType).filter(([key]) => key !== "").map(([key, value]) => (
                                             <div
                                                 key={key}
                                                 onClick={() => {
@@ -174,7 +174,7 @@ export default function CopyImport() {
                                 {/* Element */}
                                 <div>
                                     <div className="flex flex-wrap gap-2 justify-start items-center">
-                                        {Object.entries(damageType).map(([key, value]) => (
+                                        {Object.entries(damageType).filter(([key]) => key !== "").map(([key, value]) => (
                                             <div
                                                 key={key}
                                                 onClick={() => {

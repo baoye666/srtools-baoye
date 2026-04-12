@@ -75,7 +75,7 @@ export default function LightconeBar() {
                     <div>Filter</div>
                     <div className="flex flex-row flex-wrap justify-between mt-1 w-full">
                         <div className="flex flex-wrap mb-1 mx-1 gap-2">
-                            {Object.entries(baseType).map(([key, value]) => (
+                            {Object.entries(baseType).filter(([key]) => key !== "").map(([key, value]) => (
                                 <div
                                     key={key}
                                     onClick={() => {
