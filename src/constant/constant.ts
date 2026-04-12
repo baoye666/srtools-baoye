@@ -1,7 +1,7 @@
 export const listCurrentLanguage = {
     ja: "JP",
     ko: "KR",
-    en: "US",
+    en: "EN",
     vi: "VN",
     zh: "CN"
 };

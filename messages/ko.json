@@ -72,6 +72,7 @@
 		"connectionType": "연결 타입",
 		"status": "상태",
 		"connectPs": "PS 연결",
+		"disconnect": "연결 끊기",
 		"other": "기타",
 		"freeSr": "FreeSR",
 		"database": "데이터베이스",

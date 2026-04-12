@@ -3,6 +3,7 @@
 import { connectToPS, syncDataToPS } from "@/helper"
 import useConnectStore from "@/stores/connectStore"
 import useGlobalStore from "@/stores/globalStore"
+import { PSConnectType } from "@/types"
 import { useTranslations } from "next-intl"
 import { useState } from "react"
 
@@ -21,11 +22,10 @@ export default function ConnectBar() {
         setUsername,
         setPassword
     } = useConnectStore()
-    const { isConnectPS } = useGlobalStore()
+    const { isConnectPS, setIsConnectPS } = useGlobalStore()
 
     return (
         <div className="px-6 py-4">
-            {/* Select connection type */}
             <div className="form-control grid grid-cols-1 w-full mb-6">
                 <label className="label">
                     <span className="label-text font-semibold text-purple-300">{transI18n("connectionType")}</span>
@@ -33,15 +33,18 @@ export default function ConnectBar() {
                 <select
                     className="select w-full select-bordered border-purple-500/30 focus:border-purple-500 bg-base-200 mt-1"
                     value={connectionType}
-                    onChange={(e) => setConnectionType(e.target.value)}
+                    onChange={(e) => { 
+                        setIsConnectPS(false) 
+                        setConnectionType(e.target.value)
+                    }}
                 >
-                    <option value="FireflyGo">FireflyGo</option>
-                    <option value="Other">{transI18n("other")}</option>
+                    <option value={PSConnectType.FireflyGo}>FireflyGo</option>
+                    <option value={PSConnectType.RobinSR}>RobinSR</option>
+                    <option value={PSConnectType.Other}>{transI18n("other")}</option>
                 </select>
             </div>
 
-            {/* Show host/port if Other */}
-            {connectionType === "Other" && (
+            {connectionType === PSConnectType.Other && (
                 <div className="flex flex-col md:space-x-4 mb-6 gap-2">
                     <div className="form-control w-full mb-4 md:mb-0">
                         <label className="label">
@@ -105,7 +108,6 @@ export default function ConnectBar() {
             )}
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 mb-2">
-                {/* Status */}
                 <div className="flex items-center justify-center md:justify-start">
                     <span className="text-md mr-2">{transI18n("status")}:</span>
                     <span
@@ -114,6 +116,15 @@ export default function ConnectBar() {
                     >
                         {isConnectPS ? transI18n("connected") : transI18n("unconnected")}
                     </span>
+
+                    {isConnectPS && (
+                    <span
+                        className={`badge ${isConnectPS ? "badge-success" : "badge-error"
+                            } badge-lg`}
+                    >
+                        {isConnectPS ? transI18n("connected") : transI18n("unconnected")}
+                    </span>
+                    )}
                 </div>
 
                 {/* Buttons */}

@@ -117,7 +117,7 @@ export async function SendDataToServer(
     username: string,
     password: string,
     serverUrl: string,
-    data: FreeSRJson | null,
+    data?: FreeSRJson,
     extraData?: ExtraData
 ): Promise<PSResponse | string> {
     try {
