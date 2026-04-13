@@ -69,7 +69,7 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                                 />
                             </div>
                             <div className="grid grid-cols-7 sm:grid-cols-4  lg:grid-cols-7 mb-1 mx-1 gap-2 w-full max-h-[17vh] min-h-[5vh] overflow-y-auto">
-                                {Object.entries(damageType).map(([key, value]) => (
+                                {Object.entries(damageType).filter(([key]) => key !== "").map(([key, value]) => (
                                     <div
                                         key={key}
                                         onClick={() => {
@@ -92,7 +92,7 @@ export default function AvatarBar({ onClose }: { onClose?: () => void }) {
                             </div>
 
                             <div className="grid grid-cols-9 sm:grid-cols-5 lg:grid-cols-9 mb-1 mx-1 gap-2 overflow-y-auto w-full max-h-[17vh] min-h-[5vh]">
-                                {Object.entries(baseType).map(([key, value]) => (
+                                {Object.entries(baseType).filter(([key]) => key !== "").map(([key, value]) => (
                                     <div
                                         key={key}
                                         onClick={() => {
