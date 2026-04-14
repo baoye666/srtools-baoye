@@ -10,9 +10,11 @@ import { freeSrJsonSchema } from "@/zod";
 import { toast } from "react-toastify";
 import { converterOneFreeSRDataToAvatarStore } from "@/helper";
 import { useTranslations } from "next-intl";
+import useDetailDataStore from "@/stores/detailDataStore";
 
 export default function FreeSRImport() {
     const { avatars, setAvatar } = useUserDataStore();
+    const { mapAvatar } = useDetailDataStore();
     const { setIsOpenImport } = useModelStore()
     const [isLoading, setIsLoading] = useState(false)
     const [Error, setError] = useState("")
@@ -33,7 +35,7 @@ export default function FreeSRImport() {
 
     const selectAll = () => {
         if (freeSRData) {
-            setSelectedCharacters(Object.values(freeSRData?.avatars).map((character) => {
+            setSelectedCharacters(Object.values(freeSRData?.avatars).filter(it => mapAvatar?.[it.avatar_id]).map((character) => {
                 const lightcone = freeSRData.lightcones.find((lightcone) => lightcone.equip_avatar === character.avatar_id)
                 const relics = freeSRData.relics.filter((relic) => relic.equip_avatar === character.avatar_id)
                 return {
@@ -84,7 +86,7 @@ export default function FreeSRImport() {
                     setFreeSRData(parsed)
                     setError("")
 
-                    setSelectedCharacters(Object.values(parsed?.avatars || {}).map((character) => {
+                    setSelectedCharacters(Object.values(parsed?.avatars || {}).filter(it => mapAvatar?.[it.avatar_id]).map((character) => {
                         const lightcone = parsed?.lightcones.find((lightcone) => lightcone.equip_avatar === character.avatar_id)
                         const relics = parsed?.relics.filter((relic) => relic.equip_avatar === character.avatar_id)
                         return {
@@ -200,7 +202,7 @@ export default function FreeSRImport() {
                 )}
                 {/* Character Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {Object.values(freeSRData?.avatars || {}).map((character) => {
+                    {Object.values(freeSRData?.avatars || {}).filter(it => mapAvatar?.[it.avatar_id]).map((character) => {
                         const lightcone = freeSRData?.lightcones.find((lightcone) => lightcone.equip_avatar === character.avatar_id)
                         const relics = freeSRData?.relics.filter((relic) => relic.equip_avatar === character.avatar_id)
                         return (

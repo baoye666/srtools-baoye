@@ -10,7 +10,7 @@ export const listCurrentLanguageApi : Record<string, string> = {
     ja: "jp",
     ko: "kr",
     en: "en",
-    vi: "en",
+    vi: "vi",
     zh: "cn"
 };
 

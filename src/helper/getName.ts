@@ -1,4 +1,4 @@
-import { listCurrentLanguage } from "@/constant/constant";
+import { listCurrentLanguageApi } from "@/constant/constant";
 import { AvatarDetail } from "@/types";
 import { useTranslations } from "next-intl"
 
@@ -15,11 +15,11 @@ export function getNameChar(
 ): string {
   if (!data) return "";
 
-  if (!Object.prototype.hasOwnProperty.call(listCurrentLanguage, locale)) {
+  if (!Object.prototype.hasOwnProperty.call(listCurrentLanguageApi, locale)) {
     return "";
   }
 
-  const langKey = listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase();
+  const langKey = listCurrentLanguageApi[locale as keyof typeof listCurrentLanguageApi].toLowerCase();
 
   let text = data.Name[langKey] ?? "";
 
@@ -38,13 +38,16 @@ export function getLocaleName(locale: string, data: Record<string, string> | und
     if (!data) {
         return ""
     }
-    if (!Object.prototype.hasOwnProperty.call(listCurrentLanguage, locale)) {
+    
+    if (!Object.prototype.hasOwnProperty.call(listCurrentLanguageApi, locale)) {
         return ""
     }
 
-    const langKey = listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase();
+   
 
+    const langKey = listCurrentLanguageApi[locale as keyof typeof listCurrentLanguageApi].toLowerCase();
 
+ console.log(langKey)
     let text = data[langKey] ?? "";
 
     if (!text) {
