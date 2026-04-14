@@ -3,7 +3,7 @@
 import { downloadJson } from "@/helper";
 import { converterToFreeSRJson } from "@/helper/converterToFreeSRJson";
 import { useChangeTheme } from "@/hooks/useChangeTheme";
-import { listCurrentLanguage } from "@/constant/constant";
+import { listCurrentLanguage, listCurrentLanguageApi } from "@/constant/constant";
 import useLocaleStore from "@/stores/localeStore";
 import useUserDataStore from "@/stores/userDataStore";
 import { motion } from "framer-motion";
@@ -77,7 +77,7 @@ export default function Header() {
             ?.split("=")[1];
 
         if (cookieLocale) {
-            if (!listCurrentLanguage.hasOwnProperty(cookieLocale)) {
+            if (!listCurrentLanguageApi.hasOwnProperty(cookieLocale)) {
                 setLocale("en")
             } else {
                 setLocale(cookieLocale)
@@ -86,7 +86,7 @@ export default function Header() {
         } else {
             let browserLocale = navigator.language.slice(0, 2);
 
-            if (!listCurrentLanguage.hasOwnProperty(browserLocale)) {
+            if (!listCurrentLanguageApi.hasOwnProperty(browserLocale)) {
                 browserLocale = "en"
             }
             setLocale(browserLocale);
@@ -485,23 +485,46 @@ export default function Header() {
 
                 {/* Language selector - REFINED */}
                 <div className="dropdown dropdown-end">
-                    <div className="flex items-center gap-1 border border-base-300 rounded text-sm px-1.5 py-0.5 hover:bg-base-200 cursor-pointer transition-all duration-200">
+                    {/* Nút bấm hiển thị */}
+                    <div
+                        tabIndex={0}
+                        role="button"
+                        className="flex items-center gap-1 border border-base-300 rounded text-sm px-2 py-0.5 hover:bg-base-200 transition-all duration-200 uppercase font-medium"
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
                         </svg>
 
-                        <select
-                            className="outline-none bg-base-200 cursor-pointer text-sm pr-0"
-                            value={locale}
-                            onChange={(e) => changeLocale(e.target.value)}
-                        >
-                            {Object.entries(listCurrentLanguage).map(([key, value]) => (
-                                <option key={key} value={key}>{value}</option>
-                            ))}
-                        </select>
-                    </div>
-                </div>
+                        {listCurrentLanguage[locale as keyof typeof listCurrentLanguage]?.flag || "EN"}
 
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-4 opacity-50">
+                            <path fillRule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+                        </svg>
+                    </div>
+
+                    <ul
+                        tabIndex={0}
+                        className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52 mt-2"
+                    >
+                        {Object.entries(listCurrentLanguage).map(([key, value]) => (
+                            <li key={key}>
+                                <button
+                                    className={`flex justify-between ${locale === key ? "active" : ""}`}
+                                    onClick={() => {
+                                        changeLocale(key);
+                                        const elem = document.activeElement;
+                                        if (elem instanceof HTMLElement) {
+                                            elem.blur();
+                                        }
+                                    }}
+                                >
+                                    <span className="font-bold">{value.flag}</span>
+                                    <span>{value.label}</span>
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-sm hover:bg-base-200 transition-all duration-200 px-2">
                         <svg

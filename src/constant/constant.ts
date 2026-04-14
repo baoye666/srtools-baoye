@@ -1,9 +1,16 @@
 export const listCurrentLanguage = {
-    ja: "JP",
-    ko: "KR",
-    en: "EN",
-    vi: "VN",
-    zh: "CN"
+    en: { label: "English", flag: "🇬🇧" },
+    vi: { label: "Tiếng Việt", flag: "🇻🇳" },
+    ja: { label: "日本語", flag: "🇯🇵" },
+    ko: { label: "한국어", flag: "🇰🇷" },
+    zh: { label: "中文", flag: "🇨🇳" },
+    de: { label: "Deutsch", flag: "🇩🇪" },
+    es: { label: "Español", flag: "🇪🇸" },
+    fr: { label: "Français", flag: "🇫🇷" },
+    id: { label: "Bahasa Indonesia", flag: "🇮🇩" },
+    pt: { label: "Português", flag: "🇵🇹" },
+    ru: { label: "Русский", flag: "🇷🇺" },
+    th: { label: "ไทย", flag: "🇹🇭" }
 };
 
 export const listCurrentLanguageApi : Record<string, string> = {
@@ -11,7 +18,14 @@ export const listCurrentLanguageApi : Record<string, string> = {
     ko: "kr",
     en: "en",
     vi: "vi",
-    zh: "cn"
+    zh: "cn",
+    de: "de",
+    es: "es",
+    fr: "fr",
+    id: "id",
+    pt: "pt",
+    ru: "ru",
+    th: "th"
 };
 
 export const mappingStats = <Record<string, {name: string, icon: string, unit: string, baseStat: string}> > {
