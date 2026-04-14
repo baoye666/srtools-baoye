@@ -40,7 +40,7 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
                         height={48}
                         unoptimized
                         crossOrigin="anonymous"
-                        src={`${process.env.CDN_URL}/${damageType?.[mapAvatar?.[character.avatar_id.toString()]?.DamageType || ""].Icon}`}
+                        src={`${process.env.CDN_URL}/${damageType?.[mapAvatar?.[character.avatar_id.toString()]?.DamageType || ""]?.Icon}`}
                         className="absolute top-0 left-0 w-10 h-10 rounded-full"
                         alt={mapAvatar[character.avatar_id.toString()]?.DamageType.toLowerCase()}
                     />
@@ -49,7 +49,7 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
                         height={48}
                         unoptimized
                         crossOrigin="anonymous"
-                        src={`${process.env.CDN_URL}/${baseType?.[mapAvatar?.[character.avatar_id.toString()]?.BaseType || ""].Icon}`}
+                        src={`${process.env.CDN_URL}/${baseType?.[mapAvatar?.[character.avatar_id.toString()]?.BaseType || ""]?.Icon}`}
                         className="absolute top-0 right-0 w-10 h-10 rounded-full"
                         alt={mapAvatar[character.avatar_id.toString()]?.BaseType.toLowerCase()}
                         style={{
