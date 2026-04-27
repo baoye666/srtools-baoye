@@ -47,7 +47,6 @@ export function getLocaleName(locale: string, data: Record<string, string> | und
 
     const langKey = listCurrentLanguageApi[locale as keyof typeof listCurrentLanguageApi].toLowerCase();
 
- console.log(langKey)
     let text = data[langKey] ?? "";
 
     if (!text) {
