@@ -104,6 +104,7 @@ export function converterToFreeSRJson(
             techniques: avatar.techniques,
             sp_value: Number(avatar.sp_value || 0),
             sp_max: Number(avatar.sp_max || 0),
+            enhanced_id: avatar.enhanced ? Number(avatar.enhanced || 0) : undefined,
         }
         const currentProfile = avatar.profileList[avatar.profileSelect]
         if (currentProfile.lightcone && currentProfile.lightcone.item_id !== 0) {
