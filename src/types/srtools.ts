@@ -37,6 +37,7 @@ export interface AvatarJson {
     techniques: number[];
     sp_value: number;
     sp_max: number;
+    enhanced_id?: number;
 }
 export interface MonsterJson {
     monster_id: number;
@@ -49,7 +50,6 @@ export interface DynamicKeyJson {
     value: number;
 }
 
-//BattleBuff
 export interface BattleBuffJson {
     level: number;
     id: number;

@@ -40,7 +40,8 @@ export const avatarJsonSchema = z.object({
     promotion: z.number(),
     techniques: z.array(z.number()),
     sp_value: z.number(),
-    sp_max: z.number()
+    sp_max: z.number(),
+    enhanced_id: z.number().optional()
 });
 
 export const monsterJsonSchema = z.object({
