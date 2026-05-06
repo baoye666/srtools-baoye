@@ -7,6 +7,17 @@ export interface MOCGroupDetail {
     BeginTime: string;
     EndTime: string;
     Level: MoCLevel[];
+    Tierce: MoCTierceLevel | null;
+}
+
+export interface MoCTierceLevel {
+    ID: number;
+    PreChallenge: number;
+    Name: Record<string, string>;
+    Target: MoCTarget[];
+    DamageType: string[];
+    TurnLimit: number;
+    EventList: MoCEvent[];
 }
 
 export interface MoCLevel {
