@@ -6,7 +6,8 @@ export interface PFGroupDetail {
     EndTime: string;
     SubOption: MazeBuff[];
     Option: MazeBuff[];
-    Level: LevelData[];
+    Level: PFLevel[];
+    Tierce: PFTierceLevel | null;
 }
 
 export interface MazeBuff {
@@ -17,7 +18,17 @@ export interface MazeBuff {
     Desc: Record<string, string>;
 }
 
-export interface LevelData {
+export interface PFTierceLevel {
+    ID: number;
+    PreChallenge: number;
+    Name: Record<string, string>;
+    Target: StoryTarget[];
+    DamageType: string[];
+    TurnLimit: number;
+    EventList: PFEvent[];
+}
+
+export interface PFLevel {
     Floor: number;
     ID: number;
     StageNum: number;
@@ -26,8 +37,8 @@ export interface LevelData {
     DamageType1: string[];
     DamageType2: string[];
     MazeBuff: MazeBuff[];
-    EventList1: StageConfig[];
-    EventList2: StageConfig[];
+    EventList1: PFEvent[];
+    EventList2: PFEvent[];
     TurnLimit: number;
     BattleTarget: BattleTarget[];
     ClearScore: number;
@@ -45,7 +56,7 @@ export interface BattleTarget {
     Name: Record<string, string>;
 }
 
-export interface StageConfig {
+export interface PFEvent {
     ID: number;
     Name: Record<string, string>;
     HardLevelGroup: number;

@@ -9,7 +9,9 @@ export interface ASGroupDetail {
     EndTime: string;
     BuffList1: ASBuff[];
     BuffList2: ASBuff[];
+    BuffList3: ASBuff[] | null;
     Level: ASLevel[];
+    Tierce: ASTierceLevel | null;
 }
 
 export interface ASBuff {
@@ -19,6 +21,16 @@ export interface ASBuff {
     Name: Record<string, string>;
     Desc: Record<string, string>;
     ExtraList?: ExtraEffect[];
+}
+
+export interface ASTierceLevel {
+    ID: number;
+    PreChallenge: number;
+    Name: Record<string, string>;
+    Target: ASTarget[];
+    DamageType: string[];
+    TurnLimit: number;
+    EventList: ASEvent[];
 }
 
 export interface ASLevel {
@@ -35,6 +47,7 @@ export interface ASLevel {
     EventList2: ASEvent[];
     Monster1: ASMonster;
     Monster2: ASMonster;
+    Monster3: ASMonster | null;
 }
 
 export interface ASTarget {
