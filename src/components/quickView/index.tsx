@@ -278,33 +278,33 @@ export default function QuickView() {
         if (avatarProfile?.lightcone && mapLightCone[avatarProfile?.lightcone?.item_id]) {
             const lightconePromotion = calcPromotion(avatarProfile?.lightcone?.level)
             statsData.HP.value += calcBaseStatRaw(
-                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHP,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats?.[lightconePromotion]?.BaseHP,
                 mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHPAdd,
                 avatarProfile?.lightcone?.level
             )
             statsData.HP.base += calcBaseStatRaw(
-                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHP,
-                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseHPAdd,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats?.[lightconePromotion]?.BaseHP,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats?.[lightconePromotion]?.BaseHPAdd,
                 avatarProfile?.lightcone?.level
             )
             statsData.ATK.value += calcBaseStatRaw(
-                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttack,
-                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttackAdd,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats?.[lightconePromotion]?.BaseAttack,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats?.[lightconePromotion]?.BaseAttackAdd,
                 avatarProfile?.lightcone?.level
             )
             statsData.ATK.base += calcBaseStatRaw(
-                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttack,
-                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseAttackAdd,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats?.[lightconePromotion]?.BaseAttack,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats?.[lightconePromotion]?.BaseAttackAdd,
                 avatarProfile?.lightcone?.level
             )
             statsData.DEF.value += calcBaseStatRaw(
-                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefence,
-                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefenceAdd,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats?.[lightconePromotion]?.BaseDefence,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats?.[lightconePromotion]?.BaseDefenceAdd,
                 avatarProfile?.lightcone?.level
             )
             statsData.DEF.base += calcBaseStatRaw(
-                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefence,
-                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats[lightconePromotion]?.BaseDefenceAdd,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats?.[lightconePromotion]?.BaseDefence,
+                mapLightCone?.[avatarProfile?.lightcone?.item_id]?.Stats?.[lightconePromotion]?.BaseDefenceAdd,
                 avatarProfile?.lightcone?.level
             )
 
