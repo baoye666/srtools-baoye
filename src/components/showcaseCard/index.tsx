@@ -95,20 +95,20 @@ export default function ShowCaseInfo() {
     if (!avatarSelected || !avatarProfile?.lightcone || !mapLightCone[avatarProfile?.lightcone?.item_id]) return
     const promotion = calcPromotion(avatarProfile?.lightcone?.level)
     const atkStat = calcBaseStat(
-      mapLightCone[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseAttack,
-      mapLightCone[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseAttackAdd,
+      mapLightCone[avatarProfile?.lightcone?.item_id]?.Stats?.[promotion]?.BaseAttack,
+      mapLightCone[avatarProfile?.lightcone?.item_id]?.Stats?.[promotion]?.BaseAttackAdd,
       0,
       avatarProfile?.lightcone?.level
     )
     const hpStat = calcBaseStat(
-      mapLightCone[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseHP,
-      mapLightCone[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseHPAdd,
+      mapLightCone[avatarProfile?.lightcone?.item_id]?.Stats?.[promotion]?.BaseHP,
+      mapLightCone[avatarProfile?.lightcone?.item_id]?.Stats?.[promotion]?.BaseHPAdd,
       0,
       avatarProfile?.lightcone?.level
     )
     const defStat = calcBaseStat(
-      mapLightCone[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseDefence,
-      mapLightCone[avatarProfile?.lightcone?.item_id].Stats[promotion].BaseDefenceAdd,
+      mapLightCone[avatarProfile?.lightcone?.item_id]?.Stats?.[promotion]?.BaseDefence,
+      mapLightCone[avatarProfile?.lightcone?.item_id]?.Stats?.[promotion]?.BaseDefenceAdd,
       0,
       avatarProfile?.lightcone?.level
     )
