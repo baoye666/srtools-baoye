@@ -1,6 +1,8 @@
 import { ChangelogItemType } from '@/types';
 import { create } from 'zustand'
-import { createJSONStorage, persist } from 'zustand/middleware';
+import { persist } from 'zustand/middleware';
+import { localePersistedSchema } from '@/zod';
+import { createValidatedJSONStorage } from './persistStorage';
 
 
 interface LocaleState {
@@ -14,8 +16,10 @@ interface LocaleState {
     setLocale: (newLocale: string) => void;
 }
 
+type LocalePersistedState = Pick<LocaleState, "locale" | "theme" | "currentVersion" | "changelog">;
+
 const useLocaleStore = create<LocaleState>()(
-    persist(
+    persist<LocaleState, [], [], LocalePersistedState>(
         (set) => ({
             locale: "en",
             theme: "night",
@@ -28,7 +32,13 @@ const useLocaleStore = create<LocaleState>()(
         }),
         {
             name: 'locale-storage',
-            storage: createJSONStorage(() => localStorage),
+            storage: createValidatedJSONStorage(() => localStorage, localePersistedSchema),
+            partialize: (state) => ({
+                locale: state.locale,
+                theme: state.theme,
+                currentVersion: state.currentVersion,
+                changelog: state.changelog,
+            }),
         }
     )
 );

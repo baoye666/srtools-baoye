@@ -12,7 +12,7 @@ export function getSkillTree(avatarSelected: AvatarDetail | null, enhanced: stri
         }, {} as Record<string, number>)
     }
 
-    return Object.values(avatarSelected?.SkillTrees).reduce((acc, dataPointEntry) => {
+    return Object.values(avatarSelected?.SkillTrees ?? {}).reduce((acc, dataPointEntry) => {
         const firstEntry = Object.values(dataPointEntry)[0];
         if (firstEntry) {
             acc[firstEntry.PointID] = firstEntry.MaxLevel;

@@ -71,8 +71,11 @@ export default function CopyImport() {
 
     const selectAll = () => {
         if (avatarCopySelected) {
-            setSelectedProfiles(avatars[avatarCopySelected?.ID.toString()].profileList.map((profile, index) => {
-                if (!profile.lightcone?.item_id && Object.keys(profile.relics).length == 0) {
+            const sourceAvatar = avatars[avatarCopySelected.ID.toString()]
+            const sourceProfiles = sourceAvatar?.profileList ?? []
+
+            setSelectedProfiles(sourceProfiles.map((profile, index) => {
+                if (!profile.lightcone?.item_id && Object.keys(profile.relics ?? {}).length == 0) {
                     return null;
                 }
                 return {
@@ -110,8 +113,20 @@ export default function CopyImport() {
             return;
         }
 
-        const newListProfile = avatars[avatarCopySelected.ID.toString()].profileList.map((profile) => {
-            if (!profile.lightcone?.item_id && Object.keys(profile.relics).length == 0) {
+        const sourceAvatar = avatars[avatarCopySelected.ID.toString()]
+        const targetAvatar = avatars[avatarSelected.ID.toString()]
+
+        if (!sourceAvatar || !targetAvatar) {
+            setMessage({
+                type: "error",
+                text: transI18n("noDataToImport")
+            });
+            return;
+        }
+
+        const selectedKeys = new Set(selectedProfiles.map((profile) => profile.key))
+        const newListProfile = sourceAvatar.profileList.map((profile, index) => {
+            if (!selectedKeys.has(index) || (!profile.lightcone?.item_id && Object.keys(profile.relics ?? {}).length == 0)) {
                 return null;
             }
             return {
@@ -121,9 +136,9 @@ export default function CopyImport() {
         }).filter((profile) => profile !== null);
 
         const newAvatar = {
-            ...avatars[avatarSelected?.ID?.toString()],
-            profileList: avatars[avatarSelected?.ID?.toString()].profileList.concat(newListProfile),
-            profileSelect: avatars[avatarSelected?.ID?.toString()].profileList.length - 1,
+            ...targetAvatar,
+            profileList: targetAvatar.profileList.concat(newListProfile),
+            profileSelect: targetAvatar.profileList.length + newListProfile.length - 1,
         }
         setAvatar(newAvatar);
         setSelectedProfiles([]);
@@ -275,7 +290,7 @@ export default function CopyImport() {
                 {/* Character Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {avatarCopySelected && avatars[avatarCopySelected?.ID.toString()]?.profileList.map((profile, index) => {
-                        if (!profile.lightcone?.item_id && Object.keys(profile.relics).length == 0) {
+                        if (!profile.lightcone?.item_id && Object.keys(profile.relics ?? {}).length == 0) {
                             return null;
                         }
                         return (

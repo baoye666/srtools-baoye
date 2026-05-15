@@ -125,4 +125,22 @@ export const micsSchema = z.object({
     as_config: asConfigStoreSchema,
     ce_config: ceConfigStoreSchema,
     peak_config: peakConfigStoreSchema
+}).superRefine((data, ctx) => {
+    for (const [avatarId, avatar] of Object.entries(data.avatars)) {
+        if (avatar.profileList.length === 0) {
+            ctx.addIssue({
+                code: "custom",
+                path: ["avatars", avatarId, "profileList"],
+                message: "profileList must contain at least one profile"
+            });
+        }
+
+        if (avatar.profileSelect < 0 || avatar.profileSelect >= avatar.profileList.length) {
+            ctx.addIssue({
+                code: "custom",
+                path: ["avatars", avatarId, "profileSelect"],
+                message: "profileSelect must point to an existing profile"
+            });
+        }
+    }
 });

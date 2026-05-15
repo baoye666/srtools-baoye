@@ -13,7 +13,8 @@ const formatValue = (value: number, format: string, floatDigits?: string, hasPer
     return String(value);
 };
 
-export function replaceByParam(desc: string, params: number[]): string {
+export function replaceByParam(desc?: string, params: number[] = []): string {
+    if (!desc) return "";
 
     const PARAM_REGEX = /#(\d+)\[(f(\d+)|i)\](%)?/g;
 

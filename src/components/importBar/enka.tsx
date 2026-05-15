@@ -9,6 +9,28 @@ import { converterOneEnkaDataToAvatarStore } from "@/helper";
 import useModelStore from "@/stores/modelStore";
 import { toast } from "react-toastify";
 import { useTranslations } from "next-intl";
+import { avatarEnkaDetailSchema, enkaResponseSchema } from "@/zod";
+import { z } from "zod";
+import useDetailDataStore from "@/stores/detailDataStore";
+
+type AvatarEnkaDetailInput = z.infer<typeof avatarEnkaDetailSchema>;
+
+const toCharacterInfoCard = (character: AvatarEnkaDetailInput): CharacterInfoCardType => ({
+    key: character.avatarId,
+    avatar_id: character.avatarId,
+    rank: character.rank ?? 0,
+    level: character.level,
+    lightcone: {
+        level: character.equipment?.level ?? 0,
+        rank: character.equipment?.rank ?? 0,
+        item_id: character.equipment?.tid ?? 0,
+    },
+    relics: character.relicList.map((relic) => ({
+        level: relic.level,
+        relic_id: relic.tid,
+        relic_set_id: parseInt(relic.tid.toString().slice(1, -1), 10),
+    })),
+});
 
 export default function EnkaImport() {
     const {
@@ -22,8 +44,10 @@ export default function EnkaImport() {
     const transI18n = useTranslations("DataPage")
     const { avatars, setAvatar } = useUserDataStore();
     const { setIsOpenImport } = useModelStore()
+    const { mapAvatar } = useDetailDataStore()
     const [isLoading, setIsLoading] = useState(false)
     const [Error, setError] = useState("")
+    const validCharacters = enkaData?.detailInfo.avatarDetailList.filter((character) => mapAvatar?.[character.avatarId]) ?? []
 
     const handlerFetchData = async () => {
         if (!uidInput) {
@@ -31,32 +55,27 @@ export default function EnkaImport() {
             return;
         }
         setIsLoading(true)
-        const data : EnkaResponse = await SendDataThroughProxy({data: {serverUrl: "https://enka.network/api/hsr/uid/" + uidInput, method: "GET"}})
-        if (data) {
-            setEnkaData(data)
-            setSelectedCharacters(data.detailInfo.avatarDetailList.map((character) => {
-                return {
-                    key: character.avatarId,
-                    avatar_id: character.avatarId,
-                    rank: character.rank ?? 0,
-                    level: character.level,
-                    lightcone: {
-                        level: character.equipment?.level ?? 0,
-                        rank: character.equipment?.rank ?? 0,
-                        item_id: character.equipment?.tid ?? 0,
-                    },
-                    relics: character.relicList.map((relic) => ({
-                        level: relic.level,
-                        relic_id: relic.tid,
-                        relic_set_id: parseInt(relic.tid.toString().slice(1, -1), 10),
-                    })),
-                } as CharacterInfoCardType
-            }))
+        try {
+            const data: unknown = await SendDataThroughProxy({data: {serverUrl: "https://enka.network/api/hsr/uid/" + uidInput, method: "GET"}})
+            const parsed = enkaResponseSchema.safeParse(data)
+
+            if (!parsed.success) {
+                setEnkaData(null)
+                setSelectedCharacters([])
+                setError(transI18n("failedToFetchEnkaData"))
+                return
+            }
+
+            setEnkaData(parsed.data as EnkaResponse)
+            setSelectedCharacters(parsed.data.detailInfo.avatarDetailList.filter((character) => mapAvatar?.[character.avatarId]).map(toCharacterInfoCard))
             setError("")
-        } else {
+        } catch {
+            setEnkaData(null)
+            setSelectedCharacters([])
             setError(transI18n("failedToFetchEnkaData"))
+        } finally {
+            setIsLoading(false)
         }
-        setIsLoading(false)
     }
 
     const handleCharacterToggle = (character: CharacterInfoCardType) => {
@@ -73,26 +92,7 @@ export default function EnkaImport() {
 
     const selectAll = () => {
         if (enkaData) {
-            setSelectedCharacters(enkaData?.detailInfo.avatarDetailList.map((character) => {
-                return {
-                    key: character.avatarId,
-                    avatar_id: character.avatarId,
-                    rank: character.rank ?? 0,
-                    level: character.level,
-                    lightcone: (character.equipment && character.equipment.tid) ? {
-                        level: character.equipment?.level ?? 0,
-                        rank: character.equipment?.rank ?? 0,
-                        item_id: character.equipment?.tid ?? 0,
-                    } : null,
-                    relics: character.relicList.map((relic) => {
-                        return {
-                            level: relic.level,
-                            relic_id: relic.tid,
-                            relic_set_id: parseInt(relic.tid.toString().slice(1, -1), 10),
-                        }
-                    }),
-                } as CharacterInfoCardType
-            }));
+            setSelectedCharacters(validCharacters.map(toCharacterInfoCard));
         }
     };
 
@@ -107,7 +107,13 @@ export default function EnkaImport() {
         }
         setError("");
         const listAvatars = { ...avatars }
-        const filterData = enkaData.detailInfo.avatarDetailList.filter((character) => selectedCharacters.some((selectedCharacter) => selectedCharacter.avatar_id === character.avatarId))
+        const parsed = enkaResponseSchema.safeParse(enkaData)
+        if (!parsed.success) {
+            setError(transI18n("failedToFetchEnkaData"));
+            return;
+        }
+
+        const filterData = parsed.data.detailInfo.avatarDetailList.filter((character) => mapAvatar?.[character.avatarId] && selectedCharacters.some((selectedCharacter) => selectedCharacter.avatar_id === character.avatarId))
         filterData.forEach((character) => {
             const newAvatar = { ...listAvatars[character.avatarId.toString()] }
             if (Object.keys(newAvatar).length !== 0) {
@@ -193,26 +199,10 @@ export default function EnkaImport() {
                 )}
                 {/* Character Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {enkaData?.detailInfo.avatarDetailList.map((character) => (
+                    {validCharacters.map((character) => (
                         <CharacterInfoCard
                             key={character.avatarId}
-                            character={{
-                                key: character.avatarId,
-                                avatar_id: character.avatarId,
-                                rank: character.rank ?? 0,
-                                level: character.level ?? 0,
-                                lightcone: {
-                                    level: character.equipment?.level ?? 0,
-                                    rank: character.equipment?.rank ?? 0,
-                                    item_id: character.equipment?.tid ?? 0,
-                                },
-                                relics: character.relicList.map((relic) => ({
-                                    level: relic.level ?? 0,
-                                    relic_id: relic.tid,
-                                    relic_set_id: parseInt(relic.tid.toString().slice(1, -1), 10),
-                                })),
-                            } as CharacterInfoCardType
-                            }
+                            character={toCharacterInfoCard(character)}
                             selectedCharacters={selectedCharacters}
                             onCharacterToggle={handleCharacterToggle}
                         />

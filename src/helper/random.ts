@@ -1,4 +1,11 @@
 export function randomPartition(sum: number, parts: number): number[] {
+    if (!Number.isFinite(sum) || !Number.isInteger(parts) || parts <= 0) {
+        return [];
+    }
+    if (sum < parts) {
+        return Array.from({ length: parts }, () => 0);
+    }
+
     const raw = Array.from({ length: parts }, () => Math.random());
     const total = raw.reduce((a, b) => a + b, 0);
     const result = raw.map(r => Math.floor((r / total) * (sum - parts)) + 1);

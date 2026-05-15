@@ -15,7 +15,7 @@ export function converterToAvatarStore(data: Record<string, AvatarDetail>): { [k
                 avatar_id: Number(key),
                 data: {
                     rank: 0,
-                    skills: Object.values(value.SkillTrees).reduce((acc, dataPointEntry) => {
+                    skills: Object.values(value.SkillTrees ?? {}).reduce((acc, dataPointEntry) => {
                         const firstEntry = Object.values(dataPointEntry)[0];
                         if (firstEntry) {
                             acc[firstEntry.PointID] = firstEntry.MaxLevel;
@@ -42,7 +42,8 @@ export function converterToAvatarStore(data: Record<string, AvatarDetail>): { [k
 }
 
 export function converterOneEnkaDataToAvatarStore(data: AvatarEnkaDetail, count: number): AvatarProfileStore | null  {
-    if (!data.equipment && (!data.relicList || data.relicList.length === 0)) return null
+    const relicList = data.relicList ?? []
+    if (!data.equipment && relicList.length === 0) return null
     const profile: AvatarProfileStore = {
         profile_name: `Enka Profile ${count}`,
         lightcone:  (data.equipment && data.equipment.tid) ? {
@@ -51,12 +52,12 @@ export function converterOneEnkaDataToAvatarStore(data: AvatarEnkaDetail, count:
             rank: data.equipment?.rank ?? 0,
             promotion: data.equipment?.promotion ?? 0,
         } : null,
-        relics: Object.fromEntries(data.relicList.map((relic) => [relic.tid.toString()[relic.tid.toString().length - 1], {
+        relics: Object.fromEntries(relicList.map((relic) => [relic.tid.toString()[relic.tid.toString().length - 1], {
             level: relic.level ?? 0,
             relic_id: relic.tid,
             relic_set_id: parseInt(relic.tid.toString().slice(1, -1), 10),
             main_affix_id: relic.mainAffixId,
-            sub_affixes: relic.subAffixList.map((subAffix) => ({
+            sub_affixes: (relic.subAffixList ?? []).map((subAffix) => ({
                 sub_affix_id: subAffix.affixId,
                 count: subAffix.cnt,
                 step: subAffix.step ?? 0
@@ -68,8 +69,8 @@ export function converterOneEnkaDataToAvatarStore(data: AvatarEnkaDetail, count:
 
 
 export function converterOneFreeSRDataToAvatarStore(data: FreeSRJson, count: number , avatar_id: number): AvatarProfileStore | null  {
-    const lightcone = data.lightcones.find((lightcone) => lightcone.equip_avatar === avatar_id)
-    const relics = data.relics.filter((relic) => relic.equip_avatar === avatar_id)
+    const lightcone = (data.lightcones ?? []).find((lightcone) => lightcone.equip_avatar === avatar_id)
+    const relics = (data.relics ?? []).filter((relic) => relic.equip_avatar === avatar_id)
     if (!lightcone && (!relics || relics.length === 0)) return null
     const relicsMap = {} as Record<string, RelicStore>
 
@@ -79,7 +80,7 @@ export function converterOneFreeSRDataToAvatarStore(data: FreeSRJson, count: num
             relic_id: relic.relic_id,
             relic_set_id: relic.relic_set_id,
             main_affix_id: relic.main_affix_id,
-            sub_affixes: relic.sub_affixes.map((subAffix) => ({
+            sub_affixes: (relic.sub_affixes ?? []).map((subAffix) => ({
                 sub_affix_id: subAffix.sub_affix_id,
                 count: subAffix.count,
                 step: subAffix.step ?? 0

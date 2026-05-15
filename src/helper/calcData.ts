@@ -24,7 +24,10 @@ export function calcPromotion(level: number) {
 }
 
 
-export function calcRarity(rarity: string) {
+export function calcRarity(rarity?: string) {
+    if (!rarity) {
+        return 1
+    }
     if (rarity.includes("5")) {
         return 5
     }
@@ -40,11 +43,12 @@ export function calcRarity(rarity: string) {
 export function calcMainAffixBonus(affix?: MainAffixData, level?: number) {
     if (!affix || typeof level !== "number") return "0"
     const value = affix.BaseValue + affix.LevelAdd * level;
+    const statMeta = mappingStats[affix.Property]
 
-    if (mappingStats?.[affix.Property].unit === "%") {
+    if (statMeta?.unit === "%") {
         return (value * 100).toFixed(1);
     }
-    if (mappingStats?.[affix.Property].name === "SPD") {
+    if (statMeta?.name === "SPD") {
         return value.toFixed(1);
     }
 
@@ -53,10 +57,11 @@ export function calcMainAffixBonus(affix?: MainAffixData, level?: number) {
 
 export const calcAffixBonus = (affix?: SubAffixData, stepCount?: number, rollCount?: number) => {
     if (!affix || typeof stepCount !== "number" || typeof rollCount !== "number") return "0"
-    if (mappingStats?.[affix.Property].unit === "%") {
+    const statMeta = mappingStats[affix.Property]
+    if (statMeta?.unit === "%") {
         return ((affix.BaseValue * rollCount + affix.StepValue * stepCount) * 100).toFixed(1);
     }
-    if (mappingStats?.[affix.Property].name === "SPD") {
+    if (statMeta?.name === "SPD") {
         return (affix.BaseValue * rollCount + affix.StepValue * stepCount).toFixed(1);
     }
     return (affix.BaseValue * rollCount + affix.StepValue * stepCount).toFixed(0);
@@ -107,6 +112,16 @@ export const calcMonsterStats = (
     hardLevelConfig: Record<string, Record<string, HardLevelData>>,
     eliteConfig: Record<string, EliteData>
 ) => {
+    if (!monster?.Base || !monster?.Modify) {
+        return {
+            atk: 0,
+            def: 0,
+            hp: 0,
+            spd: 0,
+            stance: 0,
+        }
+    }
+
     let hardLevelRatio = {
         AttackRatio: 1,
         DefenceRatio:1,
