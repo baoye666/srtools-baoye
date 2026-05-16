@@ -31,7 +31,7 @@ interface FlatProp {
 
 interface RelicFlat {
     props: FlatProp[]
-    setName: string
+    setName: string | number
     setID: number
 }
 
@@ -51,7 +51,7 @@ interface SkillTree {
 
 interface EquipmentFlat {
     props: FlatProp[]
-    name: string
+    name: string | number
 }
 
 interface Equipment {

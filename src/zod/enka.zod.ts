@@ -33,7 +33,7 @@ const flatPropSchema = z.object({
 
 const relicFlatSchema = z.object({
     props: z.array(flatPropSchema),
-    setName: z.string(),
+    setName: z.union([z.string(), z.number()]),
     setID: z.number()
 });
 
@@ -53,7 +53,7 @@ const skillTreeSchema = z.object({
 
 const equipmentFlatSchema = z.object({
     props: z.array(flatPropSchema),
-    name: z.string()
+    name: z.union([z.string(), z.number()])
 });
 
 const equipmentSchema = z.object({

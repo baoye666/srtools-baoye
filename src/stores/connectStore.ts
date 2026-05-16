@@ -1,5 +1,7 @@
 import { create } from 'zustand'
-import { createJSONStorage, persist } from 'zustand/middleware';
+import { persist } from 'zustand/middleware';
+import { connectPersistedSchema } from '@/zod';
+import { createValidatedJSONStorage } from './persistStorage';
 
 
 interface ConnectState {
@@ -15,8 +17,10 @@ interface ConnectState {
     setPassword: (newPassword: string) => void;
 }
 
+type ConnectPersistedState = Pick<ConnectState, "connectionType" | "privateType" | "serverUrl" | "username" | "password">;
+
 const useConnectStore = create<ConnectState>()(
-    persist(
+    persist<ConnectState, [], [], ConnectPersistedState>(
         (set) => ({
             connectionType: "FireflyGo",
             privateType: "Local",
@@ -31,7 +35,14 @@ const useConnectStore = create<ConnectState>()(
         }),
         {
             name: 'connect-storage',
-            storage: createJSONStorage(() => localStorage),
+            storage: createValidatedJSONStorage(() => localStorage, connectPersistedSchema),
+            partialize: (state) => ({
+                connectionType: state.connectionType,
+                privateType: state.privateType,
+                serverUrl: state.serverUrl,
+                username: state.username,
+                password: state.password,
+            }),
         }
     )
 );

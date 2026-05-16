@@ -1,6 +1,8 @@
 import { ASConfigStore, AvatarStore, CEConfigStore, MOCConfigStore, PEAKConfigStore, PFConfigStore } from '@/types';
 import { create } from 'zustand'
-import { createJSONStorage, persist } from 'zustand/middleware';
+import { persist } from 'zustand/middleware';
+import { micsSchema } from '@/zod';
+import { createValidatedJSONStorage } from './persistStorage';
 
 
 interface UserDataState {
@@ -21,8 +23,19 @@ interface UserDataState {
     setCeConfig: (newCeConfig: CEConfigStore) => void;
 }
 
+type UserDataPersistedState = Pick<
+    UserDataState,
+    | "avatars"
+    | "battle_type"
+    | "moc_config"
+    | "pf_config"
+    | "as_config"
+    | "peak_config"
+    | "ce_config"
+>;
+
 const useUserDataStore = create<UserDataState>()(
-    persist(
+    persist<UserDataState, [], [], UserDataPersistedState>(
         (set) => ({
             avatars: {},
             battle_type: "",
@@ -84,7 +97,16 @@ const useUserDataStore = create<UserDataState>()(
         }),
         {
             name: 'user-data-storage',
-            storage: createJSONStorage(() => localStorage),
+            storage: createValidatedJSONStorage(() => localStorage, micsSchema),
+            partialize: (state) => ({
+                avatars: state.avatars,
+                battle_type: state.battle_type,
+                moc_config: state.moc_config,
+                pf_config: state.pf_config,
+                as_config: state.as_config,
+                peak_config: state.peak_config,
+                ce_config: state.ce_config,
+            }),
         }
     )
 );

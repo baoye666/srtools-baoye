@@ -84,7 +84,9 @@ export function converterToFreeSRJson(
     let internalUidLightcone = 0
     let internalUidRelic = 0
 
-    Object.entries(avatars).forEach(([avatarId, avatar]) => {
+    Object.entries(avatars ?? {}).forEach(([avatarId, avatar]) => {
+        if (!avatar) return
+
         const skillsByAnchorType: Record<string, number> = {}
         for (const [skillId, level] of Object.entries(avatar?.data?.skills || {})) {
             if (skillConfig?.[skillId]) {
@@ -95,18 +97,20 @@ export function converterToFreeSRJson(
             owner_uid: Number(avatar.owner_uid || 0),
             avatar_id: Number(avatar.avatar_id || 0),
             data: {
-                rank: Number(avatar.data.rank || 0),
-                skills: avatar.data.skills,
+                rank: Number(avatar.data?.rank || 0),
+                skills: avatar.data?.skills ?? {},
                 skills_by_anchor_type: Object.keys(skillsByAnchorType).length > 0 ? skillsByAnchorType : undefined,
             },
             level: Number(avatar.level || 0),
             promotion: Number(avatar.promotion || 0),
-            techniques: avatar.techniques,
+            techniques: avatar.techniques ?? [],
             sp_value: Number(avatar.sp_value || 0),
             sp_max: Number(avatar.sp_max || 0),
             enhanced_id: avatar.enhanced ? Number(avatar.enhanced || 0) : undefined,
         }
-        const currentProfile = avatar.profileList[avatar.profileSelect]
+        const currentProfile = avatar.profileList?.[avatar.profileSelect] ?? avatar.profileList?.[0]
+        if (!currentProfile) return
+
         if (currentProfile.lightcone && currentProfile.lightcone.item_id !== 0) {
             const newLightcone: LightconeJson = {
                 level: Number(currentProfile.lightcone.level || 0),
@@ -129,7 +133,7 @@ export function converterToFreeSRJson(
                         relic_id: Number(relic.relic_id || 0),
                         relic_set_id: Number(relic.relic_set_id || 0),
                         main_affix_id: Number(relic.main_affix_id || 0),
-                        sub_affixes: relic.sub_affixes,
+                        sub_affixes: relic.sub_affixes ?? [],
                         internal_uid: internalUidRelic,
                         equip_avatar: Number(avatar.avatar_id || 0),
                     }

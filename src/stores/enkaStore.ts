@@ -6,7 +6,7 @@ interface EnkaState {
     enkaData: EnkaResponse | null;
     uidInput: string;
     setSelectedCharacters: (newListAvatar: CharacterInfoCardType[]) => void;
-    setEnkaData: (newEnkaData: EnkaResponse) => void;
+    setEnkaData: (newEnkaData: EnkaResponse | null) => void;
     setUidInput: (newUidInput: string) => void;
 }
 
@@ -16,7 +16,7 @@ const useEnkaStore = create<EnkaState>((set) => ({
     uidInput: "",
     setUidInput: (newUidInput: string) => set({ uidInput: newUidInput }),
     setSelectedCharacters: (newListAvatar: CharacterInfoCardType[]) => set({ selectedCharacters: newListAvatar }),
-    setEnkaData: (newEnkaData: EnkaResponse) => set({ enkaData: newEnkaData }),
+    setEnkaData: (newEnkaData: EnkaResponse | null) => set({ enkaData: newEnkaData }),
 }));
 
 export default useEnkaStore;

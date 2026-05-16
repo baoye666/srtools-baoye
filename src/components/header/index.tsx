@@ -79,6 +79,8 @@ export default function Header() {
         if (cookieLocale) {
             if (!listCurrentLanguageApi.hasOwnProperty(cookieLocale)) {
                 setLocale("en")
+                document.cookie = "MYNEXTAPP_LOCALE=en;"
+                router.refresh()
             } else {
                 setLocale(cookieLocale)
             }
