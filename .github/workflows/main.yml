@@ -15,4 +15,5 @@ jobs:
           upstream_repo: https://git.kain.io.vn/Kain344/Firefly_Srtools_Live.git
           upstream_branch: master
           downstream_branch: master
+          merge_args: "--allow-unrelated-histories"
           token: ${{ secrets.SYNC_TOKEN }}
